@@ -6,14 +6,16 @@ import io.swisschain.crypto.exceptions.UnknownNetworkTypeException;
 import io.swisschain.crypto.hsm.HsmConnector;
 import io.swisschain.crypto.transaction.signing.CoinsTransactionSigner;
 import io.swisschain.crypto.transaction.signing.TransactionSigningResult;
-import io.swisschain.crypto.transaction.signing.exceptions.TransactionSignException;
 import io.swisschain.primitives.NetworkType;
 import io.swisschain.services.Coin;
+import org.apache.commons.codec.binary.Base32;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.bouncycastle.util.encoders.Hex;
 import org.postgresql.util.Base64;
+import org.stellar.sdk.KeyPair;
 import org.stellar.sdk.Transaction;
+import org.stellar.sdk.xdr.DecoratedSignature;
 import org.stellar.sdk.xdr.Signature;
 import org.stellar.sdk.xdr.TransactionEnvelope;
 import org.stellar.sdk.xdr.XdrDataInputStream;
@@ -36,16 +38,19 @@ public class HsmStellarTransactionSigner extends HsmConnector implements CoinsTr
       String privateKey,
       String publicKey,
       NetworkType networkType)
-      throws IOException, TransactionSignException, UnknownNetworkTypeException {
+      throws IOException, UnknownNetworkTypeException {
     final var network = NetworkMapper.mapToStellarNetworkType(networkType);
     final var transactionEnvelope =
         TransactionEnvelope.decode(
             new XdrDataInputStream(new ByteArrayInputStream(unsignedTransaction)));
-    final var transaction = Transaction.fromEnvelopeXdr(transactionEnvelope, network);
+    final var rawTransaction = Transaction.fromEnvelopeXdr(transactionEnvelope, network);
 
-    final var txHash = transaction.hash();
-    final var signature = sign(txHash, Hex.decode(privateKey));
-    transaction.sign(signature.getSignature());
+    final var txHash = rawTransaction.hash();
+    final var signature = sign(txHash, Hex.decode(privateKey), Hex.decode(publicKey));
+
+    final var transactionEnvelopeV1 = transactionEnvelope.getV1();
+    transactionEnvelopeV1.setSignatures(new DecoratedSignature[] {signature});
+    final var transaction = Transaction.fromV1EnvelopeXdr(transactionEnvelopeV1, network);
 
     final var transactionId = transaction.hashHex();
     final var signedBytes = Base64.decode(transaction.toEnvelopeXdrBase64());
@@ -57,9 +62,16 @@ public class HsmStellarTransactionSigner extends HsmConnector implements CoinsTr
     return result;
   }
 
-  private Signature sign(byte[] hash, byte[] privateKey) throws IOException {
+  private DecoratedSignature sign(byte[] hash, byte[] privateKey, byte[] publicKey)
+      throws IOException {
     final var signature = new Signature();
     signature.setSignature(signEd25519(hash, privateKey));
-    return signature;
+
+    DecoratedSignature decoratedSignature = new DecoratedSignature();
+    decoratedSignature.setHint(
+        KeyPair.fromPublicKey(new Base32().decode(publicKey)).getSignatureHint());
+    decoratedSignature.setSignature(signature);
+
+    return decoratedSignature;
   }
 }
