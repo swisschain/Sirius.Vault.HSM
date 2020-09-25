@@ -32,7 +32,7 @@ public class IsAliveHandler extends RouterNanoHTTPD.DefaultHandler {
 
   @Override
   public String getMimeType() {
-    return MIME_PLAINTEXT;
+    return "application/json";
   }
 
   @Override
