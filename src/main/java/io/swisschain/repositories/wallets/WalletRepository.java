@@ -75,7 +75,7 @@ public class WalletRepository extends Repository {
     String sql =
         String.format("INSERT INTO %s.wallets(\n", this.connectionFactory.getSchema())
             + "wallet_generation_request_id, blockchain_id, protocol_code, network_type, address, public_key, private_key, tenant_id, \"group\", created_at)\n"
-            + "VALUES (?, ?, ?, ?, ?, ?, ?, ?); ";
+            + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?); ";
 
     try (Connection connection = this.connectionFactory.create();
         PreparedStatement statement = connection.prepareStatement(sql)) {
