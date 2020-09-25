@@ -18,4 +18,4 @@ RUN unzip -q Sirius.Vault.HSM-0.1.zip && \
 ENTRYPOINT ["/Sirius.Vault.HSM/bin/Sirius.Vault.HSM"]
 CMD ["--console"]
 
-EXPOSE 6000/tcp
+EXPOSE 5000
