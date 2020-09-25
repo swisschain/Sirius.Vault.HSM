@@ -10,7 +10,7 @@ RUN unzip -q Sirius.Vault.HSM-0.1.zip && \
     chmod +x Sirius.Vault.HSM/bin/Sirius.Vault.HSM&& \
     sed -i -e 's/\r$//' Sirius.Vault.HSM/bin/Sirius.Vault.HSM
 
+EXPOSE 5000
+
 ENTRYPOINT ["/Sirius.Vault.HSM/bin/Sirius.Vault.HSM"]
 CMD ["--console"]
-
-EXPOSE 5000/
