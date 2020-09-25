@@ -8,7 +8,28 @@ public final class GenerateRandomResponse extends com.google.protobuf.GeneratedM
     implements
     // @@protoc_insertion_point(message_implements:grep11.GenerateRandomResponse)
     GenerateRandomResponseOrBuilder {
+  public static final int RND_FIELD_NUMBER = 1;
   private static final long serialVersionUID = 0L;
+  // @@protoc_insertion_point(class_scope:grep11.GenerateRandomResponse)
+  private static final com.ibm.crypto.grep11.grpc.GenerateRandomResponse DEFAULT_INSTANCE;
+  private static final com.google.protobuf.Parser<GenerateRandomResponse> PARSER =
+      new com.google.protobuf.AbstractParser<GenerateRandomResponse>() {
+        @java.lang.Override
+        public GenerateRandomResponse parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new GenerateRandomResponse(input, extensionRegistry);
+        }
+      };
+
+  static {
+    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.GenerateRandomResponse();
+  }
+
+  private com.google.protobuf.ByteString rnd_;
+  private byte memoizedIsInitialized = -1;
+
   // Use GenerateRandomResponse.newBuilder() to construct.
   private GenerateRandomResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -17,18 +38,6 @@ public final class GenerateRandomResponse extends com.google.protobuf.GeneratedM
   private GenerateRandomResponse() {
     rnd_ = com.google.protobuf.ByteString.EMPTY;
   }
-
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new GenerateRandomResponse();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-    return this.unknownFields;
-  }
-
   private GenerateRandomResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -73,92 +82,6 @@ public final class GenerateRandomResponse extends com.google.protobuf.GeneratedM
 
   public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
     return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_GenerateRandomResponse_descriptor;
-  }
-
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-    return com.ibm.crypto.grep11.grpc.Hsm
-        .internal_static_grep11_GenerateRandomResponse_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.ibm.crypto.grep11.grpc.GenerateRandomResponse.class,
-            com.ibm.crypto.grep11.grpc.GenerateRandomResponse.Builder.class);
-  }
-
-  public static final int RND_FIELD_NUMBER = 1;
-  private com.google.protobuf.ByteString rnd_;
-  /**
-   * <code>bytes Rnd = 1;</code>
-   *
-   * @return The rnd.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString getRnd() {
-    return rnd_;
-  }
-
-  private byte memoizedIsInitialized = -1;
-
-  @java.lang.Override
-  public final boolean isInitialized() {
-    byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) return true;
-    if (isInitialized == 0) return false;
-
-    memoizedIsInitialized = 1;
-    return true;
-  }
-
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    if (!rnd_.isEmpty()) {
-      output.writeBytes(1, rnd_);
-    }
-    unknownFields.writeTo(output);
-  }
-
-  @java.lang.Override
-  public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) return size;
-
-    size = 0;
-    if (!rnd_.isEmpty()) {
-      size += com.google.protobuf.CodedOutputStream.computeBytesSize(1, rnd_);
-    }
-    size += unknownFields.getSerializedSize();
-    memoizedSize = size;
-    return size;
-  }
-
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
-    if (obj == this) {
-      return true;
-    }
-    if (!(obj instanceof com.ibm.crypto.grep11.grpc.GenerateRandomResponse)) {
-      return super.equals(obj);
-    }
-    com.ibm.crypto.grep11.grpc.GenerateRandomResponse other =
-        (com.ibm.crypto.grep11.grpc.GenerateRandomResponse) obj;
-
-    if (!getRnd().equals(other.getRnd())) return false;
-    if (!unknownFields.equals(other.unknownFields)) return false;
-    return true;
-  }
-
-  @java.lang.Override
-  public int hashCode() {
-    if (memoizedHashCode != 0) {
-      return memoizedHashCode;
-    }
-    int hash = 41;
-    hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + RND_FIELD_NUMBER;
-    hash = (53 * hash) + getRnd().hashCode();
-    hash = (29 * hash) + unknownFields.hashCode();
-    memoizedHashCode = hash;
-    return hash;
   }
 
   public static com.ibm.crypto.grep11.grpc.GenerateRandomResponse parseFrom(
@@ -233,17 +156,118 @@ public final class GenerateRandomResponse extends com.google.protobuf.GeneratedM
         PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
-  public Builder newBuilderForType() {
-    return newBuilder();
-  }
-
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
 
   public static Builder newBuilder(com.ibm.crypto.grep11.grpc.GenerateRandomResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GenerateRandomResponse getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  public static com.google.protobuf.Parser<GenerateRandomResponse> parser() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new GenerateRandomResponse();
+  }
+
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    return this.unknownFields;
+  }
+
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internalGetFieldAccessorTable() {
+    return com.ibm.crypto.grep11.grpc.Hsm
+        .internal_static_grep11_GenerateRandomResponse_fieldAccessorTable
+        .ensureFieldAccessorsInitialized(
+            com.ibm.crypto.grep11.grpc.GenerateRandomResponse.class,
+            com.ibm.crypto.grep11.grpc.GenerateRandomResponse.Builder.class);
+  }
+
+  /**
+   * <code>bytes Rnd = 1;</code>
+   *
+   * @return The rnd.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString getRnd() {
+    return rnd_;
+  }
+
+  @java.lang.Override
+  public final boolean isInitialized() {
+    byte isInitialized = memoizedIsInitialized;
+    if (isInitialized == 1) return true;
+    if (isInitialized == 0) return false;
+
+    memoizedIsInitialized = 1;
+    return true;
+  }
+
+  @java.lang.Override
+  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+    if (!rnd_.isEmpty()) {
+      output.writeBytes(1, rnd_);
+    }
+    unknownFields.writeTo(output);
+  }
+
+  @java.lang.Override
+  public int getSerializedSize() {
+    int size = memoizedSize;
+    if (size != -1) return size;
+
+    size = 0;
+    if (!rnd_.isEmpty()) {
+      size += com.google.protobuf.CodedOutputStream.computeBytesSize(1, rnd_);
+    }
+    size += unknownFields.getSerializedSize();
+    memoizedSize = size;
+    return size;
+  }
+
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
+    if (obj == this) {
+      return true;
+    }
+    if (!(obj instanceof com.ibm.crypto.grep11.grpc.GenerateRandomResponse)) {
+      return super.equals(obj);
+    }
+    com.ibm.crypto.grep11.grpc.GenerateRandomResponse other =
+        (com.ibm.crypto.grep11.grpc.GenerateRandomResponse) obj;
+
+    if (!getRnd().equals(other.getRnd())) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
+  }
+
+  @java.lang.Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + RND_FIELD_NUMBER;
+    hash = (53 * hash) + getRnd().hashCode();
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
+  }
+
+  @java.lang.Override
+  public Builder newBuilderForType() {
+    return newBuilder();
   }
 
   @java.lang.Override
@@ -256,11 +280,34 @@ public final class GenerateRandomResponse extends com.google.protobuf.GeneratedM
     Builder builder = new Builder(parent);
     return builder;
   }
+
+  @java.lang.Override
+  public com.google.protobuf.Parser<GenerateRandomResponse> getParserForType() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.GenerateRandomResponse getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
+  }
+
   /** Protobuf type {@code grep11.GenerateRandomResponse} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
       // @@protoc_insertion_point(builder_implements:grep11.GenerateRandomResponse)
       com.ibm.crypto.grep11.grpc.GenerateRandomResponseOrBuilder {
+    private com.google.protobuf.ByteString rnd_ = com.google.protobuf.ByteString.EMPTY;
+
+    // Construct using com.ibm.crypto.grep11.grpc.GenerateRandomResponse.newBuilder()
+    private Builder() {
+      maybeForceBuilderInitialization();
+    }
+
+    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      super(parent);
+      maybeForceBuilderInitialization();
+    }
+
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
       return com.ibm.crypto.grep11.grpc.Hsm
           .internal_static_grep11_GenerateRandomResponse_descriptor;
@@ -274,16 +321,6 @@ public final class GenerateRandomResponse extends com.google.protobuf.GeneratedM
           .ensureFieldAccessorsInitialized(
               com.ibm.crypto.grep11.grpc.GenerateRandomResponse.class,
               com.ibm.crypto.grep11.grpc.GenerateRandomResponse.Builder.class);
-    }
-
-    // Construct using com.ibm.crypto.grep11.grpc.GenerateRandomResponse.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
     }
 
     private void maybeForceBuilderInitialization() {
@@ -406,7 +443,6 @@ public final class GenerateRandomResponse extends com.google.protobuf.GeneratedM
       return this;
     }
 
-    private com.google.protobuf.ByteString rnd_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes Rnd = 1;</code>
      *
@@ -455,41 +491,5 @@ public final class GenerateRandomResponse extends com.google.protobuf.GeneratedM
     }
 
     // @@protoc_insertion_point(builder_scope:grep11.GenerateRandomResponse)
-  }
-
-  // @@protoc_insertion_point(class_scope:grep11.GenerateRandomResponse)
-  private static final com.ibm.crypto.grep11.grpc.GenerateRandomResponse DEFAULT_INSTANCE;
-
-  static {
-    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.GenerateRandomResponse();
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GenerateRandomResponse getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  private static final com.google.protobuf.Parser<GenerateRandomResponse> PARSER =
-      new com.google.protobuf.AbstractParser<GenerateRandomResponse>() {
-        @java.lang.Override
-        public GenerateRandomResponse parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new GenerateRandomResponse(input, extensionRegistry);
-        }
-      };
-
-  public static com.google.protobuf.Parser<GenerateRandomResponse> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<GenerateRandomResponse> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.GenerateRandomResponse getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
   }
 }

@@ -8,7 +8,33 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
     implements
     // @@protoc_insertion_point(message_implements:grep11.WrapKeyRequest)
     WrapKeyRequestOrBuilder {
+  public static final int KEY_FIELD_NUMBER = 1;
+  public static final int KEK_FIELD_NUMBER = 2;
+  public static final int MACKEY_FIELD_NUMBER = 3;
+  public static final int MECH_FIELD_NUMBER = 4;
   private static final long serialVersionUID = 0L;
+  // @@protoc_insertion_point(class_scope:grep11.WrapKeyRequest)
+  private static final com.ibm.crypto.grep11.grpc.WrapKeyRequest DEFAULT_INSTANCE;
+  private static final com.google.protobuf.Parser<WrapKeyRequest> PARSER =
+      new com.google.protobuf.AbstractParser<WrapKeyRequest>() {
+        @java.lang.Override
+        public WrapKeyRequest parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new WrapKeyRequest(input, extensionRegistry);
+        }
+      };
+
+  static {
+    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.WrapKeyRequest();
+  }
+
+  private com.google.protobuf.ByteString key_;
+  private com.google.protobuf.ByteString keK_;
+  private com.google.protobuf.ByteString macKey_;
+  private com.ibm.crypto.grep11.grpc.Mechanism mech_;
+  private byte memoizedIsInitialized = -1;
   // Use WrapKeyRequest.newBuilder() to construct.
   private WrapKeyRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -19,18 +45,6 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
     keK_ = com.google.protobuf.ByteString.EMPTY;
     macKey_ = com.google.protobuf.ByteString.EMPTY;
   }
-
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new WrapKeyRequest();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-    return this.unknownFields;
-  }
-
   private WrapKeyRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -103,6 +117,105 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
     return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_WrapKeyRequest_descriptor;
   }
 
+  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(
+      java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(byte[] data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(
+      byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(java.io.InputStream input)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(
+      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+        PARSER, input, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseDelimitedFrom(
+      java.io.InputStream input) throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseDelimitedFrom(
+      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
+        PARSER, input, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(
+      com.google.protobuf.CodedInputStream input) throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+        PARSER, input, extensionRegistry);
+  }
+
+  public static Builder newBuilder() {
+    return DEFAULT_INSTANCE.toBuilder();
+  }
+
+  public static Builder newBuilder(com.ibm.crypto.grep11.grpc.WrapKeyRequest prototype) {
+    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  public static com.google.protobuf.Parser<WrapKeyRequest> parser() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new WrapKeyRequest();
+  }
+
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    return this.unknownFields;
+  }
+
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
@@ -112,8 +225,6 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
             com.ibm.crypto.grep11.grpc.WrapKeyRequest.Builder.class);
   }
 
-  public static final int KEY_FIELD_NUMBER = 1;
-  private com.google.protobuf.ByteString key_;
   /**
    * <code>bytes Key = 1;</code>
    *
@@ -124,8 +235,6 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
     return key_;
   }
 
-  public static final int KEK_FIELD_NUMBER = 2;
-  private com.google.protobuf.ByteString keK_;
   /**
    * <code>bytes KeK = 2;</code>
    *
@@ -136,8 +245,6 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
     return keK_;
   }
 
-  public static final int MACKEY_FIELD_NUMBER = 3;
-  private com.google.protobuf.ByteString macKey_;
   /**
    * <code>bytes MacKey = 3;</code>
    *
@@ -148,8 +255,6 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
     return macKey_;
   }
 
-  public static final int MECH_FIELD_NUMBER = 4;
-  private com.ibm.crypto.grep11.grpc.Mechanism mech_;
   /**
    * <code>.grep11.Mechanism Mech = 4;</code>
    *
@@ -159,6 +264,7 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
   public boolean hasMech() {
     return mech_ != null;
   }
+
   /**
    * <code>.grep11.Mechanism Mech = 4;</code>
    *
@@ -168,13 +274,12 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
   public com.ibm.crypto.grep11.grpc.Mechanism getMech() {
     return mech_ == null ? com.ibm.crypto.grep11.grpc.Mechanism.getDefaultInstance() : mech_;
   }
+
   /** <code>.grep11.Mechanism Mech = 4;</code> */
   @java.lang.Override
   public com.ibm.crypto.grep11.grpc.MechanismOrBuilder getMechOrBuilder() {
     return getMech();
   }
-
-  private byte memoizedIsInitialized = -1;
 
   @java.lang.Override
   public final boolean isInitialized() {
@@ -270,89 +375,9 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
     return hash;
   }
 
-  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(java.nio.ByteBuffer data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(
-      java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(
-      byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(
-      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-        PARSER, input, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseDelimitedFrom(
-      java.io.InputStream input) throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseDelimitedFrom(
-      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
-        PARSER, input, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(
-      com.google.protobuf.CodedInputStream input) throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-        PARSER, input, extensionRegistry);
-  }
-
   @java.lang.Override
   public Builder newBuilderForType() {
     return newBuilder();
-  }
-
-  public static Builder newBuilder() {
-    return DEFAULT_INSTANCE.toBuilder();
-  }
-
-  public static Builder newBuilder(com.ibm.crypto.grep11.grpc.WrapKeyRequest prototype) {
-    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
 
   @java.lang.Override
@@ -365,11 +390,42 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
+  @java.lang.Override
+  public com.google.protobuf.Parser<WrapKeyRequest> getParserForType() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.WrapKeyRequest getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
+  }
+
   /** Protobuf type {@code grep11.WrapKeyRequest} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
       // @@protoc_insertion_point(builder_implements:grep11.WrapKeyRequest)
       com.ibm.crypto.grep11.grpc.WrapKeyRequestOrBuilder {
+    private com.google.protobuf.ByteString key_ = com.google.protobuf.ByteString.EMPTY;
+    private com.google.protobuf.ByteString keK_ = com.google.protobuf.ByteString.EMPTY;
+    private com.google.protobuf.ByteString macKey_ = com.google.protobuf.ByteString.EMPTY;
+    private com.ibm.crypto.grep11.grpc.Mechanism mech_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+            com.ibm.crypto.grep11.grpc.Mechanism,
+            com.ibm.crypto.grep11.grpc.Mechanism.Builder,
+            com.ibm.crypto.grep11.grpc.MechanismOrBuilder>
+        mechBuilder_;
+
+    // Construct using com.ibm.crypto.grep11.grpc.WrapKeyRequest.newBuilder()
+    private Builder() {
+      maybeForceBuilderInitialization();
+    }
+
+    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      super(parent);
+      maybeForceBuilderInitialization();
+    }
+
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
       return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_WrapKeyRequest_descriptor;
     }
@@ -381,16 +437,6 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
           .ensureFieldAccessorsInitialized(
               com.ibm.crypto.grep11.grpc.WrapKeyRequest.class,
               com.ibm.crypto.grep11.grpc.WrapKeyRequest.Builder.class);
-    }
-
-    // Construct using com.ibm.crypto.grep11.grpc.WrapKeyRequest.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
     }
 
     private void maybeForceBuilderInitialization() {
@@ -536,7 +582,6 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
       return this;
     }
 
-    private com.google.protobuf.ByteString key_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes Key = 1;</code>
      *
@@ -546,6 +591,7 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ByteString getKey() {
       return key_;
     }
+
     /**
      * <code>bytes Key = 1;</code>
      *
@@ -561,6 +607,7 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      * <code>bytes Key = 1;</code>
      *
@@ -573,7 +620,6 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
       return this;
     }
 
-    private com.google.protobuf.ByteString keK_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes KeK = 2;</code>
      *
@@ -583,6 +629,7 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ByteString getKeK() {
       return keK_;
     }
+
     /**
      * <code>bytes KeK = 2;</code>
      *
@@ -598,6 +645,7 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      * <code>bytes KeK = 2;</code>
      *
@@ -610,7 +658,6 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
       return this;
     }
 
-    private com.google.protobuf.ByteString macKey_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes MacKey = 3;</code>
      *
@@ -620,6 +667,7 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ByteString getMacKey() {
       return macKey_;
     }
+
     /**
      * <code>bytes MacKey = 3;</code>
      *
@@ -635,6 +683,7 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      * <code>bytes MacKey = 3;</code>
      *
@@ -647,12 +696,6 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
       return this;
     }
 
-    private com.ibm.crypto.grep11.grpc.Mechanism mech_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-            com.ibm.crypto.grep11.grpc.Mechanism,
-            com.ibm.crypto.grep11.grpc.Mechanism.Builder,
-            com.ibm.crypto.grep11.grpc.MechanismOrBuilder>
-        mechBuilder_;
     /**
      * <code>.grep11.Mechanism Mech = 4;</code>
      *
@@ -772,41 +815,5 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
     }
 
     // @@protoc_insertion_point(builder_scope:grep11.WrapKeyRequest)
-  }
-
-  // @@protoc_insertion_point(class_scope:grep11.WrapKeyRequest)
-  private static final com.ibm.crypto.grep11.grpc.WrapKeyRequest DEFAULT_INSTANCE;
-
-  static {
-    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.WrapKeyRequest();
-  }
-
-  public static com.ibm.crypto.grep11.grpc.WrapKeyRequest getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  private static final com.google.protobuf.Parser<WrapKeyRequest> PARSER =
-      new com.google.protobuf.AbstractParser<WrapKeyRequest>() {
-        @java.lang.Override
-        public WrapKeyRequest parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new WrapKeyRequest(input, extensionRegistry);
-        }
-      };
-
-  public static com.google.protobuf.Parser<WrapKeyRequest> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<WrapKeyRequest> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.WrapKeyRequest getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
   }
 }

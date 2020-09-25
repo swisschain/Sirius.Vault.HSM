@@ -4,12 +4,344 @@
 package io.swisschain.sirius.vaultApi.generated.transactions;
 
 public final class TransactionsOuterClass {
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestRequest_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponse_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponseBody_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponseBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestErrorResponseBody_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestErrorResponseBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transactions_TransactionSigningRequest_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transactions_TransactionSigningRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transactions_CoinToSpend_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transactions_CoinToSpend_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transactions_CoinId_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transactions_CoinId_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAsset_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAsset_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAssetId_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAssetId_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestRequest_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponse_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponseBody_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponseBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestErrorResponseBody_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestErrorResponseBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestRequest_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponse_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponseBody_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponseBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestErrorResponseBody_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestErrorResponseBody_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.FileDescriptor descriptor;
+
+  static {
+    java.lang.String[] descriptorData = {
+      "\n\022transactions.proto\022\'swisschain.sirius."
+          + "vaultApi.transactions\032\036google/protobuf/w"
+          + "rappers.proto\032\037google/protobuf/timestamp"
+          + ".proto\032\014common.proto\"%\n#GetTransactionSi"
+          + "gningRequestRequest\"\376\001\n$GetTransactionSi"
+          + "gningRequestResponse\022e\n\010response\030\001 \001(\0132Q"
+          + ".swisschain.sirius.vaultApi.transactions"
+          + ".GetTransactionSigningRequestResponseBod"
+          + "yH\000\022g\n\005error\030\002 \001(\0132V.swisschain.sirius.v"
+          + "aultApi.transactions.GetTransactionSigni"
+          + "ngRequestErrorResponseBodyH\000B\006\n\004body\"\200\001\n"
+          + "(GetTransactionSigningRequestResponseBod"
+          + "y\022T\n\010requests\030\001 \003(\0132B.swisschain.sirius."
+          + "vaultApi.transactions.TransactionSigning"
+          + "Request\"\356\001\n-GetTransactionSigningRequest"
+          + "ErrorResponseBody\022t\n\nerror_code\030\001 \001(\0162`."
+          + "swisschain.sirius.vaultApi.transactions."
+          + "GetTransactionSigningRequestErrorRespons"
+          + "eBody.ErrorCode\022\025\n\rerror_message\030\002 \001(\t\"0"
+          + "\n\tErrorCode\022\013\n\007UNKNOWN\020\000\022\026\n\022INVALID_PARA"
+          + "METERS\020\001\"\357\003\n\031TransactionSigningRequest\022\n"
+          + "\n\002id\030\001 \001(\003\022\025\n\rblockchain_id\030\002 \001(\t\022D\n\014net"
+          + "work_type\030\003 \001(\0162..swisschain.sirius.vaul"
+          + "tApi.common.NetworkType\022\025\n\rprotocol_code"
+          + "\030\004 \001(\t\022n\n\037double_spending_protection_typ"
+          + "e\030\005 \001(\0162E.swisschain.sirius.vaultApi.tra"
+          + "nsactions.DoubleSpendingProtectionType\022\031"
+          + "\n\021built_transaction\030\006 \001(\014\022\031\n\021signing_add"
+          + "resses\030\007 \003(\t\022L\n\016coins_to_spend\030\010 \003(\01324.s"
+          + "wisschain.sirius.vaultApi.transactions.C"
+          + "oinToSpend\022.\n\ncreated_at\030\t \001(\0132\032.google."
+          + "protobuf.Timestamp\022.\n\nupdated_at\030\n \001(\0132\032"
+          + ".google.protobuf.Timestamp\"\220\002\n\013CoinToSpe"
+          + "nd\022;\n\002id\030\001 \001(\0132/.swisschain.sirius.vault"
+          + "Api.transactions.CoinId\022G\n\005asset\030\002 \001(\01328"
+          + ".swisschain.sirius.vaultApi.transactions"
+          + ".BlockchainAsset\022<\n\005value\030\003 \001(\0132-.swissc"
+          + "hain.sirius.vaultApi.common.BigDecimal\022,"
+          + "\n\006redeem\030\004 \001(\0132\034.google.protobuf.StringV"
+          + "alue\022\017\n\007address\030\005 \001(\t\"0\n\006CoinId\022\026\n\016trans"
+          + "action_id\030\001 \001(\t\022\016\n\006number\030\002 \001(\005\"k\n\017Block"
+          + "chainAsset\022F\n\002id\030\001 \001(\0132:.swisschain.siri"
+          + "us.vaultApi.transactions.BlockchainAsset"
+          + "Id\022\020\n\010accuracy\030\002 \001(\005\"R\n\021BlockchainAssetI"
+          + "d\022\016\n\006symbol\030\001 \001(\t\022-\n\007address\030\002 \001(\0132\034.goo"
+          + "gle.protobuf.StringValue\"\231\001\n\'ConfirmTran"
+          + "sactionSigningRequestRequest\022\022\n\nrequest_"
+          + "id\030\001 \001(\t\022&\n\036transaction_signing_request_"
+          + "id\030\002 \001(\003\022\026\n\016transaction_id\030\004 \001(\t\022\032\n\022sign"
+          + "ed_transaction\030\005 \001(\014\"\212\002\n(ConfirmTransact"
+          + "ionSigningRequestResponse\022i\n\010response\030\001 "
+          + "\001(\0132U.swisschain.sirius.vaultApi.transac"
+          + "tions.ConfirmTransactionSigningRequestRe"
+          + "sponseBodyH\000\022k\n\005error\030\002 \001(\0132Z.swisschain"
+          + ".sirius.vaultApi.transactions.ConfirmTra"
+          + "nsactionSigningRequestErrorResponseBodyH"
+          + "\000B\006\n\004body\".\n,ConfirmTransactionSigningRe"
+          + "questResponseBody\"\366\001\n1ConfirmTransaction"
+          + "SigningRequestErrorResponseBody\022x\n\nerror"
+          + "_code\030\001 \001(\0162d.swisschain.sirius.vaultApi"
+          + ".transactions.ConfirmTransactionSigningR"
+          + "equestErrorResponseBody.ErrorCode\022\025\n\rerr"
+          + "or_message\030\002 \001(\t\"0\n\tErrorCode\022\013\n\007UNKNOWN"
+          + "\020\000\022\026\n\022INVALID_PARAMETERS\020\001\"\337\001\n&RejectTra"
+          + "nsactionSigningRequestRequest\022\022\n\nrequest"
+          + "_id\030\001 \001(\t\022&\n\036transaction_signing_request"
+          + "_id\030\002 \001(\003\022a\n\006reason\030\004 \001(\0162Q.swisschain.s"
+          + "irius.vaultApi.transactions.TransactionS"
+          + "igningRequestRejectionReason\022\026\n\016reason_m"
+          + "essage\030\005 \001(\t\"\207\002\n\'RejectTransactionSignin"
+          + "gRequestResponse\022h\n\010response\030\001 \001(\0132T.swi"
+          + "sschain.sirius.vaultApi.transactions.Rej"
+          + "ectTransactionSigningRequestResponseBody"
+          + "H\000\022j\n\005error\030\002 \001(\0132Y.swisschain.sirius.va"
+          + "ultApi.transactions.RejectTransactionSig"
+          + "ningRequestErrorResponseBodyH\000B\006\n\004body\"-"
+          + "\n+RejectTransactionSigningRequestRespons"
+          + "eBody\"\364\001\n0RejectTransactionSigningReques"
+          + "tErrorResponseBody\022w\n\nerror_code\030\001 \001(\0162c"
+          + ".swisschain.sirius.vaultApi.transactions"
+          + ".RejectTransactionSigningRequestErrorRes"
+          + "ponseBody.ErrorCode\022\025\n\rerror_message\030\002 \001"
+          + "(\t\"0\n\tErrorCode\022\013\n\007UNKNOWN\020\000\022\026\n\022INVALID_"
+          + "PARAMETERS\020\001*4\n\034DoubleSpendingProtection"
+          + "Type\022\t\n\005COINS\020\000\022\t\n\005NONCE\020\001*g\n(Transactio"
+          + "nSigningRequestRejectionReason\022\t\n\005OTHER\020"
+          + "\000\022\026\n\022UNKNOWN_BLOCKCHAIN\020\001\022\030\n\024UNWANTED_TR"
+          + "ANSACTION\020\0022\222\004\n\014Transactions\022\242\001\n\003Get\022L.s"
+          + "wisschain.sirius.vaultApi.transactions.G"
+          + "etTransactionSigningRequestRequest\032M.swi"
+          + "sschain.sirius.vaultApi.transactions.Get"
+          + "TransactionSigningRequestResponse\022\256\001\n\007Co"
+          + "nfirm\022P.swisschain.sirius.vaultApi.trans"
+          + "actions.ConfirmTransactionSigningRequest"
+          + "Request\032Q.swisschain.sirius.vaultApi.tra"
+          + "nsactions.ConfirmTransactionSigningReque"
+          + "stResponse\022\253\001\n\006Reject\022O.swisschain.siriu"
+          + "s.vaultApi.transactions.RejectTransactio"
+          + "nSigningRequestRequest\032P.swisschain.siri"
+          + "us.vaultApi.transactions.RejectTransacti"
+          + "onSigningRequestResponseBl\n4io.swisschai"
+          + "n.sirius.vaultApi.generated.transactions"
+          + "\252\0023Swisschain.Sirius.VaultApi.ApiContrac"
+          + "t.Transactionsb\006proto3"
+    };
+    descriptor =
+        com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
+            descriptorData,
+            new com.google.protobuf.Descriptors.FileDescriptor[] {
+              com.google.protobuf.WrappersProto.getDescriptor(),
+              com.google.protobuf.TimestampProto.getDescriptor(),
+              io.swisschain.sirius.vaultApi.generated.common.Common.getDescriptor(),
+            });
+    internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestRequest_descriptor =
+        getDescriptor().getMessageTypes().get(0);
+    internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestRequest_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestRequest_descriptor,
+            new java.lang.String[] {});
+    internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponse_descriptor =
+        getDescriptor().getMessageTypes().get(1);
+    internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponse_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponse_descriptor,
+            new java.lang.String[] {
+              "Response", "Error", "Body",
+            });
+    internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponseBody_descriptor =
+        getDescriptor().getMessageTypes().get(2);
+    internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponseBody_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponseBody_descriptor,
+            new java.lang.String[] {
+              "Requests",
+            });
+    internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestErrorResponseBody_descriptor =
+        getDescriptor().getMessageTypes().get(3);
+    internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestErrorResponseBody_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestErrorResponseBody_descriptor,
+            new java.lang.String[] {
+              "ErrorCode", "ErrorMessage",
+            });
+    internal_static_swisschain_sirius_vaultApi_transactions_TransactionSigningRequest_descriptor =
+        getDescriptor().getMessageTypes().get(4);
+    internal_static_swisschain_sirius_vaultApi_transactions_TransactionSigningRequest_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transactions_TransactionSigningRequest_descriptor,
+            new java.lang.String[] {
+              "Id",
+              "BlockchainId",
+              "NetworkType",
+              "ProtocolCode",
+              "DoubleSpendingProtectionType",
+              "BuiltTransaction",
+              "SigningAddresses",
+              "CoinsToSpend",
+              "CreatedAt",
+              "UpdatedAt",
+            });
+    internal_static_swisschain_sirius_vaultApi_transactions_CoinToSpend_descriptor =
+        getDescriptor().getMessageTypes().get(5);
+    internal_static_swisschain_sirius_vaultApi_transactions_CoinToSpend_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transactions_CoinToSpend_descriptor,
+            new java.lang.String[] {
+              "Id", "Asset", "Value", "Redeem", "Address",
+            });
+    internal_static_swisschain_sirius_vaultApi_transactions_CoinId_descriptor =
+        getDescriptor().getMessageTypes().get(6);
+    internal_static_swisschain_sirius_vaultApi_transactions_CoinId_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transactions_CoinId_descriptor,
+            new java.lang.String[] {
+              "TransactionId", "Number",
+            });
+    internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAsset_descriptor =
+        getDescriptor().getMessageTypes().get(7);
+    internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAsset_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAsset_descriptor,
+            new java.lang.String[] {
+              "Id", "Accuracy",
+            });
+    internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAssetId_descriptor =
+        getDescriptor().getMessageTypes().get(8);
+    internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAssetId_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAssetId_descriptor,
+            new java.lang.String[] {
+              "Symbol", "Address",
+            });
+    internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestRequest_descriptor =
+        getDescriptor().getMessageTypes().get(9);
+    internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestRequest_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestRequest_descriptor,
+            new java.lang.String[] {
+              "RequestId", "TransactionSigningRequestId", "TransactionId", "SignedTransaction",
+            });
+    internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponse_descriptor =
+        getDescriptor().getMessageTypes().get(10);
+    internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponse_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponse_descriptor,
+            new java.lang.String[] {
+              "Response", "Error", "Body",
+            });
+    internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponseBody_descriptor =
+        getDescriptor().getMessageTypes().get(11);
+    internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponseBody_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponseBody_descriptor,
+            new java.lang.String[] {});
+    internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestErrorResponseBody_descriptor =
+        getDescriptor().getMessageTypes().get(12);
+    internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestErrorResponseBody_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestErrorResponseBody_descriptor,
+            new java.lang.String[] {
+              "ErrorCode", "ErrorMessage",
+            });
+    internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestRequest_descriptor =
+        getDescriptor().getMessageTypes().get(13);
+    internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestRequest_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestRequest_descriptor,
+            new java.lang.String[] {
+              "RequestId", "TransactionSigningRequestId", "Reason", "ReasonMessage",
+            });
+    internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponse_descriptor =
+        getDescriptor().getMessageTypes().get(14);
+    internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponse_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponse_descriptor,
+            new java.lang.String[] {
+              "Response", "Error", "Body",
+            });
+    internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponseBody_descriptor =
+        getDescriptor().getMessageTypes().get(15);
+    internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponseBody_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponseBody_descriptor,
+            new java.lang.String[] {});
+    internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestErrorResponseBody_descriptor =
+        getDescriptor().getMessageTypes().get(16);
+    internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestErrorResponseBody_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestErrorResponseBody_descriptor,
+            new java.lang.String[] {
+              "ErrorCode", "ErrorMessage",
+            });
+    com.google.protobuf.WrappersProto.getDescriptor();
+    com.google.protobuf.TimestampProto.getDescriptor();
+    io.swisschain.sirius.vaultApi.generated.common.Common.getDescriptor();
+  }
   private TransactionsOuterClass() {}
 
   public static void registerAllExtensions(com.google.protobuf.ExtensionRegistryLite registry) {}
 
   public static void registerAllExtensions(com.google.protobuf.ExtensionRegistry registry) {
     registerAllExtensions((com.google.protobuf.ExtensionRegistryLite) registry);
+  }
+
+  public static com.google.protobuf.Descriptors.FileDescriptor getDescriptor() {
+    return descriptor;
   }
   /** Protobuf enum {@code swisschain.sirius.vaultApi.transactions.DoubleSpendingProtectionType} */
   public enum DoubleSpendingProtectionType implements com.google.protobuf.ProtocolMessageEnum {
@@ -24,13 +356,18 @@ public final class TransactionsOuterClass {
     public static final int COINS_VALUE = 0;
     /** <code>NONCE = 1;</code> */
     public static final int NONCE_VALUE = 1;
+    private static final com.google.protobuf.Internal.EnumLiteMap<DoubleSpendingProtectionType>
+        internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<DoubleSpendingProtectionType>() {
+              public DoubleSpendingProtectionType findValueByNumber(int number) {
+                return DoubleSpendingProtectionType.forNumber(number);
+              }
+            };
+    private static final DoubleSpendingProtectionType[] VALUES = values();
+    private final int value;
 
-    public final int getNumber() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalArgumentException(
-            "Can't get the number of an unknown enum value.");
-      }
-      return value;
+    private DoubleSpendingProtectionType(int value) {
+      this.value = value;
     }
 
     /**
@@ -63,13 +400,36 @@ public final class TransactionsOuterClass {
       return internalValueMap;
     }
 
-    private static final com.google.protobuf.Internal.EnumLiteMap<DoubleSpendingProtectionType>
-        internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<DoubleSpendingProtectionType>() {
-              public DoubleSpendingProtectionType findValueByNumber(int number) {
-                return DoubleSpendingProtectionType.forNumber(number);
-              }
-            };
+    public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+      return io.swisschain
+          .sirius
+          .vaultApi
+          .generated
+          .transactions
+          .TransactionsOuterClass
+          .getDescriptor()
+          .getEnumTypes()
+          .get(0);
+    }
+
+    public static DoubleSpendingProtectionType valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+      }
+      if (desc.getIndex() == -1) {
+        return UNRECOGNIZED;
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    public final int getNumber() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalArgumentException(
+            "Can't get the number of an unknown enum value.");
+      }
+      return value;
+    }
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
       if (this == UNRECOGNIZED) {
@@ -83,40 +443,8 @@ public final class TransactionsOuterClass {
       return getDescriptor();
     }
 
-    public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
-      return io.swisschain
-          .sirius
-          .vaultApi
-          .generated
-          .transactions
-          .TransactionsOuterClass
-          .getDescriptor()
-          .getEnumTypes()
-          .get(0);
-    }
-
-    private static final DoubleSpendingProtectionType[] VALUES = values();
-
-    public static DoubleSpendingProtectionType valueOf(
-        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-      if (desc.getType() != getDescriptor()) {
-        throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
-      }
-      if (desc.getIndex() == -1) {
-        return UNRECOGNIZED;
-      }
-      return VALUES[desc.getIndex()];
-    }
-
-    private final int value;
-
-    private DoubleSpendingProtectionType(int value) {
-      this.value = value;
-    }
-
     // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.transactions.DoubleSpendingProtectionType)
   }
-
   /**
    * Protobuf enum {@code
    * swisschain.sirius.vaultApi.transactions.TransactionSigningRequestRejectionReason}
@@ -138,13 +466,20 @@ public final class TransactionsOuterClass {
     public static final int UNKNOWN_BLOCKCHAIN_VALUE = 1;
     /** <code>UNWANTED_TRANSACTION = 2;</code> */
     public static final int UNWANTED_TRANSACTION_VALUE = 2;
+    private static final com.google.protobuf.Internal.EnumLiteMap<
+            TransactionSigningRequestRejectionReason>
+        internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<
+                TransactionSigningRequestRejectionReason>() {
+              public TransactionSigningRequestRejectionReason findValueByNumber(int number) {
+                return TransactionSigningRequestRejectionReason.forNumber(number);
+              }
+            };
+    private static final TransactionSigningRequestRejectionReason[] VALUES = values();
+    private final int value;
 
-    public final int getNumber() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalArgumentException(
-            "Can't get the number of an unknown enum value.");
-      }
-      return value;
+    private TransactionSigningRequestRejectionReason(int value) {
+      this.value = value;
     }
 
     /**
@@ -179,15 +514,36 @@ public final class TransactionsOuterClass {
       return internalValueMap;
     }
 
-    private static final com.google.protobuf.Internal.EnumLiteMap<
-            TransactionSigningRequestRejectionReason>
-        internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<
-                TransactionSigningRequestRejectionReason>() {
-              public TransactionSigningRequestRejectionReason findValueByNumber(int number) {
-                return TransactionSigningRequestRejectionReason.forNumber(number);
-              }
-            };
+    public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+      return io.swisschain
+          .sirius
+          .vaultApi
+          .generated
+          .transactions
+          .TransactionsOuterClass
+          .getDescriptor()
+          .getEnumTypes()
+          .get(1);
+    }
+
+    public static TransactionSigningRequestRejectionReason valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+      }
+      if (desc.getIndex() == -1) {
+        return UNRECOGNIZED;
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    public final int getNumber() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalArgumentException(
+            "Can't get the number of an unknown enum value.");
+      }
+      return value;
+    }
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
       if (this == UNRECOGNIZED) {
@@ -201,44 +557,949 @@ public final class TransactionsOuterClass {
       return getDescriptor();
     }
 
-    public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
-      return io.swisschain
-          .sirius
-          .vaultApi
-          .generated
-          .transactions
-          .TransactionsOuterClass
-          .getDescriptor()
-          .getEnumTypes()
-          .get(1);
-    }
-
-    private static final TransactionSigningRequestRejectionReason[] VALUES = values();
-
-    public static TransactionSigningRequestRejectionReason valueOf(
-        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-      if (desc.getType() != getDescriptor()) {
-        throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
-      }
-      if (desc.getIndex() == -1) {
-        return UNRECOGNIZED;
-      }
-      return VALUES[desc.getIndex()];
-    }
-
-    private final int value;
-
-    private TransactionSigningRequestRejectionReason(int value) {
-      this.value = value;
-    }
-
     // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.transactions.TransactionSigningRequestRejectionReason)
   }
-
   public interface GetTransactionSigningRequestRequestOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestRequest)
       com.google.protobuf.MessageOrBuilder {}
+  public interface GetTransactionSigningRequestResponseOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return Whether the response field is set.
+     */
+    boolean hasResponse();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return The response.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestResponseBody
+        getResponse();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestResponseBodyOrBuilder
+        getResponseOrBuilder();
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return Whether the error field is set.
+     */
+    boolean hasError();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return The error.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestErrorResponseBody
+        getError();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody error = 2;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestErrorResponseBodyOrBuilder
+        getErrorOrBuilder();
+
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestResponse
+            .BodyCase
+        getBodyCase();
+  }
+  public interface GetTransactionSigningRequestResponseBodyOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
+     * </code>
+     */
+    java.util.List<
+            io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transactions
+                .TransactionsOuterClass
+                .TransactionSigningRequest>
+        getRequestsList();
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequest
+        getRequests(int index);
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
+     * </code>
+     */
+    int getRequestsCount();
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
+     * </code>
+     */
+    java.util.List<
+            ? extends
+                io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .transactions
+                    .TransactionsOuterClass
+                    .TransactionSigningRequestOrBuilder>
+        getRequestsOrBuilderList();
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequestOrBuilder
+        getRequestsOrBuilder(int index);
+  }
+  public interface GetTransactionSigningRequestErrorResponseBodyOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for errorCode.
+     */
+    int getErrorCodeValue();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The errorCode.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestErrorResponseBody
+            .ErrorCode
+        getErrorCode();
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The errorMessage.
+     */
+    java.lang.String getErrorMessage();
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The bytes for errorMessage.
+     */
+    com.google.protobuf.ByteString getErrorMessageBytes();
+  }
+  public interface TransactionSigningRequestOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.TransactionSigningRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>int64 id = 1;</code>
+     *
+     * @return The id.
+     */
+    long getId();
+
+    /**
+     * <code>string blockchain_id = 2;</code>
+     *
+     * @return The blockchainId.
+     */
+    java.lang.String getBlockchainId();
+    /**
+     * <code>string blockchain_id = 2;</code>
+     *
+     * @return The bytes for blockchainId.
+     */
+    com.google.protobuf.ByteString getBlockchainIdBytes();
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
+     *
+     * @return The enum numeric value on the wire for networkType.
+     */
+    int getNetworkTypeValue();
+    /**
+     * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
+     *
+     * @return The networkType.
+     */
+    io.swisschain.sirius.vaultApi.generated.common.Common.NetworkType getNetworkType();
+
+    /**
+     * <code>string protocol_code = 4;</code>
+     *
+     * @return The protocolCode.
+     */
+    java.lang.String getProtocolCode();
+    /**
+     * <code>string protocol_code = 4;</code>
+     *
+     * @return The bytes for protocolCode.
+     */
+    com.google.protobuf.ByteString getProtocolCodeBytes();
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.DoubleSpendingProtectionType double_spending_protection_type = 5;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for doubleSpendingProtectionType.
+     */
+    int getDoubleSpendingProtectionTypeValue();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.DoubleSpendingProtectionType double_spending_protection_type = 5;
+     * </code>
+     *
+     * @return The doubleSpendingProtectionType.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .DoubleSpendingProtectionType
+        getDoubleSpendingProtectionType();
+
+    /**
+     * <code>bytes built_transaction = 6;</code>
+     *
+     * @return The builtTransaction.
+     */
+    com.google.protobuf.ByteString getBuiltTransaction();
+
+    /**
+     * <code>repeated string signing_addresses = 7;</code>
+     *
+     * @return A list containing the signingAddresses.
+     */
+    java.util.List<java.lang.String> getSigningAddressesList();
+    /**
+     * <code>repeated string signing_addresses = 7;</code>
+     *
+     * @return The count of signingAddresses.
+     */
+    int getSigningAddressesCount();
+    /**
+     * <code>repeated string signing_addresses = 7;</code>
+     *
+     * @param index The index of the element to return.
+     * @return The signingAddresses at the given index.
+     */
+    java.lang.String getSigningAddresses(int index);
+    /**
+     * <code>repeated string signing_addresses = 7;</code>
+     *
+     * @param index The index of the value to return.
+     * @return The bytes of the signingAddresses at the given index.
+     */
+    com.google.protobuf.ByteString getSigningAddressesBytes(int index);
+
+    /**
+     * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
+     * </code>
+     */
+    java.util.List<
+            io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinToSpend>
+        getCoinsToSpendList();
+    /**
+     * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
+     * </code>
+     */
+    io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinToSpend
+        getCoinsToSpend(int index);
+    /**
+     * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
+     * </code>
+     */
+    int getCoinsToSpendCount();
+    /**
+     * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
+     * </code>
+     */
+    java.util.List<
+            ? extends
+                io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .transactions
+                    .TransactionsOuterClass
+                    .CoinToSpendOrBuilder>
+        getCoinsToSpendOrBuilderList();
+    /**
+     * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
+     * </code>
+     */
+    io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinToSpendOrBuilder
+        getCoinsToSpendOrBuilder(int index);
+
+    /**
+     * <code>.google.protobuf.Timestamp created_at = 9;</code>
+     *
+     * @return Whether the createdAt field is set.
+     */
+    boolean hasCreatedAt();
+    /**
+     * <code>.google.protobuf.Timestamp created_at = 9;</code>
+     *
+     * @return The createdAt.
+     */
+    com.google.protobuf.Timestamp getCreatedAt();
+    /** <code>.google.protobuf.Timestamp created_at = 9;</code> */
+    com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder();
+
+    /**
+     * <code>.google.protobuf.Timestamp updated_at = 10;</code>
+     *
+     * @return Whether the updatedAt field is set.
+     */
+    boolean hasUpdatedAt();
+    /**
+     * <code>.google.protobuf.Timestamp updated_at = 10;</code>
+     *
+     * @return The updatedAt.
+     */
+    com.google.protobuf.Timestamp getUpdatedAt();
+    /** <code>.google.protobuf.Timestamp updated_at = 10;</code> */
+    com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder();
+  }
+  public interface CoinToSpendOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.CoinToSpend)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code>
+     *
+     * @return Whether the id field is set.
+     */
+    boolean hasId();
+    /**
+     * <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code>
+     *
+     * @return The id.
+     */
+    io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId getId();
+    /** <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code> */
+    io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinIdOrBuilder
+        getIdOrBuilder();
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code>
+     *
+     * @return Whether the asset field is set.
+     */
+    boolean hasAsset();
+    /**
+     * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code>
+     *
+     * @return The asset.
+     */
+    io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.BlockchainAsset
+        getAsset();
+    /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code> */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .BlockchainAssetOrBuilder
+        getAssetOrBuilder();
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
+     *
+     * @return Whether the value field is set.
+     */
+    boolean hasValue();
+    /**
+     * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
+     *
+     * @return The value.
+     */
+    io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal getValue();
+    /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
+    io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimalOrBuilder getValueOrBuilder();
+
+    /**
+     * <code>.google.protobuf.StringValue redeem = 4;</code>
+     *
+     * @return Whether the redeem field is set.
+     */
+    boolean hasRedeem();
+    /**
+     * <code>.google.protobuf.StringValue redeem = 4;</code>
+     *
+     * @return The redeem.
+     */
+    com.google.protobuf.StringValue getRedeem();
+    /** <code>.google.protobuf.StringValue redeem = 4;</code> */
+    com.google.protobuf.StringValueOrBuilder getRedeemOrBuilder();
+
+    /**
+     * <code>string address = 5;</code>
+     *
+     * @return The address.
+     */
+    java.lang.String getAddress();
+    /**
+     * <code>string address = 5;</code>
+     *
+     * @return The bytes for address.
+     */
+    com.google.protobuf.ByteString getAddressBytes();
+  }
+  public interface CoinIdOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.CoinId)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string transaction_id = 1;</code>
+     *
+     * @return The transactionId.
+     */
+    java.lang.String getTransactionId();
+    /**
+     * <code>string transaction_id = 1;</code>
+     *
+     * @return The bytes for transactionId.
+     */
+    com.google.protobuf.ByteString getTransactionIdBytes();
+
+    /**
+     * <code>int32 number = 2;</code>
+     *
+     * @return The number.
+     */
+    int getNumber();
+  }
+  public interface BlockchainAssetOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.BlockchainAsset)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code>
+     *
+     * @return Whether the id field is set.
+     */
+    boolean hasId();
+    /**
+     * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code>
+     *
+     * @return The id.
+     */
+    io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.BlockchainAssetId
+        getId();
+    /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code> */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .BlockchainAssetIdOrBuilder
+        getIdOrBuilder();
+
+    /**
+     * <code>int32 accuracy = 2;</code>
+     *
+     * @return The accuracy.
+     */
+    int getAccuracy();
+  }
+  public interface BlockchainAssetIdOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.BlockchainAssetId)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string symbol = 1;</code>
+     *
+     * @return The symbol.
+     */
+    java.lang.String getSymbol();
+    /**
+     * <code>string symbol = 1;</code>
+     *
+     * @return The bytes for symbol.
+     */
+    com.google.protobuf.ByteString getSymbolBytes();
+
+    /**
+     * <code>.google.protobuf.StringValue address = 2;</code>
+     *
+     * @return Whether the address field is set.
+     */
+    boolean hasAddress();
+    /**
+     * <code>.google.protobuf.StringValue address = 2;</code>
+     *
+     * @return The address.
+     */
+    com.google.protobuf.StringValue getAddress();
+    /** <code>.google.protobuf.StringValue address = 2;</code> */
+    com.google.protobuf.StringValueOrBuilder getAddressOrBuilder();
+  }
+  public interface ConfirmTransactionSigningRequestRequestOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The requestId.
+     */
+    java.lang.String getRequestId();
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The bytes for requestId.
+     */
+    com.google.protobuf.ByteString getRequestIdBytes();
+
+    /**
+     * <code>int64 transaction_signing_request_id = 2;</code>
+     *
+     * @return The transactionSigningRequestId.
+     */
+    long getTransactionSigningRequestId();
+
+    /**
+     * <code>string transaction_id = 4;</code>
+     *
+     * @return The transactionId.
+     */
+    java.lang.String getTransactionId();
+    /**
+     * <code>string transaction_id = 4;</code>
+     *
+     * @return The bytes for transactionId.
+     */
+    com.google.protobuf.ByteString getTransactionIdBytes();
+
+    /**
+     * <code>bytes signed_transaction = 5;</code>
+     *
+     * @return The signedTransaction.
+     */
+    com.google.protobuf.ByteString getSignedTransaction();
+  }
+  public interface ConfirmTransactionSigningRequestResponseOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return Whether the response field is set.
+     */
+    boolean hasResponse();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return The response.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestResponseBody
+        getResponse();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestResponseBodyOrBuilder
+        getResponseOrBuilder();
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return Whether the error field is set.
+     */
+    boolean hasError();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return The error.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestErrorResponseBody
+        getError();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody error = 2;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestErrorResponseBodyOrBuilder
+        getErrorOrBuilder();
+
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestResponse
+            .BodyCase
+        getBodyCase();
+  }
+  public interface ConfirmTransactionSigningRequestResponseBodyOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody)
+      com.google.protobuf.MessageOrBuilder {}
+  public interface ConfirmTransactionSigningRequestErrorResponseBodyOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for errorCode.
+     */
+    int getErrorCodeValue();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The errorCode.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestErrorResponseBody
+            .ErrorCode
+        getErrorCode();
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The errorMessage.
+     */
+    java.lang.String getErrorMessage();
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The bytes for errorMessage.
+     */
+    com.google.protobuf.ByteString getErrorMessageBytes();
+  }
+  public interface RejectTransactionSigningRequestRequestOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The requestId.
+     */
+    java.lang.String getRequestId();
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The bytes for requestId.
+     */
+    com.google.protobuf.ByteString getRequestIdBytes();
+
+    /**
+     * <code>int64 transaction_signing_request_id = 2;</code>
+     *
+     * @return The transactionSigningRequestId.
+     */
+    long getTransactionSigningRequestId();
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.TransactionSigningRequestRejectionReason reason = 4;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for reason.
+     */
+    int getReasonValue();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.TransactionSigningRequestRejectionReason reason = 4;
+     * </code>
+     *
+     * @return The reason.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequestRejectionReason
+        getReason();
+
+    /**
+     * <code>string reason_message = 5;</code>
+     *
+     * @return The reasonMessage.
+     */
+    java.lang.String getReasonMessage();
+    /**
+     * <code>string reason_message = 5;</code>
+     *
+     * @return The bytes for reasonMessage.
+     */
+    com.google.protobuf.ByteString getReasonMessageBytes();
+  }
+  public interface RejectTransactionSigningRequestResponseOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return Whether the response field is set.
+     */
+    boolean hasResponse();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return The response.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestResponseBody
+        getResponse();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestResponseBodyOrBuilder
+        getResponseOrBuilder();
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return Whether the error field is set.
+     */
+    boolean hasError();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return The error.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestErrorResponseBody
+        getError();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody error = 2;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestErrorResponseBodyOrBuilder
+        getErrorOrBuilder();
+
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestResponse
+            .BodyCase
+        getBodyCase();
+  }
+  public interface RejectTransactionSigningRequestResponseBodyOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody)
+      com.google.protobuf.MessageOrBuilder {}
+  public interface RejectTransactionSigningRequestErrorResponseBodyOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for errorCode.
+     */
+    int getErrorCodeValue();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The errorCode.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestErrorResponseBody
+            .ErrorCode
+        getErrorCode();
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The errorMessage.
+     */
+    java.lang.String getErrorMessage();
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The bytes for errorMessage.
+     */
+    com.google.protobuf.ByteString getErrorMessageBytes();
+  }
+
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestRequest}
@@ -249,6 +1510,39 @@ public final class TransactionsOuterClass {
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestRequest)
       GetTransactionSigningRequestRequestOrBuilder {
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestRequest)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestRequest
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<GetTransactionSigningRequestRequest> PARSER =
+        new com.google.protobuf.AbstractParser<GetTransactionSigningRequestRequest>() {
+          @java.lang.Override
+          public GetTransactionSigningRequestRequest parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new GetTransactionSigningRequestRequest(input, extensionRegistry);
+          }
+        };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .GetTransactionSigningRequestRequest();
+    }
+
+    private byte memoizedIsInitialized = -1;
+
     // Use GetTransactionSigningRequestRequest.newBuilder() to construct.
     private GetTransactionSigningRequestRequest(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -256,17 +1550,6 @@ public final class TransactionsOuterClass {
     }
 
     private GetTransactionSigningRequestRequest() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new GetTransactionSigningRequestRequest();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
 
     private GetTransactionSigningRequestRequest(
         com.google.protobuf.CodedInputStream input,
@@ -313,108 +1596,6 @@ public final class TransactionsOuterClass {
           .transactions
           .TransactionsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestRequest_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestRequest_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .GetTransactionSigningRequestRequest
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .GetTransactionSigningRequestRequest
-                  .Builder
-                  .class);
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .GetTransactionSigningRequestRequest)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .GetTransactionSigningRequestRequest
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transactions
-                      .TransactionsOuterClass
-                      .GetTransactionSigningRequestRequest)
-                  obj;
-
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -567,11 +1748,6 @@ public final class TransactionsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -588,6 +1764,137 @@ public final class TransactionsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestRequest
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<GetTransactionSigningRequestRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new GetTransactionSigningRequestRequest();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .GetTransactionSigningRequestRequest
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .GetTransactionSigningRequestRequest
+                  .Builder
+                  .class);
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .GetTransactionSigningRequestRequest)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .GetTransactionSigningRequestRequest
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transactions
+                      .TransactionsOuterClass
+                      .GetTransactionSigningRequestRequest)
+                  obj;
+
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -599,6 +1906,24 @@ public final class TransactionsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetTransactionSigningRequestRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestRequest
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestRequest}
@@ -614,6 +1939,17 @@ public final class TransactionsOuterClass {
             .transactions
             .TransactionsOuterClass
             .GetTransactionSigningRequestRequestOrBuilder {
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.GetTransactionSigningRequestRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -647,17 +1983,6 @@ public final class TransactionsOuterClass {
                     .GetTransactionSigningRequestRequest
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.GetTransactionSigningRequestRequest.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -876,161 +2201,8 @@ public final class TransactionsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestRequest)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestRequest)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestRequest
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .GetTransactionSigningRequestRequest();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestRequest
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<GetTransactionSigningRequestRequest> PARSER =
-        new com.google.protobuf.AbstractParser<GetTransactionSigningRequestRequest>() {
-          @java.lang.Override
-          public GetTransactionSigningRequestRequest parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new GetTransactionSigningRequestRequest(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<GetTransactionSigningRequestRequest> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<GetTransactionSigningRequestRequest> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestRequest
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface GetTransactionSigningRequestResponseOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponse)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return Whether the response field is set.
-     */
-    boolean hasResponse();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return The response.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestResponseBody
-        getResponse();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestResponseBodyOrBuilder
-        getResponseOrBuilder();
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return Whether the error field is set.
-     */
-    boolean hasError();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return The error.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestErrorResponseBody
-        getError();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody error = 2;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestErrorResponseBodyOrBuilder
-        getErrorOrBuilder();
-
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestResponse
-            .BodyCase
-        getBodyCase();
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponse}
@@ -1040,25 +2212,50 @@ public final class TransactionsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponse)
       GetTransactionSigningRequestResponseOrBuilder {
+    public static final int RESPONSE_FIELD_NUMBER = 1;
+    public static final int ERROR_FIELD_NUMBER = 2;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponse)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestResponse
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<GetTransactionSigningRequestResponse> PARSER =
+        new com.google.protobuf.AbstractParser<GetTransactionSigningRequestResponse>() {
+          @java.lang.Override
+          public GetTransactionSigningRequestResponse parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new GetTransactionSigningRequestResponse(input, extensionRegistry);
+          }
+        };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .GetTransactionSigningRequestResponse();
+    }
+
+    private int bodyCase_ = 0;
+    private java.lang.Object body_;
+    private byte memoizedIsInitialized = -1;
     // Use GetTransactionSigningRequestResponse.newBuilder() to construct.
     private GetTransactionSigningRequestResponse(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
 
-    private GetTransactionSigningRequestResponse() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new GetTransactionSigningRequestResponse();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
+        private GetTransactionSigningRequestResponse() {};
 
     private GetTransactionSigningRequestResponse(
         com.google.protobuf.CodedInputStream input,
@@ -1191,366 +2388,6 @@ public final class TransactionsOuterClass {
           .transactions
           .TransactionsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponse_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponse_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .GetTransactionSigningRequestResponse
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .GetTransactionSigningRequestResponse
-                  .Builder
-                  .class);
-    }
-
-    private int bodyCase_ = 0;
-    private java.lang.Object body_;
-
-    public enum BodyCase
-        implements
-            com.google.protobuf.Internal.EnumLite,
-            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      RESPONSE(1),
-      ERROR(2),
-      BODY_NOT_SET(0);
-      private final int value;
-
-      private BodyCase(int value) {
-        this.value = value;
-      }
-      /**
-       * @param value The number of the enum to look for.
-       * @return The enum associated with the given number.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static BodyCase valueOf(int value) {
-        return forNumber(value);
-      }
-
-      public static BodyCase forNumber(int value) {
-        switch (value) {
-          case 1:
-            return RESPONSE;
-          case 2:
-            return ERROR;
-          case 0:
-            return BODY_NOT_SET;
-          default:
-            return null;
-        }
-      }
-
-      public int getNumber() {
-        return this.value;
-      }
-    };
-
-    public BodyCase getBodyCase() {
-      return BodyCase.forNumber(bodyCase_);
-    }
-
-    public static final int RESPONSE_FIELD_NUMBER = 1;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return Whether the response field is set.
-     */
-    @java.lang.Override
-    public boolean hasResponse() {
-      return bodyCase_ == 1;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return The response.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestResponseBody
-        getResponse() {
-      if (bodyCase_ == 1) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transactions
-                .TransactionsOuterClass
-                .GetTransactionSigningRequestResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .GetTransactionSigningRequestResponseBody.getDefaultInstance();
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestResponseBodyOrBuilder
-        getResponseOrBuilder() {
-      if (bodyCase_ == 1) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transactions
-                .TransactionsOuterClass
-                .GetTransactionSigningRequestResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .GetTransactionSigningRequestResponseBody.getDefaultInstance();
-    }
-
-    public static final int ERROR_FIELD_NUMBER = 2;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return Whether the error field is set.
-     */
-    @java.lang.Override
-    public boolean hasError() {
-      return bodyCase_ == 2;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return The error.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestErrorResponseBody
-        getError() {
-      if (bodyCase_ == 2) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transactions
-                .TransactionsOuterClass
-                .GetTransactionSigningRequestErrorResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .GetTransactionSigningRequestErrorResponseBody.getDefaultInstance();
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody error = 2;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestErrorResponseBodyOrBuilder
-        getErrorOrBuilder() {
-      if (bodyCase_ == 2) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transactions
-                .TransactionsOuterClass
-                .GetTransactionSigningRequestErrorResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .GetTransactionSigningRequestErrorResponseBody.getDefaultInstance();
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (bodyCase_ == 1) {
-        output.writeMessage(
-            1,
-            (io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .transactions
-                    .TransactionsOuterClass
-                    .GetTransactionSigningRequestResponseBody)
-                body_);
-      }
-      if (bodyCase_ == 2) {
-        output.writeMessage(
-            2,
-            (io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .transactions
-                    .TransactionsOuterClass
-                    .GetTransactionSigningRequestErrorResponseBody)
-                body_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (bodyCase_ == 1) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeMessageSize(
-                1,
-                (io.swisschain
-                        .sirius
-                        .vaultApi
-                        .generated
-                        .transactions
-                        .TransactionsOuterClass
-                        .GetTransactionSigningRequestResponseBody)
-                    body_);
-      }
-      if (bodyCase_ == 2) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeMessageSize(
-                2,
-                (io.swisschain
-                        .sirius
-                        .vaultApi
-                        .generated
-                        .transactions
-                        .TransactionsOuterClass
-                        .GetTransactionSigningRequestErrorResponseBody)
-                    body_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .GetTransactionSigningRequestResponse)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .GetTransactionSigningRequestResponse
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transactions
-                      .TransactionsOuterClass
-                      .GetTransactionSigningRequestResponse)
-                  obj;
-
-      if (!getBodyCase().equals(other.getBodyCase())) return false;
-      switch (bodyCase_) {
-        case 1:
-          if (!getResponse().equals(other.getResponse())) return false;
-          break;
-        case 2:
-          if (!getError().equals(other.getError())) return false;
-          break;
-        case 0:
-        default:
-      }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      switch (bodyCase_) {
-        case 1:
-          hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
-          hash = (53 * hash) + getResponse().hashCode();
-          break;
-        case 2:
-          hash = (37 * hash) + ERROR_FIELD_NUMBER;
-          hash = (53 * hash) + getError().hashCode();
-          break;
-        case 0:
-        default:
-      }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -1703,11 +2540,6 @@ public final class TransactionsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -1724,6 +2556,354 @@ public final class TransactionsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestResponse
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<GetTransactionSigningRequestResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new GetTransactionSigningRequestResponse();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .GetTransactionSigningRequestResponse
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .GetTransactionSigningRequestResponse
+                  .Builder
+                  .class);
+    }
+
+    public BodyCase getBodyCase() {
+      return BodyCase.forNumber(bodyCase_);
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return Whether the response field is set.
+     */
+    @java.lang.Override
+    public boolean hasResponse() {
+      return bodyCase_ == 1;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return The response.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestResponseBody
+        getResponse() {
+      if (bodyCase_ == 1) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transactions
+                .TransactionsOuterClass
+                .GetTransactionSigningRequestResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .GetTransactionSigningRequestResponseBody.getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestResponseBodyOrBuilder
+        getResponseOrBuilder() {
+      if (bodyCase_ == 1) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transactions
+                .TransactionsOuterClass
+                .GetTransactionSigningRequestResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .GetTransactionSigningRequestResponseBody.getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return Whether the error field is set.
+     */
+    @java.lang.Override
+    public boolean hasError() {
+      return bodyCase_ == 2;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return The error.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestErrorResponseBody
+        getError() {
+      if (bodyCase_ == 2) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transactions
+                .TransactionsOuterClass
+                .GetTransactionSigningRequestErrorResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .GetTransactionSigningRequestErrorResponseBody.getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody error = 2;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestErrorResponseBodyOrBuilder
+        getErrorOrBuilder() {
+      if (bodyCase_ == 2) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transactions
+                .TransactionsOuterClass
+                .GetTransactionSigningRequestErrorResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .GetTransactionSigningRequestErrorResponseBody.getDefaultInstance();
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (bodyCase_ == 1) {
+        output.writeMessage(
+            1,
+            (io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .transactions
+                    .TransactionsOuterClass
+                    .GetTransactionSigningRequestResponseBody)
+                body_);
+      }
+      if (bodyCase_ == 2) {
+        output.writeMessage(
+            2,
+            (io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .transactions
+                    .TransactionsOuterClass
+                    .GetTransactionSigningRequestErrorResponseBody)
+                body_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (bodyCase_ == 1) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeMessageSize(
+                1,
+                (io.swisschain
+                        .sirius
+                        .vaultApi
+                        .generated
+                        .transactions
+                        .TransactionsOuterClass
+                        .GetTransactionSigningRequestResponseBody)
+                    body_);
+      }
+      if (bodyCase_ == 2) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeMessageSize(
+                2,
+                (io.swisschain
+                        .sirius
+                        .vaultApi
+                        .generated
+                        .transactions
+                        .TransactionsOuterClass
+                        .GetTransactionSigningRequestErrorResponseBody)
+                    body_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .GetTransactionSigningRequestResponse)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .GetTransactionSigningRequestResponse
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transactions
+                      .TransactionsOuterClass
+                      .GetTransactionSigningRequestResponse)
+                  obj;
+
+      if (!getBodyCase().equals(other.getBodyCase())) return false;
+      switch (bodyCase_) {
+        case 1:
+          if (!getResponse().equals(other.getResponse())) return false;
+          break;
+        case 2:
+          if (!getError().equals(other.getError())) return false;
+          break;
+        case 0:
+        default:
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      switch (bodyCase_) {
+        case 1:
+          hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
+          hash = (53 * hash) + getResponse().hashCode();
+          break;
+        case 2:
+          hash = (37 * hash) + ERROR_FIELD_NUMBER;
+          hash = (53 * hash) + getError().hashCode();
+          break;
+        case 0:
+        default:
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -1735,6 +2915,64 @@ public final class TransactionsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetTransactionSigningRequestResponse> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestResponse
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+public enum BodyCase
+        implements
+            com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      RESPONSE(1),
+      ERROR(2),
+      BODY_NOT_SET(0);
+      private final int value;
+
+      private BodyCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static BodyCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static BodyCase forNumber(int value) {
+        switch (value) {
+          case 1:
+            return RESPONSE;
+          case 2:
+            return ERROR;
+          case 0:
+            return BODY_NOT_SET;
+          default:
+            return null;
+        }
+      }
+
+      public int getNumber() {
+        return this.value;
+      }
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponse}
@@ -1750,6 +2988,68 @@ public final class TransactionsOuterClass {
             .transactions
             .TransactionsOuterClass
             .GetTransactionSigningRequestResponseOrBuilder {
+      private int bodyCase_ = 0;
+      private java.lang.Object body_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .GetTransactionSigningRequestResponseBody,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .GetTransactionSigningRequestResponseBody
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .GetTransactionSigningRequestResponseBodyOrBuilder>
+          responseBuilder_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .GetTransactionSigningRequestErrorResponseBody,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .GetTransactionSigningRequestErrorResponseBody
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .GetTransactionSigningRequestErrorResponseBodyOrBuilder>
+          errorBuilder_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.GetTransactionSigningRequestResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -1783,17 +3083,6 @@ public final class TransactionsOuterClass {
                     .GetTransactionSigningRequestResponse
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.GetTransactionSigningRequestResponse.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -2031,9 +3320,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private int bodyCase_ = 0;
-      private java.lang.Object body_;
-
       public BodyCase getBodyCase() {
         return BodyCase.forNumber(bodyCase_);
       }
@@ -2045,30 +3331,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .GetTransactionSigningRequestResponseBody,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .GetTransactionSigningRequestResponseBody
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .GetTransactionSigningRequestResponseBodyOrBuilder>
-          responseBuilder_;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
@@ -2080,6 +3342,7 @@ public final class TransactionsOuterClass {
       public boolean hasResponse() {
         return bodyCase_ == 1;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
@@ -2117,6 +3380,7 @@ public final class TransactionsOuterClass {
               .GetTransactionSigningRequestResponseBody.getDefaultInstance();
         }
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
@@ -2143,6 +3407,7 @@ public final class TransactionsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
@@ -2167,6 +3432,7 @@ public final class TransactionsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
@@ -2218,6 +3484,7 @@ public final class TransactionsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
@@ -2239,6 +3506,7 @@ public final class TransactionsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
@@ -2255,6 +3523,7 @@ public final class TransactionsOuterClass {
           getResponseBuilder() {
         return getResponseFieldBuilder().getBuilder();
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
@@ -2286,6 +3555,7 @@ public final class TransactionsOuterClass {
               .GetTransactionSigningRequestResponseBody.getDefaultInstance();
         }
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody response = 1;
@@ -2363,30 +3633,6 @@ public final class TransactionsOuterClass {
         return responseBuilder_;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .GetTransactionSigningRequestErrorResponseBody,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .GetTransactionSigningRequestErrorResponseBody
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .GetTransactionSigningRequestErrorResponseBodyOrBuilder>
-          errorBuilder_;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody error = 2;
@@ -2695,139 +3941,8 @@ public final class TransactionsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponse)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponse)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestResponse
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .GetTransactionSigningRequestResponse();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestResponse
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<GetTransactionSigningRequestResponse> PARSER =
-        new com.google.protobuf.AbstractParser<GetTransactionSigningRequestResponse>() {
-          @java.lang.Override
-          public GetTransactionSigningRequestResponse parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new GetTransactionSigningRequestResponse(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<GetTransactionSigningRequestResponse> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<GetTransactionSigningRequestResponse> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestResponse
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface GetTransactionSigningRequestResponseBodyOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
-     * </code>
-     */
-    java.util.List<
-            io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transactions
-                .TransactionsOuterClass
-                .TransactionSigningRequest>
-        getRequestsList();
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .TransactionSigningRequest
-        getRequests(int index);
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
-     * </code>
-     */
-    int getRequestsCount();
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
-     * </code>
-     */
-    java.util.List<
-            ? extends
-                io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .transactions
-                    .TransactionsOuterClass
-                    .TransactionSigningRequestOrBuilder>
-        getRequestsOrBuilderList();
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .TransactionSigningRequestOrBuilder
-        getRequestsOrBuilder(int index);
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody}
@@ -2837,7 +3952,51 @@ public final class TransactionsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody)
       GetTransactionSigningRequestResponseBodyOrBuilder {
+    public static final int REQUESTS_FIELD_NUMBER = 1;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestResponseBody
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<GetTransactionSigningRequestResponseBody>
+        PARSER =
+            new com.google.protobuf.AbstractParser<GetTransactionSigningRequestResponseBody>() {
+              @java.lang.Override
+              public GetTransactionSigningRequestResponseBody parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+                return new GetTransactionSigningRequestResponseBody(input, extensionRegistry);
+              }
+            };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .GetTransactionSigningRequestResponseBody();
+    }
+
+    private java.util.List<
+            io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transactions
+                .TransactionsOuterClass
+                .TransactionSigningRequest>
+        requests_;
+    private byte memoizedIsInitialized = -1;
+
     // Use GetTransactionSigningRequestResponseBody.newBuilder() to construct.
     private GetTransactionSigningRequestResponseBody(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -2847,18 +4006,6 @@ public final class TransactionsOuterClass {
     private GetTransactionSigningRequestResponseBody() {
       requests_ = java.util.Collections.emptyList();
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new GetTransactionSigningRequestResponseBody();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private GetTransactionSigningRequestResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2929,206 +4076,6 @@ public final class TransactionsOuterClass {
           .transactions
           .TransactionsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponseBody_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponseBody_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .GetTransactionSigningRequestResponseBody
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .GetTransactionSigningRequestResponseBody
-                  .Builder
-                  .class);
-    }
-
-    public static final int REQUESTS_FIELD_NUMBER = 1;
-    private java.util.List<
-            io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transactions
-                .TransactionsOuterClass
-                .TransactionSigningRequest>
-        requests_;
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public java.util.List<
-            io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transactions
-                .TransactionsOuterClass
-                .TransactionSigningRequest>
-        getRequestsList() {
-      return requests_;
-    }
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public java.util.List<
-            ? extends
-                io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .transactions
-                    .TransactionsOuterClass
-                    .TransactionSigningRequestOrBuilder>
-        getRequestsOrBuilderList() {
-      return requests_;
-    }
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public int getRequestsCount() {
-      return requests_.size();
-    }
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .TransactionSigningRequest
-        getRequests(int index) {
-      return requests_.get(index);
-    }
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .TransactionSigningRequestOrBuilder
-        getRequestsOrBuilder(int index) {
-      return requests_.get(index);
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      for (int i = 0; i < requests_.size(); i++) {
-        output.writeMessage(1, requests_.get(i));
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      for (int i = 0; i < requests_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, requests_.get(i));
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .GetTransactionSigningRequestResponseBody)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .GetTransactionSigningRequestResponseBody
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transactions
-                      .TransactionsOuterClass
-                      .GetTransactionSigningRequestResponseBody)
-                  obj;
-
-      if (!getRequestsList().equals(other.getRequestsList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      if (getRequestsCount() > 0) {
-        hash = (37 * hash) + REQUESTS_FIELD_NUMBER;
-        hash = (53 * hash) + getRequestsList().hashCode();
-      }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -3281,11 +4228,6 @@ public final class TransactionsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -3302,6 +4244,229 @@ public final class TransactionsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestResponseBody
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<GetTransactionSigningRequestResponseBody> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new GetTransactionSigningRequestResponseBody();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .GetTransactionSigningRequestResponseBody
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .GetTransactionSigningRequestResponseBody
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public java.util.List<
+            io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transactions
+                .TransactionsOuterClass
+                .TransactionSigningRequest>
+        getRequestsList() {
+      return requests_;
+    }
+
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public java.util.List<
+            ? extends
+                io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .transactions
+                    .TransactionsOuterClass
+                    .TransactionSigningRequestOrBuilder>
+        getRequestsOrBuilderList() {
+      return requests_;
+    }
+
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public int getRequestsCount() {
+      return requests_.size();
+    }
+
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequest
+        getRequests(int index) {
+      return requests_.get(index);
+    }
+
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transactions.TransactionSigningRequest requests = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequestOrBuilder
+        getRequestsOrBuilder(int index) {
+      return requests_.get(index);
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      for (int i = 0; i < requests_.size(); i++) {
+        output.writeMessage(1, requests_.get(i));
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      for (int i = 0; i < requests_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, requests_.get(i));
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .GetTransactionSigningRequestResponseBody)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .GetTransactionSigningRequestResponseBody
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transactions
+                      .TransactionsOuterClass
+                      .GetTransactionSigningRequestResponseBody)
+                  obj;
+
+      if (!getRequestsList().equals(other.getRequestsList())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (getRequestsCount() > 0) {
+        hash = (37 * hash) + REQUESTS_FIELD_NUMBER;
+        hash = (53 * hash) + getRequestsList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -3313,6 +4478,24 @@ public final class TransactionsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetTransactionSigningRequestResponseBody> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestResponseBody
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody}
@@ -3328,6 +4511,52 @@ public final class TransactionsOuterClass {
             .transactions
             .TransactionsOuterClass
             .GetTransactionSigningRequestResponseBodyOrBuilder {
+      private int bitField0_;
+      private java.util.List<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .TransactionSigningRequest>
+          requests_ = java.util.Collections.emptyList();
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .TransactionSigningRequest,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .TransactionSigningRequest
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .TransactionSigningRequestOrBuilder>
+          requestsBuilder_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.GetTransactionSigningRequestResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -3361,17 +4590,6 @@ public final class TransactionsOuterClass {
                     .GetTransactionSigningRequestResponseBody
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.GetTransactionSigningRequestResponseBody.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -3621,18 +4839,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private int bitField0_;
-
-      private java.util.List<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .TransactionSigningRequest>
-          requests_ = java.util.Collections.emptyList();
-
       private void ensureRequestsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
           requests_ =
@@ -3647,31 +4853,6 @@ public final class TransactionsOuterClass {
           bitField0_ |= 0x00000001;
         }
       }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .TransactionSigningRequest,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .TransactionSigningRequest
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .TransactionSigningRequestOrBuilder>
-          requestsBuilder_;
 
       /**
        * <code>
@@ -4115,116 +5296,8 @@ public final class TransactionsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestResponseBody
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .GetTransactionSigningRequestResponseBody();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestResponseBody
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<GetTransactionSigningRequestResponseBody>
-        PARSER =
-            new com.google.protobuf.AbstractParser<GetTransactionSigningRequestResponseBody>() {
-              @java.lang.Override
-              public GetTransactionSigningRequestResponseBody parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-                return new GetTransactionSigningRequestResponseBody(input, extensionRegistry);
-              }
-            };
-
-    public static com.google.protobuf.Parser<GetTransactionSigningRequestResponseBody> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<GetTransactionSigningRequestResponseBody> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestResponseBody
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface GetTransactionSigningRequestErrorResponseBodyOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for errorCode.
-     */
-    int getErrorCodeValue();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The errorCode.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestErrorResponseBody
-            .ErrorCode
-        getErrorCode();
-
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The errorMessage.
-     */
-    java.lang.String getErrorMessage();
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The bytes for errorMessage.
-     */
-    com.google.protobuf.ByteString getErrorMessageBytes();
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody}
@@ -4234,29 +5307,55 @@ public final class TransactionsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody)
       GetTransactionSigningRequestErrorResponseBodyOrBuilder {
+    public static final int ERROR_CODE_FIELD_NUMBER = 1;
+    public static final int ERROR_MESSAGE_FIELD_NUMBER = 2;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestErrorResponseBody
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<GetTransactionSigningRequestErrorResponseBody>
+        PARSER =
+            new com.google.protobuf.AbstractParser<
+                GetTransactionSigningRequestErrorResponseBody>() {
+              @java.lang.Override
+              public GetTransactionSigningRequestErrorResponseBody parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+                return new GetTransactionSigningRequestErrorResponseBody(input, extensionRegistry);
+              }
+            };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .GetTransactionSigningRequestErrorResponseBody();
+    }
+
+    private int errorCode_;
+    private volatile java.lang.Object errorMessage_;
+    private byte memoizedIsInitialized = -1;
+
     // Use GetTransactionSigningRequestErrorResponseBody.newBuilder() to construct.
     private GetTransactionSigningRequestErrorResponseBody(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private GetTransactionSigningRequestErrorResponseBody() {
       errorCode_ = 0;
       errorMessage_ = "";
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new GetTransactionSigningRequestErrorResponseBody();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private GetTransactionSigningRequestErrorResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -4316,329 +5415,6 @@ public final class TransactionsOuterClass {
           .transactions
           .TransactionsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestErrorResponseBody_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestErrorResponseBody_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .GetTransactionSigningRequestErrorResponseBody
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .GetTransactionSigningRequestErrorResponseBody
-                  .Builder
-                  .class);
-    }
-
-    /**
-     * Protobuf enum {@code
-     * swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody.ErrorCode}
-     */
-    public enum ErrorCode implements com.google.protobuf.ProtocolMessageEnum {
-      /** <code>UNKNOWN = 0;</code> */
-      UNKNOWN(0),
-      /** <code>INVALID_PARAMETERS = 1;</code> */
-      INVALID_PARAMETERS(1),
-      UNRECOGNIZED(-1),
-      ;
-
-      /** <code>UNKNOWN = 0;</code> */
-      public static final int UNKNOWN_VALUE = 0;
-      /** <code>INVALID_PARAMETERS = 1;</code> */
-      public static final int INVALID_PARAMETERS_VALUE = 1;
-
-      public final int getNumber() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static ErrorCode valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static ErrorCode forNumber(int value) {
-        switch (value) {
-          case 0:
-            return UNKNOWN;
-          case 1:
-            return INVALID_PARAMETERS;
-          default:
-            return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalGetValueMap() {
-        return internalValueMap;
-      }
-
-      private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
-            public ErrorCode findValueByNumber(int number) {
-              return ErrorCode.forNumber(number);
-            }
-          };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(ordinal());
-      }
-
-      public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
-        return getDescriptor();
-      }
-
-      public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
-        return io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestErrorResponseBody
-            .getDescriptor()
-            .getEnumTypes()
-            .get(0);
-      }
-
-      private static final ErrorCode[] VALUES = values();
-
-      public static ErrorCode valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int value;
-
-      private ErrorCode(int value) {
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody.ErrorCode)
-    }
-
-    public static final int ERROR_CODE_FIELD_NUMBER = 1;
-    private int errorCode_;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for errorCode.
-     */
-    @java.lang.Override
-    public int getErrorCodeValue() {
-      return errorCode_;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The errorCode.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestErrorResponseBody
-            .ErrorCode
-        getErrorCode() {
-      @SuppressWarnings("deprecation")
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .GetTransactionSigningRequestErrorResponseBody
-              .ErrorCode
-          result =
-              io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-                  .GetTransactionSigningRequestErrorResponseBody.ErrorCode.valueOf(errorCode_);
-      return result == null
-          ? io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .GetTransactionSigningRequestErrorResponseBody
-              .ErrorCode
-              .UNRECOGNIZED
-          : result;
-    }
-
-    public static final int ERROR_MESSAGE_FIELD_NUMBER = 2;
-    private volatile java.lang.Object errorMessage_;
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The errorMessage.
-     */
-    @java.lang.Override
-    public java.lang.String getErrorMessage() {
-      java.lang.Object ref = errorMessage_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        errorMessage_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The bytes for errorMessage.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getErrorMessageBytes() {
-      java.lang.Object ref = errorMessage_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        errorMessage_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (errorCode_
-          != io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-              .GetTransactionSigningRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
-        output.writeEnum(1, errorCode_);
-      }
-      if (!getErrorMessageBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, errorMessage_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (errorCode_
-          != io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-              .GetTransactionSigningRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream.computeEnumSize(1, errorCode_);
-      }
-      if (!getErrorMessageBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, errorMessage_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .GetTransactionSigningRequestErrorResponseBody)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .GetTransactionSigningRequestErrorResponseBody
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transactions
-                      .TransactionsOuterClass
-                      .GetTransactionSigningRequestErrorResponseBody)
-                  obj;
-
-      if (errorCode_ != other.errorCode_) return false;
-      if (!getErrorMessage().equals(other.getErrorMessage())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ERROR_CODE_FIELD_NUMBER;
-      hash = (53 * hash) + errorCode_;
-      hash = (37 * hash) + ERROR_MESSAGE_FIELD_NUMBER;
-      hash = (53 * hash) + getErrorMessage().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -4791,11 +5567,6 @@ public final class TransactionsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -4812,6 +5583,250 @@ public final class TransactionsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestErrorResponseBody
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<GetTransactionSigningRequestErrorResponseBody>
+        parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new GetTransactionSigningRequestErrorResponseBody();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestErrorResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .GetTransactionSigningRequestErrorResponseBody
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .GetTransactionSigningRequestErrorResponseBody
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for errorCode.
+     */
+    @java.lang.Override
+    public int getErrorCodeValue() {
+      return errorCode_;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The errorCode.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestErrorResponseBody
+            .ErrorCode
+        getErrorCode() {
+      @SuppressWarnings("deprecation")
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .GetTransactionSigningRequestErrorResponseBody
+              .ErrorCode
+          result =
+              io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+                  .GetTransactionSigningRequestErrorResponseBody.ErrorCode.valueOf(errorCode_);
+      return result == null
+          ? io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .GetTransactionSigningRequestErrorResponseBody
+              .ErrorCode
+              .UNRECOGNIZED
+          : result;
+    }
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The errorMessage.
+     */
+    @java.lang.Override
+    public java.lang.String getErrorMessage() {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        errorMessage_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The bytes for errorMessage.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getErrorMessageBytes() {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        errorMessage_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (errorCode_
+          != io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+              .GetTransactionSigningRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
+        output.writeEnum(1, errorCode_);
+      }
+      if (!getErrorMessageBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, errorMessage_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (errorCode_
+          != io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+              .GetTransactionSigningRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream.computeEnumSize(1, errorCode_);
+      }
+      if (!getErrorMessageBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, errorMessage_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .GetTransactionSigningRequestErrorResponseBody)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .GetTransactionSigningRequestErrorResponseBody
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transactions
+                      .TransactionsOuterClass
+                      .GetTransactionSigningRequestErrorResponseBody)
+                  obj;
+
+      if (errorCode_ != other.errorCode_) return false;
+      if (!getErrorMessage().equals(other.getErrorMessage())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ERROR_CODE_FIELD_NUMBER;
+      hash = (53 * hash) + errorCode_;
+      hash = (37 * hash) + ERROR_MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getErrorMessage().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -4823,6 +5838,129 @@ public final class TransactionsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetTransactionSigningRequestErrorResponseBody>
+        getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestErrorResponseBody
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+    /**
+     * Protobuf enum {@code
+     * swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody.ErrorCode}
+     */
+    public enum ErrorCode implements com.google.protobuf.ProtocolMessageEnum {
+      /** <code>UNKNOWN = 0;</code> */
+      UNKNOWN(0),
+      /** <code>INVALID_PARAMETERS = 1;</code> */
+      INVALID_PARAMETERS(1),
+      UNRECOGNIZED(-1),
+      ;
+
+      /** <code>UNKNOWN = 0;</code> */
+      public static final int UNKNOWN_VALUE = 0;
+      /** <code>INVALID_PARAMETERS = 1;</code> */
+      public static final int INVALID_PARAMETERS_VALUE = 1;
+      private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
+            public ErrorCode findValueByNumber(int number) {
+              return ErrorCode.forNumber(number);
+            }
+          };
+      private static final ErrorCode[] VALUES = values();
+      private final int value;
+
+      private ErrorCode(int value) {
+        this.value = value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static ErrorCode valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static ErrorCode forNumber(int value) {
+        switch (value) {
+          case 0:
+            return UNKNOWN;
+          case 1:
+            return INVALID_PARAMETERS;
+          default:
+            return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalGetValueMap() {
+        return internalValueMap;
+      }
+
+      public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+        return io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .GetTransactionSigningRequestErrorResponseBody
+            .getDescriptor()
+            .getEnumTypes()
+            .get(0);
+      }
+
+      public static ErrorCode valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(ordinal());
+      }
+
+      public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
+        return getDescriptor();
+      }
+
+      // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody.ErrorCode)
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody}
@@ -4838,6 +5976,20 @@ public final class TransactionsOuterClass {
             .transactions
             .TransactionsOuterClass
             .GetTransactionSigningRequestErrorResponseBodyOrBuilder {
+      private int errorCode_ = 0;
+      private java.lang.Object errorMessage_ = "";
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.GetTransactionSigningRequestErrorResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -4871,17 +6023,6 @@ public final class TransactionsOuterClass {
                     .GetTransactionSigningRequestErrorResponseBody
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.GetTransactionSigningRequestErrorResponseBody.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -5099,7 +6240,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private int errorCode_ = 0;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -5111,6 +6251,7 @@ public final class TransactionsOuterClass {
       public int getErrorCodeValue() {
         return errorCode_;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -5125,6 +6266,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -5166,6 +6308,7 @@ public final class TransactionsOuterClass {
                 .UNRECOGNIZED
             : result;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -5192,6 +6335,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -5206,7 +6350,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private java.lang.Object errorMessage_ = "";
       /**
        * <code>string error_message = 2;</code>
        *
@@ -5223,6 +6366,23 @@ public final class TransactionsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string error_message = 2;</code>
+       *
+       * @param value The errorMessage to set.
+       * @return This builder for chaining.
+       */
+      public Builder setErrorMessage(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        errorMessage_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string error_message = 2;</code>
        *
@@ -5239,32 +6399,7 @@ public final class TransactionsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string error_message = 2;</code>
-       *
-       * @param value The errorMessage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setErrorMessage(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        errorMessage_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string error_message = 2;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearErrorMessage() {
-
-        errorMessage_ = getDefaultInstance().getErrorMessage();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string error_message = 2;</code>
        *
@@ -5278,6 +6413,18 @@ public final class TransactionsOuterClass {
         checkByteStringIsUtf8(value);
 
         errorMessage_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string error_message = 2;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearErrorMessage() {
+
+        errorMessage_ = getDefaultInstance().getErrorMessage();
         onChanged();
         return this;
       }
@@ -5296,16 +6443,43 @@ public final class TransactionsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody)
     }
+  }
 
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody)
+  /** Protobuf type {@code swisschain.sirius.vaultApi.transactions.TransactionSigningRequest} */
+  public static final class TransactionSigningRequest extends com.google.protobuf.GeneratedMessageV3
+      implements
+      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.TransactionSigningRequest)
+      TransactionSigningRequestOrBuilder {
+    public static final int ID_FIELD_NUMBER = 1;
+    public static final int BLOCKCHAIN_ID_FIELD_NUMBER = 2;
+    public static final int NETWORK_TYPE_FIELD_NUMBER = 3;
+    public static final int PROTOCOL_CODE_FIELD_NUMBER = 4;
+    public static final int DOUBLE_SPENDING_PROTECTION_TYPE_FIELD_NUMBER = 5;
+    public static final int BUILT_TRANSACTION_FIELD_NUMBER = 6;
+    public static final int SIGNING_ADDRESSES_FIELD_NUMBER = 7;
+    public static final int COINS_TO_SPEND_FIELD_NUMBER = 8;
+    public static final int CREATED_AT_FIELD_NUMBER = 9;
+    public static final int UPDATED_AT_FIELD_NUMBER = 10;
+    private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.TransactionSigningRequest)
     private static final io.swisschain
             .sirius
             .vaultApi
             .generated
             .transactions
             .TransactionsOuterClass
-            .GetTransactionSigningRequestErrorResponseBody
+            .TransactionSigningRequest
         DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<TransactionSigningRequest> PARSER =
+        new com.google.protobuf.AbstractParser<TransactionSigningRequest>() {
+          @java.lang.Override
+          public TransactionSigningRequest parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new TransactionSigningRequest(input, extensionRegistry);
+          }
+        };
 
     static {
       DEFAULT_INSTANCE =
@@ -5315,246 +6489,26 @@ public final class TransactionsOuterClass {
               .generated
               .transactions
               .TransactionsOuterClass
-              .GetTransactionSigningRequestErrorResponseBody();
+              .TransactionSigningRequest();
     }
 
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestErrorResponseBody
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<GetTransactionSigningRequestErrorResponseBody>
-        PARSER =
-            new com.google.protobuf.AbstractParser<
-                GetTransactionSigningRequestErrorResponseBody>() {
-              @java.lang.Override
-              public GetTransactionSigningRequestErrorResponseBody parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-                return new GetTransactionSigningRequestErrorResponseBody(input, extensionRegistry);
-              }
-            };
-
-    public static com.google.protobuf.Parser<GetTransactionSigningRequestErrorResponseBody>
-        parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<GetTransactionSigningRequestErrorResponseBody>
-        getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .GetTransactionSigningRequestErrorResponseBody
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  public interface TransactionSigningRequestOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.TransactionSigningRequest)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>int64 id = 1;</code>
-     *
-     * @return The id.
-     */
-    long getId();
-
-    /**
-     * <code>string blockchain_id = 2;</code>
-     *
-     * @return The blockchainId.
-     */
-    java.lang.String getBlockchainId();
-    /**
-     * <code>string blockchain_id = 2;</code>
-     *
-     * @return The bytes for blockchainId.
-     */
-    com.google.protobuf.ByteString getBlockchainIdBytes();
-
-    /**
-     * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
-     *
-     * @return The enum numeric value on the wire for networkType.
-     */
-    int getNetworkTypeValue();
-    /**
-     * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
-     *
-     * @return The networkType.
-     */
-    io.swisschain.sirius.vaultApi.generated.common.Common.NetworkType getNetworkType();
-
-    /**
-     * <code>string protocol_code = 4;</code>
-     *
-     * @return The protocolCode.
-     */
-    java.lang.String getProtocolCode();
-    /**
-     * <code>string protocol_code = 4;</code>
-     *
-     * @return The bytes for protocolCode.
-     */
-    com.google.protobuf.ByteString getProtocolCodeBytes();
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.DoubleSpendingProtectionType double_spending_protection_type = 5;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for doubleSpendingProtectionType.
-     */
-    int getDoubleSpendingProtectionTypeValue();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.DoubleSpendingProtectionType double_spending_protection_type = 5;
-     * </code>
-     *
-     * @return The doubleSpendingProtectionType.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .DoubleSpendingProtectionType
-        getDoubleSpendingProtectionType();
-
-    /**
-     * <code>bytes built_transaction = 6;</code>
-     *
-     * @return The builtTransaction.
-     */
-    com.google.protobuf.ByteString getBuiltTransaction();
-
-    /**
-     * <code>repeated string signing_addresses = 7;</code>
-     *
-     * @return A list containing the signingAddresses.
-     */
-    java.util.List<java.lang.String> getSigningAddressesList();
-    /**
-     * <code>repeated string signing_addresses = 7;</code>
-     *
-     * @return The count of signingAddresses.
-     */
-    int getSigningAddressesCount();
-    /**
-     * <code>repeated string signing_addresses = 7;</code>
-     *
-     * @param index The index of the element to return.
-     * @return The signingAddresses at the given index.
-     */
-    java.lang.String getSigningAddresses(int index);
-    /**
-     * <code>repeated string signing_addresses = 7;</code>
-     *
-     * @param index The index of the value to return.
-     * @return The bytes of the signingAddresses at the given index.
-     */
-    com.google.protobuf.ByteString getSigningAddressesBytes(int index);
-
-    /**
-     * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
-     * </code>
-     */
-    java.util.List<
+    private long id_;
+    private volatile java.lang.Object blockchainId_;
+    private int networkType_;
+    private volatile java.lang.Object protocolCode_;
+    private int doubleSpendingProtectionType_;
+    private com.google.protobuf.ByteString builtTransaction_;
+    private com.google.protobuf.LazyStringList signingAddresses_;
+    private java.util.List<
             io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinToSpend>
-        getCoinsToSpendList();
-    /**
-     * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
-     * </code>
-     */
-    io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinToSpend
-        getCoinsToSpend(int index);
-    /**
-     * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
-     * </code>
-     */
-    int getCoinsToSpendCount();
-    /**
-     * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
-     * </code>
-     */
-    java.util.List<
-            ? extends
-                io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .transactions
-                    .TransactionsOuterClass
-                    .CoinToSpendOrBuilder>
-        getCoinsToSpendOrBuilderList();
-    /**
-     * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
-     * </code>
-     */
-    io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinToSpendOrBuilder
-        getCoinsToSpendOrBuilder(int index);
-
-    /**
-     * <code>.google.protobuf.Timestamp created_at = 9;</code>
-     *
-     * @return Whether the createdAt field is set.
-     */
-    boolean hasCreatedAt();
-    /**
-     * <code>.google.protobuf.Timestamp created_at = 9;</code>
-     *
-     * @return The createdAt.
-     */
-    com.google.protobuf.Timestamp getCreatedAt();
-    /** <code>.google.protobuf.Timestamp created_at = 9;</code> */
-    com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder();
-
-    /**
-     * <code>.google.protobuf.Timestamp updated_at = 10;</code>
-     *
-     * @return Whether the updatedAt field is set.
-     */
-    boolean hasUpdatedAt();
-    /**
-     * <code>.google.protobuf.Timestamp updated_at = 10;</code>
-     *
-     * @return The updatedAt.
-     */
-    com.google.protobuf.Timestamp getUpdatedAt();
-    /** <code>.google.protobuf.Timestamp updated_at = 10;</code> */
-    com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder();
-  }
-  /** Protobuf type {@code swisschain.sirius.vaultApi.transactions.TransactionSigningRequest} */
-  public static final class TransactionSigningRequest extends com.google.protobuf.GeneratedMessageV3
-      implements
-      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.TransactionSigningRequest)
-      TransactionSigningRequestOrBuilder {
-    private static final long serialVersionUID = 0L;
+        coinsToSpend_;
+    private com.google.protobuf.Timestamp createdAt_;
+    private com.google.protobuf.Timestamp updatedAt_;
+    private byte memoizedIsInitialized = -1;
     // Use TransactionSigningRequest.newBuilder() to construct.
     private TransactionSigningRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private TransactionSigningRequest() {
       blockchainId_ = "";
       networkType_ = 0;
@@ -5563,17 +6517,6 @@ public final class TransactionsOuterClass {
       builtTransaction_ = com.google.protobuf.ByteString.EMPTY;
       signingAddresses_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       coinsToSpend_ = java.util.Collections.emptyList();
-    }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new TransactionSigningRequest();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
     }
 
     private TransactionSigningRequest(
@@ -5729,6 +6672,198 @@ public final class TransactionsOuterClass {
           .internal_static_swisschain_sirius_vaultApi_transactions_TransactionSigningRequest_descriptor;
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequest
+        parseFrom(java.nio.ByteBuffer data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequest
+        parseFrom(
+            java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequest
+        parseFrom(com.google.protobuf.ByteString data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequest
+        parseFrom(
+            com.google.protobuf.ByteString data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequest
+        parseFrom(byte[] data) throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequest
+        parseFrom(byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequest
+        parseFrom(java.io.InputStream input) throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequest
+        parseFrom(
+            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+          PARSER, input, extensionRegistry);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequest
+        parseDelimitedFrom(java.io.InputStream input) throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequest
+        parseDelimitedFrom(
+            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
+          PARSER, input, extensionRegistry);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequest
+        parseFrom(com.google.protobuf.CodedInputStream input) throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequest
+        parseFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+          PARSER, input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+
+    public static Builder newBuilder(
+        io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transactions
+                .TransactionsOuterClass
+                .TransactionSigningRequest
+            prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequest
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<TransactionSigningRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new TransactionSigningRequest();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
@@ -5754,8 +6889,6 @@ public final class TransactionsOuterClass {
                   .class);
     }
 
-    public static final int ID_FIELD_NUMBER = 1;
-    private long id_;
     /**
      * <code>int64 id = 1;</code>
      *
@@ -5766,8 +6899,6 @@ public final class TransactionsOuterClass {
       return id_;
     }
 
-    public static final int BLOCKCHAIN_ID_FIELD_NUMBER = 2;
-    private volatile java.lang.Object blockchainId_;
     /**
      * <code>string blockchain_id = 2;</code>
      *
@@ -5785,6 +6916,7 @@ public final class TransactionsOuterClass {
         return s;
       }
     }
+
     /**
      * <code>string blockchain_id = 2;</code>
      *
@@ -5803,8 +6935,6 @@ public final class TransactionsOuterClass {
       }
     }
 
-    public static final int NETWORK_TYPE_FIELD_NUMBER = 3;
-    private int networkType_;
     /**
      * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
      *
@@ -5814,6 +6944,7 @@ public final class TransactionsOuterClass {
     public int getNetworkTypeValue() {
       return networkType_;
     }
+
     /**
      * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
      *
@@ -5829,8 +6960,6 @@ public final class TransactionsOuterClass {
           : result;
     }
 
-    public static final int PROTOCOL_CODE_FIELD_NUMBER = 4;
-    private volatile java.lang.Object protocolCode_;
     /**
      * <code>string protocol_code = 4;</code>
      *
@@ -5848,6 +6977,7 @@ public final class TransactionsOuterClass {
         return s;
       }
     }
+
     /**
      * <code>string protocol_code = 4;</code>
      *
@@ -5866,8 +6996,6 @@ public final class TransactionsOuterClass {
       }
     }
 
-    public static final int DOUBLE_SPENDING_PROTECTION_TYPE_FIELD_NUMBER = 5;
-    private int doubleSpendingProtectionType_;
     /**
      * <code>
      * .swisschain.sirius.vaultApi.transactions.DoubleSpendingProtectionType double_spending_protection_type = 5;
@@ -5879,6 +7007,7 @@ public final class TransactionsOuterClass {
     public int getDoubleSpendingProtectionTypeValue() {
       return doubleSpendingProtectionType_;
     }
+
     /**
      * <code>
      * .swisschain.sirius.vaultApi.transactions.DoubleSpendingProtectionType double_spending_protection_type = 5;
@@ -5918,8 +7047,6 @@ public final class TransactionsOuterClass {
           : result;
     }
 
-    public static final int BUILT_TRANSACTION_FIELD_NUMBER = 6;
-    private com.google.protobuf.ByteString builtTransaction_;
     /**
      * <code>bytes built_transaction = 6;</code>
      *
@@ -5930,8 +7057,6 @@ public final class TransactionsOuterClass {
       return builtTransaction_;
     }
 
-    public static final int SIGNING_ADDRESSES_FIELD_NUMBER = 7;
-    private com.google.protobuf.LazyStringList signingAddresses_;
     /**
      * <code>repeated string signing_addresses = 7;</code>
      *
@@ -5940,6 +7065,7 @@ public final class TransactionsOuterClass {
     public com.google.protobuf.ProtocolStringList getSigningAddressesList() {
       return signingAddresses_;
     }
+
     /**
      * <code>repeated string signing_addresses = 7;</code>
      *
@@ -5948,6 +7074,7 @@ public final class TransactionsOuterClass {
     public int getSigningAddressesCount() {
       return signingAddresses_.size();
     }
+
     /**
      * <code>repeated string signing_addresses = 7;</code>
      *
@@ -5957,6 +7084,7 @@ public final class TransactionsOuterClass {
     public java.lang.String getSigningAddresses(int index) {
       return signingAddresses_.get(index);
     }
+
     /**
      * <code>repeated string signing_addresses = 7;</code>
      *
@@ -5967,10 +7095,6 @@ public final class TransactionsOuterClass {
       return signingAddresses_.getByteString(index);
     }
 
-    public static final int COINS_TO_SPEND_FIELD_NUMBER = 8;
-    private java.util.List<
-            io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinToSpend>
-        coinsToSpend_;
     /**
      * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
      * </code>
@@ -5981,6 +7105,7 @@ public final class TransactionsOuterClass {
         getCoinsToSpendList() {
       return coinsToSpend_;
     }
+
     /**
      * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
      * </code>
@@ -5998,6 +7123,7 @@ public final class TransactionsOuterClass {
         getCoinsToSpendOrBuilderList() {
       return coinsToSpend_;
     }
+
     /**
      * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
      * </code>
@@ -6006,6 +7132,7 @@ public final class TransactionsOuterClass {
     public int getCoinsToSpendCount() {
       return coinsToSpend_.size();
     }
+
     /**
      * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
      * </code>
@@ -6015,6 +7142,7 @@ public final class TransactionsOuterClass {
         getCoinsToSpend(int index) {
       return coinsToSpend_.get(index);
     }
+
     /**
      * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
      * </code>
@@ -6031,8 +7159,6 @@ public final class TransactionsOuterClass {
       return coinsToSpend_.get(index);
     }
 
-    public static final int CREATED_AT_FIELD_NUMBER = 9;
-    private com.google.protobuf.Timestamp createdAt_;
     /**
      * <code>.google.protobuf.Timestamp created_at = 9;</code>
      *
@@ -6042,6 +7168,7 @@ public final class TransactionsOuterClass {
     public boolean hasCreatedAt() {
       return createdAt_ != null;
     }
+
     /**
      * <code>.google.protobuf.Timestamp created_at = 9;</code>
      *
@@ -6051,14 +7178,13 @@ public final class TransactionsOuterClass {
     public com.google.protobuf.Timestamp getCreatedAt() {
       return createdAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createdAt_;
     }
+
     /** <code>.google.protobuf.Timestamp created_at = 9;</code> */
     @java.lang.Override
     public com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder() {
       return getCreatedAt();
     }
 
-    public static final int UPDATED_AT_FIELD_NUMBER = 10;
-    private com.google.protobuf.Timestamp updatedAt_;
     /**
      * <code>.google.protobuf.Timestamp updated_at = 10;</code>
      *
@@ -6068,6 +7194,7 @@ public final class TransactionsOuterClass {
     public boolean hasUpdatedAt() {
       return updatedAt_ != null;
     }
+
     /**
      * <code>.google.protobuf.Timestamp updated_at = 10;</code>
      *
@@ -6077,13 +7204,12 @@ public final class TransactionsOuterClass {
     public com.google.protobuf.Timestamp getUpdatedAt() {
       return updatedAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updatedAt_;
     }
+
     /** <code>.google.protobuf.Timestamp updated_at = 10;</code> */
     @java.lang.Override
     public com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder() {
       return getUpdatedAt();
     }
-
-    private byte memoizedIsInitialized = -1;
 
     @java.lang.Override
     public final boolean isInitialized() {
@@ -6278,175 +7404,9 @@ public final class TransactionsOuterClass {
       return hash;
     }
 
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .TransactionSigningRequest
-        parseFrom(java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .TransactionSigningRequest
-        parseFrom(
-            java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .TransactionSigningRequest
-        parseFrom(com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .TransactionSigningRequest
-        parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .TransactionSigningRequest
-        parseFrom(byte[] data) throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .TransactionSigningRequest
-        parseFrom(byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .TransactionSigningRequest
-        parseFrom(java.io.InputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .TransactionSigningRequest
-        parseFrom(
-            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .TransactionSigningRequest
-        parseDelimitedFrom(java.io.InputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .TransactionSigningRequest
-        parseDelimitedFrom(
-            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .TransactionSigningRequest
-        parseFrom(com.google.protobuf.CodedInputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .TransactionSigningRequest
-        parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
     @java.lang.Override
     public Builder newBuilderForType() {
       return newBuilder();
-    }
-
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-
-    public static Builder newBuilder(
-        io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transactions
-                .TransactionsOuterClass
-                .TransactionSigningRequest
-            prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
     @java.lang.Override
@@ -6460,6 +7420,24 @@ public final class TransactionsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<TransactionSigningRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequest
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /** Protobuf type {@code swisschain.sirius.vaultApi.transactions.TransactionSigningRequest} */
     public static final class Builder
         extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
@@ -6472,6 +7450,73 @@ public final class TransactionsOuterClass {
             .transactions
             .TransactionsOuterClass
             .TransactionSigningRequestOrBuilder {
+      private int bitField0_;
+      private long id_;
+      private java.lang.Object blockchainId_ = "";
+      private int networkType_ = 0;
+      private java.lang.Object protocolCode_ = "";
+      private int doubleSpendingProtectionType_ = 0;
+      private com.google.protobuf.ByteString builtTransaction_ =
+          com.google.protobuf.ByteString.EMPTY;
+      private com.google.protobuf.LazyStringList signingAddresses_ =
+          com.google.protobuf.LazyStringArrayList.EMPTY;
+      private java.util.List<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .CoinToSpend>
+          coinsToSpend_ = java.util.Collections.emptyList();
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .CoinToSpend,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .CoinToSpend
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .CoinToSpendOrBuilder>
+          coinsToSpendBuilder_;
+      private com.google.protobuf.Timestamp createdAt_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              com.google.protobuf.Timestamp,
+              com.google.protobuf.Timestamp.Builder,
+              com.google.protobuf.TimestampOrBuilder>
+          createdAtBuilder_;
+      private com.google.protobuf.Timestamp updatedAt_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              com.google.protobuf.Timestamp,
+              com.google.protobuf.Timestamp.Builder,
+              com.google.protobuf.TimestampOrBuilder>
+          updatedAtBuilder_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.TransactionSigningRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -6505,17 +7550,6 @@ public final class TransactionsOuterClass {
                     .TransactionSigningRequest
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.TransactionSigningRequest.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -6848,9 +7882,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private int bitField0_;
-
-      private long id_;
       /**
        * <code>int64 id = 1;</code>
        *
@@ -6860,6 +7891,7 @@ public final class TransactionsOuterClass {
       public long getId() {
         return id_;
       }
+
       /**
        * <code>int64 id = 1;</code>
        *
@@ -6872,6 +7904,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>int64 id = 1;</code>
        *
@@ -6884,7 +7917,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private java.lang.Object blockchainId_ = "";
       /**
        * <code>string blockchain_id = 2;</code>
        *
@@ -6901,6 +7933,23 @@ public final class TransactionsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string blockchain_id = 2;</code>
+       *
+       * @param value The blockchainId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBlockchainId(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        blockchainId_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string blockchain_id = 2;</code>
        *
@@ -6917,32 +7966,7 @@ public final class TransactionsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string blockchain_id = 2;</code>
-       *
-       * @param value The blockchainId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBlockchainId(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        blockchainId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string blockchain_id = 2;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearBlockchainId() {
-
-        blockchainId_ = getDefaultInstance().getBlockchainId();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string blockchain_id = 2;</code>
        *
@@ -6960,7 +7984,18 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private int networkType_ = 0;
+      /**
+       * <code>string blockchain_id = 2;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearBlockchainId() {
+
+        blockchainId_ = getDefaultInstance().getBlockchainId();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
        *
@@ -6970,6 +8005,7 @@ public final class TransactionsOuterClass {
       public int getNetworkTypeValue() {
         return networkType_;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
        *
@@ -6982,6 +8018,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
        *
@@ -6996,6 +8033,7 @@ public final class TransactionsOuterClass {
             ? io.swisschain.sirius.vaultApi.generated.common.Common.NetworkType.UNRECOGNIZED
             : result;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
        *
@@ -7012,6 +8050,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
        *
@@ -7024,7 +8063,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private java.lang.Object protocolCode_ = "";
       /**
        * <code>string protocol_code = 4;</code>
        *
@@ -7041,6 +8079,23 @@ public final class TransactionsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string protocol_code = 4;</code>
+       *
+       * @param value The protocolCode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setProtocolCode(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        protocolCode_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string protocol_code = 4;</code>
        *
@@ -7057,32 +8112,7 @@ public final class TransactionsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string protocol_code = 4;</code>
-       *
-       * @param value The protocolCode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setProtocolCode(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        protocolCode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string protocol_code = 4;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearProtocolCode() {
-
-        protocolCode_ = getDefaultInstance().getProtocolCode();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string protocol_code = 4;</code>
        *
@@ -7100,7 +8130,18 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private int doubleSpendingProtectionType_ = 0;
+      /**
+       * <code>string protocol_code = 4;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearProtocolCode() {
+
+        protocolCode_ = getDefaultInstance().getProtocolCode();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.DoubleSpendingProtectionType double_spending_protection_type = 5;
@@ -7112,6 +8153,7 @@ public final class TransactionsOuterClass {
       public int getDoubleSpendingProtectionTypeValue() {
         return doubleSpendingProtectionType_;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.DoubleSpendingProtectionType double_spending_protection_type = 5;
@@ -7126,6 +8168,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.DoubleSpendingProtectionType double_spending_protection_type = 5;
@@ -7164,6 +8207,7 @@ public final class TransactionsOuterClass {
                 .UNRECOGNIZED
             : result;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.DoubleSpendingProtectionType double_spending_protection_type = 5;
@@ -7189,6 +8233,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.DoubleSpendingProtectionType double_spending_protection_type = 5;
@@ -7203,8 +8248,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private com.google.protobuf.ByteString builtTransaction_ =
-          com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>bytes built_transaction = 6;</code>
        *
@@ -7214,6 +8257,7 @@ public final class TransactionsOuterClass {
       public com.google.protobuf.ByteString getBuiltTransaction() {
         return builtTransaction_;
       }
+
       /**
        * <code>bytes built_transaction = 6;</code>
        *
@@ -7229,6 +8273,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>bytes built_transaction = 6;</code>
        *
@@ -7241,15 +8286,13 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private com.google.protobuf.LazyStringList signingAddresses_ =
-          com.google.protobuf.LazyStringArrayList.EMPTY;
-
       private void ensureSigningAddressesIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
           signingAddresses_ = new com.google.protobuf.LazyStringArrayList(signingAddresses_);
           bitField0_ |= 0x00000001;
         }
       }
+
       /**
        * <code>repeated string signing_addresses = 7;</code>
        *
@@ -7258,6 +8301,7 @@ public final class TransactionsOuterClass {
       public com.google.protobuf.ProtocolStringList getSigningAddressesList() {
         return signingAddresses_.getUnmodifiableView();
       }
+
       /**
        * <code>repeated string signing_addresses = 7;</code>
        *
@@ -7266,6 +8310,7 @@ public final class TransactionsOuterClass {
       public int getSigningAddressesCount() {
         return signingAddresses_.size();
       }
+
       /**
        * <code>repeated string signing_addresses = 7;</code>
        *
@@ -7275,6 +8320,7 @@ public final class TransactionsOuterClass {
       public java.lang.String getSigningAddresses(int index) {
         return signingAddresses_.get(index);
       }
+
       /**
        * <code>repeated string signing_addresses = 7;</code>
        *
@@ -7284,6 +8330,7 @@ public final class TransactionsOuterClass {
       public com.google.protobuf.ByteString getSigningAddressesBytes(int index) {
         return signingAddresses_.getByteString(index);
       }
+
       /**
        * <code>repeated string signing_addresses = 7;</code>
        *
@@ -7300,6 +8347,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>repeated string signing_addresses = 7;</code>
        *
@@ -7315,6 +8363,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>repeated string signing_addresses = 7;</code>
        *
@@ -7327,6 +8376,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>repeated string signing_addresses = 7;</code>
        *
@@ -7338,6 +8388,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>repeated string signing_addresses = 7;</code>
        *
@@ -7355,16 +8406,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private java.util.List<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .CoinToSpend>
-          coinsToSpend_ = java.util.Collections.emptyList();
-
       private void ensureCoinsToSpendIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
           coinsToSpend_ =
@@ -7379,31 +8420,6 @@ public final class TransactionsOuterClass {
           bitField0_ |= 0x00000002;
         }
       }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .CoinToSpend,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .CoinToSpend
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .CoinToSpendOrBuilder>
-          coinsToSpendBuilder_;
 
       /**
        * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
@@ -7424,6 +8440,7 @@ public final class TransactionsOuterClass {
           return coinsToSpendBuilder_.getMessageList();
         }
       }
+
       /**
        * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
        * </code>
@@ -7435,6 +8452,7 @@ public final class TransactionsOuterClass {
           return coinsToSpendBuilder_.getCount();
         }
       }
+
       /**
        * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
        * </code>
@@ -7447,6 +8465,7 @@ public final class TransactionsOuterClass {
           return coinsToSpendBuilder_.getMessage(index);
         }
       }
+
       /**
        * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
        * </code>
@@ -7467,6 +8486,7 @@ public final class TransactionsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
        * </code>
@@ -7491,6 +8511,7 @@ public final class TransactionsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
        * </code>
@@ -7510,6 +8531,7 @@ public final class TransactionsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
        * </code>
@@ -7530,6 +8552,7 @@ public final class TransactionsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
        * </code>
@@ -7553,6 +8576,7 @@ public final class TransactionsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
        * </code>
@@ -7577,6 +8601,7 @@ public final class TransactionsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
        * </code>
@@ -7601,6 +8626,7 @@ public final class TransactionsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
        * </code>
@@ -7615,6 +8641,7 @@ public final class TransactionsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
        * </code>
@@ -7629,6 +8656,7 @@ public final class TransactionsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
        * </code>
@@ -7644,6 +8672,7 @@ public final class TransactionsOuterClass {
           getCoinsToSpendBuilder(int index) {
         return getCoinsToSpendFieldBuilder().getBuilder(index);
       }
+
       /**
        * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
        * </code>
@@ -7662,6 +8691,7 @@ public final class TransactionsOuterClass {
           return coinsToSpendBuilder_.getMessageOrBuilder(index);
         }
       }
+
       /**
        * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
        * </code>
@@ -7682,6 +8712,7 @@ public final class TransactionsOuterClass {
           return java.util.Collections.unmodifiableList(coinsToSpend_);
         }
       }
+
       /**
        * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
        * </code>
@@ -7700,6 +8731,7 @@ public final class TransactionsOuterClass {
                 io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
                     .CoinToSpend.getDefaultInstance());
       }
+
       /**
        * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
        * </code>
@@ -7719,6 +8751,7 @@ public final class TransactionsOuterClass {
                 io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
                     .CoinToSpend.getDefaultInstance());
       }
+
       /**
        * <code>repeated .swisschain.sirius.vaultApi.transactions.CoinToSpend coins_to_spend = 8;
        * </code>
@@ -7794,12 +8827,6 @@ public final class TransactionsOuterClass {
         return coinsToSpendBuilder_;
       }
 
-      private com.google.protobuf.Timestamp createdAt_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.Timestamp,
-              com.google.protobuf.Timestamp.Builder,
-              com.google.protobuf.TimestampOrBuilder>
-          createdAtBuilder_;
       /**
        * <code>.google.protobuf.Timestamp created_at = 9;</code>
        *
@@ -7808,6 +8835,7 @@ public final class TransactionsOuterClass {
       public boolean hasCreatedAt() {
         return createdAtBuilder_ != null || createdAt_ != null;
       }
+
       /**
        * <code>.google.protobuf.Timestamp created_at = 9;</code>
        *
@@ -7822,6 +8850,7 @@ public final class TransactionsOuterClass {
           return createdAtBuilder_.getMessage();
         }
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 9;</code> */
       public Builder setCreatedAt(com.google.protobuf.Timestamp value) {
         if (createdAtBuilder_ == null) {
@@ -7836,6 +8865,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 9;</code> */
       public Builder setCreatedAt(com.google.protobuf.Timestamp.Builder builderForValue) {
         if (createdAtBuilder_ == null) {
@@ -7847,6 +8877,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 9;</code> */
       public Builder mergeCreatedAt(com.google.protobuf.Timestamp value) {
         if (createdAtBuilder_ == null) {
@@ -7865,6 +8896,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 9;</code> */
       public Builder clearCreatedAt() {
         if (createdAtBuilder_ == null) {
@@ -7877,12 +8909,14 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 9;</code> */
       public com.google.protobuf.Timestamp.Builder getCreatedAtBuilder() {
 
         onChanged();
         return getCreatedAtFieldBuilder().getBuilder();
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 9;</code> */
       public com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder() {
         if (createdAtBuilder_ != null) {
@@ -7893,6 +8927,7 @@ public final class TransactionsOuterClass {
               : createdAt_;
         }
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 9;</code> */
       private com.google.protobuf.SingleFieldBuilderV3<
               com.google.protobuf.Timestamp,
@@ -7911,12 +8946,6 @@ public final class TransactionsOuterClass {
         return createdAtBuilder_;
       }
 
-      private com.google.protobuf.Timestamp updatedAt_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.Timestamp,
-              com.google.protobuf.Timestamp.Builder,
-              com.google.protobuf.TimestampOrBuilder>
-          updatedAtBuilder_;
       /**
        * <code>.google.protobuf.Timestamp updated_at = 10;</code>
        *
@@ -8042,16 +9071,38 @@ public final class TransactionsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transactions.TransactionSigningRequest)
     }
+  }
 
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.TransactionSigningRequest)
+  /** Protobuf type {@code swisschain.sirius.vaultApi.transactions.CoinToSpend} */
+  public static final class CoinToSpend extends com.google.protobuf.GeneratedMessageV3
+      implements
+      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.CoinToSpend)
+      CoinToSpendOrBuilder {
+    public static final int ID_FIELD_NUMBER = 1;
+    public static final int ASSET_FIELD_NUMBER = 2;
+    public static final int VALUE_FIELD_NUMBER = 3;
+    public static final int REDEEM_FIELD_NUMBER = 4;
+    public static final int ADDRESS_FIELD_NUMBER = 5;
+    private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.CoinToSpend)
     private static final io.swisschain
             .sirius
             .vaultApi
             .generated
             .transactions
             .TransactionsOuterClass
-            .TransactionSigningRequest
+            .CoinToSpend
         DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<CoinToSpend> PARSER =
+        new com.google.protobuf.AbstractParser<CoinToSpend>() {
+          @java.lang.Override
+          public CoinToSpend parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new CoinToSpend(input, extensionRegistry);
+          }
+        };
 
     static {
       DEFAULT_INSTANCE =
@@ -8061,166 +9112,29 @@ public final class TransactionsOuterClass {
               .generated
               .transactions
               .TransactionsOuterClass
-              .TransactionSigningRequest();
+              .CoinToSpend();
     }
 
-    public static io.swisschain
+    private io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId id_;
+    private io.swisschain
             .sirius
             .vaultApi
             .generated
             .transactions
             .TransactionsOuterClass
-            .TransactionSigningRequest
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<TransactionSigningRequest> PARSER =
-        new com.google.protobuf.AbstractParser<TransactionSigningRequest>() {
-          @java.lang.Override
-          public TransactionSigningRequest parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new TransactionSigningRequest(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<TransactionSigningRequest> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<TransactionSigningRequest> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .TransactionSigningRequest
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  public interface CoinToSpendOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.CoinToSpend)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code>
-     *
-     * @return Whether the id field is set.
-     */
-    boolean hasId();
-    /**
-     * <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code>
-     *
-     * @return The id.
-     */
-    io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId getId();
-    /** <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code> */
-    io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinIdOrBuilder
-        getIdOrBuilder();
-
-    /**
-     * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code>
-     *
-     * @return Whether the asset field is set.
-     */
-    boolean hasAsset();
-    /**
-     * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code>
-     *
-     * @return The asset.
-     */
-    io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.BlockchainAsset
-        getAsset();
-    /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code> */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .BlockchainAssetOrBuilder
-        getAssetOrBuilder();
-
-    /**
-     * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
-     *
-     * @return Whether the value field is set.
-     */
-    boolean hasValue();
-    /**
-     * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
-     *
-     * @return The value.
-     */
-    io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal getValue();
-    /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
-    io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimalOrBuilder getValueOrBuilder();
-
-    /**
-     * <code>.google.protobuf.StringValue redeem = 4;</code>
-     *
-     * @return Whether the redeem field is set.
-     */
-    boolean hasRedeem();
-    /**
-     * <code>.google.protobuf.StringValue redeem = 4;</code>
-     *
-     * @return The redeem.
-     */
-    com.google.protobuf.StringValue getRedeem();
-    /** <code>.google.protobuf.StringValue redeem = 4;</code> */
-    com.google.protobuf.StringValueOrBuilder getRedeemOrBuilder();
-
-    /**
-     * <code>string address = 5;</code>
-     *
-     * @return The address.
-     */
-    java.lang.String getAddress();
-    /**
-     * <code>string address = 5;</code>
-     *
-     * @return The bytes for address.
-     */
-    com.google.protobuf.ByteString getAddressBytes();
-  }
-  /** Protobuf type {@code swisschain.sirius.vaultApi.transactions.CoinToSpend} */
-  public static final class CoinToSpend extends com.google.protobuf.GeneratedMessageV3
-      implements
-      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.CoinToSpend)
-      CoinToSpendOrBuilder {
-    private static final long serialVersionUID = 0L;
+            .BlockchainAsset
+        asset_;
+    private io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal value_;
+    private com.google.protobuf.StringValue redeem_;
+    private volatile java.lang.Object address_;
+    private byte memoizedIsInitialized = -1;
     // Use CoinToSpend.newBuilder() to construct.
     private CoinToSpend(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private CoinToSpend() {
       address_ = "";
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new CoinToSpend();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private CoinToSpend(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -8358,346 +9272,6 @@ public final class TransactionsOuterClass {
           .transactions
           .TransactionsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transactions_CoinToSpend_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transactions_CoinToSpend_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .CoinToSpend
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .CoinToSpend
-                  .Builder
-                  .class);
-    }
-
-    public static final int ID_FIELD_NUMBER = 1;
-    private io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId id_;
-    /**
-     * <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code>
-     *
-     * @return Whether the id field is set.
-     */
-    @java.lang.Override
-    public boolean hasId() {
-      return id_ != null;
-    }
-    /**
-     * <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code>
-     *
-     * @return The id.
-     */
-    @java.lang.Override
-    public io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId
-        getId() {
-      return id_ == null
-          ? io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId
-              .getDefaultInstance()
-          : id_;
-    }
-    /** <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code> */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .CoinIdOrBuilder
-        getIdOrBuilder() {
-      return getId();
-    }
-
-    public static final int ASSET_FIELD_NUMBER = 2;
-    private io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .BlockchainAsset
-        asset_;
-    /**
-     * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code>
-     *
-     * @return Whether the asset field is set.
-     */
-    @java.lang.Override
-    public boolean hasAsset() {
-      return asset_ != null;
-    }
-    /**
-     * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code>
-     *
-     * @return The asset.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .BlockchainAsset
-        getAsset() {
-      return asset_ == null
-          ? io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-              .BlockchainAsset.getDefaultInstance()
-          : asset_;
-    }
-    /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code> */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .BlockchainAssetOrBuilder
-        getAssetOrBuilder() {
-      return getAsset();
-    }
-
-    public static final int VALUE_FIELD_NUMBER = 3;
-    private io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal value_;
-    /**
-     * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
-     *
-     * @return Whether the value field is set.
-     */
-    @java.lang.Override
-    public boolean hasValue() {
-      return value_ != null;
-    }
-    /**
-     * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
-     *
-     * @return The value.
-     */
-    @java.lang.Override
-    public io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal getValue() {
-      return value_ == null
-          ? io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.getDefaultInstance()
-          : value_;
-    }
-    /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
-    @java.lang.Override
-    public io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimalOrBuilder
-        getValueOrBuilder() {
-      return getValue();
-    }
-
-    public static final int REDEEM_FIELD_NUMBER = 4;
-    private com.google.protobuf.StringValue redeem_;
-    /**
-     * <code>.google.protobuf.StringValue redeem = 4;</code>
-     *
-     * @return Whether the redeem field is set.
-     */
-    @java.lang.Override
-    public boolean hasRedeem() {
-      return redeem_ != null;
-    }
-    /**
-     * <code>.google.protobuf.StringValue redeem = 4;</code>
-     *
-     * @return The redeem.
-     */
-    @java.lang.Override
-    public com.google.protobuf.StringValue getRedeem() {
-      return redeem_ == null ? com.google.protobuf.StringValue.getDefaultInstance() : redeem_;
-    }
-    /** <code>.google.protobuf.StringValue redeem = 4;</code> */
-    @java.lang.Override
-    public com.google.protobuf.StringValueOrBuilder getRedeemOrBuilder() {
-      return getRedeem();
-    }
-
-    public static final int ADDRESS_FIELD_NUMBER = 5;
-    private volatile java.lang.Object address_;
-    /**
-     * <code>string address = 5;</code>
-     *
-     * @return The address.
-     */
-    @java.lang.Override
-    public java.lang.String getAddress() {
-      java.lang.Object ref = address_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        address_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string address = 5;</code>
-     *
-     * @return The bytes for address.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getAddressBytes() {
-      java.lang.Object ref = address_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        address_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (id_ != null) {
-        output.writeMessage(1, getId());
-      }
-      if (asset_ != null) {
-        output.writeMessage(2, getAsset());
-      }
-      if (value_ != null) {
-        output.writeMessage(3, getValue());
-      }
-      if (redeem_ != null) {
-        output.writeMessage(4, getRedeem());
-      }
-      if (!getAddressBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, address_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (id_ != null) {
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, getId());
-      }
-      if (asset_ != null) {
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(2, getAsset());
-      }
-      if (value_ != null) {
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(3, getValue());
-      }
-      if (redeem_ != null) {
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(4, getRedeem());
-      }
-      if (!getAddressBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, address_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .CoinToSpend)) {
-        return super.equals(obj);
-      }
-      io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinToSpend
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transactions
-                      .TransactionsOuterClass
-                      .CoinToSpend)
-                  obj;
-
-      if (hasId() != other.hasId()) return false;
-      if (hasId()) {
-        if (!getId().equals(other.getId())) return false;
-      }
-      if (hasAsset() != other.hasAsset()) return false;
-      if (hasAsset()) {
-        if (!getAsset().equals(other.getAsset())) return false;
-      }
-      if (hasValue() != other.hasValue()) return false;
-      if (hasValue()) {
-        if (!getValue().equals(other.getValue())) return false;
-      }
-      if (hasRedeem() != other.hasRedeem()) return false;
-      if (hasRedeem()) {
-        if (!getRedeem().equals(other.getRedeem())) return false;
-      }
-      if (!getAddress().equals(other.getAddress())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasId()) {
-        hash = (37 * hash) + ID_FIELD_NUMBER;
-        hash = (53 * hash) + getId().hashCode();
-      }
-      if (hasAsset()) {
-        hash = (37 * hash) + ASSET_FIELD_NUMBER;
-        hash = (53 * hash) + getAsset().hashCode();
-      }
-      if (hasValue()) {
-        hash = (37 * hash) + VALUE_FIELD_NUMBER;
-        hash = (53 * hash) + getValue().hashCode();
-      }
-      if (hasRedeem()) {
-        hash = (37 * hash) + REDEEM_FIELD_NUMBER;
-        hash = (53 * hash) + getRedeem().hashCode();
-      }
-      hash = (37 * hash) + ADDRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getAddress().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -8850,11 +9424,6 @@ public final class TransactionsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -8863,6 +9432,367 @@ public final class TransactionsOuterClass {
         io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinToSpend
             prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .CoinToSpend
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<CoinToSpend> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new CoinToSpend();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transactions_CoinToSpend_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .CoinToSpend
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .CoinToSpend
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code>
+     *
+     * @return Whether the id field is set.
+     */
+    @java.lang.Override
+    public boolean hasId() {
+      return id_ != null;
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code>
+     *
+     * @return The id.
+     */
+    @java.lang.Override
+    public io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId
+        getId() {
+      return id_ == null
+          ? io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId
+              .getDefaultInstance()
+          : id_;
+    }
+
+    /** <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code> */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .CoinIdOrBuilder
+        getIdOrBuilder() {
+      return getId();
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code>
+     *
+     * @return Whether the asset field is set.
+     */
+    @java.lang.Override
+    public boolean hasAsset() {
+      return asset_ != null;
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code>
+     *
+     * @return The asset.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .BlockchainAsset
+        getAsset() {
+      return asset_ == null
+          ? io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+              .BlockchainAsset.getDefaultInstance()
+          : asset_;
+    }
+
+    /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code> */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .BlockchainAssetOrBuilder
+        getAssetOrBuilder() {
+      return getAsset();
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
+     *
+     * @return Whether the value field is set.
+     */
+    @java.lang.Override
+    public boolean hasValue() {
+      return value_ != null;
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
+     *
+     * @return The value.
+     */
+    @java.lang.Override
+    public io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal getValue() {
+      return value_ == null
+          ? io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.getDefaultInstance()
+          : value_;
+    }
+
+    /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
+    @java.lang.Override
+    public io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimalOrBuilder
+        getValueOrBuilder() {
+      return getValue();
+    }
+
+    /**
+     * <code>.google.protobuf.StringValue redeem = 4;</code>
+     *
+     * @return Whether the redeem field is set.
+     */
+    @java.lang.Override
+    public boolean hasRedeem() {
+      return redeem_ != null;
+    }
+
+    /**
+     * <code>.google.protobuf.StringValue redeem = 4;</code>
+     *
+     * @return The redeem.
+     */
+    @java.lang.Override
+    public com.google.protobuf.StringValue getRedeem() {
+      return redeem_ == null ? com.google.protobuf.StringValue.getDefaultInstance() : redeem_;
+    }
+
+    /** <code>.google.protobuf.StringValue redeem = 4;</code> */
+    @java.lang.Override
+    public com.google.protobuf.StringValueOrBuilder getRedeemOrBuilder() {
+      return getRedeem();
+    }
+
+    /**
+     * <code>string address = 5;</code>
+     *
+     * @return The address.
+     */
+    @java.lang.Override
+    public java.lang.String getAddress() {
+      java.lang.Object ref = address_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        address_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string address = 5;</code>
+     *
+     * @return The bytes for address.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getAddressBytes() {
+      java.lang.Object ref = address_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        address_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (id_ != null) {
+        output.writeMessage(1, getId());
+      }
+      if (asset_ != null) {
+        output.writeMessage(2, getAsset());
+      }
+      if (value_ != null) {
+        output.writeMessage(3, getValue());
+      }
+      if (redeem_ != null) {
+        output.writeMessage(4, getRedeem());
+      }
+      if (!getAddressBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, address_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (id_ != null) {
+        size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, getId());
+      }
+      if (asset_ != null) {
+        size += com.google.protobuf.CodedOutputStream.computeMessageSize(2, getAsset());
+      }
+      if (value_ != null) {
+        size += com.google.protobuf.CodedOutputStream.computeMessageSize(3, getValue());
+      }
+      if (redeem_ != null) {
+        size += com.google.protobuf.CodedOutputStream.computeMessageSize(4, getRedeem());
+      }
+      if (!getAddressBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, address_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .CoinToSpend)) {
+        return super.equals(obj);
+      }
+      io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinToSpend
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transactions
+                      .TransactionsOuterClass
+                      .CoinToSpend)
+                  obj;
+
+      if (hasId() != other.hasId()) return false;
+      if (hasId()) {
+        if (!getId().equals(other.getId())) return false;
+      }
+      if (hasAsset() != other.hasAsset()) return false;
+      if (hasAsset()) {
+        if (!getAsset().equals(other.getAsset())) return false;
+      }
+      if (hasValue() != other.hasValue()) return false;
+      if (hasValue()) {
+        if (!getValue().equals(other.getValue())) return false;
+      }
+      if (hasRedeem() != other.hasRedeem()) return false;
+      if (hasRedeem()) {
+        if (!getRedeem().equals(other.getRedeem())) return false;
+      }
+      if (!getAddress().equals(other.getAddress())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasId()) {
+        hash = (37 * hash) + ID_FIELD_NUMBER;
+        hash = (53 * hash) + getId().hashCode();
+      }
+      if (hasAsset()) {
+        hash = (37 * hash) + ASSET_FIELD_NUMBER;
+        hash = (53 * hash) + getAsset().hashCode();
+      }
+      if (hasValue()) {
+        hash = (37 * hash) + VALUE_FIELD_NUMBER;
+        hash = (53 * hash) + getValue().hashCode();
+      }
+      if (hasRedeem()) {
+        hash = (37 * hash) + REDEEM_FIELD_NUMBER;
+        hash = (53 * hash) + getRedeem().hashCode();
+      }
+      hash = (37 * hash) + ADDRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getAddress().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
     }
 
     @java.lang.Override
@@ -8876,6 +9806,18 @@ public final class TransactionsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CoinToSpend> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinToSpend
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /** Protobuf type {@code swisschain.sirius.vaultApi.transactions.CoinToSpend} */
     public static final class Builder
         extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
@@ -8888,6 +9830,83 @@ public final class TransactionsOuterClass {
             .transactions
             .TransactionsOuterClass
             .CoinToSpendOrBuilder {
+      private io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId
+          id_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .CoinId
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .CoinIdOrBuilder>
+          idBuilder_;
+      private io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .BlockchainAsset
+          asset_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .BlockchainAsset,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .BlockchainAsset
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .BlockchainAssetOrBuilder>
+          assetBuilder_;
+      private io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal value_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal,
+              io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.Builder,
+              io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimalOrBuilder>
+          valueBuilder_;
+      private com.google.protobuf.StringValue redeem_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              com.google.protobuf.StringValue,
+              com.google.protobuf.StringValue.Builder,
+              com.google.protobuf.StringValueOrBuilder>
+          redeemBuilder_;
+      private java.lang.Object address_ = "";
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinToSpend.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -8921,17 +9940,6 @@ public final class TransactionsOuterClass {
                     .CoinToSpend
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinToSpend.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -9157,26 +10165,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId
-          id_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .CoinId
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .CoinIdOrBuilder>
-          idBuilder_;
       /**
        * <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code>
        *
@@ -9185,6 +10173,7 @@ public final class TransactionsOuterClass {
       public boolean hasId() {
         return idBuilder_ != null || id_ != null;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code>
        *
@@ -9201,6 +10190,7 @@ public final class TransactionsOuterClass {
           return idBuilder_.getMessage();
         }
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code> */
       public Builder setId(
           io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId
@@ -9217,6 +10207,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code> */
       public Builder setId(
           io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId.Builder
@@ -9230,6 +10221,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code> */
       public Builder mergeId(
           io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId
@@ -9257,6 +10249,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code> */
       public Builder clearId() {
         if (idBuilder_ == null) {
@@ -9269,6 +10262,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code> */
       public io.swisschain
               .sirius
@@ -9283,6 +10277,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return getIdFieldBuilder().getBuilder();
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code> */
       public io.swisschain
               .sirius
@@ -9301,6 +10296,7 @@ public final class TransactionsOuterClass {
               : id_;
         }
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.CoinId id = 1;</code> */
       private com.google.protobuf.SingleFieldBuilderV3<
               io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId,
@@ -9350,38 +10346,6 @@ public final class TransactionsOuterClass {
         return idBuilder_;
       }
 
-      private io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .BlockchainAsset
-          asset_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .BlockchainAsset,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .BlockchainAsset
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .BlockchainAssetOrBuilder>
-          assetBuilder_;
       /**
        * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code>
        *
@@ -9390,6 +10354,7 @@ public final class TransactionsOuterClass {
       public boolean hasAsset() {
         return assetBuilder_ != null || asset_ != null;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code>
        *
@@ -9412,6 +10377,7 @@ public final class TransactionsOuterClass {
           return assetBuilder_.getMessage();
         }
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code> */
       public Builder setAsset(
           io.swisschain
@@ -9434,6 +10400,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code> */
       public Builder setAsset(
           io.swisschain
@@ -9454,6 +10421,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code> */
       public Builder mergeAsset(
           io.swisschain
@@ -9487,6 +10455,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code> */
       public Builder clearAsset() {
         if (assetBuilder_ == null) {
@@ -9499,6 +10468,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code> */
       public io.swisschain
               .sirius
@@ -9513,6 +10483,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return getAssetFieldBuilder().getBuilder();
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code> */
       public io.swisschain
               .sirius
@@ -9531,6 +10502,7 @@ public final class TransactionsOuterClass {
               : asset_;
         }
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAsset asset = 2;</code> */
       private com.google.protobuf.SingleFieldBuilderV3<
               io.swisschain
@@ -9586,12 +10558,6 @@ public final class TransactionsOuterClass {
         return assetBuilder_;
       }
 
-      private io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal value_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal,
-              io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.Builder,
-              io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimalOrBuilder>
-          valueBuilder_;
       /**
        * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
        *
@@ -9600,6 +10566,7 @@ public final class TransactionsOuterClass {
       public boolean hasValue() {
         return valueBuilder_ != null || value_ != null;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
        *
@@ -9615,6 +10582,7 @@ public final class TransactionsOuterClass {
           return valueBuilder_.getMessage();
         }
       }
+
       /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
       public Builder setValue(
           io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal value) {
@@ -9630,6 +10598,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
       public Builder setValue(
           io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.Builder
@@ -9643,6 +10612,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
       public Builder mergeValue(
           io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal value) {
@@ -9669,6 +10639,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
       public Builder clearValue() {
         if (valueBuilder_ == null) {
@@ -9681,6 +10652,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
       public io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.Builder
           getValueBuilder() {
@@ -9688,6 +10660,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return getValueFieldBuilder().getBuilder();
       }
+
       /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
       public io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimalOrBuilder
           getValueOrBuilder() {
@@ -9700,6 +10673,7 @@ public final class TransactionsOuterClass {
               : value_;
         }
       }
+
       /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
       private com.google.protobuf.SingleFieldBuilderV3<
               io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal,
@@ -9718,12 +10692,6 @@ public final class TransactionsOuterClass {
         return valueBuilder_;
       }
 
-      private com.google.protobuf.StringValue redeem_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.StringValue,
-              com.google.protobuf.StringValue.Builder,
-              com.google.protobuf.StringValueOrBuilder>
-          redeemBuilder_;
       /**
        * <code>.google.protobuf.StringValue redeem = 4;</code>
        *
@@ -9732,6 +10700,7 @@ public final class TransactionsOuterClass {
       public boolean hasRedeem() {
         return redeemBuilder_ != null || redeem_ != null;
       }
+
       /**
        * <code>.google.protobuf.StringValue redeem = 4;</code>
        *
@@ -9744,6 +10713,7 @@ public final class TransactionsOuterClass {
           return redeemBuilder_.getMessage();
         }
       }
+
       /** <code>.google.protobuf.StringValue redeem = 4;</code> */
       public Builder setRedeem(com.google.protobuf.StringValue value) {
         if (redeemBuilder_ == null) {
@@ -9758,6 +10728,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.StringValue redeem = 4;</code> */
       public Builder setRedeem(com.google.protobuf.StringValue.Builder builderForValue) {
         if (redeemBuilder_ == null) {
@@ -9769,6 +10740,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.StringValue redeem = 4;</code> */
       public Builder mergeRedeem(com.google.protobuf.StringValue value) {
         if (redeemBuilder_ == null) {
@@ -9785,6 +10757,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.StringValue redeem = 4;</code> */
       public Builder clearRedeem() {
         if (redeemBuilder_ == null) {
@@ -9797,12 +10770,14 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.StringValue redeem = 4;</code> */
       public com.google.protobuf.StringValue.Builder getRedeemBuilder() {
 
         onChanged();
         return getRedeemFieldBuilder().getBuilder();
       }
+
       /** <code>.google.protobuf.StringValue redeem = 4;</code> */
       public com.google.protobuf.StringValueOrBuilder getRedeemOrBuilder() {
         if (redeemBuilder_ != null) {
@@ -9811,6 +10786,7 @@ public final class TransactionsOuterClass {
           return redeem_ == null ? com.google.protobuf.StringValue.getDefaultInstance() : redeem_;
         }
       }
+
       /** <code>.google.protobuf.StringValue redeem = 4;</code> */
       private com.google.protobuf.SingleFieldBuilderV3<
               com.google.protobuf.StringValue,
@@ -9829,7 +10805,6 @@ public final class TransactionsOuterClass {
         return redeemBuilder_;
       }
 
-      private java.lang.Object address_ = "";
       /**
        * <code>string address = 5;</code>
        *
@@ -9846,6 +10821,23 @@ public final class TransactionsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string address = 5;</code>
+       *
+       * @param value The address to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAddress(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        address_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string address = 5;</code>
        *
@@ -9862,32 +10854,7 @@ public final class TransactionsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string address = 5;</code>
-       *
-       * @param value The address to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAddress(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        address_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string address = 5;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearAddress() {
-
-        address_ = getDefaultInstance().getAddress();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string address = 5;</code>
        *
@@ -9901,6 +10868,18 @@ public final class TransactionsOuterClass {
         checkByteStringIsUtf8(value);
 
         address_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string address = 5;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearAddress() {
+
+        address_ = getDefaultInstance().getAddress();
         onChanged();
         return this;
       }
@@ -9919,117 +10898,51 @@ public final class TransactionsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transactions.CoinToSpend)
     }
+  }
 
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.CoinToSpend)
+  /** Protobuf type {@code swisschain.sirius.vaultApi.transactions.CoinId} */
+  public static final class CoinId extends com.google.protobuf.GeneratedMessageV3
+      implements
+      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.CoinId)
+      CoinIdOrBuilder {
+    public static final int TRANSACTION_ID_FIELD_NUMBER = 1;
+    public static final int NUMBER_FIELD_NUMBER = 2;
+    private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.CoinId)
     private static final io.swisschain
             .sirius
             .vaultApi
             .generated
             .transactions
             .TransactionsOuterClass
-            .CoinToSpend
+            .CoinId
         DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .CoinToSpend();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .CoinToSpend
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<CoinToSpend> PARSER =
-        new com.google.protobuf.AbstractParser<CoinToSpend>() {
+    private static final com.google.protobuf.Parser<CoinId> PARSER =
+        new com.google.protobuf.AbstractParser<CoinId>() {
           @java.lang.Override
-          public CoinToSpend parsePartialFrom(
+          public CoinId parsePartialFrom(
               com.google.protobuf.CodedInputStream input,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
               throws com.google.protobuf.InvalidProtocolBufferException {
-            return new CoinToSpend(input, extensionRegistry);
+            return new CoinId(input, extensionRegistry);
           }
         };
 
-    public static com.google.protobuf.Parser<CoinToSpend> parser() {
-      return PARSER;
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId();
     }
 
-    @java.lang.Override
-    public com.google.protobuf.Parser<CoinToSpend> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinToSpend
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  public interface CoinIdOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.CoinId)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>string transaction_id = 1;</code>
-     *
-     * @return The transactionId.
-     */
-    java.lang.String getTransactionId();
-    /**
-     * <code>string transaction_id = 1;</code>
-     *
-     * @return The bytes for transactionId.
-     */
-    com.google.protobuf.ByteString getTransactionIdBytes();
-
-    /**
-     * <code>int32 number = 2;</code>
-     *
-     * @return The number.
-     */
-    int getNumber();
-  }
-  /** Protobuf type {@code swisschain.sirius.vaultApi.transactions.CoinId} */
-  public static final class CoinId extends com.google.protobuf.GeneratedMessageV3
-      implements
-      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.CoinId)
-      CoinIdOrBuilder {
-    private static final long serialVersionUID = 0L;
+    private volatile java.lang.Object transactionId_;
+    private int number_;
+    private byte memoizedIsInitialized = -1;
     // Use CoinId.newBuilder() to construct.
     private CoinId(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private CoinId() {
       transactionId_ = "";
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new CoinId();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private CoinId(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -10087,155 +11000,6 @@ public final class TransactionsOuterClass {
           .transactions
           .TransactionsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transactions_CoinId_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transactions_CoinId_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .CoinId
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .CoinId
-                  .Builder
-                  .class);
-    }
-
-    public static final int TRANSACTION_ID_FIELD_NUMBER = 1;
-    private volatile java.lang.Object transactionId_;
-    /**
-     * <code>string transaction_id = 1;</code>
-     *
-     * @return The transactionId.
-     */
-    @java.lang.Override
-    public java.lang.String getTransactionId() {
-      java.lang.Object ref = transactionId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        transactionId_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string transaction_id = 1;</code>
-     *
-     * @return The bytes for transactionId.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getTransactionIdBytes() {
-      java.lang.Object ref = transactionId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        transactionId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int NUMBER_FIELD_NUMBER = 2;
-    private int number_;
-    /**
-     * <code>int32 number = 2;</code>
-     *
-     * @return The number.
-     */
-    @java.lang.Override
-    public int getNumber() {
-      return number_;
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (!getTransactionIdBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, transactionId_);
-      }
-      if (number_ != 0) {
-        output.writeInt32(2, number_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!getTransactionIdBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, transactionId_);
-      }
-      if (number_ != 0) {
-        size += com.google.protobuf.CodedOutputStream.computeInt32Size(2, number_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId)) {
-        return super.equals(obj);
-      }
-      io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId other =
-          (io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId) obj;
-
-      if (!getTransactionId().equals(other.getTransactionId())) return false;
-      if (getNumber() != other.getNumber()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TRANSACTION_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getTransactionId().hashCode();
-      hash = (37 * hash) + NUMBER_FIELD_NUMBER;
-      hash = (53 * hash) + getNumber();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId
@@ -10316,11 +11080,6 @@ public final class TransactionsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -10329,6 +11088,175 @@ public final class TransactionsOuterClass {
         io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId
             prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<CoinId> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new CoinId();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transactions_CoinId_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .CoinId
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .CoinId
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>string transaction_id = 1;</code>
+     *
+     * @return The transactionId.
+     */
+    @java.lang.Override
+    public java.lang.String getTransactionId() {
+      java.lang.Object ref = transactionId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        transactionId_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string transaction_id = 1;</code>
+     *
+     * @return The bytes for transactionId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getTransactionIdBytes() {
+      java.lang.Object ref = transactionId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        transactionId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>int32 number = 2;</code>
+     *
+     * @return The number.
+     */
+    @java.lang.Override
+    public int getNumber() {
+      return number_;
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (!getTransactionIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, transactionId_);
+      }
+      if (number_ != 0) {
+        output.writeInt32(2, number_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getTransactionIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, transactionId_);
+      }
+      if (number_ != 0) {
+        size += com.google.protobuf.CodedOutputStream.computeInt32Size(2, number_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId)) {
+        return super.equals(obj);
+      }
+      io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId other =
+          (io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId) obj;
+
+      if (!getTransactionId().equals(other.getTransactionId())) return false;
+      if (getNumber() != other.getNumber()) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + TRANSACTION_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTransactionId().hashCode();
+      hash = (37 * hash) + NUMBER_FIELD_NUMBER;
+      hash = (53 * hash) + getNumber();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
     }
 
     @java.lang.Override
@@ -10342,6 +11270,18 @@ public final class TransactionsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CoinId> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /** Protobuf type {@code swisschain.sirius.vaultApi.transactions.CoinId} */
     public static final class Builder
         extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
@@ -10354,6 +11294,20 @@ public final class TransactionsOuterClass {
             .transactions
             .TransactionsOuterClass
             .CoinIdOrBuilder {
+      private java.lang.Object transactionId_ = "";
+      private int number_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -10387,17 +11341,6 @@ public final class TransactionsOuterClass {
                     .CoinId
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -10549,7 +11492,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private java.lang.Object transactionId_ = "";
       /**
        * <code>string transaction_id = 1;</code>
        *
@@ -10566,6 +11508,23 @@ public final class TransactionsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string transaction_id = 1;</code>
+       *
+       * @param value The transactionId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTransactionId(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        transactionId_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string transaction_id = 1;</code>
        *
@@ -10582,32 +11541,7 @@ public final class TransactionsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string transaction_id = 1;</code>
-       *
-       * @param value The transactionId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTransactionId(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        transactionId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string transaction_id = 1;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearTransactionId() {
-
-        transactionId_ = getDefaultInstance().getTransactionId();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string transaction_id = 1;</code>
        *
@@ -10625,7 +11559,18 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private int number_;
+      /**
+       * <code>string transaction_id = 1;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearTransactionId() {
+
+        transactionId_ = getDefaultInstance().getTransactionId();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>int32 number = 2;</code>
        *
@@ -10673,113 +11618,62 @@ public final class TransactionsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transactions.CoinId)
     }
+  }
 
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.CoinId)
+  /** Protobuf type {@code swisschain.sirius.vaultApi.transactions.BlockchainAsset} */
+  public static final class BlockchainAsset extends com.google.protobuf.GeneratedMessageV3
+      implements
+      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.BlockchainAsset)
+      BlockchainAssetOrBuilder {
+    public static final int ID_FIELD_NUMBER = 1;
+    public static final int ACCURACY_FIELD_NUMBER = 2;
+    private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.BlockchainAsset)
     private static final io.swisschain
             .sirius
             .vaultApi
             .generated
             .transactions
             .TransactionsOuterClass
-            .CoinId
+            .BlockchainAsset
         DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId();
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<CoinId> PARSER =
-        new com.google.protobuf.AbstractParser<CoinId>() {
+    private static final com.google.protobuf.Parser<BlockchainAsset> PARSER =
+        new com.google.protobuf.AbstractParser<BlockchainAsset>() {
           @java.lang.Override
-          public CoinId parsePartialFrom(
+          public BlockchainAsset parsePartialFrom(
               com.google.protobuf.CodedInputStream input,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
               throws com.google.protobuf.InvalidProtocolBufferException {
-            return new CoinId(input, extensionRegistry);
+            return new BlockchainAsset(input, extensionRegistry);
           }
         };
 
-    public static com.google.protobuf.Parser<CoinId> parser() {
-      return PARSER;
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .BlockchainAsset();
     }
 
-    @java.lang.Override
-    public com.google.protobuf.Parser<CoinId> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.CoinId
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  public interface BlockchainAssetOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.BlockchainAsset)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code>
-     *
-     * @return Whether the id field is set.
-     */
-    boolean hasId();
-    /**
-     * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code>
-     *
-     * @return The id.
-     */
-    io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.BlockchainAssetId
-        getId();
-    /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code> */
-    io.swisschain
+    private io.swisschain
             .sirius
             .vaultApi
             .generated
             .transactions
             .TransactionsOuterClass
-            .BlockchainAssetIdOrBuilder
-        getIdOrBuilder();
-
-    /**
-     * <code>int32 accuracy = 2;</code>
-     *
-     * @return The accuracy.
-     */
-    int getAccuracy();
-  }
-  /** Protobuf type {@code swisschain.sirius.vaultApi.transactions.BlockchainAsset} */
-  public static final class BlockchainAsset extends com.google.protobuf.GeneratedMessageV3
-      implements
-      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.BlockchainAsset)
-      BlockchainAssetOrBuilder {
-    private static final long serialVersionUID = 0L;
+            .BlockchainAssetId
+        id_;
+    private int accuracy_;
+    private byte memoizedIsInitialized = -1;
     // Use BlockchainAsset.newBuilder() to construct.
     private BlockchainAsset(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private BlockchainAsset() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new BlockchainAsset();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private BlockchainAsset(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -10856,187 +11750,6 @@ public final class TransactionsOuterClass {
           .transactions
           .TransactionsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAsset_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAsset_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .BlockchainAsset
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .BlockchainAsset
-                  .Builder
-                  .class);
-    }
-
-    public static final int ID_FIELD_NUMBER = 1;
-    private io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .BlockchainAssetId
-        id_;
-    /**
-     * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code>
-     *
-     * @return Whether the id field is set.
-     */
-    @java.lang.Override
-    public boolean hasId() {
-      return id_ != null;
-    }
-    /**
-     * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code>
-     *
-     * @return The id.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .BlockchainAssetId
-        getId() {
-      return id_ == null
-          ? io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-              .BlockchainAssetId.getDefaultInstance()
-          : id_;
-    }
-    /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code> */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .BlockchainAssetIdOrBuilder
-        getIdOrBuilder() {
-      return getId();
-    }
-
-    public static final int ACCURACY_FIELD_NUMBER = 2;
-    private int accuracy_;
-    /**
-     * <code>int32 accuracy = 2;</code>
-     *
-     * @return The accuracy.
-     */
-    @java.lang.Override
-    public int getAccuracy() {
-      return accuracy_;
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (id_ != null) {
-        output.writeMessage(1, getId());
-      }
-      if (accuracy_ != 0) {
-        output.writeInt32(2, accuracy_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (id_ != null) {
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, getId());
-      }
-      if (accuracy_ != 0) {
-        size += com.google.protobuf.CodedOutputStream.computeInt32Size(2, accuracy_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .BlockchainAsset)) {
-        return super.equals(obj);
-      }
-      io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.BlockchainAsset
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transactions
-                      .TransactionsOuterClass
-                      .BlockchainAsset)
-                  obj;
-
-      if (hasId() != other.hasId()) return false;
-      if (hasId()) {
-        if (!getId().equals(other.getId())) return false;
-      }
-      if (getAccuracy() != other.getAccuracy()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasId()) {
-        hash = (37 * hash) + ID_FIELD_NUMBER;
-        hash = (53 * hash) + getId().hashCode();
-      }
-      hash = (37 * hash) + ACCURACY_FIELD_NUMBER;
-      hash = (53 * hash) + getAccuracy();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -11189,11 +11902,6 @@ public final class TransactionsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -11202,6 +11910,207 @@ public final class TransactionsOuterClass {
         io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.BlockchainAsset
             prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .BlockchainAsset
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<BlockchainAsset> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new BlockchainAsset();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAsset_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .BlockchainAsset
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .BlockchainAsset
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code>
+     *
+     * @return Whether the id field is set.
+     */
+    @java.lang.Override
+    public boolean hasId() {
+      return id_ != null;
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code>
+     *
+     * @return The id.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .BlockchainAssetId
+        getId() {
+      return id_ == null
+          ? io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+              .BlockchainAssetId.getDefaultInstance()
+          : id_;
+    }
+
+    /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code> */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .BlockchainAssetIdOrBuilder
+        getIdOrBuilder() {
+      return getId();
+    }
+
+    /**
+     * <code>int32 accuracy = 2;</code>
+     *
+     * @return The accuracy.
+     */
+    @java.lang.Override
+    public int getAccuracy() {
+      return accuracy_;
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (id_ != null) {
+        output.writeMessage(1, getId());
+      }
+      if (accuracy_ != 0) {
+        output.writeInt32(2, accuracy_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (id_ != null) {
+        size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, getId());
+      }
+      if (accuracy_ != 0) {
+        size += com.google.protobuf.CodedOutputStream.computeInt32Size(2, accuracy_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .BlockchainAsset)) {
+        return super.equals(obj);
+      }
+      io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.BlockchainAsset
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transactions
+                      .TransactionsOuterClass
+                      .BlockchainAsset)
+                  obj;
+
+      if (hasId() != other.hasId()) return false;
+      if (hasId()) {
+        if (!getId().equals(other.getId())) return false;
+      }
+      if (getAccuracy() != other.getAccuracy()) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasId()) {
+        hash = (37 * hash) + ID_FIELD_NUMBER;
+        hash = (53 * hash) + getId().hashCode();
+      }
+      hash = (37 * hash) + ACCURACY_FIELD_NUMBER;
+      hash = (53 * hash) + getAccuracy();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
     }
 
     @java.lang.Override
@@ -11215,6 +12124,24 @@ public final class TransactionsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<BlockchainAsset> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .BlockchainAsset
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /** Protobuf type {@code swisschain.sirius.vaultApi.transactions.BlockchainAsset} */
     public static final class Builder
         extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
@@ -11227,6 +12154,51 @@ public final class TransactionsOuterClass {
             .transactions
             .TransactionsOuterClass
             .BlockchainAssetOrBuilder {
+      private io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .BlockchainAssetId
+          id_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .BlockchainAssetId,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .BlockchainAssetId
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .BlockchainAssetIdOrBuilder>
+          idBuilder_;
+      private int accuracy_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.BlockchainAsset.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -11260,17 +12232,6 @@ public final class TransactionsOuterClass {
                     .BlockchainAsset
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.BlockchainAsset.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -11477,38 +12438,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .BlockchainAssetId
-          id_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .BlockchainAssetId,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .BlockchainAssetId
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .BlockchainAssetIdOrBuilder>
-          idBuilder_;
       /**
        * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code>
        *
@@ -11517,6 +12446,7 @@ public final class TransactionsOuterClass {
       public boolean hasId() {
         return idBuilder_ != null || id_ != null;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code>
        *
@@ -11539,6 +12469,7 @@ public final class TransactionsOuterClass {
           return idBuilder_.getMessage();
         }
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code> */
       public Builder setId(
           io.swisschain
@@ -11561,6 +12492,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code> */
       public Builder setId(
           io.swisschain
@@ -11581,6 +12513,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code> */
       public Builder mergeId(
           io.swisschain
@@ -11614,6 +12547,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code> */
       public Builder clearId() {
         if (idBuilder_ == null) {
@@ -11626,6 +12560,7 @@ public final class TransactionsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code> */
       public io.swisschain
               .sirius
@@ -11640,6 +12575,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return getIdFieldBuilder().getBuilder();
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code> */
       public io.swisschain
               .sirius
@@ -11658,6 +12594,7 @@ public final class TransactionsOuterClass {
               : id_;
         }
       }
+
       /** <code>.swisschain.sirius.vaultApi.transactions.BlockchainAssetId id = 1;</code> */
       private com.google.protobuf.SingleFieldBuilderV3<
               io.swisschain
@@ -11713,7 +12650,6 @@ public final class TransactionsOuterClass {
         return idBuilder_;
       }
 
-      private int accuracy_;
       /**
        * <code>int32 accuracy = 2;</code>
        *
@@ -11761,16 +12697,35 @@ public final class TransactionsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transactions.BlockchainAsset)
     }
+  }
 
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.BlockchainAsset)
+  /** Protobuf type {@code swisschain.sirius.vaultApi.transactions.BlockchainAssetId} */
+  public static final class BlockchainAssetId extends com.google.protobuf.GeneratedMessageV3
+      implements
+      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.BlockchainAssetId)
+      BlockchainAssetIdOrBuilder {
+    public static final int SYMBOL_FIELD_NUMBER = 1;
+    public static final int ADDRESS_FIELD_NUMBER = 2;
+    private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.BlockchainAssetId)
     private static final io.swisschain
             .sirius
             .vaultApi
             .generated
             .transactions
             .TransactionsOuterClass
-            .BlockchainAsset
+            .BlockchainAssetId
         DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<BlockchainAssetId> PARSER =
+        new com.google.protobuf.AbstractParser<BlockchainAssetId>() {
+          @java.lang.Override
+          public BlockchainAssetId parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new BlockchainAssetId(input, extensionRegistry);
+          }
+        };
 
     static {
       DEFAULT_INSTANCE =
@@ -11780,112 +12735,19 @@ public final class TransactionsOuterClass {
               .generated
               .transactions
               .TransactionsOuterClass
-              .BlockchainAsset();
+              .BlockchainAssetId();
     }
 
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .BlockchainAsset
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<BlockchainAsset> PARSER =
-        new com.google.protobuf.AbstractParser<BlockchainAsset>() {
-          @java.lang.Override
-          public BlockchainAsset parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new BlockchainAsset(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<BlockchainAsset> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<BlockchainAsset> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .BlockchainAsset
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  public interface BlockchainAssetIdOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.BlockchainAssetId)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>string symbol = 1;</code>
-     *
-     * @return The symbol.
-     */
-    java.lang.String getSymbol();
-    /**
-     * <code>string symbol = 1;</code>
-     *
-     * @return The bytes for symbol.
-     */
-    com.google.protobuf.ByteString getSymbolBytes();
-
-    /**
-     * <code>.google.protobuf.StringValue address = 2;</code>
-     *
-     * @return Whether the address field is set.
-     */
-    boolean hasAddress();
-    /**
-     * <code>.google.protobuf.StringValue address = 2;</code>
-     *
-     * @return The address.
-     */
-    com.google.protobuf.StringValue getAddress();
-    /** <code>.google.protobuf.StringValue address = 2;</code> */
-    com.google.protobuf.StringValueOrBuilder getAddressOrBuilder();
-  }
-  /** Protobuf type {@code swisschain.sirius.vaultApi.transactions.BlockchainAssetId} */
-  public static final class BlockchainAssetId extends com.google.protobuf.GeneratedMessageV3
-      implements
-      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.BlockchainAssetId)
-      BlockchainAssetIdOrBuilder {
-    private static final long serialVersionUID = 0L;
+    private volatile java.lang.Object symbol_;
+    private com.google.protobuf.StringValue address_;
+    private byte memoizedIsInitialized = -1;
     // Use BlockchainAssetId.newBuilder() to construct.
     private BlockchainAssetId(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private BlockchainAssetId() {
       symbol_ = "";
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new BlockchainAssetId();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private BlockchainAssetId(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -11953,188 +12815,6 @@ public final class TransactionsOuterClass {
           .transactions
           .TransactionsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAssetId_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAssetId_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .BlockchainAssetId
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .BlockchainAssetId
-                  .Builder
-                  .class);
-    }
-
-    public static final int SYMBOL_FIELD_NUMBER = 1;
-    private volatile java.lang.Object symbol_;
-    /**
-     * <code>string symbol = 1;</code>
-     *
-     * @return The symbol.
-     */
-    @java.lang.Override
-    public java.lang.String getSymbol() {
-      java.lang.Object ref = symbol_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        symbol_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string symbol = 1;</code>
-     *
-     * @return The bytes for symbol.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getSymbolBytes() {
-      java.lang.Object ref = symbol_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        symbol_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int ADDRESS_FIELD_NUMBER = 2;
-    private com.google.protobuf.StringValue address_;
-    /**
-     * <code>.google.protobuf.StringValue address = 2;</code>
-     *
-     * @return Whether the address field is set.
-     */
-    @java.lang.Override
-    public boolean hasAddress() {
-      return address_ != null;
-    }
-    /**
-     * <code>.google.protobuf.StringValue address = 2;</code>
-     *
-     * @return The address.
-     */
-    @java.lang.Override
-    public com.google.protobuf.StringValue getAddress() {
-      return address_ == null ? com.google.protobuf.StringValue.getDefaultInstance() : address_;
-    }
-    /** <code>.google.protobuf.StringValue address = 2;</code> */
-    @java.lang.Override
-    public com.google.protobuf.StringValueOrBuilder getAddressOrBuilder() {
-      return getAddress();
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (!getSymbolBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, symbol_);
-      }
-      if (address_ != null) {
-        output.writeMessage(2, getAddress());
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!getSymbolBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, symbol_);
-      }
-      if (address_ != null) {
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(2, getAddress());
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .BlockchainAssetId)) {
-        return super.equals(obj);
-      }
-      io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.BlockchainAssetId
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transactions
-                      .TransactionsOuterClass
-                      .BlockchainAssetId)
-                  obj;
-
-      if (!getSymbol().equals(other.getSymbol())) return false;
-      if (hasAddress() != other.hasAddress()) return false;
-      if (hasAddress()) {
-        if (!getAddress().equals(other.getAddress())) return false;
-      }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SYMBOL_FIELD_NUMBER;
-      hash = (53 * hash) + getSymbol().hashCode();
-      if (hasAddress()) {
-        hash = (37 * hash) + ADDRESS_FIELD_NUMBER;
-        hash = (53 * hash) + getAddress().hashCode();
-      }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -12287,11 +12967,6 @@ public final class TransactionsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -12308,6 +12983,216 @@ public final class TransactionsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .BlockchainAssetId
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<BlockchainAssetId> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new BlockchainAssetId();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAssetId_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .BlockchainAssetId
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .BlockchainAssetId
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>string symbol = 1;</code>
+     *
+     * @return The symbol.
+     */
+    @java.lang.Override
+    public java.lang.String getSymbol() {
+      java.lang.Object ref = symbol_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        symbol_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string symbol = 1;</code>
+     *
+     * @return The bytes for symbol.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getSymbolBytes() {
+      java.lang.Object ref = symbol_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        symbol_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>.google.protobuf.StringValue address = 2;</code>
+     *
+     * @return Whether the address field is set.
+     */
+    @java.lang.Override
+    public boolean hasAddress() {
+      return address_ != null;
+    }
+
+    /**
+     * <code>.google.protobuf.StringValue address = 2;</code>
+     *
+     * @return The address.
+     */
+    @java.lang.Override
+    public com.google.protobuf.StringValue getAddress() {
+      return address_ == null ? com.google.protobuf.StringValue.getDefaultInstance() : address_;
+    }
+
+    /** <code>.google.protobuf.StringValue address = 2;</code> */
+    @java.lang.Override
+    public com.google.protobuf.StringValueOrBuilder getAddressOrBuilder() {
+      return getAddress();
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (!getSymbolBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, symbol_);
+      }
+      if (address_ != null) {
+        output.writeMessage(2, getAddress());
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getSymbolBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, symbol_);
+      }
+      if (address_ != null) {
+        size += com.google.protobuf.CodedOutputStream.computeMessageSize(2, getAddress());
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .BlockchainAssetId)) {
+        return super.equals(obj);
+      }
+      io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.BlockchainAssetId
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transactions
+                      .TransactionsOuterClass
+                      .BlockchainAssetId)
+                  obj;
+
+      if (!getSymbol().equals(other.getSymbol())) return false;
+      if (hasAddress() != other.hasAddress()) return false;
+      if (hasAddress()) {
+        if (!getAddress().equals(other.getAddress())) return false;
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SYMBOL_FIELD_NUMBER;
+      hash = (53 * hash) + getSymbol().hashCode();
+      if (hasAddress()) {
+        hash = (37 * hash) + ADDRESS_FIELD_NUMBER;
+        hash = (53 * hash) + getAddress().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -12319,6 +13204,24 @@ public final class TransactionsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<BlockchainAssetId> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .BlockchainAssetId
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /** Protobuf type {@code swisschain.sirius.vaultApi.transactions.BlockchainAssetId} */
     public static final class Builder
         extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
@@ -12331,6 +13234,25 @@ public final class TransactionsOuterClass {
             .transactions
             .TransactionsOuterClass
             .BlockchainAssetIdOrBuilder {
+      private java.lang.Object symbol_ = "";
+      private com.google.protobuf.StringValue address_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              com.google.protobuf.StringValue,
+              com.google.protobuf.StringValue.Builder,
+              com.google.protobuf.StringValueOrBuilder>
+          addressBuilder_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.BlockchainAssetId.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -12364,17 +13286,6 @@ public final class TransactionsOuterClass {
                     .BlockchainAssetId
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.BlockchainAssetId.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -12600,7 +13511,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private java.lang.Object symbol_ = "";
       /**
        * <code>string symbol = 1;</code>
        *
@@ -12617,6 +13527,23 @@ public final class TransactionsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string symbol = 1;</code>
+       *
+       * @param value The symbol to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSymbol(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        symbol_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string symbol = 1;</code>
        *
@@ -12633,32 +13560,7 @@ public final class TransactionsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string symbol = 1;</code>
-       *
-       * @param value The symbol to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSymbol(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        symbol_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string symbol = 1;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearSymbol() {
-
-        symbol_ = getDefaultInstance().getSymbol();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string symbol = 1;</code>
        *
@@ -12676,12 +13578,18 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private com.google.protobuf.StringValue address_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.StringValue,
-              com.google.protobuf.StringValue.Builder,
-              com.google.protobuf.StringValueOrBuilder>
-          addressBuilder_;
+      /**
+       * <code>string symbol = 1;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearSymbol() {
+
+        symbol_ = getDefaultInstance().getSymbol();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>.google.protobuf.StringValue address = 2;</code>
        *
@@ -12803,117 +13711,8 @@ public final class TransactionsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transactions.BlockchainAssetId)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.BlockchainAssetId)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .BlockchainAssetId
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .BlockchainAssetId();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .BlockchainAssetId
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<BlockchainAssetId> PARSER =
-        new com.google.protobuf.AbstractParser<BlockchainAssetId>() {
-          @java.lang.Override
-          public BlockchainAssetId parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new BlockchainAssetId(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<BlockchainAssetId> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<BlockchainAssetId> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .BlockchainAssetId
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface ConfirmTransactionSigningRequestRequestOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestRequest)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The requestId.
-     */
-    java.lang.String getRequestId();
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The bytes for requestId.
-     */
-    com.google.protobuf.ByteString getRequestIdBytes();
-
-    /**
-     * <code>int64 transaction_signing_request_id = 2;</code>
-     *
-     * @return The transactionSigningRequestId.
-     */
-    long getTransactionSigningRequestId();
-
-    /**
-     * <code>string transaction_id = 4;</code>
-     *
-     * @return The transactionId.
-     */
-    java.lang.String getTransactionId();
-    /**
-     * <code>string transaction_id = 4;</code>
-     *
-     * @return The bytes for transactionId.
-     */
-    com.google.protobuf.ByteString getTransactionIdBytes();
-
-    /**
-     * <code>bytes signed_transaction = 5;</code>
-     *
-     * @return The signedTransaction.
-     */
-    com.google.protobuf.ByteString getSignedTransaction();
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestRequest}
@@ -12923,28 +13722,57 @@ public final class TransactionsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestRequest)
       ConfirmTransactionSigningRequestRequestOrBuilder {
+    public static final int REQUEST_ID_FIELD_NUMBER = 1;
+    public static final int TRANSACTION_SIGNING_REQUEST_ID_FIELD_NUMBER = 2;
+    public static final int TRANSACTION_ID_FIELD_NUMBER = 4;
+    public static final int SIGNED_TRANSACTION_FIELD_NUMBER = 5;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestRequest)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestRequest
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<ConfirmTransactionSigningRequestRequest>
+        PARSER =
+            new com.google.protobuf.AbstractParser<ConfirmTransactionSigningRequestRequest>() {
+              @java.lang.Override
+              public ConfirmTransactionSigningRequestRequest parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+                return new ConfirmTransactionSigningRequestRequest(input, extensionRegistry);
+              }
+            };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .ConfirmTransactionSigningRequestRequest();
+    }
+
+    private volatile java.lang.Object requestId_;
+    private long transactionSigningRequestId_;
+    private volatile java.lang.Object transactionId_;
+    private com.google.protobuf.ByteString signedTransaction_;
+    private byte memoizedIsInitialized = -1;
     // Use ConfirmTransactionSigningRequestRequest.newBuilder() to construct.
     private ConfirmTransactionSigningRequestRequest(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private ConfirmTransactionSigningRequestRequest() {
       requestId_ = "";
       transactionId_ = "";
       signedTransaction_ = com.google.protobuf.ByteString.EMPTY;
-    }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new ConfirmTransactionSigningRequestRequest();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
     }
 
     private ConfirmTransactionSigningRequestRequest(
@@ -13016,243 +13844,6 @@ public final class TransactionsOuterClass {
           .transactions
           .TransactionsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestRequest_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestRequest_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .ConfirmTransactionSigningRequestRequest
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .ConfirmTransactionSigningRequestRequest
-                  .Builder
-                  .class);
-    }
-
-    public static final int REQUEST_ID_FIELD_NUMBER = 1;
-    private volatile java.lang.Object requestId_;
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The requestId.
-     */
-    @java.lang.Override
-    public java.lang.String getRequestId() {
-      java.lang.Object ref = requestId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        requestId_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The bytes for requestId.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getRequestIdBytes() {
-      java.lang.Object ref = requestId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        requestId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int TRANSACTION_SIGNING_REQUEST_ID_FIELD_NUMBER = 2;
-    private long transactionSigningRequestId_;
-    /**
-     * <code>int64 transaction_signing_request_id = 2;</code>
-     *
-     * @return The transactionSigningRequestId.
-     */
-    @java.lang.Override
-    public long getTransactionSigningRequestId() {
-      return transactionSigningRequestId_;
-    }
-
-    public static final int TRANSACTION_ID_FIELD_NUMBER = 4;
-    private volatile java.lang.Object transactionId_;
-    /**
-     * <code>string transaction_id = 4;</code>
-     *
-     * @return The transactionId.
-     */
-    @java.lang.Override
-    public java.lang.String getTransactionId() {
-      java.lang.Object ref = transactionId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        transactionId_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string transaction_id = 4;</code>
-     *
-     * @return The bytes for transactionId.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getTransactionIdBytes() {
-      java.lang.Object ref = transactionId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        transactionId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int SIGNED_TRANSACTION_FIELD_NUMBER = 5;
-    private com.google.protobuf.ByteString signedTransaction_;
-    /**
-     * <code>bytes signed_transaction = 5;</code>
-     *
-     * @return The signedTransaction.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getSignedTransaction() {
-      return signedTransaction_;
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (!getRequestIdBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, requestId_);
-      }
-      if (transactionSigningRequestId_ != 0L) {
-        output.writeInt64(2, transactionSigningRequestId_);
-      }
-      if (!getTransactionIdBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, transactionId_);
-      }
-      if (!signedTransaction_.isEmpty()) {
-        output.writeBytes(5, signedTransaction_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!getRequestIdBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, requestId_);
-      }
-      if (transactionSigningRequestId_ != 0L) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeInt64Size(2, transactionSigningRequestId_);
-      }
-      if (!getTransactionIdBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, transactionId_);
-      }
-      if (!signedTransaction_.isEmpty()) {
-        size += com.google.protobuf.CodedOutputStream.computeBytesSize(5, signedTransaction_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .ConfirmTransactionSigningRequestRequest)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .ConfirmTransactionSigningRequestRequest
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transactions
-                      .TransactionsOuterClass
-                      .ConfirmTransactionSigningRequestRequest)
-                  obj;
-
-      if (!getRequestId().equals(other.getRequestId())) return false;
-      if (getTransactionSigningRequestId() != other.getTransactionSigningRequestId()) return false;
-      if (!getTransactionId().equals(other.getTransactionId())) return false;
-      if (!getSignedTransaction().equals(other.getSignedTransaction())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REQUEST_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRequestId().hashCode();
-      hash = (37 * hash) + TRANSACTION_SIGNING_REQUEST_ID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(getTransactionSigningRequestId());
-      hash = (37 * hash) + TRANSACTION_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getTransactionId().hashCode();
-      hash = (37 * hash) + SIGNED_TRANSACTION_FIELD_NUMBER;
-      hash = (53 * hash) + getSignedTransaction().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -13405,11 +13996,6 @@ public final class TransactionsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -13426,6 +14012,266 @@ public final class TransactionsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestRequest
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<ConfirmTransactionSigningRequestRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new ConfirmTransactionSigningRequestRequest();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .ConfirmTransactionSigningRequestRequest
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .ConfirmTransactionSigningRequestRequest
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The requestId.
+     */
+    @java.lang.Override
+    public java.lang.String getRequestId() {
+      java.lang.Object ref = requestId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        requestId_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The bytes for requestId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getRequestIdBytes() {
+      java.lang.Object ref = requestId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        requestId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>int64 transaction_signing_request_id = 2;</code>
+     *
+     * @return The transactionSigningRequestId.
+     */
+    @java.lang.Override
+    public long getTransactionSigningRequestId() {
+      return transactionSigningRequestId_;
+    }
+
+    /**
+     * <code>string transaction_id = 4;</code>
+     *
+     * @return The transactionId.
+     */
+    @java.lang.Override
+    public java.lang.String getTransactionId() {
+      java.lang.Object ref = transactionId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        transactionId_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string transaction_id = 4;</code>
+     *
+     * @return The bytes for transactionId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getTransactionIdBytes() {
+      java.lang.Object ref = transactionId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        transactionId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>bytes signed_transaction = 5;</code>
+     *
+     * @return The signedTransaction.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getSignedTransaction() {
+      return signedTransaction_;
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (!getRequestIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, requestId_);
+      }
+      if (transactionSigningRequestId_ != 0L) {
+        output.writeInt64(2, transactionSigningRequestId_);
+      }
+      if (!getTransactionIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, transactionId_);
+      }
+      if (!signedTransaction_.isEmpty()) {
+        output.writeBytes(5, signedTransaction_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getRequestIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, requestId_);
+      }
+      if (transactionSigningRequestId_ != 0L) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeInt64Size(2, transactionSigningRequestId_);
+      }
+      if (!getTransactionIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, transactionId_);
+      }
+      if (!signedTransaction_.isEmpty()) {
+        size += com.google.protobuf.CodedOutputStream.computeBytesSize(5, signedTransaction_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .ConfirmTransactionSigningRequestRequest)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .ConfirmTransactionSigningRequestRequest
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transactions
+                      .TransactionsOuterClass
+                      .ConfirmTransactionSigningRequestRequest)
+                  obj;
+
+      if (!getRequestId().equals(other.getRequestId())) return false;
+      if (getTransactionSigningRequestId() != other.getTransactionSigningRequestId()) return false;
+      if (!getTransactionId().equals(other.getTransactionId())) return false;
+      if (!getSignedTransaction().equals(other.getSignedTransaction())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + REQUEST_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRequestId().hashCode();
+      hash = (37 * hash) + TRANSACTION_SIGNING_REQUEST_ID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(getTransactionSigningRequestId());
+      hash = (37 * hash) + TRANSACTION_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTransactionId().hashCode();
+      hash = (37 * hash) + SIGNED_TRANSACTION_FIELD_NUMBER;
+      hash = (53 * hash) + getSignedTransaction().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -13437,6 +14283,24 @@ public final class TransactionsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ConfirmTransactionSigningRequestRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestRequest
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestRequest}
@@ -13452,6 +14316,23 @@ public final class TransactionsOuterClass {
             .transactions
             .TransactionsOuterClass
             .ConfirmTransactionSigningRequestRequestOrBuilder {
+      private java.lang.Object requestId_ = "";
+      private long transactionSigningRequestId_;
+      private java.lang.Object transactionId_ = "";
+      private com.google.protobuf.ByteString signedTransaction_ =
+          com.google.protobuf.ByteString.EMPTY;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.ConfirmTransactionSigningRequestRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -13485,17 +14366,6 @@ public final class TransactionsOuterClass {
                     .ConfirmTransactionSigningRequestRequest
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.ConfirmTransactionSigningRequestRequest.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -13726,7 +14596,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private java.lang.Object requestId_ = "";
       /**
        * <code>string request_id = 1;</code>
        *
@@ -13743,6 +14612,23 @@ public final class TransactionsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string request_id = 1;</code>
+       *
+       * @param value The requestId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRequestId(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        requestId_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string request_id = 1;</code>
        *
@@ -13759,32 +14645,7 @@ public final class TransactionsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string request_id = 1;</code>
-       *
-       * @param value The requestId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRequestId(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        requestId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string request_id = 1;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearRequestId() {
-
-        requestId_ = getDefaultInstance().getRequestId();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string request_id = 1;</code>
        *
@@ -13802,7 +14663,18 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private long transactionSigningRequestId_;
+      /**
+       * <code>string request_id = 1;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearRequestId() {
+
+        requestId_ = getDefaultInstance().getRequestId();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>int64 transaction_signing_request_id = 2;</code>
        *
@@ -13812,6 +14684,7 @@ public final class TransactionsOuterClass {
       public long getTransactionSigningRequestId() {
         return transactionSigningRequestId_;
       }
+
       /**
        * <code>int64 transaction_signing_request_id = 2;</code>
        *
@@ -13824,6 +14697,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>int64 transaction_signing_request_id = 2;</code>
        *
@@ -13836,7 +14710,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private java.lang.Object transactionId_ = "";
       /**
        * <code>string transaction_id = 4;</code>
        *
@@ -13853,6 +14726,23 @@ public final class TransactionsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string transaction_id = 4;</code>
+       *
+       * @param value The transactionId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTransactionId(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        transactionId_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string transaction_id = 4;</code>
        *
@@ -13869,32 +14759,7 @@ public final class TransactionsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string transaction_id = 4;</code>
-       *
-       * @param value The transactionId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTransactionId(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        transactionId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string transaction_id = 4;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearTransactionId() {
-
-        transactionId_ = getDefaultInstance().getTransactionId();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string transaction_id = 4;</code>
        *
@@ -13912,8 +14777,18 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private com.google.protobuf.ByteString signedTransaction_ =
-          com.google.protobuf.ByteString.EMPTY;
+      /**
+       * <code>string transaction_id = 4;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearTransactionId() {
+
+        transactionId_ = getDefaultInstance().getTransactionId();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>bytes signed_transaction = 5;</code>
        *
@@ -13964,162 +14839,8 @@ public final class TransactionsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestRequest)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestRequest)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestRequest
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .ConfirmTransactionSigningRequestRequest();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestRequest
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<ConfirmTransactionSigningRequestRequest>
-        PARSER =
-            new com.google.protobuf.AbstractParser<ConfirmTransactionSigningRequestRequest>() {
-              @java.lang.Override
-              public ConfirmTransactionSigningRequestRequest parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-                return new ConfirmTransactionSigningRequestRequest(input, extensionRegistry);
-              }
-            };
-
-    public static com.google.protobuf.Parser<ConfirmTransactionSigningRequestRequest> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ConfirmTransactionSigningRequestRequest> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestRequest
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface ConfirmTransactionSigningRequestResponseOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponse)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return Whether the response field is set.
-     */
-    boolean hasResponse();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return The response.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestResponseBody
-        getResponse();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestResponseBodyOrBuilder
-        getResponseOrBuilder();
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return Whether the error field is set.
-     */
-    boolean hasError();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return The error.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestErrorResponseBody
-        getError();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody error = 2;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestErrorResponseBodyOrBuilder
-        getErrorOrBuilder();
-
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestResponse
-            .BodyCase
-        getBodyCase();
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponse}
@@ -14129,25 +14850,51 @@ public final class TransactionsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponse)
       ConfirmTransactionSigningRequestResponseOrBuilder {
+    public static final int RESPONSE_FIELD_NUMBER = 1;
+    public static final int ERROR_FIELD_NUMBER = 2;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponse)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestResponse
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<ConfirmTransactionSigningRequestResponse>
+        PARSER =
+            new com.google.protobuf.AbstractParser<ConfirmTransactionSigningRequestResponse>() {
+              @java.lang.Override
+              public ConfirmTransactionSigningRequestResponse parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+                return new ConfirmTransactionSigningRequestResponse(input, extensionRegistry);
+              }
+            };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .ConfirmTransactionSigningRequestResponse();
+    }
+
+    private int bodyCase_ = 0;
+    private java.lang.Object body_;
+    private byte memoizedIsInitialized = -1;
     // Use ConfirmTransactionSigningRequestResponse.newBuilder() to construct.
     private ConfirmTransactionSigningRequestResponse(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
 
-    private ConfirmTransactionSigningRequestResponse() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new ConfirmTransactionSigningRequestResponse();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
+        private ConfirmTransactionSigningRequestResponse() {};
 
     private ConfirmTransactionSigningRequestResponse(
         com.google.protobuf.CodedInputStream input,
@@ -14280,366 +15027,6 @@ public final class TransactionsOuterClass {
           .transactions
           .TransactionsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponse_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponse_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .ConfirmTransactionSigningRequestResponse
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .ConfirmTransactionSigningRequestResponse
-                  .Builder
-                  .class);
-    }
-
-    private int bodyCase_ = 0;
-    private java.lang.Object body_;
-
-    public enum BodyCase
-        implements
-            com.google.protobuf.Internal.EnumLite,
-            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      RESPONSE(1),
-      ERROR(2),
-      BODY_NOT_SET(0);
-      private final int value;
-
-      private BodyCase(int value) {
-        this.value = value;
-      }
-      /**
-       * @param value The number of the enum to look for.
-       * @return The enum associated with the given number.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static BodyCase valueOf(int value) {
-        return forNumber(value);
-      }
-
-      public static BodyCase forNumber(int value) {
-        switch (value) {
-          case 1:
-            return RESPONSE;
-          case 2:
-            return ERROR;
-          case 0:
-            return BODY_NOT_SET;
-          default:
-            return null;
-        }
-      }
-
-      public int getNumber() {
-        return this.value;
-      }
-    };
-
-    public BodyCase getBodyCase() {
-      return BodyCase.forNumber(bodyCase_);
-    }
-
-    public static final int RESPONSE_FIELD_NUMBER = 1;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return Whether the response field is set.
-     */
-    @java.lang.Override
-    public boolean hasResponse() {
-      return bodyCase_ == 1;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return The response.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestResponseBody
-        getResponse() {
-      if (bodyCase_ == 1) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transactions
-                .TransactionsOuterClass
-                .ConfirmTransactionSigningRequestResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .ConfirmTransactionSigningRequestResponseBody.getDefaultInstance();
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestResponseBodyOrBuilder
-        getResponseOrBuilder() {
-      if (bodyCase_ == 1) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transactions
-                .TransactionsOuterClass
-                .ConfirmTransactionSigningRequestResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .ConfirmTransactionSigningRequestResponseBody.getDefaultInstance();
-    }
-
-    public static final int ERROR_FIELD_NUMBER = 2;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return Whether the error field is set.
-     */
-    @java.lang.Override
-    public boolean hasError() {
-      return bodyCase_ == 2;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return The error.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestErrorResponseBody
-        getError() {
-      if (bodyCase_ == 2) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transactions
-                .TransactionsOuterClass
-                .ConfirmTransactionSigningRequestErrorResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .ConfirmTransactionSigningRequestErrorResponseBody.getDefaultInstance();
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody error = 2;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestErrorResponseBodyOrBuilder
-        getErrorOrBuilder() {
-      if (bodyCase_ == 2) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transactions
-                .TransactionsOuterClass
-                .ConfirmTransactionSigningRequestErrorResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .ConfirmTransactionSigningRequestErrorResponseBody.getDefaultInstance();
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (bodyCase_ == 1) {
-        output.writeMessage(
-            1,
-            (io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .transactions
-                    .TransactionsOuterClass
-                    .ConfirmTransactionSigningRequestResponseBody)
-                body_);
-      }
-      if (bodyCase_ == 2) {
-        output.writeMessage(
-            2,
-            (io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .transactions
-                    .TransactionsOuterClass
-                    .ConfirmTransactionSigningRequestErrorResponseBody)
-                body_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (bodyCase_ == 1) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeMessageSize(
-                1,
-                (io.swisschain
-                        .sirius
-                        .vaultApi
-                        .generated
-                        .transactions
-                        .TransactionsOuterClass
-                        .ConfirmTransactionSigningRequestResponseBody)
-                    body_);
-      }
-      if (bodyCase_ == 2) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeMessageSize(
-                2,
-                (io.swisschain
-                        .sirius
-                        .vaultApi
-                        .generated
-                        .transactions
-                        .TransactionsOuterClass
-                        .ConfirmTransactionSigningRequestErrorResponseBody)
-                    body_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .ConfirmTransactionSigningRequestResponse)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .ConfirmTransactionSigningRequestResponse
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transactions
-                      .TransactionsOuterClass
-                      .ConfirmTransactionSigningRequestResponse)
-                  obj;
-
-      if (!getBodyCase().equals(other.getBodyCase())) return false;
-      switch (bodyCase_) {
-        case 1:
-          if (!getResponse().equals(other.getResponse())) return false;
-          break;
-        case 2:
-          if (!getError().equals(other.getError())) return false;
-          break;
-        case 0:
-        default:
-      }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      switch (bodyCase_) {
-        case 1:
-          hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
-          hash = (53 * hash) + getResponse().hashCode();
-          break;
-        case 2:
-          hash = (37 * hash) + ERROR_FIELD_NUMBER;
-          hash = (53 * hash) + getError().hashCode();
-          break;
-        case 0:
-        default:
-      }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -14792,11 +15179,6 @@ public final class TransactionsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -14813,6 +15195,354 @@ public final class TransactionsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestResponse
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<ConfirmTransactionSigningRequestResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new ConfirmTransactionSigningRequestResponse();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .ConfirmTransactionSigningRequestResponse
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .ConfirmTransactionSigningRequestResponse
+                  .Builder
+                  .class);
+    }
+
+    public BodyCase getBodyCase() {
+      return BodyCase.forNumber(bodyCase_);
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return Whether the response field is set.
+     */
+    @java.lang.Override
+    public boolean hasResponse() {
+      return bodyCase_ == 1;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return The response.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestResponseBody
+        getResponse() {
+      if (bodyCase_ == 1) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transactions
+                .TransactionsOuterClass
+                .ConfirmTransactionSigningRequestResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .ConfirmTransactionSigningRequestResponseBody.getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestResponseBodyOrBuilder
+        getResponseOrBuilder() {
+      if (bodyCase_ == 1) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transactions
+                .TransactionsOuterClass
+                .ConfirmTransactionSigningRequestResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .ConfirmTransactionSigningRequestResponseBody.getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return Whether the error field is set.
+     */
+    @java.lang.Override
+    public boolean hasError() {
+      return bodyCase_ == 2;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return The error.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestErrorResponseBody
+        getError() {
+      if (bodyCase_ == 2) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transactions
+                .TransactionsOuterClass
+                .ConfirmTransactionSigningRequestErrorResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .ConfirmTransactionSigningRequestErrorResponseBody.getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody error = 2;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestErrorResponseBodyOrBuilder
+        getErrorOrBuilder() {
+      if (bodyCase_ == 2) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transactions
+                .TransactionsOuterClass
+                .ConfirmTransactionSigningRequestErrorResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .ConfirmTransactionSigningRequestErrorResponseBody.getDefaultInstance();
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (bodyCase_ == 1) {
+        output.writeMessage(
+            1,
+            (io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .transactions
+                    .TransactionsOuterClass
+                    .ConfirmTransactionSigningRequestResponseBody)
+                body_);
+      }
+      if (bodyCase_ == 2) {
+        output.writeMessage(
+            2,
+            (io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .transactions
+                    .TransactionsOuterClass
+                    .ConfirmTransactionSigningRequestErrorResponseBody)
+                body_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (bodyCase_ == 1) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeMessageSize(
+                1,
+                (io.swisschain
+                        .sirius
+                        .vaultApi
+                        .generated
+                        .transactions
+                        .TransactionsOuterClass
+                        .ConfirmTransactionSigningRequestResponseBody)
+                    body_);
+      }
+      if (bodyCase_ == 2) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeMessageSize(
+                2,
+                (io.swisschain
+                        .sirius
+                        .vaultApi
+                        .generated
+                        .transactions
+                        .TransactionsOuterClass
+                        .ConfirmTransactionSigningRequestErrorResponseBody)
+                    body_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .ConfirmTransactionSigningRequestResponse)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .ConfirmTransactionSigningRequestResponse
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transactions
+                      .TransactionsOuterClass
+                      .ConfirmTransactionSigningRequestResponse)
+                  obj;
+
+      if (!getBodyCase().equals(other.getBodyCase())) return false;
+      switch (bodyCase_) {
+        case 1:
+          if (!getResponse().equals(other.getResponse())) return false;
+          break;
+        case 2:
+          if (!getError().equals(other.getError())) return false;
+          break;
+        case 0:
+        default:
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      switch (bodyCase_) {
+        case 1:
+          hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
+          hash = (53 * hash) + getResponse().hashCode();
+          break;
+        case 2:
+          hash = (37 * hash) + ERROR_FIELD_NUMBER;
+          hash = (53 * hash) + getError().hashCode();
+          break;
+        case 0:
+        default:
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -14824,6 +15554,64 @@ public final class TransactionsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ConfirmTransactionSigningRequestResponse> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestResponse
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+public enum BodyCase
+        implements
+            com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      RESPONSE(1),
+      ERROR(2),
+      BODY_NOT_SET(0);
+      private final int value;
+
+      private BodyCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static BodyCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static BodyCase forNumber(int value) {
+        switch (value) {
+          case 1:
+            return RESPONSE;
+          case 2:
+            return ERROR;
+          case 0:
+            return BODY_NOT_SET;
+          default:
+            return null;
+        }
+      }
+
+      public int getNumber() {
+        return this.value;
+      }
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponse}
@@ -14839,6 +15627,68 @@ public final class TransactionsOuterClass {
             .transactions
             .TransactionsOuterClass
             .ConfirmTransactionSigningRequestResponseOrBuilder {
+      private int bodyCase_ = 0;
+      private java.lang.Object body_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .ConfirmTransactionSigningRequestResponseBody,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .ConfirmTransactionSigningRequestResponseBody
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .ConfirmTransactionSigningRequestResponseBodyOrBuilder>
+          responseBuilder_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .ConfirmTransactionSigningRequestErrorResponseBody,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .ConfirmTransactionSigningRequestErrorResponseBody
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .ConfirmTransactionSigningRequestErrorResponseBodyOrBuilder>
+          errorBuilder_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.ConfirmTransactionSigningRequestResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -14872,17 +15722,6 @@ public final class TransactionsOuterClass {
                     .ConfirmTransactionSigningRequestResponse
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.ConfirmTransactionSigningRequestResponse.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -15120,9 +15959,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private int bodyCase_ = 0;
-      private java.lang.Object body_;
-
       public BodyCase getBodyCase() {
         return BodyCase.forNumber(bodyCase_);
       }
@@ -15134,30 +15970,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .ConfirmTransactionSigningRequestResponseBody,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .ConfirmTransactionSigningRequestResponseBody
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .ConfirmTransactionSigningRequestResponseBodyOrBuilder>
-          responseBuilder_;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
@@ -15169,6 +15981,7 @@ public final class TransactionsOuterClass {
       public boolean hasResponse() {
         return bodyCase_ == 1;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
@@ -15206,6 +16019,7 @@ public final class TransactionsOuterClass {
               .ConfirmTransactionSigningRequestResponseBody.getDefaultInstance();
         }
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
@@ -15232,6 +16046,7 @@ public final class TransactionsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
@@ -15256,6 +16071,7 @@ public final class TransactionsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
@@ -15307,6 +16123,7 @@ public final class TransactionsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
@@ -15328,6 +16145,7 @@ public final class TransactionsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
@@ -15344,6 +16162,7 @@ public final class TransactionsOuterClass {
           getResponseBuilder() {
         return getResponseFieldBuilder().getBuilder();
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
@@ -15375,6 +16194,7 @@ public final class TransactionsOuterClass {
               .ConfirmTransactionSigningRequestResponseBody.getDefaultInstance();
         }
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody response = 1;
@@ -15452,30 +16272,6 @@ public final class TransactionsOuterClass {
         return responseBuilder_;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .ConfirmTransactionSigningRequestErrorResponseBody,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .ConfirmTransactionSigningRequestErrorResponseBody
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .ConfirmTransactionSigningRequestErrorResponseBodyOrBuilder>
-          errorBuilder_;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody error = 2;
@@ -15784,77 +16580,8 @@ public final class TransactionsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponse)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponse)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestResponse
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .ConfirmTransactionSigningRequestResponse();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestResponse
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<ConfirmTransactionSigningRequestResponse>
-        PARSER =
-            new com.google.protobuf.AbstractParser<ConfirmTransactionSigningRequestResponse>() {
-              @java.lang.Override
-              public ConfirmTransactionSigningRequestResponse parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-                return new ConfirmTransactionSigningRequestResponse(input, extensionRegistry);
-              }
-            };
-
-    public static com.google.protobuf.Parser<ConfirmTransactionSigningRequestResponse> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ConfirmTransactionSigningRequestResponse> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestResponse
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface ConfirmTransactionSigningRequestResponseBodyOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody)
-      com.google.protobuf.MessageOrBuilder {}
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody}
@@ -15865,6 +16592,40 @@ public final class TransactionsOuterClass {
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody)
       ConfirmTransactionSigningRequestResponseBodyOrBuilder {
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestResponseBody
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<ConfirmTransactionSigningRequestResponseBody>
+        PARSER =
+            new com.google.protobuf.AbstractParser<ConfirmTransactionSigningRequestResponseBody>() {
+              @java.lang.Override
+              public ConfirmTransactionSigningRequestResponseBody parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+                return new ConfirmTransactionSigningRequestResponseBody(input, extensionRegistry);
+              }
+            };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .ConfirmTransactionSigningRequestResponseBody();
+    }
+
+    private byte memoizedIsInitialized = -1;
+
     // Use ConfirmTransactionSigningRequestResponseBody.newBuilder() to construct.
     private ConfirmTransactionSigningRequestResponseBody(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -15872,17 +16633,6 @@ public final class TransactionsOuterClass {
     }
 
     private ConfirmTransactionSigningRequestResponseBody() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new ConfirmTransactionSigningRequestResponseBody();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
 
     private ConfirmTransactionSigningRequestResponseBody(
         com.google.protobuf.CodedInputStream input,
@@ -15929,108 +16679,6 @@ public final class TransactionsOuterClass {
           .transactions
           .TransactionsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponseBody_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponseBody_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .ConfirmTransactionSigningRequestResponseBody
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .ConfirmTransactionSigningRequestResponseBody
-                  .Builder
-                  .class);
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .ConfirmTransactionSigningRequestResponseBody)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .ConfirmTransactionSigningRequestResponseBody
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transactions
-                      .TransactionsOuterClass
-                      .ConfirmTransactionSigningRequestResponseBody)
-                  obj;
-
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -16183,11 +16831,6 @@ public final class TransactionsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -16204,6 +16847,138 @@ public final class TransactionsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestResponseBody
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<ConfirmTransactionSigningRequestResponseBody>
+        parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new ConfirmTransactionSigningRequestResponseBody();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .ConfirmTransactionSigningRequestResponseBody
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .ConfirmTransactionSigningRequestResponseBody
+                  .Builder
+                  .class);
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .ConfirmTransactionSigningRequestResponseBody)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .ConfirmTransactionSigningRequestResponseBody
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transactions
+                      .TransactionsOuterClass
+                      .ConfirmTransactionSigningRequestResponseBody)
+                  obj;
+
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -16215,6 +16990,25 @@ public final class TransactionsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ConfirmTransactionSigningRequestResponseBody>
+        getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestResponseBody
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody}
@@ -16230,6 +17024,17 @@ public final class TransactionsOuterClass {
             .transactions
             .TransactionsOuterClass
             .ConfirmTransactionSigningRequestResponseBodyOrBuilder {
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.ConfirmTransactionSigningRequestResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -16263,17 +17068,6 @@ public final class TransactionsOuterClass {
                     .ConfirmTransactionSigningRequestResponseBody
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.ConfirmTransactionSigningRequestResponseBody.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -16492,118 +17286,8 @@ public final class TransactionsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestResponseBody
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .ConfirmTransactionSigningRequestResponseBody();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestResponseBody
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<ConfirmTransactionSigningRequestResponseBody>
-        PARSER =
-            new com.google.protobuf.AbstractParser<ConfirmTransactionSigningRequestResponseBody>() {
-              @java.lang.Override
-              public ConfirmTransactionSigningRequestResponseBody parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-                return new ConfirmTransactionSigningRequestResponseBody(input, extensionRegistry);
-              }
-            };
-
-    public static com.google.protobuf.Parser<ConfirmTransactionSigningRequestResponseBody>
-        parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ConfirmTransactionSigningRequestResponseBody>
-        getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestResponseBody
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface ConfirmTransactionSigningRequestErrorResponseBodyOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for errorCode.
-     */
-    int getErrorCodeValue();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The errorCode.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestErrorResponseBody
-            .ErrorCode
-        getErrorCode();
-
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The errorMessage.
-     */
-    java.lang.String getErrorMessage();
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The bytes for errorMessage.
-     */
-    com.google.protobuf.ByteString getErrorMessageBytes();
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody}
@@ -16613,29 +17297,57 @@ public final class TransactionsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody)
       ConfirmTransactionSigningRequestErrorResponseBodyOrBuilder {
+    public static final int ERROR_CODE_FIELD_NUMBER = 1;
+    public static final int ERROR_MESSAGE_FIELD_NUMBER = 2;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestErrorResponseBody
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<
+            ConfirmTransactionSigningRequestErrorResponseBody>
+        PARSER =
+            new com.google.protobuf.AbstractParser<
+                ConfirmTransactionSigningRequestErrorResponseBody>() {
+              @java.lang.Override
+              public ConfirmTransactionSigningRequestErrorResponseBody parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+                return new ConfirmTransactionSigningRequestErrorResponseBody(
+                    input, extensionRegistry);
+              }
+            };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .ConfirmTransactionSigningRequestErrorResponseBody();
+    }
+
+    private int errorCode_;
+    private volatile java.lang.Object errorMessage_;
+    private byte memoizedIsInitialized = -1;
+
     // Use ConfirmTransactionSigningRequestErrorResponseBody.newBuilder() to construct.
     private ConfirmTransactionSigningRequestErrorResponseBody(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private ConfirmTransactionSigningRequestErrorResponseBody() {
       errorCode_ = 0;
       errorMessage_ = "";
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new ConfirmTransactionSigningRequestErrorResponseBody();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private ConfirmTransactionSigningRequestErrorResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -16695,329 +17407,6 @@ public final class TransactionsOuterClass {
           .transactions
           .TransactionsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestErrorResponseBody_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestErrorResponseBody_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .ConfirmTransactionSigningRequestErrorResponseBody
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .ConfirmTransactionSigningRequestErrorResponseBody
-                  .Builder
-                  .class);
-    }
-
-    /**
-     * Protobuf enum {@code
-     * swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode}
-     */
-    public enum ErrorCode implements com.google.protobuf.ProtocolMessageEnum {
-      /** <code>UNKNOWN = 0;</code> */
-      UNKNOWN(0),
-      /** <code>INVALID_PARAMETERS = 1;</code> */
-      INVALID_PARAMETERS(1),
-      UNRECOGNIZED(-1),
-      ;
-
-      /** <code>UNKNOWN = 0;</code> */
-      public static final int UNKNOWN_VALUE = 0;
-      /** <code>INVALID_PARAMETERS = 1;</code> */
-      public static final int INVALID_PARAMETERS_VALUE = 1;
-
-      public final int getNumber() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static ErrorCode valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static ErrorCode forNumber(int value) {
-        switch (value) {
-          case 0:
-            return UNKNOWN;
-          case 1:
-            return INVALID_PARAMETERS;
-          default:
-            return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalGetValueMap() {
-        return internalValueMap;
-      }
-
-      private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
-            public ErrorCode findValueByNumber(int number) {
-              return ErrorCode.forNumber(number);
-            }
-          };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(ordinal());
-      }
-
-      public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
-        return getDescriptor();
-      }
-
-      public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
-        return io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestErrorResponseBody
-            .getDescriptor()
-            .getEnumTypes()
-            .get(0);
-      }
-
-      private static final ErrorCode[] VALUES = values();
-
-      public static ErrorCode valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int value;
-
-      private ErrorCode(int value) {
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode)
-    }
-
-    public static final int ERROR_CODE_FIELD_NUMBER = 1;
-    private int errorCode_;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for errorCode.
-     */
-    @java.lang.Override
-    public int getErrorCodeValue() {
-      return errorCode_;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The errorCode.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestErrorResponseBody
-            .ErrorCode
-        getErrorCode() {
-      @SuppressWarnings("deprecation")
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .ConfirmTransactionSigningRequestErrorResponseBody
-              .ErrorCode
-          result =
-              io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-                  .ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode.valueOf(errorCode_);
-      return result == null
-          ? io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .ConfirmTransactionSigningRequestErrorResponseBody
-              .ErrorCode
-              .UNRECOGNIZED
-          : result;
-    }
-
-    public static final int ERROR_MESSAGE_FIELD_NUMBER = 2;
-    private volatile java.lang.Object errorMessage_;
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The errorMessage.
-     */
-    @java.lang.Override
-    public java.lang.String getErrorMessage() {
-      java.lang.Object ref = errorMessage_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        errorMessage_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The bytes for errorMessage.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getErrorMessageBytes() {
-      java.lang.Object ref = errorMessage_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        errorMessage_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (errorCode_
-          != io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-              .ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
-        output.writeEnum(1, errorCode_);
-      }
-      if (!getErrorMessageBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, errorMessage_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (errorCode_
-          != io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-              .ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream.computeEnumSize(1, errorCode_);
-      }
-      if (!getErrorMessageBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, errorMessage_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .ConfirmTransactionSigningRequestErrorResponseBody)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .ConfirmTransactionSigningRequestErrorResponseBody
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transactions
-                      .TransactionsOuterClass
-                      .ConfirmTransactionSigningRequestErrorResponseBody)
-                  obj;
-
-      if (errorCode_ != other.errorCode_) return false;
-      if (!getErrorMessage().equals(other.getErrorMessage())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ERROR_CODE_FIELD_NUMBER;
-      hash = (53 * hash) + errorCode_;
-      hash = (37 * hash) + ERROR_MESSAGE_FIELD_NUMBER;
-      hash = (53 * hash) + getErrorMessage().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -17170,11 +17559,6 @@ public final class TransactionsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -17191,6 +17575,250 @@ public final class TransactionsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestErrorResponseBody
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<ConfirmTransactionSigningRequestErrorResponseBody>
+        parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new ConfirmTransactionSigningRequestErrorResponseBody();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestErrorResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .ConfirmTransactionSigningRequestErrorResponseBody
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .ConfirmTransactionSigningRequestErrorResponseBody
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for errorCode.
+     */
+    @java.lang.Override
+    public int getErrorCodeValue() {
+      return errorCode_;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The errorCode.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestErrorResponseBody
+            .ErrorCode
+        getErrorCode() {
+      @SuppressWarnings("deprecation")
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .ConfirmTransactionSigningRequestErrorResponseBody
+              .ErrorCode
+          result =
+              io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+                  .ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode.valueOf(errorCode_);
+      return result == null
+          ? io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .ConfirmTransactionSigningRequestErrorResponseBody
+              .ErrorCode
+              .UNRECOGNIZED
+          : result;
+    }
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The errorMessage.
+     */
+    @java.lang.Override
+    public java.lang.String getErrorMessage() {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        errorMessage_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The bytes for errorMessage.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getErrorMessageBytes() {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        errorMessage_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (errorCode_
+          != io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+              .ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
+        output.writeEnum(1, errorCode_);
+      }
+      if (!getErrorMessageBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, errorMessage_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (errorCode_
+          != io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+              .ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream.computeEnumSize(1, errorCode_);
+      }
+      if (!getErrorMessageBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, errorMessage_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .ConfirmTransactionSigningRequestErrorResponseBody)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .ConfirmTransactionSigningRequestErrorResponseBody
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transactions
+                      .TransactionsOuterClass
+                      .ConfirmTransactionSigningRequestErrorResponseBody)
+                  obj;
+
+      if (errorCode_ != other.errorCode_) return false;
+      if (!getErrorMessage().equals(other.getErrorMessage())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ERROR_CODE_FIELD_NUMBER;
+      hash = (53 * hash) + errorCode_;
+      hash = (37 * hash) + ERROR_MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getErrorMessage().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -17202,6 +17830,129 @@ public final class TransactionsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ConfirmTransactionSigningRequestErrorResponseBody>
+        getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestErrorResponseBody
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+    /**
+     * Protobuf enum {@code
+     * swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode}
+     */
+    public enum ErrorCode implements com.google.protobuf.ProtocolMessageEnum {
+      /** <code>UNKNOWN = 0;</code> */
+      UNKNOWN(0),
+      /** <code>INVALID_PARAMETERS = 1;</code> */
+      INVALID_PARAMETERS(1),
+      UNRECOGNIZED(-1),
+      ;
+
+      /** <code>UNKNOWN = 0;</code> */
+      public static final int UNKNOWN_VALUE = 0;
+      /** <code>INVALID_PARAMETERS = 1;</code> */
+      public static final int INVALID_PARAMETERS_VALUE = 1;
+      private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
+            public ErrorCode findValueByNumber(int number) {
+              return ErrorCode.forNumber(number);
+            }
+          };
+      private static final ErrorCode[] VALUES = values();
+      private final int value;
+
+      private ErrorCode(int value) {
+        this.value = value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static ErrorCode valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static ErrorCode forNumber(int value) {
+        switch (value) {
+          case 0:
+            return UNKNOWN;
+          case 1:
+            return INVALID_PARAMETERS;
+          default:
+            return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalGetValueMap() {
+        return internalValueMap;
+      }
+
+      public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+        return io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .ConfirmTransactionSigningRequestErrorResponseBody
+            .getDescriptor()
+            .getEnumTypes()
+            .get(0);
+      }
+
+      public static ErrorCode valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(ordinal());
+      }
+
+      public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
+        return getDescriptor();
+      }
+
+      // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode)
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody}
@@ -17217,6 +17968,20 @@ public final class TransactionsOuterClass {
             .transactions
             .TransactionsOuterClass
             .ConfirmTransactionSigningRequestErrorResponseBodyOrBuilder {
+      private int errorCode_ = 0;
+      private java.lang.Object errorMessage_ = "";
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.ConfirmTransactionSigningRequestErrorResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -17250,17 +18015,6 @@ public final class TransactionsOuterClass {
                     .ConfirmTransactionSigningRequestErrorResponseBody
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.ConfirmTransactionSigningRequestErrorResponseBody.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -17479,7 +18233,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private int errorCode_ = 0;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -17491,6 +18244,7 @@ public final class TransactionsOuterClass {
       public int getErrorCodeValue() {
         return errorCode_;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -17505,6 +18259,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -17547,6 +18302,7 @@ public final class TransactionsOuterClass {
                 .UNRECOGNIZED
             : result;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -17573,6 +18329,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -17587,7 +18344,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private java.lang.Object errorMessage_ = "";
       /**
        * <code>string error_message = 2;</code>
        *
@@ -17604,6 +18360,23 @@ public final class TransactionsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string error_message = 2;</code>
+       *
+       * @param value The errorMessage to set.
+       * @return This builder for chaining.
+       */
+      public Builder setErrorMessage(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        errorMessage_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string error_message = 2;</code>
        *
@@ -17620,32 +18393,7 @@ public final class TransactionsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string error_message = 2;</code>
-       *
-       * @param value The errorMessage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setErrorMessage(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        errorMessage_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string error_message = 2;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearErrorMessage() {
-
-        errorMessage_ = getDefaultInstance().getErrorMessage();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string error_message = 2;</code>
        *
@@ -17659,6 +18407,18 @@ public final class TransactionsOuterClass {
         checkByteStringIsUtf8(value);
 
         errorMessage_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string error_message = 2;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearErrorMessage() {
+
+        errorMessage_ = getDefaultInstance().getErrorMessage();
         onChanged();
         return this;
       }
@@ -17677,140 +18437,8 @@ public final class TransactionsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestErrorResponseBody
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .ConfirmTransactionSigningRequestErrorResponseBody();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestErrorResponseBody
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<
-            ConfirmTransactionSigningRequestErrorResponseBody>
-        PARSER =
-            new com.google.protobuf.AbstractParser<
-                ConfirmTransactionSigningRequestErrorResponseBody>() {
-              @java.lang.Override
-              public ConfirmTransactionSigningRequestErrorResponseBody parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-                return new ConfirmTransactionSigningRequestErrorResponseBody(
-                    input, extensionRegistry);
-              }
-            };
-
-    public static com.google.protobuf.Parser<ConfirmTransactionSigningRequestErrorResponseBody>
-        parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ConfirmTransactionSigningRequestErrorResponseBody>
-        getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .ConfirmTransactionSigningRequestErrorResponseBody
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface RejectTransactionSigningRequestRequestOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestRequest)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The requestId.
-     */
-    java.lang.String getRequestId();
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The bytes for requestId.
-     */
-    com.google.protobuf.ByteString getRequestIdBytes();
-
-    /**
-     * <code>int64 transaction_signing_request_id = 2;</code>
-     *
-     * @return The transactionSigningRequestId.
-     */
-    long getTransactionSigningRequestId();
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.TransactionSigningRequestRejectionReason reason = 4;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for reason.
-     */
-    int getReasonValue();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.TransactionSigningRequestRejectionReason reason = 4;
-     * </code>
-     *
-     * @return The reason.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .TransactionSigningRequestRejectionReason
-        getReason();
-
-    /**
-     * <code>string reason_message = 5;</code>
-     *
-     * @return The reasonMessage.
-     */
-    java.lang.String getReasonMessage();
-    /**
-     * <code>string reason_message = 5;</code>
-     *
-     * @return The bytes for reasonMessage.
-     */
-    com.google.protobuf.ByteString getReasonMessageBytes();
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestRequest}
@@ -17820,28 +18448,56 @@ public final class TransactionsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestRequest)
       RejectTransactionSigningRequestRequestOrBuilder {
+    public static final int REQUEST_ID_FIELD_NUMBER = 1;
+    public static final int TRANSACTION_SIGNING_REQUEST_ID_FIELD_NUMBER = 2;
+    public static final int REASON_FIELD_NUMBER = 4;
+    public static final int REASON_MESSAGE_FIELD_NUMBER = 5;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestRequest)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestRequest
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<RejectTransactionSigningRequestRequest> PARSER =
+        new com.google.protobuf.AbstractParser<RejectTransactionSigningRequestRequest>() {
+          @java.lang.Override
+          public RejectTransactionSigningRequestRequest parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new RejectTransactionSigningRequestRequest(input, extensionRegistry);
+          }
+        };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .RejectTransactionSigningRequestRequest();
+    }
+
+    private volatile java.lang.Object requestId_;
+    private long transactionSigningRequestId_;
+    private int reason_;
+    private volatile java.lang.Object reasonMessage_;
+    private byte memoizedIsInitialized = -1;
     // Use RejectTransactionSigningRequestRequest.newBuilder() to construct.
     private RejectTransactionSigningRequestRequest(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private RejectTransactionSigningRequestRequest() {
       requestId_ = "";
       reason_ = 0;
       reasonMessage_ = "";
-    }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new RejectTransactionSigningRequestRequest();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
     }
 
     private RejectTransactionSigningRequestRequest(
@@ -17915,287 +18571,6 @@ public final class TransactionsOuterClass {
           .transactions
           .TransactionsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestRequest_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestRequest_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .RejectTransactionSigningRequestRequest
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .RejectTransactionSigningRequestRequest
-                  .Builder
-                  .class);
-    }
-
-    public static final int REQUEST_ID_FIELD_NUMBER = 1;
-    private volatile java.lang.Object requestId_;
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The requestId.
-     */
-    @java.lang.Override
-    public java.lang.String getRequestId() {
-      java.lang.Object ref = requestId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        requestId_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The bytes for requestId.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getRequestIdBytes() {
-      java.lang.Object ref = requestId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        requestId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int TRANSACTION_SIGNING_REQUEST_ID_FIELD_NUMBER = 2;
-    private long transactionSigningRequestId_;
-    /**
-     * <code>int64 transaction_signing_request_id = 2;</code>
-     *
-     * @return The transactionSigningRequestId.
-     */
-    @java.lang.Override
-    public long getTransactionSigningRequestId() {
-      return transactionSigningRequestId_;
-    }
-
-    public static final int REASON_FIELD_NUMBER = 4;
-    private int reason_;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.TransactionSigningRequestRejectionReason reason = 4;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for reason.
-     */
-    @java.lang.Override
-    public int getReasonValue() {
-      return reason_;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.TransactionSigningRequestRejectionReason reason = 4;
-     * </code>
-     *
-     * @return The reason.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .TransactionSigningRequestRejectionReason
-        getReason() {
-      @SuppressWarnings("deprecation")
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .TransactionSigningRequestRejectionReason
-          result =
-              io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-                  .TransactionSigningRequestRejectionReason.valueOf(reason_);
-      return result == null
-          ? io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .TransactionSigningRequestRejectionReason
-              .UNRECOGNIZED
-          : result;
-    }
-
-    public static final int REASON_MESSAGE_FIELD_NUMBER = 5;
-    private volatile java.lang.Object reasonMessage_;
-    /**
-     * <code>string reason_message = 5;</code>
-     *
-     * @return The reasonMessage.
-     */
-    @java.lang.Override
-    public java.lang.String getReasonMessage() {
-      java.lang.Object ref = reasonMessage_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        reasonMessage_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string reason_message = 5;</code>
-     *
-     * @return The bytes for reasonMessage.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getReasonMessageBytes() {
-      java.lang.Object ref = reasonMessage_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        reasonMessage_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (!getRequestIdBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, requestId_);
-      }
-      if (transactionSigningRequestId_ != 0L) {
-        output.writeInt64(2, transactionSigningRequestId_);
-      }
-      if (reason_
-          != io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-              .TransactionSigningRequestRejectionReason.OTHER.getNumber()) {
-        output.writeEnum(4, reason_);
-      }
-      if (!getReasonMessageBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, reasonMessage_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!getRequestIdBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, requestId_);
-      }
-      if (transactionSigningRequestId_ != 0L) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeInt64Size(2, transactionSigningRequestId_);
-      }
-      if (reason_
-          != io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-              .TransactionSigningRequestRejectionReason.OTHER.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream.computeEnumSize(4, reason_);
-      }
-      if (!getReasonMessageBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, reasonMessage_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .RejectTransactionSigningRequestRequest)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .RejectTransactionSigningRequestRequest
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transactions
-                      .TransactionsOuterClass
-                      .RejectTransactionSigningRequestRequest)
-                  obj;
-
-      if (!getRequestId().equals(other.getRequestId())) return false;
-      if (getTransactionSigningRequestId() != other.getTransactionSigningRequestId()) return false;
-      if (reason_ != other.reason_) return false;
-      if (!getReasonMessage().equals(other.getReasonMessage())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REQUEST_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRequestId().hashCode();
-      hash = (37 * hash) + TRANSACTION_SIGNING_REQUEST_ID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(getTransactionSigningRequestId());
-      hash = (37 * hash) + REASON_FIELD_NUMBER;
-      hash = (53 * hash) + reason_;
-      hash = (37 * hash) + REASON_MESSAGE_FIELD_NUMBER;
-      hash = (53 * hash) + getReasonMessage().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -18348,11 +18723,6 @@ public final class TransactionsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -18369,6 +18739,311 @@ public final class TransactionsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestRequest
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<RejectTransactionSigningRequestRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new RejectTransactionSigningRequestRequest();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .RejectTransactionSigningRequestRequest
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .RejectTransactionSigningRequestRequest
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The requestId.
+     */
+    @java.lang.Override
+    public java.lang.String getRequestId() {
+      java.lang.Object ref = requestId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        requestId_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The bytes for requestId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getRequestIdBytes() {
+      java.lang.Object ref = requestId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        requestId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>int64 transaction_signing_request_id = 2;</code>
+     *
+     * @return The transactionSigningRequestId.
+     */
+    @java.lang.Override
+    public long getTransactionSigningRequestId() {
+      return transactionSigningRequestId_;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.TransactionSigningRequestRejectionReason reason = 4;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for reason.
+     */
+    @java.lang.Override
+    public int getReasonValue() {
+      return reason_;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.TransactionSigningRequestRejectionReason reason = 4;
+     * </code>
+     *
+     * @return The reason.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .TransactionSigningRequestRejectionReason
+        getReason() {
+      @SuppressWarnings("deprecation")
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .TransactionSigningRequestRejectionReason
+          result =
+              io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+                  .TransactionSigningRequestRejectionReason.valueOf(reason_);
+      return result == null
+          ? io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .TransactionSigningRequestRejectionReason
+              .UNRECOGNIZED
+          : result;
+    }
+
+    /**
+     * <code>string reason_message = 5;</code>
+     *
+     * @return The reasonMessage.
+     */
+    @java.lang.Override
+    public java.lang.String getReasonMessage() {
+      java.lang.Object ref = reasonMessage_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        reasonMessage_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string reason_message = 5;</code>
+     *
+     * @return The bytes for reasonMessage.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getReasonMessageBytes() {
+      java.lang.Object ref = reasonMessage_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        reasonMessage_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (!getRequestIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, requestId_);
+      }
+      if (transactionSigningRequestId_ != 0L) {
+        output.writeInt64(2, transactionSigningRequestId_);
+      }
+      if (reason_
+          != io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+              .TransactionSigningRequestRejectionReason.OTHER.getNumber()) {
+        output.writeEnum(4, reason_);
+      }
+      if (!getReasonMessageBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, reasonMessage_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getRequestIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, requestId_);
+      }
+      if (transactionSigningRequestId_ != 0L) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeInt64Size(2, transactionSigningRequestId_);
+      }
+      if (reason_
+          != io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+              .TransactionSigningRequestRejectionReason.OTHER.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream.computeEnumSize(4, reason_);
+      }
+      if (!getReasonMessageBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, reasonMessage_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .RejectTransactionSigningRequestRequest)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .RejectTransactionSigningRequestRequest
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transactions
+                      .TransactionsOuterClass
+                      .RejectTransactionSigningRequestRequest)
+                  obj;
+
+      if (!getRequestId().equals(other.getRequestId())) return false;
+      if (getTransactionSigningRequestId() != other.getTransactionSigningRequestId()) return false;
+      if (reason_ != other.reason_) return false;
+      if (!getReasonMessage().equals(other.getReasonMessage())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + REQUEST_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRequestId().hashCode();
+      hash = (37 * hash) + TRANSACTION_SIGNING_REQUEST_ID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(getTransactionSigningRequestId());
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + reason_;
+      hash = (37 * hash) + REASON_MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getReasonMessage().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -18380,6 +19055,24 @@ public final class TransactionsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RejectTransactionSigningRequestRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestRequest
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestRequest}
@@ -18395,6 +19088,22 @@ public final class TransactionsOuterClass {
             .transactions
             .TransactionsOuterClass
             .RejectTransactionSigningRequestRequestOrBuilder {
+      private java.lang.Object requestId_ = "";
+      private long transactionSigningRequestId_;
+      private int reason_ = 0;
+      private java.lang.Object reasonMessage_ = "";
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.RejectTransactionSigningRequestRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -18428,17 +19137,6 @@ public final class TransactionsOuterClass {
                     .RejectTransactionSigningRequestRequest
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.RejectTransactionSigningRequestRequest.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -18669,7 +19367,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private java.lang.Object requestId_ = "";
       /**
        * <code>string request_id = 1;</code>
        *
@@ -18686,6 +19383,23 @@ public final class TransactionsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string request_id = 1;</code>
+       *
+       * @param value The requestId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRequestId(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        requestId_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string request_id = 1;</code>
        *
@@ -18702,32 +19416,7 @@ public final class TransactionsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string request_id = 1;</code>
-       *
-       * @param value The requestId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRequestId(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        requestId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string request_id = 1;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearRequestId() {
-
-        requestId_ = getDefaultInstance().getRequestId();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string request_id = 1;</code>
        *
@@ -18745,7 +19434,18 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private long transactionSigningRequestId_;
+      /**
+       * <code>string request_id = 1;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearRequestId() {
+
+        requestId_ = getDefaultInstance().getRequestId();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>int64 transaction_signing_request_id = 2;</code>
        *
@@ -18755,6 +19455,7 @@ public final class TransactionsOuterClass {
       public long getTransactionSigningRequestId() {
         return transactionSigningRequestId_;
       }
+
       /**
        * <code>int64 transaction_signing_request_id = 2;</code>
        *
@@ -18767,6 +19468,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>int64 transaction_signing_request_id = 2;</code>
        *
@@ -18779,7 +19481,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private int reason_ = 0;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.TransactionSigningRequestRejectionReason reason = 4;
@@ -18791,6 +19492,7 @@ public final class TransactionsOuterClass {
       public int getReasonValue() {
         return reason_;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.TransactionSigningRequestRejectionReason reason = 4;
@@ -18805,6 +19507,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.TransactionSigningRequestRejectionReason reason = 4;
@@ -18843,6 +19546,7 @@ public final class TransactionsOuterClass {
                 .UNRECOGNIZED
             : result;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.TransactionSigningRequestRejectionReason reason = 4;
@@ -18868,6 +19572,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.TransactionSigningRequestRejectionReason reason = 4;
@@ -18882,7 +19587,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private java.lang.Object reasonMessage_ = "";
       /**
        * <code>string reason_message = 5;</code>
        *
@@ -18899,6 +19603,23 @@ public final class TransactionsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string reason_message = 5;</code>
+       *
+       * @param value The reasonMessage to set.
+       * @return This builder for chaining.
+       */
+      public Builder setReasonMessage(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        reasonMessage_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string reason_message = 5;</code>
        *
@@ -18915,32 +19636,7 @@ public final class TransactionsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string reason_message = 5;</code>
-       *
-       * @param value The reasonMessage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReasonMessage(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        reasonMessage_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string reason_message = 5;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearReasonMessage() {
-
-        reasonMessage_ = getDefaultInstance().getReasonMessage();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string reason_message = 5;</code>
        *
@@ -18954,6 +19650,18 @@ public final class TransactionsOuterClass {
         checkByteStringIsUtf8(value);
 
         reasonMessage_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string reason_message = 5;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearReasonMessage() {
+
+        reasonMessage_ = getDefaultInstance().getReasonMessage();
         onChanged();
         return this;
       }
@@ -18972,161 +19680,8 @@ public final class TransactionsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestRequest)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestRequest)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestRequest
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .RejectTransactionSigningRequestRequest();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestRequest
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<RejectTransactionSigningRequestRequest> PARSER =
-        new com.google.protobuf.AbstractParser<RejectTransactionSigningRequestRequest>() {
-          @java.lang.Override
-          public RejectTransactionSigningRequestRequest parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new RejectTransactionSigningRequestRequest(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<RejectTransactionSigningRequestRequest> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<RejectTransactionSigningRequestRequest> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestRequest
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface RejectTransactionSigningRequestResponseOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponse)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return Whether the response field is set.
-     */
-    boolean hasResponse();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return The response.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestResponseBody
-        getResponse();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestResponseBodyOrBuilder
-        getResponseOrBuilder();
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return Whether the error field is set.
-     */
-    boolean hasError();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return The error.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestErrorResponseBody
-        getError();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody error = 2;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestErrorResponseBodyOrBuilder
-        getErrorOrBuilder();
-
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestResponse
-            .BodyCase
-        getBodyCase();
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponse}
@@ -19136,25 +19691,51 @@ public final class TransactionsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponse)
       RejectTransactionSigningRequestResponseOrBuilder {
+    public static final int RESPONSE_FIELD_NUMBER = 1;
+    public static final int ERROR_FIELD_NUMBER = 2;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponse)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestResponse
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<RejectTransactionSigningRequestResponse>
+        PARSER =
+            new com.google.protobuf.AbstractParser<RejectTransactionSigningRequestResponse>() {
+              @java.lang.Override
+              public RejectTransactionSigningRequestResponse parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+                return new RejectTransactionSigningRequestResponse(input, extensionRegistry);
+              }
+            };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .RejectTransactionSigningRequestResponse();
+    }
+
+    private int bodyCase_ = 0;
+    private java.lang.Object body_;
+    private byte memoizedIsInitialized = -1;
     // Use RejectTransactionSigningRequestResponse.newBuilder() to construct.
     private RejectTransactionSigningRequestResponse(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
 
-    private RejectTransactionSigningRequestResponse() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new RejectTransactionSigningRequestResponse();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
+        private RejectTransactionSigningRequestResponse() {};
 
     private RejectTransactionSigningRequestResponse(
         com.google.protobuf.CodedInputStream input,
@@ -19287,366 +19868,6 @@ public final class TransactionsOuterClass {
           .transactions
           .TransactionsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponse_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponse_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .RejectTransactionSigningRequestResponse
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .RejectTransactionSigningRequestResponse
-                  .Builder
-                  .class);
-    }
-
-    private int bodyCase_ = 0;
-    private java.lang.Object body_;
-
-    public enum BodyCase
-        implements
-            com.google.protobuf.Internal.EnumLite,
-            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      RESPONSE(1),
-      ERROR(2),
-      BODY_NOT_SET(0);
-      private final int value;
-
-      private BodyCase(int value) {
-        this.value = value;
-      }
-      /**
-       * @param value The number of the enum to look for.
-       * @return The enum associated with the given number.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static BodyCase valueOf(int value) {
-        return forNumber(value);
-      }
-
-      public static BodyCase forNumber(int value) {
-        switch (value) {
-          case 1:
-            return RESPONSE;
-          case 2:
-            return ERROR;
-          case 0:
-            return BODY_NOT_SET;
-          default:
-            return null;
-        }
-      }
-
-      public int getNumber() {
-        return this.value;
-      }
-    };
-
-    public BodyCase getBodyCase() {
-      return BodyCase.forNumber(bodyCase_);
-    }
-
-    public static final int RESPONSE_FIELD_NUMBER = 1;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return Whether the response field is set.
-     */
-    @java.lang.Override
-    public boolean hasResponse() {
-      return bodyCase_ == 1;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return The response.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestResponseBody
-        getResponse() {
-      if (bodyCase_ == 1) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transactions
-                .TransactionsOuterClass
-                .RejectTransactionSigningRequestResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .RejectTransactionSigningRequestResponseBody.getDefaultInstance();
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestResponseBodyOrBuilder
-        getResponseOrBuilder() {
-      if (bodyCase_ == 1) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transactions
-                .TransactionsOuterClass
-                .RejectTransactionSigningRequestResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .RejectTransactionSigningRequestResponseBody.getDefaultInstance();
-    }
-
-    public static final int ERROR_FIELD_NUMBER = 2;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return Whether the error field is set.
-     */
-    @java.lang.Override
-    public boolean hasError() {
-      return bodyCase_ == 2;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return The error.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestErrorResponseBody
-        getError() {
-      if (bodyCase_ == 2) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transactions
-                .TransactionsOuterClass
-                .RejectTransactionSigningRequestErrorResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .RejectTransactionSigningRequestErrorResponseBody.getDefaultInstance();
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody error = 2;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestErrorResponseBodyOrBuilder
-        getErrorOrBuilder() {
-      if (bodyCase_ == 2) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transactions
-                .TransactionsOuterClass
-                .RejectTransactionSigningRequestErrorResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .RejectTransactionSigningRequestErrorResponseBody.getDefaultInstance();
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (bodyCase_ == 1) {
-        output.writeMessage(
-            1,
-            (io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .transactions
-                    .TransactionsOuterClass
-                    .RejectTransactionSigningRequestResponseBody)
-                body_);
-      }
-      if (bodyCase_ == 2) {
-        output.writeMessage(
-            2,
-            (io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .transactions
-                    .TransactionsOuterClass
-                    .RejectTransactionSigningRequestErrorResponseBody)
-                body_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (bodyCase_ == 1) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeMessageSize(
-                1,
-                (io.swisschain
-                        .sirius
-                        .vaultApi
-                        .generated
-                        .transactions
-                        .TransactionsOuterClass
-                        .RejectTransactionSigningRequestResponseBody)
-                    body_);
-      }
-      if (bodyCase_ == 2) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeMessageSize(
-                2,
-                (io.swisschain
-                        .sirius
-                        .vaultApi
-                        .generated
-                        .transactions
-                        .TransactionsOuterClass
-                        .RejectTransactionSigningRequestErrorResponseBody)
-                    body_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .RejectTransactionSigningRequestResponse)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .RejectTransactionSigningRequestResponse
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transactions
-                      .TransactionsOuterClass
-                      .RejectTransactionSigningRequestResponse)
-                  obj;
-
-      if (!getBodyCase().equals(other.getBodyCase())) return false;
-      switch (bodyCase_) {
-        case 1:
-          if (!getResponse().equals(other.getResponse())) return false;
-          break;
-        case 2:
-          if (!getError().equals(other.getError())) return false;
-          break;
-        case 0:
-        default:
-      }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      switch (bodyCase_) {
-        case 1:
-          hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
-          hash = (53 * hash) + getResponse().hashCode();
-          break;
-        case 2:
-          hash = (37 * hash) + ERROR_FIELD_NUMBER;
-          hash = (53 * hash) + getError().hashCode();
-          break;
-        case 0:
-        default:
-      }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -19799,11 +20020,6 @@ public final class TransactionsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -19820,6 +20036,354 @@ public final class TransactionsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestResponse
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<RejectTransactionSigningRequestResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new RejectTransactionSigningRequestResponse();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .RejectTransactionSigningRequestResponse
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .RejectTransactionSigningRequestResponse
+                  .Builder
+                  .class);
+    }
+
+    public BodyCase getBodyCase() {
+      return BodyCase.forNumber(bodyCase_);
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return Whether the response field is set.
+     */
+    @java.lang.Override
+    public boolean hasResponse() {
+      return bodyCase_ == 1;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return The response.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestResponseBody
+        getResponse() {
+      if (bodyCase_ == 1) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transactions
+                .TransactionsOuterClass
+                .RejectTransactionSigningRequestResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .RejectTransactionSigningRequestResponseBody.getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestResponseBodyOrBuilder
+        getResponseOrBuilder() {
+      if (bodyCase_ == 1) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transactions
+                .TransactionsOuterClass
+                .RejectTransactionSigningRequestResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .RejectTransactionSigningRequestResponseBody.getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return Whether the error field is set.
+     */
+    @java.lang.Override
+    public boolean hasError() {
+      return bodyCase_ == 2;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return The error.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestErrorResponseBody
+        getError() {
+      if (bodyCase_ == 2) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transactions
+                .TransactionsOuterClass
+                .RejectTransactionSigningRequestErrorResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .RejectTransactionSigningRequestErrorResponseBody.getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody error = 2;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestErrorResponseBodyOrBuilder
+        getErrorOrBuilder() {
+      if (bodyCase_ == 2) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transactions
+                .TransactionsOuterClass
+                .RejectTransactionSigningRequestErrorResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .RejectTransactionSigningRequestErrorResponseBody.getDefaultInstance();
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (bodyCase_ == 1) {
+        output.writeMessage(
+            1,
+            (io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .transactions
+                    .TransactionsOuterClass
+                    .RejectTransactionSigningRequestResponseBody)
+                body_);
+      }
+      if (bodyCase_ == 2) {
+        output.writeMessage(
+            2,
+            (io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .transactions
+                    .TransactionsOuterClass
+                    .RejectTransactionSigningRequestErrorResponseBody)
+                body_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (bodyCase_ == 1) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeMessageSize(
+                1,
+                (io.swisschain
+                        .sirius
+                        .vaultApi
+                        .generated
+                        .transactions
+                        .TransactionsOuterClass
+                        .RejectTransactionSigningRequestResponseBody)
+                    body_);
+      }
+      if (bodyCase_ == 2) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeMessageSize(
+                2,
+                (io.swisschain
+                        .sirius
+                        .vaultApi
+                        .generated
+                        .transactions
+                        .TransactionsOuterClass
+                        .RejectTransactionSigningRequestErrorResponseBody)
+                    body_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .RejectTransactionSigningRequestResponse)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .RejectTransactionSigningRequestResponse
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transactions
+                      .TransactionsOuterClass
+                      .RejectTransactionSigningRequestResponse)
+                  obj;
+
+      if (!getBodyCase().equals(other.getBodyCase())) return false;
+      switch (bodyCase_) {
+        case 1:
+          if (!getResponse().equals(other.getResponse())) return false;
+          break;
+        case 2:
+          if (!getError().equals(other.getError())) return false;
+          break;
+        case 0:
+        default:
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      switch (bodyCase_) {
+        case 1:
+          hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
+          hash = (53 * hash) + getResponse().hashCode();
+          break;
+        case 2:
+          hash = (37 * hash) + ERROR_FIELD_NUMBER;
+          hash = (53 * hash) + getError().hashCode();
+          break;
+        case 0:
+        default:
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -19831,6 +20395,64 @@ public final class TransactionsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RejectTransactionSigningRequestResponse> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestResponse
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+public enum BodyCase
+        implements
+            com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      RESPONSE(1),
+      ERROR(2),
+      BODY_NOT_SET(0);
+      private final int value;
+
+      private BodyCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static BodyCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static BodyCase forNumber(int value) {
+        switch (value) {
+          case 1:
+            return RESPONSE;
+          case 2:
+            return ERROR;
+          case 0:
+            return BODY_NOT_SET;
+          default:
+            return null;
+        }
+      }
+
+      public int getNumber() {
+        return this.value;
+      }
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponse}
@@ -19846,6 +20468,68 @@ public final class TransactionsOuterClass {
             .transactions
             .TransactionsOuterClass
             .RejectTransactionSigningRequestResponseOrBuilder {
+      private int bodyCase_ = 0;
+      private java.lang.Object body_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .RejectTransactionSigningRequestResponseBody,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .RejectTransactionSigningRequestResponseBody
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .RejectTransactionSigningRequestResponseBodyOrBuilder>
+          responseBuilder_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .RejectTransactionSigningRequestErrorResponseBody,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .RejectTransactionSigningRequestErrorResponseBody
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .RejectTransactionSigningRequestErrorResponseBodyOrBuilder>
+          errorBuilder_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.RejectTransactionSigningRequestResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -19879,17 +20563,6 @@ public final class TransactionsOuterClass {
                     .RejectTransactionSigningRequestResponse
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.RejectTransactionSigningRequestResponse.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -20127,9 +20800,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private int bodyCase_ = 0;
-      private java.lang.Object body_;
-
       public BodyCase getBodyCase() {
         return BodyCase.forNumber(bodyCase_);
       }
@@ -20141,30 +20811,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .RejectTransactionSigningRequestResponseBody,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .RejectTransactionSigningRequestResponseBody
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .RejectTransactionSigningRequestResponseBodyOrBuilder>
-          responseBuilder_;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
@@ -20176,6 +20822,7 @@ public final class TransactionsOuterClass {
       public boolean hasResponse() {
         return bodyCase_ == 1;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
@@ -20213,6 +20860,7 @@ public final class TransactionsOuterClass {
               .RejectTransactionSigningRequestResponseBody.getDefaultInstance();
         }
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
@@ -20239,6 +20887,7 @@ public final class TransactionsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
@@ -20263,6 +20912,7 @@ public final class TransactionsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
@@ -20314,6 +20964,7 @@ public final class TransactionsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
@@ -20335,6 +20986,7 @@ public final class TransactionsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
@@ -20351,6 +21003,7 @@ public final class TransactionsOuterClass {
           getResponseBuilder() {
         return getResponseFieldBuilder().getBuilder();
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
@@ -20382,6 +21035,7 @@ public final class TransactionsOuterClass {
               .RejectTransactionSigningRequestResponseBody.getDefaultInstance();
         }
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody response = 1;
@@ -20459,30 +21113,6 @@ public final class TransactionsOuterClass {
         return responseBuilder_;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .RejectTransactionSigningRequestErrorResponseBody,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .RejectTransactionSigningRequestErrorResponseBody
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .RejectTransactionSigningRequestErrorResponseBodyOrBuilder>
-          errorBuilder_;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody error = 2;
@@ -20791,77 +21421,8 @@ public final class TransactionsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponse)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponse)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestResponse
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .RejectTransactionSigningRequestResponse();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestResponse
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<RejectTransactionSigningRequestResponse>
-        PARSER =
-            new com.google.protobuf.AbstractParser<RejectTransactionSigningRequestResponse>() {
-              @java.lang.Override
-              public RejectTransactionSigningRequestResponse parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-                return new RejectTransactionSigningRequestResponse(input, extensionRegistry);
-              }
-            };
-
-    public static com.google.protobuf.Parser<RejectTransactionSigningRequestResponse> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<RejectTransactionSigningRequestResponse> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestResponse
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface RejectTransactionSigningRequestResponseBodyOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody)
-      com.google.protobuf.MessageOrBuilder {}
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody}
@@ -20872,6 +21433,40 @@ public final class TransactionsOuterClass {
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody)
       RejectTransactionSigningRequestResponseBodyOrBuilder {
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestResponseBody
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<RejectTransactionSigningRequestResponseBody>
+        PARSER =
+            new com.google.protobuf.AbstractParser<RejectTransactionSigningRequestResponseBody>() {
+              @java.lang.Override
+              public RejectTransactionSigningRequestResponseBody parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+                return new RejectTransactionSigningRequestResponseBody(input, extensionRegistry);
+              }
+            };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .RejectTransactionSigningRequestResponseBody();
+    }
+
+    private byte memoizedIsInitialized = -1;
+
     // Use RejectTransactionSigningRequestResponseBody.newBuilder() to construct.
     private RejectTransactionSigningRequestResponseBody(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -20879,17 +21474,6 @@ public final class TransactionsOuterClass {
     }
 
     private RejectTransactionSigningRequestResponseBody() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new RejectTransactionSigningRequestResponseBody();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
 
     private RejectTransactionSigningRequestResponseBody(
         com.google.protobuf.CodedInputStream input,
@@ -20936,108 +21520,6 @@ public final class TransactionsOuterClass {
           .transactions
           .TransactionsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponseBody_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponseBody_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .RejectTransactionSigningRequestResponseBody
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .RejectTransactionSigningRequestResponseBody
-                  .Builder
-                  .class);
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .RejectTransactionSigningRequestResponseBody)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .RejectTransactionSigningRequestResponseBody
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transactions
-                      .TransactionsOuterClass
-                      .RejectTransactionSigningRequestResponseBody)
-                  obj;
-
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -21190,11 +21672,6 @@ public final class TransactionsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -21211,6 +21688,137 @@ public final class TransactionsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestResponseBody
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<RejectTransactionSigningRequestResponseBody> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new RejectTransactionSigningRequestResponseBody();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .RejectTransactionSigningRequestResponseBody
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .RejectTransactionSigningRequestResponseBody
+                  .Builder
+                  .class);
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .RejectTransactionSigningRequestResponseBody)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .RejectTransactionSigningRequestResponseBody
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transactions
+                      .TransactionsOuterClass
+                      .RejectTransactionSigningRequestResponseBody)
+                  obj;
+
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -21222,6 +21830,25 @@ public final class TransactionsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RejectTransactionSigningRequestResponseBody>
+        getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestResponseBody
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody}
@@ -21237,6 +21864,17 @@ public final class TransactionsOuterClass {
             .transactions
             .TransactionsOuterClass
             .RejectTransactionSigningRequestResponseBodyOrBuilder {
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.RejectTransactionSigningRequestResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -21270,17 +21908,6 @@ public final class TransactionsOuterClass {
                     .RejectTransactionSigningRequestResponseBody
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.RejectTransactionSigningRequestResponseBody.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -21499,117 +22126,8 @@ public final class TransactionsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestResponseBody
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .RejectTransactionSigningRequestResponseBody();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestResponseBody
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<RejectTransactionSigningRequestResponseBody>
-        PARSER =
-            new com.google.protobuf.AbstractParser<RejectTransactionSigningRequestResponseBody>() {
-              @java.lang.Override
-              public RejectTransactionSigningRequestResponseBody parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-                return new RejectTransactionSigningRequestResponseBody(input, extensionRegistry);
-              }
-            };
-
-    public static com.google.protobuf.Parser<RejectTransactionSigningRequestResponseBody> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<RejectTransactionSigningRequestResponseBody>
-        getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestResponseBody
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface RejectTransactionSigningRequestErrorResponseBodyOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for errorCode.
-     */
-    int getErrorCodeValue();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The errorCode.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestErrorResponseBody
-            .ErrorCode
-        getErrorCode();
-
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The errorMessage.
-     */
-    java.lang.String getErrorMessage();
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The bytes for errorMessage.
-     */
-    com.google.protobuf.ByteString getErrorMessageBytes();
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody}
@@ -21619,29 +22137,57 @@ public final class TransactionsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody)
       RejectTransactionSigningRequestErrorResponseBodyOrBuilder {
+    public static final int ERROR_CODE_FIELD_NUMBER = 1;
+    public static final int ERROR_MESSAGE_FIELD_NUMBER = 2;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestErrorResponseBody
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<
+            RejectTransactionSigningRequestErrorResponseBody>
+        PARSER =
+            new com.google.protobuf.AbstractParser<
+                RejectTransactionSigningRequestErrorResponseBody>() {
+              @java.lang.Override
+              public RejectTransactionSigningRequestErrorResponseBody parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+                return new RejectTransactionSigningRequestErrorResponseBody(
+                    input, extensionRegistry);
+              }
+            };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .RejectTransactionSigningRequestErrorResponseBody();
+    }
+
+    private int errorCode_;
+    private volatile java.lang.Object errorMessage_;
+    private byte memoizedIsInitialized = -1;
+
     // Use RejectTransactionSigningRequestErrorResponseBody.newBuilder() to construct.
     private RejectTransactionSigningRequestErrorResponseBody(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private RejectTransactionSigningRequestErrorResponseBody() {
       errorCode_ = 0;
       errorMessage_ = "";
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new RejectTransactionSigningRequestErrorResponseBody();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private RejectTransactionSigningRequestErrorResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -21701,329 +22247,6 @@ public final class TransactionsOuterClass {
           .transactions
           .TransactionsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestErrorResponseBody_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestErrorResponseBody_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .RejectTransactionSigningRequestErrorResponseBody
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transactions
-                  .TransactionsOuterClass
-                  .RejectTransactionSigningRequestErrorResponseBody
-                  .Builder
-                  .class);
-    }
-
-    /**
-     * Protobuf enum {@code
-     * swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody.ErrorCode}
-     */
-    public enum ErrorCode implements com.google.protobuf.ProtocolMessageEnum {
-      /** <code>UNKNOWN = 0;</code> */
-      UNKNOWN(0),
-      /** <code>INVALID_PARAMETERS = 1;</code> */
-      INVALID_PARAMETERS(1),
-      UNRECOGNIZED(-1),
-      ;
-
-      /** <code>UNKNOWN = 0;</code> */
-      public static final int UNKNOWN_VALUE = 0;
-      /** <code>INVALID_PARAMETERS = 1;</code> */
-      public static final int INVALID_PARAMETERS_VALUE = 1;
-
-      public final int getNumber() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static ErrorCode valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static ErrorCode forNumber(int value) {
-        switch (value) {
-          case 0:
-            return UNKNOWN;
-          case 1:
-            return INVALID_PARAMETERS;
-          default:
-            return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalGetValueMap() {
-        return internalValueMap;
-      }
-
-      private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
-            public ErrorCode findValueByNumber(int number) {
-              return ErrorCode.forNumber(number);
-            }
-          };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(ordinal());
-      }
-
-      public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
-        return getDescriptor();
-      }
-
-      public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
-        return io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestErrorResponseBody
-            .getDescriptor()
-            .getEnumTypes()
-            .get(0);
-      }
-
-      private static final ErrorCode[] VALUES = values();
-
-      public static ErrorCode valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int value;
-
-      private ErrorCode(int value) {
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody.ErrorCode)
-    }
-
-    public static final int ERROR_CODE_FIELD_NUMBER = 1;
-    private int errorCode_;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for errorCode.
-     */
-    @java.lang.Override
-    public int getErrorCodeValue() {
-      return errorCode_;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The errorCode.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestErrorResponseBody
-            .ErrorCode
-        getErrorCode() {
-      @SuppressWarnings("deprecation")
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .RejectTransactionSigningRequestErrorResponseBody
-              .ErrorCode
-          result =
-              io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-                  .RejectTransactionSigningRequestErrorResponseBody.ErrorCode.valueOf(errorCode_);
-      return result == null
-          ? io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .RejectTransactionSigningRequestErrorResponseBody
-              .ErrorCode
-              .UNRECOGNIZED
-          : result;
-    }
-
-    public static final int ERROR_MESSAGE_FIELD_NUMBER = 2;
-    private volatile java.lang.Object errorMessage_;
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The errorMessage.
-     */
-    @java.lang.Override
-    public java.lang.String getErrorMessage() {
-      java.lang.Object ref = errorMessage_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        errorMessage_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The bytes for errorMessage.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getErrorMessageBytes() {
-      java.lang.Object ref = errorMessage_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        errorMessage_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (errorCode_
-          != io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-              .RejectTransactionSigningRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
-        output.writeEnum(1, errorCode_);
-      }
-      if (!getErrorMessageBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, errorMessage_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (errorCode_
-          != io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
-              .RejectTransactionSigningRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream.computeEnumSize(1, errorCode_);
-      }
-      if (!getErrorMessageBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, errorMessage_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .RejectTransactionSigningRequestErrorResponseBody)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .RejectTransactionSigningRequestErrorResponseBody
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transactions
-                      .TransactionsOuterClass
-                      .RejectTransactionSigningRequestErrorResponseBody)
-                  obj;
-
-      if (errorCode_ != other.errorCode_) return false;
-      if (!getErrorMessage().equals(other.getErrorMessage())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ERROR_CODE_FIELD_NUMBER;
-      hash = (53 * hash) + errorCode_;
-      hash = (37 * hash) + ERROR_MESSAGE_FIELD_NUMBER;
-      hash = (53 * hash) + getErrorMessage().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -22176,11 +22399,6 @@ public final class TransactionsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -22197,6 +22415,250 @@ public final class TransactionsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestErrorResponseBody
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<RejectTransactionSigningRequestErrorResponseBody>
+        parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new RejectTransactionSigningRequestErrorResponseBody();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestErrorResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .RejectTransactionSigningRequestErrorResponseBody
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transactions
+                  .TransactionsOuterClass
+                  .RejectTransactionSigningRequestErrorResponseBody
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for errorCode.
+     */
+    @java.lang.Override
+    public int getErrorCodeValue() {
+      return errorCode_;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The errorCode.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestErrorResponseBody
+            .ErrorCode
+        getErrorCode() {
+      @SuppressWarnings("deprecation")
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .RejectTransactionSigningRequestErrorResponseBody
+              .ErrorCode
+          result =
+              io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+                  .RejectTransactionSigningRequestErrorResponseBody.ErrorCode.valueOf(errorCode_);
+      return result == null
+          ? io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .RejectTransactionSigningRequestErrorResponseBody
+              .ErrorCode
+              .UNRECOGNIZED
+          : result;
+    }
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The errorMessage.
+     */
+    @java.lang.Override
+    public java.lang.String getErrorMessage() {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        errorMessage_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The bytes for errorMessage.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getErrorMessageBytes() {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        errorMessage_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (errorCode_
+          != io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+              .RejectTransactionSigningRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
+        output.writeEnum(1, errorCode_);
+      }
+      if (!getErrorMessageBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, errorMessage_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (errorCode_
+          != io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass
+              .RejectTransactionSigningRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream.computeEnumSize(1, errorCode_);
+      }
+      if (!getErrorMessageBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, errorMessage_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .RejectTransactionSigningRequestErrorResponseBody)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transactions
+              .TransactionsOuterClass
+              .RejectTransactionSigningRequestErrorResponseBody
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transactions
+                      .TransactionsOuterClass
+                      .RejectTransactionSigningRequestErrorResponseBody)
+                  obj;
+
+      if (errorCode_ != other.errorCode_) return false;
+      if (!getErrorMessage().equals(other.getErrorMessage())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ERROR_CODE_FIELD_NUMBER;
+      hash = (53 * hash) + errorCode_;
+      hash = (37 * hash) + ERROR_MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getErrorMessage().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -22208,6 +22670,129 @@ public final class TransactionsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RejectTransactionSigningRequestErrorResponseBody>
+        getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestErrorResponseBody
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+    /**
+     * Protobuf enum {@code
+     * swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody.ErrorCode}
+     */
+    public enum ErrorCode implements com.google.protobuf.ProtocolMessageEnum {
+      /** <code>UNKNOWN = 0;</code> */
+      UNKNOWN(0),
+      /** <code>INVALID_PARAMETERS = 1;</code> */
+      INVALID_PARAMETERS(1),
+      UNRECOGNIZED(-1),
+      ;
+
+      /** <code>UNKNOWN = 0;</code> */
+      public static final int UNKNOWN_VALUE = 0;
+      /** <code>INVALID_PARAMETERS = 1;</code> */
+      public static final int INVALID_PARAMETERS_VALUE = 1;
+      private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
+            public ErrorCode findValueByNumber(int number) {
+              return ErrorCode.forNumber(number);
+            }
+          };
+      private static final ErrorCode[] VALUES = values();
+      private final int value;
+
+      private ErrorCode(int value) {
+        this.value = value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static ErrorCode valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static ErrorCode forNumber(int value) {
+        switch (value) {
+          case 0:
+            return UNKNOWN;
+          case 1:
+            return INVALID_PARAMETERS;
+          default:
+            return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalGetValueMap() {
+        return internalValueMap;
+      }
+
+      public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+        return io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transactions
+            .TransactionsOuterClass
+            .RejectTransactionSigningRequestErrorResponseBody
+            .getDescriptor()
+            .getEnumTypes()
+            .get(0);
+      }
+
+      public static ErrorCode valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(ordinal());
+      }
+
+      public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
+        return getDescriptor();
+      }
+
+      // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody.ErrorCode)
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody}
@@ -22223,6 +22808,20 @@ public final class TransactionsOuterClass {
             .transactions
             .TransactionsOuterClass
             .RejectTransactionSigningRequestErrorResponseBodyOrBuilder {
+      private int errorCode_ = 0;
+      private java.lang.Object errorMessage_ = "";
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.RejectTransactionSigningRequestErrorResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -22256,17 +22855,6 @@ public final class TransactionsOuterClass {
                     .RejectTransactionSigningRequestErrorResponseBody
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transactions.TransactionsOuterClass.RejectTransactionSigningRequestErrorResponseBody.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -22484,7 +23072,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private int errorCode_ = 0;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -22496,6 +23083,7 @@ public final class TransactionsOuterClass {
       public int getErrorCodeValue() {
         return errorCode_;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -22510,6 +23098,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -22551,6 +23140,7 @@ public final class TransactionsOuterClass {
                 .UNRECOGNIZED
             : result;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -22577,6 +23167,7 @@ public final class TransactionsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -22591,7 +23182,6 @@ public final class TransactionsOuterClass {
         return this;
       }
 
-      private java.lang.Object errorMessage_ = "";
       /**
        * <code>string error_message = 2;</code>
        *
@@ -22608,6 +23198,23 @@ public final class TransactionsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string error_message = 2;</code>
+       *
+       * @param value The errorMessage to set.
+       * @return This builder for chaining.
+       */
+      public Builder setErrorMessage(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        errorMessage_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string error_message = 2;</code>
        *
@@ -22624,32 +23231,7 @@ public final class TransactionsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string error_message = 2;</code>
-       *
-       * @param value The errorMessage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setErrorMessage(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        errorMessage_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string error_message = 2;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearErrorMessage() {
-
-        errorMessage_ = getDefaultInstance().getErrorMessage();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string error_message = 2;</code>
        *
@@ -22663,6 +23245,18 @@ public final class TransactionsOuterClass {
         checkByteStringIsUtf8(value);
 
         errorMessage_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string error_message = 2;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearErrorMessage() {
+
+        errorMessage_ = getDefaultInstance().getErrorMessage();
         onChanged();
         return this;
       }
@@ -22681,410 +23275,6 @@ public final class TransactionsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestErrorResponseBody
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transactions
-              .TransactionsOuterClass
-              .RejectTransactionSigningRequestErrorResponseBody();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestErrorResponseBody
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<
-            RejectTransactionSigningRequestErrorResponseBody>
-        PARSER =
-            new com.google.protobuf.AbstractParser<
-                RejectTransactionSigningRequestErrorResponseBody>() {
-              @java.lang.Override
-              public RejectTransactionSigningRequestErrorResponseBody parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-                return new RejectTransactionSigningRequestErrorResponseBody(
-                    input, extensionRegistry);
-              }
-            };
-
-    public static com.google.protobuf.Parser<RejectTransactionSigningRequestErrorResponseBody>
-        parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<RejectTransactionSigningRequestErrorResponseBody>
-        getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transactions
-            .TransactionsOuterClass
-            .RejectTransactionSigningRequestErrorResponseBody
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestRequest_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestRequest_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponse_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponse_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponseBody_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponseBody_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestErrorResponseBody_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestErrorResponseBody_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transactions_TransactionSigningRequest_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transactions_TransactionSigningRequest_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transactions_CoinToSpend_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transactions_CoinToSpend_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transactions_CoinId_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transactions_CoinId_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAsset_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAsset_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAssetId_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAssetId_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestRequest_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestRequest_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponse_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponse_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponseBody_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponseBody_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestErrorResponseBody_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestErrorResponseBody_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestRequest_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestRequest_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponse_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponse_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponseBody_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponseBody_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestErrorResponseBody_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestErrorResponseBody_fieldAccessorTable;
-
-  public static com.google.protobuf.Descriptors.FileDescriptor getDescriptor() {
-    return descriptor;
-  }
-
-  private static com.google.protobuf.Descriptors.FileDescriptor descriptor;
-
-  static {
-    java.lang.String[] descriptorData = {
-      "\n\022transactions.proto\022\'swisschain.sirius."
-          + "vaultApi.transactions\032\036google/protobuf/w"
-          + "rappers.proto\032\037google/protobuf/timestamp"
-          + ".proto\032\014common.proto\"%\n#GetTransactionSi"
-          + "gningRequestRequest\"\376\001\n$GetTransactionSi"
-          + "gningRequestResponse\022e\n\010response\030\001 \001(\0132Q"
-          + ".swisschain.sirius.vaultApi.transactions"
-          + ".GetTransactionSigningRequestResponseBod"
-          + "yH\000\022g\n\005error\030\002 \001(\0132V.swisschain.sirius.v"
-          + "aultApi.transactions.GetTransactionSigni"
-          + "ngRequestErrorResponseBodyH\000B\006\n\004body\"\200\001\n"
-          + "(GetTransactionSigningRequestResponseBod"
-          + "y\022T\n\010requests\030\001 \003(\0132B.swisschain.sirius."
-          + "vaultApi.transactions.TransactionSigning"
-          + "Request\"\356\001\n-GetTransactionSigningRequest"
-          + "ErrorResponseBody\022t\n\nerror_code\030\001 \001(\0162`."
-          + "swisschain.sirius.vaultApi.transactions."
-          + "GetTransactionSigningRequestErrorRespons"
-          + "eBody.ErrorCode\022\025\n\rerror_message\030\002 \001(\t\"0"
-          + "\n\tErrorCode\022\013\n\007UNKNOWN\020\000\022\026\n\022INVALID_PARA"
-          + "METERS\020\001\"\357\003\n\031TransactionSigningRequest\022\n"
-          + "\n\002id\030\001 \001(\003\022\025\n\rblockchain_id\030\002 \001(\t\022D\n\014net"
-          + "work_type\030\003 \001(\0162..swisschain.sirius.vaul"
-          + "tApi.common.NetworkType\022\025\n\rprotocol_code"
-          + "\030\004 \001(\t\022n\n\037double_spending_protection_typ"
-          + "e\030\005 \001(\0162E.swisschain.sirius.vaultApi.tra"
-          + "nsactions.DoubleSpendingProtectionType\022\031"
-          + "\n\021built_transaction\030\006 \001(\014\022\031\n\021signing_add"
-          + "resses\030\007 \003(\t\022L\n\016coins_to_spend\030\010 \003(\01324.s"
-          + "wisschain.sirius.vaultApi.transactions.C"
-          + "oinToSpend\022.\n\ncreated_at\030\t \001(\0132\032.google."
-          + "protobuf.Timestamp\022.\n\nupdated_at\030\n \001(\0132\032"
-          + ".google.protobuf.Timestamp\"\220\002\n\013CoinToSpe"
-          + "nd\022;\n\002id\030\001 \001(\0132/.swisschain.sirius.vault"
-          + "Api.transactions.CoinId\022G\n\005asset\030\002 \001(\01328"
-          + ".swisschain.sirius.vaultApi.transactions"
-          + ".BlockchainAsset\022<\n\005value\030\003 \001(\0132-.swissc"
-          + "hain.sirius.vaultApi.common.BigDecimal\022,"
-          + "\n\006redeem\030\004 \001(\0132\034.google.protobuf.StringV"
-          + "alue\022\017\n\007address\030\005 \001(\t\"0\n\006CoinId\022\026\n\016trans"
-          + "action_id\030\001 \001(\t\022\016\n\006number\030\002 \001(\005\"k\n\017Block"
-          + "chainAsset\022F\n\002id\030\001 \001(\0132:.swisschain.siri"
-          + "us.vaultApi.transactions.BlockchainAsset"
-          + "Id\022\020\n\010accuracy\030\002 \001(\005\"R\n\021BlockchainAssetI"
-          + "d\022\016\n\006symbol\030\001 \001(\t\022-\n\007address\030\002 \001(\0132\034.goo"
-          + "gle.protobuf.StringValue\"\231\001\n\'ConfirmTran"
-          + "sactionSigningRequestRequest\022\022\n\nrequest_"
-          + "id\030\001 \001(\t\022&\n\036transaction_signing_request_"
-          + "id\030\002 \001(\003\022\026\n\016transaction_id\030\004 \001(\t\022\032\n\022sign"
-          + "ed_transaction\030\005 \001(\014\"\212\002\n(ConfirmTransact"
-          + "ionSigningRequestResponse\022i\n\010response\030\001 "
-          + "\001(\0132U.swisschain.sirius.vaultApi.transac"
-          + "tions.ConfirmTransactionSigningRequestRe"
-          + "sponseBodyH\000\022k\n\005error\030\002 \001(\0132Z.swisschain"
-          + ".sirius.vaultApi.transactions.ConfirmTra"
-          + "nsactionSigningRequestErrorResponseBodyH"
-          + "\000B\006\n\004body\".\n,ConfirmTransactionSigningRe"
-          + "questResponseBody\"\366\001\n1ConfirmTransaction"
-          + "SigningRequestErrorResponseBody\022x\n\nerror"
-          + "_code\030\001 \001(\0162d.swisschain.sirius.vaultApi"
-          + ".transactions.ConfirmTransactionSigningR"
-          + "equestErrorResponseBody.ErrorCode\022\025\n\rerr"
-          + "or_message\030\002 \001(\t\"0\n\tErrorCode\022\013\n\007UNKNOWN"
-          + "\020\000\022\026\n\022INVALID_PARAMETERS\020\001\"\337\001\n&RejectTra"
-          + "nsactionSigningRequestRequest\022\022\n\nrequest"
-          + "_id\030\001 \001(\t\022&\n\036transaction_signing_request"
-          + "_id\030\002 \001(\003\022a\n\006reason\030\004 \001(\0162Q.swisschain.s"
-          + "irius.vaultApi.transactions.TransactionS"
-          + "igningRequestRejectionReason\022\026\n\016reason_m"
-          + "essage\030\005 \001(\t\"\207\002\n\'RejectTransactionSignin"
-          + "gRequestResponse\022h\n\010response\030\001 \001(\0132T.swi"
-          + "sschain.sirius.vaultApi.transactions.Rej"
-          + "ectTransactionSigningRequestResponseBody"
-          + "H\000\022j\n\005error\030\002 \001(\0132Y.swisschain.sirius.va"
-          + "ultApi.transactions.RejectTransactionSig"
-          + "ningRequestErrorResponseBodyH\000B\006\n\004body\"-"
-          + "\n+RejectTransactionSigningRequestRespons"
-          + "eBody\"\364\001\n0RejectTransactionSigningReques"
-          + "tErrorResponseBody\022w\n\nerror_code\030\001 \001(\0162c"
-          + ".swisschain.sirius.vaultApi.transactions"
-          + ".RejectTransactionSigningRequestErrorRes"
-          + "ponseBody.ErrorCode\022\025\n\rerror_message\030\002 \001"
-          + "(\t\"0\n\tErrorCode\022\013\n\007UNKNOWN\020\000\022\026\n\022INVALID_"
-          + "PARAMETERS\020\001*4\n\034DoubleSpendingProtection"
-          + "Type\022\t\n\005COINS\020\000\022\t\n\005NONCE\020\001*g\n(Transactio"
-          + "nSigningRequestRejectionReason\022\t\n\005OTHER\020"
-          + "\000\022\026\n\022UNKNOWN_BLOCKCHAIN\020\001\022\030\n\024UNWANTED_TR"
-          + "ANSACTION\020\0022\222\004\n\014Transactions\022\242\001\n\003Get\022L.s"
-          + "wisschain.sirius.vaultApi.transactions.G"
-          + "etTransactionSigningRequestRequest\032M.swi"
-          + "sschain.sirius.vaultApi.transactions.Get"
-          + "TransactionSigningRequestResponse\022\256\001\n\007Co"
-          + "nfirm\022P.swisschain.sirius.vaultApi.trans"
-          + "actions.ConfirmTransactionSigningRequest"
-          + "Request\032Q.swisschain.sirius.vaultApi.tra"
-          + "nsactions.ConfirmTransactionSigningReque"
-          + "stResponse\022\253\001\n\006Reject\022O.swisschain.siriu"
-          + "s.vaultApi.transactions.RejectTransactio"
-          + "nSigningRequestRequest\032P.swisschain.siri"
-          + "us.vaultApi.transactions.RejectTransacti"
-          + "onSigningRequestResponseBl\n4io.swisschai"
-          + "n.sirius.vaultApi.generated.transactions"
-          + "\252\0023Swisschain.Sirius.VaultApi.ApiContrac"
-          + "t.Transactionsb\006proto3"
-    };
-    descriptor =
-        com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
-            descriptorData,
-            new com.google.protobuf.Descriptors.FileDescriptor[] {
-              com.google.protobuf.WrappersProto.getDescriptor(),
-              com.google.protobuf.TimestampProto.getDescriptor(),
-              io.swisschain.sirius.vaultApi.generated.common.Common.getDescriptor(),
-            });
-    internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestRequest_descriptor =
-        getDescriptor().getMessageTypes().get(0);
-    internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestRequest_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestRequest_descriptor,
-            new java.lang.String[] {});
-    internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponse_descriptor =
-        getDescriptor().getMessageTypes().get(1);
-    internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponse_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponse_descriptor,
-            new java.lang.String[] {
-              "Response", "Error", "Body",
-            });
-    internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponseBody_descriptor =
-        getDescriptor().getMessageTypes().get(2);
-    internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponseBody_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestResponseBody_descriptor,
-            new java.lang.String[] {
-              "Requests",
-            });
-    internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestErrorResponseBody_descriptor =
-        getDescriptor().getMessageTypes().get(3);
-    internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestErrorResponseBody_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transactions_GetTransactionSigningRequestErrorResponseBody_descriptor,
-            new java.lang.String[] {
-              "ErrorCode", "ErrorMessage",
-            });
-    internal_static_swisschain_sirius_vaultApi_transactions_TransactionSigningRequest_descriptor =
-        getDescriptor().getMessageTypes().get(4);
-    internal_static_swisschain_sirius_vaultApi_transactions_TransactionSigningRequest_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transactions_TransactionSigningRequest_descriptor,
-            new java.lang.String[] {
-              "Id",
-              "BlockchainId",
-              "NetworkType",
-              "ProtocolCode",
-              "DoubleSpendingProtectionType",
-              "BuiltTransaction",
-              "SigningAddresses",
-              "CoinsToSpend",
-              "CreatedAt",
-              "UpdatedAt",
-            });
-    internal_static_swisschain_sirius_vaultApi_transactions_CoinToSpend_descriptor =
-        getDescriptor().getMessageTypes().get(5);
-    internal_static_swisschain_sirius_vaultApi_transactions_CoinToSpend_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transactions_CoinToSpend_descriptor,
-            new java.lang.String[] {
-              "Id", "Asset", "Value", "Redeem", "Address",
-            });
-    internal_static_swisschain_sirius_vaultApi_transactions_CoinId_descriptor =
-        getDescriptor().getMessageTypes().get(6);
-    internal_static_swisschain_sirius_vaultApi_transactions_CoinId_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transactions_CoinId_descriptor,
-            new java.lang.String[] {
-              "TransactionId", "Number",
-            });
-    internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAsset_descriptor =
-        getDescriptor().getMessageTypes().get(7);
-    internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAsset_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAsset_descriptor,
-            new java.lang.String[] {
-              "Id", "Accuracy",
-            });
-    internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAssetId_descriptor =
-        getDescriptor().getMessageTypes().get(8);
-    internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAssetId_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transactions_BlockchainAssetId_descriptor,
-            new java.lang.String[] {
-              "Symbol", "Address",
-            });
-    internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestRequest_descriptor =
-        getDescriptor().getMessageTypes().get(9);
-    internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestRequest_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestRequest_descriptor,
-            new java.lang.String[] {
-              "RequestId", "TransactionSigningRequestId", "TransactionId", "SignedTransaction",
-            });
-    internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponse_descriptor =
-        getDescriptor().getMessageTypes().get(10);
-    internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponse_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponse_descriptor,
-            new java.lang.String[] {
-              "Response", "Error", "Body",
-            });
-    internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponseBody_descriptor =
-        getDescriptor().getMessageTypes().get(11);
-    internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponseBody_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestResponseBody_descriptor,
-            new java.lang.String[] {});
-    internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestErrorResponseBody_descriptor =
-        getDescriptor().getMessageTypes().get(12);
-    internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestErrorResponseBody_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transactions_ConfirmTransactionSigningRequestErrorResponseBody_descriptor,
-            new java.lang.String[] {
-              "ErrorCode", "ErrorMessage",
-            });
-    internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestRequest_descriptor =
-        getDescriptor().getMessageTypes().get(13);
-    internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestRequest_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestRequest_descriptor,
-            new java.lang.String[] {
-              "RequestId", "TransactionSigningRequestId", "Reason", "ReasonMessage",
-            });
-    internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponse_descriptor =
-        getDescriptor().getMessageTypes().get(14);
-    internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponse_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponse_descriptor,
-            new java.lang.String[] {
-              "Response", "Error", "Body",
-            });
-    internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponseBody_descriptor =
-        getDescriptor().getMessageTypes().get(15);
-    internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponseBody_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestResponseBody_descriptor,
-            new java.lang.String[] {});
-    internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestErrorResponseBody_descriptor =
-        getDescriptor().getMessageTypes().get(16);
-    internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestErrorResponseBody_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transactions_RejectTransactionSigningRequestErrorResponseBody_descriptor,
-            new java.lang.String[] {
-              "ErrorCode", "ErrorMessage",
-            });
-    com.google.protobuf.WrappersProto.getDescriptor();
-    com.google.protobuf.TimestampProto.getDescriptor();
-    io.swisschain.sirius.vaultApi.generated.common.Common.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

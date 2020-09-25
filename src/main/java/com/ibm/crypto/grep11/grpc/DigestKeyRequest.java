@@ -8,26 +8,36 @@ public final class DigestKeyRequest extends com.google.protobuf.GeneratedMessage
     implements
     // @@protoc_insertion_point(message_implements:grep11.DigestKeyRequest)
     DigestKeyRequestOrBuilder {
+  public static final int STATE_FIELD_NUMBER = 1;
+  public static final int KEY_FIELD_NUMBER = 2;
   private static final long serialVersionUID = 0L;
+  // @@protoc_insertion_point(class_scope:grep11.DigestKeyRequest)
+  private static final com.ibm.crypto.grep11.grpc.DigestKeyRequest DEFAULT_INSTANCE;
+  private static final com.google.protobuf.Parser<DigestKeyRequest> PARSER =
+      new com.google.protobuf.AbstractParser<DigestKeyRequest>() {
+        @java.lang.Override
+        public DigestKeyRequest parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new DigestKeyRequest(input, extensionRegistry);
+        }
+      };
+
+  static {
+    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.DigestKeyRequest();
+  }
+
+  private com.google.protobuf.ByteString state_;
+  private com.google.protobuf.ByteString key_;
+  private byte memoizedIsInitialized = -1;
   // Use DigestKeyRequest.newBuilder() to construct.
   private DigestKeyRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-
   private DigestKeyRequest() {
     state_ = com.google.protobuf.ByteString.EMPTY;
     key_ = com.google.protobuf.ByteString.EMPTY;
-  }
-
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new DigestKeyRequest();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-    return this.unknownFields;
   }
 
   private DigestKeyRequest(
@@ -79,112 +89,6 @@ public final class DigestKeyRequest extends com.google.protobuf.GeneratedMessage
 
   public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
     return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_DigestKeyRequest_descriptor;
-  }
-
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-    return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_DigestKeyRequest_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.ibm.crypto.grep11.grpc.DigestKeyRequest.class,
-            com.ibm.crypto.grep11.grpc.DigestKeyRequest.Builder.class);
-  }
-
-  public static final int STATE_FIELD_NUMBER = 1;
-  private com.google.protobuf.ByteString state_;
-  /**
-   * <code>bytes State = 1;</code>
-   *
-   * @return The state.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString getState() {
-    return state_;
-  }
-
-  public static final int KEY_FIELD_NUMBER = 2;
-  private com.google.protobuf.ByteString key_;
-  /**
-   * <code>bytes Key = 2;</code>
-   *
-   * @return The key.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString getKey() {
-    return key_;
-  }
-
-  private byte memoizedIsInitialized = -1;
-
-  @java.lang.Override
-  public final boolean isInitialized() {
-    byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) return true;
-    if (isInitialized == 0) return false;
-
-    memoizedIsInitialized = 1;
-    return true;
-  }
-
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    if (!state_.isEmpty()) {
-      output.writeBytes(1, state_);
-    }
-    if (!key_.isEmpty()) {
-      output.writeBytes(2, key_);
-    }
-    unknownFields.writeTo(output);
-  }
-
-  @java.lang.Override
-  public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) return size;
-
-    size = 0;
-    if (!state_.isEmpty()) {
-      size += com.google.protobuf.CodedOutputStream.computeBytesSize(1, state_);
-    }
-    if (!key_.isEmpty()) {
-      size += com.google.protobuf.CodedOutputStream.computeBytesSize(2, key_);
-    }
-    size += unknownFields.getSerializedSize();
-    memoizedSize = size;
-    return size;
-  }
-
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
-    if (obj == this) {
-      return true;
-    }
-    if (!(obj instanceof com.ibm.crypto.grep11.grpc.DigestKeyRequest)) {
-      return super.equals(obj);
-    }
-    com.ibm.crypto.grep11.grpc.DigestKeyRequest other =
-        (com.ibm.crypto.grep11.grpc.DigestKeyRequest) obj;
-
-    if (!getState().equals(other.getState())) return false;
-    if (!getKey().equals(other.getKey())) return false;
-    if (!unknownFields.equals(other.unknownFields)) return false;
-    return true;
-  }
-
-  @java.lang.Override
-  public int hashCode() {
-    if (memoizedHashCode != 0) {
-      return memoizedHashCode;
-    }
-    int hash = 41;
-    hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + STATE_FIELD_NUMBER;
-    hash = (53 * hash) + getState().hashCode();
-    hash = (37 * hash) + KEY_FIELD_NUMBER;
-    hash = (53 * hash) + getKey().hashCode();
-    hash = (29 * hash) + unknownFields.hashCode();
-    memoizedHashCode = hash;
-    return hash;
   }
 
   public static com.ibm.crypto.grep11.grpc.DigestKeyRequest parseFrom(java.nio.ByteBuffer data)
@@ -259,17 +163,136 @@ public final class DigestKeyRequest extends com.google.protobuf.GeneratedMessage
         PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
-  public Builder newBuilderForType() {
-    return newBuilder();
-  }
-
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
 
   public static Builder newBuilder(com.ibm.crypto.grep11.grpc.DigestKeyRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.DigestKeyRequest getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  public static com.google.protobuf.Parser<DigestKeyRequest> parser() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new DigestKeyRequest();
+  }
+
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    return this.unknownFields;
+  }
+
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internalGetFieldAccessorTable() {
+    return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_DigestKeyRequest_fieldAccessorTable
+        .ensureFieldAccessorsInitialized(
+            com.ibm.crypto.grep11.grpc.DigestKeyRequest.class,
+            com.ibm.crypto.grep11.grpc.DigestKeyRequest.Builder.class);
+  }
+
+  /**
+   * <code>bytes State = 1;</code>
+   *
+   * @return The state.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString getState() {
+    return state_;
+  }
+
+  /**
+   * <code>bytes Key = 2;</code>
+   *
+   * @return The key.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString getKey() {
+    return key_;
+  }
+
+  @java.lang.Override
+  public final boolean isInitialized() {
+    byte isInitialized = memoizedIsInitialized;
+    if (isInitialized == 1) return true;
+    if (isInitialized == 0) return false;
+
+    memoizedIsInitialized = 1;
+    return true;
+  }
+
+  @java.lang.Override
+  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+    if (!state_.isEmpty()) {
+      output.writeBytes(1, state_);
+    }
+    if (!key_.isEmpty()) {
+      output.writeBytes(2, key_);
+    }
+    unknownFields.writeTo(output);
+  }
+
+  @java.lang.Override
+  public int getSerializedSize() {
+    int size = memoizedSize;
+    if (size != -1) return size;
+
+    size = 0;
+    if (!state_.isEmpty()) {
+      size += com.google.protobuf.CodedOutputStream.computeBytesSize(1, state_);
+    }
+    if (!key_.isEmpty()) {
+      size += com.google.protobuf.CodedOutputStream.computeBytesSize(2, key_);
+    }
+    size += unknownFields.getSerializedSize();
+    memoizedSize = size;
+    return size;
+  }
+
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
+    if (obj == this) {
+      return true;
+    }
+    if (!(obj instanceof com.ibm.crypto.grep11.grpc.DigestKeyRequest)) {
+      return super.equals(obj);
+    }
+    com.ibm.crypto.grep11.grpc.DigestKeyRequest other =
+        (com.ibm.crypto.grep11.grpc.DigestKeyRequest) obj;
+
+    if (!getState().equals(other.getState())) return false;
+    if (!getKey().equals(other.getKey())) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
+  }
+
+  @java.lang.Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + STATE_FIELD_NUMBER;
+    hash = (53 * hash) + getState().hashCode();
+    hash = (37 * hash) + KEY_FIELD_NUMBER;
+    hash = (53 * hash) + getKey().hashCode();
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
+  }
+
+  @java.lang.Override
+  public Builder newBuilderForType() {
+    return newBuilder();
   }
 
   @java.lang.Override
@@ -282,11 +305,35 @@ public final class DigestKeyRequest extends com.google.protobuf.GeneratedMessage
     Builder builder = new Builder(parent);
     return builder;
   }
+
+  @java.lang.Override
+  public com.google.protobuf.Parser<DigestKeyRequest> getParserForType() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.DigestKeyRequest getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
+  }
+
   /** Protobuf type {@code grep11.DigestKeyRequest} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
       // @@protoc_insertion_point(builder_implements:grep11.DigestKeyRequest)
       com.ibm.crypto.grep11.grpc.DigestKeyRequestOrBuilder {
+    private com.google.protobuf.ByteString state_ = com.google.protobuf.ByteString.EMPTY;
+    private com.google.protobuf.ByteString key_ = com.google.protobuf.ByteString.EMPTY;
+
+    // Construct using com.ibm.crypto.grep11.grpc.DigestKeyRequest.newBuilder()
+    private Builder() {
+      maybeForceBuilderInitialization();
+    }
+
+    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      super(parent);
+      maybeForceBuilderInitialization();
+    }
+
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
       return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_DigestKeyRequest_descriptor;
     }
@@ -299,16 +346,6 @@ public final class DigestKeyRequest extends com.google.protobuf.GeneratedMessage
           .ensureFieldAccessorsInitialized(
               com.ibm.crypto.grep11.grpc.DigestKeyRequest.class,
               com.ibm.crypto.grep11.grpc.DigestKeyRequest.Builder.class);
-    }
-
-    // Construct using com.ibm.crypto.grep11.grpc.DigestKeyRequest.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
     }
 
     private void maybeForceBuilderInitialization() {
@@ -434,7 +471,6 @@ public final class DigestKeyRequest extends com.google.protobuf.GeneratedMessage
       return this;
     }
 
-    private com.google.protobuf.ByteString state_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes State = 1;</code>
      *
@@ -444,6 +480,7 @@ public final class DigestKeyRequest extends com.google.protobuf.GeneratedMessage
     public com.google.protobuf.ByteString getState() {
       return state_;
     }
+
     /**
      * <code>bytes State = 1;</code>
      *
@@ -459,6 +496,7 @@ public final class DigestKeyRequest extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      * <code>bytes State = 1;</code>
      *
@@ -471,7 +509,6 @@ public final class DigestKeyRequest extends com.google.protobuf.GeneratedMessage
       return this;
     }
 
-    private com.google.protobuf.ByteString key_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes Key = 2;</code>
      *
@@ -520,41 +557,5 @@ public final class DigestKeyRequest extends com.google.protobuf.GeneratedMessage
     }
 
     // @@protoc_insertion_point(builder_scope:grep11.DigestKeyRequest)
-  }
-
-  // @@protoc_insertion_point(class_scope:grep11.DigestKeyRequest)
-  private static final com.ibm.crypto.grep11.grpc.DigestKeyRequest DEFAULT_INSTANCE;
-
-  static {
-    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.DigestKeyRequest();
-  }
-
-  public static com.ibm.crypto.grep11.grpc.DigestKeyRequest getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  private static final com.google.protobuf.Parser<DigestKeyRequest> PARSER =
-      new com.google.protobuf.AbstractParser<DigestKeyRequest>() {
-        @java.lang.Override
-        public DigestKeyRequest parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new DigestKeyRequest(input, extensionRegistry);
-        }
-      };
-
-  public static com.google.protobuf.Parser<DigestKeyRequest> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<DigestKeyRequest> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.DigestKeyRequest getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
   }
 }

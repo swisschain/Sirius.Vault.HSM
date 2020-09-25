@@ -27,7 +27,7 @@ public class ConfigUploadServer extends NanoHTTPD {
 
     if (session.getMethod() != Method.POST) {
       logger.error("Invalid method: " + session.getMethod().name());
-      return newFixedLengthResponse( "{'success':false,'msg':'Invalid method.'}");
+      return newFixedLengthResponse("{'success':false,'msg':'Invalid method.'}");
     }
 
     final String msg;

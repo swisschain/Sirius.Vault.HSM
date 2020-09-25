@@ -2,14 +2,10 @@ package io.swisschain.services;
 
 import io.swisschain.config.Config;
 import io.swisschain.crypto.BlockchainProtocolCodes;
-import io.swisschain.crypto.address.generation.AddressGenerationResult;
-import io.swisschain.crypto.address.generation.AddressGenerator;
 import io.swisschain.crypto.address.generation.AddressGeneratorFactory;
 import io.swisschain.primitives.NetworkType;
 import io.swisschain.repositories.exceptions.WalletAlreadyExistsException;
 import io.swisschain.repositories.wallets.WalletRepository;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import java.time.Instant;
 

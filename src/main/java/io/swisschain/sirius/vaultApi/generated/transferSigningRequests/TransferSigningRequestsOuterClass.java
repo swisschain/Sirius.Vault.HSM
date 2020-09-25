@@ -4,12 +4,365 @@
 package io.swisschain.sirius.vaultApi.generated.transferSigningRequests;
 
 public final class TransferSigningRequestsOuterClass {
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsRequest_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponse_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponseBody_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponseBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsErrorResponseBody_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsErrorResponseBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_TransferSigningRequest_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_TransferSigningRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinToSpend_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinToSpend_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinId_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinId_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAsset_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAsset_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAssetId_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAssetId_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestRequest_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponse_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponseBody_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponseBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestErrorResponseBody_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestErrorResponseBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestRequest_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponse_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponseBody_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponseBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestErrorResponseBody_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestErrorResponseBody_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.FileDescriptor descriptor;
+
+  static {
+    java.lang.String[] descriptorData = {
+      "\n\037transfer-signing-requests.proto\0222swiss"
+          + "chain.sirius.vaultApi.transferSigningReq"
+          + "uests\032\036google/protobuf/wrappers.proto\032\037g"
+          + "oogle/protobuf/timestamp.proto\032\014common.p"
+          + "roto\"#\n!GetTransferSigningRequestsReques"
+          + "t\"\216\002\n\"GetTransferSigningRequestsResponse"
+          + "\022n\n\010response\030\001 \001(\0132Z.swisschain.sirius.v"
+          + "aultApi.transferSigningRequests.GetTrans"
+          + "ferSigningRequestsResponseBodyH\000\022p\n\005erro"
+          + "r\030\002 \001(\0132_.swisschain.sirius.vaultApi.tra"
+          + "nsferSigningRequests.GetTransferSigningR"
+          + "equestsErrorResponseBodyH\000B\006\n\004body\"\206\001\n&G"
+          + "etTransferSigningRequestsResponseBody\022\\\n"
+          + "\010requests\030\001 \003(\0132J.swisschain.sirius.vaul"
+          + "tApi.transferSigningRequests.TransferSig"
+          + "ningRequest\"\365\001\n+GetTransferSigningReques"
+          + "tsErrorResponseBody\022}\n\nerror_code\030\001 \001(\0162"
+          + "i.swisschain.sirius.vaultApi.transferSig"
+          + "ningRequests.GetTransferSigningRequestsE"
+          + "rrorResponseBody.ErrorCode\022\025\n\rerror_mess"
+          + "age\030\002 \001(\t\"0\n\tErrorCode\022\013\n\007UNKNOWN\020\000\022\026\n\022I"
+          + "NVALID_PARAMETERS\020\001\"\265\004\n\026TransferSigningR"
+          + "equest\022\n\n\002id\030\001 \001(\003\022\025\n\rblockchain_id\030\002 \001("
+          + "\t\022D\n\014network_type\030\003 \001(\0162..swisschain.sir"
+          + "ius.vaultApi.common.NetworkType\022\025\n\rproto"
+          + "col_code\030\004 \001(\t\022y\n\037double_spending_protec"
+          + "tion_type\030\005 \001(\0162P.swisschain.sirius.vaul"
+          + "tApi.transferSigningRequests.DoubleSpend"
+          + "ingProtectionType\022\031\n\021built_transaction\030\006"
+          + " \001(\014\022\031\n\021signing_addresses\030\007 \003(\t\022W\n\016coins"
+          + "_to_spend\030\010 \003(\0132?.swisschain.sirius.vaul"
+          + "tApi.transferSigningRequests.CoinToSpend"
+          + "\022\025\n\rpolicy_result\030\t \001(\t\022\032\n\022guardian_sign"
+          + "ature\030\n \001(\t\022.\n\ncreated_at\030\013 \001(\0132\032.google"
+          + ".protobuf.Timestamp\022.\n\nupdated_at\030\014 \001(\0132"
+          + "\032.google.protobuf.Timestamp\"\246\002\n\013CoinToSp"
+          + "end\022F\n\002id\030\001 \001(\0132:.swisschain.sirius.vaul"
+          + "tApi.transferSigningRequests.CoinId\022R\n\005a"
+          + "sset\030\002 \001(\0132C.swisschain.sirius.vaultApi."
+          + "transferSigningRequests.BlockchainAsset\022"
+          + "<\n\005value\030\003 \001(\0132-.swisschain.sirius.vault"
+          + "Api.common.BigDecimal\022,\n\006redeem\030\004 \001(\0132\034."
+          + "google.protobuf.StringValue\022\017\n\007address\030\005"
+          + " \001(\t\"0\n\006CoinId\022\026\n\016transaction_id\030\001 \001(\t\022\016"
+          + "\n\006number\030\002 \001(\005\"v\n\017BlockchainAsset\022Q\n\002id\030"
+          + "\001 \001(\0132E.swisschain.sirius.vaultApi.trans"
+          + "ferSigningRequests.BlockchainAssetId\022\020\n\010"
+          + "accuracy\030\002 \001(\005\"R\n\021BlockchainAssetId\022\016\n\006s"
+          + "ymbol\030\001 \001(\t\022-\n\007address\030\002 \001(\0132\034.google.pr"
+          + "otobuf.StringValue\"\305\001\n$ConfirmTransferSi"
+          + "gningRequestRequest\022\022\n\nrequest_id\030\001 \001(\t\022"
+          + "#\n\033transfer_signing_request_id\030\002 \001(\003\022\026\n\016"
+          + "transaction_id\030\004 \001(\t\022\032\n\022signed_transacti"
+          + "on\030\005 \001(\014\022\027\n\017vault_signature\030\006 \001(\t\022\027\n\017hos"
+          + "t_process_id\030\007 \001(\t\"\227\002\n%ConfirmTransferSi"
+          + "gningRequestResponse\022q\n\010response\030\001 \001(\0132]"
+          + ".swisschain.sirius.vaultApi.transferSign"
+          + "ingRequests.ConfirmTransferSigningReques"
+          + "tResponseBodyH\000\022s\n\005error\030\002 \001(\0132b.swissch"
+          + "ain.sirius.vaultApi.transferSigningReque"
+          + "sts.ConfirmTransferSigningRequestErrorRe"
+          + "sponseBodyH\000B\006\n\004body\"+\n)ConfirmTransferS"
+          + "igningRequestResponseBody\"\374\001\n.ConfirmTra"
+          + "nsferSigningRequestErrorResponseBody\022\200\001\n"
+          + "\nerror_code\030\001 \001(\0162l.swisschain.sirius.va"
+          + "ultApi.transferSigningRequests.ConfirmTr"
+          + "ansferSigningRequestErrorResponseBody.Er"
+          + "rorCode\022\025\n\rerror_message\030\002 \001(\t\"0\n\tErrorC"
+          + "ode\022\013\n\007UNKNOWN\020\000\022\026\n\022INVALID_PARAMETERS\020\001"
+          + "\"\223\002\n#RejectTransferSigningRequestRequest"
+          + "\022\022\n\nrequest_id\030\001 \001(\t\022#\n\033transfer_signing"
+          + "_request_id\030\002 \001(\003\022i\n\006reason\030\004 \001(\0162Y.swis"
+          + "schain.sirius.vaultApi.transferSigningRe"
+          + "quests.TransferSigningRequestRejectionRe"
+          + "ason\022\026\n\016reason_message\030\005 \001(\t\022\027\n\017vault_si"
+          + "gnature\030\006 \001(\t\022\027\n\017host_process_id\030\007 \001(\t\"\224"
+          + "\002\n$RejectTransferSigningRequestResponse\022"
+          + "p\n\010response\030\001 \001(\0132\\.swisschain.sirius.va"
+          + "ultApi.transferSigningRequests.RejectTra"
+          + "nsferSigningRequestResponseBodyH\000\022r\n\005err"
+          + "or\030\002 \001(\0132a.swisschain.sirius.vaultApi.tr"
+          + "ansferSigningRequests.RejectTransferSign"
+          + "ingRequestErrorResponseBodyH\000B\006\n\004body\"*\n"
+          + "(RejectTransferSigningRequestResponseBod"
+          + "y\"\371\001\n-RejectTransferSigningRequestErrorR"
+          + "esponseBody\022\177\n\nerror_code\030\001 \001(\0162k.swissc"
+          + "hain.sirius.vaultApi.transferSigningRequ"
+          + "ests.RejectTransferSigningRequestErrorRe"
+          + "sponseBody.ErrorCode\022\025\n\rerror_message\030\002 "
+          + "\001(\t\"0\n\tErrorCode\022\013\n\007UNKNOWN\020\000\022\026\n\022INVALID"
+          + "_PARAMETERS\020\001*4\n\034DoubleSpendingProtectio"
+          + "nType\022\t\n\005COINS\020\000\022\t\n\005NONCE\020\001*a\n%TransferS"
+          + "igningRequestRejectionReason\022\t\n\005OTHER\020\000\022"
+          + "\026\n\022UNKNOWN_BLOCKCHAIN\020\001\022\025\n\021INVALID_SIGNA"
+          + "TURE\020\0022\317\004\n\027TransferSigningRequests\022\264\001\n\003G"
+          + "et\022U.swisschain.sirius.vaultApi.transfer"
+          + "SigningRequests.GetTransferSigningReques"
+          + "tsRequest\032V.swisschain.sirius.vaultApi.t"
+          + "ransferSigningRequests.GetTransferSignin"
+          + "gRequestsResponse\022\276\001\n\007Confirm\022X.swisscha"
+          + "in.sirius.vaultApi.transferSigningReques"
+          + "ts.ConfirmTransferSigningRequestRequest\032"
+          + "Y.swisschain.sirius.vaultApi.transferSig"
+          + "ningRequests.ConfirmTransferSigningReque"
+          + "stResponse\022\273\001\n\006Reject\022W.swisschain.siriu"
+          + "s.vaultApi.transferSigningRequests.Rejec"
+          + "tTransferSigningRequestRequest\032X.swissch"
+          + "ain.sirius.vaultApi.transferSigningReque"
+          + "sts.RejectTransferSigningRequestResponse"
+          + "B\202\001\n?io.swisschain.sirius.vaultApi.gener"
+          + "ated.transferSigningRequests\252\002>Swisschai"
+          + "n.Sirius.VaultApi.ApiContract.TransferSi"
+          + "gningRequestsb\006proto3"
+    };
+    descriptor =
+        com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
+            descriptorData,
+            new com.google.protobuf.Descriptors.FileDescriptor[] {
+              com.google.protobuf.WrappersProto.getDescriptor(),
+              com.google.protobuf.TimestampProto.getDescriptor(),
+              io.swisschain.sirius.vaultApi.generated.common.Common.getDescriptor(),
+            });
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsRequest_descriptor =
+        getDescriptor().getMessageTypes().get(0);
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsRequest_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsRequest_descriptor,
+            new java.lang.String[] {});
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponse_descriptor =
+        getDescriptor().getMessageTypes().get(1);
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponse_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponse_descriptor,
+            new java.lang.String[] {
+              "Response", "Error", "Body",
+            });
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponseBody_descriptor =
+        getDescriptor().getMessageTypes().get(2);
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponseBody_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponseBody_descriptor,
+            new java.lang.String[] {
+              "Requests",
+            });
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsErrorResponseBody_descriptor =
+        getDescriptor().getMessageTypes().get(3);
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsErrorResponseBody_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsErrorResponseBody_descriptor,
+            new java.lang.String[] {
+              "ErrorCode", "ErrorMessage",
+            });
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_TransferSigningRequest_descriptor =
+        getDescriptor().getMessageTypes().get(4);
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_TransferSigningRequest_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_TransferSigningRequest_descriptor,
+            new java.lang.String[] {
+              "Id",
+              "BlockchainId",
+              "NetworkType",
+              "ProtocolCode",
+              "DoubleSpendingProtectionType",
+              "BuiltTransaction",
+              "SigningAddresses",
+              "CoinsToSpend",
+              "PolicyResult",
+              "GuardianSignature",
+              "CreatedAt",
+              "UpdatedAt",
+            });
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinToSpend_descriptor =
+        getDescriptor().getMessageTypes().get(5);
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinToSpend_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinToSpend_descriptor,
+            new java.lang.String[] {
+              "Id", "Asset", "Value", "Redeem", "Address",
+            });
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinId_descriptor =
+        getDescriptor().getMessageTypes().get(6);
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinId_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinId_descriptor,
+            new java.lang.String[] {
+              "TransactionId", "Number",
+            });
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAsset_descriptor =
+        getDescriptor().getMessageTypes().get(7);
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAsset_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAsset_descriptor,
+            new java.lang.String[] {
+              "Id", "Accuracy",
+            });
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAssetId_descriptor =
+        getDescriptor().getMessageTypes().get(8);
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAssetId_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAssetId_descriptor,
+            new java.lang.String[] {
+              "Symbol", "Address",
+            });
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestRequest_descriptor =
+        getDescriptor().getMessageTypes().get(9);
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestRequest_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestRequest_descriptor,
+            new java.lang.String[] {
+              "RequestId",
+              "TransferSigningRequestId",
+              "TransactionId",
+              "SignedTransaction",
+              "VaultSignature",
+              "HostProcessId",
+            });
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponse_descriptor =
+        getDescriptor().getMessageTypes().get(10);
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponse_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponse_descriptor,
+            new java.lang.String[] {
+              "Response", "Error", "Body",
+            });
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponseBody_descriptor =
+        getDescriptor().getMessageTypes().get(11);
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponseBody_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponseBody_descriptor,
+            new java.lang.String[] {});
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestErrorResponseBody_descriptor =
+        getDescriptor().getMessageTypes().get(12);
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestErrorResponseBody_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestErrorResponseBody_descriptor,
+            new java.lang.String[] {
+              "ErrorCode", "ErrorMessage",
+            });
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestRequest_descriptor =
+        getDescriptor().getMessageTypes().get(13);
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestRequest_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestRequest_descriptor,
+            new java.lang.String[] {
+              "RequestId",
+              "TransferSigningRequestId",
+              "Reason",
+              "ReasonMessage",
+              "VaultSignature",
+              "HostProcessId",
+            });
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponse_descriptor =
+        getDescriptor().getMessageTypes().get(14);
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponse_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponse_descriptor,
+            new java.lang.String[] {
+              "Response", "Error", "Body",
+            });
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponseBody_descriptor =
+        getDescriptor().getMessageTypes().get(15);
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponseBody_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponseBody_descriptor,
+            new java.lang.String[] {});
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestErrorResponseBody_descriptor =
+        getDescriptor().getMessageTypes().get(16);
+    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestErrorResponseBody_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestErrorResponseBody_descriptor,
+            new java.lang.String[] {
+              "ErrorCode", "ErrorMessage",
+            });
+    com.google.protobuf.WrappersProto.getDescriptor();
+    com.google.protobuf.TimestampProto.getDescriptor();
+    io.swisschain.sirius.vaultApi.generated.common.Common.getDescriptor();
+  }
   private TransferSigningRequestsOuterClass() {}
 
   public static void registerAllExtensions(com.google.protobuf.ExtensionRegistryLite registry) {}
 
   public static void registerAllExtensions(com.google.protobuf.ExtensionRegistry registry) {
     registerAllExtensions((com.google.protobuf.ExtensionRegistryLite) registry);
+  }
+
+  public static com.google.protobuf.Descriptors.FileDescriptor getDescriptor() {
+    return descriptor;
   }
   /**
    * Protobuf enum {@code
@@ -27,13 +380,18 @@ public final class TransferSigningRequestsOuterClass {
     public static final int COINS_VALUE = 0;
     /** <code>NONCE = 1;</code> */
     public static final int NONCE_VALUE = 1;
+    private static final com.google.protobuf.Internal.EnumLiteMap<DoubleSpendingProtectionType>
+        internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<DoubleSpendingProtectionType>() {
+              public DoubleSpendingProtectionType findValueByNumber(int number) {
+                return DoubleSpendingProtectionType.forNumber(number);
+              }
+            };
+    private static final DoubleSpendingProtectionType[] VALUES = values();
+    private final int value;
 
-    public final int getNumber() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalArgumentException(
-            "Can't get the number of an unknown enum value.");
-      }
-      return value;
+    private DoubleSpendingProtectionType(int value) {
+      this.value = value;
     }
 
     /**
@@ -66,13 +424,36 @@ public final class TransferSigningRequestsOuterClass {
       return internalValueMap;
     }
 
-    private static final com.google.protobuf.Internal.EnumLiteMap<DoubleSpendingProtectionType>
-        internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<DoubleSpendingProtectionType>() {
-              public DoubleSpendingProtectionType findValueByNumber(int number) {
-                return DoubleSpendingProtectionType.forNumber(number);
-              }
-            };
+    public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+      return io.swisschain
+          .sirius
+          .vaultApi
+          .generated
+          .transferSigningRequests
+          .TransferSigningRequestsOuterClass
+          .getDescriptor()
+          .getEnumTypes()
+          .get(0);
+    }
+
+    public static DoubleSpendingProtectionType valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+      }
+      if (desc.getIndex() == -1) {
+        return UNRECOGNIZED;
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    public final int getNumber() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalArgumentException(
+            "Can't get the number of an unknown enum value.");
+      }
+      return value;
+    }
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
       if (this == UNRECOGNIZED) {
@@ -86,40 +467,8 @@ public final class TransferSigningRequestsOuterClass {
       return getDescriptor();
     }
 
-    public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
-      return io.swisschain
-          .sirius
-          .vaultApi
-          .generated
-          .transferSigningRequests
-          .TransferSigningRequestsOuterClass
-          .getDescriptor()
-          .getEnumTypes()
-          .get(0);
-    }
-
-    private static final DoubleSpendingProtectionType[] VALUES = values();
-
-    public static DoubleSpendingProtectionType valueOf(
-        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-      if (desc.getType() != getDescriptor()) {
-        throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
-      }
-      if (desc.getIndex() == -1) {
-        return UNRECOGNIZED;
-      }
-      return VALUES[desc.getIndex()];
-    }
-
-    private final int value;
-
-    private DoubleSpendingProtectionType(int value) {
-      this.value = value;
-    }
-
     // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.transferSigningRequests.DoubleSpendingProtectionType)
   }
-
   /**
    * Protobuf enum {@code
    * swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequestRejectionReason}
@@ -141,13 +490,19 @@ public final class TransferSigningRequestsOuterClass {
     public static final int UNKNOWN_BLOCKCHAIN_VALUE = 1;
     /** <code>INVALID_SIGNATURE = 2;</code> */
     public static final int INVALID_SIGNATURE_VALUE = 2;
+    private static final com.google.protobuf.Internal.EnumLiteMap<
+            TransferSigningRequestRejectionReason>
+        internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<TransferSigningRequestRejectionReason>() {
+              public TransferSigningRequestRejectionReason findValueByNumber(int number) {
+                return TransferSigningRequestRejectionReason.forNumber(number);
+              }
+            };
+    private static final TransferSigningRequestRejectionReason[] VALUES = values();
+    private final int value;
 
-    public final int getNumber() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalArgumentException(
-            "Can't get the number of an unknown enum value.");
-      }
-      return value;
+    private TransferSigningRequestRejectionReason(int value) {
+      this.value = value;
     }
 
     /**
@@ -182,14 +537,36 @@ public final class TransferSigningRequestsOuterClass {
       return internalValueMap;
     }
 
-    private static final com.google.protobuf.Internal.EnumLiteMap<
-            TransferSigningRequestRejectionReason>
-        internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<TransferSigningRequestRejectionReason>() {
-              public TransferSigningRequestRejectionReason findValueByNumber(int number) {
-                return TransferSigningRequestRejectionReason.forNumber(number);
-              }
-            };
+    public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+      return io.swisschain
+          .sirius
+          .vaultApi
+          .generated
+          .transferSigningRequests
+          .TransferSigningRequestsOuterClass
+          .getDescriptor()
+          .getEnumTypes()
+          .get(1);
+    }
+
+    public static TransferSigningRequestRejectionReason valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+      }
+      if (desc.getIndex() == -1) {
+        return UNRECOGNIZED;
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    public final int getNumber() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalArgumentException(
+            "Can't get the number of an unknown enum value.");
+      }
+      return value;
+    }
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
       if (this == UNRECOGNIZED) {
@@ -203,44 +580,1079 @@ public final class TransferSigningRequestsOuterClass {
       return getDescriptor();
     }
 
-    public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
-      return io.swisschain
-          .sirius
-          .vaultApi
-          .generated
-          .transferSigningRequests
-          .TransferSigningRequestsOuterClass
-          .getDescriptor()
-          .getEnumTypes()
-          .get(1);
-    }
-
-    private static final TransferSigningRequestRejectionReason[] VALUES = values();
-
-    public static TransferSigningRequestRejectionReason valueOf(
-        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-      if (desc.getType() != getDescriptor()) {
-        throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
-      }
-      if (desc.getIndex() == -1) {
-        return UNRECOGNIZED;
-      }
-      return VALUES[desc.getIndex()];
-    }
-
-    private final int value;
-
-    private TransferSigningRequestRejectionReason(int value) {
-      this.value = value;
-    }
-
     // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequestRejectionReason)
   }
-
   public interface GetTransferSigningRequestsRequestOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsRequest)
       com.google.protobuf.MessageOrBuilder {}
+  public interface GetTransferSigningRequestsResponseOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
+     * </code>
+     *
+     * @return Whether the response field is set.
+     */
+    boolean hasResponse();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
+     * </code>
+     *
+     * @return The response.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsResponseBody
+        getResponse();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsResponseBodyOrBuilder
+        getResponseOrBuilder();
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return Whether the error field is set.
+     */
+    boolean hasError();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return The error.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsErrorResponseBody
+        getError();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody error = 2;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsErrorResponseBodyOrBuilder
+        getErrorOrBuilder();
+
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsResponse
+            .BodyCase
+        getBodyCase();
+  }
+  public interface GetTransferSigningRequestsResponseBodyOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
+     * </code>
+     */
+    java.util.List<
+            io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transferSigningRequests
+                .TransferSigningRequestsOuterClass
+                .TransferSigningRequest>
+        getRequestsList();
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequest
+        getRequests(int index);
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
+     * </code>
+     */
+    int getRequestsCount();
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
+     * </code>
+     */
+    java.util.List<
+            ? extends
+                io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .transferSigningRequests
+                    .TransferSigningRequestsOuterClass
+                    .TransferSigningRequestOrBuilder>
+        getRequestsOrBuilderList();
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequestOrBuilder
+        getRequestsOrBuilder(int index);
+  }
+  public interface GetTransferSigningRequestsErrorResponseBodyOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for errorCode.
+     */
+    int getErrorCodeValue();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The errorCode.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsErrorResponseBody
+            .ErrorCode
+        getErrorCode();
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The errorMessage.
+     */
+    java.lang.String getErrorMessage();
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The bytes for errorMessage.
+     */
+    com.google.protobuf.ByteString getErrorMessageBytes();
+  }
+  public interface TransferSigningRequestOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>int64 id = 1;</code>
+     *
+     * @return The id.
+     */
+    long getId();
+
+    /**
+     * <code>string blockchain_id = 2;</code>
+     *
+     * @return The blockchainId.
+     */
+    java.lang.String getBlockchainId();
+    /**
+     * <code>string blockchain_id = 2;</code>
+     *
+     * @return The bytes for blockchainId.
+     */
+    com.google.protobuf.ByteString getBlockchainIdBytes();
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
+     *
+     * @return The enum numeric value on the wire for networkType.
+     */
+    int getNetworkTypeValue();
+    /**
+     * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
+     *
+     * @return The networkType.
+     */
+    io.swisschain.sirius.vaultApi.generated.common.Common.NetworkType getNetworkType();
+
+    /**
+     * <code>string protocol_code = 4;</code>
+     *
+     * @return The protocolCode.
+     */
+    java.lang.String getProtocolCode();
+    /**
+     * <code>string protocol_code = 4;</code>
+     *
+     * @return The bytes for protocolCode.
+     */
+    com.google.protobuf.ByteString getProtocolCodeBytes();
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.DoubleSpendingProtectionType double_spending_protection_type = 5;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for doubleSpendingProtectionType.
+     */
+    int getDoubleSpendingProtectionTypeValue();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.DoubleSpendingProtectionType double_spending_protection_type = 5;
+     * </code>
+     *
+     * @return The doubleSpendingProtectionType.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .DoubleSpendingProtectionType
+        getDoubleSpendingProtectionType();
+
+    /**
+     * <code>bytes built_transaction = 6;</code>
+     *
+     * @return The builtTransaction.
+     */
+    com.google.protobuf.ByteString getBuiltTransaction();
+
+    /**
+     * <code>repeated string signing_addresses = 7;</code>
+     *
+     * @return A list containing the signingAddresses.
+     */
+    java.util.List<java.lang.String> getSigningAddressesList();
+    /**
+     * <code>repeated string signing_addresses = 7;</code>
+     *
+     * @return The count of signingAddresses.
+     */
+    int getSigningAddressesCount();
+    /**
+     * <code>repeated string signing_addresses = 7;</code>
+     *
+     * @param index The index of the element to return.
+     * @return The signingAddresses at the given index.
+     */
+    java.lang.String getSigningAddresses(int index);
+    /**
+     * <code>repeated string signing_addresses = 7;</code>
+     *
+     * @param index The index of the value to return.
+     * @return The bytes of the signingAddresses at the given index.
+     */
+    com.google.protobuf.ByteString getSigningAddressesBytes(int index);
+
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
+     * </code>
+     */
+    java.util.List<
+            io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transferSigningRequests
+                .TransferSigningRequestsOuterClass
+                .CoinToSpend>
+        getCoinsToSpendList();
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .CoinToSpend
+        getCoinsToSpend(int index);
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
+     * </code>
+     */
+    int getCoinsToSpendCount();
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
+     * </code>
+     */
+    java.util.List<
+            ? extends
+                io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .transferSigningRequests
+                    .TransferSigningRequestsOuterClass
+                    .CoinToSpendOrBuilder>
+        getCoinsToSpendOrBuilderList();
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .CoinToSpendOrBuilder
+        getCoinsToSpendOrBuilder(int index);
+
+    /**
+     * <code>string policy_result = 9;</code>
+     *
+     * @return The policyResult.
+     */
+    java.lang.String getPolicyResult();
+    /**
+     * <code>string policy_result = 9;</code>
+     *
+     * @return The bytes for policyResult.
+     */
+    com.google.protobuf.ByteString getPolicyResultBytes();
+
+    /**
+     * <code>string guardian_signature = 10;</code>
+     *
+     * @return The guardianSignature.
+     */
+    java.lang.String getGuardianSignature();
+    /**
+     * <code>string guardian_signature = 10;</code>
+     *
+     * @return The bytes for guardianSignature.
+     */
+    com.google.protobuf.ByteString getGuardianSignatureBytes();
+
+    /**
+     * <code>.google.protobuf.Timestamp created_at = 11;</code>
+     *
+     * @return Whether the createdAt field is set.
+     */
+    boolean hasCreatedAt();
+    /**
+     * <code>.google.protobuf.Timestamp created_at = 11;</code>
+     *
+     * @return The createdAt.
+     */
+    com.google.protobuf.Timestamp getCreatedAt();
+    /** <code>.google.protobuf.Timestamp created_at = 11;</code> */
+    com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder();
+
+    /**
+     * <code>.google.protobuf.Timestamp updated_at = 12;</code>
+     *
+     * @return Whether the updatedAt field is set.
+     */
+    boolean hasUpdatedAt();
+    /**
+     * <code>.google.protobuf.Timestamp updated_at = 12;</code>
+     *
+     * @return The updatedAt.
+     */
+    com.google.protobuf.Timestamp getUpdatedAt();
+    /** <code>.google.protobuf.Timestamp updated_at = 12;</code> */
+    com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder();
+  }
+  public interface CoinToSpendOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code>
+     *
+     * @return Whether the id field is set.
+     */
+    boolean hasId();
+    /**
+     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code>
+     *
+     * @return The id.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .CoinId
+        getId();
+    /** <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code> */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .CoinIdOrBuilder
+        getIdOrBuilder();
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
+     *
+     * @return Whether the asset field is set.
+     */
+    boolean hasAsset();
+    /**
+     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
+     *
+     * @return The asset.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .BlockchainAsset
+        getAsset();
+    /**
+     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .BlockchainAssetOrBuilder
+        getAssetOrBuilder();
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
+     *
+     * @return Whether the value field is set.
+     */
+    boolean hasValue();
+    /**
+     * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
+     *
+     * @return The value.
+     */
+    io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal getValue();
+    /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
+    io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimalOrBuilder getValueOrBuilder();
+
+    /**
+     * <code>.google.protobuf.StringValue redeem = 4;</code>
+     *
+     * @return Whether the redeem field is set.
+     */
+    boolean hasRedeem();
+    /**
+     * <code>.google.protobuf.StringValue redeem = 4;</code>
+     *
+     * @return The redeem.
+     */
+    com.google.protobuf.StringValue getRedeem();
+    /** <code>.google.protobuf.StringValue redeem = 4;</code> */
+    com.google.protobuf.StringValueOrBuilder getRedeemOrBuilder();
+
+    /**
+     * <code>string address = 5;</code>
+     *
+     * @return The address.
+     */
+    java.lang.String getAddress();
+    /**
+     * <code>string address = 5;</code>
+     *
+     * @return The bytes for address.
+     */
+    com.google.protobuf.ByteString getAddressBytes();
+  }
+  public interface CoinIdOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.CoinId)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string transaction_id = 1;</code>
+     *
+     * @return The transactionId.
+     */
+    java.lang.String getTransactionId();
+    /**
+     * <code>string transaction_id = 1;</code>
+     *
+     * @return The bytes for transactionId.
+     */
+    com.google.protobuf.ByteString getTransactionIdBytes();
+
+    /**
+     * <code>int32 number = 2;</code>
+     *
+     * @return The number.
+     */
+    int getNumber();
+  }
+  public interface BlockchainAssetOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
+     *
+     * @return Whether the id field is set.
+     */
+    boolean hasId();
+    /**
+     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
+     *
+     * @return The id.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .BlockchainAssetId
+        getId();
+    /**
+     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .BlockchainAssetIdOrBuilder
+        getIdOrBuilder();
+
+    /**
+     * <code>int32 accuracy = 2;</code>
+     *
+     * @return The accuracy.
+     */
+    int getAccuracy();
+  }
+  public interface BlockchainAssetIdOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string symbol = 1;</code>
+     *
+     * @return The symbol.
+     */
+    java.lang.String getSymbol();
+    /**
+     * <code>string symbol = 1;</code>
+     *
+     * @return The bytes for symbol.
+     */
+    com.google.protobuf.ByteString getSymbolBytes();
+
+    /**
+     * <code>.google.protobuf.StringValue address = 2;</code>
+     *
+     * @return Whether the address field is set.
+     */
+    boolean hasAddress();
+    /**
+     * <code>.google.protobuf.StringValue address = 2;</code>
+     *
+     * @return The address.
+     */
+    com.google.protobuf.StringValue getAddress();
+    /** <code>.google.protobuf.StringValue address = 2;</code> */
+    com.google.protobuf.StringValueOrBuilder getAddressOrBuilder();
+  }
+  public interface ConfirmTransferSigningRequestRequestOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The requestId.
+     */
+    java.lang.String getRequestId();
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The bytes for requestId.
+     */
+    com.google.protobuf.ByteString getRequestIdBytes();
+
+    /**
+     * <code>int64 transfer_signing_request_id = 2;</code>
+     *
+     * @return The transferSigningRequestId.
+     */
+    long getTransferSigningRequestId();
+
+    /**
+     * <code>string transaction_id = 4;</code>
+     *
+     * @return The transactionId.
+     */
+    java.lang.String getTransactionId();
+    /**
+     * <code>string transaction_id = 4;</code>
+     *
+     * @return The bytes for transactionId.
+     */
+    com.google.protobuf.ByteString getTransactionIdBytes();
+
+    /**
+     * <code>bytes signed_transaction = 5;</code>
+     *
+     * @return The signedTransaction.
+     */
+    com.google.protobuf.ByteString getSignedTransaction();
+
+    /**
+     * <code>string vault_signature = 6;</code>
+     *
+     * @return The vaultSignature.
+     */
+    java.lang.String getVaultSignature();
+    /**
+     * <code>string vault_signature = 6;</code>
+     *
+     * @return The bytes for vaultSignature.
+     */
+    com.google.protobuf.ByteString getVaultSignatureBytes();
+
+    /**
+     * <code>string host_process_id = 7;</code>
+     *
+     * @return The hostProcessId.
+     */
+    java.lang.String getHostProcessId();
+    /**
+     * <code>string host_process_id = 7;</code>
+     *
+     * @return The bytes for hostProcessId.
+     */
+    com.google.protobuf.ByteString getHostProcessIdBytes();
+  }
+  public interface ConfirmTransferSigningRequestResponseOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return Whether the response field is set.
+     */
+    boolean hasResponse();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return The response.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestResponseBody
+        getResponse();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestResponseBodyOrBuilder
+        getResponseOrBuilder();
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return Whether the error field is set.
+     */
+    boolean hasError();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return The error.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestErrorResponseBody
+        getError();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody error = 2;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestErrorResponseBodyOrBuilder
+        getErrorOrBuilder();
+
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestResponse
+            .BodyCase
+        getBodyCase();
+  }
+  public interface ConfirmTransferSigningRequestResponseBodyOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody)
+      com.google.protobuf.MessageOrBuilder {}
+  public interface ConfirmTransferSigningRequestErrorResponseBodyOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for errorCode.
+     */
+    int getErrorCodeValue();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The errorCode.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestErrorResponseBody
+            .ErrorCode
+        getErrorCode();
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The errorMessage.
+     */
+    java.lang.String getErrorMessage();
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The bytes for errorMessage.
+     */
+    com.google.protobuf.ByteString getErrorMessageBytes();
+  }
+  public interface RejectTransferSigningRequestRequestOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The requestId.
+     */
+    java.lang.String getRequestId();
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The bytes for requestId.
+     */
+    com.google.protobuf.ByteString getRequestIdBytes();
+
+    /**
+     * <code>int64 transfer_signing_request_id = 2;</code>
+     *
+     * @return The transferSigningRequestId.
+     */
+    long getTransferSigningRequestId();
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequestRejectionReason reason = 4;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for reason.
+     */
+    int getReasonValue();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequestRejectionReason reason = 4;
+     * </code>
+     *
+     * @return The reason.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequestRejectionReason
+        getReason();
+
+    /**
+     * <code>string reason_message = 5;</code>
+     *
+     * @return The reasonMessage.
+     */
+    java.lang.String getReasonMessage();
+    /**
+     * <code>string reason_message = 5;</code>
+     *
+     * @return The bytes for reasonMessage.
+     */
+    com.google.protobuf.ByteString getReasonMessageBytes();
+
+    /**
+     * <code>string vault_signature = 6;</code>
+     *
+     * @return The vaultSignature.
+     */
+    java.lang.String getVaultSignature();
+    /**
+     * <code>string vault_signature = 6;</code>
+     *
+     * @return The bytes for vaultSignature.
+     */
+    com.google.protobuf.ByteString getVaultSignatureBytes();
+
+    /**
+     * <code>string host_process_id = 7;</code>
+     *
+     * @return The hostProcessId.
+     */
+    java.lang.String getHostProcessId();
+    /**
+     * <code>string host_process_id = 7;</code>
+     *
+     * @return The bytes for hostProcessId.
+     */
+    com.google.protobuf.ByteString getHostProcessIdBytes();
+  }
+  public interface RejectTransferSigningRequestResponseOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return Whether the response field is set.
+     */
+    boolean hasResponse();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return The response.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestResponseBody
+        getResponse();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestResponseBodyOrBuilder
+        getResponseOrBuilder();
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return Whether the error field is set.
+     */
+    boolean hasError();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return The error.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestErrorResponseBody
+        getError();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody error = 2;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestErrorResponseBodyOrBuilder
+        getErrorOrBuilder();
+
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestResponse
+            .BodyCase
+        getBodyCase();
+  }
+  public interface RejectTransferSigningRequestResponseBodyOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody)
+      com.google.protobuf.MessageOrBuilder {}
+  public interface RejectTransferSigningRequestErrorResponseBodyOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for errorCode.
+     */
+    int getErrorCodeValue();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The errorCode.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestErrorResponseBody
+            .ErrorCode
+        getErrorCode();
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The errorMessage.
+     */
+    java.lang.String getErrorMessage();
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The bytes for errorMessage.
+     */
+    com.google.protobuf.ByteString getErrorMessageBytes();
+  }
+
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsRequest}
@@ -251,6 +1663,39 @@ public final class TransferSigningRequestsOuterClass {
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsRequest)
       GetTransferSigningRequestsRequestOrBuilder {
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsRequest)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsRequest
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<GetTransferSigningRequestsRequest> PARSER =
+        new com.google.protobuf.AbstractParser<GetTransferSigningRequestsRequest>() {
+          @java.lang.Override
+          public GetTransferSigningRequestsRequest parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new GetTransferSigningRequestsRequest(input, extensionRegistry);
+          }
+        };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .GetTransferSigningRequestsRequest();
+    }
+
+    private byte memoizedIsInitialized = -1;
+
     // Use GetTransferSigningRequestsRequest.newBuilder() to construct.
     private GetTransferSigningRequestsRequest(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -258,17 +1703,6 @@ public final class TransferSigningRequestsOuterClass {
     }
 
     private GetTransferSigningRequestsRequest() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new GetTransferSigningRequestsRequest();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
 
     private GetTransferSigningRequestsRequest(
         com.google.protobuf.CodedInputStream input,
@@ -315,109 +1749,6 @@ public final class TransferSigningRequestsOuterClass {
           .transferSigningRequests
           .TransferSigningRequestsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsRequest_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsRequest_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .GetTransferSigningRequestsRequest
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .GetTransferSigningRequestsRequest
-                  .Builder
-                  .class);
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .GetTransferSigningRequestsRequest)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .GetTransferSigningRequestsRequest
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transferSigningRequests
-                      .TransferSigningRequestsOuterClass
-                      .GetTransferSigningRequestsRequest)
-                  obj;
-
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -570,11 +1901,6 @@ public final class TransferSigningRequestsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -591,6 +1917,138 @@ public final class TransferSigningRequestsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsRequest
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<GetTransferSigningRequestsRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new GetTransferSigningRequestsRequest();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .GetTransferSigningRequestsRequest
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .GetTransferSigningRequestsRequest
+                  .Builder
+                  .class);
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .GetTransferSigningRequestsRequest)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .GetTransferSigningRequestsRequest
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transferSigningRequests
+                      .TransferSigningRequestsOuterClass
+                      .GetTransferSigningRequestsRequest)
+                  obj;
+
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -602,6 +2060,24 @@ public final class TransferSigningRequestsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetTransferSigningRequestsRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsRequest
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsRequest}
@@ -617,6 +2093,17 @@ public final class TransferSigningRequestsOuterClass {
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .GetTransferSigningRequestsRequestOrBuilder {
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.GetTransferSigningRequestsRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -651,17 +2138,6 @@ public final class TransferSigningRequestsOuterClass {
                     .GetTransferSigningRequestsRequest
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.GetTransferSigningRequestsRequest.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -882,161 +2358,8 @@ public final class TransferSigningRequestsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsRequest)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsRequest)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsRequest
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .GetTransferSigningRequestsRequest();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsRequest
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<GetTransferSigningRequestsRequest> PARSER =
-        new com.google.protobuf.AbstractParser<GetTransferSigningRequestsRequest>() {
-          @java.lang.Override
-          public GetTransferSigningRequestsRequest parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new GetTransferSigningRequestsRequest(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<GetTransferSigningRequestsRequest> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<GetTransferSigningRequestsRequest> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsRequest
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface GetTransferSigningRequestsResponseOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponse)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
-     * </code>
-     *
-     * @return Whether the response field is set.
-     */
-    boolean hasResponse();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
-     * </code>
-     *
-     * @return The response.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsResponseBody
-        getResponse();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsResponseBodyOrBuilder
-        getResponseOrBuilder();
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return Whether the error field is set.
-     */
-    boolean hasError();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return The error.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsErrorResponseBody
-        getError();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody error = 2;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsErrorResponseBodyOrBuilder
-        getErrorOrBuilder();
-
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsResponse
-            .BodyCase
-        getBodyCase();
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponse}
@@ -1046,25 +2369,50 @@ public final class TransferSigningRequestsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponse)
       GetTransferSigningRequestsResponseOrBuilder {
+    public static final int RESPONSE_FIELD_NUMBER = 1;
+    public static final int ERROR_FIELD_NUMBER = 2;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponse)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsResponse
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<GetTransferSigningRequestsResponse> PARSER =
+        new com.google.protobuf.AbstractParser<GetTransferSigningRequestsResponse>() {
+          @java.lang.Override
+          public GetTransferSigningRequestsResponse parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new GetTransferSigningRequestsResponse(input, extensionRegistry);
+          }
+        };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .GetTransferSigningRequestsResponse();
+    }
+
+    private int bodyCase_ = 0;
+    private java.lang.Object body_;
+    private byte memoizedIsInitialized = -1;
     // Use GetTransferSigningRequestsResponse.newBuilder() to construct.
     private GetTransferSigningRequestsResponse(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
 
-    private GetTransferSigningRequestsResponse() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new GetTransferSigningRequestsResponse();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
+        private GetTransferSigningRequestsResponse() {};
 
     private GetTransferSigningRequestsResponse(
         com.google.protobuf.CodedInputStream input,
@@ -1199,371 +2547,6 @@ public final class TransferSigningRequestsOuterClass {
           .transferSigningRequests
           .TransferSigningRequestsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponse_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponse_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .GetTransferSigningRequestsResponse
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .GetTransferSigningRequestsResponse
-                  .Builder
-                  .class);
-    }
-
-    private int bodyCase_ = 0;
-    private java.lang.Object body_;
-
-    public enum BodyCase
-        implements
-            com.google.protobuf.Internal.EnumLite,
-            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      RESPONSE(1),
-      ERROR(2),
-      BODY_NOT_SET(0);
-      private final int value;
-
-      private BodyCase(int value) {
-        this.value = value;
-      }
-      /**
-       * @param value The number of the enum to look for.
-       * @return The enum associated with the given number.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static BodyCase valueOf(int value) {
-        return forNumber(value);
-      }
-
-      public static BodyCase forNumber(int value) {
-        switch (value) {
-          case 1:
-            return RESPONSE;
-          case 2:
-            return ERROR;
-          case 0:
-            return BODY_NOT_SET;
-          default:
-            return null;
-        }
-      }
-
-      public int getNumber() {
-        return this.value;
-      }
-    };
-
-    public BodyCase getBodyCase() {
-      return BodyCase.forNumber(bodyCase_);
-    }
-
-    public static final int RESPONSE_FIELD_NUMBER = 1;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
-     * </code>
-     *
-     * @return Whether the response field is set.
-     */
-    @java.lang.Override
-    public boolean hasResponse() {
-      return bodyCase_ == 1;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
-     * </code>
-     *
-     * @return The response.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsResponseBody
-        getResponse() {
-      if (bodyCase_ == 1) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transferSigningRequests
-                .TransferSigningRequestsOuterClass
-                .GetTransferSigningRequestsResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass.GetTransferSigningRequestsResponseBody
-          .getDefaultInstance();
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsResponseBodyOrBuilder
-        getResponseOrBuilder() {
-      if (bodyCase_ == 1) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transferSigningRequests
-                .TransferSigningRequestsOuterClass
-                .GetTransferSigningRequestsResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass.GetTransferSigningRequestsResponseBody
-          .getDefaultInstance();
-    }
-
-    public static final int ERROR_FIELD_NUMBER = 2;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return Whether the error field is set.
-     */
-    @java.lang.Override
-    public boolean hasError() {
-      return bodyCase_ == 2;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return The error.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsErrorResponseBody
-        getError() {
-      if (bodyCase_ == 2) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transferSigningRequests
-                .TransferSigningRequestsOuterClass
-                .GetTransferSigningRequestsErrorResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass.GetTransferSigningRequestsErrorResponseBody
-          .getDefaultInstance();
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody error = 2;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsErrorResponseBodyOrBuilder
-        getErrorOrBuilder() {
-      if (bodyCase_ == 2) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transferSigningRequests
-                .TransferSigningRequestsOuterClass
-                .GetTransferSigningRequestsErrorResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass.GetTransferSigningRequestsErrorResponseBody
-          .getDefaultInstance();
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (bodyCase_ == 1) {
-        output.writeMessage(
-            1,
-            (io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .transferSigningRequests
-                    .TransferSigningRequestsOuterClass
-                    .GetTransferSigningRequestsResponseBody)
-                body_);
-      }
-      if (bodyCase_ == 2) {
-        output.writeMessage(
-            2,
-            (io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .transferSigningRequests
-                    .TransferSigningRequestsOuterClass
-                    .GetTransferSigningRequestsErrorResponseBody)
-                body_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (bodyCase_ == 1) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeMessageSize(
-                1,
-                (io.swisschain
-                        .sirius
-                        .vaultApi
-                        .generated
-                        .transferSigningRequests
-                        .TransferSigningRequestsOuterClass
-                        .GetTransferSigningRequestsResponseBody)
-                    body_);
-      }
-      if (bodyCase_ == 2) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeMessageSize(
-                2,
-                (io.swisschain
-                        .sirius
-                        .vaultApi
-                        .generated
-                        .transferSigningRequests
-                        .TransferSigningRequestsOuterClass
-                        .GetTransferSigningRequestsErrorResponseBody)
-                    body_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .GetTransferSigningRequestsResponse)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .GetTransferSigningRequestsResponse
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transferSigningRequests
-                      .TransferSigningRequestsOuterClass
-                      .GetTransferSigningRequestsResponse)
-                  obj;
-
-      if (!getBodyCase().equals(other.getBodyCase())) return false;
-      switch (bodyCase_) {
-        case 1:
-          if (!getResponse().equals(other.getResponse())) return false;
-          break;
-        case 2:
-          if (!getError().equals(other.getError())) return false;
-          break;
-        case 0:
-        default:
-      }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      switch (bodyCase_) {
-        case 1:
-          hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
-          hash = (53 * hash) + getResponse().hashCode();
-          break;
-        case 2:
-          hash = (37 * hash) + ERROR_FIELD_NUMBER;
-          hash = (53 * hash) + getError().hashCode();
-          break;
-        case 0:
-        default:
-      }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -1716,11 +2699,6 @@ public final class TransferSigningRequestsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -1737,6 +2715,359 @@ public final class TransferSigningRequestsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsResponse
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<GetTransferSigningRequestsResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new GetTransferSigningRequestsResponse();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .GetTransferSigningRequestsResponse
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .GetTransferSigningRequestsResponse
+                  .Builder
+                  .class);
+    }
+
+    public BodyCase getBodyCase() {
+      return BodyCase.forNumber(bodyCase_);
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
+     * </code>
+     *
+     * @return Whether the response field is set.
+     */
+    @java.lang.Override
+    public boolean hasResponse() {
+      return bodyCase_ == 1;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
+     * </code>
+     *
+     * @return The response.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsResponseBody
+        getResponse() {
+      if (bodyCase_ == 1) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transferSigningRequests
+                .TransferSigningRequestsOuterClass
+                .GetTransferSigningRequestsResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass.GetTransferSigningRequestsResponseBody
+          .getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsResponseBodyOrBuilder
+        getResponseOrBuilder() {
+      if (bodyCase_ == 1) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transferSigningRequests
+                .TransferSigningRequestsOuterClass
+                .GetTransferSigningRequestsResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass.GetTransferSigningRequestsResponseBody
+          .getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return Whether the error field is set.
+     */
+    @java.lang.Override
+    public boolean hasError() {
+      return bodyCase_ == 2;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return The error.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsErrorResponseBody
+        getError() {
+      if (bodyCase_ == 2) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transferSigningRequests
+                .TransferSigningRequestsOuterClass
+                .GetTransferSigningRequestsErrorResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass.GetTransferSigningRequestsErrorResponseBody
+          .getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody error = 2;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsErrorResponseBodyOrBuilder
+        getErrorOrBuilder() {
+      if (bodyCase_ == 2) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transferSigningRequests
+                .TransferSigningRequestsOuterClass
+                .GetTransferSigningRequestsErrorResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass.GetTransferSigningRequestsErrorResponseBody
+          .getDefaultInstance();
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (bodyCase_ == 1) {
+        output.writeMessage(
+            1,
+            (io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .transferSigningRequests
+                    .TransferSigningRequestsOuterClass
+                    .GetTransferSigningRequestsResponseBody)
+                body_);
+      }
+      if (bodyCase_ == 2) {
+        output.writeMessage(
+            2,
+            (io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .transferSigningRequests
+                    .TransferSigningRequestsOuterClass
+                    .GetTransferSigningRequestsErrorResponseBody)
+                body_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (bodyCase_ == 1) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeMessageSize(
+                1,
+                (io.swisschain
+                        .sirius
+                        .vaultApi
+                        .generated
+                        .transferSigningRequests
+                        .TransferSigningRequestsOuterClass
+                        .GetTransferSigningRequestsResponseBody)
+                    body_);
+      }
+      if (bodyCase_ == 2) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeMessageSize(
+                2,
+                (io.swisschain
+                        .sirius
+                        .vaultApi
+                        .generated
+                        .transferSigningRequests
+                        .TransferSigningRequestsOuterClass
+                        .GetTransferSigningRequestsErrorResponseBody)
+                    body_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .GetTransferSigningRequestsResponse)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .GetTransferSigningRequestsResponse
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transferSigningRequests
+                      .TransferSigningRequestsOuterClass
+                      .GetTransferSigningRequestsResponse)
+                  obj;
+
+      if (!getBodyCase().equals(other.getBodyCase())) return false;
+      switch (bodyCase_) {
+        case 1:
+          if (!getResponse().equals(other.getResponse())) return false;
+          break;
+        case 2:
+          if (!getError().equals(other.getError())) return false;
+          break;
+        case 0:
+        default:
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      switch (bodyCase_) {
+        case 1:
+          hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
+          hash = (53 * hash) + getResponse().hashCode();
+          break;
+        case 2:
+          hash = (37 * hash) + ERROR_FIELD_NUMBER;
+          hash = (53 * hash) + getError().hashCode();
+          break;
+        case 0:
+        default:
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -1748,6 +3079,64 @@ public final class TransferSigningRequestsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetTransferSigningRequestsResponse> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsResponse
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+public enum BodyCase
+        implements
+            com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      RESPONSE(1),
+      ERROR(2),
+      BODY_NOT_SET(0);
+      private final int value;
+
+      private BodyCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static BodyCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static BodyCase forNumber(int value) {
+        switch (value) {
+          case 1:
+            return RESPONSE;
+          case 2:
+            return ERROR;
+          case 0:
+            return BODY_NOT_SET;
+          default:
+            return null;
+        }
+      }
+
+      public int getNumber() {
+        return this.value;
+      }
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponse}
@@ -1763,6 +3152,68 @@ public final class TransferSigningRequestsOuterClass {
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .GetTransferSigningRequestsResponseOrBuilder {
+      private int bodyCase_ = 0;
+      private java.lang.Object body_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .GetTransferSigningRequestsResponseBody,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .GetTransferSigningRequestsResponseBody
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .GetTransferSigningRequestsResponseBodyOrBuilder>
+          responseBuilder_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .GetTransferSigningRequestsErrorResponseBody,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .GetTransferSigningRequestsErrorResponseBody
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .GetTransferSigningRequestsErrorResponseBodyOrBuilder>
+          errorBuilder_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.GetTransferSigningRequestsResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -1797,17 +3248,6 @@ public final class TransferSigningRequestsOuterClass {
                     .GetTransferSigningRequestsResponse
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.GetTransferSigningRequestsResponse.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -2047,9 +3487,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private int bodyCase_ = 0;
-      private java.lang.Object body_;
-
       public BodyCase getBodyCase() {
         return BodyCase.forNumber(bodyCase_);
       }
@@ -2061,30 +3498,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .GetTransferSigningRequestsResponseBody,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .GetTransferSigningRequestsResponseBody
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .GetTransferSigningRequestsResponseBodyOrBuilder>
-          responseBuilder_;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
@@ -2096,6 +3509,7 @@ public final class TransferSigningRequestsOuterClass {
       public boolean hasResponse() {
         return bodyCase_ == 1;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
@@ -2135,6 +3549,7 @@ public final class TransferSigningRequestsOuterClass {
               .getDefaultInstance();
         }
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
@@ -2161,6 +3576,7 @@ public final class TransferSigningRequestsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
@@ -2185,6 +3601,7 @@ public final class TransferSigningRequestsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
@@ -2237,6 +3654,7 @@ public final class TransferSigningRequestsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
@@ -2258,6 +3676,7 @@ public final class TransferSigningRequestsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
@@ -2274,6 +3693,7 @@ public final class TransferSigningRequestsOuterClass {
           getResponseBuilder() {
         return getResponseFieldBuilder().getBuilder();
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
@@ -2306,6 +3726,7 @@ public final class TransferSigningRequestsOuterClass {
               .getDefaultInstance();
         }
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody response = 1;
@@ -2384,30 +3805,6 @@ public final class TransferSigningRequestsOuterClass {
         return responseBuilder_;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .GetTransferSigningRequestsErrorResponseBody,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .GetTransferSigningRequestsErrorResponseBody
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .GetTransferSigningRequestsErrorResponseBodyOrBuilder>
-          errorBuilder_;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody error = 2;
@@ -2721,139 +4118,8 @@ public final class TransferSigningRequestsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponse)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponse)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsResponse
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .GetTransferSigningRequestsResponse();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsResponse
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<GetTransferSigningRequestsResponse> PARSER =
-        new com.google.protobuf.AbstractParser<GetTransferSigningRequestsResponse>() {
-          @java.lang.Override
-          public GetTransferSigningRequestsResponse parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new GetTransferSigningRequestsResponse(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<GetTransferSigningRequestsResponse> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<GetTransferSigningRequestsResponse> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsResponse
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface GetTransferSigningRequestsResponseBodyOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
-     * </code>
-     */
-    java.util.List<
-            io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transferSigningRequests
-                .TransferSigningRequestsOuterClass
-                .TransferSigningRequest>
-        getRequestsList();
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequest
-        getRequests(int index);
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
-     * </code>
-     */
-    int getRequestsCount();
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
-     * </code>
-     */
-    java.util.List<
-            ? extends
-                io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .transferSigningRequests
-                    .TransferSigningRequestsOuterClass
-                    .TransferSigningRequestOrBuilder>
-        getRequestsOrBuilderList();
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequestOrBuilder
-        getRequestsOrBuilder(int index);
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody}
@@ -2863,7 +4129,50 @@ public final class TransferSigningRequestsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody)
       GetTransferSigningRequestsResponseBodyOrBuilder {
+    public static final int REQUESTS_FIELD_NUMBER = 1;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsResponseBody
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<GetTransferSigningRequestsResponseBody> PARSER =
+        new com.google.protobuf.AbstractParser<GetTransferSigningRequestsResponseBody>() {
+          @java.lang.Override
+          public GetTransferSigningRequestsResponseBody parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new GetTransferSigningRequestsResponseBody(input, extensionRegistry);
+          }
+        };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .GetTransferSigningRequestsResponseBody();
+    }
+
+    private java.util.List<
+            io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transferSigningRequests
+                .TransferSigningRequestsOuterClass
+                .TransferSigningRequest>
+        requests_;
+    private byte memoizedIsInitialized = -1;
+
     // Use GetTransferSigningRequestsResponseBody.newBuilder() to construct.
     private GetTransferSigningRequestsResponseBody(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -2873,18 +4182,6 @@ public final class TransferSigningRequestsOuterClass {
     private GetTransferSigningRequestsResponseBody() {
       requests_ = java.util.Collections.emptyList();
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new GetTransferSigningRequestsResponseBody();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private GetTransferSigningRequestsResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2955,207 +4252,6 @@ public final class TransferSigningRequestsOuterClass {
           .transferSigningRequests
           .TransferSigningRequestsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponseBody_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponseBody_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .GetTransferSigningRequestsResponseBody
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .GetTransferSigningRequestsResponseBody
-                  .Builder
-                  .class);
-    }
-
-    public static final int REQUESTS_FIELD_NUMBER = 1;
-    private java.util.List<
-            io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transferSigningRequests
-                .TransferSigningRequestsOuterClass
-                .TransferSigningRequest>
-        requests_;
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public java.util.List<
-            io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transferSigningRequests
-                .TransferSigningRequestsOuterClass
-                .TransferSigningRequest>
-        getRequestsList() {
-      return requests_;
-    }
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public java.util.List<
-            ? extends
-                io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .transferSigningRequests
-                    .TransferSigningRequestsOuterClass
-                    .TransferSigningRequestOrBuilder>
-        getRequestsOrBuilderList() {
-      return requests_;
-    }
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public int getRequestsCount() {
-      return requests_.size();
-    }
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequest
-        getRequests(int index) {
-      return requests_.get(index);
-    }
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequestOrBuilder
-        getRequestsOrBuilder(int index) {
-      return requests_.get(index);
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      for (int i = 0; i < requests_.size(); i++) {
-        output.writeMessage(1, requests_.get(i));
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      for (int i = 0; i < requests_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, requests_.get(i));
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .GetTransferSigningRequestsResponseBody)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .GetTransferSigningRequestsResponseBody
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transferSigningRequests
-                      .TransferSigningRequestsOuterClass
-                      .GetTransferSigningRequestsResponseBody)
-                  obj;
-
-      if (!getRequestsList().equals(other.getRequestsList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      if (getRequestsCount() > 0) {
-        hash = (37 * hash) + REQUESTS_FIELD_NUMBER;
-        hash = (53 * hash) + getRequestsList().hashCode();
-      }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -3308,11 +4404,6 @@ public final class TransferSigningRequestsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -3329,6 +4420,230 @@ public final class TransferSigningRequestsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsResponseBody
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<GetTransferSigningRequestsResponseBody> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new GetTransferSigningRequestsResponseBody();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .GetTransferSigningRequestsResponseBody
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .GetTransferSigningRequestsResponseBody
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public java.util.List<
+            io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transferSigningRequests
+                .TransferSigningRequestsOuterClass
+                .TransferSigningRequest>
+        getRequestsList() {
+      return requests_;
+    }
+
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public java.util.List<
+            ? extends
+                io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .transferSigningRequests
+                    .TransferSigningRequestsOuterClass
+                    .TransferSigningRequestOrBuilder>
+        getRequestsOrBuilderList() {
+      return requests_;
+    }
+
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public int getRequestsCount() {
+      return requests_.size();
+    }
+
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequest
+        getRequests(int index) {
+      return requests_.get(index);
+    }
+
+    /**
+     * <code>
+     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest requests = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequestOrBuilder
+        getRequestsOrBuilder(int index) {
+      return requests_.get(index);
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      for (int i = 0; i < requests_.size(); i++) {
+        output.writeMessage(1, requests_.get(i));
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      for (int i = 0; i < requests_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, requests_.get(i));
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .GetTransferSigningRequestsResponseBody)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .GetTransferSigningRequestsResponseBody
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transferSigningRequests
+                      .TransferSigningRequestsOuterClass
+                      .GetTransferSigningRequestsResponseBody)
+                  obj;
+
+      if (!getRequestsList().equals(other.getRequestsList())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (getRequestsCount() > 0) {
+        hash = (37 * hash) + REQUESTS_FIELD_NUMBER;
+        hash = (53 * hash) + getRequestsList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -3340,6 +4655,24 @@ public final class TransferSigningRequestsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetTransferSigningRequestsResponseBody> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsResponseBody
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody}
@@ -3355,6 +4688,52 @@ public final class TransferSigningRequestsOuterClass {
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .GetTransferSigningRequestsResponseBodyOrBuilder {
+      private int bitField0_;
+      private java.util.List<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .TransferSigningRequest>
+          requests_ = java.util.Collections.emptyList();
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .TransferSigningRequest,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .TransferSigningRequest
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .TransferSigningRequestOrBuilder>
+          requestsBuilder_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.GetTransferSigningRequestsResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -3389,17 +4768,6 @@ public final class TransferSigningRequestsOuterClass {
                     .GetTransferSigningRequestsResponseBody
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.GetTransferSigningRequestsResponseBody.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -3651,18 +5019,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private int bitField0_;
-
-      private java.util.List<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .TransferSigningRequest>
-          requests_ = java.util.Collections.emptyList();
-
       private void ensureRequestsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
           requests_ =
@@ -3677,31 +5033,6 @@ public final class TransferSigningRequestsOuterClass {
           bitField0_ |= 0x00000001;
         }
       }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .TransferSigningRequest,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .TransferSigningRequest
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .TransferSigningRequestOrBuilder>
-          requestsBuilder_;
 
       /**
        * <code>
@@ -4145,115 +5476,8 @@ public final class TransferSigningRequestsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsResponseBody
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .GetTransferSigningRequestsResponseBody();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsResponseBody
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<GetTransferSigningRequestsResponseBody> PARSER =
-        new com.google.protobuf.AbstractParser<GetTransferSigningRequestsResponseBody>() {
-          @java.lang.Override
-          public GetTransferSigningRequestsResponseBody parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new GetTransferSigningRequestsResponseBody(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<GetTransferSigningRequestsResponseBody> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<GetTransferSigningRequestsResponseBody> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsResponseBody
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface GetTransferSigningRequestsErrorResponseBodyOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for errorCode.
-     */
-    int getErrorCodeValue();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The errorCode.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsErrorResponseBody
-            .ErrorCode
-        getErrorCode();
-
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The errorMessage.
-     */
-    java.lang.String getErrorMessage();
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The bytes for errorMessage.
-     */
-    com.google.protobuf.ByteString getErrorMessageBytes();
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody}
@@ -4263,29 +5487,54 @@ public final class TransferSigningRequestsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody)
       GetTransferSigningRequestsErrorResponseBodyOrBuilder {
+    public static final int ERROR_CODE_FIELD_NUMBER = 1;
+    public static final int ERROR_MESSAGE_FIELD_NUMBER = 2;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsErrorResponseBody
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<GetTransferSigningRequestsErrorResponseBody>
+        PARSER =
+            new com.google.protobuf.AbstractParser<GetTransferSigningRequestsErrorResponseBody>() {
+              @java.lang.Override
+              public GetTransferSigningRequestsErrorResponseBody parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+                return new GetTransferSigningRequestsErrorResponseBody(input, extensionRegistry);
+              }
+            };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .GetTransferSigningRequestsErrorResponseBody();
+    }
+
+    private int errorCode_;
+    private volatile java.lang.Object errorMessage_;
+    private byte memoizedIsInitialized = -1;
+
     // Use GetTransferSigningRequestsErrorResponseBody.newBuilder() to construct.
     private GetTransferSigningRequestsErrorResponseBody(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private GetTransferSigningRequestsErrorResponseBody() {
       errorCode_ = 0;
       errorMessage_ = "";
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new GetTransferSigningRequestsErrorResponseBody();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private GetTransferSigningRequestsErrorResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -4345,333 +5594,6 @@ public final class TransferSigningRequestsOuterClass {
           .transferSigningRequests
           .TransferSigningRequestsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsErrorResponseBody_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsErrorResponseBody_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .GetTransferSigningRequestsErrorResponseBody
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .GetTransferSigningRequestsErrorResponseBody
-                  .Builder
-                  .class);
-    }
-
-    /**
-     * Protobuf enum {@code
-     * swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody.ErrorCode}
-     */
-    public enum ErrorCode implements com.google.protobuf.ProtocolMessageEnum {
-      /** <code>UNKNOWN = 0;</code> */
-      UNKNOWN(0),
-      /** <code>INVALID_PARAMETERS = 1;</code> */
-      INVALID_PARAMETERS(1),
-      UNRECOGNIZED(-1),
-      ;
-
-      /** <code>UNKNOWN = 0;</code> */
-      public static final int UNKNOWN_VALUE = 0;
-      /** <code>INVALID_PARAMETERS = 1;</code> */
-      public static final int INVALID_PARAMETERS_VALUE = 1;
-
-      public final int getNumber() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static ErrorCode valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static ErrorCode forNumber(int value) {
-        switch (value) {
-          case 0:
-            return UNKNOWN;
-          case 1:
-            return INVALID_PARAMETERS;
-          default:
-            return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalGetValueMap() {
-        return internalValueMap;
-      }
-
-      private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
-            public ErrorCode findValueByNumber(int number) {
-              return ErrorCode.forNumber(number);
-            }
-          };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(ordinal());
-      }
-
-      public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
-        return getDescriptor();
-      }
-
-      public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
-        return io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsErrorResponseBody
-            .getDescriptor()
-            .getEnumTypes()
-            .get(0);
-      }
-
-      private static final ErrorCode[] VALUES = values();
-
-      public static ErrorCode valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int value;
-
-      private ErrorCode(int value) {
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody.ErrorCode)
-    }
-
-    public static final int ERROR_CODE_FIELD_NUMBER = 1;
-    private int errorCode_;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for errorCode.
-     */
-    @java.lang.Override
-    public int getErrorCodeValue() {
-      return errorCode_;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The errorCode.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsErrorResponseBody
-            .ErrorCode
-        getErrorCode() {
-      @SuppressWarnings("deprecation")
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .GetTransferSigningRequestsErrorResponseBody
-              .ErrorCode
-          result =
-              io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-                  .TransferSigningRequestsOuterClass.GetTransferSigningRequestsErrorResponseBody
-                  .ErrorCode.valueOf(errorCode_);
-      return result == null
-          ? io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .GetTransferSigningRequestsErrorResponseBody
-              .ErrorCode
-              .UNRECOGNIZED
-          : result;
-    }
-
-    public static final int ERROR_MESSAGE_FIELD_NUMBER = 2;
-    private volatile java.lang.Object errorMessage_;
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The errorMessage.
-     */
-    @java.lang.Override
-    public java.lang.String getErrorMessage() {
-      java.lang.Object ref = errorMessage_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        errorMessage_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The bytes for errorMessage.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getErrorMessageBytes() {
-      java.lang.Object ref = errorMessage_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        errorMessage_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (errorCode_
-          != io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-              .TransferSigningRequestsOuterClass.GetTransferSigningRequestsErrorResponseBody
-              .ErrorCode.UNKNOWN.getNumber()) {
-        output.writeEnum(1, errorCode_);
-      }
-      if (!getErrorMessageBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, errorMessage_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (errorCode_
-          != io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-              .TransferSigningRequestsOuterClass.GetTransferSigningRequestsErrorResponseBody
-              .ErrorCode.UNKNOWN.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream.computeEnumSize(1, errorCode_);
-      }
-      if (!getErrorMessageBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, errorMessage_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .GetTransferSigningRequestsErrorResponseBody)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .GetTransferSigningRequestsErrorResponseBody
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transferSigningRequests
-                      .TransferSigningRequestsOuterClass
-                      .GetTransferSigningRequestsErrorResponseBody)
-                  obj;
-
-      if (errorCode_ != other.errorCode_) return false;
-      if (!getErrorMessage().equals(other.getErrorMessage())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ERROR_CODE_FIELD_NUMBER;
-      hash = (53 * hash) + errorCode_;
-      hash = (37 * hash) + ERROR_MESSAGE_FIELD_NUMBER;
-      hash = (53 * hash) + getErrorMessage().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -4824,11 +5746,6 @@ public final class TransferSigningRequestsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -4845,6 +5762,253 @@ public final class TransferSigningRequestsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsErrorResponseBody
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<GetTransferSigningRequestsErrorResponseBody> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new GetTransferSigningRequestsErrorResponseBody();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsErrorResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .GetTransferSigningRequestsErrorResponseBody
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .GetTransferSigningRequestsErrorResponseBody
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for errorCode.
+     */
+    @java.lang.Override
+    public int getErrorCodeValue() {
+      return errorCode_;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The errorCode.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsErrorResponseBody
+            .ErrorCode
+        getErrorCode() {
+      @SuppressWarnings("deprecation")
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .GetTransferSigningRequestsErrorResponseBody
+              .ErrorCode
+          result =
+              io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+                  .TransferSigningRequestsOuterClass.GetTransferSigningRequestsErrorResponseBody
+                  .ErrorCode.valueOf(errorCode_);
+      return result == null
+          ? io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .GetTransferSigningRequestsErrorResponseBody
+              .ErrorCode
+              .UNRECOGNIZED
+          : result;
+    }
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The errorMessage.
+     */
+    @java.lang.Override
+    public java.lang.String getErrorMessage() {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        errorMessage_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The bytes for errorMessage.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getErrorMessageBytes() {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        errorMessage_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (errorCode_
+          != io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+              .TransferSigningRequestsOuterClass.GetTransferSigningRequestsErrorResponseBody
+              .ErrorCode.UNKNOWN.getNumber()) {
+        output.writeEnum(1, errorCode_);
+      }
+      if (!getErrorMessageBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, errorMessage_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (errorCode_
+          != io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+              .TransferSigningRequestsOuterClass.GetTransferSigningRequestsErrorResponseBody
+              .ErrorCode.UNKNOWN.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream.computeEnumSize(1, errorCode_);
+      }
+      if (!getErrorMessageBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, errorMessage_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .GetTransferSigningRequestsErrorResponseBody)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .GetTransferSigningRequestsErrorResponseBody
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transferSigningRequests
+                      .TransferSigningRequestsOuterClass
+                      .GetTransferSigningRequestsErrorResponseBody)
+                  obj;
+
+      if (errorCode_ != other.errorCode_) return false;
+      if (!getErrorMessage().equals(other.getErrorMessage())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ERROR_CODE_FIELD_NUMBER;
+      hash = (53 * hash) + errorCode_;
+      hash = (37 * hash) + ERROR_MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getErrorMessage().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -4856,6 +6020,129 @@ public final class TransferSigningRequestsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetTransferSigningRequestsErrorResponseBody>
+        getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsErrorResponseBody
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+    /**
+     * Protobuf enum {@code
+     * swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody.ErrorCode}
+     */
+    public enum ErrorCode implements com.google.protobuf.ProtocolMessageEnum {
+      /** <code>UNKNOWN = 0;</code> */
+      UNKNOWN(0),
+      /** <code>INVALID_PARAMETERS = 1;</code> */
+      INVALID_PARAMETERS(1),
+      UNRECOGNIZED(-1),
+      ;
+
+      /** <code>UNKNOWN = 0;</code> */
+      public static final int UNKNOWN_VALUE = 0;
+      /** <code>INVALID_PARAMETERS = 1;</code> */
+      public static final int INVALID_PARAMETERS_VALUE = 1;
+      private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
+            public ErrorCode findValueByNumber(int number) {
+              return ErrorCode.forNumber(number);
+            }
+          };
+      private static final ErrorCode[] VALUES = values();
+      private final int value;
+
+      private ErrorCode(int value) {
+        this.value = value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static ErrorCode valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static ErrorCode forNumber(int value) {
+        switch (value) {
+          case 0:
+            return UNKNOWN;
+          case 1:
+            return INVALID_PARAMETERS;
+          default:
+            return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalGetValueMap() {
+        return internalValueMap;
+      }
+
+      public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+        return io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .GetTransferSigningRequestsErrorResponseBody
+            .getDescriptor()
+            .getEnumTypes()
+            .get(0);
+      }
+
+      public static ErrorCode valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(ordinal());
+      }
+
+      public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
+        return getDescriptor();
+      }
+
+      // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody.ErrorCode)
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody}
@@ -4871,6 +6158,20 @@ public final class TransferSigningRequestsOuterClass {
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .GetTransferSigningRequestsErrorResponseBodyOrBuilder {
+      private int errorCode_ = 0;
+      private java.lang.Object errorMessage_ = "";
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.GetTransferSigningRequestsErrorResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -4905,17 +6206,6 @@ public final class TransferSigningRequestsOuterClass {
                     .GetTransferSigningRequestsErrorResponseBody
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.GetTransferSigningRequestsErrorResponseBody.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -5135,7 +6425,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private int errorCode_ = 0;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody.ErrorCode error_code = 1;
@@ -5147,6 +6436,7 @@ public final class TransferSigningRequestsOuterClass {
       public int getErrorCodeValue() {
         return errorCode_;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody.ErrorCode error_code = 1;
@@ -5161,6 +6451,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody.ErrorCode error_code = 1;
@@ -5203,6 +6494,7 @@ public final class TransferSigningRequestsOuterClass {
                 .UNRECOGNIZED
             : result;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody.ErrorCode error_code = 1;
@@ -5229,6 +6521,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody.ErrorCode error_code = 1;
@@ -5243,7 +6536,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private java.lang.Object errorMessage_ = "";
       /**
        * <code>string error_message = 2;</code>
        *
@@ -5260,6 +6552,23 @@ public final class TransferSigningRequestsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string error_message = 2;</code>
+       *
+       * @param value The errorMessage to set.
+       * @return This builder for chaining.
+       */
+      public Builder setErrorMessage(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        errorMessage_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string error_message = 2;</code>
        *
@@ -5276,32 +6585,7 @@ public final class TransferSigningRequestsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string error_message = 2;</code>
-       *
-       * @param value The errorMessage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setErrorMessage(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        errorMessage_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string error_message = 2;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearErrorMessage() {
-
-        errorMessage_ = getDefaultInstance().getErrorMessage();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string error_message = 2;</code>
        *
@@ -5315,6 +6599,18 @@ public final class TransferSigningRequestsOuterClass {
         checkByteStringIsUtf8(value);
 
         errorMessage_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string error_message = 2;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearErrorMessage() {
+
+        errorMessage_ = getDefaultInstance().getErrorMessage();
         onChanged();
         return this;
       }
@@ -5333,16 +6629,47 @@ public final class TransferSigningRequestsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody)
     }
+  }
 
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody)
+  /**
+   * Protobuf type {@code swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest}
+   */
+  public static final class TransferSigningRequest extends com.google.protobuf.GeneratedMessageV3
+      implements
+      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest)
+      TransferSigningRequestOrBuilder {
+    public static final int ID_FIELD_NUMBER = 1;
+    public static final int BLOCKCHAIN_ID_FIELD_NUMBER = 2;
+    public static final int NETWORK_TYPE_FIELD_NUMBER = 3;
+    public static final int PROTOCOL_CODE_FIELD_NUMBER = 4;
+    public static final int DOUBLE_SPENDING_PROTECTION_TYPE_FIELD_NUMBER = 5;
+    public static final int BUILT_TRANSACTION_FIELD_NUMBER = 6;
+    public static final int SIGNING_ADDRESSES_FIELD_NUMBER = 7;
+    public static final int COINS_TO_SPEND_FIELD_NUMBER = 8;
+    public static final int POLICY_RESULT_FIELD_NUMBER = 9;
+    public static final int GUARDIAN_SIGNATURE_FIELD_NUMBER = 10;
+    public static final int CREATED_AT_FIELD_NUMBER = 11;
+    public static final int UPDATED_AT_FIELD_NUMBER = 12;
+    private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest)
     private static final io.swisschain
             .sirius
             .vaultApi
             .generated
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsErrorResponseBody
+            .TransferSigningRequest
         DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<TransferSigningRequest> PARSER =
+        new com.google.protobuf.AbstractParser<TransferSigningRequest>() {
+          @java.lang.Override
+          public TransferSigningRequest parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new TransferSigningRequest(input, extensionRegistry);
+          }
+        };
 
     static {
       DEFAULT_INSTANCE =
@@ -5352,170 +6679,17 @@ public final class TransferSigningRequestsOuterClass {
               .generated
               .transferSigningRequests
               .TransferSigningRequestsOuterClass
-              .GetTransferSigningRequestsErrorResponseBody();
+              .TransferSigningRequest();
     }
 
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsErrorResponseBody
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<GetTransferSigningRequestsErrorResponseBody>
-        PARSER =
-            new com.google.protobuf.AbstractParser<GetTransferSigningRequestsErrorResponseBody>() {
-              @java.lang.Override
-              public GetTransferSigningRequestsErrorResponseBody parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-                return new GetTransferSigningRequestsErrorResponseBody(input, extensionRegistry);
-              }
-            };
-
-    public static com.google.protobuf.Parser<GetTransferSigningRequestsErrorResponseBody> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<GetTransferSigningRequestsErrorResponseBody>
-        getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .GetTransferSigningRequestsErrorResponseBody
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  public interface TransferSigningRequestOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>int64 id = 1;</code>
-     *
-     * @return The id.
-     */
-    long getId();
-
-    /**
-     * <code>string blockchain_id = 2;</code>
-     *
-     * @return The blockchainId.
-     */
-    java.lang.String getBlockchainId();
-    /**
-     * <code>string blockchain_id = 2;</code>
-     *
-     * @return The bytes for blockchainId.
-     */
-    com.google.protobuf.ByteString getBlockchainIdBytes();
-
-    /**
-     * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
-     *
-     * @return The enum numeric value on the wire for networkType.
-     */
-    int getNetworkTypeValue();
-    /**
-     * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
-     *
-     * @return The networkType.
-     */
-    io.swisschain.sirius.vaultApi.generated.common.Common.NetworkType getNetworkType();
-
-    /**
-     * <code>string protocol_code = 4;</code>
-     *
-     * @return The protocolCode.
-     */
-    java.lang.String getProtocolCode();
-    /**
-     * <code>string protocol_code = 4;</code>
-     *
-     * @return The bytes for protocolCode.
-     */
-    com.google.protobuf.ByteString getProtocolCodeBytes();
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.DoubleSpendingProtectionType double_spending_protection_type = 5;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for doubleSpendingProtectionType.
-     */
-    int getDoubleSpendingProtectionTypeValue();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.DoubleSpendingProtectionType double_spending_protection_type = 5;
-     * </code>
-     *
-     * @return The doubleSpendingProtectionType.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .DoubleSpendingProtectionType
-        getDoubleSpendingProtectionType();
-
-    /**
-     * <code>bytes built_transaction = 6;</code>
-     *
-     * @return The builtTransaction.
-     */
-    com.google.protobuf.ByteString getBuiltTransaction();
-
-    /**
-     * <code>repeated string signing_addresses = 7;</code>
-     *
-     * @return A list containing the signingAddresses.
-     */
-    java.util.List<java.lang.String> getSigningAddressesList();
-    /**
-     * <code>repeated string signing_addresses = 7;</code>
-     *
-     * @return The count of signingAddresses.
-     */
-    int getSigningAddressesCount();
-    /**
-     * <code>repeated string signing_addresses = 7;</code>
-     *
-     * @param index The index of the element to return.
-     * @return The signingAddresses at the given index.
-     */
-    java.lang.String getSigningAddresses(int index);
-    /**
-     * <code>repeated string signing_addresses = 7;</code>
-     *
-     * @param index The index of the value to return.
-     * @return The bytes of the signingAddresses at the given index.
-     */
-    com.google.protobuf.ByteString getSigningAddressesBytes(int index);
-
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
-     * </code>
-     */
-    java.util.List<
+    private long id_;
+    private volatile java.lang.Object blockchainId_;
+    private int networkType_;
+    private volatile java.lang.Object protocolCode_;
+    private int doubleSpendingProtectionType_;
+    private com.google.protobuf.ByteString builtTransaction_;
+    private com.google.protobuf.LazyStringList signingAddresses_;
+    private java.util.List<
             io.swisschain
                 .sirius
                 .vaultApi
@@ -5523,119 +6697,12 @@ public final class TransferSigningRequestsOuterClass {
                 .transferSigningRequests
                 .TransferSigningRequestsOuterClass
                 .CoinToSpend>
-        getCoinsToSpendList();
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .CoinToSpend
-        getCoinsToSpend(int index);
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
-     * </code>
-     */
-    int getCoinsToSpendCount();
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
-     * </code>
-     */
-    java.util.List<
-            ? extends
-                io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .transferSigningRequests
-                    .TransferSigningRequestsOuterClass
-                    .CoinToSpendOrBuilder>
-        getCoinsToSpendOrBuilderList();
-    /**
-     * <code>
-     * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .CoinToSpendOrBuilder
-        getCoinsToSpendOrBuilder(int index);
-
-    /**
-     * <code>string policy_result = 9;</code>
-     *
-     * @return The policyResult.
-     */
-    java.lang.String getPolicyResult();
-    /**
-     * <code>string policy_result = 9;</code>
-     *
-     * @return The bytes for policyResult.
-     */
-    com.google.protobuf.ByteString getPolicyResultBytes();
-
-    /**
-     * <code>string guardian_signature = 10;</code>
-     *
-     * @return The guardianSignature.
-     */
-    java.lang.String getGuardianSignature();
-    /**
-     * <code>string guardian_signature = 10;</code>
-     *
-     * @return The bytes for guardianSignature.
-     */
-    com.google.protobuf.ByteString getGuardianSignatureBytes();
-
-    /**
-     * <code>.google.protobuf.Timestamp created_at = 11;</code>
-     *
-     * @return Whether the createdAt field is set.
-     */
-    boolean hasCreatedAt();
-    /**
-     * <code>.google.protobuf.Timestamp created_at = 11;</code>
-     *
-     * @return The createdAt.
-     */
-    com.google.protobuf.Timestamp getCreatedAt();
-    /** <code>.google.protobuf.Timestamp created_at = 11;</code> */
-    com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder();
-
-    /**
-     * <code>.google.protobuf.Timestamp updated_at = 12;</code>
-     *
-     * @return Whether the updatedAt field is set.
-     */
-    boolean hasUpdatedAt();
-    /**
-     * <code>.google.protobuf.Timestamp updated_at = 12;</code>
-     *
-     * @return The updatedAt.
-     */
-    com.google.protobuf.Timestamp getUpdatedAt();
-    /** <code>.google.protobuf.Timestamp updated_at = 12;</code> */
-    com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder();
-  }
-  /**
-   * Protobuf type {@code swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest}
-   */
-  public static final class TransferSigningRequest extends com.google.protobuf.GeneratedMessageV3
-      implements
-      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest)
-      TransferSigningRequestOrBuilder {
-    private static final long serialVersionUID = 0L;
+        coinsToSpend_;
+    private volatile java.lang.Object policyResult_;
+    private volatile java.lang.Object guardianSignature_;
+    private com.google.protobuf.Timestamp createdAt_;
+    private com.google.protobuf.Timestamp updatedAt_;
+    private byte memoizedIsInitialized = -1;
     // Use TransferSigningRequest.newBuilder() to construct.
     private TransferSigningRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -5652,18 +6719,6 @@ public final class TransferSigningRequestsOuterClass {
       policyResult_ = "";
       guardianSignature_ = "";
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new TransferSigningRequest();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private TransferSigningRequest(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -5831,6 +6886,198 @@ public final class TransferSigningRequestsOuterClass {
           .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_TransferSigningRequest_descriptor;
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequest
+        parseFrom(java.nio.ByteBuffer data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequest
+        parseFrom(
+            java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequest
+        parseFrom(com.google.protobuf.ByteString data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequest
+        parseFrom(
+            com.google.protobuf.ByteString data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequest
+        parseFrom(byte[] data) throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequest
+        parseFrom(byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequest
+        parseFrom(java.io.InputStream input) throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequest
+        parseFrom(
+            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+          PARSER, input, extensionRegistry);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequest
+        parseDelimitedFrom(java.io.InputStream input) throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequest
+        parseDelimitedFrom(
+            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
+          PARSER, input, extensionRegistry);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequest
+        parseFrom(com.google.protobuf.CodedInputStream input) throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequest
+        parseFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+          PARSER, input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+
+    public static Builder newBuilder(
+        io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transferSigningRequests
+                .TransferSigningRequestsOuterClass
+                .TransferSigningRequest
+            prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequest
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<TransferSigningRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new TransferSigningRequest();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
@@ -5857,8 +7104,6 @@ public final class TransferSigningRequestsOuterClass {
                   .class);
     }
 
-    public static final int ID_FIELD_NUMBER = 1;
-    private long id_;
     /**
      * <code>int64 id = 1;</code>
      *
@@ -5869,8 +7114,6 @@ public final class TransferSigningRequestsOuterClass {
       return id_;
     }
 
-    public static final int BLOCKCHAIN_ID_FIELD_NUMBER = 2;
-    private volatile java.lang.Object blockchainId_;
     /**
      * <code>string blockchain_id = 2;</code>
      *
@@ -5888,6 +7131,7 @@ public final class TransferSigningRequestsOuterClass {
         return s;
       }
     }
+
     /**
      * <code>string blockchain_id = 2;</code>
      *
@@ -5906,8 +7150,6 @@ public final class TransferSigningRequestsOuterClass {
       }
     }
 
-    public static final int NETWORK_TYPE_FIELD_NUMBER = 3;
-    private int networkType_;
     /**
      * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
      *
@@ -5917,6 +7159,7 @@ public final class TransferSigningRequestsOuterClass {
     public int getNetworkTypeValue() {
       return networkType_;
     }
+
     /**
      * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
      *
@@ -5932,8 +7175,6 @@ public final class TransferSigningRequestsOuterClass {
           : result;
     }
 
-    public static final int PROTOCOL_CODE_FIELD_NUMBER = 4;
-    private volatile java.lang.Object protocolCode_;
     /**
      * <code>string protocol_code = 4;</code>
      *
@@ -5951,6 +7192,7 @@ public final class TransferSigningRequestsOuterClass {
         return s;
       }
     }
+
     /**
      * <code>string protocol_code = 4;</code>
      *
@@ -5969,8 +7211,6 @@ public final class TransferSigningRequestsOuterClass {
       }
     }
 
-    public static final int DOUBLE_SPENDING_PROTECTION_TYPE_FIELD_NUMBER = 5;
-    private int doubleSpendingProtectionType_;
     /**
      * <code>
      * .swisschain.sirius.vaultApi.transferSigningRequests.DoubleSpendingProtectionType double_spending_protection_type = 5;
@@ -5982,6 +7222,7 @@ public final class TransferSigningRequestsOuterClass {
     public int getDoubleSpendingProtectionTypeValue() {
       return doubleSpendingProtectionType_;
     }
+
     /**
      * <code>
      * .swisschain.sirius.vaultApi.transferSigningRequests.DoubleSpendingProtectionType double_spending_protection_type = 5;
@@ -6022,8 +7263,6 @@ public final class TransferSigningRequestsOuterClass {
           : result;
     }
 
-    public static final int BUILT_TRANSACTION_FIELD_NUMBER = 6;
-    private com.google.protobuf.ByteString builtTransaction_;
     /**
      * <code>bytes built_transaction = 6;</code>
      *
@@ -6034,8 +7273,6 @@ public final class TransferSigningRequestsOuterClass {
       return builtTransaction_;
     }
 
-    public static final int SIGNING_ADDRESSES_FIELD_NUMBER = 7;
-    private com.google.protobuf.LazyStringList signingAddresses_;
     /**
      * <code>repeated string signing_addresses = 7;</code>
      *
@@ -6044,6 +7281,7 @@ public final class TransferSigningRequestsOuterClass {
     public com.google.protobuf.ProtocolStringList getSigningAddressesList() {
       return signingAddresses_;
     }
+
     /**
      * <code>repeated string signing_addresses = 7;</code>
      *
@@ -6052,6 +7290,7 @@ public final class TransferSigningRequestsOuterClass {
     public int getSigningAddressesCount() {
       return signingAddresses_.size();
     }
+
     /**
      * <code>repeated string signing_addresses = 7;</code>
      *
@@ -6061,6 +7300,7 @@ public final class TransferSigningRequestsOuterClass {
     public java.lang.String getSigningAddresses(int index) {
       return signingAddresses_.get(index);
     }
+
     /**
      * <code>repeated string signing_addresses = 7;</code>
      *
@@ -6071,16 +7311,6 @@ public final class TransferSigningRequestsOuterClass {
       return signingAddresses_.getByteString(index);
     }
 
-    public static final int COINS_TO_SPEND_FIELD_NUMBER = 8;
-    private java.util.List<
-            io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transferSigningRequests
-                .TransferSigningRequestsOuterClass
-                .CoinToSpend>
-        coinsToSpend_;
     /**
      * <code>
      * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -6098,6 +7328,7 @@ public final class TransferSigningRequestsOuterClass {
         getCoinsToSpendList() {
       return coinsToSpend_;
     }
+
     /**
      * <code>
      * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -6116,6 +7347,7 @@ public final class TransferSigningRequestsOuterClass {
         getCoinsToSpendOrBuilderList() {
       return coinsToSpend_;
     }
+
     /**
      * <code>
      * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -6125,6 +7357,7 @@ public final class TransferSigningRequestsOuterClass {
     public int getCoinsToSpendCount() {
       return coinsToSpend_.size();
     }
+
     /**
      * <code>
      * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -6141,6 +7374,7 @@ public final class TransferSigningRequestsOuterClass {
         getCoinsToSpend(int index) {
       return coinsToSpend_.get(index);
     }
+
     /**
      * <code>
      * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -6158,8 +7392,6 @@ public final class TransferSigningRequestsOuterClass {
       return coinsToSpend_.get(index);
     }
 
-    public static final int POLICY_RESULT_FIELD_NUMBER = 9;
-    private volatile java.lang.Object policyResult_;
     /**
      * <code>string policy_result = 9;</code>
      *
@@ -6177,6 +7409,7 @@ public final class TransferSigningRequestsOuterClass {
         return s;
       }
     }
+
     /**
      * <code>string policy_result = 9;</code>
      *
@@ -6195,8 +7428,6 @@ public final class TransferSigningRequestsOuterClass {
       }
     }
 
-    public static final int GUARDIAN_SIGNATURE_FIELD_NUMBER = 10;
-    private volatile java.lang.Object guardianSignature_;
     /**
      * <code>string guardian_signature = 10;</code>
      *
@@ -6214,6 +7445,7 @@ public final class TransferSigningRequestsOuterClass {
         return s;
       }
     }
+
     /**
      * <code>string guardian_signature = 10;</code>
      *
@@ -6232,8 +7464,6 @@ public final class TransferSigningRequestsOuterClass {
       }
     }
 
-    public static final int CREATED_AT_FIELD_NUMBER = 11;
-    private com.google.protobuf.Timestamp createdAt_;
     /**
      * <code>.google.protobuf.Timestamp created_at = 11;</code>
      *
@@ -6243,6 +7473,7 @@ public final class TransferSigningRequestsOuterClass {
     public boolean hasCreatedAt() {
       return createdAt_ != null;
     }
+
     /**
      * <code>.google.protobuf.Timestamp created_at = 11;</code>
      *
@@ -6252,14 +7483,13 @@ public final class TransferSigningRequestsOuterClass {
     public com.google.protobuf.Timestamp getCreatedAt() {
       return createdAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createdAt_;
     }
+
     /** <code>.google.protobuf.Timestamp created_at = 11;</code> */
     @java.lang.Override
     public com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder() {
       return getCreatedAt();
     }
 
-    public static final int UPDATED_AT_FIELD_NUMBER = 12;
-    private com.google.protobuf.Timestamp updatedAt_;
     /**
      * <code>.google.protobuf.Timestamp updated_at = 12;</code>
      *
@@ -6269,6 +7499,7 @@ public final class TransferSigningRequestsOuterClass {
     public boolean hasUpdatedAt() {
       return updatedAt_ != null;
     }
+
     /**
      * <code>.google.protobuf.Timestamp updated_at = 12;</code>
      *
@@ -6278,13 +7509,12 @@ public final class TransferSigningRequestsOuterClass {
     public com.google.protobuf.Timestamp getUpdatedAt() {
       return updatedAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updatedAt_;
     }
+
     /** <code>.google.protobuf.Timestamp updated_at = 12;</code> */
     @java.lang.Override
     public com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder() {
       return getUpdatedAt();
     }
-
-    private byte memoizedIsInitialized = -1;
 
     @java.lang.Override
     public final boolean isInitialized() {
@@ -6497,175 +7727,9 @@ public final class TransferSigningRequestsOuterClass {
       return hash;
     }
 
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequest
-        parseFrom(java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequest
-        parseFrom(
-            java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequest
-        parseFrom(com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequest
-        parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequest
-        parseFrom(byte[] data) throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequest
-        parseFrom(byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequest
-        parseFrom(java.io.InputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequest
-        parseFrom(
-            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequest
-        parseDelimitedFrom(java.io.InputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequest
-        parseDelimitedFrom(
-            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequest
-        parseFrom(com.google.protobuf.CodedInputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequest
-        parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
     @java.lang.Override
     public Builder newBuilderForType() {
       return newBuilder();
-    }
-
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-
-    public static Builder newBuilder(
-        io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transferSigningRequests
-                .TransferSigningRequestsOuterClass
-                .TransferSigningRequest
-            prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
     @java.lang.Override
@@ -6679,6 +7743,24 @@ public final class TransferSigningRequestsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<TransferSigningRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequest
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest}
@@ -6694,6 +7776,75 @@ public final class TransferSigningRequestsOuterClass {
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .TransferSigningRequestOrBuilder {
+      private int bitField0_;
+      private long id_;
+      private java.lang.Object blockchainId_ = "";
+      private int networkType_ = 0;
+      private java.lang.Object protocolCode_ = "";
+      private int doubleSpendingProtectionType_ = 0;
+      private com.google.protobuf.ByteString builtTransaction_ =
+          com.google.protobuf.ByteString.EMPTY;
+      private com.google.protobuf.LazyStringList signingAddresses_ =
+          com.google.protobuf.LazyStringArrayList.EMPTY;
+      private java.util.List<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .CoinToSpend>
+          coinsToSpend_ = java.util.Collections.emptyList();
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .CoinToSpend,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .CoinToSpend
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .CoinToSpendOrBuilder>
+          coinsToSpendBuilder_;
+      private java.lang.Object policyResult_ = "";
+      private java.lang.Object guardianSignature_ = "";
+      private com.google.protobuf.Timestamp createdAt_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              com.google.protobuf.Timestamp,
+              com.google.protobuf.Timestamp.Builder,
+              com.google.protobuf.TimestampOrBuilder>
+          createdAtBuilder_;
+      private com.google.protobuf.Timestamp updatedAt_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              com.google.protobuf.Timestamp,
+              com.google.protobuf.Timestamp.Builder,
+              com.google.protobuf.TimestampOrBuilder>
+          updatedAtBuilder_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.TransferSigningRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -6728,17 +7879,6 @@ public final class TransferSigningRequestsOuterClass {
                     .TransferSigningRequest
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.TransferSigningRequest.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -7086,9 +8226,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private int bitField0_;
-
-      private long id_;
       /**
        * <code>int64 id = 1;</code>
        *
@@ -7098,6 +8235,7 @@ public final class TransferSigningRequestsOuterClass {
       public long getId() {
         return id_;
       }
+
       /**
        * <code>int64 id = 1;</code>
        *
@@ -7110,6 +8248,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>int64 id = 1;</code>
        *
@@ -7122,7 +8261,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private java.lang.Object blockchainId_ = "";
       /**
        * <code>string blockchain_id = 2;</code>
        *
@@ -7139,6 +8277,23 @@ public final class TransferSigningRequestsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string blockchain_id = 2;</code>
+       *
+       * @param value The blockchainId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBlockchainId(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        blockchainId_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string blockchain_id = 2;</code>
        *
@@ -7155,32 +8310,7 @@ public final class TransferSigningRequestsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string blockchain_id = 2;</code>
-       *
-       * @param value The blockchainId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBlockchainId(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        blockchainId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string blockchain_id = 2;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearBlockchainId() {
-
-        blockchainId_ = getDefaultInstance().getBlockchainId();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string blockchain_id = 2;</code>
        *
@@ -7198,7 +8328,18 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private int networkType_ = 0;
+      /**
+       * <code>string blockchain_id = 2;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearBlockchainId() {
+
+        blockchainId_ = getDefaultInstance().getBlockchainId();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
        *
@@ -7208,6 +8349,7 @@ public final class TransferSigningRequestsOuterClass {
       public int getNetworkTypeValue() {
         return networkType_;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
        *
@@ -7220,6 +8362,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
        *
@@ -7234,6 +8377,7 @@ public final class TransferSigningRequestsOuterClass {
             ? io.swisschain.sirius.vaultApi.generated.common.Common.NetworkType.UNRECOGNIZED
             : result;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
        *
@@ -7250,6 +8394,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
        *
@@ -7262,7 +8407,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private java.lang.Object protocolCode_ = "";
       /**
        * <code>string protocol_code = 4;</code>
        *
@@ -7279,6 +8423,23 @@ public final class TransferSigningRequestsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string protocol_code = 4;</code>
+       *
+       * @param value The protocolCode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setProtocolCode(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        protocolCode_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string protocol_code = 4;</code>
        *
@@ -7295,32 +8456,7 @@ public final class TransferSigningRequestsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string protocol_code = 4;</code>
-       *
-       * @param value The protocolCode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setProtocolCode(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        protocolCode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string protocol_code = 4;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearProtocolCode() {
-
-        protocolCode_ = getDefaultInstance().getProtocolCode();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string protocol_code = 4;</code>
        *
@@ -7338,7 +8474,18 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private int doubleSpendingProtectionType_ = 0;
+      /**
+       * <code>string protocol_code = 4;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearProtocolCode() {
+
+        protocolCode_ = getDefaultInstance().getProtocolCode();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.DoubleSpendingProtectionType double_spending_protection_type = 5;
@@ -7350,6 +8497,7 @@ public final class TransferSigningRequestsOuterClass {
       public int getDoubleSpendingProtectionTypeValue() {
         return doubleSpendingProtectionType_;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.DoubleSpendingProtectionType double_spending_protection_type = 5;
@@ -7364,6 +8512,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.DoubleSpendingProtectionType double_spending_protection_type = 5;
@@ -7403,6 +8552,7 @@ public final class TransferSigningRequestsOuterClass {
                 .UNRECOGNIZED
             : result;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.DoubleSpendingProtectionType double_spending_protection_type = 5;
@@ -7428,6 +8578,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.DoubleSpendingProtectionType double_spending_protection_type = 5;
@@ -7442,8 +8593,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private com.google.protobuf.ByteString builtTransaction_ =
-          com.google.protobuf.ByteString.EMPTY;
       /**
        * <code>bytes built_transaction = 6;</code>
        *
@@ -7453,6 +8602,7 @@ public final class TransferSigningRequestsOuterClass {
       public com.google.protobuf.ByteString getBuiltTransaction() {
         return builtTransaction_;
       }
+
       /**
        * <code>bytes built_transaction = 6;</code>
        *
@@ -7468,6 +8618,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>bytes built_transaction = 6;</code>
        *
@@ -7480,15 +8631,13 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private com.google.protobuf.LazyStringList signingAddresses_ =
-          com.google.protobuf.LazyStringArrayList.EMPTY;
-
       private void ensureSigningAddressesIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
           signingAddresses_ = new com.google.protobuf.LazyStringArrayList(signingAddresses_);
           bitField0_ |= 0x00000001;
         }
       }
+
       /**
        * <code>repeated string signing_addresses = 7;</code>
        *
@@ -7497,6 +8646,7 @@ public final class TransferSigningRequestsOuterClass {
       public com.google.protobuf.ProtocolStringList getSigningAddressesList() {
         return signingAddresses_.getUnmodifiableView();
       }
+
       /**
        * <code>repeated string signing_addresses = 7;</code>
        *
@@ -7505,6 +8655,7 @@ public final class TransferSigningRequestsOuterClass {
       public int getSigningAddressesCount() {
         return signingAddresses_.size();
       }
+
       /**
        * <code>repeated string signing_addresses = 7;</code>
        *
@@ -7514,6 +8665,7 @@ public final class TransferSigningRequestsOuterClass {
       public java.lang.String getSigningAddresses(int index) {
         return signingAddresses_.get(index);
       }
+
       /**
        * <code>repeated string signing_addresses = 7;</code>
        *
@@ -7523,6 +8675,7 @@ public final class TransferSigningRequestsOuterClass {
       public com.google.protobuf.ByteString getSigningAddressesBytes(int index) {
         return signingAddresses_.getByteString(index);
       }
+
       /**
        * <code>repeated string signing_addresses = 7;</code>
        *
@@ -7539,6 +8692,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>repeated string signing_addresses = 7;</code>
        *
@@ -7554,6 +8708,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>repeated string signing_addresses = 7;</code>
        *
@@ -7566,6 +8721,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>repeated string signing_addresses = 7;</code>
        *
@@ -7577,6 +8733,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>repeated string signing_addresses = 7;</code>
        *
@@ -7594,16 +8751,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private java.util.List<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .CoinToSpend>
-          coinsToSpend_ = java.util.Collections.emptyList();
-
       private void ensureCoinsToSpendIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
           coinsToSpend_ =
@@ -7618,31 +8765,6 @@ public final class TransferSigningRequestsOuterClass {
           bitField0_ |= 0x00000002;
         }
       }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .CoinToSpend,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .CoinToSpend
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .CoinToSpendOrBuilder>
-          coinsToSpendBuilder_;
 
       /**
        * <code>
@@ -7664,6 +8786,7 @@ public final class TransferSigningRequestsOuterClass {
           return coinsToSpendBuilder_.getMessageList();
         }
       }
+
       /**
        * <code>
        * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -7676,6 +8799,7 @@ public final class TransferSigningRequestsOuterClass {
           return coinsToSpendBuilder_.getCount();
         }
       }
+
       /**
        * <code>
        * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -7695,6 +8819,7 @@ public final class TransferSigningRequestsOuterClass {
           return coinsToSpendBuilder_.getMessage(index);
         }
       }
+
       /**
        * <code>
        * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -7722,6 +8847,7 @@ public final class TransferSigningRequestsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>
        * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -7747,6 +8873,7 @@ public final class TransferSigningRequestsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>
        * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -7773,6 +8900,7 @@ public final class TransferSigningRequestsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>
        * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -7800,6 +8928,7 @@ public final class TransferSigningRequestsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>
        * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -7824,6 +8953,7 @@ public final class TransferSigningRequestsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>
        * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -7849,6 +8979,7 @@ public final class TransferSigningRequestsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>
        * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -7874,6 +9005,7 @@ public final class TransferSigningRequestsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>
        * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -7889,6 +9021,7 @@ public final class TransferSigningRequestsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>
        * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -7904,6 +9037,7 @@ public final class TransferSigningRequestsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>
        * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -7920,6 +9054,7 @@ public final class TransferSigningRequestsOuterClass {
           getCoinsToSpendBuilder(int index) {
         return getCoinsToSpendFieldBuilder().getBuilder(index);
       }
+
       /**
        * <code>
        * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -7939,6 +9074,7 @@ public final class TransferSigningRequestsOuterClass {
           return coinsToSpendBuilder_.getMessageOrBuilder(index);
         }
       }
+
       /**
        * <code>
        * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -7960,6 +9096,7 @@ public final class TransferSigningRequestsOuterClass {
           return java.util.Collections.unmodifiableList(coinsToSpend_);
         }
       }
+
       /**
        * <code>
        * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -7979,6 +9116,7 @@ public final class TransferSigningRequestsOuterClass {
                 io.swisschain.sirius.vaultApi.generated.transferSigningRequests
                     .TransferSigningRequestsOuterClass.CoinToSpend.getDefaultInstance());
       }
+
       /**
        * <code>
        * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -7999,6 +9137,7 @@ public final class TransferSigningRequestsOuterClass {
                 io.swisschain.sirius.vaultApi.generated.transferSigningRequests
                     .TransferSigningRequestsOuterClass.CoinToSpend.getDefaultInstance());
       }
+
       /**
        * <code>
        * repeated .swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend coins_to_spend = 8;
@@ -8075,7 +9214,6 @@ public final class TransferSigningRequestsOuterClass {
         return coinsToSpendBuilder_;
       }
 
-      private java.lang.Object policyResult_ = "";
       /**
        * <code>string policy_result = 9;</code>
        *
@@ -8092,6 +9230,23 @@ public final class TransferSigningRequestsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string policy_result = 9;</code>
+       *
+       * @param value The policyResult to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPolicyResult(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        policyResult_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string policy_result = 9;</code>
        *
@@ -8108,32 +9263,7 @@ public final class TransferSigningRequestsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string policy_result = 9;</code>
-       *
-       * @param value The policyResult to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPolicyResult(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        policyResult_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string policy_result = 9;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearPolicyResult() {
-
-        policyResult_ = getDefaultInstance().getPolicyResult();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string policy_result = 9;</code>
        *
@@ -8151,7 +9281,18 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private java.lang.Object guardianSignature_ = "";
+      /**
+       * <code>string policy_result = 9;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearPolicyResult() {
+
+        policyResult_ = getDefaultInstance().getPolicyResult();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string guardian_signature = 10;</code>
        *
@@ -8168,6 +9309,23 @@ public final class TransferSigningRequestsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string guardian_signature = 10;</code>
+       *
+       * @param value The guardianSignature to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGuardianSignature(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        guardianSignature_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string guardian_signature = 10;</code>
        *
@@ -8184,32 +9342,7 @@ public final class TransferSigningRequestsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string guardian_signature = 10;</code>
-       *
-       * @param value The guardianSignature to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGuardianSignature(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        guardianSignature_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string guardian_signature = 10;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearGuardianSignature() {
-
-        guardianSignature_ = getDefaultInstance().getGuardianSignature();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string guardian_signature = 10;</code>
        *
@@ -8227,12 +9360,18 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Timestamp createdAt_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.Timestamp,
-              com.google.protobuf.Timestamp.Builder,
-              com.google.protobuf.TimestampOrBuilder>
-          createdAtBuilder_;
+      /**
+       * <code>string guardian_signature = 10;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearGuardianSignature() {
+
+        guardianSignature_ = getDefaultInstance().getGuardianSignature();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>.google.protobuf.Timestamp created_at = 11;</code>
        *
@@ -8241,6 +9380,7 @@ public final class TransferSigningRequestsOuterClass {
       public boolean hasCreatedAt() {
         return createdAtBuilder_ != null || createdAt_ != null;
       }
+
       /**
        * <code>.google.protobuf.Timestamp created_at = 11;</code>
        *
@@ -8255,6 +9395,7 @@ public final class TransferSigningRequestsOuterClass {
           return createdAtBuilder_.getMessage();
         }
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 11;</code> */
       public Builder setCreatedAt(com.google.protobuf.Timestamp value) {
         if (createdAtBuilder_ == null) {
@@ -8269,6 +9410,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 11;</code> */
       public Builder setCreatedAt(com.google.protobuf.Timestamp.Builder builderForValue) {
         if (createdAtBuilder_ == null) {
@@ -8280,6 +9422,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 11;</code> */
       public Builder mergeCreatedAt(com.google.protobuf.Timestamp value) {
         if (createdAtBuilder_ == null) {
@@ -8298,6 +9441,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 11;</code> */
       public Builder clearCreatedAt() {
         if (createdAtBuilder_ == null) {
@@ -8310,12 +9454,14 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 11;</code> */
       public com.google.protobuf.Timestamp.Builder getCreatedAtBuilder() {
 
         onChanged();
         return getCreatedAtFieldBuilder().getBuilder();
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 11;</code> */
       public com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder() {
         if (createdAtBuilder_ != null) {
@@ -8326,6 +9472,7 @@ public final class TransferSigningRequestsOuterClass {
               : createdAt_;
         }
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 11;</code> */
       private com.google.protobuf.SingleFieldBuilderV3<
               com.google.protobuf.Timestamp,
@@ -8344,12 +9491,6 @@ public final class TransferSigningRequestsOuterClass {
         return createdAtBuilder_;
       }
 
-      private com.google.protobuf.Timestamp updatedAt_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.Timestamp,
-              com.google.protobuf.Timestamp.Builder,
-              com.google.protobuf.TimestampOrBuilder>
-          updatedAtBuilder_;
       /**
        * <code>.google.protobuf.Timestamp updated_at = 12;</code>
        *
@@ -8475,16 +9616,38 @@ public final class TransferSigningRequestsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest)
     }
+  }
 
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest)
+  /** Protobuf type {@code swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend} */
+  public static final class CoinToSpend extends com.google.protobuf.GeneratedMessageV3
+      implements
+      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend)
+      CoinToSpendOrBuilder {
+    public static final int ID_FIELD_NUMBER = 1;
+    public static final int ASSET_FIELD_NUMBER = 2;
+    public static final int VALUE_FIELD_NUMBER = 3;
+    public static final int REDEEM_FIELD_NUMBER = 4;
+    public static final int ADDRESS_FIELD_NUMBER = 5;
+    private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend)
     private static final io.swisschain
             .sirius
             .vaultApi
             .generated
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
-            .TransferSigningRequest
+            .CoinToSpend
         DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<CoinToSpend> PARSER =
+        new com.google.protobuf.AbstractParser<CoinToSpend>() {
+          @java.lang.Override
+          public CoinToSpend parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new CoinToSpend(input, extensionRegistry);
+          }
+        };
 
     static {
       DEFAULT_INSTANCE =
@@ -8494,187 +9657,36 @@ public final class TransferSigningRequestsOuterClass {
               .generated
               .transferSigningRequests
               .TransferSigningRequestsOuterClass
-              .TransferSigningRequest();
+              .CoinToSpend();
     }
 
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequest
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<TransferSigningRequest> PARSER =
-        new com.google.protobuf.AbstractParser<TransferSigningRequest>() {
-          @java.lang.Override
-          public TransferSigningRequest parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new TransferSigningRequest(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<TransferSigningRequest> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<TransferSigningRequest> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequest
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  public interface CoinToSpendOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code>
-     *
-     * @return Whether the id field is set.
-     */
-    boolean hasId();
-    /**
-     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code>
-     *
-     * @return The id.
-     */
-    io.swisschain
+    private io.swisschain
             .sirius
             .vaultApi
             .generated
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .CoinId
-        getId();
-    /** <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code> */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .CoinIdOrBuilder
-        getIdOrBuilder();
-
-    /**
-     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
-     *
-     * @return Whether the asset field is set.
-     */
-    boolean hasAsset();
-    /**
-     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
-     *
-     * @return The asset.
-     */
-    io.swisschain
+        id_;
+    private io.swisschain
             .sirius
             .vaultApi
             .generated
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .BlockchainAsset
-        getAsset();
-    /**
-     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .BlockchainAssetOrBuilder
-        getAssetOrBuilder();
-
-    /**
-     * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
-     *
-     * @return Whether the value field is set.
-     */
-    boolean hasValue();
-    /**
-     * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
-     *
-     * @return The value.
-     */
-    io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal getValue();
-    /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
-    io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimalOrBuilder getValueOrBuilder();
-
-    /**
-     * <code>.google.protobuf.StringValue redeem = 4;</code>
-     *
-     * @return Whether the redeem field is set.
-     */
-    boolean hasRedeem();
-    /**
-     * <code>.google.protobuf.StringValue redeem = 4;</code>
-     *
-     * @return The redeem.
-     */
-    com.google.protobuf.StringValue getRedeem();
-    /** <code>.google.protobuf.StringValue redeem = 4;</code> */
-    com.google.protobuf.StringValueOrBuilder getRedeemOrBuilder();
-
-    /**
-     * <code>string address = 5;</code>
-     *
-     * @return The address.
-     */
-    java.lang.String getAddress();
-    /**
-     * <code>string address = 5;</code>
-     *
-     * @return The bytes for address.
-     */
-    com.google.protobuf.ByteString getAddressBytes();
-  }
-  /** Protobuf type {@code swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend} */
-  public static final class CoinToSpend extends com.google.protobuf.GeneratedMessageV3
-      implements
-      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend)
-      CoinToSpendOrBuilder {
-    private static final long serialVersionUID = 0L;
+        asset_;
+    private io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal value_;
+    private com.google.protobuf.StringValue redeem_;
+    private volatile java.lang.Object address_;
+    private byte memoizedIsInitialized = -1;
     // Use CoinToSpend.newBuilder() to construct.
     private CoinToSpend(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private CoinToSpend() {
       address_ = "";
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new CoinToSpend();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private CoinToSpend(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -8812,368 +9824,6 @@ public final class TransferSigningRequestsOuterClass {
           .transferSigningRequests
           .TransferSigningRequestsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinToSpend_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinToSpend_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .CoinToSpend
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .CoinToSpend
-                  .Builder
-                  .class);
-    }
-
-    public static final int ID_FIELD_NUMBER = 1;
-    private io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .CoinId
-        id_;
-    /**
-     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code>
-     *
-     * @return Whether the id field is set.
-     */
-    @java.lang.Override
-    public boolean hasId() {
-      return id_ != null;
-    }
-    /**
-     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code>
-     *
-     * @return The id.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .CoinId
-        getId() {
-      return id_ == null
-          ? io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-              .TransferSigningRequestsOuterClass.CoinId.getDefaultInstance()
-          : id_;
-    }
-    /** <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code> */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .CoinIdOrBuilder
-        getIdOrBuilder() {
-      return getId();
-    }
-
-    public static final int ASSET_FIELD_NUMBER = 2;
-    private io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .BlockchainAsset
-        asset_;
-    /**
-     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
-     *
-     * @return Whether the asset field is set.
-     */
-    @java.lang.Override
-    public boolean hasAsset() {
-      return asset_ != null;
-    }
-    /**
-     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
-     *
-     * @return The asset.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .BlockchainAsset
-        getAsset() {
-      return asset_ == null
-          ? io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-              .TransferSigningRequestsOuterClass.BlockchainAsset.getDefaultInstance()
-          : asset_;
-    }
-    /**
-     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .BlockchainAssetOrBuilder
-        getAssetOrBuilder() {
-      return getAsset();
-    }
-
-    public static final int VALUE_FIELD_NUMBER = 3;
-    private io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal value_;
-    /**
-     * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
-     *
-     * @return Whether the value field is set.
-     */
-    @java.lang.Override
-    public boolean hasValue() {
-      return value_ != null;
-    }
-    /**
-     * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
-     *
-     * @return The value.
-     */
-    @java.lang.Override
-    public io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal getValue() {
-      return value_ == null
-          ? io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.getDefaultInstance()
-          : value_;
-    }
-    /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
-    @java.lang.Override
-    public io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimalOrBuilder
-        getValueOrBuilder() {
-      return getValue();
-    }
-
-    public static final int REDEEM_FIELD_NUMBER = 4;
-    private com.google.protobuf.StringValue redeem_;
-    /**
-     * <code>.google.protobuf.StringValue redeem = 4;</code>
-     *
-     * @return Whether the redeem field is set.
-     */
-    @java.lang.Override
-    public boolean hasRedeem() {
-      return redeem_ != null;
-    }
-    /**
-     * <code>.google.protobuf.StringValue redeem = 4;</code>
-     *
-     * @return The redeem.
-     */
-    @java.lang.Override
-    public com.google.protobuf.StringValue getRedeem() {
-      return redeem_ == null ? com.google.protobuf.StringValue.getDefaultInstance() : redeem_;
-    }
-    /** <code>.google.protobuf.StringValue redeem = 4;</code> */
-    @java.lang.Override
-    public com.google.protobuf.StringValueOrBuilder getRedeemOrBuilder() {
-      return getRedeem();
-    }
-
-    public static final int ADDRESS_FIELD_NUMBER = 5;
-    private volatile java.lang.Object address_;
-    /**
-     * <code>string address = 5;</code>
-     *
-     * @return The address.
-     */
-    @java.lang.Override
-    public java.lang.String getAddress() {
-      java.lang.Object ref = address_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        address_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string address = 5;</code>
-     *
-     * @return The bytes for address.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getAddressBytes() {
-      java.lang.Object ref = address_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        address_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (id_ != null) {
-        output.writeMessage(1, getId());
-      }
-      if (asset_ != null) {
-        output.writeMessage(2, getAsset());
-      }
-      if (value_ != null) {
-        output.writeMessage(3, getValue());
-      }
-      if (redeem_ != null) {
-        output.writeMessage(4, getRedeem());
-      }
-      if (!getAddressBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, address_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (id_ != null) {
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, getId());
-      }
-      if (asset_ != null) {
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(2, getAsset());
-      }
-      if (value_ != null) {
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(3, getValue());
-      }
-      if (redeem_ != null) {
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(4, getRedeem());
-      }
-      if (!getAddressBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, address_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .CoinToSpend)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .CoinToSpend
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transferSigningRequests
-                      .TransferSigningRequestsOuterClass
-                      .CoinToSpend)
-                  obj;
-
-      if (hasId() != other.hasId()) return false;
-      if (hasId()) {
-        if (!getId().equals(other.getId())) return false;
-      }
-      if (hasAsset() != other.hasAsset()) return false;
-      if (hasAsset()) {
-        if (!getAsset().equals(other.getAsset())) return false;
-      }
-      if (hasValue() != other.hasValue()) return false;
-      if (hasValue()) {
-        if (!getValue().equals(other.getValue())) return false;
-      }
-      if (hasRedeem() != other.hasRedeem()) return false;
-      if (hasRedeem()) {
-        if (!getRedeem().equals(other.getRedeem())) return false;
-      }
-      if (!getAddress().equals(other.getAddress())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasId()) {
-        hash = (37 * hash) + ID_FIELD_NUMBER;
-        hash = (53 * hash) + getId().hashCode();
-      }
-      if (hasAsset()) {
-        hash = (37 * hash) + ASSET_FIELD_NUMBER;
-        hash = (53 * hash) + getAsset().hashCode();
-      }
-      if (hasValue()) {
-        hash = (37 * hash) + VALUE_FIELD_NUMBER;
-        hash = (53 * hash) + getValue().hashCode();
-      }
-      if (hasRedeem()) {
-        hash = (37 * hash) + REDEEM_FIELD_NUMBER;
-        hash = (53 * hash) + getRedeem().hashCode();
-      }
-      hash = (37 * hash) + ADDRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getAddress().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -9326,11 +9976,6 @@ public final class TransferSigningRequestsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -9347,6 +9992,382 @@ public final class TransferSigningRequestsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .CoinToSpend
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<CoinToSpend> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new CoinToSpend();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinToSpend_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .CoinToSpend
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .CoinToSpend
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code>
+     *
+     * @return Whether the id field is set.
+     */
+    @java.lang.Override
+    public boolean hasId() {
+      return id_ != null;
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code>
+     *
+     * @return The id.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .CoinId
+        getId() {
+      return id_ == null
+          ? io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+              .TransferSigningRequestsOuterClass.CoinId.getDefaultInstance()
+          : id_;
+    }
+
+    /** <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code> */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .CoinIdOrBuilder
+        getIdOrBuilder() {
+      return getId();
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
+     *
+     * @return Whether the asset field is set.
+     */
+    @java.lang.Override
+    public boolean hasAsset() {
+      return asset_ != null;
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
+     *
+     * @return The asset.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .BlockchainAsset
+        getAsset() {
+      return asset_ == null
+          ? io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+              .TransferSigningRequestsOuterClass.BlockchainAsset.getDefaultInstance()
+          : asset_;
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .BlockchainAssetOrBuilder
+        getAssetOrBuilder() {
+      return getAsset();
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
+     *
+     * @return Whether the value field is set.
+     */
+    @java.lang.Override
+    public boolean hasValue() {
+      return value_ != null;
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
+     *
+     * @return The value.
+     */
+    @java.lang.Override
+    public io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal getValue() {
+      return value_ == null
+          ? io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.getDefaultInstance()
+          : value_;
+    }
+
+    /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
+    @java.lang.Override
+    public io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimalOrBuilder
+        getValueOrBuilder() {
+      return getValue();
+    }
+
+    /**
+     * <code>.google.protobuf.StringValue redeem = 4;</code>
+     *
+     * @return Whether the redeem field is set.
+     */
+    @java.lang.Override
+    public boolean hasRedeem() {
+      return redeem_ != null;
+    }
+
+    /**
+     * <code>.google.protobuf.StringValue redeem = 4;</code>
+     *
+     * @return The redeem.
+     */
+    @java.lang.Override
+    public com.google.protobuf.StringValue getRedeem() {
+      return redeem_ == null ? com.google.protobuf.StringValue.getDefaultInstance() : redeem_;
+    }
+
+    /** <code>.google.protobuf.StringValue redeem = 4;</code> */
+    @java.lang.Override
+    public com.google.protobuf.StringValueOrBuilder getRedeemOrBuilder() {
+      return getRedeem();
+    }
+
+    /**
+     * <code>string address = 5;</code>
+     *
+     * @return The address.
+     */
+    @java.lang.Override
+    public java.lang.String getAddress() {
+      java.lang.Object ref = address_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        address_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string address = 5;</code>
+     *
+     * @return The bytes for address.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getAddressBytes() {
+      java.lang.Object ref = address_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        address_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (id_ != null) {
+        output.writeMessage(1, getId());
+      }
+      if (asset_ != null) {
+        output.writeMessage(2, getAsset());
+      }
+      if (value_ != null) {
+        output.writeMessage(3, getValue());
+      }
+      if (redeem_ != null) {
+        output.writeMessage(4, getRedeem());
+      }
+      if (!getAddressBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, address_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (id_ != null) {
+        size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, getId());
+      }
+      if (asset_ != null) {
+        size += com.google.protobuf.CodedOutputStream.computeMessageSize(2, getAsset());
+      }
+      if (value_ != null) {
+        size += com.google.protobuf.CodedOutputStream.computeMessageSize(3, getValue());
+      }
+      if (redeem_ != null) {
+        size += com.google.protobuf.CodedOutputStream.computeMessageSize(4, getRedeem());
+      }
+      if (!getAddressBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, address_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .CoinToSpend)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .CoinToSpend
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transferSigningRequests
+                      .TransferSigningRequestsOuterClass
+                      .CoinToSpend)
+                  obj;
+
+      if (hasId() != other.hasId()) return false;
+      if (hasId()) {
+        if (!getId().equals(other.getId())) return false;
+      }
+      if (hasAsset() != other.hasAsset()) return false;
+      if (hasAsset()) {
+        if (!getAsset().equals(other.getAsset())) return false;
+      }
+      if (hasValue() != other.hasValue()) return false;
+      if (hasValue()) {
+        if (!getValue().equals(other.getValue())) return false;
+      }
+      if (hasRedeem() != other.hasRedeem()) return false;
+      if (hasRedeem()) {
+        if (!getRedeem().equals(other.getRedeem())) return false;
+      }
+      if (!getAddress().equals(other.getAddress())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasId()) {
+        hash = (37 * hash) + ID_FIELD_NUMBER;
+        hash = (53 * hash) + getId().hashCode();
+      }
+      if (hasAsset()) {
+        hash = (37 * hash) + ASSET_FIELD_NUMBER;
+        hash = (53 * hash) + getAsset().hashCode();
+      }
+      if (hasValue()) {
+        hash = (37 * hash) + VALUE_FIELD_NUMBER;
+        hash = (53 * hash) + getValue().hashCode();
+      }
+      if (hasRedeem()) {
+        hash = (37 * hash) + REDEEM_FIELD_NUMBER;
+        hash = (53 * hash) + getRedeem().hashCode();
+      }
+      hash = (37 * hash) + ADDRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getAddress().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -9358,6 +10379,24 @@ public final class TransferSigningRequestsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CoinToSpend> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .CoinToSpend
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /** Protobuf type {@code swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend} */
     public static final class Builder
         extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
@@ -9370,6 +10409,95 @@ public final class TransferSigningRequestsOuterClass {
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .CoinToSpendOrBuilder {
+      private io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .CoinId
+          id_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .CoinId,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .CoinId
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .CoinIdOrBuilder>
+          idBuilder_;
+      private io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .BlockchainAsset
+          asset_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .BlockchainAsset,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .BlockchainAsset
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .BlockchainAssetOrBuilder>
+          assetBuilder_;
+      private io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal value_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal,
+              io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.Builder,
+              io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimalOrBuilder>
+          valueBuilder_;
+      private com.google.protobuf.StringValue redeem_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              com.google.protobuf.StringValue,
+              com.google.protobuf.StringValue.Builder,
+              com.google.protobuf.StringValueOrBuilder>
+          redeemBuilder_;
+      private java.lang.Object address_ = "";
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.CoinToSpend.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -9404,17 +10532,6 @@ public final class TransferSigningRequestsOuterClass {
                     .CoinToSpend
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.CoinToSpend.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -9682,38 +10799,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .CoinId
-          id_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .CoinId,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .CoinId
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .CoinIdOrBuilder>
-          idBuilder_;
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code>
        *
@@ -9722,6 +10807,7 @@ public final class TransferSigningRequestsOuterClass {
       public boolean hasId() {
         return idBuilder_ != null || id_ != null;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code>
        *
@@ -9744,6 +10830,7 @@ public final class TransferSigningRequestsOuterClass {
           return idBuilder_.getMessage();
         }
       }
+
       /** <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code> */
       public Builder setId(
           io.swisschain
@@ -9766,6 +10853,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code> */
       public Builder setId(
           io.swisschain
@@ -9786,6 +10874,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code> */
       public Builder mergeId(
           io.swisschain
@@ -9819,6 +10908,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code> */
       public Builder clearId() {
         if (idBuilder_ == null) {
@@ -9831,6 +10921,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code> */
       public io.swisschain
               .sirius
@@ -9845,6 +10936,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return getIdFieldBuilder().getBuilder();
       }
+
       /** <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code> */
       public io.swisschain
               .sirius
@@ -9863,6 +10955,7 @@ public final class TransferSigningRequestsOuterClass {
               : id_;
         }
       }
+
       /** <code>.swisschain.sirius.vaultApi.transferSigningRequests.CoinId id = 1;</code> */
       private com.google.protobuf.SingleFieldBuilderV3<
               io.swisschain
@@ -9918,38 +11011,6 @@ public final class TransferSigningRequestsOuterClass {
         return idBuilder_;
       }
 
-      private io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .BlockchainAsset
-          asset_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .BlockchainAsset,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .BlockchainAsset
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .BlockchainAssetOrBuilder>
-          assetBuilder_;
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
        *
@@ -9958,6 +11019,7 @@ public final class TransferSigningRequestsOuterClass {
       public boolean hasAsset() {
         return assetBuilder_ != null || asset_ != null;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
        *
@@ -9980,6 +11042,7 @@ public final class TransferSigningRequestsOuterClass {
           return assetBuilder_.getMessage();
         }
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
        */
@@ -10004,6 +11067,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
        */
@@ -10026,6 +11090,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
        */
@@ -10061,6 +11126,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
        */
@@ -10075,6 +11141,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
        */
@@ -10091,6 +11158,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return getAssetFieldBuilder().getBuilder();
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
        */
@@ -10111,6 +11179,7 @@ public final class TransferSigningRequestsOuterClass {
               : asset_;
         }
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset asset = 2;</code>
        */
@@ -10168,12 +11237,6 @@ public final class TransferSigningRequestsOuterClass {
         return assetBuilder_;
       }
 
-      private io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal value_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal,
-              io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.Builder,
-              io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimalOrBuilder>
-          valueBuilder_;
       /**
        * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
        *
@@ -10182,6 +11245,7 @@ public final class TransferSigningRequestsOuterClass {
       public boolean hasValue() {
         return valueBuilder_ != null || value_ != null;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code>
        *
@@ -10197,6 +11261,7 @@ public final class TransferSigningRequestsOuterClass {
           return valueBuilder_.getMessage();
         }
       }
+
       /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
       public Builder setValue(
           io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal value) {
@@ -10212,6 +11277,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
       public Builder setValue(
           io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.Builder
@@ -10225,6 +11291,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
       public Builder mergeValue(
           io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal value) {
@@ -10251,6 +11318,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
       public Builder clearValue() {
         if (valueBuilder_ == null) {
@@ -10263,6 +11331,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
       public io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.Builder
           getValueBuilder() {
@@ -10270,6 +11339,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return getValueFieldBuilder().getBuilder();
       }
+
       /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
       public io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimalOrBuilder
           getValueOrBuilder() {
@@ -10282,6 +11352,7 @@ public final class TransferSigningRequestsOuterClass {
               : value_;
         }
       }
+
       /** <code>.swisschain.sirius.vaultApi.common.BigDecimal value = 3;</code> */
       private com.google.protobuf.SingleFieldBuilderV3<
               io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal,
@@ -10300,12 +11371,6 @@ public final class TransferSigningRequestsOuterClass {
         return valueBuilder_;
       }
 
-      private com.google.protobuf.StringValue redeem_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.StringValue,
-              com.google.protobuf.StringValue.Builder,
-              com.google.protobuf.StringValueOrBuilder>
-          redeemBuilder_;
       /**
        * <code>.google.protobuf.StringValue redeem = 4;</code>
        *
@@ -10314,6 +11379,7 @@ public final class TransferSigningRequestsOuterClass {
       public boolean hasRedeem() {
         return redeemBuilder_ != null || redeem_ != null;
       }
+
       /**
        * <code>.google.protobuf.StringValue redeem = 4;</code>
        *
@@ -10326,6 +11392,7 @@ public final class TransferSigningRequestsOuterClass {
           return redeemBuilder_.getMessage();
         }
       }
+
       /** <code>.google.protobuf.StringValue redeem = 4;</code> */
       public Builder setRedeem(com.google.protobuf.StringValue value) {
         if (redeemBuilder_ == null) {
@@ -10340,6 +11407,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.StringValue redeem = 4;</code> */
       public Builder setRedeem(com.google.protobuf.StringValue.Builder builderForValue) {
         if (redeemBuilder_ == null) {
@@ -10351,6 +11419,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.StringValue redeem = 4;</code> */
       public Builder mergeRedeem(com.google.protobuf.StringValue value) {
         if (redeemBuilder_ == null) {
@@ -10367,6 +11436,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.StringValue redeem = 4;</code> */
       public Builder clearRedeem() {
         if (redeemBuilder_ == null) {
@@ -10379,12 +11449,14 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.StringValue redeem = 4;</code> */
       public com.google.protobuf.StringValue.Builder getRedeemBuilder() {
 
         onChanged();
         return getRedeemFieldBuilder().getBuilder();
       }
+
       /** <code>.google.protobuf.StringValue redeem = 4;</code> */
       public com.google.protobuf.StringValueOrBuilder getRedeemOrBuilder() {
         if (redeemBuilder_ != null) {
@@ -10393,6 +11465,7 @@ public final class TransferSigningRequestsOuterClass {
           return redeem_ == null ? com.google.protobuf.StringValue.getDefaultInstance() : redeem_;
         }
       }
+
       /** <code>.google.protobuf.StringValue redeem = 4;</code> */
       private com.google.protobuf.SingleFieldBuilderV3<
               com.google.protobuf.StringValue,
@@ -10411,7 +11484,6 @@ public final class TransferSigningRequestsOuterClass {
         return redeemBuilder_;
       }
 
-      private java.lang.Object address_ = "";
       /**
        * <code>string address = 5;</code>
        *
@@ -10428,6 +11500,23 @@ public final class TransferSigningRequestsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string address = 5;</code>
+       *
+       * @param value The address to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAddress(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        address_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string address = 5;</code>
        *
@@ -10444,32 +11533,7 @@ public final class TransferSigningRequestsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string address = 5;</code>
-       *
-       * @param value The address to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAddress(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        address_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string address = 5;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearAddress() {
-
-        address_ = getDefaultInstance().getAddress();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string address = 5;</code>
        *
@@ -10483,6 +11547,18 @@ public final class TransferSigningRequestsOuterClass {
         checkByteStringIsUtf8(value);
 
         address_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string address = 5;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearAddress() {
+
+        address_ = getDefaultInstance().getAddress();
         onChanged();
         return this;
       }
@@ -10501,16 +11577,35 @@ public final class TransferSigningRequestsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend)
     }
+  }
 
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend)
+  /** Protobuf type {@code swisschain.sirius.vaultApi.transferSigningRequests.CoinId} */
+  public static final class CoinId extends com.google.protobuf.GeneratedMessageV3
+      implements
+      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.CoinId)
+      CoinIdOrBuilder {
+    public static final int TRANSACTION_ID_FIELD_NUMBER = 1;
+    public static final int NUMBER_FIELD_NUMBER = 2;
+    private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.CoinId)
     private static final io.swisschain
             .sirius
             .vaultApi
             .generated
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
-            .CoinToSpend
+            .CoinId
         DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<CoinId> PARSER =
+        new com.google.protobuf.AbstractParser<CoinId>() {
+          @java.lang.Override
+          public CoinId parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new CoinId(input, extensionRegistry);
+          }
+        };
 
     static {
       DEFAULT_INSTANCE =
@@ -10520,104 +11615,19 @@ public final class TransferSigningRequestsOuterClass {
               .generated
               .transferSigningRequests
               .TransferSigningRequestsOuterClass
-              .CoinToSpend();
+              .CoinId();
     }
 
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .CoinToSpend
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<CoinToSpend> PARSER =
-        new com.google.protobuf.AbstractParser<CoinToSpend>() {
-          @java.lang.Override
-          public CoinToSpend parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new CoinToSpend(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<CoinToSpend> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<CoinToSpend> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .CoinToSpend
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  public interface CoinIdOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.CoinId)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>string transaction_id = 1;</code>
-     *
-     * @return The transactionId.
-     */
-    java.lang.String getTransactionId();
-    /**
-     * <code>string transaction_id = 1;</code>
-     *
-     * @return The bytes for transactionId.
-     */
-    com.google.protobuf.ByteString getTransactionIdBytes();
-
-    /**
-     * <code>int32 number = 2;</code>
-     *
-     * @return The number.
-     */
-    int getNumber();
-  }
-  /** Protobuf type {@code swisschain.sirius.vaultApi.transferSigningRequests.CoinId} */
-  public static final class CoinId extends com.google.protobuf.GeneratedMessageV3
-      implements
-      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.CoinId)
-      CoinIdOrBuilder {
-    private static final long serialVersionUID = 0L;
+    private volatile java.lang.Object transactionId_;
+    private int number_;
+    private byte memoizedIsInitialized = -1;
     // Use CoinId.newBuilder() to construct.
     private CoinId(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private CoinId() {
       transactionId_ = "";
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new CoinId();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private CoinId(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -10675,176 +11685,6 @@ public final class TransferSigningRequestsOuterClass {
           .transferSigningRequests
           .TransferSigningRequestsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinId_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinId_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .CoinId
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .CoinId
-                  .Builder
-                  .class);
-    }
-
-    public static final int TRANSACTION_ID_FIELD_NUMBER = 1;
-    private volatile java.lang.Object transactionId_;
-    /**
-     * <code>string transaction_id = 1;</code>
-     *
-     * @return The transactionId.
-     */
-    @java.lang.Override
-    public java.lang.String getTransactionId() {
-      java.lang.Object ref = transactionId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        transactionId_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string transaction_id = 1;</code>
-     *
-     * @return The bytes for transactionId.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getTransactionIdBytes() {
-      java.lang.Object ref = transactionId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        transactionId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int NUMBER_FIELD_NUMBER = 2;
-    private int number_;
-    /**
-     * <code>int32 number = 2;</code>
-     *
-     * @return The number.
-     */
-    @java.lang.Override
-    public int getNumber() {
-      return number_;
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (!getTransactionIdBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, transactionId_);
-      }
-      if (number_ != 0) {
-        output.writeInt32(2, number_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!getTransactionIdBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, transactionId_);
-      }
-      if (number_ != 0) {
-        size += com.google.protobuf.CodedOutputStream.computeInt32Size(2, number_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .CoinId)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .CoinId
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transferSigningRequests
-                      .TransferSigningRequestsOuterClass
-                      .CoinId)
-                  obj;
-
-      if (!getTransactionId().equals(other.getTransactionId())) return false;
-      if (getNumber() != other.getNumber()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TRANSACTION_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getTransactionId().hashCode();
-      hash = (37 * hash) + NUMBER_FIELD_NUMBER;
-      hash = (53 * hash) + getNumber();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -10997,11 +11837,6 @@ public final class TransferSigningRequestsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -11018,6 +11853,202 @@ public final class TransferSigningRequestsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .CoinId
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<CoinId> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new CoinId();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinId_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .CoinId
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .CoinId
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>string transaction_id = 1;</code>
+     *
+     * @return The transactionId.
+     */
+    @java.lang.Override
+    public java.lang.String getTransactionId() {
+      java.lang.Object ref = transactionId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        transactionId_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string transaction_id = 1;</code>
+     *
+     * @return The bytes for transactionId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getTransactionIdBytes() {
+      java.lang.Object ref = transactionId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        transactionId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>int32 number = 2;</code>
+     *
+     * @return The number.
+     */
+    @java.lang.Override
+    public int getNumber() {
+      return number_;
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (!getTransactionIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, transactionId_);
+      }
+      if (number_ != 0) {
+        output.writeInt32(2, number_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getTransactionIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, transactionId_);
+      }
+      if (number_ != 0) {
+        size += com.google.protobuf.CodedOutputStream.computeInt32Size(2, number_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .CoinId)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .CoinId
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transferSigningRequests
+                      .TransferSigningRequestsOuterClass
+                      .CoinId)
+                  obj;
+
+      if (!getTransactionId().equals(other.getTransactionId())) return false;
+      if (getNumber() != other.getNumber()) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + TRANSACTION_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTransactionId().hashCode();
+      hash = (37 * hash) + NUMBER_FIELD_NUMBER;
+      hash = (53 * hash) + getNumber();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -11029,6 +12060,24 @@ public final class TransferSigningRequestsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CoinId> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .CoinId
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /** Protobuf type {@code swisschain.sirius.vaultApi.transferSigningRequests.CoinId} */
     public static final class Builder
         extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
@@ -11041,6 +12090,20 @@ public final class TransferSigningRequestsOuterClass {
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .CoinIdOrBuilder {
+      private java.lang.Object transactionId_ = "";
+      private int number_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.CoinId.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -11075,17 +12138,6 @@ public final class TransferSigningRequestsOuterClass {
                     .CoinId
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.CoinId.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -11303,7 +12355,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private java.lang.Object transactionId_ = "";
       /**
        * <code>string transaction_id = 1;</code>
        *
@@ -11320,6 +12371,23 @@ public final class TransferSigningRequestsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string transaction_id = 1;</code>
+       *
+       * @param value The transactionId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTransactionId(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        transactionId_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string transaction_id = 1;</code>
        *
@@ -11336,32 +12404,7 @@ public final class TransferSigningRequestsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string transaction_id = 1;</code>
-       *
-       * @param value The transactionId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTransactionId(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        transactionId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string transaction_id = 1;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearTransactionId() {
-
-        transactionId_ = getDefaultInstance().getTransactionId();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string transaction_id = 1;</code>
        *
@@ -11379,7 +12422,18 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private int number_;
+      /**
+       * <code>string transaction_id = 1;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearTransactionId() {
+
+        transactionId_ = getDefaultInstance().getTransactionId();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>int32 number = 2;</code>
        *
@@ -11427,16 +12481,35 @@ public final class TransferSigningRequestsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transferSigningRequests.CoinId)
     }
+  }
 
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.CoinId)
+  /** Protobuf type {@code swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset} */
+  public static final class BlockchainAsset extends com.google.protobuf.GeneratedMessageV3
+      implements
+      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset)
+      BlockchainAssetOrBuilder {
+    public static final int ID_FIELD_NUMBER = 1;
+    public static final int ACCURACY_FIELD_NUMBER = 2;
+    private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset)
     private static final io.swisschain
             .sirius
             .vaultApi
             .generated
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
-            .CoinId
+            .BlockchainAsset
         DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<BlockchainAsset> PARSER =
+        new com.google.protobuf.AbstractParser<BlockchainAsset>() {
+          @java.lang.Override
+          public BlockchainAsset parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new BlockchainAsset(input, extensionRegistry);
+          }
+        };
 
     static {
       DEFAULT_INSTANCE =
@@ -11446,120 +12519,24 @@ public final class TransferSigningRequestsOuterClass {
               .generated
               .transferSigningRequests
               .TransferSigningRequestsOuterClass
-              .CoinId();
+              .BlockchainAsset();
     }
 
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .CoinId
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<CoinId> PARSER =
-        new com.google.protobuf.AbstractParser<CoinId>() {
-          @java.lang.Override
-          public CoinId parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new CoinId(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<CoinId> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<CoinId> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .CoinId
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  public interface BlockchainAssetOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
-     *
-     * @return Whether the id field is set.
-     */
-    boolean hasId();
-    /**
-     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
-     *
-     * @return The id.
-     */
-    io.swisschain
+    private io.swisschain
             .sirius
             .vaultApi
             .generated
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .BlockchainAssetId
-        getId();
-    /**
-     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .BlockchainAssetIdOrBuilder
-        getIdOrBuilder();
-
-    /**
-     * <code>int32 accuracy = 2;</code>
-     *
-     * @return The accuracy.
-     */
-    int getAccuracy();
-  }
-  /** Protobuf type {@code swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset} */
-  public static final class BlockchainAsset extends com.google.protobuf.GeneratedMessageV3
-      implements
-      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset)
-      BlockchainAssetOrBuilder {
-    private static final long serialVersionUID = 0L;
+        id_;
+    private int accuracy_;
+    private byte memoizedIsInitialized = -1;
     // Use BlockchainAsset.newBuilder() to construct.
     private BlockchainAsset(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private BlockchainAsset() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new BlockchainAsset();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private BlockchainAsset(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -11636,196 +12613,6 @@ public final class TransferSigningRequestsOuterClass {
           .transferSigningRequests
           .TransferSigningRequestsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAsset_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAsset_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .BlockchainAsset
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .BlockchainAsset
-                  .Builder
-                  .class);
-    }
-
-    public static final int ID_FIELD_NUMBER = 1;
-    private io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .BlockchainAssetId
-        id_;
-    /**
-     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
-     *
-     * @return Whether the id field is set.
-     */
-    @java.lang.Override
-    public boolean hasId() {
-      return id_ != null;
-    }
-    /**
-     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
-     *
-     * @return The id.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .BlockchainAssetId
-        getId() {
-      return id_ == null
-          ? io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-              .TransferSigningRequestsOuterClass.BlockchainAssetId.getDefaultInstance()
-          : id_;
-    }
-    /**
-     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .BlockchainAssetIdOrBuilder
-        getIdOrBuilder() {
-      return getId();
-    }
-
-    public static final int ACCURACY_FIELD_NUMBER = 2;
-    private int accuracy_;
-    /**
-     * <code>int32 accuracy = 2;</code>
-     *
-     * @return The accuracy.
-     */
-    @java.lang.Override
-    public int getAccuracy() {
-      return accuracy_;
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (id_ != null) {
-        output.writeMessage(1, getId());
-      }
-      if (accuracy_ != 0) {
-        output.writeInt32(2, accuracy_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (id_ != null) {
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, getId());
-      }
-      if (accuracy_ != 0) {
-        size += com.google.protobuf.CodedOutputStream.computeInt32Size(2, accuracy_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .BlockchainAsset)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .BlockchainAsset
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transferSigningRequests
-                      .TransferSigningRequestsOuterClass
-                      .BlockchainAsset)
-                  obj;
-
-      if (hasId() != other.hasId()) return false;
-      if (hasId()) {
-        if (!getId().equals(other.getId())) return false;
-      }
-      if (getAccuracy() != other.getAccuracy()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasId()) {
-        hash = (37 * hash) + ID_FIELD_NUMBER;
-        hash = (53 * hash) + getId().hashCode();
-      }
-      hash = (37 * hash) + ACCURACY_FIELD_NUMBER;
-      hash = (53 * hash) + getAccuracy();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -11978,11 +12765,6 @@ public final class TransferSigningRequestsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -11999,6 +12781,216 @@ public final class TransferSigningRequestsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .BlockchainAsset
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<BlockchainAsset> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new BlockchainAsset();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAsset_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .BlockchainAsset
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .BlockchainAsset
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
+     *
+     * @return Whether the id field is set.
+     */
+    @java.lang.Override
+    public boolean hasId() {
+      return id_ != null;
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
+     *
+     * @return The id.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .BlockchainAssetId
+        getId() {
+      return id_ == null
+          ? io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+              .TransferSigningRequestsOuterClass.BlockchainAssetId.getDefaultInstance()
+          : id_;
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .BlockchainAssetIdOrBuilder
+        getIdOrBuilder() {
+      return getId();
+    }
+
+    /**
+     * <code>int32 accuracy = 2;</code>
+     *
+     * @return The accuracy.
+     */
+    @java.lang.Override
+    public int getAccuracy() {
+      return accuracy_;
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (id_ != null) {
+        output.writeMessage(1, getId());
+      }
+      if (accuracy_ != 0) {
+        output.writeInt32(2, accuracy_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (id_ != null) {
+        size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, getId());
+      }
+      if (accuracy_ != 0) {
+        size += com.google.protobuf.CodedOutputStream.computeInt32Size(2, accuracy_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .BlockchainAsset)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .BlockchainAsset
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transferSigningRequests
+                      .TransferSigningRequestsOuterClass
+                      .BlockchainAsset)
+                  obj;
+
+      if (hasId() != other.hasId()) return false;
+      if (hasId()) {
+        if (!getId().equals(other.getId())) return false;
+      }
+      if (getAccuracy() != other.getAccuracy()) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasId()) {
+        hash = (37 * hash) + ID_FIELD_NUMBER;
+        hash = (53 * hash) + getId().hashCode();
+      }
+      hash = (37 * hash) + ACCURACY_FIELD_NUMBER;
+      hash = (53 * hash) + getAccuracy();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -12010,6 +13002,24 @@ public final class TransferSigningRequestsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<BlockchainAsset> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .BlockchainAsset
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /** Protobuf type {@code swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset} */
     public static final class Builder
         extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
@@ -12022,6 +13032,51 @@ public final class TransferSigningRequestsOuterClass {
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .BlockchainAssetOrBuilder {
+      private io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .BlockchainAssetId
+          id_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .BlockchainAssetId,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .BlockchainAssetId
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .BlockchainAssetIdOrBuilder>
+          idBuilder_;
+      private int accuracy_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.BlockchainAsset.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -12056,17 +13111,6 @@ public final class TransferSigningRequestsOuterClass {
                     .BlockchainAsset
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.BlockchainAsset.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -12292,38 +13336,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .BlockchainAssetId
-          id_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .BlockchainAssetId,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .BlockchainAssetId
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .BlockchainAssetIdOrBuilder>
-          idBuilder_;
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
        *
@@ -12332,6 +13344,7 @@ public final class TransferSigningRequestsOuterClass {
       public boolean hasId() {
         return idBuilder_ != null || id_ != null;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
        *
@@ -12354,6 +13367,7 @@ public final class TransferSigningRequestsOuterClass {
           return idBuilder_.getMessage();
         }
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
        */
@@ -12378,6 +13392,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
        */
@@ -12400,6 +13415,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
        */
@@ -12435,6 +13451,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
        */
@@ -12449,6 +13466,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
        */
@@ -12465,6 +13483,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return getIdFieldBuilder().getBuilder();
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
        */
@@ -12485,6 +13504,7 @@ public final class TransferSigningRequestsOuterClass {
               : id_;
         }
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId id = 1;</code>
        */
@@ -12542,7 +13562,6 @@ public final class TransferSigningRequestsOuterClass {
         return idBuilder_;
       }
 
-      private int accuracy_;
       /**
        * <code>int32 accuracy = 2;</code>
        *
@@ -12590,16 +13609,35 @@ public final class TransferSigningRequestsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset)
     }
+  }
 
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset)
+  /** Protobuf type {@code swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId} */
+  public static final class BlockchainAssetId extends com.google.protobuf.GeneratedMessageV3
+      implements
+      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId)
+      BlockchainAssetIdOrBuilder {
+    public static final int SYMBOL_FIELD_NUMBER = 1;
+    public static final int ADDRESS_FIELD_NUMBER = 2;
+    private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId)
     private static final io.swisschain
             .sirius
             .vaultApi
             .generated
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
-            .BlockchainAsset
+            .BlockchainAssetId
         DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<BlockchainAssetId> PARSER =
+        new com.google.protobuf.AbstractParser<BlockchainAssetId>() {
+          @java.lang.Override
+          public BlockchainAssetId parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new BlockchainAssetId(input, extensionRegistry);
+          }
+        };
 
     static {
       DEFAULT_INSTANCE =
@@ -12609,112 +13647,19 @@ public final class TransferSigningRequestsOuterClass {
               .generated
               .transferSigningRequests
               .TransferSigningRequestsOuterClass
-              .BlockchainAsset();
+              .BlockchainAssetId();
     }
 
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .BlockchainAsset
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<BlockchainAsset> PARSER =
-        new com.google.protobuf.AbstractParser<BlockchainAsset>() {
-          @java.lang.Override
-          public BlockchainAsset parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new BlockchainAsset(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<BlockchainAsset> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<BlockchainAsset> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .BlockchainAsset
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  public interface BlockchainAssetIdOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>string symbol = 1;</code>
-     *
-     * @return The symbol.
-     */
-    java.lang.String getSymbol();
-    /**
-     * <code>string symbol = 1;</code>
-     *
-     * @return The bytes for symbol.
-     */
-    com.google.protobuf.ByteString getSymbolBytes();
-
-    /**
-     * <code>.google.protobuf.StringValue address = 2;</code>
-     *
-     * @return Whether the address field is set.
-     */
-    boolean hasAddress();
-    /**
-     * <code>.google.protobuf.StringValue address = 2;</code>
-     *
-     * @return The address.
-     */
-    com.google.protobuf.StringValue getAddress();
-    /** <code>.google.protobuf.StringValue address = 2;</code> */
-    com.google.protobuf.StringValueOrBuilder getAddressOrBuilder();
-  }
-  /** Protobuf type {@code swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId} */
-  public static final class BlockchainAssetId extends com.google.protobuf.GeneratedMessageV3
-      implements
-      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId)
-      BlockchainAssetIdOrBuilder {
-    private static final long serialVersionUID = 0L;
+    private volatile java.lang.Object symbol_;
+    private com.google.protobuf.StringValue address_;
+    private byte memoizedIsInitialized = -1;
     // Use BlockchainAssetId.newBuilder() to construct.
     private BlockchainAssetId(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private BlockchainAssetId() {
       symbol_ = "";
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new BlockchainAssetId();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private BlockchainAssetId(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -12782,195 +13727,6 @@ public final class TransferSigningRequestsOuterClass {
           .transferSigningRequests
           .TransferSigningRequestsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAssetId_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAssetId_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .BlockchainAssetId
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .BlockchainAssetId
-                  .Builder
-                  .class);
-    }
-
-    public static final int SYMBOL_FIELD_NUMBER = 1;
-    private volatile java.lang.Object symbol_;
-    /**
-     * <code>string symbol = 1;</code>
-     *
-     * @return The symbol.
-     */
-    @java.lang.Override
-    public java.lang.String getSymbol() {
-      java.lang.Object ref = symbol_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        symbol_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string symbol = 1;</code>
-     *
-     * @return The bytes for symbol.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getSymbolBytes() {
-      java.lang.Object ref = symbol_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        symbol_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int ADDRESS_FIELD_NUMBER = 2;
-    private com.google.protobuf.StringValue address_;
-    /**
-     * <code>.google.protobuf.StringValue address = 2;</code>
-     *
-     * @return Whether the address field is set.
-     */
-    @java.lang.Override
-    public boolean hasAddress() {
-      return address_ != null;
-    }
-    /**
-     * <code>.google.protobuf.StringValue address = 2;</code>
-     *
-     * @return The address.
-     */
-    @java.lang.Override
-    public com.google.protobuf.StringValue getAddress() {
-      return address_ == null ? com.google.protobuf.StringValue.getDefaultInstance() : address_;
-    }
-    /** <code>.google.protobuf.StringValue address = 2;</code> */
-    @java.lang.Override
-    public com.google.protobuf.StringValueOrBuilder getAddressOrBuilder() {
-      return getAddress();
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (!getSymbolBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, symbol_);
-      }
-      if (address_ != null) {
-        output.writeMessage(2, getAddress());
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!getSymbolBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, symbol_);
-      }
-      if (address_ != null) {
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(2, getAddress());
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .BlockchainAssetId)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .BlockchainAssetId
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transferSigningRequests
-                      .TransferSigningRequestsOuterClass
-                      .BlockchainAssetId)
-                  obj;
-
-      if (!getSymbol().equals(other.getSymbol())) return false;
-      if (hasAddress() != other.hasAddress()) return false;
-      if (hasAddress()) {
-        if (!getAddress().equals(other.getAddress())) return false;
-      }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SYMBOL_FIELD_NUMBER;
-      hash = (53 * hash) + getSymbol().hashCode();
-      if (hasAddress()) {
-        hash = (37 * hash) + ADDRESS_FIELD_NUMBER;
-        hash = (53 * hash) + getAddress().hashCode();
-      }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -13123,11 +13879,6 @@ public final class TransferSigningRequestsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -13144,6 +13895,223 @@ public final class TransferSigningRequestsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .BlockchainAssetId
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<BlockchainAssetId> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new BlockchainAssetId();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAssetId_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .BlockchainAssetId
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .BlockchainAssetId
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>string symbol = 1;</code>
+     *
+     * @return The symbol.
+     */
+    @java.lang.Override
+    public java.lang.String getSymbol() {
+      java.lang.Object ref = symbol_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        symbol_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string symbol = 1;</code>
+     *
+     * @return The bytes for symbol.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getSymbolBytes() {
+      java.lang.Object ref = symbol_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        symbol_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>.google.protobuf.StringValue address = 2;</code>
+     *
+     * @return Whether the address field is set.
+     */
+    @java.lang.Override
+    public boolean hasAddress() {
+      return address_ != null;
+    }
+
+    /**
+     * <code>.google.protobuf.StringValue address = 2;</code>
+     *
+     * @return The address.
+     */
+    @java.lang.Override
+    public com.google.protobuf.StringValue getAddress() {
+      return address_ == null ? com.google.protobuf.StringValue.getDefaultInstance() : address_;
+    }
+
+    /** <code>.google.protobuf.StringValue address = 2;</code> */
+    @java.lang.Override
+    public com.google.protobuf.StringValueOrBuilder getAddressOrBuilder() {
+      return getAddress();
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (!getSymbolBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, symbol_);
+      }
+      if (address_ != null) {
+        output.writeMessage(2, getAddress());
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getSymbolBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, symbol_);
+      }
+      if (address_ != null) {
+        size += com.google.protobuf.CodedOutputStream.computeMessageSize(2, getAddress());
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .BlockchainAssetId)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .BlockchainAssetId
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transferSigningRequests
+                      .TransferSigningRequestsOuterClass
+                      .BlockchainAssetId)
+                  obj;
+
+      if (!getSymbol().equals(other.getSymbol())) return false;
+      if (hasAddress() != other.hasAddress()) return false;
+      if (hasAddress()) {
+        if (!getAddress().equals(other.getAddress())) return false;
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SYMBOL_FIELD_NUMBER;
+      hash = (53 * hash) + getSymbol().hashCode();
+      if (hasAddress()) {
+        hash = (37 * hash) + ADDRESS_FIELD_NUMBER;
+        hash = (53 * hash) + getAddress().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -13155,6 +14123,24 @@ public final class TransferSigningRequestsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<BlockchainAssetId> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .BlockchainAssetId
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId}
      */
@@ -13169,6 +14155,25 @@ public final class TransferSigningRequestsOuterClass {
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .BlockchainAssetIdOrBuilder {
+      private java.lang.Object symbol_ = "";
+      private com.google.protobuf.StringValue address_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              com.google.protobuf.StringValue,
+              com.google.protobuf.StringValue.Builder,
+              com.google.protobuf.StringValueOrBuilder>
+          addressBuilder_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.BlockchainAssetId.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -13203,17 +14208,6 @@ public final class TransferSigningRequestsOuterClass {
                     .BlockchainAssetId
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.BlockchainAssetId.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -13440,7 +14434,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private java.lang.Object symbol_ = "";
       /**
        * <code>string symbol = 1;</code>
        *
@@ -13457,6 +14450,23 @@ public final class TransferSigningRequestsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string symbol = 1;</code>
+       *
+       * @param value The symbol to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSymbol(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        symbol_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string symbol = 1;</code>
        *
@@ -13473,32 +14483,7 @@ public final class TransferSigningRequestsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string symbol = 1;</code>
-       *
-       * @param value The symbol to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSymbol(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        symbol_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string symbol = 1;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearSymbol() {
-
-        symbol_ = getDefaultInstance().getSymbol();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string symbol = 1;</code>
        *
@@ -13516,12 +14501,18 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private com.google.protobuf.StringValue address_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.StringValue,
-              com.google.protobuf.StringValue.Builder,
-              com.google.protobuf.StringValueOrBuilder>
-          addressBuilder_;
+      /**
+       * <code>string symbol = 1;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearSymbol() {
+
+        symbol_ = getDefaultInstance().getSymbol();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>.google.protobuf.StringValue address = 2;</code>
        *
@@ -13643,143 +14634,8 @@ public final class TransferSigningRequestsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .BlockchainAssetId
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .BlockchainAssetId();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .BlockchainAssetId
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<BlockchainAssetId> PARSER =
-        new com.google.protobuf.AbstractParser<BlockchainAssetId>() {
-          @java.lang.Override
-          public BlockchainAssetId parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new BlockchainAssetId(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<BlockchainAssetId> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<BlockchainAssetId> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .BlockchainAssetId
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface ConfirmTransferSigningRequestRequestOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestRequest)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The requestId.
-     */
-    java.lang.String getRequestId();
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The bytes for requestId.
-     */
-    com.google.protobuf.ByteString getRequestIdBytes();
-
-    /**
-     * <code>int64 transfer_signing_request_id = 2;</code>
-     *
-     * @return The transferSigningRequestId.
-     */
-    long getTransferSigningRequestId();
-
-    /**
-     * <code>string transaction_id = 4;</code>
-     *
-     * @return The transactionId.
-     */
-    java.lang.String getTransactionId();
-    /**
-     * <code>string transaction_id = 4;</code>
-     *
-     * @return The bytes for transactionId.
-     */
-    com.google.protobuf.ByteString getTransactionIdBytes();
-
-    /**
-     * <code>bytes signed_transaction = 5;</code>
-     *
-     * @return The signedTransaction.
-     */
-    com.google.protobuf.ByteString getSignedTransaction();
-
-    /**
-     * <code>string vault_signature = 6;</code>
-     *
-     * @return The vaultSignature.
-     */
-    java.lang.String getVaultSignature();
-    /**
-     * <code>string vault_signature = 6;</code>
-     *
-     * @return The bytes for vaultSignature.
-     */
-    com.google.protobuf.ByteString getVaultSignatureBytes();
-
-    /**
-     * <code>string host_process_id = 7;</code>
-     *
-     * @return The hostProcessId.
-     */
-    java.lang.String getHostProcessId();
-    /**
-     * <code>string host_process_id = 7;</code>
-     *
-     * @return The bytes for hostProcessId.
-     */
-    com.google.protobuf.ByteString getHostProcessIdBytes();
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestRequest}
@@ -13789,30 +14645,62 @@ public final class TransferSigningRequestsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestRequest)
       ConfirmTransferSigningRequestRequestOrBuilder {
+    public static final int REQUEST_ID_FIELD_NUMBER = 1;
+    public static final int TRANSFER_SIGNING_REQUEST_ID_FIELD_NUMBER = 2;
+    public static final int TRANSACTION_ID_FIELD_NUMBER = 4;
+    public static final int SIGNED_TRANSACTION_FIELD_NUMBER = 5;
+    public static final int VAULT_SIGNATURE_FIELD_NUMBER = 6;
+    public static final int HOST_PROCESS_ID_FIELD_NUMBER = 7;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestRequest)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestRequest
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<ConfirmTransferSigningRequestRequest> PARSER =
+        new com.google.protobuf.AbstractParser<ConfirmTransferSigningRequestRequest>() {
+          @java.lang.Override
+          public ConfirmTransferSigningRequestRequest parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new ConfirmTransferSigningRequestRequest(input, extensionRegistry);
+          }
+        };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .ConfirmTransferSigningRequestRequest();
+    }
+
+    private volatile java.lang.Object requestId_;
+    private long transferSigningRequestId_;
+    private volatile java.lang.Object transactionId_;
+    private com.google.protobuf.ByteString signedTransaction_;
+    private volatile java.lang.Object vaultSignature_;
+    private volatile java.lang.Object hostProcessId_;
+    private byte memoizedIsInitialized = -1;
     // Use ConfirmTransferSigningRequestRequest.newBuilder() to construct.
     private ConfirmTransferSigningRequestRequest(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private ConfirmTransferSigningRequestRequest() {
       requestId_ = "";
       transactionId_ = "";
       signedTransaction_ = com.google.protobuf.ByteString.EMPTY;
       vaultSignature_ = "";
       hostProcessId_ = "";
-    }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new ConfirmTransferSigningRequestRequest();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
     }
 
     private ConfirmTransferSigningRequestRequest(
@@ -13898,336 +14786,6 @@ public final class TransferSigningRequestsOuterClass {
           .transferSigningRequests
           .TransferSigningRequestsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestRequest_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestRequest_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .ConfirmTransferSigningRequestRequest
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .ConfirmTransferSigningRequestRequest
-                  .Builder
-                  .class);
-    }
-
-    public static final int REQUEST_ID_FIELD_NUMBER = 1;
-    private volatile java.lang.Object requestId_;
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The requestId.
-     */
-    @java.lang.Override
-    public java.lang.String getRequestId() {
-      java.lang.Object ref = requestId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        requestId_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The bytes for requestId.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getRequestIdBytes() {
-      java.lang.Object ref = requestId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        requestId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int TRANSFER_SIGNING_REQUEST_ID_FIELD_NUMBER = 2;
-    private long transferSigningRequestId_;
-    /**
-     * <code>int64 transfer_signing_request_id = 2;</code>
-     *
-     * @return The transferSigningRequestId.
-     */
-    @java.lang.Override
-    public long getTransferSigningRequestId() {
-      return transferSigningRequestId_;
-    }
-
-    public static final int TRANSACTION_ID_FIELD_NUMBER = 4;
-    private volatile java.lang.Object transactionId_;
-    /**
-     * <code>string transaction_id = 4;</code>
-     *
-     * @return The transactionId.
-     */
-    @java.lang.Override
-    public java.lang.String getTransactionId() {
-      java.lang.Object ref = transactionId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        transactionId_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string transaction_id = 4;</code>
-     *
-     * @return The bytes for transactionId.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getTransactionIdBytes() {
-      java.lang.Object ref = transactionId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        transactionId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int SIGNED_TRANSACTION_FIELD_NUMBER = 5;
-    private com.google.protobuf.ByteString signedTransaction_;
-    /**
-     * <code>bytes signed_transaction = 5;</code>
-     *
-     * @return The signedTransaction.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getSignedTransaction() {
-      return signedTransaction_;
-    }
-
-    public static final int VAULT_SIGNATURE_FIELD_NUMBER = 6;
-    private volatile java.lang.Object vaultSignature_;
-    /**
-     * <code>string vault_signature = 6;</code>
-     *
-     * @return The vaultSignature.
-     */
-    @java.lang.Override
-    public java.lang.String getVaultSignature() {
-      java.lang.Object ref = vaultSignature_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        vaultSignature_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string vault_signature = 6;</code>
-     *
-     * @return The bytes for vaultSignature.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getVaultSignatureBytes() {
-      java.lang.Object ref = vaultSignature_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        vaultSignature_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int HOST_PROCESS_ID_FIELD_NUMBER = 7;
-    private volatile java.lang.Object hostProcessId_;
-    /**
-     * <code>string host_process_id = 7;</code>
-     *
-     * @return The hostProcessId.
-     */
-    @java.lang.Override
-    public java.lang.String getHostProcessId() {
-      java.lang.Object ref = hostProcessId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        hostProcessId_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string host_process_id = 7;</code>
-     *
-     * @return The bytes for hostProcessId.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getHostProcessIdBytes() {
-      java.lang.Object ref = hostProcessId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        hostProcessId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (!getRequestIdBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, requestId_);
-      }
-      if (transferSigningRequestId_ != 0L) {
-        output.writeInt64(2, transferSigningRequestId_);
-      }
-      if (!getTransactionIdBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, transactionId_);
-      }
-      if (!signedTransaction_.isEmpty()) {
-        output.writeBytes(5, signedTransaction_);
-      }
-      if (!getVaultSignatureBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, vaultSignature_);
-      }
-      if (!getHostProcessIdBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, hostProcessId_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!getRequestIdBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, requestId_);
-      }
-      if (transferSigningRequestId_ != 0L) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeInt64Size(2, transferSigningRequestId_);
-      }
-      if (!getTransactionIdBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, transactionId_);
-      }
-      if (!signedTransaction_.isEmpty()) {
-        size += com.google.protobuf.CodedOutputStream.computeBytesSize(5, signedTransaction_);
-      }
-      if (!getVaultSignatureBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, vaultSignature_);
-      }
-      if (!getHostProcessIdBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, hostProcessId_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .ConfirmTransferSigningRequestRequest)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .ConfirmTransferSigningRequestRequest
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transferSigningRequests
-                      .TransferSigningRequestsOuterClass
-                      .ConfirmTransferSigningRequestRequest)
-                  obj;
-
-      if (!getRequestId().equals(other.getRequestId())) return false;
-      if (getTransferSigningRequestId() != other.getTransferSigningRequestId()) return false;
-      if (!getTransactionId().equals(other.getTransactionId())) return false;
-      if (!getSignedTransaction().equals(other.getSignedTransaction())) return false;
-      if (!getVaultSignature().equals(other.getVaultSignature())) return false;
-      if (!getHostProcessId().equals(other.getHostProcessId())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REQUEST_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRequestId().hashCode();
-      hash = (37 * hash) + TRANSFER_SIGNING_REQUEST_ID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(getTransferSigningRequestId());
-      hash = (37 * hash) + TRANSACTION_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getTransactionId().hashCode();
-      hash = (37 * hash) + SIGNED_TRANSACTION_FIELD_NUMBER;
-      hash = (53 * hash) + getSignedTransaction().hashCode();
-      hash = (37 * hash) + VAULT_SIGNATURE_FIELD_NUMBER;
-      hash = (53 * hash) + getVaultSignature().hashCode();
-      hash = (37 * hash) + HOST_PROCESS_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getHostProcessId().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -14380,11 +14938,6 @@ public final class TransferSigningRequestsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -14401,6 +14954,357 @@ public final class TransferSigningRequestsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestRequest
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<ConfirmTransferSigningRequestRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new ConfirmTransferSigningRequestRequest();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .ConfirmTransferSigningRequestRequest
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .ConfirmTransferSigningRequestRequest
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The requestId.
+     */
+    @java.lang.Override
+    public java.lang.String getRequestId() {
+      java.lang.Object ref = requestId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        requestId_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The bytes for requestId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getRequestIdBytes() {
+      java.lang.Object ref = requestId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        requestId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>int64 transfer_signing_request_id = 2;</code>
+     *
+     * @return The transferSigningRequestId.
+     */
+    @java.lang.Override
+    public long getTransferSigningRequestId() {
+      return transferSigningRequestId_;
+    }
+
+    /**
+     * <code>string transaction_id = 4;</code>
+     *
+     * @return The transactionId.
+     */
+    @java.lang.Override
+    public java.lang.String getTransactionId() {
+      java.lang.Object ref = transactionId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        transactionId_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string transaction_id = 4;</code>
+     *
+     * @return The bytes for transactionId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getTransactionIdBytes() {
+      java.lang.Object ref = transactionId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        transactionId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>bytes signed_transaction = 5;</code>
+     *
+     * @return The signedTransaction.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getSignedTransaction() {
+      return signedTransaction_;
+    }
+
+    /**
+     * <code>string vault_signature = 6;</code>
+     *
+     * @return The vaultSignature.
+     */
+    @java.lang.Override
+    public java.lang.String getVaultSignature() {
+      java.lang.Object ref = vaultSignature_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        vaultSignature_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string vault_signature = 6;</code>
+     *
+     * @return The bytes for vaultSignature.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getVaultSignatureBytes() {
+      java.lang.Object ref = vaultSignature_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        vaultSignature_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>string host_process_id = 7;</code>
+     *
+     * @return The hostProcessId.
+     */
+    @java.lang.Override
+    public java.lang.String getHostProcessId() {
+      java.lang.Object ref = hostProcessId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        hostProcessId_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string host_process_id = 7;</code>
+     *
+     * @return The bytes for hostProcessId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getHostProcessIdBytes() {
+      java.lang.Object ref = hostProcessId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        hostProcessId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (!getRequestIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, requestId_);
+      }
+      if (transferSigningRequestId_ != 0L) {
+        output.writeInt64(2, transferSigningRequestId_);
+      }
+      if (!getTransactionIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, transactionId_);
+      }
+      if (!signedTransaction_.isEmpty()) {
+        output.writeBytes(5, signedTransaction_);
+      }
+      if (!getVaultSignatureBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, vaultSignature_);
+      }
+      if (!getHostProcessIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, hostProcessId_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getRequestIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, requestId_);
+      }
+      if (transferSigningRequestId_ != 0L) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeInt64Size(2, transferSigningRequestId_);
+      }
+      if (!getTransactionIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, transactionId_);
+      }
+      if (!signedTransaction_.isEmpty()) {
+        size += com.google.protobuf.CodedOutputStream.computeBytesSize(5, signedTransaction_);
+      }
+      if (!getVaultSignatureBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, vaultSignature_);
+      }
+      if (!getHostProcessIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, hostProcessId_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .ConfirmTransferSigningRequestRequest)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .ConfirmTransferSigningRequestRequest
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transferSigningRequests
+                      .TransferSigningRequestsOuterClass
+                      .ConfirmTransferSigningRequestRequest)
+                  obj;
+
+      if (!getRequestId().equals(other.getRequestId())) return false;
+      if (getTransferSigningRequestId() != other.getTransferSigningRequestId()) return false;
+      if (!getTransactionId().equals(other.getTransactionId())) return false;
+      if (!getSignedTransaction().equals(other.getSignedTransaction())) return false;
+      if (!getVaultSignature().equals(other.getVaultSignature())) return false;
+      if (!getHostProcessId().equals(other.getHostProcessId())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + REQUEST_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRequestId().hashCode();
+      hash = (37 * hash) + TRANSFER_SIGNING_REQUEST_ID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(getTransferSigningRequestId());
+      hash = (37 * hash) + TRANSACTION_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTransactionId().hashCode();
+      hash = (37 * hash) + SIGNED_TRANSACTION_FIELD_NUMBER;
+      hash = (53 * hash) + getSignedTransaction().hashCode();
+      hash = (37 * hash) + VAULT_SIGNATURE_FIELD_NUMBER;
+      hash = (53 * hash) + getVaultSignature().hashCode();
+      hash = (37 * hash) + HOST_PROCESS_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getHostProcessId().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -14412,6 +15316,24 @@ public final class TransferSigningRequestsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ConfirmTransferSigningRequestRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestRequest
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestRequest}
@@ -14427,6 +15349,25 @@ public final class TransferSigningRequestsOuterClass {
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .ConfirmTransferSigningRequestRequestOrBuilder {
+      private java.lang.Object requestId_ = "";
+      private long transferSigningRequestId_;
+      private java.lang.Object transactionId_ = "";
+      private com.google.protobuf.ByteString signedTransaction_ =
+          com.google.protobuf.ByteString.EMPTY;
+      private java.lang.Object vaultSignature_ = "";
+      private java.lang.Object hostProcessId_ = "";
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -14461,17 +15402,6 @@ public final class TransferSigningRequestsOuterClass {
                     .ConfirmTransferSigningRequestRequest
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestRequest.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -14718,7 +15648,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private java.lang.Object requestId_ = "";
       /**
        * <code>string request_id = 1;</code>
        *
@@ -14735,6 +15664,23 @@ public final class TransferSigningRequestsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string request_id = 1;</code>
+       *
+       * @param value The requestId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRequestId(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        requestId_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string request_id = 1;</code>
        *
@@ -14751,32 +15697,7 @@ public final class TransferSigningRequestsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string request_id = 1;</code>
-       *
-       * @param value The requestId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRequestId(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        requestId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string request_id = 1;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearRequestId() {
-
-        requestId_ = getDefaultInstance().getRequestId();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string request_id = 1;</code>
        *
@@ -14794,7 +15715,18 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private long transferSigningRequestId_;
+      /**
+       * <code>string request_id = 1;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearRequestId() {
+
+        requestId_ = getDefaultInstance().getRequestId();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>int64 transfer_signing_request_id = 2;</code>
        *
@@ -14804,6 +15736,7 @@ public final class TransferSigningRequestsOuterClass {
       public long getTransferSigningRequestId() {
         return transferSigningRequestId_;
       }
+
       /**
        * <code>int64 transfer_signing_request_id = 2;</code>
        *
@@ -14816,6 +15749,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>int64 transfer_signing_request_id = 2;</code>
        *
@@ -14828,7 +15762,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private java.lang.Object transactionId_ = "";
       /**
        * <code>string transaction_id = 4;</code>
        *
@@ -14845,6 +15778,23 @@ public final class TransferSigningRequestsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string transaction_id = 4;</code>
+       *
+       * @param value The transactionId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTransactionId(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        transactionId_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string transaction_id = 4;</code>
        *
@@ -14861,32 +15811,7 @@ public final class TransferSigningRequestsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string transaction_id = 4;</code>
-       *
-       * @param value The transactionId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTransactionId(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        transactionId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string transaction_id = 4;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearTransactionId() {
-
-        transactionId_ = getDefaultInstance().getTransactionId();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string transaction_id = 4;</code>
        *
@@ -14904,8 +15829,18 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private com.google.protobuf.ByteString signedTransaction_ =
-          com.google.protobuf.ByteString.EMPTY;
+      /**
+       * <code>string transaction_id = 4;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearTransactionId() {
+
+        transactionId_ = getDefaultInstance().getTransactionId();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>bytes signed_transaction = 5;</code>
        *
@@ -14915,6 +15850,7 @@ public final class TransferSigningRequestsOuterClass {
       public com.google.protobuf.ByteString getSignedTransaction() {
         return signedTransaction_;
       }
+
       /**
        * <code>bytes signed_transaction = 5;</code>
        *
@@ -14930,6 +15866,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>bytes signed_transaction = 5;</code>
        *
@@ -14942,7 +15879,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private java.lang.Object vaultSignature_ = "";
       /**
        * <code>string vault_signature = 6;</code>
        *
@@ -14959,6 +15895,23 @@ public final class TransferSigningRequestsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string vault_signature = 6;</code>
+       *
+       * @param value The vaultSignature to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVaultSignature(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        vaultSignature_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string vault_signature = 6;</code>
        *
@@ -14975,32 +15928,7 @@ public final class TransferSigningRequestsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string vault_signature = 6;</code>
-       *
-       * @param value The vaultSignature to set.
-       * @return This builder for chaining.
-       */
-      public Builder setVaultSignature(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        vaultSignature_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string vault_signature = 6;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearVaultSignature() {
-
-        vaultSignature_ = getDefaultInstance().getVaultSignature();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string vault_signature = 6;</code>
        *
@@ -15018,7 +15946,18 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private java.lang.Object hostProcessId_ = "";
+      /**
+       * <code>string vault_signature = 6;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearVaultSignature() {
+
+        vaultSignature_ = getDefaultInstance().getVaultSignature();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string host_process_id = 7;</code>
        *
@@ -15035,6 +15974,23 @@ public final class TransferSigningRequestsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string host_process_id = 7;</code>
+       *
+       * @param value The hostProcessId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHostProcessId(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        hostProcessId_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string host_process_id = 7;</code>
        *
@@ -15051,32 +16007,7 @@ public final class TransferSigningRequestsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string host_process_id = 7;</code>
-       *
-       * @param value The hostProcessId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHostProcessId(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        hostProcessId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string host_process_id = 7;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearHostProcessId() {
-
-        hostProcessId_ = getDefaultInstance().getHostProcessId();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string host_process_id = 7;</code>
        *
@@ -15090,6 +16021,18 @@ public final class TransferSigningRequestsOuterClass {
         checkByteStringIsUtf8(value);
 
         hostProcessId_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string host_process_id = 7;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearHostProcessId() {
+
+        hostProcessId_ = getDefaultInstance().getHostProcessId();
         onChanged();
         return this;
       }
@@ -15108,161 +16051,8 @@ public final class TransferSigningRequestsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestRequest)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestRequest)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestRequest
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .ConfirmTransferSigningRequestRequest();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestRequest
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<ConfirmTransferSigningRequestRequest> PARSER =
-        new com.google.protobuf.AbstractParser<ConfirmTransferSigningRequestRequest>() {
-          @java.lang.Override
-          public ConfirmTransferSigningRequestRequest parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new ConfirmTransferSigningRequestRequest(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<ConfirmTransferSigningRequestRequest> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ConfirmTransferSigningRequestRequest> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestRequest
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface ConfirmTransferSigningRequestResponseOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponse)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return Whether the response field is set.
-     */
-    boolean hasResponse();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return The response.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestResponseBody
-        getResponse();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestResponseBodyOrBuilder
-        getResponseOrBuilder();
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return Whether the error field is set.
-     */
-    boolean hasError();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return The error.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestErrorResponseBody
-        getError();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody error = 2;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestErrorResponseBodyOrBuilder
-        getErrorOrBuilder();
-
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestResponse
-            .BodyCase
-        getBodyCase();
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponse}
@@ -15272,25 +16062,50 @@ public final class TransferSigningRequestsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponse)
       ConfirmTransferSigningRequestResponseOrBuilder {
+    public static final int RESPONSE_FIELD_NUMBER = 1;
+    public static final int ERROR_FIELD_NUMBER = 2;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponse)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestResponse
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<ConfirmTransferSigningRequestResponse> PARSER =
+        new com.google.protobuf.AbstractParser<ConfirmTransferSigningRequestResponse>() {
+          @java.lang.Override
+          public ConfirmTransferSigningRequestResponse parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new ConfirmTransferSigningRequestResponse(input, extensionRegistry);
+          }
+        };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .ConfirmTransferSigningRequestResponse();
+    }
+
+    private int bodyCase_ = 0;
+    private java.lang.Object body_;
+    private byte memoizedIsInitialized = -1;
     // Use ConfirmTransferSigningRequestResponse.newBuilder() to construct.
     private ConfirmTransferSigningRequestResponse(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
 
-    private ConfirmTransferSigningRequestResponse() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new ConfirmTransferSigningRequestResponse();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
+        private ConfirmTransferSigningRequestResponse() {};
 
     private ConfirmTransferSigningRequestResponse(
         com.google.protobuf.CodedInputStream input,
@@ -15425,371 +16240,6 @@ public final class TransferSigningRequestsOuterClass {
           .transferSigningRequests
           .TransferSigningRequestsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponse_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponse_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .ConfirmTransferSigningRequestResponse
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .ConfirmTransferSigningRequestResponse
-                  .Builder
-                  .class);
-    }
-
-    private int bodyCase_ = 0;
-    private java.lang.Object body_;
-
-    public enum BodyCase
-        implements
-            com.google.protobuf.Internal.EnumLite,
-            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      RESPONSE(1),
-      ERROR(2),
-      BODY_NOT_SET(0);
-      private final int value;
-
-      private BodyCase(int value) {
-        this.value = value;
-      }
-      /**
-       * @param value The number of the enum to look for.
-       * @return The enum associated with the given number.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static BodyCase valueOf(int value) {
-        return forNumber(value);
-      }
-
-      public static BodyCase forNumber(int value) {
-        switch (value) {
-          case 1:
-            return RESPONSE;
-          case 2:
-            return ERROR;
-          case 0:
-            return BODY_NOT_SET;
-          default:
-            return null;
-        }
-      }
-
-      public int getNumber() {
-        return this.value;
-      }
-    };
-
-    public BodyCase getBodyCase() {
-      return BodyCase.forNumber(bodyCase_);
-    }
-
-    public static final int RESPONSE_FIELD_NUMBER = 1;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return Whether the response field is set.
-     */
-    @java.lang.Override
-    public boolean hasResponse() {
-      return bodyCase_ == 1;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return The response.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestResponseBody
-        getResponse() {
-      if (bodyCase_ == 1) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transferSigningRequests
-                .TransferSigningRequestsOuterClass
-                .ConfirmTransferSigningRequestResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestResponseBody
-          .getDefaultInstance();
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestResponseBodyOrBuilder
-        getResponseOrBuilder() {
-      if (bodyCase_ == 1) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transferSigningRequests
-                .TransferSigningRequestsOuterClass
-                .ConfirmTransferSigningRequestResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestResponseBody
-          .getDefaultInstance();
-    }
-
-    public static final int ERROR_FIELD_NUMBER = 2;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return Whether the error field is set.
-     */
-    @java.lang.Override
-    public boolean hasError() {
-      return bodyCase_ == 2;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return The error.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestErrorResponseBody
-        getError() {
-      if (bodyCase_ == 2) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transferSigningRequests
-                .TransferSigningRequestsOuterClass
-                .ConfirmTransferSigningRequestErrorResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestErrorResponseBody
-          .getDefaultInstance();
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody error = 2;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestErrorResponseBodyOrBuilder
-        getErrorOrBuilder() {
-      if (bodyCase_ == 2) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transferSigningRequests
-                .TransferSigningRequestsOuterClass
-                .ConfirmTransferSigningRequestErrorResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestErrorResponseBody
-          .getDefaultInstance();
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (bodyCase_ == 1) {
-        output.writeMessage(
-            1,
-            (io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .transferSigningRequests
-                    .TransferSigningRequestsOuterClass
-                    .ConfirmTransferSigningRequestResponseBody)
-                body_);
-      }
-      if (bodyCase_ == 2) {
-        output.writeMessage(
-            2,
-            (io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .transferSigningRequests
-                    .TransferSigningRequestsOuterClass
-                    .ConfirmTransferSigningRequestErrorResponseBody)
-                body_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (bodyCase_ == 1) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeMessageSize(
-                1,
-                (io.swisschain
-                        .sirius
-                        .vaultApi
-                        .generated
-                        .transferSigningRequests
-                        .TransferSigningRequestsOuterClass
-                        .ConfirmTransferSigningRequestResponseBody)
-                    body_);
-      }
-      if (bodyCase_ == 2) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeMessageSize(
-                2,
-                (io.swisschain
-                        .sirius
-                        .vaultApi
-                        .generated
-                        .transferSigningRequests
-                        .TransferSigningRequestsOuterClass
-                        .ConfirmTransferSigningRequestErrorResponseBody)
-                    body_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .ConfirmTransferSigningRequestResponse)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .ConfirmTransferSigningRequestResponse
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transferSigningRequests
-                      .TransferSigningRequestsOuterClass
-                      .ConfirmTransferSigningRequestResponse)
-                  obj;
-
-      if (!getBodyCase().equals(other.getBodyCase())) return false;
-      switch (bodyCase_) {
-        case 1:
-          if (!getResponse().equals(other.getResponse())) return false;
-          break;
-        case 2:
-          if (!getError().equals(other.getError())) return false;
-          break;
-        case 0:
-        default:
-      }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      switch (bodyCase_) {
-        case 1:
-          hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
-          hash = (53 * hash) + getResponse().hashCode();
-          break;
-        case 2:
-          hash = (37 * hash) + ERROR_FIELD_NUMBER;
-          hash = (53 * hash) + getError().hashCode();
-          break;
-        case 0:
-        default:
-      }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -15942,11 +16392,6 @@ public final class TransferSigningRequestsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -15963,6 +16408,359 @@ public final class TransferSigningRequestsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestResponse
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<ConfirmTransferSigningRequestResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new ConfirmTransferSigningRequestResponse();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .ConfirmTransferSigningRequestResponse
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .ConfirmTransferSigningRequestResponse
+                  .Builder
+                  .class);
+    }
+
+    public BodyCase getBodyCase() {
+      return BodyCase.forNumber(bodyCase_);
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return Whether the response field is set.
+     */
+    @java.lang.Override
+    public boolean hasResponse() {
+      return bodyCase_ == 1;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return The response.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestResponseBody
+        getResponse() {
+      if (bodyCase_ == 1) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transferSigningRequests
+                .TransferSigningRequestsOuterClass
+                .ConfirmTransferSigningRequestResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestResponseBody
+          .getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestResponseBodyOrBuilder
+        getResponseOrBuilder() {
+      if (bodyCase_ == 1) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transferSigningRequests
+                .TransferSigningRequestsOuterClass
+                .ConfirmTransferSigningRequestResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestResponseBody
+          .getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return Whether the error field is set.
+     */
+    @java.lang.Override
+    public boolean hasError() {
+      return bodyCase_ == 2;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return The error.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestErrorResponseBody
+        getError() {
+      if (bodyCase_ == 2) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transferSigningRequests
+                .TransferSigningRequestsOuterClass
+                .ConfirmTransferSigningRequestErrorResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestErrorResponseBody
+          .getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody error = 2;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestErrorResponseBodyOrBuilder
+        getErrorOrBuilder() {
+      if (bodyCase_ == 2) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transferSigningRequests
+                .TransferSigningRequestsOuterClass
+                .ConfirmTransferSigningRequestErrorResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestErrorResponseBody
+          .getDefaultInstance();
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (bodyCase_ == 1) {
+        output.writeMessage(
+            1,
+            (io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .transferSigningRequests
+                    .TransferSigningRequestsOuterClass
+                    .ConfirmTransferSigningRequestResponseBody)
+                body_);
+      }
+      if (bodyCase_ == 2) {
+        output.writeMessage(
+            2,
+            (io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .transferSigningRequests
+                    .TransferSigningRequestsOuterClass
+                    .ConfirmTransferSigningRequestErrorResponseBody)
+                body_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (bodyCase_ == 1) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeMessageSize(
+                1,
+                (io.swisschain
+                        .sirius
+                        .vaultApi
+                        .generated
+                        .transferSigningRequests
+                        .TransferSigningRequestsOuterClass
+                        .ConfirmTransferSigningRequestResponseBody)
+                    body_);
+      }
+      if (bodyCase_ == 2) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeMessageSize(
+                2,
+                (io.swisschain
+                        .sirius
+                        .vaultApi
+                        .generated
+                        .transferSigningRequests
+                        .TransferSigningRequestsOuterClass
+                        .ConfirmTransferSigningRequestErrorResponseBody)
+                    body_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .ConfirmTransferSigningRequestResponse)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .ConfirmTransferSigningRequestResponse
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transferSigningRequests
+                      .TransferSigningRequestsOuterClass
+                      .ConfirmTransferSigningRequestResponse)
+                  obj;
+
+      if (!getBodyCase().equals(other.getBodyCase())) return false;
+      switch (bodyCase_) {
+        case 1:
+          if (!getResponse().equals(other.getResponse())) return false;
+          break;
+        case 2:
+          if (!getError().equals(other.getError())) return false;
+          break;
+        case 0:
+        default:
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      switch (bodyCase_) {
+        case 1:
+          hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
+          hash = (53 * hash) + getResponse().hashCode();
+          break;
+        case 2:
+          hash = (37 * hash) + ERROR_FIELD_NUMBER;
+          hash = (53 * hash) + getError().hashCode();
+          break;
+        case 0:
+        default:
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -15974,6 +16772,64 @@ public final class TransferSigningRequestsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ConfirmTransferSigningRequestResponse> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestResponse
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+public enum BodyCase
+        implements
+            com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      RESPONSE(1),
+      ERROR(2),
+      BODY_NOT_SET(0);
+      private final int value;
+
+      private BodyCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static BodyCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static BodyCase forNumber(int value) {
+        switch (value) {
+          case 1:
+            return RESPONSE;
+          case 2:
+            return ERROR;
+          case 0:
+            return BODY_NOT_SET;
+          default:
+            return null;
+        }
+      }
+
+      public int getNumber() {
+        return this.value;
+      }
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponse}
@@ -15989,6 +16845,68 @@ public final class TransferSigningRequestsOuterClass {
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .ConfirmTransferSigningRequestResponseOrBuilder {
+      private int bodyCase_ = 0;
+      private java.lang.Object body_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .ConfirmTransferSigningRequestResponseBody,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .ConfirmTransferSigningRequestResponseBody
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .ConfirmTransferSigningRequestResponseBodyOrBuilder>
+          responseBuilder_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .ConfirmTransferSigningRequestErrorResponseBody,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .ConfirmTransferSigningRequestErrorResponseBody
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .ConfirmTransferSigningRequestErrorResponseBodyOrBuilder>
+          errorBuilder_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -16023,17 +16941,6 @@ public final class TransferSigningRequestsOuterClass {
                     .ConfirmTransferSigningRequestResponse
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestResponse.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -16273,9 +17180,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private int bodyCase_ = 0;
-      private java.lang.Object body_;
-
       public BodyCase getBodyCase() {
         return BodyCase.forNumber(bodyCase_);
       }
@@ -16287,30 +17191,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .ConfirmTransferSigningRequestResponseBody,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .ConfirmTransferSigningRequestResponseBody
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .ConfirmTransferSigningRequestResponseBodyOrBuilder>
-          responseBuilder_;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
@@ -16322,6 +17202,7 @@ public final class TransferSigningRequestsOuterClass {
       public boolean hasResponse() {
         return bodyCase_ == 1;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
@@ -16361,6 +17242,7 @@ public final class TransferSigningRequestsOuterClass {
               .getDefaultInstance();
         }
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
@@ -16387,6 +17269,7 @@ public final class TransferSigningRequestsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
@@ -16411,6 +17294,7 @@ public final class TransferSigningRequestsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
@@ -16463,6 +17347,7 @@ public final class TransferSigningRequestsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
@@ -16484,6 +17369,7 @@ public final class TransferSigningRequestsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
@@ -16500,6 +17386,7 @@ public final class TransferSigningRequestsOuterClass {
           getResponseBuilder() {
         return getResponseFieldBuilder().getBuilder();
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
@@ -16532,6 +17419,7 @@ public final class TransferSigningRequestsOuterClass {
               .getDefaultInstance();
         }
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody response = 1;
@@ -16610,30 +17498,6 @@ public final class TransferSigningRequestsOuterClass {
         return responseBuilder_;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .ConfirmTransferSigningRequestErrorResponseBody,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .ConfirmTransferSigningRequestErrorResponseBody
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .ConfirmTransferSigningRequestErrorResponseBodyOrBuilder>
-          errorBuilder_;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody error = 2;
@@ -16947,76 +17811,8 @@ public final class TransferSigningRequestsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponse)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponse)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestResponse
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .ConfirmTransferSigningRequestResponse();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestResponse
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<ConfirmTransferSigningRequestResponse> PARSER =
-        new com.google.protobuf.AbstractParser<ConfirmTransferSigningRequestResponse>() {
-          @java.lang.Override
-          public ConfirmTransferSigningRequestResponse parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new ConfirmTransferSigningRequestResponse(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<ConfirmTransferSigningRequestResponse> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ConfirmTransferSigningRequestResponse> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestResponse
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface ConfirmTransferSigningRequestResponseBodyOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody)
-      com.google.protobuf.MessageOrBuilder {}
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody}
@@ -17027,6 +17823,40 @@ public final class TransferSigningRequestsOuterClass {
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody)
       ConfirmTransferSigningRequestResponseBodyOrBuilder {
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestResponseBody
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<ConfirmTransferSigningRequestResponseBody>
+        PARSER =
+            new com.google.protobuf.AbstractParser<ConfirmTransferSigningRequestResponseBody>() {
+              @java.lang.Override
+              public ConfirmTransferSigningRequestResponseBody parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+                return new ConfirmTransferSigningRequestResponseBody(input, extensionRegistry);
+              }
+            };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .ConfirmTransferSigningRequestResponseBody();
+    }
+
+    private byte memoizedIsInitialized = -1;
+
     // Use ConfirmTransferSigningRequestResponseBody.newBuilder() to construct.
     private ConfirmTransferSigningRequestResponseBody(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -17034,17 +17864,6 @@ public final class TransferSigningRequestsOuterClass {
     }
 
     private ConfirmTransferSigningRequestResponseBody() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new ConfirmTransferSigningRequestResponseBody();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
 
     private ConfirmTransferSigningRequestResponseBody(
         com.google.protobuf.CodedInputStream input,
@@ -17091,109 +17910,6 @@ public final class TransferSigningRequestsOuterClass {
           .transferSigningRequests
           .TransferSigningRequestsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponseBody_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponseBody_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .ConfirmTransferSigningRequestResponseBody
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .ConfirmTransferSigningRequestResponseBody
-                  .Builder
-                  .class);
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .ConfirmTransferSigningRequestResponseBody)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .ConfirmTransferSigningRequestResponseBody
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transferSigningRequests
-                      .TransferSigningRequestsOuterClass
-                      .ConfirmTransferSigningRequestResponseBody)
-                  obj;
-
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -17346,11 +18062,6 @@ public final class TransferSigningRequestsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -17367,6 +18078,138 @@ public final class TransferSigningRequestsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestResponseBody
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<ConfirmTransferSigningRequestResponseBody> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new ConfirmTransferSigningRequestResponseBody();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .ConfirmTransferSigningRequestResponseBody
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .ConfirmTransferSigningRequestResponseBody
+                  .Builder
+                  .class);
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .ConfirmTransferSigningRequestResponseBody)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .ConfirmTransferSigningRequestResponseBody
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transferSigningRequests
+                      .TransferSigningRequestsOuterClass
+                      .ConfirmTransferSigningRequestResponseBody)
+                  obj;
+
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -17378,6 +18221,25 @@ public final class TransferSigningRequestsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ConfirmTransferSigningRequestResponseBody>
+        getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestResponseBody
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody}
@@ -17393,6 +18255,17 @@ public final class TransferSigningRequestsOuterClass {
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .ConfirmTransferSigningRequestResponseBodyOrBuilder {
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -17427,17 +18300,6 @@ public final class TransferSigningRequestsOuterClass {
                     .ConfirmTransferSigningRequestResponseBody
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestResponseBody.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -17658,117 +18520,8 @@ public final class TransferSigningRequestsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestResponseBody
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .ConfirmTransferSigningRequestResponseBody();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestResponseBody
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<ConfirmTransferSigningRequestResponseBody>
-        PARSER =
-            new com.google.protobuf.AbstractParser<ConfirmTransferSigningRequestResponseBody>() {
-              @java.lang.Override
-              public ConfirmTransferSigningRequestResponseBody parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-                return new ConfirmTransferSigningRequestResponseBody(input, extensionRegistry);
-              }
-            };
-
-    public static com.google.protobuf.Parser<ConfirmTransferSigningRequestResponseBody> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ConfirmTransferSigningRequestResponseBody>
-        getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestResponseBody
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface ConfirmTransferSigningRequestErrorResponseBodyOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for errorCode.
-     */
-    int getErrorCodeValue();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The errorCode.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestErrorResponseBody
-            .ErrorCode
-        getErrorCode();
-
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The errorMessage.
-     */
-    java.lang.String getErrorMessage();
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The bytes for errorMessage.
-     */
-    com.google.protobuf.ByteString getErrorMessageBytes();
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody}
@@ -17778,29 +18531,55 @@ public final class TransferSigningRequestsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody)
       ConfirmTransferSigningRequestErrorResponseBodyOrBuilder {
+    public static final int ERROR_CODE_FIELD_NUMBER = 1;
+    public static final int ERROR_MESSAGE_FIELD_NUMBER = 2;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestErrorResponseBody
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<ConfirmTransferSigningRequestErrorResponseBody>
+        PARSER =
+            new com.google.protobuf.AbstractParser<
+                ConfirmTransferSigningRequestErrorResponseBody>() {
+              @java.lang.Override
+              public ConfirmTransferSigningRequestErrorResponseBody parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+                return new ConfirmTransferSigningRequestErrorResponseBody(input, extensionRegistry);
+              }
+            };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .ConfirmTransferSigningRequestErrorResponseBody();
+    }
+
+    private int errorCode_;
+    private volatile java.lang.Object errorMessage_;
+    private byte memoizedIsInitialized = -1;
+
     // Use ConfirmTransferSigningRequestErrorResponseBody.newBuilder() to construct.
     private ConfirmTransferSigningRequestErrorResponseBody(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private ConfirmTransferSigningRequestErrorResponseBody() {
       errorCode_ = 0;
       errorMessage_ = "";
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new ConfirmTransferSigningRequestErrorResponseBody();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private ConfirmTransferSigningRequestErrorResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -17860,333 +18639,6 @@ public final class TransferSigningRequestsOuterClass {
           .transferSigningRequests
           .TransferSigningRequestsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestErrorResponseBody_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestErrorResponseBody_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .ConfirmTransferSigningRequestErrorResponseBody
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .ConfirmTransferSigningRequestErrorResponseBody
-                  .Builder
-                  .class);
-    }
-
-    /**
-     * Protobuf enum {@code
-     * swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody.ErrorCode}
-     */
-    public enum ErrorCode implements com.google.protobuf.ProtocolMessageEnum {
-      /** <code>UNKNOWN = 0;</code> */
-      UNKNOWN(0),
-      /** <code>INVALID_PARAMETERS = 1;</code> */
-      INVALID_PARAMETERS(1),
-      UNRECOGNIZED(-1),
-      ;
-
-      /** <code>UNKNOWN = 0;</code> */
-      public static final int UNKNOWN_VALUE = 0;
-      /** <code>INVALID_PARAMETERS = 1;</code> */
-      public static final int INVALID_PARAMETERS_VALUE = 1;
-
-      public final int getNumber() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static ErrorCode valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static ErrorCode forNumber(int value) {
-        switch (value) {
-          case 0:
-            return UNKNOWN;
-          case 1:
-            return INVALID_PARAMETERS;
-          default:
-            return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalGetValueMap() {
-        return internalValueMap;
-      }
-
-      private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
-            public ErrorCode findValueByNumber(int number) {
-              return ErrorCode.forNumber(number);
-            }
-          };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(ordinal());
-      }
-
-      public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
-        return getDescriptor();
-      }
-
-      public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
-        return io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestErrorResponseBody
-            .getDescriptor()
-            .getEnumTypes()
-            .get(0);
-      }
-
-      private static final ErrorCode[] VALUES = values();
-
-      public static ErrorCode valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int value;
-
-      private ErrorCode(int value) {
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody.ErrorCode)
-    }
-
-    public static final int ERROR_CODE_FIELD_NUMBER = 1;
-    private int errorCode_;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for errorCode.
-     */
-    @java.lang.Override
-    public int getErrorCodeValue() {
-      return errorCode_;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The errorCode.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestErrorResponseBody
-            .ErrorCode
-        getErrorCode() {
-      @SuppressWarnings("deprecation")
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .ConfirmTransferSigningRequestErrorResponseBody
-              .ErrorCode
-          result =
-              io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-                  .TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestErrorResponseBody
-                  .ErrorCode.valueOf(errorCode_);
-      return result == null
-          ? io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .ConfirmTransferSigningRequestErrorResponseBody
-              .ErrorCode
-              .UNRECOGNIZED
-          : result;
-    }
-
-    public static final int ERROR_MESSAGE_FIELD_NUMBER = 2;
-    private volatile java.lang.Object errorMessage_;
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The errorMessage.
-     */
-    @java.lang.Override
-    public java.lang.String getErrorMessage() {
-      java.lang.Object ref = errorMessage_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        errorMessage_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The bytes for errorMessage.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getErrorMessageBytes() {
-      java.lang.Object ref = errorMessage_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        errorMessage_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (errorCode_
-          != io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-              .TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestErrorResponseBody
-              .ErrorCode.UNKNOWN.getNumber()) {
-        output.writeEnum(1, errorCode_);
-      }
-      if (!getErrorMessageBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, errorMessage_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (errorCode_
-          != io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-              .TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestErrorResponseBody
-              .ErrorCode.UNKNOWN.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream.computeEnumSize(1, errorCode_);
-      }
-      if (!getErrorMessageBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, errorMessage_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .ConfirmTransferSigningRequestErrorResponseBody)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .ConfirmTransferSigningRequestErrorResponseBody
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transferSigningRequests
-                      .TransferSigningRequestsOuterClass
-                      .ConfirmTransferSigningRequestErrorResponseBody)
-                  obj;
-
-      if (errorCode_ != other.errorCode_) return false;
-      if (!getErrorMessage().equals(other.getErrorMessage())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ERROR_CODE_FIELD_NUMBER;
-      hash = (53 * hash) + errorCode_;
-      hash = (37 * hash) + ERROR_MESSAGE_FIELD_NUMBER;
-      hash = (53 * hash) + getErrorMessage().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -18339,11 +18791,6 @@ public final class TransferSigningRequestsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -18360,6 +18807,254 @@ public final class TransferSigningRequestsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestErrorResponseBody
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<ConfirmTransferSigningRequestErrorResponseBody>
+        parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new ConfirmTransferSigningRequestErrorResponseBody();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestErrorResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .ConfirmTransferSigningRequestErrorResponseBody
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .ConfirmTransferSigningRequestErrorResponseBody
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for errorCode.
+     */
+    @java.lang.Override
+    public int getErrorCodeValue() {
+      return errorCode_;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The errorCode.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestErrorResponseBody
+            .ErrorCode
+        getErrorCode() {
+      @SuppressWarnings("deprecation")
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .ConfirmTransferSigningRequestErrorResponseBody
+              .ErrorCode
+          result =
+              io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+                  .TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestErrorResponseBody
+                  .ErrorCode.valueOf(errorCode_);
+      return result == null
+          ? io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .ConfirmTransferSigningRequestErrorResponseBody
+              .ErrorCode
+              .UNRECOGNIZED
+          : result;
+    }
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The errorMessage.
+     */
+    @java.lang.Override
+    public java.lang.String getErrorMessage() {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        errorMessage_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The bytes for errorMessage.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getErrorMessageBytes() {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        errorMessage_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (errorCode_
+          != io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+              .TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestErrorResponseBody
+              .ErrorCode.UNKNOWN.getNumber()) {
+        output.writeEnum(1, errorCode_);
+      }
+      if (!getErrorMessageBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, errorMessage_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (errorCode_
+          != io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+              .TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestErrorResponseBody
+              .ErrorCode.UNKNOWN.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream.computeEnumSize(1, errorCode_);
+      }
+      if (!getErrorMessageBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, errorMessage_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .ConfirmTransferSigningRequestErrorResponseBody)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .ConfirmTransferSigningRequestErrorResponseBody
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transferSigningRequests
+                      .TransferSigningRequestsOuterClass
+                      .ConfirmTransferSigningRequestErrorResponseBody)
+                  obj;
+
+      if (errorCode_ != other.errorCode_) return false;
+      if (!getErrorMessage().equals(other.getErrorMessage())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ERROR_CODE_FIELD_NUMBER;
+      hash = (53 * hash) + errorCode_;
+      hash = (37 * hash) + ERROR_MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getErrorMessage().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -18371,6 +19066,129 @@ public final class TransferSigningRequestsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ConfirmTransferSigningRequestErrorResponseBody>
+        getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestErrorResponseBody
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+    /**
+     * Protobuf enum {@code
+     * swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody.ErrorCode}
+     */
+    public enum ErrorCode implements com.google.protobuf.ProtocolMessageEnum {
+      /** <code>UNKNOWN = 0;</code> */
+      UNKNOWN(0),
+      /** <code>INVALID_PARAMETERS = 1;</code> */
+      INVALID_PARAMETERS(1),
+      UNRECOGNIZED(-1),
+      ;
+
+      /** <code>UNKNOWN = 0;</code> */
+      public static final int UNKNOWN_VALUE = 0;
+      /** <code>INVALID_PARAMETERS = 1;</code> */
+      public static final int INVALID_PARAMETERS_VALUE = 1;
+      private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
+            public ErrorCode findValueByNumber(int number) {
+              return ErrorCode.forNumber(number);
+            }
+          };
+      private static final ErrorCode[] VALUES = values();
+      private final int value;
+
+      private ErrorCode(int value) {
+        this.value = value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static ErrorCode valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static ErrorCode forNumber(int value) {
+        switch (value) {
+          case 0:
+            return UNKNOWN;
+          case 1:
+            return INVALID_PARAMETERS;
+          default:
+            return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalGetValueMap() {
+        return internalValueMap;
+      }
+
+      public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+        return io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .ConfirmTransferSigningRequestErrorResponseBody
+            .getDescriptor()
+            .getEnumTypes()
+            .get(0);
+      }
+
+      public static ErrorCode valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(ordinal());
+      }
+
+      public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
+        return getDescriptor();
+      }
+
+      // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody.ErrorCode)
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody}
@@ -18386,6 +19204,20 @@ public final class TransferSigningRequestsOuterClass {
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .ConfirmTransferSigningRequestErrorResponseBodyOrBuilder {
+      private int errorCode_ = 0;
+      private java.lang.Object errorMessage_ = "";
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestErrorResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -18420,17 +19252,6 @@ public final class TransferSigningRequestsOuterClass {
                     .ConfirmTransferSigningRequestErrorResponseBody
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestErrorResponseBody.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -18650,7 +19471,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private int errorCode_ = 0;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -18662,6 +19482,7 @@ public final class TransferSigningRequestsOuterClass {
       public int getErrorCodeValue() {
         return errorCode_;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -18676,6 +19497,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -18718,6 +19540,7 @@ public final class TransferSigningRequestsOuterClass {
                 .UNRECOGNIZED
             : result;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -18744,6 +19567,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -18758,7 +19582,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private java.lang.Object errorMessage_ = "";
       /**
        * <code>string error_message = 2;</code>
        *
@@ -18775,6 +19598,23 @@ public final class TransferSigningRequestsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string error_message = 2;</code>
+       *
+       * @param value The errorMessage to set.
+       * @return This builder for chaining.
+       */
+      public Builder setErrorMessage(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        errorMessage_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string error_message = 2;</code>
        *
@@ -18791,32 +19631,7 @@ public final class TransferSigningRequestsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string error_message = 2;</code>
-       *
-       * @param value The errorMessage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setErrorMessage(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        errorMessage_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string error_message = 2;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearErrorMessage() {
-
-        errorMessage_ = getDefaultInstance().getErrorMessage();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string error_message = 2;</code>
        *
@@ -18830,6 +19645,18 @@ public final class TransferSigningRequestsOuterClass {
         checkByteStringIsUtf8(value);
 
         errorMessage_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string error_message = 2;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearErrorMessage() {
+
+        errorMessage_ = getDefaultInstance().getErrorMessage();
         onChanged();
         return this;
       }
@@ -18848,164 +19675,8 @@ public final class TransferSigningRequestsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestErrorResponseBody
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .ConfirmTransferSigningRequestErrorResponseBody();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestErrorResponseBody
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<ConfirmTransferSigningRequestErrorResponseBody>
-        PARSER =
-            new com.google.protobuf.AbstractParser<
-                ConfirmTransferSigningRequestErrorResponseBody>() {
-              @java.lang.Override
-              public ConfirmTransferSigningRequestErrorResponseBody parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-                return new ConfirmTransferSigningRequestErrorResponseBody(input, extensionRegistry);
-              }
-            };
-
-    public static com.google.protobuf.Parser<ConfirmTransferSigningRequestErrorResponseBody>
-        parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ConfirmTransferSigningRequestErrorResponseBody>
-        getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .ConfirmTransferSigningRequestErrorResponseBody
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface RejectTransferSigningRequestRequestOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestRequest)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The requestId.
-     */
-    java.lang.String getRequestId();
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The bytes for requestId.
-     */
-    com.google.protobuf.ByteString getRequestIdBytes();
-
-    /**
-     * <code>int64 transfer_signing_request_id = 2;</code>
-     *
-     * @return The transferSigningRequestId.
-     */
-    long getTransferSigningRequestId();
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequestRejectionReason reason = 4;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for reason.
-     */
-    int getReasonValue();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequestRejectionReason reason = 4;
-     * </code>
-     *
-     * @return The reason.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequestRejectionReason
-        getReason();
-
-    /**
-     * <code>string reason_message = 5;</code>
-     *
-     * @return The reasonMessage.
-     */
-    java.lang.String getReasonMessage();
-    /**
-     * <code>string reason_message = 5;</code>
-     *
-     * @return The bytes for reasonMessage.
-     */
-    com.google.protobuf.ByteString getReasonMessageBytes();
-
-    /**
-     * <code>string vault_signature = 6;</code>
-     *
-     * @return The vaultSignature.
-     */
-    java.lang.String getVaultSignature();
-    /**
-     * <code>string vault_signature = 6;</code>
-     *
-     * @return The bytes for vaultSignature.
-     */
-    com.google.protobuf.ByteString getVaultSignatureBytes();
-
-    /**
-     * <code>string host_process_id = 7;</code>
-     *
-     * @return The hostProcessId.
-     */
-    java.lang.String getHostProcessId();
-    /**
-     * <code>string host_process_id = 7;</code>
-     *
-     * @return The bytes for hostProcessId.
-     */
-    com.google.protobuf.ByteString getHostProcessIdBytes();
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestRequest}
@@ -19015,30 +19686,62 @@ public final class TransferSigningRequestsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestRequest)
       RejectTransferSigningRequestRequestOrBuilder {
+    public static final int REQUEST_ID_FIELD_NUMBER = 1;
+    public static final int TRANSFER_SIGNING_REQUEST_ID_FIELD_NUMBER = 2;
+    public static final int REASON_FIELD_NUMBER = 4;
+    public static final int REASON_MESSAGE_FIELD_NUMBER = 5;
+    public static final int VAULT_SIGNATURE_FIELD_NUMBER = 6;
+    public static final int HOST_PROCESS_ID_FIELD_NUMBER = 7;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestRequest)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestRequest
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<RejectTransferSigningRequestRequest> PARSER =
+        new com.google.protobuf.AbstractParser<RejectTransferSigningRequestRequest>() {
+          @java.lang.Override
+          public RejectTransferSigningRequestRequest parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new RejectTransferSigningRequestRequest(input, extensionRegistry);
+          }
+        };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .RejectTransferSigningRequestRequest();
+    }
+
+    private volatile java.lang.Object requestId_;
+    private long transferSigningRequestId_;
+    private int reason_;
+    private volatile java.lang.Object reasonMessage_;
+    private volatile java.lang.Object vaultSignature_;
+    private volatile java.lang.Object hostProcessId_;
+    private byte memoizedIsInitialized = -1;
     // Use RejectTransferSigningRequestRequest.newBuilder() to construct.
     private RejectTransferSigningRequestRequest(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private RejectTransferSigningRequestRequest() {
       requestId_ = "";
       reason_ = 0;
       reasonMessage_ = "";
       vaultSignature_ = "";
       hostProcessId_ = "";
-    }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new RejectTransferSigningRequestRequest();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
     }
 
     private RejectTransferSigningRequestRequest(
@@ -19126,383 +19829,6 @@ public final class TransferSigningRequestsOuterClass {
           .transferSigningRequests
           .TransferSigningRequestsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestRequest_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestRequest_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .RejectTransferSigningRequestRequest
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .RejectTransferSigningRequestRequest
-                  .Builder
-                  .class);
-    }
-
-    public static final int REQUEST_ID_FIELD_NUMBER = 1;
-    private volatile java.lang.Object requestId_;
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The requestId.
-     */
-    @java.lang.Override
-    public java.lang.String getRequestId() {
-      java.lang.Object ref = requestId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        requestId_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The bytes for requestId.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getRequestIdBytes() {
-      java.lang.Object ref = requestId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        requestId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int TRANSFER_SIGNING_REQUEST_ID_FIELD_NUMBER = 2;
-    private long transferSigningRequestId_;
-    /**
-     * <code>int64 transfer_signing_request_id = 2;</code>
-     *
-     * @return The transferSigningRequestId.
-     */
-    @java.lang.Override
-    public long getTransferSigningRequestId() {
-      return transferSigningRequestId_;
-    }
-
-    public static final int REASON_FIELD_NUMBER = 4;
-    private int reason_;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequestRejectionReason reason = 4;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for reason.
-     */
-    @java.lang.Override
-    public int getReasonValue() {
-      return reason_;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequestRejectionReason reason = 4;
-     * </code>
-     *
-     * @return The reason.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .TransferSigningRequestRejectionReason
-        getReason() {
-      @SuppressWarnings("deprecation")
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .TransferSigningRequestRejectionReason
-          result =
-              io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-                  .TransferSigningRequestsOuterClass.TransferSigningRequestRejectionReason.valueOf(
-                  reason_);
-      return result == null
-          ? io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .TransferSigningRequestRejectionReason
-              .UNRECOGNIZED
-          : result;
-    }
-
-    public static final int REASON_MESSAGE_FIELD_NUMBER = 5;
-    private volatile java.lang.Object reasonMessage_;
-    /**
-     * <code>string reason_message = 5;</code>
-     *
-     * @return The reasonMessage.
-     */
-    @java.lang.Override
-    public java.lang.String getReasonMessage() {
-      java.lang.Object ref = reasonMessage_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        reasonMessage_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string reason_message = 5;</code>
-     *
-     * @return The bytes for reasonMessage.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getReasonMessageBytes() {
-      java.lang.Object ref = reasonMessage_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        reasonMessage_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int VAULT_SIGNATURE_FIELD_NUMBER = 6;
-    private volatile java.lang.Object vaultSignature_;
-    /**
-     * <code>string vault_signature = 6;</code>
-     *
-     * @return The vaultSignature.
-     */
-    @java.lang.Override
-    public java.lang.String getVaultSignature() {
-      java.lang.Object ref = vaultSignature_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        vaultSignature_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string vault_signature = 6;</code>
-     *
-     * @return The bytes for vaultSignature.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getVaultSignatureBytes() {
-      java.lang.Object ref = vaultSignature_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        vaultSignature_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int HOST_PROCESS_ID_FIELD_NUMBER = 7;
-    private volatile java.lang.Object hostProcessId_;
-    /**
-     * <code>string host_process_id = 7;</code>
-     *
-     * @return The hostProcessId.
-     */
-    @java.lang.Override
-    public java.lang.String getHostProcessId() {
-      java.lang.Object ref = hostProcessId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        hostProcessId_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string host_process_id = 7;</code>
-     *
-     * @return The bytes for hostProcessId.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getHostProcessIdBytes() {
-      java.lang.Object ref = hostProcessId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        hostProcessId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (!getRequestIdBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, requestId_);
-      }
-      if (transferSigningRequestId_ != 0L) {
-        output.writeInt64(2, transferSigningRequestId_);
-      }
-      if (reason_
-          != io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-              .TransferSigningRequestsOuterClass.TransferSigningRequestRejectionReason.OTHER
-              .getNumber()) {
-        output.writeEnum(4, reason_);
-      }
-      if (!getReasonMessageBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, reasonMessage_);
-      }
-      if (!getVaultSignatureBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, vaultSignature_);
-      }
-      if (!getHostProcessIdBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, hostProcessId_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!getRequestIdBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, requestId_);
-      }
-      if (transferSigningRequestId_ != 0L) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeInt64Size(2, transferSigningRequestId_);
-      }
-      if (reason_
-          != io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-              .TransferSigningRequestsOuterClass.TransferSigningRequestRejectionReason.OTHER
-              .getNumber()) {
-        size += com.google.protobuf.CodedOutputStream.computeEnumSize(4, reason_);
-      }
-      if (!getReasonMessageBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, reasonMessage_);
-      }
-      if (!getVaultSignatureBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, vaultSignature_);
-      }
-      if (!getHostProcessIdBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, hostProcessId_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .RejectTransferSigningRequestRequest)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .RejectTransferSigningRequestRequest
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transferSigningRequests
-                      .TransferSigningRequestsOuterClass
-                      .RejectTransferSigningRequestRequest)
-                  obj;
-
-      if (!getRequestId().equals(other.getRequestId())) return false;
-      if (getTransferSigningRequestId() != other.getTransferSigningRequestId()) return false;
-      if (reason_ != other.reason_) return false;
-      if (!getReasonMessage().equals(other.getReasonMessage())) return false;
-      if (!getVaultSignature().equals(other.getVaultSignature())) return false;
-      if (!getHostProcessId().equals(other.getHostProcessId())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REQUEST_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRequestId().hashCode();
-      hash = (37 * hash) + TRANSFER_SIGNING_REQUEST_ID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(getTransferSigningRequestId());
-      hash = (37 * hash) + REASON_FIELD_NUMBER;
-      hash = (53 * hash) + reason_;
-      hash = (37 * hash) + REASON_MESSAGE_FIELD_NUMBER;
-      hash = (53 * hash) + getReasonMessage().hashCode();
-      hash = (37 * hash) + VAULT_SIGNATURE_FIELD_NUMBER;
-      hash = (53 * hash) + getVaultSignature().hashCode();
-      hash = (37 * hash) + HOST_PROCESS_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getHostProcessId().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -19655,11 +19981,6 @@ public final class TransferSigningRequestsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -19676,6 +19997,405 @@ public final class TransferSigningRequestsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestRequest
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<RejectTransferSigningRequestRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new RejectTransferSigningRequestRequest();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .RejectTransferSigningRequestRequest
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .RejectTransferSigningRequestRequest
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The requestId.
+     */
+    @java.lang.Override
+    public java.lang.String getRequestId() {
+      java.lang.Object ref = requestId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        requestId_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The bytes for requestId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getRequestIdBytes() {
+      java.lang.Object ref = requestId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        requestId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>int64 transfer_signing_request_id = 2;</code>
+     *
+     * @return The transferSigningRequestId.
+     */
+    @java.lang.Override
+    public long getTransferSigningRequestId() {
+      return transferSigningRequestId_;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequestRejectionReason reason = 4;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for reason.
+     */
+    @java.lang.Override
+    public int getReasonValue() {
+      return reason_;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequestRejectionReason reason = 4;
+     * </code>
+     *
+     * @return The reason.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .TransferSigningRequestRejectionReason
+        getReason() {
+      @SuppressWarnings("deprecation")
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .TransferSigningRequestRejectionReason
+          result =
+              io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+                  .TransferSigningRequestsOuterClass.TransferSigningRequestRejectionReason.valueOf(
+                  reason_);
+      return result == null
+          ? io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .TransferSigningRequestRejectionReason
+              .UNRECOGNIZED
+          : result;
+    }
+
+    /**
+     * <code>string reason_message = 5;</code>
+     *
+     * @return The reasonMessage.
+     */
+    @java.lang.Override
+    public java.lang.String getReasonMessage() {
+      java.lang.Object ref = reasonMessage_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        reasonMessage_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string reason_message = 5;</code>
+     *
+     * @return The bytes for reasonMessage.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getReasonMessageBytes() {
+      java.lang.Object ref = reasonMessage_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        reasonMessage_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>string vault_signature = 6;</code>
+     *
+     * @return The vaultSignature.
+     */
+    @java.lang.Override
+    public java.lang.String getVaultSignature() {
+      java.lang.Object ref = vaultSignature_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        vaultSignature_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string vault_signature = 6;</code>
+     *
+     * @return The bytes for vaultSignature.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getVaultSignatureBytes() {
+      java.lang.Object ref = vaultSignature_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        vaultSignature_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>string host_process_id = 7;</code>
+     *
+     * @return The hostProcessId.
+     */
+    @java.lang.Override
+    public java.lang.String getHostProcessId() {
+      java.lang.Object ref = hostProcessId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        hostProcessId_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string host_process_id = 7;</code>
+     *
+     * @return The bytes for hostProcessId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getHostProcessIdBytes() {
+      java.lang.Object ref = hostProcessId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        hostProcessId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (!getRequestIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, requestId_);
+      }
+      if (transferSigningRequestId_ != 0L) {
+        output.writeInt64(2, transferSigningRequestId_);
+      }
+      if (reason_
+          != io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+              .TransferSigningRequestsOuterClass.TransferSigningRequestRejectionReason.OTHER
+              .getNumber()) {
+        output.writeEnum(4, reason_);
+      }
+      if (!getReasonMessageBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, reasonMessage_);
+      }
+      if (!getVaultSignatureBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, vaultSignature_);
+      }
+      if (!getHostProcessIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, hostProcessId_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getRequestIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, requestId_);
+      }
+      if (transferSigningRequestId_ != 0L) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeInt64Size(2, transferSigningRequestId_);
+      }
+      if (reason_
+          != io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+              .TransferSigningRequestsOuterClass.TransferSigningRequestRejectionReason.OTHER
+              .getNumber()) {
+        size += com.google.protobuf.CodedOutputStream.computeEnumSize(4, reason_);
+      }
+      if (!getReasonMessageBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, reasonMessage_);
+      }
+      if (!getVaultSignatureBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, vaultSignature_);
+      }
+      if (!getHostProcessIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, hostProcessId_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .RejectTransferSigningRequestRequest)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .RejectTransferSigningRequestRequest
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transferSigningRequests
+                      .TransferSigningRequestsOuterClass
+                      .RejectTransferSigningRequestRequest)
+                  obj;
+
+      if (!getRequestId().equals(other.getRequestId())) return false;
+      if (getTransferSigningRequestId() != other.getTransferSigningRequestId()) return false;
+      if (reason_ != other.reason_) return false;
+      if (!getReasonMessage().equals(other.getReasonMessage())) return false;
+      if (!getVaultSignature().equals(other.getVaultSignature())) return false;
+      if (!getHostProcessId().equals(other.getHostProcessId())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + REQUEST_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRequestId().hashCode();
+      hash = (37 * hash) + TRANSFER_SIGNING_REQUEST_ID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(getTransferSigningRequestId());
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + reason_;
+      hash = (37 * hash) + REASON_MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getReasonMessage().hashCode();
+      hash = (37 * hash) + VAULT_SIGNATURE_FIELD_NUMBER;
+      hash = (53 * hash) + getVaultSignature().hashCode();
+      hash = (37 * hash) + HOST_PROCESS_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getHostProcessId().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -19687,6 +20407,24 @@ public final class TransferSigningRequestsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RejectTransferSigningRequestRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestRequest
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestRequest}
@@ -19702,6 +20440,24 @@ public final class TransferSigningRequestsOuterClass {
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .RejectTransferSigningRequestRequestOrBuilder {
+      private java.lang.Object requestId_ = "";
+      private long transferSigningRequestId_;
+      private int reason_ = 0;
+      private java.lang.Object reasonMessage_ = "";
+      private java.lang.Object vaultSignature_ = "";
+      private java.lang.Object hostProcessId_ = "";
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.RejectTransferSigningRequestRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -19736,17 +20492,6 @@ public final class TransferSigningRequestsOuterClass {
                     .RejectTransferSigningRequestRequest
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.RejectTransferSigningRequestRequest.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -19993,7 +20738,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private java.lang.Object requestId_ = "";
       /**
        * <code>string request_id = 1;</code>
        *
@@ -20010,6 +20754,23 @@ public final class TransferSigningRequestsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string request_id = 1;</code>
+       *
+       * @param value The requestId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRequestId(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        requestId_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string request_id = 1;</code>
        *
@@ -20026,32 +20787,7 @@ public final class TransferSigningRequestsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string request_id = 1;</code>
-       *
-       * @param value The requestId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRequestId(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        requestId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string request_id = 1;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearRequestId() {
-
-        requestId_ = getDefaultInstance().getRequestId();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string request_id = 1;</code>
        *
@@ -20069,7 +20805,18 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private long transferSigningRequestId_;
+      /**
+       * <code>string request_id = 1;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearRequestId() {
+
+        requestId_ = getDefaultInstance().getRequestId();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>int64 transfer_signing_request_id = 2;</code>
        *
@@ -20079,6 +20826,7 @@ public final class TransferSigningRequestsOuterClass {
       public long getTransferSigningRequestId() {
         return transferSigningRequestId_;
       }
+
       /**
        * <code>int64 transfer_signing_request_id = 2;</code>
        *
@@ -20091,6 +20839,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>int64 transfer_signing_request_id = 2;</code>
        *
@@ -20103,7 +20852,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private int reason_ = 0;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequestRejectionReason reason = 4;
@@ -20115,6 +20863,7 @@ public final class TransferSigningRequestsOuterClass {
       public int getReasonValue() {
         return reason_;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequestRejectionReason reason = 4;
@@ -20129,6 +20878,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequestRejectionReason reason = 4;
@@ -20168,6 +20918,7 @@ public final class TransferSigningRequestsOuterClass {
                 .UNRECOGNIZED
             : result;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequestRejectionReason reason = 4;
@@ -20193,6 +20944,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequestRejectionReason reason = 4;
@@ -20207,7 +20959,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private java.lang.Object reasonMessage_ = "";
       /**
        * <code>string reason_message = 5;</code>
        *
@@ -20224,6 +20975,23 @@ public final class TransferSigningRequestsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string reason_message = 5;</code>
+       *
+       * @param value The reasonMessage to set.
+       * @return This builder for chaining.
+       */
+      public Builder setReasonMessage(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        reasonMessage_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string reason_message = 5;</code>
        *
@@ -20240,32 +21008,7 @@ public final class TransferSigningRequestsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string reason_message = 5;</code>
-       *
-       * @param value The reasonMessage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReasonMessage(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        reasonMessage_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string reason_message = 5;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearReasonMessage() {
-
-        reasonMessage_ = getDefaultInstance().getReasonMessage();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string reason_message = 5;</code>
        *
@@ -20283,7 +21026,18 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private java.lang.Object vaultSignature_ = "";
+      /**
+       * <code>string reason_message = 5;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearReasonMessage() {
+
+        reasonMessage_ = getDefaultInstance().getReasonMessage();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string vault_signature = 6;</code>
        *
@@ -20300,6 +21054,23 @@ public final class TransferSigningRequestsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string vault_signature = 6;</code>
+       *
+       * @param value The vaultSignature to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVaultSignature(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        vaultSignature_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string vault_signature = 6;</code>
        *
@@ -20316,32 +21087,7 @@ public final class TransferSigningRequestsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string vault_signature = 6;</code>
-       *
-       * @param value The vaultSignature to set.
-       * @return This builder for chaining.
-       */
-      public Builder setVaultSignature(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        vaultSignature_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string vault_signature = 6;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearVaultSignature() {
-
-        vaultSignature_ = getDefaultInstance().getVaultSignature();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string vault_signature = 6;</code>
        *
@@ -20359,7 +21105,18 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private java.lang.Object hostProcessId_ = "";
+      /**
+       * <code>string vault_signature = 6;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearVaultSignature() {
+
+        vaultSignature_ = getDefaultInstance().getVaultSignature();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string host_process_id = 7;</code>
        *
@@ -20376,6 +21133,23 @@ public final class TransferSigningRequestsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string host_process_id = 7;</code>
+       *
+       * @param value The hostProcessId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHostProcessId(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        hostProcessId_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string host_process_id = 7;</code>
        *
@@ -20392,32 +21166,7 @@ public final class TransferSigningRequestsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string host_process_id = 7;</code>
-       *
-       * @param value The hostProcessId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHostProcessId(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        hostProcessId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string host_process_id = 7;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearHostProcessId() {
-
-        hostProcessId_ = getDefaultInstance().getHostProcessId();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string host_process_id = 7;</code>
        *
@@ -20431,6 +21180,18 @@ public final class TransferSigningRequestsOuterClass {
         checkByteStringIsUtf8(value);
 
         hostProcessId_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string host_process_id = 7;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearHostProcessId() {
+
+        hostProcessId_ = getDefaultInstance().getHostProcessId();
         onChanged();
         return this;
       }
@@ -20449,161 +21210,8 @@ public final class TransferSigningRequestsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestRequest)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestRequest)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestRequest
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .RejectTransferSigningRequestRequest();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestRequest
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<RejectTransferSigningRequestRequest> PARSER =
-        new com.google.protobuf.AbstractParser<RejectTransferSigningRequestRequest>() {
-          @java.lang.Override
-          public RejectTransferSigningRequestRequest parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new RejectTransferSigningRequestRequest(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<RejectTransferSigningRequestRequest> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<RejectTransferSigningRequestRequest> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestRequest
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface RejectTransferSigningRequestResponseOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponse)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return Whether the response field is set.
-     */
-    boolean hasResponse();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return The response.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestResponseBody
-        getResponse();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestResponseBodyOrBuilder
-        getResponseOrBuilder();
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return Whether the error field is set.
-     */
-    boolean hasError();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return The error.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestErrorResponseBody
-        getError();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody error = 2;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestErrorResponseBodyOrBuilder
-        getErrorOrBuilder();
-
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestResponse
-            .BodyCase
-        getBodyCase();
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponse}
@@ -20613,25 +21221,50 @@ public final class TransferSigningRequestsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponse)
       RejectTransferSigningRequestResponseOrBuilder {
+    public static final int RESPONSE_FIELD_NUMBER = 1;
+    public static final int ERROR_FIELD_NUMBER = 2;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponse)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestResponse
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<RejectTransferSigningRequestResponse> PARSER =
+        new com.google.protobuf.AbstractParser<RejectTransferSigningRequestResponse>() {
+          @java.lang.Override
+          public RejectTransferSigningRequestResponse parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new RejectTransferSigningRequestResponse(input, extensionRegistry);
+          }
+        };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .RejectTransferSigningRequestResponse();
+    }
+
+    private int bodyCase_ = 0;
+    private java.lang.Object body_;
+    private byte memoizedIsInitialized = -1;
     // Use RejectTransferSigningRequestResponse.newBuilder() to construct.
     private RejectTransferSigningRequestResponse(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
 
-    private RejectTransferSigningRequestResponse() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new RejectTransferSigningRequestResponse();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
+        private RejectTransferSigningRequestResponse() {};
 
     private RejectTransferSigningRequestResponse(
         com.google.protobuf.CodedInputStream input,
@@ -20766,371 +21399,6 @@ public final class TransferSigningRequestsOuterClass {
           .transferSigningRequests
           .TransferSigningRequestsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponse_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponse_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .RejectTransferSigningRequestResponse
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .RejectTransferSigningRequestResponse
-                  .Builder
-                  .class);
-    }
-
-    private int bodyCase_ = 0;
-    private java.lang.Object body_;
-
-    public enum BodyCase
-        implements
-            com.google.protobuf.Internal.EnumLite,
-            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      RESPONSE(1),
-      ERROR(2),
-      BODY_NOT_SET(0);
-      private final int value;
-
-      private BodyCase(int value) {
-        this.value = value;
-      }
-      /**
-       * @param value The number of the enum to look for.
-       * @return The enum associated with the given number.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static BodyCase valueOf(int value) {
-        return forNumber(value);
-      }
-
-      public static BodyCase forNumber(int value) {
-        switch (value) {
-          case 1:
-            return RESPONSE;
-          case 2:
-            return ERROR;
-          case 0:
-            return BODY_NOT_SET;
-          default:
-            return null;
-        }
-      }
-
-      public int getNumber() {
-        return this.value;
-      }
-    };
-
-    public BodyCase getBodyCase() {
-      return BodyCase.forNumber(bodyCase_);
-    }
-
-    public static final int RESPONSE_FIELD_NUMBER = 1;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return Whether the response field is set.
-     */
-    @java.lang.Override
-    public boolean hasResponse() {
-      return bodyCase_ == 1;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return The response.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestResponseBody
-        getResponse() {
-      if (bodyCase_ == 1) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transferSigningRequests
-                .TransferSigningRequestsOuterClass
-                .RejectTransferSigningRequestResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass.RejectTransferSigningRequestResponseBody
-          .getDefaultInstance();
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestResponseBodyOrBuilder
-        getResponseOrBuilder() {
-      if (bodyCase_ == 1) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transferSigningRequests
-                .TransferSigningRequestsOuterClass
-                .RejectTransferSigningRequestResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass.RejectTransferSigningRequestResponseBody
-          .getDefaultInstance();
-    }
-
-    public static final int ERROR_FIELD_NUMBER = 2;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return Whether the error field is set.
-     */
-    @java.lang.Override
-    public boolean hasError() {
-      return bodyCase_ == 2;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return The error.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestErrorResponseBody
-        getError() {
-      if (bodyCase_ == 2) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transferSigningRequests
-                .TransferSigningRequestsOuterClass
-                .RejectTransferSigningRequestErrorResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass.RejectTransferSigningRequestErrorResponseBody
-          .getDefaultInstance();
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody error = 2;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestErrorResponseBodyOrBuilder
-        getErrorOrBuilder() {
-      if (bodyCase_ == 2) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .transferSigningRequests
-                .TransferSigningRequestsOuterClass
-                .RejectTransferSigningRequestErrorResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass.RejectTransferSigningRequestErrorResponseBody
-          .getDefaultInstance();
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (bodyCase_ == 1) {
-        output.writeMessage(
-            1,
-            (io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .transferSigningRequests
-                    .TransferSigningRequestsOuterClass
-                    .RejectTransferSigningRequestResponseBody)
-                body_);
-      }
-      if (bodyCase_ == 2) {
-        output.writeMessage(
-            2,
-            (io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .transferSigningRequests
-                    .TransferSigningRequestsOuterClass
-                    .RejectTransferSigningRequestErrorResponseBody)
-                body_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (bodyCase_ == 1) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeMessageSize(
-                1,
-                (io.swisschain
-                        .sirius
-                        .vaultApi
-                        .generated
-                        .transferSigningRequests
-                        .TransferSigningRequestsOuterClass
-                        .RejectTransferSigningRequestResponseBody)
-                    body_);
-      }
-      if (bodyCase_ == 2) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeMessageSize(
-                2,
-                (io.swisschain
-                        .sirius
-                        .vaultApi
-                        .generated
-                        .transferSigningRequests
-                        .TransferSigningRequestsOuterClass
-                        .RejectTransferSigningRequestErrorResponseBody)
-                    body_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .RejectTransferSigningRequestResponse)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .RejectTransferSigningRequestResponse
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transferSigningRequests
-                      .TransferSigningRequestsOuterClass
-                      .RejectTransferSigningRequestResponse)
-                  obj;
-
-      if (!getBodyCase().equals(other.getBodyCase())) return false;
-      switch (bodyCase_) {
-        case 1:
-          if (!getResponse().equals(other.getResponse())) return false;
-          break;
-        case 2:
-          if (!getError().equals(other.getError())) return false;
-          break;
-        case 0:
-        default:
-      }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      switch (bodyCase_) {
-        case 1:
-          hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
-          hash = (53 * hash) + getResponse().hashCode();
-          break;
-        case 2:
-          hash = (37 * hash) + ERROR_FIELD_NUMBER;
-          hash = (53 * hash) + getError().hashCode();
-          break;
-        case 0:
-        default:
-      }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -21283,11 +21551,6 @@ public final class TransferSigningRequestsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -21304,6 +21567,359 @@ public final class TransferSigningRequestsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestResponse
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<RejectTransferSigningRequestResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new RejectTransferSigningRequestResponse();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .RejectTransferSigningRequestResponse
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .RejectTransferSigningRequestResponse
+                  .Builder
+                  .class);
+    }
+
+    public BodyCase getBodyCase() {
+      return BodyCase.forNumber(bodyCase_);
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return Whether the response field is set.
+     */
+    @java.lang.Override
+    public boolean hasResponse() {
+      return bodyCase_ == 1;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return The response.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestResponseBody
+        getResponse() {
+      if (bodyCase_ == 1) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transferSigningRequests
+                .TransferSigningRequestsOuterClass
+                .RejectTransferSigningRequestResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass.RejectTransferSigningRequestResponseBody
+          .getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestResponseBodyOrBuilder
+        getResponseOrBuilder() {
+      if (bodyCase_ == 1) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transferSigningRequests
+                .TransferSigningRequestsOuterClass
+                .RejectTransferSigningRequestResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass.RejectTransferSigningRequestResponseBody
+          .getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return Whether the error field is set.
+     */
+    @java.lang.Override
+    public boolean hasError() {
+      return bodyCase_ == 2;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return The error.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestErrorResponseBody
+        getError() {
+      if (bodyCase_ == 2) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transferSigningRequests
+                .TransferSigningRequestsOuterClass
+                .RejectTransferSigningRequestErrorResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass.RejectTransferSigningRequestErrorResponseBody
+          .getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody error = 2;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestErrorResponseBodyOrBuilder
+        getErrorOrBuilder() {
+      if (bodyCase_ == 2) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .transferSigningRequests
+                .TransferSigningRequestsOuterClass
+                .RejectTransferSigningRequestErrorResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass.RejectTransferSigningRequestErrorResponseBody
+          .getDefaultInstance();
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (bodyCase_ == 1) {
+        output.writeMessage(
+            1,
+            (io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .transferSigningRequests
+                    .TransferSigningRequestsOuterClass
+                    .RejectTransferSigningRequestResponseBody)
+                body_);
+      }
+      if (bodyCase_ == 2) {
+        output.writeMessage(
+            2,
+            (io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .transferSigningRequests
+                    .TransferSigningRequestsOuterClass
+                    .RejectTransferSigningRequestErrorResponseBody)
+                body_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (bodyCase_ == 1) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeMessageSize(
+                1,
+                (io.swisschain
+                        .sirius
+                        .vaultApi
+                        .generated
+                        .transferSigningRequests
+                        .TransferSigningRequestsOuterClass
+                        .RejectTransferSigningRequestResponseBody)
+                    body_);
+      }
+      if (bodyCase_ == 2) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeMessageSize(
+                2,
+                (io.swisschain
+                        .sirius
+                        .vaultApi
+                        .generated
+                        .transferSigningRequests
+                        .TransferSigningRequestsOuterClass
+                        .RejectTransferSigningRequestErrorResponseBody)
+                    body_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .RejectTransferSigningRequestResponse)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .RejectTransferSigningRequestResponse
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transferSigningRequests
+                      .TransferSigningRequestsOuterClass
+                      .RejectTransferSigningRequestResponse)
+                  obj;
+
+      if (!getBodyCase().equals(other.getBodyCase())) return false;
+      switch (bodyCase_) {
+        case 1:
+          if (!getResponse().equals(other.getResponse())) return false;
+          break;
+        case 2:
+          if (!getError().equals(other.getError())) return false;
+          break;
+        case 0:
+        default:
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      switch (bodyCase_) {
+        case 1:
+          hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
+          hash = (53 * hash) + getResponse().hashCode();
+          break;
+        case 2:
+          hash = (37 * hash) + ERROR_FIELD_NUMBER;
+          hash = (53 * hash) + getError().hashCode();
+          break;
+        case 0:
+        default:
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -21315,6 +21931,64 @@ public final class TransferSigningRequestsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RejectTransferSigningRequestResponse> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestResponse
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+public enum BodyCase
+        implements
+            com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      RESPONSE(1),
+      ERROR(2),
+      BODY_NOT_SET(0);
+      private final int value;
+
+      private BodyCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static BodyCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static BodyCase forNumber(int value) {
+        switch (value) {
+          case 1:
+            return RESPONSE;
+          case 2:
+            return ERROR;
+          case 0:
+            return BODY_NOT_SET;
+          default:
+            return null;
+        }
+      }
+
+      public int getNumber() {
+        return this.value;
+      }
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponse}
@@ -21330,6 +22004,68 @@ public final class TransferSigningRequestsOuterClass {
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .RejectTransferSigningRequestResponseOrBuilder {
+      private int bodyCase_ = 0;
+      private java.lang.Object body_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .RejectTransferSigningRequestResponseBody,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .RejectTransferSigningRequestResponseBody
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .RejectTransferSigningRequestResponseBodyOrBuilder>
+          responseBuilder_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .RejectTransferSigningRequestErrorResponseBody,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .RejectTransferSigningRequestErrorResponseBody
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .RejectTransferSigningRequestErrorResponseBodyOrBuilder>
+          errorBuilder_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.RejectTransferSigningRequestResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -21364,17 +22100,6 @@ public final class TransferSigningRequestsOuterClass {
                     .RejectTransferSigningRequestResponse
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.RejectTransferSigningRequestResponse.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -21614,9 +22339,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private int bodyCase_ = 0;
-      private java.lang.Object body_;
-
       public BodyCase getBodyCase() {
         return BodyCase.forNumber(bodyCase_);
       }
@@ -21628,30 +22350,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .RejectTransferSigningRequestResponseBody,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .RejectTransferSigningRequestResponseBody
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .RejectTransferSigningRequestResponseBodyOrBuilder>
-          responseBuilder_;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
@@ -21663,6 +22361,7 @@ public final class TransferSigningRequestsOuterClass {
       public boolean hasResponse() {
         return bodyCase_ == 1;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
@@ -21702,6 +22401,7 @@ public final class TransferSigningRequestsOuterClass {
               .getDefaultInstance();
         }
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
@@ -21728,6 +22428,7 @@ public final class TransferSigningRequestsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
@@ -21752,6 +22453,7 @@ public final class TransferSigningRequestsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
@@ -21804,6 +22506,7 @@ public final class TransferSigningRequestsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
@@ -21825,6 +22528,7 @@ public final class TransferSigningRequestsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
@@ -21841,6 +22545,7 @@ public final class TransferSigningRequestsOuterClass {
           getResponseBuilder() {
         return getResponseFieldBuilder().getBuilder();
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
@@ -21873,6 +22578,7 @@ public final class TransferSigningRequestsOuterClass {
               .getDefaultInstance();
         }
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody response = 1;
@@ -21951,30 +22657,6 @@ public final class TransferSigningRequestsOuterClass {
         return responseBuilder_;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .RejectTransferSigningRequestErrorResponseBody,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .RejectTransferSigningRequestErrorResponseBody
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .RejectTransferSigningRequestErrorResponseBodyOrBuilder>
-          errorBuilder_;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody error = 2;
@@ -22288,76 +22970,8 @@ public final class TransferSigningRequestsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponse)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponse)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestResponse
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .RejectTransferSigningRequestResponse();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestResponse
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<RejectTransferSigningRequestResponse> PARSER =
-        new com.google.protobuf.AbstractParser<RejectTransferSigningRequestResponse>() {
-          @java.lang.Override
-          public RejectTransferSigningRequestResponse parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new RejectTransferSigningRequestResponse(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<RejectTransferSigningRequestResponse> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<RejectTransferSigningRequestResponse> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestResponse
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface RejectTransferSigningRequestResponseBodyOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody)
-      com.google.protobuf.MessageOrBuilder {}
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody}
@@ -22368,6 +22982,40 @@ public final class TransferSigningRequestsOuterClass {
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody)
       RejectTransferSigningRequestResponseBodyOrBuilder {
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestResponseBody
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<RejectTransferSigningRequestResponseBody>
+        PARSER =
+            new com.google.protobuf.AbstractParser<RejectTransferSigningRequestResponseBody>() {
+              @java.lang.Override
+              public RejectTransferSigningRequestResponseBody parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+                return new RejectTransferSigningRequestResponseBody(input, extensionRegistry);
+              }
+            };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .RejectTransferSigningRequestResponseBody();
+    }
+
+    private byte memoizedIsInitialized = -1;
+
     // Use RejectTransferSigningRequestResponseBody.newBuilder() to construct.
     private RejectTransferSigningRequestResponseBody(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -22375,17 +23023,6 @@ public final class TransferSigningRequestsOuterClass {
     }
 
     private RejectTransferSigningRequestResponseBody() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new RejectTransferSigningRequestResponseBody();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
 
     private RejectTransferSigningRequestResponseBody(
         com.google.protobuf.CodedInputStream input,
@@ -22432,109 +23069,6 @@ public final class TransferSigningRequestsOuterClass {
           .transferSigningRequests
           .TransferSigningRequestsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponseBody_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponseBody_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .RejectTransferSigningRequestResponseBody
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .RejectTransferSigningRequestResponseBody
-                  .Builder
-                  .class);
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .RejectTransferSigningRequestResponseBody)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .RejectTransferSigningRequestResponseBody
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transferSigningRequests
-                      .TransferSigningRequestsOuterClass
-                      .RejectTransferSigningRequestResponseBody)
-                  obj;
-
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -22687,11 +23221,6 @@ public final class TransferSigningRequestsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -22708,6 +23237,138 @@ public final class TransferSigningRequestsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestResponseBody
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<RejectTransferSigningRequestResponseBody> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new RejectTransferSigningRequestResponseBody();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .RejectTransferSigningRequestResponseBody
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .RejectTransferSigningRequestResponseBody
+                  .Builder
+                  .class);
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .RejectTransferSigningRequestResponseBody)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .RejectTransferSigningRequestResponseBody
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transferSigningRequests
+                      .TransferSigningRequestsOuterClass
+                      .RejectTransferSigningRequestResponseBody)
+                  obj;
+
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -22719,6 +23380,24 @@ public final class TransferSigningRequestsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RejectTransferSigningRequestResponseBody> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestResponseBody
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody}
@@ -22734,6 +23413,17 @@ public final class TransferSigningRequestsOuterClass {
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .RejectTransferSigningRequestResponseBodyOrBuilder {
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.RejectTransferSigningRequestResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -22768,17 +23458,6 @@ public final class TransferSigningRequestsOuterClass {
                     .RejectTransferSigningRequestResponseBody
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.RejectTransferSigningRequestResponseBody.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -22999,116 +23678,8 @@ public final class TransferSigningRequestsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestResponseBody
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .RejectTransferSigningRequestResponseBody();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestResponseBody
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<RejectTransferSigningRequestResponseBody>
-        PARSER =
-            new com.google.protobuf.AbstractParser<RejectTransferSigningRequestResponseBody>() {
-              @java.lang.Override
-              public RejectTransferSigningRequestResponseBody parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-                return new RejectTransferSigningRequestResponseBody(input, extensionRegistry);
-              }
-            };
-
-    public static com.google.protobuf.Parser<RejectTransferSigningRequestResponseBody> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<RejectTransferSigningRequestResponseBody> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestResponseBody
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface RejectTransferSigningRequestErrorResponseBodyOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for errorCode.
-     */
-    int getErrorCodeValue();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The errorCode.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestErrorResponseBody
-            .ErrorCode
-        getErrorCode();
-
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The errorMessage.
-     */
-    java.lang.String getErrorMessage();
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The bytes for errorMessage.
-     */
-    com.google.protobuf.ByteString getErrorMessageBytes();
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody}
@@ -23118,29 +23689,55 @@ public final class TransferSigningRequestsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody)
       RejectTransferSigningRequestErrorResponseBodyOrBuilder {
+    public static final int ERROR_CODE_FIELD_NUMBER = 1;
+    public static final int ERROR_MESSAGE_FIELD_NUMBER = 2;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestErrorResponseBody
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<RejectTransferSigningRequestErrorResponseBody>
+        PARSER =
+            new com.google.protobuf.AbstractParser<
+                RejectTransferSigningRequestErrorResponseBody>() {
+              @java.lang.Override
+              public RejectTransferSigningRequestErrorResponseBody parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+                return new RejectTransferSigningRequestErrorResponseBody(input, extensionRegistry);
+              }
+            };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .RejectTransferSigningRequestErrorResponseBody();
+    }
+
+    private int errorCode_;
+    private volatile java.lang.Object errorMessage_;
+    private byte memoizedIsInitialized = -1;
+
     // Use RejectTransferSigningRequestErrorResponseBody.newBuilder() to construct.
     private RejectTransferSigningRequestErrorResponseBody(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private RejectTransferSigningRequestErrorResponseBody() {
       errorCode_ = 0;
       errorMessage_ = "";
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new RejectTransferSigningRequestErrorResponseBody();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private RejectTransferSigningRequestErrorResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -23200,333 +23797,6 @@ public final class TransferSigningRequestsOuterClass {
           .transferSigningRequests
           .TransferSigningRequestsOuterClass
           .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestErrorResponseBody_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-          .TransferSigningRequestsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestErrorResponseBody_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .RejectTransferSigningRequestErrorResponseBody
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .transferSigningRequests
-                  .TransferSigningRequestsOuterClass
-                  .RejectTransferSigningRequestErrorResponseBody
-                  .Builder
-                  .class);
-    }
-
-    /**
-     * Protobuf enum {@code
-     * swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody.ErrorCode}
-     */
-    public enum ErrorCode implements com.google.protobuf.ProtocolMessageEnum {
-      /** <code>UNKNOWN = 0;</code> */
-      UNKNOWN(0),
-      /** <code>INVALID_PARAMETERS = 1;</code> */
-      INVALID_PARAMETERS(1),
-      UNRECOGNIZED(-1),
-      ;
-
-      /** <code>UNKNOWN = 0;</code> */
-      public static final int UNKNOWN_VALUE = 0;
-      /** <code>INVALID_PARAMETERS = 1;</code> */
-      public static final int INVALID_PARAMETERS_VALUE = 1;
-
-      public final int getNumber() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static ErrorCode valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static ErrorCode forNumber(int value) {
-        switch (value) {
-          case 0:
-            return UNKNOWN;
-          case 1:
-            return INVALID_PARAMETERS;
-          default:
-            return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalGetValueMap() {
-        return internalValueMap;
-      }
-
-      private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
-            public ErrorCode findValueByNumber(int number) {
-              return ErrorCode.forNumber(number);
-            }
-          };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(ordinal());
-      }
-
-      public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
-        return getDescriptor();
-      }
-
-      public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
-        return io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestErrorResponseBody
-            .getDescriptor()
-            .getEnumTypes()
-            .get(0);
-      }
-
-      private static final ErrorCode[] VALUES = values();
-
-      public static ErrorCode valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int value;
-
-      private ErrorCode(int value) {
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody.ErrorCode)
-    }
-
-    public static final int ERROR_CODE_FIELD_NUMBER = 1;
-    private int errorCode_;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for errorCode.
-     */
-    @java.lang.Override
-    public int getErrorCodeValue() {
-      return errorCode_;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The errorCode.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestErrorResponseBody
-            .ErrorCode
-        getErrorCode() {
-      @SuppressWarnings("deprecation")
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .RejectTransferSigningRequestErrorResponseBody
-              .ErrorCode
-          result =
-              io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-                  .TransferSigningRequestsOuterClass.RejectTransferSigningRequestErrorResponseBody
-                  .ErrorCode.valueOf(errorCode_);
-      return result == null
-          ? io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .RejectTransferSigningRequestErrorResponseBody
-              .ErrorCode
-              .UNRECOGNIZED
-          : result;
-    }
-
-    public static final int ERROR_MESSAGE_FIELD_NUMBER = 2;
-    private volatile java.lang.Object errorMessage_;
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The errorMessage.
-     */
-    @java.lang.Override
-    public java.lang.String getErrorMessage() {
-      java.lang.Object ref = errorMessage_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        errorMessage_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The bytes for errorMessage.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getErrorMessageBytes() {
-      java.lang.Object ref = errorMessage_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        errorMessage_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (errorCode_
-          != io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-              .TransferSigningRequestsOuterClass.RejectTransferSigningRequestErrorResponseBody
-              .ErrorCode.UNKNOWN.getNumber()) {
-        output.writeEnum(1, errorCode_);
-      }
-      if (!getErrorMessageBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, errorMessage_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (errorCode_
-          != io.swisschain.sirius.vaultApi.generated.transferSigningRequests
-              .TransferSigningRequestsOuterClass.RejectTransferSigningRequestErrorResponseBody
-              .ErrorCode.UNKNOWN.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream.computeEnumSize(1, errorCode_);
-      }
-      if (!getErrorMessageBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, errorMessage_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .RejectTransferSigningRequestErrorResponseBody)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .RejectTransferSigningRequestErrorResponseBody
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .transferSigningRequests
-                      .TransferSigningRequestsOuterClass
-                      .RejectTransferSigningRequestErrorResponseBody)
-                  obj;
-
-      if (errorCode_ != other.errorCode_) return false;
-      if (!getErrorMessage().equals(other.getErrorMessage())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ERROR_CODE_FIELD_NUMBER;
-      hash = (53 * hash) + errorCode_;
-      hash = (37 * hash) + ERROR_MESSAGE_FIELD_NUMBER;
-      hash = (53 * hash) + getErrorMessage().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -23679,11 +23949,6 @@ public final class TransferSigningRequestsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -23700,6 +23965,254 @@ public final class TransferSigningRequestsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestErrorResponseBody
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<RejectTransferSigningRequestErrorResponseBody>
+        parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new RejectTransferSigningRequestErrorResponseBody();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+          .TransferSigningRequestsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestErrorResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .RejectTransferSigningRequestErrorResponseBody
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .transferSigningRequests
+                  .TransferSigningRequestsOuterClass
+                  .RejectTransferSigningRequestErrorResponseBody
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for errorCode.
+     */
+    @java.lang.Override
+    public int getErrorCodeValue() {
+      return errorCode_;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The errorCode.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestErrorResponseBody
+            .ErrorCode
+        getErrorCode() {
+      @SuppressWarnings("deprecation")
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .RejectTransferSigningRequestErrorResponseBody
+              .ErrorCode
+          result =
+              io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+                  .TransferSigningRequestsOuterClass.RejectTransferSigningRequestErrorResponseBody
+                  .ErrorCode.valueOf(errorCode_);
+      return result == null
+          ? io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .RejectTransferSigningRequestErrorResponseBody
+              .ErrorCode
+              .UNRECOGNIZED
+          : result;
+    }
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The errorMessage.
+     */
+    @java.lang.Override
+    public java.lang.String getErrorMessage() {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        errorMessage_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The bytes for errorMessage.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getErrorMessageBytes() {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        errorMessage_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (errorCode_
+          != io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+              .TransferSigningRequestsOuterClass.RejectTransferSigningRequestErrorResponseBody
+              .ErrorCode.UNKNOWN.getNumber()) {
+        output.writeEnum(1, errorCode_);
+      }
+      if (!getErrorMessageBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, errorMessage_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (errorCode_
+          != io.swisschain.sirius.vaultApi.generated.transferSigningRequests
+              .TransferSigningRequestsOuterClass.RejectTransferSigningRequestErrorResponseBody
+              .ErrorCode.UNKNOWN.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream.computeEnumSize(1, errorCode_);
+      }
+      if (!getErrorMessageBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, errorMessage_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .RejectTransferSigningRequestErrorResponseBody)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .RejectTransferSigningRequestErrorResponseBody
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .transferSigningRequests
+                      .TransferSigningRequestsOuterClass
+                      .RejectTransferSigningRequestErrorResponseBody)
+                  obj;
+
+      if (errorCode_ != other.errorCode_) return false;
+      if (!getErrorMessage().equals(other.getErrorMessage())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ERROR_CODE_FIELD_NUMBER;
+      hash = (53 * hash) + errorCode_;
+      hash = (37 * hash) + ERROR_MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getErrorMessage().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -23711,6 +24224,129 @@ public final class TransferSigningRequestsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RejectTransferSigningRequestErrorResponseBody>
+        getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestErrorResponseBody
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+    /**
+     * Protobuf enum {@code
+     * swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody.ErrorCode}
+     */
+    public enum ErrorCode implements com.google.protobuf.ProtocolMessageEnum {
+      /** <code>UNKNOWN = 0;</code> */
+      UNKNOWN(0),
+      /** <code>INVALID_PARAMETERS = 1;</code> */
+      INVALID_PARAMETERS(1),
+      UNRECOGNIZED(-1),
+      ;
+
+      /** <code>UNKNOWN = 0;</code> */
+      public static final int UNKNOWN_VALUE = 0;
+      /** <code>INVALID_PARAMETERS = 1;</code> */
+      public static final int INVALID_PARAMETERS_VALUE = 1;
+      private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
+            public ErrorCode findValueByNumber(int number) {
+              return ErrorCode.forNumber(number);
+            }
+          };
+      private static final ErrorCode[] VALUES = values();
+      private final int value;
+
+      private ErrorCode(int value) {
+        this.value = value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static ErrorCode valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static ErrorCode forNumber(int value) {
+        switch (value) {
+          case 0:
+            return UNKNOWN;
+          case 1:
+            return INVALID_PARAMETERS;
+          default:
+            return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalGetValueMap() {
+        return internalValueMap;
+      }
+
+      public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+        return io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .transferSigningRequests
+            .TransferSigningRequestsOuterClass
+            .RejectTransferSigningRequestErrorResponseBody
+            .getDescriptor()
+            .getEnumTypes()
+            .get(0);
+      }
+
+      public static ErrorCode valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(ordinal());
+      }
+
+      public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
+        return getDescriptor();
+      }
+
+      // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody.ErrorCode)
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody}
@@ -23726,6 +24362,20 @@ public final class TransferSigningRequestsOuterClass {
             .transferSigningRequests
             .TransferSigningRequestsOuterClass
             .RejectTransferSigningRequestErrorResponseBodyOrBuilder {
+      private int errorCode_ = 0;
+      private java.lang.Object errorMessage_ = "";
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.RejectTransferSigningRequestErrorResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -23760,17 +24410,6 @@ public final class TransferSigningRequestsOuterClass {
                     .RejectTransferSigningRequestErrorResponseBody
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.RejectTransferSigningRequestErrorResponseBody.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -23990,7 +24629,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private int errorCode_ = 0;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -24002,6 +24640,7 @@ public final class TransferSigningRequestsOuterClass {
       public int getErrorCodeValue() {
         return errorCode_;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -24016,6 +24655,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -24058,6 +24698,7 @@ public final class TransferSigningRequestsOuterClass {
                 .UNRECOGNIZED
             : result;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -24084,6 +24725,7 @@ public final class TransferSigningRequestsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -24098,7 +24740,6 @@ public final class TransferSigningRequestsOuterClass {
         return this;
       }
 
-      private java.lang.Object errorMessage_ = "";
       /**
        * <code>string error_message = 2;</code>
        *
@@ -24115,6 +24756,23 @@ public final class TransferSigningRequestsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string error_message = 2;</code>
+       *
+       * @param value The errorMessage to set.
+       * @return This builder for chaining.
+       */
+      public Builder setErrorMessage(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        errorMessage_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string error_message = 2;</code>
        *
@@ -24131,32 +24789,7 @@ public final class TransferSigningRequestsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string error_message = 2;</code>
-       *
-       * @param value The errorMessage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setErrorMessage(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        errorMessage_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string error_message = 2;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearErrorMessage() {
-
-        errorMessage_ = getDefaultInstance().getErrorMessage();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string error_message = 2;</code>
        *
@@ -24170,6 +24803,18 @@ public final class TransferSigningRequestsOuterClass {
         checkByteStringIsUtf8(value);
 
         errorMessage_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string error_message = 2;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearErrorMessage() {
+
+        errorMessage_ = getDefaultInstance().getErrorMessage();
         onChanged();
         return this;
       }
@@ -24188,429 +24833,6 @@ public final class TransferSigningRequestsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestErrorResponseBody
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .RejectTransferSigningRequestErrorResponseBody();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestErrorResponseBody
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<RejectTransferSigningRequestErrorResponseBody>
-        PARSER =
-            new com.google.protobuf.AbstractParser<
-                RejectTransferSigningRequestErrorResponseBody>() {
-              @java.lang.Override
-              public RejectTransferSigningRequestErrorResponseBody parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-                return new RejectTransferSigningRequestErrorResponseBody(input, extensionRegistry);
-              }
-            };
-
-    public static com.google.protobuf.Parser<RejectTransferSigningRequestErrorResponseBody>
-        parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<RejectTransferSigningRequestErrorResponseBody>
-        getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .transferSigningRequests
-            .TransferSigningRequestsOuterClass
-            .RejectTransferSigningRequestErrorResponseBody
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsRequest_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsRequest_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponse_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponse_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponseBody_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponseBody_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsErrorResponseBody_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsErrorResponseBody_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_TransferSigningRequest_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_TransferSigningRequest_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinToSpend_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinToSpend_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinId_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinId_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAsset_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAsset_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAssetId_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAssetId_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestRequest_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestRequest_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponse_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponse_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponseBody_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponseBody_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestErrorResponseBody_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestErrorResponseBody_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestRequest_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestRequest_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponse_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponse_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponseBody_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponseBody_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestErrorResponseBody_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestErrorResponseBody_fieldAccessorTable;
-
-  public static com.google.protobuf.Descriptors.FileDescriptor getDescriptor() {
-    return descriptor;
-  }
-
-  private static com.google.protobuf.Descriptors.FileDescriptor descriptor;
-
-  static {
-    java.lang.String[] descriptorData = {
-      "\n\037transfer-signing-requests.proto\0222swiss"
-          + "chain.sirius.vaultApi.transferSigningReq"
-          + "uests\032\036google/protobuf/wrappers.proto\032\037g"
-          + "oogle/protobuf/timestamp.proto\032\014common.p"
-          + "roto\"#\n!GetTransferSigningRequestsReques"
-          + "t\"\216\002\n\"GetTransferSigningRequestsResponse"
-          + "\022n\n\010response\030\001 \001(\0132Z.swisschain.sirius.v"
-          + "aultApi.transferSigningRequests.GetTrans"
-          + "ferSigningRequestsResponseBodyH\000\022p\n\005erro"
-          + "r\030\002 \001(\0132_.swisschain.sirius.vaultApi.tra"
-          + "nsferSigningRequests.GetTransferSigningR"
-          + "equestsErrorResponseBodyH\000B\006\n\004body\"\206\001\n&G"
-          + "etTransferSigningRequestsResponseBody\022\\\n"
-          + "\010requests\030\001 \003(\0132J.swisschain.sirius.vaul"
-          + "tApi.transferSigningRequests.TransferSig"
-          + "ningRequest\"\365\001\n+GetTransferSigningReques"
-          + "tsErrorResponseBody\022}\n\nerror_code\030\001 \001(\0162"
-          + "i.swisschain.sirius.vaultApi.transferSig"
-          + "ningRequests.GetTransferSigningRequestsE"
-          + "rrorResponseBody.ErrorCode\022\025\n\rerror_mess"
-          + "age\030\002 \001(\t\"0\n\tErrorCode\022\013\n\007UNKNOWN\020\000\022\026\n\022I"
-          + "NVALID_PARAMETERS\020\001\"\265\004\n\026TransferSigningR"
-          + "equest\022\n\n\002id\030\001 \001(\003\022\025\n\rblockchain_id\030\002 \001("
-          + "\t\022D\n\014network_type\030\003 \001(\0162..swisschain.sir"
-          + "ius.vaultApi.common.NetworkType\022\025\n\rproto"
-          + "col_code\030\004 \001(\t\022y\n\037double_spending_protec"
-          + "tion_type\030\005 \001(\0162P.swisschain.sirius.vaul"
-          + "tApi.transferSigningRequests.DoubleSpend"
-          + "ingProtectionType\022\031\n\021built_transaction\030\006"
-          + " \001(\014\022\031\n\021signing_addresses\030\007 \003(\t\022W\n\016coins"
-          + "_to_spend\030\010 \003(\0132?.swisschain.sirius.vaul"
-          + "tApi.transferSigningRequests.CoinToSpend"
-          + "\022\025\n\rpolicy_result\030\t \001(\t\022\032\n\022guardian_sign"
-          + "ature\030\n \001(\t\022.\n\ncreated_at\030\013 \001(\0132\032.google"
-          + ".protobuf.Timestamp\022.\n\nupdated_at\030\014 \001(\0132"
-          + "\032.google.protobuf.Timestamp\"\246\002\n\013CoinToSp"
-          + "end\022F\n\002id\030\001 \001(\0132:.swisschain.sirius.vaul"
-          + "tApi.transferSigningRequests.CoinId\022R\n\005a"
-          + "sset\030\002 \001(\0132C.swisschain.sirius.vaultApi."
-          + "transferSigningRequests.BlockchainAsset\022"
-          + "<\n\005value\030\003 \001(\0132-.swisschain.sirius.vault"
-          + "Api.common.BigDecimal\022,\n\006redeem\030\004 \001(\0132\034."
-          + "google.protobuf.StringValue\022\017\n\007address\030\005"
-          + " \001(\t\"0\n\006CoinId\022\026\n\016transaction_id\030\001 \001(\t\022\016"
-          + "\n\006number\030\002 \001(\005\"v\n\017BlockchainAsset\022Q\n\002id\030"
-          + "\001 \001(\0132E.swisschain.sirius.vaultApi.trans"
-          + "ferSigningRequests.BlockchainAssetId\022\020\n\010"
-          + "accuracy\030\002 \001(\005\"R\n\021BlockchainAssetId\022\016\n\006s"
-          + "ymbol\030\001 \001(\t\022-\n\007address\030\002 \001(\0132\034.google.pr"
-          + "otobuf.StringValue\"\305\001\n$ConfirmTransferSi"
-          + "gningRequestRequest\022\022\n\nrequest_id\030\001 \001(\t\022"
-          + "#\n\033transfer_signing_request_id\030\002 \001(\003\022\026\n\016"
-          + "transaction_id\030\004 \001(\t\022\032\n\022signed_transacti"
-          + "on\030\005 \001(\014\022\027\n\017vault_signature\030\006 \001(\t\022\027\n\017hos"
-          + "t_process_id\030\007 \001(\t\"\227\002\n%ConfirmTransferSi"
-          + "gningRequestResponse\022q\n\010response\030\001 \001(\0132]"
-          + ".swisschain.sirius.vaultApi.transferSign"
-          + "ingRequests.ConfirmTransferSigningReques"
-          + "tResponseBodyH\000\022s\n\005error\030\002 \001(\0132b.swissch"
-          + "ain.sirius.vaultApi.transferSigningReque"
-          + "sts.ConfirmTransferSigningRequestErrorRe"
-          + "sponseBodyH\000B\006\n\004body\"+\n)ConfirmTransferS"
-          + "igningRequestResponseBody\"\374\001\n.ConfirmTra"
-          + "nsferSigningRequestErrorResponseBody\022\200\001\n"
-          + "\nerror_code\030\001 \001(\0162l.swisschain.sirius.va"
-          + "ultApi.transferSigningRequests.ConfirmTr"
-          + "ansferSigningRequestErrorResponseBody.Er"
-          + "rorCode\022\025\n\rerror_message\030\002 \001(\t\"0\n\tErrorC"
-          + "ode\022\013\n\007UNKNOWN\020\000\022\026\n\022INVALID_PARAMETERS\020\001"
-          + "\"\223\002\n#RejectTransferSigningRequestRequest"
-          + "\022\022\n\nrequest_id\030\001 \001(\t\022#\n\033transfer_signing"
-          + "_request_id\030\002 \001(\003\022i\n\006reason\030\004 \001(\0162Y.swis"
-          + "schain.sirius.vaultApi.transferSigningRe"
-          + "quests.TransferSigningRequestRejectionRe"
-          + "ason\022\026\n\016reason_message\030\005 \001(\t\022\027\n\017vault_si"
-          + "gnature\030\006 \001(\t\022\027\n\017host_process_id\030\007 \001(\t\"\224"
-          + "\002\n$RejectTransferSigningRequestResponse\022"
-          + "p\n\010response\030\001 \001(\0132\\.swisschain.sirius.va"
-          + "ultApi.transferSigningRequests.RejectTra"
-          + "nsferSigningRequestResponseBodyH\000\022r\n\005err"
-          + "or\030\002 \001(\0132a.swisschain.sirius.vaultApi.tr"
-          + "ansferSigningRequests.RejectTransferSign"
-          + "ingRequestErrorResponseBodyH\000B\006\n\004body\"*\n"
-          + "(RejectTransferSigningRequestResponseBod"
-          + "y\"\371\001\n-RejectTransferSigningRequestErrorR"
-          + "esponseBody\022\177\n\nerror_code\030\001 \001(\0162k.swissc"
-          + "hain.sirius.vaultApi.transferSigningRequ"
-          + "ests.RejectTransferSigningRequestErrorRe"
-          + "sponseBody.ErrorCode\022\025\n\rerror_message\030\002 "
-          + "\001(\t\"0\n\tErrorCode\022\013\n\007UNKNOWN\020\000\022\026\n\022INVALID"
-          + "_PARAMETERS\020\001*4\n\034DoubleSpendingProtectio"
-          + "nType\022\t\n\005COINS\020\000\022\t\n\005NONCE\020\001*a\n%TransferS"
-          + "igningRequestRejectionReason\022\t\n\005OTHER\020\000\022"
-          + "\026\n\022UNKNOWN_BLOCKCHAIN\020\001\022\025\n\021INVALID_SIGNA"
-          + "TURE\020\0022\317\004\n\027TransferSigningRequests\022\264\001\n\003G"
-          + "et\022U.swisschain.sirius.vaultApi.transfer"
-          + "SigningRequests.GetTransferSigningReques"
-          + "tsRequest\032V.swisschain.sirius.vaultApi.t"
-          + "ransferSigningRequests.GetTransferSignin"
-          + "gRequestsResponse\022\276\001\n\007Confirm\022X.swisscha"
-          + "in.sirius.vaultApi.transferSigningReques"
-          + "ts.ConfirmTransferSigningRequestRequest\032"
-          + "Y.swisschain.sirius.vaultApi.transferSig"
-          + "ningRequests.ConfirmTransferSigningReque"
-          + "stResponse\022\273\001\n\006Reject\022W.swisschain.siriu"
-          + "s.vaultApi.transferSigningRequests.Rejec"
-          + "tTransferSigningRequestRequest\032X.swissch"
-          + "ain.sirius.vaultApi.transferSigningReque"
-          + "sts.RejectTransferSigningRequestResponse"
-          + "B\202\001\n?io.swisschain.sirius.vaultApi.gener"
-          + "ated.transferSigningRequests\252\002>Swisschai"
-          + "n.Sirius.VaultApi.ApiContract.TransferSi"
-          + "gningRequestsb\006proto3"
-    };
-    descriptor =
-        com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
-            descriptorData,
-            new com.google.protobuf.Descriptors.FileDescriptor[] {
-              com.google.protobuf.WrappersProto.getDescriptor(),
-              com.google.protobuf.TimestampProto.getDescriptor(),
-              io.swisschain.sirius.vaultApi.generated.common.Common.getDescriptor(),
-            });
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsRequest_descriptor =
-        getDescriptor().getMessageTypes().get(0);
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsRequest_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsRequest_descriptor,
-            new java.lang.String[] {});
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponse_descriptor =
-        getDescriptor().getMessageTypes().get(1);
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponse_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponse_descriptor,
-            new java.lang.String[] {
-              "Response", "Error", "Body",
-            });
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponseBody_descriptor =
-        getDescriptor().getMessageTypes().get(2);
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponseBody_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsResponseBody_descriptor,
-            new java.lang.String[] {
-              "Requests",
-            });
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsErrorResponseBody_descriptor =
-        getDescriptor().getMessageTypes().get(3);
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsErrorResponseBody_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_GetTransferSigningRequestsErrorResponseBody_descriptor,
-            new java.lang.String[] {
-              "ErrorCode", "ErrorMessage",
-            });
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_TransferSigningRequest_descriptor =
-        getDescriptor().getMessageTypes().get(4);
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_TransferSigningRequest_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_TransferSigningRequest_descriptor,
-            new java.lang.String[] {
-              "Id",
-              "BlockchainId",
-              "NetworkType",
-              "ProtocolCode",
-              "DoubleSpendingProtectionType",
-              "BuiltTransaction",
-              "SigningAddresses",
-              "CoinsToSpend",
-              "PolicyResult",
-              "GuardianSignature",
-              "CreatedAt",
-              "UpdatedAt",
-            });
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinToSpend_descriptor =
-        getDescriptor().getMessageTypes().get(5);
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinToSpend_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinToSpend_descriptor,
-            new java.lang.String[] {
-              "Id", "Asset", "Value", "Redeem", "Address",
-            });
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinId_descriptor =
-        getDescriptor().getMessageTypes().get(6);
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinId_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinId_descriptor,
-            new java.lang.String[] {
-              "TransactionId", "Number",
-            });
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAsset_descriptor =
-        getDescriptor().getMessageTypes().get(7);
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAsset_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAsset_descriptor,
-            new java.lang.String[] {
-              "Id", "Accuracy",
-            });
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAssetId_descriptor =
-        getDescriptor().getMessageTypes().get(8);
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAssetId_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_BlockchainAssetId_descriptor,
-            new java.lang.String[] {
-              "Symbol", "Address",
-            });
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestRequest_descriptor =
-        getDescriptor().getMessageTypes().get(9);
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestRequest_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestRequest_descriptor,
-            new java.lang.String[] {
-              "RequestId",
-              "TransferSigningRequestId",
-              "TransactionId",
-              "SignedTransaction",
-              "VaultSignature",
-              "HostProcessId",
-            });
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponse_descriptor =
-        getDescriptor().getMessageTypes().get(10);
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponse_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponse_descriptor,
-            new java.lang.String[] {
-              "Response", "Error", "Body",
-            });
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponseBody_descriptor =
-        getDescriptor().getMessageTypes().get(11);
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponseBody_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestResponseBody_descriptor,
-            new java.lang.String[] {});
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestErrorResponseBody_descriptor =
-        getDescriptor().getMessageTypes().get(12);
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestErrorResponseBody_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_ConfirmTransferSigningRequestErrorResponseBody_descriptor,
-            new java.lang.String[] {
-              "ErrorCode", "ErrorMessage",
-            });
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestRequest_descriptor =
-        getDescriptor().getMessageTypes().get(13);
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestRequest_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestRequest_descriptor,
-            new java.lang.String[] {
-              "RequestId",
-              "TransferSigningRequestId",
-              "Reason",
-              "ReasonMessage",
-              "VaultSignature",
-              "HostProcessId",
-            });
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponse_descriptor =
-        getDescriptor().getMessageTypes().get(14);
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponse_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponse_descriptor,
-            new java.lang.String[] {
-              "Response", "Error", "Body",
-            });
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponseBody_descriptor =
-        getDescriptor().getMessageTypes().get(15);
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponseBody_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestResponseBody_descriptor,
-            new java.lang.String[] {});
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestErrorResponseBody_descriptor =
-        getDescriptor().getMessageTypes().get(16);
-    internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestErrorResponseBody_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_transferSigningRequests_RejectTransferSigningRequestErrorResponseBody_descriptor,
-            new java.lang.String[] {
-              "ErrorCode", "ErrorMessage",
-            });
-    com.google.protobuf.WrappersProto.getDescriptor();
-    com.google.protobuf.TimestampProto.getDescriptor();
-    io.swisschain.sirius.vaultApi.generated.common.Common.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

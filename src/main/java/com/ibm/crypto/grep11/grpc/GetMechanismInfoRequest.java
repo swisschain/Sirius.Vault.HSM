@@ -8,25 +8,34 @@ public final class GetMechanismInfoRequest extends com.google.protobuf.Generated
     implements
     // @@protoc_insertion_point(message_implements:grep11.GetMechanismInfoRequest)
     GetMechanismInfoRequestOrBuilder {
+  public static final int MECH_FIELD_NUMBER = 2;
   private static final long serialVersionUID = 0L;
+  // @@protoc_insertion_point(class_scope:grep11.GetMechanismInfoRequest)
+  private static final com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest DEFAULT_INSTANCE;
+  private static final com.google.protobuf.Parser<GetMechanismInfoRequest> PARSER =
+      new com.google.protobuf.AbstractParser<GetMechanismInfoRequest>() {
+        @java.lang.Override
+        public GetMechanismInfoRequest parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new GetMechanismInfoRequest(input, extensionRegistry);
+        }
+      };
+
+  static {
+    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest();
+  }
+
+  private long mech_;
+  private byte memoizedIsInitialized = -1;
+
   // Use GetMechanismInfoRequest.newBuilder() to construct.
   private GetMechanismInfoRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
 
   private GetMechanismInfoRequest() {}
-
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new GetMechanismInfoRequest();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-    return this.unknownFields;
-  }
-
   private GetMechanismInfoRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -71,98 +80,6 @@ public final class GetMechanismInfoRequest extends com.google.protobuf.Generated
 
   public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
     return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_GetMechanismInfoRequest_descriptor;
-  }
-
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-    return com.ibm.crypto.grep11.grpc.Hsm
-        .internal_static_grep11_GetMechanismInfoRequest_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest.class,
-            com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest.Builder.class);
-  }
-
-  public static final int MECH_FIELD_NUMBER = 2;
-  private long mech_;
-  /**
-   *
-   *
-   * <pre>
-   * [(gogoproto.casttype) = "github.com/ibm-developer/ibm-cloud-hyperprotectcrypto/golang/ep11.Mechanism"];
-   * </pre>
-   *
-   * <code>uint64 Mech = 2;</code>
-   *
-   * @return The mech.
-   */
-  @java.lang.Override
-  public long getMech() {
-    return mech_;
-  }
-
-  private byte memoizedIsInitialized = -1;
-
-  @java.lang.Override
-  public final boolean isInitialized() {
-    byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) return true;
-    if (isInitialized == 0) return false;
-
-    memoizedIsInitialized = 1;
-    return true;
-  }
-
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    if (mech_ != 0L) {
-      output.writeUInt64(2, mech_);
-    }
-    unknownFields.writeTo(output);
-  }
-
-  @java.lang.Override
-  public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) return size;
-
-    size = 0;
-    if (mech_ != 0L) {
-      size += com.google.protobuf.CodedOutputStream.computeUInt64Size(2, mech_);
-    }
-    size += unknownFields.getSerializedSize();
-    memoizedSize = size;
-    return size;
-  }
-
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
-    if (obj == this) {
-      return true;
-    }
-    if (!(obj instanceof com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest)) {
-      return super.equals(obj);
-    }
-    com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest other =
-        (com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest) obj;
-
-    if (getMech() != other.getMech()) return false;
-    if (!unknownFields.equals(other.unknownFields)) return false;
-    return true;
-  }
-
-  @java.lang.Override
-  public int hashCode() {
-    if (memoizedHashCode != 0) {
-      return memoizedHashCode;
-    }
-    int hash = 41;
-    hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + MECH_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(getMech());
-    hash = (29 * hash) + unknownFields.hashCode();
-    memoizedHashCode = hash;
-    return hash;
   }
 
   public static com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest parseFrom(
@@ -237,17 +154,124 @@ public final class GetMechanismInfoRequest extends com.google.protobuf.Generated
         PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
-  public Builder newBuilderForType() {
-    return newBuilder();
-  }
-
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
 
   public static Builder newBuilder(com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  public static com.google.protobuf.Parser<GetMechanismInfoRequest> parser() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new GetMechanismInfoRequest();
+  }
+
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    return this.unknownFields;
+  }
+
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internalGetFieldAccessorTable() {
+    return com.ibm.crypto.grep11.grpc.Hsm
+        .internal_static_grep11_GetMechanismInfoRequest_fieldAccessorTable
+        .ensureFieldAccessorsInitialized(
+            com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest.class,
+            com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest.Builder.class);
+  }
+
+  /**
+   *
+   *
+   * <pre>
+   * [(gogoproto.casttype) = "github.com/ibm-developer/ibm-cloud-hyperprotectcrypto/golang/ep11.Mechanism"];
+   * </pre>
+   *
+   * <code>uint64 Mech = 2;</code>
+   *
+   * @return The mech.
+   */
+  @java.lang.Override
+  public long getMech() {
+    return mech_;
+  }
+
+  @java.lang.Override
+  public final boolean isInitialized() {
+    byte isInitialized = memoizedIsInitialized;
+    if (isInitialized == 1) return true;
+    if (isInitialized == 0) return false;
+
+    memoizedIsInitialized = 1;
+    return true;
+  }
+
+  @java.lang.Override
+  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+    if (mech_ != 0L) {
+      output.writeUInt64(2, mech_);
+    }
+    unknownFields.writeTo(output);
+  }
+
+  @java.lang.Override
+  public int getSerializedSize() {
+    int size = memoizedSize;
+    if (size != -1) return size;
+
+    size = 0;
+    if (mech_ != 0L) {
+      size += com.google.protobuf.CodedOutputStream.computeUInt64Size(2, mech_);
+    }
+    size += unknownFields.getSerializedSize();
+    memoizedSize = size;
+    return size;
+  }
+
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
+    if (obj == this) {
+      return true;
+    }
+    if (!(obj instanceof com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest)) {
+      return super.equals(obj);
+    }
+    com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest other =
+        (com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest) obj;
+
+    if (getMech() != other.getMech()) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
+  }
+
+  @java.lang.Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + MECH_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(getMech());
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
+  }
+
+  @java.lang.Override
+  public Builder newBuilderForType() {
+    return newBuilder();
   }
 
   @java.lang.Override
@@ -260,11 +284,34 @@ public final class GetMechanismInfoRequest extends com.google.protobuf.Generated
     Builder builder = new Builder(parent);
     return builder;
   }
+
+  @java.lang.Override
+  public com.google.protobuf.Parser<GetMechanismInfoRequest> getParserForType() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
+  }
+
   /** Protobuf type {@code grep11.GetMechanismInfoRequest} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
       // @@protoc_insertion_point(builder_implements:grep11.GetMechanismInfoRequest)
       com.ibm.crypto.grep11.grpc.GetMechanismInfoRequestOrBuilder {
+    private long mech_;
+
+    // Construct using com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest.newBuilder()
+    private Builder() {
+      maybeForceBuilderInitialization();
+    }
+
+    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      super(parent);
+      maybeForceBuilderInitialization();
+    }
+
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
       return com.ibm.crypto.grep11.grpc.Hsm
           .internal_static_grep11_GetMechanismInfoRequest_descriptor;
@@ -278,16 +325,6 @@ public final class GetMechanismInfoRequest extends com.google.protobuf.Generated
           .ensureFieldAccessorsInitialized(
               com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest.class,
               com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest.Builder.class);
-    }
-
-    // Construct using com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
     }
 
     private void maybeForceBuilderInitialization() {
@@ -410,7 +447,6 @@ public final class GetMechanismInfoRequest extends com.google.protobuf.Generated
       return this;
     }
 
-    private long mech_;
     /**
      *
      *
@@ -474,41 +510,5 @@ public final class GetMechanismInfoRequest extends com.google.protobuf.Generated
     }
 
     // @@protoc_insertion_point(builder_scope:grep11.GetMechanismInfoRequest)
-  }
-
-  // @@protoc_insertion_point(class_scope:grep11.GetMechanismInfoRequest)
-  private static final com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest DEFAULT_INSTANCE;
-
-  static {
-    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest();
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  private static final com.google.protobuf.Parser<GetMechanismInfoRequest> PARSER =
-      new com.google.protobuf.AbstractParser<GetMechanismInfoRequest>() {
-        @java.lang.Override
-        public GetMechanismInfoRequest parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new GetMechanismInfoRequest(input, extensionRegistry);
-        }
-      };
-
-  public static com.google.protobuf.Parser<GetMechanismInfoRequest> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<GetMechanismInfoRequest> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
   }
 }
