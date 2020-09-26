@@ -24,6 +24,7 @@ public class IsAliveService extends Thread {
       final var server = HttpServer.create();
       server.bind(new InetSocketAddress(port), 0);
       server.createContext(PATH, new IsAliveHandler());
+      server.start();
       logger.info(String.format("Started isAlive server: port: %d, path: %s", port, PATH));
     } catch (IOException e) {
       logger.info(
