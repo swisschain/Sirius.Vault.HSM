@@ -25,7 +25,7 @@ dependencies {
     compile "org.slf4j:slf4j-api:1.7.30"
     compile "org.apache.logging.log4j:log4j-api:$log4j_version"
     compile "org.apache.logging.log4j:log4j-core:$log4j_version"
-    compile "org.apache.logging.log4j:log4j-slf4j-impl:$log4j_version";
+    compile "org.apache.logging.log4j:log4j-slf4j-impl:$log4j_version"
 
     compile "org.nanohttpd:nanohttpd:$nanohttpd_version"
     compile "org.nanohttpd:nanohttpd-nanolets:$nanohttpd_version"
@@ -105,5 +105,5 @@ jar {
 }
 
 mainClassName = "io.swisschain.AppStarter"
-applicationDefaultJvmArgs = ["-Xms128m", "-Xmx256m"]
+applicationDefaultJvmArgs = ["-Xms64m", "-Xmx128m"]
 distTar.enabled = false
