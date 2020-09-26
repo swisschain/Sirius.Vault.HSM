@@ -16,7 +16,6 @@ import io.swisschain.utils.AppVersion;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.IOException;
 import java.net.InetAddress;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -32,16 +31,6 @@ public class AppStarter {
       logger.error("Can not load config");
       return;
     }
-
-    logger.info("Starting IsAlive");
-
-    try {
-      new IsAliveService(5000);
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
-
-    logger.info("IsAlive started");
 
     if (!DbMigration.migrateDatabase(
         config.db.url, config.db.user, config.db.password, config.db.schema)) {
@@ -88,6 +77,8 @@ public class AppStarter {
         TimeUnit.SECONDS);
 
     initShutdownHook();
+
+    new IsAliveService(5000).start();
 
     while (true) {
       Thread.sleep(10000);

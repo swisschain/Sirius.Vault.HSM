@@ -2,19 +2,27 @@ package io.swisschain.isAlive;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import fi.iki.elonen.NanoHTTPD;
-import fi.iki.elonen.router.RouterNanoHTTPD;
+import com.google.common.net.HttpHeaders;
+import com.sun.net.httpserver.HttpExchange;
+import com.sun.net.httpserver.HttpHandler;
 import io.swisschain.utils.AppVersion;
 
-import static fi.iki.elonen.NanoHTTPD.MIME_PLAINTEXT;
-import static fi.iki.elonen.NanoHTTPD.Response.Status.OK;
+import java.io.IOException;
+import java.net.HttpURLConnection;
 
-public class IsAliveHandler extends RouterNanoHTTPD.DefaultHandler {
+public class IsAliveHandler implements HttpHandler {
 
   private final ObjectMapper mapper = new ObjectMapper();
 
   @Override
-  public String getText() {
+  public void handle(HttpExchange exchange) throws IOException {
+    exchange.getResponseHeaders().add(HttpHeaders.CONTENT_TYPE, "application/json");
+    final var bytes = getResponse().getBytes();
+    exchange.sendResponseHeaders(HttpURLConnection.HTTP_OK, bytes.length);
+    exchange.getResponseBody().write(bytes);
+  }
+
+  public String getResponse() {
     IsAliveResponse response = new IsAliveResponse();
     response.setName(AppVersion.NAME);
     response.setVersion(AppVersion.VERSION);
@@ -28,15 +36,5 @@ public class IsAliveHandler extends RouterNanoHTTPD.DefaultHandler {
       result = "";
     }
     return result;
-  }
-
-  @Override
-  public String getMimeType() {
-    return "application/json";
-  }
-
-  @Override
-  public NanoHTTPD.Response.IStatus getStatus() {
-    return OK;
   }
 }
