@@ -35,9 +35,11 @@ public final class VerifyInitRequest extends com.google.protobuf.GeneratedMessag
   private VerifyInitRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
+
   private VerifyInitRequest() {
     pubKey_ = com.google.protobuf.ByteString.EMPTY;
   }
+
   private VerifyInitRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

@@ -36,9 +36,11 @@ public final class SetAttributeValueRequest extends com.google.protobuf.Generate
   private SetAttributeValueRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
+
   private SetAttributeValueRequest() {
     object_ = com.google.protobuf.ByteString.EMPTY;
   }
+
   private SetAttributeValueRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

@@ -38,6 +38,7 @@ public final class VerifyInitResponse extends com.google.protobuf.GeneratedMessa
   private VerifyInitResponse() {
     state_ = com.google.protobuf.ByteString.EMPTY;
   }
+
   private VerifyInitResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

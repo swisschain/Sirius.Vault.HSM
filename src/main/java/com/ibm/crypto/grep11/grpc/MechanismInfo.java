@@ -38,7 +38,9 @@ public final class MechanismInfo extends com.google.protobuf.GeneratedMessageV3
   private MechanismInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
+
   private MechanismInfo() {}
+
   private MechanismInfo(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

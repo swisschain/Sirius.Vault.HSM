@@ -35,6 +35,7 @@ public final class UnwrapKeyResponse extends com.google.protobuf.GeneratedMessag
   private UnwrapKeyResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
+
   private UnwrapKeyResponse() {
     unwrapped_ = com.google.protobuf.ByteString.EMPTY;
     checkSum_ = com.google.protobuf.ByteString.EMPTY;

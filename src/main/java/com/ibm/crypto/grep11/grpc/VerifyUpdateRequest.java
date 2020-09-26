@@ -35,6 +35,7 @@ public final class VerifyUpdateRequest extends com.google.protobuf.GeneratedMess
   private VerifyUpdateRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
+
   private VerifyUpdateRequest() {
     state_ = com.google.protobuf.ByteString.EMPTY;
     data_ = com.google.protobuf.ByteString.EMPTY;

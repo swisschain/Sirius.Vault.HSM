@@ -38,6 +38,7 @@ public final class SignUpdateResponse extends com.google.protobuf.GeneratedMessa
   private SignUpdateResponse() {
     state_ = com.google.protobuf.ByteString.EMPTY;
   }
+
   private SignUpdateResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

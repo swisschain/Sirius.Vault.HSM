@@ -38,6 +38,7 @@ public final class DigestFinalRequest extends com.google.protobuf.GeneratedMessa
   private DigestFinalRequest() {
     state_ = com.google.protobuf.ByteString.EMPTY;
   }
+
   private DigestFinalRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

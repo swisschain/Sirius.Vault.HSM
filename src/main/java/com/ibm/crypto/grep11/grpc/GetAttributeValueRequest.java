@@ -36,9 +36,11 @@ public final class GetAttributeValueRequest extends com.google.protobuf.Generate
   private GetAttributeValueRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
+
   private GetAttributeValueRequest() {
     object_ = com.google.protobuf.ByteString.EMPTY;
   }
+
   private GetAttributeValueRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

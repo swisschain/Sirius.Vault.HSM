@@ -35,9 +35,11 @@ public final class DigestSingleRequest extends com.google.protobuf.GeneratedMess
   private DigestSingleRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
+
   private DigestSingleRequest() {
     data_ = com.google.protobuf.ByteString.EMPTY;
   }
+
   private DigestSingleRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

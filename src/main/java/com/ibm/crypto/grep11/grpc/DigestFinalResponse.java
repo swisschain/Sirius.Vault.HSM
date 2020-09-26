@@ -38,6 +38,7 @@ public final class DigestFinalResponse extends com.google.protobuf.GeneratedMess
   private DigestFinalResponse() {
     digest_ = com.google.protobuf.ByteString.EMPTY;
   }
+
   private DigestFinalResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

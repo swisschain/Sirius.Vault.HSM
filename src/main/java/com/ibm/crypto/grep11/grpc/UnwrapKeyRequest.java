@@ -50,6 +50,7 @@ public final class UnwrapKeyRequest extends com.google.protobuf.GeneratedMessage
     macKey_ = com.google.protobuf.ByteString.EMPTY;
     unwrappedId_ = "";
   }
+
   private UnwrapKeyRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

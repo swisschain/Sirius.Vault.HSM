@@ -332,6 +332,7 @@ public final class TransactionsOuterClass {
     com.google.protobuf.TimestampProto.getDescriptor();
     io.swisschain.sirius.vaultApi.generated.common.Common.getDescriptor();
   }
+
   private TransactionsOuterClass() {}
 
   public static void registerAllExtensions(com.google.protobuf.ExtensionRegistryLite registry) {}
@@ -356,6 +357,7 @@ public final class TransactionsOuterClass {
     public static final int COINS_VALUE = 0;
     /** <code>NONCE = 1;</code> */
     public static final int NONCE_VALUE = 1;
+
     private static final com.google.protobuf.Internal.EnumLiteMap<DoubleSpendingProtectionType>
         internalValueMap =
             new com.google.protobuf.Internal.EnumLiteMap<DoubleSpendingProtectionType>() {
@@ -466,6 +468,7 @@ public final class TransactionsOuterClass {
     public static final int UNKNOWN_BLOCKCHAIN_VALUE = 1;
     /** <code>UNWANTED_TRANSACTION = 2;</code> */
     public static final int UNWANTED_TRANSACTION_VALUE = 2;
+
     private static final com.google.protobuf.Internal.EnumLiteMap<
             TransactionSigningRequestRejectionReason>
         internalValueMap =
@@ -559,10 +562,12 @@ public final class TransactionsOuterClass {
 
     // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.transactions.TransactionSigningRequestRejectionReason)
   }
+
   public interface GetTransactionSigningRequestRequestOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestRequest)
       com.google.protobuf.MessageOrBuilder {}
+
   public interface GetTransactionSigningRequestResponseOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponse)
@@ -652,6 +657,7 @@ public final class TransactionsOuterClass {
             .BodyCase
         getBodyCase();
   }
+
   public interface GetTransactionSigningRequestResponseBodyOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestResponseBody)
@@ -719,6 +725,7 @@ public final class TransactionsOuterClass {
             .TransactionSigningRequestOrBuilder
         getRequestsOrBuilder(int index);
   }
+
   public interface GetTransactionSigningRequestErrorResponseBodyOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.GetTransactionSigningRequestErrorResponseBody)
@@ -762,6 +769,7 @@ public final class TransactionsOuterClass {
      */
     com.google.protobuf.ByteString getErrorMessageBytes();
   }
+
   public interface TransactionSigningRequestOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.TransactionSigningRequest)
@@ -940,6 +948,7 @@ public final class TransactionsOuterClass {
     /** <code>.google.protobuf.Timestamp updated_at = 10;</code> */
     com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder();
   }
+
   public interface CoinToSpendOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.CoinToSpend)
@@ -1027,6 +1036,7 @@ public final class TransactionsOuterClass {
      */
     com.google.protobuf.ByteString getAddressBytes();
   }
+
   public interface CoinIdOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.CoinId)
@@ -1052,6 +1062,7 @@ public final class TransactionsOuterClass {
      */
     int getNumber();
   }
+
   public interface BlockchainAssetOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.BlockchainAsset)
@@ -1087,6 +1098,7 @@ public final class TransactionsOuterClass {
      */
     int getAccuracy();
   }
+
   public interface BlockchainAssetIdOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.BlockchainAssetId)
@@ -1120,6 +1132,7 @@ public final class TransactionsOuterClass {
     /** <code>.google.protobuf.StringValue address = 2;</code> */
     com.google.protobuf.StringValueOrBuilder getAddressOrBuilder();
   }
+
   public interface ConfirmTransactionSigningRequestRequestOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestRequest)
@@ -1165,6 +1178,7 @@ public final class TransactionsOuterClass {
      */
     com.google.protobuf.ByteString getSignedTransaction();
   }
+
   public interface ConfirmTransactionSigningRequestResponseOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponse)
@@ -1254,10 +1268,12 @@ public final class TransactionsOuterClass {
             .BodyCase
         getBodyCase();
   }
+
   public interface ConfirmTransactionSigningRequestResponseBodyOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestResponseBody)
       com.google.protobuf.MessageOrBuilder {}
+
   public interface ConfirmTransactionSigningRequestErrorResponseBodyOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.ConfirmTransactionSigningRequestErrorResponseBody)
@@ -1301,6 +1317,7 @@ public final class TransactionsOuterClass {
      */
     com.google.protobuf.ByteString getErrorMessageBytes();
   }
+
   public interface RejectTransactionSigningRequestRequestOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestRequest)
@@ -1363,6 +1380,7 @@ public final class TransactionsOuterClass {
      */
     com.google.protobuf.ByteString getReasonMessageBytes();
   }
+
   public interface RejectTransactionSigningRequestResponseOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponse)
@@ -1452,10 +1470,12 @@ public final class TransactionsOuterClass {
             .BodyCase
         getBodyCase();
   }
+
   public interface RejectTransactionSigningRequestResponseBodyOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestResponseBody)
       com.google.protobuf.MessageOrBuilder {}
+
   public interface RejectTransactionSigningRequestErrorResponseBodyOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transactions.RejectTransactionSigningRequestErrorResponseBody)
@@ -2255,7 +2275,8 @@ public final class TransactionsOuterClass {
       super(builder);
     }
 
-        private GetTransactionSigningRequestResponse() {};
+    private GetTransactionSigningRequestResponse() {}
+    ;
 
     private GetTransactionSigningRequestResponse(
         com.google.protobuf.CodedInputStream input,
@@ -2933,7 +2954,7 @@ public final class TransactionsOuterClass {
       return DEFAULT_INSTANCE;
     }
 
-public enum BodyCase
+    public enum BodyCase
         implements
             com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
@@ -4006,6 +4027,7 @@ public enum BodyCase
     private GetTransactionSigningRequestResponseBody() {
       requests_ = java.util.Collections.emptyList();
     }
+
     private GetTransactionSigningRequestResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -5352,10 +5374,12 @@ public enum BodyCase
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
+
     private GetTransactionSigningRequestErrorResponseBody() {
       errorCode_ = 0;
       errorMessage_ = "";
     }
+
     private GetTransactionSigningRequestErrorResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -5873,6 +5897,7 @@ public enum BodyCase
       public static final int UNKNOWN_VALUE = 0;
       /** <code>INVALID_PARAMETERS = 1;</code> */
       public static final int INVALID_PARAMETERS_VALUE = 1;
+
       private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
           new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
             public ErrorCode findValueByNumber(int number) {
@@ -6509,6 +6534,7 @@ public enum BodyCase
     private TransactionSigningRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
+
     private TransactionSigningRequest() {
       blockchainId_ = "";
       networkType_ = 0;
@@ -9132,9 +9158,11 @@ public enum BodyCase
     private CoinToSpend(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
+
     private CoinToSpend() {
       address_ = "";
     }
+
     private CoinToSpend(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -10940,9 +10968,11 @@ public enum BodyCase
     private CoinId(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
+
     private CoinId() {
       transactionId_ = "";
     }
+
     private CoinId(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -11673,7 +11703,9 @@ public enum BodyCase
     private BlockchainAsset(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
+
     private BlockchainAsset() {}
+
     private BlockchainAsset(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -12745,9 +12777,11 @@ public enum BodyCase
     private BlockchainAssetId(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
+
     private BlockchainAssetId() {
       symbol_ = "";
     }
+
     private BlockchainAssetId(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -13769,6 +13803,7 @@ public enum BodyCase
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
+
     private ConfirmTransactionSigningRequestRequest() {
       requestId_ = "";
       transactionId_ = "";
@@ -14894,7 +14929,8 @@ public enum BodyCase
       super(builder);
     }
 
-        private ConfirmTransactionSigningRequestResponse() {};
+    private ConfirmTransactionSigningRequestResponse() {}
+    ;
 
     private ConfirmTransactionSigningRequestResponse(
         com.google.protobuf.CodedInputStream input,
@@ -15572,7 +15608,7 @@ public enum BodyCase
       return DEFAULT_INSTANCE;
     }
 
-public enum BodyCase
+    public enum BodyCase
         implements
             com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
@@ -17344,10 +17380,12 @@ public enum BodyCase
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
+
     private ConfirmTransactionSigningRequestErrorResponseBody() {
       errorCode_ = 0;
       errorMessage_ = "";
     }
+
     private ConfirmTransactionSigningRequestErrorResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -17865,6 +17903,7 @@ public enum BodyCase
       public static final int UNKNOWN_VALUE = 0;
       /** <code>INVALID_PARAMETERS = 1;</code> */
       public static final int INVALID_PARAMETERS_VALUE = 1;
+
       private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
           new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
             public ErrorCode findValueByNumber(int number) {
@@ -18494,6 +18533,7 @@ public enum BodyCase
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
+
     private RejectTransactionSigningRequestRequest() {
       requestId_ = "";
       reason_ = 0;
@@ -19735,7 +19775,8 @@ public enum BodyCase
       super(builder);
     }
 
-        private RejectTransactionSigningRequestResponse() {};
+    private RejectTransactionSigningRequestResponse() {}
+    ;
 
     private RejectTransactionSigningRequestResponse(
         com.google.protobuf.CodedInputStream input,
@@ -20413,7 +20454,7 @@ public enum BodyCase
       return DEFAULT_INSTANCE;
     }
 
-public enum BodyCase
+    public enum BodyCase
         implements
             com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
@@ -22184,10 +22225,12 @@ public enum BodyCase
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
+
     private RejectTransactionSigningRequestErrorResponseBody() {
       errorCode_ = 0;
       errorMessage_ = "";
     }
+
     private RejectTransactionSigningRequestErrorResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -22705,6 +22748,7 @@ public enum BodyCase
       public static final int UNKNOWN_VALUE = 0;
       /** <code>INVALID_PARAMETERS = 1;</code> */
       public static final int INVALID_PARAMETERS_VALUE = 1;
+
       private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
           new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
             public ErrorCode findValueByNumber(int number) {

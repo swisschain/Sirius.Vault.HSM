@@ -36,6 +36,7 @@ public final class GetMechanismInfoResponse extends com.google.protobuf.Generate
   }
 
   private GetMechanismInfoResponse() {}
+
   private GetMechanismInfoResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

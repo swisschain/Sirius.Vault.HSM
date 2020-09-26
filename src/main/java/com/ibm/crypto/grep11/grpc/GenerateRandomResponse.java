@@ -38,6 +38,7 @@ public final class GenerateRandomResponse extends com.google.protobuf.GeneratedM
   private GenerateRandomResponse() {
     rnd_ = com.google.protobuf.ByteString.EMPTY;
   }
+
   private GenerateRandomResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

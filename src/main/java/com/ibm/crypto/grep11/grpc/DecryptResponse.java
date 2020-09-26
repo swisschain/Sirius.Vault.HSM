@@ -38,6 +38,7 @@ public final class DecryptResponse extends com.google.protobuf.GeneratedMessageV
   private DecryptResponse() {
     plain_ = com.google.protobuf.ByteString.EMPTY;
   }
+
   private DecryptResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

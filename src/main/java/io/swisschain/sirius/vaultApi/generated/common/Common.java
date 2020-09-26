@@ -86,6 +86,7 @@ public final class Common {
     com.google.protobuf.StructProto.getDescriptor();
     com.google.protobuf.TimestampProto.getDescriptor();
   }
+
   private Common() {}
 
   public static void registerAllExtensions(com.google.protobuf.ExtensionRegistryLite registry) {}
@@ -114,6 +115,7 @@ public final class Common {
     public static final int TEST_VALUE = 1;
     /** <code>PUBLIC = 2;</code> */
     public static final int PUBLIC_VALUE = 2;
+
     private static final com.google.protobuf.Internal.EnumLiteMap<NetworkType> internalValueMap =
         new com.google.protobuf.Internal.EnumLiteMap<NetworkType>() {
           public NetworkType findValueByNumber(int number) {
@@ -215,6 +217,7 @@ public final class Common {
     public static final int TEXT_VALUE = 0;
     /** <code>NUMBER = 1;</code> */
     public static final int NUMBER_VALUE = 1;
+
     private static final com.google.protobuf.Internal.EnumLiteMap<TagType> internalValueMap =
         new com.google.protobuf.Internal.EnumLiteMap<TagType>() {
           public TagType findValueByNumber(int number) {
@@ -301,6 +304,7 @@ public final class Common {
 
     // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.common.TagType)
   }
+
   public interface NullableNetworkTypeOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.common.NullableNetworkType)
@@ -335,6 +339,7 @@ public final class Common {
     public io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType.KindCase
         getKindCase();
   }
+
   public interface NullableTagTypeOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.common.NullableTagType)
@@ -369,6 +374,7 @@ public final class Common {
     public io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType.KindCase
         getKindCase();
   }
+
   public interface BigDecimalOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.common.BigDecimal)
@@ -387,6 +393,7 @@ public final class Common {
      */
     com.google.protobuf.ByteString getValueBytes();
   }
+
   public interface NullableTimestampOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.common.NullableTimestamp)
@@ -459,7 +466,8 @@ public final class Common {
       super(builder);
     }
 
-        private NullableNetworkType() {};
+    private NullableNetworkType() {}
+    ;
 
     private NullableNetworkType(
         com.google.protobuf.CodedInputStream input,
@@ -827,7 +835,7 @@ public final class Common {
       return DEFAULT_INSTANCE;
     }
 
-public enum KindCase
+    public enum KindCase
         implements
             com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
@@ -1273,7 +1281,8 @@ public enum KindCase
       super(builder);
     }
 
-        private NullableTagType() {};
+    private NullableTagType() {}
+    ;
 
     private NullableTagType(
         com.google.protobuf.CodedInputStream input,
@@ -1627,7 +1636,7 @@ public enum KindCase
       return DEFAULT_INSTANCE;
     }
 
-public enum KindCase
+    public enum KindCase
         implements
             com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
@@ -2072,6 +2081,7 @@ public enum KindCase
     private BigDecimal() {
       value_ = "";
     }
+
     private BigDecimal(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2667,7 +2677,8 @@ public enum KindCase
       super(builder);
     }
 
-        private NullableTimestamp() {};
+    private NullableTimestamp() {}
+    ;
 
     private NullableTimestamp(
         com.google.protobuf.CodedInputStream input,
@@ -3041,7 +3052,7 @@ public enum KindCase
       return DEFAULT_INSTANCE;
     }
 
-public enum KindCase
+    public enum KindCase
         implements
             com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
