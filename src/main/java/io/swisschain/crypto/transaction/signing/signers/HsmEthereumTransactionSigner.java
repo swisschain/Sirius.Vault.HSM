@@ -42,7 +42,7 @@ public class HsmEthereumTransactionSigner extends HsmConnector implements CoinsT
 
     final var result =
         new TransactionSigningResult(
-            Hex.toHexString(Hash.sha3(signedTransaction)), signedTransaction);
+            "0x" + Hex.toHexString(Hash.sha3(signedTransaction)), signedTransaction);
 
     logger.debug("TxId: {}", result.getTransactionId());
     logger.debug("Signed: {}", Hex.toHexString(result.getSignedTransaction()));
