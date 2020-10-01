@@ -19,3 +19,4 @@ ENTRYPOINT ["/Sirius.Vault.HSM/bin/Sirius.Vault.HSM"]
 CMD ["--console"]
 
 EXPOSE 5000
+EXPOSE 8070
