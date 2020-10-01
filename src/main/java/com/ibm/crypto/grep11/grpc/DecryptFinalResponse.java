@@ -38,7 +38,6 @@ public final class DecryptFinalResponse extends com.google.protobuf.GeneratedMes
   private DecryptFinalResponse() {
     plain_ = com.google.protobuf.ByteString.EMPTY;
   }
-
   private DecryptFinalResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

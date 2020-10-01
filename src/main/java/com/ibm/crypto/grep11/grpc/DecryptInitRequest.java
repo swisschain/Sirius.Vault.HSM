@@ -35,11 +35,9 @@ public final class DecryptInitRequest extends com.google.protobuf.GeneratedMessa
   private DecryptInitRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-
   private DecryptInitRequest() {
     key_ = com.google.protobuf.ByteString.EMPTY;
   }
-
   private DecryptInitRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

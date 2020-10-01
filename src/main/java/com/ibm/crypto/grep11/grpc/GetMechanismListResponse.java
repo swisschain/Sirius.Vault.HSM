@@ -35,11 +35,9 @@ public final class GetMechanismListResponse extends com.google.protobuf.Generate
   private GetMechanismListResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-
   private GetMechanismListResponse() {
     mechs_ = emptyLongList();
   }
-
   private GetMechanismListResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

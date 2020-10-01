@@ -38,7 +38,6 @@ public final class SetAttributeValueResponse extends com.google.protobuf.Generat
   private SetAttributeValueResponse() {
     object_ = com.google.protobuf.ByteString.EMPTY;
   }
-
   private SetAttributeValueResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

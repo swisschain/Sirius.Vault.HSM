@@ -97,7 +97,7 @@ public final class TransferSigningRequestsOuterClass {
           + "ningRequests.GetTransferSigningRequestsE"
           + "rrorResponseBody.ErrorCode\022\025\n\rerror_mess"
           + "age\030\002 \001(\t\"0\n\tErrorCode\022\013\n\007UNKNOWN\020\000\022\026\n\022I"
-          + "NVALID_PARAMETERS\020\001\"\265\004\n\026TransferSigningR"
+          + "NVALID_PARAMETERS\020\001\"\327\004\n\026TransferSigningR"
           + "equest\022\n\n\002id\030\001 \001(\003\022\025\n\rblockchain_id\030\002 \001("
           + "\t\022D\n\014network_type\030\003 \001(\0162..swisschain.sir"
           + "ius.vaultApi.common.NetworkType\022\025\n\rproto"
@@ -111,84 +111,85 @@ public final class TransferSigningRequestsOuterClass {
           + "\022\025\n\rpolicy_result\030\t \001(\t\022\032\n\022guardian_sign"
           + "ature\030\n \001(\t\022.\n\ncreated_at\030\013 \001(\0132\032.google"
           + ".protobuf.Timestamp\022.\n\nupdated_at\030\014 \001(\0132"
-          + "\032.google.protobuf.Timestamp\"\246\002\n\013CoinToSp"
-          + "end\022F\n\002id\030\001 \001(\0132:.swisschain.sirius.vaul"
-          + "tApi.transferSigningRequests.CoinId\022R\n\005a"
-          + "sset\030\002 \001(\0132C.swisschain.sirius.vaultApi."
-          + "transferSigningRequests.BlockchainAsset\022"
-          + "<\n\005value\030\003 \001(\0132-.swisschain.sirius.vault"
-          + "Api.common.BigDecimal\022,\n\006redeem\030\004 \001(\0132\034."
-          + "google.protobuf.StringValue\022\017\n\007address\030\005"
-          + " \001(\t\"0\n\006CoinId\022\026\n\016transaction_id\030\001 \001(\t\022\016"
-          + "\n\006number\030\002 \001(\005\"v\n\017BlockchainAsset\022Q\n\002id\030"
-          + "\001 \001(\0132E.swisschain.sirius.vaultApi.trans"
-          + "ferSigningRequests.BlockchainAssetId\022\020\n\010"
-          + "accuracy\030\002 \001(\005\"R\n\021BlockchainAssetId\022\016\n\006s"
-          + "ymbol\030\001 \001(\t\022-\n\007address\030\002 \001(\0132\034.google.pr"
-          + "otobuf.StringValue\"\305\001\n$ConfirmTransferSi"
-          + "gningRequestRequest\022\022\n\nrequest_id\030\001 \001(\t\022"
-          + "#\n\033transfer_signing_request_id\030\002 \001(\003\022\026\n\016"
-          + "transaction_id\030\004 \001(\t\022\032\n\022signed_transacti"
-          + "on\030\005 \001(\014\022\027\n\017vault_signature\030\006 \001(\t\022\027\n\017hos"
-          + "t_process_id\030\007 \001(\t\"\227\002\n%ConfirmTransferSi"
-          + "gningRequestResponse\022q\n\010response\030\001 \001(\0132]"
-          + ".swisschain.sirius.vaultApi.transferSign"
-          + "ingRequests.ConfirmTransferSigningReques"
-          + "tResponseBodyH\000\022s\n\005error\030\002 \001(\0132b.swissch"
-          + "ain.sirius.vaultApi.transferSigningReque"
-          + "sts.ConfirmTransferSigningRequestErrorRe"
-          + "sponseBodyH\000B\006\n\004body\"+\n)ConfirmTransferS"
-          + "igningRequestResponseBody\"\374\001\n.ConfirmTra"
-          + "nsferSigningRequestErrorResponseBody\022\200\001\n"
-          + "\nerror_code\030\001 \001(\0162l.swisschain.sirius.va"
-          + "ultApi.transferSigningRequests.ConfirmTr"
-          + "ansferSigningRequestErrorResponseBody.Er"
-          + "rorCode\022\025\n\rerror_message\030\002 \001(\t\"0\n\tErrorC"
-          + "ode\022\013\n\007UNKNOWN\020\000\022\026\n\022INVALID_PARAMETERS\020\001"
-          + "\"\223\002\n#RejectTransferSigningRequestRequest"
-          + "\022\022\n\nrequest_id\030\001 \001(\t\022#\n\033transfer_signing"
-          + "_request_id\030\002 \001(\003\022i\n\006reason\030\004 \001(\0162Y.swis"
+          + "\032.google.protobuf.Timestamp\022\r\n\005group\030\r \001"
+          + "(\t\022\021\n\ttenant_id\030\016 \001(\t\"\246\002\n\013CoinToSpend\022F\n"
+          + "\002id\030\001 \001(\0132:.swisschain.sirius.vaultApi.t"
+          + "ransferSigningRequests.CoinId\022R\n\005asset\030\002"
+          + " \001(\0132C.swisschain.sirius.vaultApi.transf"
+          + "erSigningRequests.BlockchainAsset\022<\n\005val"
+          + "ue\030\003 \001(\0132-.swisschain.sirius.vaultApi.co"
+          + "mmon.BigDecimal\022,\n\006redeem\030\004 \001(\0132\034.google"
+          + ".protobuf.StringValue\022\017\n\007address\030\005 \001(\t\"0"
+          + "\n\006CoinId\022\026\n\016transaction_id\030\001 \001(\t\022\016\n\006numb"
+          + "er\030\002 \001(\005\"v\n\017BlockchainAsset\022Q\n\002id\030\001 \001(\0132"
+          + "E.swisschain.sirius.vaultApi.transferSig"
+          + "ningRequests.BlockchainAssetId\022\020\n\010accura"
+          + "cy\030\002 \001(\005\"R\n\021BlockchainAssetId\022\016\n\006symbol\030"
+          + "\001 \001(\t\022-\n\007address\030\002 \001(\0132\034.google.protobuf"
+          + ".StringValue\"\305\001\n$ConfirmTransferSigningR"
+          + "equestRequest\022\022\n\nrequest_id\030\001 \001(\t\022#\n\033tra"
+          + "nsfer_signing_request_id\030\002 \001(\003\022\026\n\016transa"
+          + "ction_id\030\004 \001(\t\022\032\n\022signed_transaction\030\005 \001"
+          + "(\014\022\027\n\017vault_signature\030\006 \001(\t\022\027\n\017host_proc"
+          + "ess_id\030\007 \001(\t\"\227\002\n%ConfirmTransferSigningR"
+          + "equestResponse\022q\n\010response\030\001 \001(\0132].swiss"
+          + "chain.sirius.vaultApi.transferSigningReq"
+          + "uests.ConfirmTransferSigningRequestRespo"
+          + "nseBodyH\000\022s\n\005error\030\002 \001(\0132b.swisschain.si"
+          + "rius.vaultApi.transferSigningRequests.Co"
+          + "nfirmTransferSigningRequestErrorResponse"
+          + "BodyH\000B\006\n\004body\"+\n)ConfirmTransferSigning"
+          + "RequestResponseBody\"\374\001\n.ConfirmTransferS"
+          + "igningRequestErrorResponseBody\022\200\001\n\nerror"
+          + "_code\030\001 \001(\0162l.swisschain.sirius.vaultApi"
+          + ".transferSigningRequests.ConfirmTransfer"
+          + "SigningRequestErrorResponseBody.ErrorCod"
+          + "e\022\025\n\rerror_message\030\002 \001(\t\"0\n\tErrorCode\022\013\n"
+          + "\007UNKNOWN\020\000\022\026\n\022INVALID_PARAMETERS\020\001\"\223\002\n#R"
+          + "ejectTransferSigningRequestRequest\022\022\n\nre"
+          + "quest_id\030\001 \001(\t\022#\n\033transfer_signing_reque"
+          + "st_id\030\002 \001(\003\022i\n\006reason\030\004 \001(\0162Y.swisschain"
+          + ".sirius.vaultApi.transferSigningRequests"
+          + ".TransferSigningRequestRejectionReason\022\026"
+          + "\n\016reason_message\030\005 \001(\t\022\027\n\017vault_signatur"
+          + "e\030\006 \001(\t\022\027\n\017host_process_id\030\007 \001(\t\"\224\002\n$Rej"
+          + "ectTransferSigningRequestResponse\022p\n\010res"
+          + "ponse\030\001 \001(\0132\\.swisschain.sirius.vaultApi"
+          + ".transferSigningRequests.RejectTransferS"
+          + "igningRequestResponseBodyH\000\022r\n\005error\030\002 \001"
+          + "(\0132a.swisschain.sirius.vaultApi.transfer"
+          + "SigningRequests.RejectTransferSigningReq"
+          + "uestErrorResponseBodyH\000B\006\n\004body\"*\n(Rejec"
+          + "tTransferSigningRequestResponseBody\"\371\001\n-"
+          + "RejectTransferSigningRequestErrorRespons"
+          + "eBody\022\177\n\nerror_code\030\001 \001(\0162k.swisschain.s"
+          + "irius.vaultApi.transferSigningRequests.R"
+          + "ejectTransferSigningRequestErrorResponse"
+          + "Body.ErrorCode\022\025\n\rerror_message\030\002 \001(\t\"0\n"
+          + "\tErrorCode\022\013\n\007UNKNOWN\020\000\022\026\n\022INVALID_PARAM"
+          + "ETERS\020\001*4\n\034DoubleSpendingProtectionType\022"
+          + "\t\n\005COINS\020\000\022\t\n\005NONCE\020\001*a\n%TransferSigning"
+          + "RequestRejectionReason\022\t\n\005OTHER\020\000\022\026\n\022UNK"
+          + "NOWN_BLOCKCHAIN\020\001\022\025\n\021INVALID_SIGNATURE\020\002"
+          + "2\317\004\n\027TransferSigningRequests\022\264\001\n\003Get\022U.s"
+          + "wisschain.sirius.vaultApi.transferSignin"
+          + "gRequests.GetTransferSigningRequestsRequ"
+          + "est\032V.swisschain.sirius.vaultApi.transfe"
+          + "rSigningRequests.GetTransferSigningReque"
+          + "stsResponse\022\276\001\n\007Confirm\022X.swisschain.sir"
+          + "ius.vaultApi.transferSigningRequests.Con"
+          + "firmTransferSigningRequestRequest\032Y.swis"
           + "schain.sirius.vaultApi.transferSigningRe"
-          + "quests.TransferSigningRequestRejectionRe"
-          + "ason\022\026\n\016reason_message\030\005 \001(\t\022\027\n\017vault_si"
-          + "gnature\030\006 \001(\t\022\027\n\017host_process_id\030\007 \001(\t\"\224"
-          + "\002\n$RejectTransferSigningRequestResponse\022"
-          + "p\n\010response\030\001 \001(\0132\\.swisschain.sirius.va"
-          + "ultApi.transferSigningRequests.RejectTra"
-          + "nsferSigningRequestResponseBodyH\000\022r\n\005err"
-          + "or\030\002 \001(\0132a.swisschain.sirius.vaultApi.tr"
-          + "ansferSigningRequests.RejectTransferSign"
-          + "ingRequestErrorResponseBodyH\000B\006\n\004body\"*\n"
-          + "(RejectTransferSigningRequestResponseBod"
-          + "y\"\371\001\n-RejectTransferSigningRequestErrorR"
-          + "esponseBody\022\177\n\nerror_code\030\001 \001(\0162k.swissc"
-          + "hain.sirius.vaultApi.transferSigningRequ"
-          + "ests.RejectTransferSigningRequestErrorRe"
-          + "sponseBody.ErrorCode\022\025\n\rerror_message\030\002 "
-          + "\001(\t\"0\n\tErrorCode\022\013\n\007UNKNOWN\020\000\022\026\n\022INVALID"
-          + "_PARAMETERS\020\001*4\n\034DoubleSpendingProtectio"
-          + "nType\022\t\n\005COINS\020\000\022\t\n\005NONCE\020\001*a\n%TransferS"
-          + "igningRequestRejectionReason\022\t\n\005OTHER\020\000\022"
-          + "\026\n\022UNKNOWN_BLOCKCHAIN\020\001\022\025\n\021INVALID_SIGNA"
-          + "TURE\020\0022\317\004\n\027TransferSigningRequests\022\264\001\n\003G"
-          + "et\022U.swisschain.sirius.vaultApi.transfer"
-          + "SigningRequests.GetTransferSigningReques"
-          + "tsRequest\032V.swisschain.sirius.vaultApi.t"
-          + "ransferSigningRequests.GetTransferSignin"
-          + "gRequestsResponse\022\276\001\n\007Confirm\022X.swisscha"
-          + "in.sirius.vaultApi.transferSigningReques"
-          + "ts.ConfirmTransferSigningRequestRequest\032"
-          + "Y.swisschain.sirius.vaultApi.transferSig"
-          + "ningRequests.ConfirmTransferSigningReque"
-          + "stResponse\022\273\001\n\006Reject\022W.swisschain.siriu"
-          + "s.vaultApi.transferSigningRequests.Rejec"
-          + "tTransferSigningRequestRequest\032X.swissch"
-          + "ain.sirius.vaultApi.transferSigningReque"
-          + "sts.RejectTransferSigningRequestResponse"
-          + "B\202\001\n?io.swisschain.sirius.vaultApi.gener"
-          + "ated.transferSigningRequests\252\002>Swisschai"
-          + "n.Sirius.VaultApi.ApiContract.TransferSi"
-          + "gningRequestsb\006proto3"
+          + "quests.ConfirmTransferSigningRequestResp"
+          + "onse\022\273\001\n\006Reject\022W.swisschain.sirius.vaul"
+          + "tApi.transferSigningRequests.RejectTrans"
+          + "ferSigningRequestRequest\032X.swisschain.si"
+          + "rius.vaultApi.transferSigningRequests.Re"
+          + "jectTransferSigningRequestResponseB\202\001\n?i"
+          + "o.swisschain.sirius.vaultApi.generated.t"
+          + "ransferSigningRequests\252\002>Swisschain.Siri"
+          + "us.VaultApi.ApiContract.TransferSigningR"
+          + "equestsb\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
@@ -246,6 +247,8 @@ public final class TransferSigningRequestsOuterClass {
               "GuardianSignature",
               "CreatedAt",
               "UpdatedAt",
+              "Group",
+              "TenantId",
             });
     internal_static_swisschain_sirius_vaultApi_transferSigningRequests_CoinToSpend_descriptor =
         getDescriptor().getMessageTypes().get(5);
@@ -353,7 +356,6 @@ public final class TransferSigningRequestsOuterClass {
     com.google.protobuf.TimestampProto.getDescriptor();
     io.swisschain.sirius.vaultApi.generated.common.Common.getDescriptor();
   }
-
   private TransferSigningRequestsOuterClass() {}
 
   public static void registerAllExtensions(com.google.protobuf.ExtensionRegistryLite registry) {}
@@ -381,7 +383,6 @@ public final class TransferSigningRequestsOuterClass {
     public static final int COINS_VALUE = 0;
     /** <code>NONCE = 1;</code> */
     public static final int NONCE_VALUE = 1;
-
     private static final com.google.protobuf.Internal.EnumLiteMap<DoubleSpendingProtectionType>
         internalValueMap =
             new com.google.protobuf.Internal.EnumLiteMap<DoubleSpendingProtectionType>() {
@@ -492,7 +493,6 @@ public final class TransferSigningRequestsOuterClass {
     public static final int UNKNOWN_BLOCKCHAIN_VALUE = 1;
     /** <code>INVALID_SIGNATURE = 2;</code> */
     public static final int INVALID_SIGNATURE_VALUE = 2;
-
     private static final com.google.protobuf.Internal.EnumLiteMap<
             TransferSigningRequestRejectionReason>
         internalValueMap =
@@ -585,12 +585,10 @@ public final class TransferSigningRequestsOuterClass {
 
     // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequestRejectionReason)
   }
-
   public interface GetTransferSigningRequestsRequestOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsRequest)
       com.google.protobuf.MessageOrBuilder {}
-
   public interface GetTransferSigningRequestsResponseOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponse)
@@ -680,7 +678,6 @@ public final class TransferSigningRequestsOuterClass {
             .BodyCase
         getBodyCase();
   }
-
   public interface GetTransferSigningRequestsResponseBodyOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsResponseBody)
@@ -748,7 +745,6 @@ public final class TransferSigningRequestsOuterClass {
             .TransferSigningRequestOrBuilder
         getRequestsOrBuilder(int index);
   }
-
   public interface GetTransferSigningRequestsErrorResponseBodyOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.GetTransferSigningRequestsErrorResponseBody)
@@ -792,7 +788,6 @@ public final class TransferSigningRequestsOuterClass {
      */
     com.google.protobuf.ByteString getErrorMessageBytes();
   }
-
   public interface TransferSigningRequestOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest)
@@ -1019,8 +1014,33 @@ public final class TransferSigningRequestsOuterClass {
     com.google.protobuf.Timestamp getUpdatedAt();
     /** <code>.google.protobuf.Timestamp updated_at = 12;</code> */
     com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder();
-  }
 
+    /**
+     * <code>string group = 13;</code>
+     *
+     * @return The group.
+     */
+    java.lang.String getGroup();
+    /**
+     * <code>string group = 13;</code>
+     *
+     * @return The bytes for group.
+     */
+    com.google.protobuf.ByteString getGroupBytes();
+
+    /**
+     * <code>string tenant_id = 14;</code>
+     *
+     * @return The tenantId.
+     */
+    java.lang.String getTenantId();
+    /**
+     * <code>string tenant_id = 14;</code>
+     *
+     * @return The bytes for tenantId.
+     */
+    com.google.protobuf.ByteString getTenantIdBytes();
+  }
   public interface CoinToSpendOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.CoinToSpend)
@@ -1129,7 +1149,6 @@ public final class TransferSigningRequestsOuterClass {
      */
     com.google.protobuf.ByteString getAddressBytes();
   }
-
   public interface CoinIdOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.CoinId)
@@ -1155,7 +1174,6 @@ public final class TransferSigningRequestsOuterClass {
      */
     int getNumber();
   }
-
   public interface BlockchainAssetOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAsset)
@@ -1199,7 +1217,6 @@ public final class TransferSigningRequestsOuterClass {
      */
     int getAccuracy();
   }
-
   public interface BlockchainAssetIdOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.BlockchainAssetId)
@@ -1233,7 +1250,6 @@ public final class TransferSigningRequestsOuterClass {
     /** <code>.google.protobuf.StringValue address = 2;</code> */
     com.google.protobuf.StringValueOrBuilder getAddressOrBuilder();
   }
-
   public interface ConfirmTransferSigningRequestRequestOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestRequest)
@@ -1305,7 +1321,6 @@ public final class TransferSigningRequestsOuterClass {
      */
     com.google.protobuf.ByteString getHostProcessIdBytes();
   }
-
   public interface ConfirmTransferSigningRequestResponseOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponse)
@@ -1395,12 +1410,10 @@ public final class TransferSigningRequestsOuterClass {
             .BodyCase
         getBodyCase();
   }
-
   public interface ConfirmTransferSigningRequestResponseBodyOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestResponseBody)
       com.google.protobuf.MessageOrBuilder {}
-
   public interface ConfirmTransferSigningRequestErrorResponseBodyOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.ConfirmTransferSigningRequestErrorResponseBody)
@@ -1444,7 +1457,6 @@ public final class TransferSigningRequestsOuterClass {
      */
     com.google.protobuf.ByteString getErrorMessageBytes();
   }
-
   public interface RejectTransferSigningRequestRequestOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestRequest)
@@ -1533,7 +1545,6 @@ public final class TransferSigningRequestsOuterClass {
      */
     com.google.protobuf.ByteString getHostProcessIdBytes();
   }
-
   public interface RejectTransferSigningRequestResponseOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponse)
@@ -1623,12 +1634,10 @@ public final class TransferSigningRequestsOuterClass {
             .BodyCase
         getBodyCase();
   }
-
   public interface RejectTransferSigningRequestResponseBodyOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestResponseBody)
       com.google.protobuf.MessageOrBuilder {}
-
   public interface RejectTransferSigningRequestErrorResponseBodyOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.transferSigningRequests.RejectTransferSigningRequestErrorResponseBody)
@@ -2432,8 +2441,7 @@ public final class TransferSigningRequestsOuterClass {
       super(builder);
     }
 
-    private GetTransferSigningRequestsResponse() {}
-    ;
+        private GetTransferSigningRequestsResponse() {};
 
     private GetTransferSigningRequestsResponse(
         com.google.protobuf.CodedInputStream input,
@@ -3118,7 +3126,7 @@ public final class TransferSigningRequestsOuterClass {
       return DEFAULT_INSTANCE;
     }
 
-    public enum BodyCase
+public enum BodyCase
         implements
             com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
@@ -4203,7 +4211,6 @@ public final class TransferSigningRequestsOuterClass {
     private GetTransferSigningRequestsResponseBody() {
       requests_ = java.util.Collections.emptyList();
     }
-
     private GetTransferSigningRequestsResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -5553,12 +5560,10 @@ public final class TransferSigningRequestsOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private GetTransferSigningRequestsErrorResponseBody() {
       errorCode_ = 0;
       errorMessage_ = "";
     }
-
     private GetTransferSigningRequestsErrorResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -6079,7 +6084,6 @@ public final class TransferSigningRequestsOuterClass {
       public static final int UNKNOWN_VALUE = 0;
       /** <code>INVALID_PARAMETERS = 1;</code> */
       public static final int INVALID_PARAMETERS_VALUE = 1;
-
       private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
           new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
             public ErrorCode findValueByNumber(int number) {
@@ -6675,6 +6679,8 @@ public final class TransferSigningRequestsOuterClass {
     public static final int GUARDIAN_SIGNATURE_FIELD_NUMBER = 10;
     public static final int CREATED_AT_FIELD_NUMBER = 11;
     public static final int UPDATED_AT_FIELD_NUMBER = 12;
+    public static final int GROUP_FIELD_NUMBER = 13;
+    public static final int TENANT_ID_FIELD_NUMBER = 14;
     private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequest)
     private static final io.swisschain
@@ -6727,12 +6733,13 @@ public final class TransferSigningRequestsOuterClass {
     private volatile java.lang.Object guardianSignature_;
     private com.google.protobuf.Timestamp createdAt_;
     private com.google.protobuf.Timestamp updatedAt_;
+    private volatile java.lang.Object group_;
+    private volatile java.lang.Object tenantId_;
     private byte memoizedIsInitialized = -1;
     // Use TransferSigningRequest.newBuilder() to construct.
     private TransferSigningRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private TransferSigningRequest() {
       blockchainId_ = "";
       networkType_ = 0;
@@ -6743,8 +6750,9 @@ public final class TransferSigningRequestsOuterClass {
       coinsToSpend_ = java.util.Collections.emptyList();
       policyResult_ = "";
       guardianSignature_ = "";
+      group_ = "";
+      tenantId_ = "";
     }
-
     private TransferSigningRequest(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -6875,6 +6883,20 @@ public final class TransferSigningRequestsOuterClass {
                   updatedAt_ = subBuilder.buildPartial();
                 }
 
+                break;
+              }
+            case 106:
+              {
+                java.lang.String s = input.readStringRequireUtf8();
+
+                group_ = s;
+                break;
+              }
+            case 114:
+              {
+                java.lang.String s = input.readStringRequireUtf8();
+
+                tenantId_ = s;
                 break;
               }
             default:
@@ -7542,6 +7564,78 @@ public final class TransferSigningRequestsOuterClass {
       return getUpdatedAt();
     }
 
+    /**
+     * <code>string group = 13;</code>
+     *
+     * @return The group.
+     */
+    @java.lang.Override
+    public java.lang.String getGroup() {
+      java.lang.Object ref = group_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        group_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string group = 13;</code>
+     *
+     * @return The bytes for group.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getGroupBytes() {
+      java.lang.Object ref = group_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        group_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>string tenant_id = 14;</code>
+     *
+     * @return The tenantId.
+     */
+    @java.lang.Override
+    public java.lang.String getTenantId() {
+      java.lang.Object ref = tenantId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        tenantId_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string tenant_id = 14;</code>
+     *
+     * @return The bytes for tenantId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getTenantIdBytes() {
+      java.lang.Object ref = tenantId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        tenantId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -7593,6 +7687,12 @@ public final class TransferSigningRequestsOuterClass {
       }
       if (updatedAt_ != null) {
         output.writeMessage(12, getUpdatedAt());
+      }
+      if (!getGroupBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, group_);
+      }
+      if (!getTenantIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, tenantId_);
       }
       unknownFields.writeTo(output);
     }
@@ -7648,6 +7748,12 @@ public final class TransferSigningRequestsOuterClass {
       }
       if (updatedAt_ != null) {
         size += com.google.protobuf.CodedOutputStream.computeMessageSize(12, getUpdatedAt());
+      }
+      if (!getGroupBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, group_);
+      }
+      if (!getTenantIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, tenantId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -7705,6 +7811,8 @@ public final class TransferSigningRequestsOuterClass {
       if (hasUpdatedAt()) {
         if (!getUpdatedAt().equals(other.getUpdatedAt())) return false;
       }
+      if (!getGroup().equals(other.getGroup())) return false;
+      if (!getTenantId().equals(other.getTenantId())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -7748,6 +7856,10 @@ public final class TransferSigningRequestsOuterClass {
         hash = (37 * hash) + UPDATED_AT_FIELD_NUMBER;
         hash = (53 * hash) + getUpdatedAt().hashCode();
       }
+      hash = (37 * hash) + GROUP_FIELD_NUMBER;
+      hash = (53 * hash) + getGroup().hashCode();
+      hash = (37 * hash) + TENANT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTenantId().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -7859,6 +7971,8 @@ public final class TransferSigningRequestsOuterClass {
               com.google.protobuf.Timestamp.Builder,
               com.google.protobuf.TimestampOrBuilder>
           updatedAtBuilder_;
+      private java.lang.Object group_ = "";
+      private java.lang.Object tenantId_ = "";
 
       // Construct using
       // io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass.TransferSigningRequest.newBuilder()
@@ -7952,6 +8066,10 @@ public final class TransferSigningRequestsOuterClass {
           updatedAt_ = null;
           updatedAtBuilder_ = null;
         }
+        group_ = "";
+
+        tenantId_ = "";
+
         return this;
       }
 
@@ -8059,6 +8177,8 @@ public final class TransferSigningRequestsOuterClass {
         } else {
           result.updatedAt_ = updatedAtBuilder_.build();
         }
+        result.group_ = group_;
+        result.tenantId_ = tenantId_;
         onBuilt();
         return result;
       }
@@ -8207,6 +8327,14 @@ public final class TransferSigningRequestsOuterClass {
         }
         if (other.hasUpdatedAt()) {
           mergeUpdatedAt(other.getUpdatedAt());
+        }
+        if (!other.getGroup().isEmpty()) {
+          group_ = other.group_;
+          onChanged();
+        }
+        if (!other.getTenantId().isEmpty()) {
+          tenantId_ = other.tenantId_;
+          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -9525,6 +9653,7 @@ public final class TransferSigningRequestsOuterClass {
       public boolean hasUpdatedAt() {
         return updatedAtBuilder_ != null || updatedAt_ != null;
       }
+
       /**
        * <code>.google.protobuf.Timestamp updated_at = 12;</code>
        *
@@ -9539,6 +9668,7 @@ public final class TransferSigningRequestsOuterClass {
           return updatedAtBuilder_.getMessage();
         }
       }
+
       /** <code>.google.protobuf.Timestamp updated_at = 12;</code> */
       public Builder setUpdatedAt(com.google.protobuf.Timestamp value) {
         if (updatedAtBuilder_ == null) {
@@ -9553,6 +9683,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.Timestamp updated_at = 12;</code> */
       public Builder setUpdatedAt(com.google.protobuf.Timestamp.Builder builderForValue) {
         if (updatedAtBuilder_ == null) {
@@ -9564,6 +9695,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.Timestamp updated_at = 12;</code> */
       public Builder mergeUpdatedAt(com.google.protobuf.Timestamp value) {
         if (updatedAtBuilder_ == null) {
@@ -9582,6 +9714,7 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.Timestamp updated_at = 12;</code> */
       public Builder clearUpdatedAt() {
         if (updatedAtBuilder_ == null) {
@@ -9594,12 +9727,14 @@ public final class TransferSigningRequestsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.Timestamp updated_at = 12;</code> */
       public com.google.protobuf.Timestamp.Builder getUpdatedAtBuilder() {
 
         onChanged();
         return getUpdatedAtFieldBuilder().getBuilder();
       }
+
       /** <code>.google.protobuf.Timestamp updated_at = 12;</code> */
       public com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder() {
         if (updatedAtBuilder_ != null) {
@@ -9610,6 +9745,7 @@ public final class TransferSigningRequestsOuterClass {
               : updatedAt_;
         }
       }
+
       /** <code>.google.protobuf.Timestamp updated_at = 12;</code> */
       private com.google.protobuf.SingleFieldBuilderV3<
               com.google.protobuf.Timestamp,
@@ -9626,6 +9762,164 @@ public final class TransferSigningRequestsOuterClass {
           updatedAt_ = null;
         }
         return updatedAtBuilder_;
+      }
+
+      /**
+       * <code>string group = 13;</code>
+       *
+       * @return The group.
+       */
+      public java.lang.String getGroup() {
+        java.lang.Object ref = group_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          group_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+
+      /**
+       * <code>string group = 13;</code>
+       *
+       * @param value The group to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGroup(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        group_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string group = 13;</code>
+       *
+       * @return The bytes for group.
+       */
+      public com.google.protobuf.ByteString getGroupBytes() {
+        java.lang.Object ref = group_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b =
+              com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+          group_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      /**
+       * <code>string group = 13;</code>
+       *
+       * @param value The bytes for group to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGroupBytes(com.google.protobuf.ByteString value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        checkByteStringIsUtf8(value);
+
+        group_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string group = 13;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearGroup() {
+
+        group_ = getDefaultInstance().getGroup();
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string tenant_id = 14;</code>
+       *
+       * @return The tenantId.
+       */
+      public java.lang.String getTenantId() {
+        java.lang.Object ref = tenantId_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          tenantId_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+
+      /**
+       * <code>string tenant_id = 14;</code>
+       *
+       * @param value The tenantId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTenantId(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        tenantId_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string tenant_id = 14;</code>
+       *
+       * @return The bytes for tenantId.
+       */
+      public com.google.protobuf.ByteString getTenantIdBytes() {
+        java.lang.Object ref = tenantId_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b =
+              com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+          tenantId_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      /**
+       * <code>string tenant_id = 14;</code>
+       *
+       * @param value The bytes for tenantId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTenantIdBytes(com.google.protobuf.ByteString value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        checkByteStringIsUtf8(value);
+
+        tenantId_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string tenant_id = 14;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearTenantId() {
+
+        tenantId_ = getDefaultInstance().getTenantId();
+        onChanged();
+        return this;
       }
 
       @java.lang.Override
@@ -9710,11 +10004,9 @@ public final class TransferSigningRequestsOuterClass {
     private CoinToSpend(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private CoinToSpend() {
       address_ = "";
     }
-
     private CoinToSpend(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -11653,11 +11945,9 @@ public final class TransferSigningRequestsOuterClass {
     private CoinId(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private CoinId() {
       transactionId_ = "";
     }
-
     private CoinId(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -12566,9 +12856,7 @@ public final class TransferSigningRequestsOuterClass {
     private BlockchainAsset(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private BlockchainAsset() {}
-
     private BlockchainAsset(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -13689,11 +13977,9 @@ public final class TransferSigningRequestsOuterClass {
     private BlockchainAssetId(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private BlockchainAssetId() {
       symbol_ = "";
     }
-
     private BlockchainAssetId(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -14729,7 +15015,6 @@ public final class TransferSigningRequestsOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private ConfirmTransferSigningRequestRequest() {
       requestId_ = "";
       transactionId_ = "";
@@ -16140,8 +16425,7 @@ public final class TransferSigningRequestsOuterClass {
       super(builder);
     }
 
-    private ConfirmTransferSigningRequestResponse() {}
-    ;
+        private ConfirmTransferSigningRequestResponse() {};
 
     private ConfirmTransferSigningRequestResponse(
         com.google.protobuf.CodedInputStream input,
@@ -16826,7 +17110,7 @@ public final class TransferSigningRequestsOuterClass {
       return DEFAULT_INSTANCE;
     }
 
-    public enum BodyCase
+public enum BodyCase
         implements
             com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
@@ -18612,12 +18896,10 @@ public final class TransferSigningRequestsOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private ConfirmTransferSigningRequestErrorResponseBody() {
       errorCode_ = 0;
       errorMessage_ = "";
     }
-
     private ConfirmTransferSigningRequestErrorResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -19139,7 +19421,6 @@ public final class TransferSigningRequestsOuterClass {
       public static final int UNKNOWN_VALUE = 0;
       /** <code>INVALID_PARAMETERS = 1;</code> */
       public static final int INVALID_PARAMETERS_VALUE = 1;
-
       private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
           new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
             public ErrorCode findValueByNumber(int number) {
@@ -19775,7 +20056,6 @@ public final class TransferSigningRequestsOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private RejectTransferSigningRequestRequest() {
       requestId_ = "";
       reason_ = 0;
@@ -21304,8 +21584,7 @@ public final class TransferSigningRequestsOuterClass {
       super(builder);
     }
 
-    private RejectTransferSigningRequestResponse() {}
-    ;
+        private RejectTransferSigningRequestResponse() {};
 
     private RejectTransferSigningRequestResponse(
         com.google.protobuf.CodedInputStream input,
@@ -21990,7 +22269,7 @@ public final class TransferSigningRequestsOuterClass {
       return DEFAULT_INSTANCE;
     }
 
-    public enum BodyCase
+public enum BodyCase
         implements
             com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
@@ -23775,12 +24054,10 @@ public final class TransferSigningRequestsOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private RejectTransferSigningRequestErrorResponseBody() {
       errorCode_ = 0;
       errorMessage_ = "";
     }
-
     private RejectTransferSigningRequestErrorResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -24302,7 +24579,6 @@ public final class TransferSigningRequestsOuterClass {
       public static final int UNKNOWN_VALUE = 0;
       /** <code>INVALID_PARAMETERS = 1;</code> */
       public static final int INVALID_PARAMETERS_VALUE = 1;
-
       private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
           new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
             public ErrorCode findValueByNumber(int number) {

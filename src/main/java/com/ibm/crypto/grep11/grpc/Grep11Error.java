@@ -38,11 +38,9 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
   private Grep11Error(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-
   private Grep11Error() {
     detail_ = "";
   }
-
   private Grep11Error(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

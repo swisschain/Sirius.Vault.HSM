@@ -39,13 +39,11 @@ public final class VerifySingleRequest extends com.google.protobuf.GeneratedMess
   private VerifySingleRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-
   private VerifySingleRequest() {
     pubKey_ = com.google.protobuf.ByteString.EMPTY;
     data_ = com.google.protobuf.ByteString.EMPTY;
     signature_ = com.google.protobuf.ByteString.EMPTY;
   }
-
   private VerifySingleRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

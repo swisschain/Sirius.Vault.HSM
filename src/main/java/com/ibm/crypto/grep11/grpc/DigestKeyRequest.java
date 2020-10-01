@@ -35,7 +35,6 @@ public final class DigestKeyRequest extends com.google.protobuf.GeneratedMessage
   private DigestKeyRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-
   private DigestKeyRequest() {
     state_ = com.google.protobuf.ByteString.EMPTY;
     key_ = com.google.protobuf.ByteString.EMPTY;

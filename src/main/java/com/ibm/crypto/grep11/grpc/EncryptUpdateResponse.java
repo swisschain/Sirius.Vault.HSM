@@ -35,7 +35,6 @@ public final class EncryptUpdateResponse extends com.google.protobuf.GeneratedMe
   private EncryptUpdateResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-
   private EncryptUpdateResponse() {
     state_ = com.google.protobuf.ByteString.EMPTY;
     ciphered_ = com.google.protobuf.ByteString.EMPTY;

@@ -92,6 +92,8 @@ public class TransferSigningTask implements Runnable {
                   networkType,
                   doubleSpendingProtectionType,
                   transferSigningRequest.getSigningAddressesList(),
+                  transferSigningRequest.getGroup(),
+                  transferSigningRequest.getTenantId(),
                   transferSigningRequest.getBuiltTransaction().toByteArray(),
                   coins);
 

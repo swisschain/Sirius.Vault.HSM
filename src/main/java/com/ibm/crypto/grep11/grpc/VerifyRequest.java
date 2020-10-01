@@ -38,13 +38,11 @@ public final class VerifyRequest extends com.google.protobuf.GeneratedMessageV3
   private VerifyRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-
   private VerifyRequest() {
     state_ = com.google.protobuf.ByteString.EMPTY;
     data_ = com.google.protobuf.ByteString.EMPTY;
     signature_ = com.google.protobuf.ByteString.EMPTY;
   }
-
   private VerifyRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

@@ -27,13 +27,17 @@ public class TransactionService {
       NetworkType networkType,
       DoubleSpendingProtectionType doubleSpendingProtectionType,
       List<String> signingAddresses,
+      String group,
+      String tenantId,
       byte[] bytes,
       List<Coin> coins)
       throws Exception {
     List<Wallet> wallets;
 
     try {
-      wallets = this.walletRepository.getByAddresses(signingAddresses);
+      wallets =
+          this.walletRepository.getByAddressesAndGroupAndTenantId(
+              signingAddresses, group, tenantId);
     } catch (Exception exception) {
       throw new Exception("Can not get wallets.", exception);
     }

@@ -45,7 +45,6 @@ public final class WrapKeyRequest extends com.google.protobuf.GeneratedMessageV3
     keK_ = com.google.protobuf.ByteString.EMPTY;
     macKey_ = com.google.protobuf.ByteString.EMPTY;
   }
-
   private WrapKeyRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

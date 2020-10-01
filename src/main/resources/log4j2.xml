@@ -11,17 +11,12 @@
             <AppenderRef ref="ConsoleLog"/>
         </Root>
 
-        <Logger name="io.swisschain.crypto.transaction.signing.signers.HsmBitcoinCoinTransactionSigner"
+        <Logger name="io.swisschain.crypto"
                 level="debug" additivity="false">
             <AppenderRef ref="ConsoleLog"/>
         </Logger>
 
-        <Logger name="io.swisschain.crypto.transaction.signing.signers.HsmEthereumTransactionSigner"
-                level="debug" additivity="false">
-            <AppenderRef ref="ConsoleLog"/>
-        </Logger>
-
-        <Logger name="io.swisschain.tasks.TransferSigningTask"
+        <Logger name="io.swisschain.tasks"
                 level="debug" additivity="false">
             <AppenderRef ref="ConsoleLog"/>
         </Logger>

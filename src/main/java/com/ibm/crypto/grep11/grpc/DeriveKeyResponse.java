@@ -35,7 +35,6 @@ public final class DeriveKeyResponse extends com.google.protobuf.GeneratedMessag
   private DeriveKeyResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-
   private DeriveKeyResponse() {
     newKey_ = com.google.protobuf.ByteString.EMPTY;
     checkSum_ = com.google.protobuf.ByteString.EMPTY;

@@ -38,7 +38,6 @@ public final class EncryptSingleResponse extends com.google.protobuf.GeneratedMe
   private EncryptSingleResponse() {
     ciphered_ = com.google.protobuf.ByteString.EMPTY;
   }
-
   private EncryptSingleResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

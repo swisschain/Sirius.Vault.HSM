@@ -38,12 +38,10 @@ public final class DecryptSingleRequest extends com.google.protobuf.GeneratedMes
   private DecryptSingleRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-
   private DecryptSingleRequest() {
     key_ = com.google.protobuf.ByteString.EMPTY;
     ciphered_ = com.google.protobuf.ByteString.EMPTY;
   }
-
   private DecryptSingleRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

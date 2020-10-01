@@ -35,11 +35,9 @@ public final class SignInitRequest extends com.google.protobuf.GeneratedMessageV
   private SignInitRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-
   private SignInitRequest() {
     privKey_ = com.google.protobuf.ByteString.EMPTY;
   }
-
   private SignInitRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

@@ -1156,7 +1156,6 @@ public final class Hsm {
               "Code", "Detail", "Retry",
             });
   }
-
   private Hsm() {}
 
   public static void registerAllExtensions(com.google.protobuf.ExtensionRegistryLite registry) {}

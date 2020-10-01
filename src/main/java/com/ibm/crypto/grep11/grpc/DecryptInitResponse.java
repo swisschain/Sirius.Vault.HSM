@@ -38,7 +38,6 @@ public final class DecryptInitResponse extends com.google.protobuf.GeneratedMess
   private DecryptInitResponse() {
     state_ = com.google.protobuf.ByteString.EMPTY;
   }
-
   private DecryptInitResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

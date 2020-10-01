@@ -38,7 +38,6 @@ public final class SignFinalRequest extends com.google.protobuf.GeneratedMessage
   private SignFinalRequest() {
     state_ = com.google.protobuf.ByteString.EMPTY;
   }
-
   private SignFinalRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

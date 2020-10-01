@@ -38,7 +38,6 @@ public final class EncryptResponse extends com.google.protobuf.GeneratedMessageV
   private EncryptResponse() {
     ciphered_ = com.google.protobuf.ByteString.EMPTY;
   }
-
   private EncryptResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

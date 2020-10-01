@@ -38,7 +38,6 @@ public final class SignSingleResponse extends com.google.protobuf.GeneratedMessa
   private SignSingleResponse() {
     signature_ = com.google.protobuf.ByteString.EMPTY;
   }
-
   private SignSingleResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

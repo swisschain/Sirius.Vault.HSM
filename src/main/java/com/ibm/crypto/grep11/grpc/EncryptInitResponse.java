@@ -38,7 +38,6 @@ public final class EncryptInitResponse extends com.google.protobuf.GeneratedMess
   private EncryptInitResponse() {
     state_ = com.google.protobuf.ByteString.EMPTY;
   }
-
   private EncryptInitResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

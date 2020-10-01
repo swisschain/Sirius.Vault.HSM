@@ -37,11 +37,9 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
   private GenerateKeyRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-
   private GenerateKeyRequest() {
     keyId_ = "";
   }
-
   private GenerateKeyRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

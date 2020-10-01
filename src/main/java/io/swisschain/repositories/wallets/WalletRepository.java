@@ -17,8 +17,10 @@ public class WalletRepository extends Repository {
     this.connectionFactory = connectionFactory;
   }
 
-  public List<Wallet> getByAddresses(List<String> addresses) throws SQLException {
-    StringJoiner joiner = new StringJoiner(",", "WHERE address IN (", ");");
+  public List<Wallet> getByAddressesAndGroupAndTenantId(
+      List<String> addresses, String group, String tenantId) throws SQLException {
+    StringJoiner joiner =
+        new StringJoiner(",", "WHERE address IN (", ") AND group = ? AND tenant_id = ?;");
 
     for (Object ignored : addresses) {
       joiner.add("?");
@@ -31,9 +33,12 @@ public class WalletRepository extends Repository {
 
     try (Connection connection = this.connectionFactory.create();
         PreparedStatement statement = connection.prepareStatement(sql)) {
+      var i = 1;
       for (int index = 0; index < addresses.size(); index++) {
-        statement.setString(index + 1, addresses.get(index));
+        statement.setString(i++, addresses.get(index));
       }
+      statement.setString(i++, group);
+      statement.setString(i++, tenantId);
 
       ResultSet resultSet = statement.executeQuery();
 

@@ -38,7 +38,6 @@ public final class DigestSingleResponse extends com.google.protobuf.GeneratedMes
   private DigestSingleResponse() {
     digest_ = com.google.protobuf.ByteString.EMPTY;
   }
-
   private DigestSingleResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

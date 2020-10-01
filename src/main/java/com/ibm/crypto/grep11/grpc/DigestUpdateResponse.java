@@ -38,7 +38,6 @@ public final class DigestUpdateResponse extends com.google.protobuf.GeneratedMes
   private DigestUpdateResponse() {
     state_ = com.google.protobuf.ByteString.EMPTY;
   }
-
   private DigestUpdateResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

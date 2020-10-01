@@ -36,7 +36,6 @@ public final class DigestInitRequest extends com.google.protobuf.GeneratedMessag
   }
 
   private DigestInitRequest() {}
-
   private DigestInitRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

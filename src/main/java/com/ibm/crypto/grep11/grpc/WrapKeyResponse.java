@@ -38,7 +38,6 @@ public final class WrapKeyResponse extends com.google.protobuf.GeneratedMessageV
   private WrapKeyResponse() {
     wrapped_ = com.google.protobuf.ByteString.EMPTY;
   }
-
   private WrapKeyResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
