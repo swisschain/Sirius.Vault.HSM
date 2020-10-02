@@ -1,6 +1,7 @@
 package io.swisschain.tasks;
 
 import com.google.protobuf.ByteString;
+import com.google.protobuf.Timestamp;
 import io.grpc.StatusRuntimeException;
 import io.swisschain.crypto.exceptions.BlockchainNotSupportedException;
 import io.swisschain.mappers.DoubleSpendingProtectionTypeMapper;
@@ -8,12 +9,12 @@ import io.swisschain.mappers.NetworkTypeMapper;
 import io.swisschain.services.*;
 import io.swisschain.sirius.vaultApi.VaultApiClient;
 import io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass;
-import org.apache.commons.codec.binary.Hex;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.Nullable;
 
 import java.math.BigDecimal;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,64 +39,16 @@ public class TransferSigningTask implements Runnable {
     try {
       var requests = getRequests();
 
-      if (requests == null) return;
+      if (requests == null || requests.size() == 0) return;
 
       for (var transferSigningRequest : requests) {
         try {
-          var networkType = NetworkTypeMapper.map(transferSigningRequest.getNetworkType());
+          logger.info(
+              String.format(
+                  "Processing transfer signing request. Id: %d",
+                  transferSigningRequest.getId()));
 
-          var doubleSpendingProtectionType =
-              DoubleSpendingProtectionTypeMapper.map(
-                  transferSigningRequest.getDoubleSpendingProtectionType());
-
-          var coins = new ArrayList<Coin>();
-
-          for (var coinToSpend : transferSigningRequest.getCoinsToSpendList()) {
-            var coinId =
-                new CoinId(coinToSpend.getId().getTransactionId(), coinToSpend.getId().getNumber());
-
-            var address =
-                coinToSpend.getAsset().getId().getAddress() != null
-                    ? coinToSpend.getAsset().getId().getAddress().getValue()
-                    : null;
-
-            var blockchainAssetId =
-                new BlockchainAssetId(coinToSpend.getAsset().getId().getSymbol(), address);
-
-            var asset =
-                new BlockchainAsset(blockchainAssetId, coinToSpend.getAsset().getAccuracy());
-
-            var redeem =
-                coinToSpend.getRedeem() != null ? coinToSpend.getRedeem().getValue() : null;
-
-            var coin =
-                new Coin(
-                    coinId,
-                    asset,
-                    new BigDecimal(coinToSpend.getValue().getValue()),
-                    coinToSpend.getAddress(),
-                    redeem);
-
-            coins.add(coin);
-          }
-
-          logger.debug("TransferSigningRequest: {}", transferSigningRequest.toString());
-          logger.debug(
-              "TransferSigningRequest, raw transfer: {}",
-              Hex.encodeHexString(transferSigningRequest.getBuiltTransaction().toByteArray()));
-
-          var transaction =
-              transactionService.create(
-                  transferSigningRequest.getId(),
-                  transferSigningRequest.getBlockchainId(),
-                  transferSigningRequest.getProtocolCode(),
-                  networkType,
-                  doubleSpendingProtectionType,
-                  transferSigningRequest.getSigningAddressesList(),
-                  transferSigningRequest.getGroup(),
-                  transferSigningRequest.getTenantId(),
-                  transferSigningRequest.getBuiltTransaction().toByteArray(),
-                  coins);
+          var transaction = transactionService.create(transferSigningRequest);
 
           confirm(
               transferSigningRequest.getId(),
@@ -119,14 +72,13 @@ public class TransferSigningTask implements Runnable {
               exception.getMessage());
         }
       }
-
     } catch (Exception exception) {
       logger.error("An error occurred while processing transfer signing requests.", exception);
     }
   }
 
   @Nullable
-  private List<TransferSigningRequestsOuterClass.TransferSigningRequest> getRequests() {
+  private List<TransferSigningRequest> getRequests() {
     try {
       var request =
           TransferSigningRequestsOuterClass.GetTransferSigningRequestsRequest.newBuilder().build();
@@ -141,7 +93,22 @@ public class TransferSigningTask implements Runnable {
         return null;
       }
 
-      return response.getResponse().getRequestsList();
+      var transferSigningRequests = new ArrayList<TransferSigningRequest>();
+
+      for (var item : response.getResponse().getRequestsList()) {
+        try {
+          var transferSigningRequest = map(item);
+          transferSigningRequests.add(transferSigningRequest);
+        } catch (Exception exception) {
+          logger.error(
+              String.format(
+                  "An error occurred while parsing transfer signing request. Id: %d",
+                  item.getId()),
+              exception);
+        }
+      }
+
+      return transferSigningRequests;
     } catch (StatusRuntimeException statusRuntimeException) {
       logger.warn(
           String.format(
@@ -204,5 +171,61 @@ public class TransferSigningTask implements Runnable {
     } else {
       logger.info(String.format("Transfer signing request rejected. %d", transferSigningRequestId));
     }
+  }
+
+  private TransferSigningRequest map(
+      TransferSigningRequestsOuterClass.TransferSigningRequest request) {
+    return new TransferSigningRequest(
+        request.getId(),
+        request.getBlockchainId(),
+        request.getProtocolCode(),
+        NetworkTypeMapper.map(request.getNetworkType()),
+        DoubleSpendingProtectionTypeMapper.map(request.getDoubleSpendingProtectionType()),
+        request.getBuiltTransaction().toByteArray(),
+        request.getSigningAddressesList(),
+        map(request.getCoinsToSpendList()),
+        request.getPolicyResult(),
+        request.getGuardianSignature(),
+        request.getGroup(),
+        request.getTenantId(),
+        map(request.getCreatedAt()),
+        map(request.getUpdatedAt()));
+  }
+
+  private List<Coin> map(List<TransferSigningRequestsOuterClass.CoinToSpend> coinToSpends) {
+    var coins = new ArrayList<Coin>();
+
+    for (var coinToSpend : coinToSpends) {
+      var coinId =
+          new CoinId(coinToSpend.getId().getTransactionId(), coinToSpend.getId().getNumber());
+
+      var address =
+          coinToSpend.getAsset().getId().getAddress() != null
+              ? coinToSpend.getAsset().getId().getAddress().getValue()
+              : null;
+
+      var blockchainAssetId =
+          new BlockchainAssetId(coinToSpend.getAsset().getId().getSymbol(), address);
+
+      var asset = new BlockchainAsset(blockchainAssetId, coinToSpend.getAsset().getAccuracy());
+
+      var redeem = coinToSpend.getRedeem() != null ? coinToSpend.getRedeem().getValue() : null;
+
+      var coin =
+          new Coin(
+              coinId,
+              asset,
+              new BigDecimal(coinToSpend.getValue().getValue()),
+              coinToSpend.getAddress(),
+              redeem);
+
+      coins.add(coin);
+    }
+
+    return coins;
+  }
+
+  private Instant map(Timestamp timestamp) {
+    return Instant.ofEpochSecond(timestamp.getSeconds(), timestamp.getNanos());
   }
 }

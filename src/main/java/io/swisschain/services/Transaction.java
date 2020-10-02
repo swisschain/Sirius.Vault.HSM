@@ -2,7 +2,7 @@ package io.swisschain.services;
 
 import io.swisschain.primitives.NetworkType;
 
-import java.util.Date;
+import java.time.Instant;
 import java.util.List;
 
 public class Transaction {
@@ -11,9 +11,9 @@ public class Transaction {
   private final String protocolCode;
   private final NetworkType networkType;
   private final List<String> signingAddresses;
-  private final byte[] signedTransaction;
-  private final String transactionId;
-  private final Date createdAt;
+  private byte[] signedTransaction;
+  private String transactionId;
+  private final Instant createdAt;
 
   public Transaction(
       Long transferSigningRequestId,
@@ -23,7 +23,7 @@ public class Transaction {
       List<String> signingAddresses,
       byte[] signedTransaction,
       String transactionId,
-      Date createdAt) {
+      Instant createdAt) {
     this.transferSigningRequestId = transferSigningRequestId;
     this.blockchainId = blockchainId;
     this.protocolCode = protocolCode;
@@ -62,7 +62,30 @@ public class Transaction {
     return transactionId;
   }
 
-  public Date getCreatedAt() {
+  public Instant getCreatedAt() {
     return createdAt;
+  }
+
+  public void sign(byte[] signedTransaction, String transactionId) {
+    this.signedTransaction = signedTransaction;
+    this.transactionId = transactionId;
+  }
+
+  public static Transaction create(Long transferSigningRequestId,
+                                   String blockchainId,
+                                   String protocolCode,
+                                   NetworkType networkType,
+                                   List<String> signingAddresses,
+                                   byte[] signedTransaction,
+                                   String transactionId) {
+    return new Transaction(
+            transferSigningRequestId,
+            blockchainId,
+            protocolCode,
+            networkType,
+            signingAddresses,
+            signedTransaction,
+            transactionId,
+            Instant.now());
   }
 }

@@ -3,12 +3,9 @@ package io.swisschain.services;
 import io.swisschain.config.Config;
 import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.crypto.transaction.signing.TransactionSignerFactory;
-import io.swisschain.primitives.DoubleSpendingProtectionType;
-import io.swisschain.primitives.NetworkType;
 import io.swisschain.repositories.wallets.WalletRepository;
 
-import java.util.Date;
-import java.util.List;
+import java.sql.SQLException;
 
 public class TransactionService {
 
@@ -20,54 +17,54 @@ public class TransactionService {
     this.transactionSignerFactory = new TransactionSignerFactory(config);
   }
 
-  public Transaction create(
-      long id,
-      String blockchainId,
-      String protocolCode,
-      NetworkType networkType,
-      DoubleSpendingProtectionType doubleSpendingProtectionType,
-      List<String> signingAddresses,
-      String group,
-      String tenantId,
-      byte[] bytes,
-      List<Coin> coins)
-      throws Exception {
-    List<Wallet> wallets;
+  public Transaction create(TransferSigningRequest transferSigningRequest) throws Exception {
 
-    try {
-      wallets =
-          this.walletRepository.getByAddressesAndGroupAndTenantId(
-              signingAddresses, group, tenantId);
-    } catch (Exception exception) {
-      throw new Exception("Can not get wallets.", exception);
+    if (transferSigningRequest.getSigningAddresses().size() != 1) {
+      throw new Exception("Currently only one signing address supported.");
     }
 
-    if (wallets.size() != signingAddresses.size()) {
-      throw new Exception("One or more wallets not found.");
+    Wallet wallet;
+    try {
+      wallet =
+          this.walletRepository.getFind(
+              transferSigningRequest.getSigningAddresses().get(0),
+              transferSigningRequest.getGroup(),
+              transferSigningRequest.getTenantId());
+    } catch (SQLException exception) {
+      throw new Exception("An error occurred while getting wallet.", exception);
+    }
+
+    if (wallet == null) {
+      throw new Exception(
+          String.format(
+              "Wallet not found. Address: %s; Group: %s; TenantId: %s",
+              transferSigningRequest.getSigningAddresses().get(0),
+              transferSigningRequest.getGroup(),
+              transferSigningRequest.getTenantId()));
     }
 
     var signer =
         transactionSignerFactory.getCoinsTransactionSigner(
-            BlockchainProtocolCodes.valueOf(protocolCode));
+            BlockchainProtocolCodes.valueOf(transferSigningRequest.getProtocolCode()));
 
     var result =
         signer.sign(
-            bytes,
-            coins,
-            wallets.get(0).getPrivateKey(),
-            wallets.get(0).getPublicKey(),
-            networkType);
+            transferSigningRequest.getBuiltTransaction(),
+            transferSigningRequest.getCoinsToSpend(),
+            wallet.getPrivateKey(),
+            wallet.getPublicKey(),
+            transferSigningRequest.getNetworkType());
 
-    var createdAt = new Date();
+    // TODO: Save transaction
+    // TODO: Save transferSigningRequest
 
-    return new Transaction(
-        id,
-        blockchainId,
-        protocolCode,
-        networkType,
-        signingAddresses,
+    return Transaction.create(
+        transferSigningRequest.getId(),
+        transferSigningRequest.getBlockchainId(),
+        transferSigningRequest.getProtocolCode(),
+        transferSigningRequest.getNetworkType(),
+        transferSigningRequest.getSigningAddresses(),
         result.getSignedTransaction(),
-        result.getTransactionId(),
-        createdAt);
+        result.getTransactionId());
   }
 }

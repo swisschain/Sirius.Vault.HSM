@@ -6,9 +6,6 @@ import io.swisschain.repositories.exceptions.WalletAlreadyExistsException;
 import io.swisschain.services.Wallet;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.StringJoiner;
 
 public class WalletRepository extends Repository {
   private final DbConnectionFactory connectionFactory;
@@ -17,40 +14,29 @@ public class WalletRepository extends Repository {
     this.connectionFactory = connectionFactory;
   }
 
-  public List<Wallet> getByAddressesAndGroupAndTenantId(
-      List<String> addresses, String group, String tenantId) throws SQLException {
-    StringJoiner joiner =
-        new StringJoiner(",", "WHERE address IN (", ") AND group = ? AND tenant_id = ?;");
-
-    for (Object ignored : addresses) {
-      joiner.add("?");
-    }
+  public Wallet getFind(String address, String group, String tenantId) throws SQLException {
 
     String sql =
         "SELECT *\n"
             + String.format("FROM %s.wallets\n", this.connectionFactory.getSchema())
-            + joiner.toString();
+                + "WHERE address = ? AND \"group\" = ? AND tenant_id = ?;";
 
     try (Connection connection = this.connectionFactory.create();
         PreparedStatement statement = connection.prepareStatement(sql)) {
-      var i = 1;
-      for (int index = 0; index < addresses.size(); index++) {
-        statement.setString(i++, addresses.get(index));
-      }
-      statement.setString(i++, group);
-      statement.setString(i++, tenantId);
 
-      ResultSet resultSet = statement.executeQuery();
+      statement.setString(1, address);
+      statement.setString(2, group);
+      statement.setString(3, tenantId);
 
-      List<Wallet> wallets = new ArrayList<>();
+      var resultSet = statement.executeQuery();
 
-      while (resultSet.next()) {
+      if (resultSet.next()) {
         WalletEntity entity = new WalletEntity();
         entity.map(resultSet);
-        wallets.add(entity.toDomain());
+        return entity.toDomain();
       }
 
-      return wallets;
+      return null;
     }
   }
 
