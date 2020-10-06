@@ -19,7 +19,7 @@ public class WalletRepository extends Repository {
     String sql =
         "SELECT *\n"
             + String.format("FROM %s.wallets\n", this.connectionFactory.getSchema())
-                + "WHERE address = ? AND \"group\" = ? AND tenant_id = ?;";
+            + "WHERE address = ? AND \"group\" = ? AND tenant_id = ?;";
 
     try (Connection connection = this.connectionFactory.create();
         PreparedStatement statement = connection.prepareStatement(sql)) {

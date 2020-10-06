@@ -2,10 +2,7 @@ package io.swisschain.crypto.transaction.signing;
 
 import io.swisschain.config.Config;
 import io.swisschain.crypto.BlockchainProtocolCodes;
-import io.swisschain.crypto.transaction.signing.signers.HsmBitcoinCoinTransactionSigner;
-import io.swisschain.crypto.transaction.signing.signers.HsmEthereumTransactionSigner;
-import io.swisschain.crypto.transaction.signing.signers.HsmLitecoinCoinTransactionSigner;
-import io.swisschain.crypto.transaction.signing.signers.HsmStellarTransactionSigner;
+import io.swisschain.crypto.transaction.signing.signers.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -29,6 +26,9 @@ public class TransactionSignerFactory {
         BlockchainProtocolCodes.litecoin, new HsmLitecoinCoinTransactionSigner(config.hsmConfig));
     coinTransactionSignersMap.put(
         BlockchainProtocolCodes.stellar, new HsmStellarTransactionSigner(config.hsmConfig));
+    coinTransactionSignersMap.put(
+        BlockchainProtocolCodes.bitcoinCash,
+        new HsmBitcoinCashCoinTransactionSigner(config.hsmConfig));
   }
 
   public CoinsTransactionSigner getCoinsTransactionSigner(BlockchainProtocolCodes code) {

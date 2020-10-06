@@ -285,6 +285,7 @@ public final class WalletsOuterClass {
     public static final int OTHER_VALUE = 0;
     /** <code>UNKNOWN_BLOCKCHAIN = 1;</code> */
     public static final int UNKNOWN_BLOCKCHAIN_VALUE = 1;
+
     private static final com.google.protobuf.Internal.EnumLiteMap<RejectionReason>
         internalValueMap =
             new com.google.protobuf.Internal.EnumLiteMap<RejectionReason>() {
@@ -373,10 +374,12 @@ public final class WalletsOuterClass {
 
     // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.wallets.RejectionReason)
   }
+
   public interface GetWalletGenerationRequestRequestOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestRequest)
       com.google.protobuf.MessageOrBuilder {}
+
   public interface GetWalletGenerationRequestResponseOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponse)
@@ -466,6 +469,7 @@ public final class WalletsOuterClass {
             .BodyCase
         getBodyCase();
   }
+
   public interface GetWalletGenerationRequestResponseBodyOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody)
@@ -522,6 +526,7 @@ public final class WalletsOuterClass {
             .WalletGenerationRequestOrBuilder
         getRequestsOrBuilder(int index);
   }
+
   public interface GetWalletGenerationRequestErrorResponseBodyOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody)
@@ -565,6 +570,7 @@ public final class WalletsOuterClass {
      */
     com.google.protobuf.ByteString getErrorMessageBytes();
   }
+
   public interface WalletGenerationRequestOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.WalletGenerationRequest)
@@ -672,6 +678,7 @@ public final class WalletsOuterClass {
     /** <code>.google.protobuf.Timestamp updated_at = 8;</code> */
     com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder();
   }
+
   public interface ConfirmWalletGenerationRequestRequestOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestRequest)
@@ -749,6 +756,7 @@ public final class WalletsOuterClass {
      */
     com.google.protobuf.ByteString getHostProcessIdBytes();
   }
+
   public interface ConfirmWalletGenerationRequestResponseOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponse)
@@ -838,10 +846,12 @@ public final class WalletsOuterClass {
             .BodyCase
         getBodyCase();
   }
+
   public interface ConfirmWalletGenerationRequestResponseBodyOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody)
       com.google.protobuf.MessageOrBuilder {}
+
   public interface ConfirmWalletGenerationRequestErrorResponseBodyOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody)
@@ -885,6 +895,7 @@ public final class WalletsOuterClass {
      */
     com.google.protobuf.ByteString getErrorMessageBytes();
   }
+
   public interface RejectWalletGenerationRequestRequestOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestRequest)
@@ -949,6 +960,7 @@ public final class WalletsOuterClass {
      */
     com.google.protobuf.ByteString getHostProcessIdBytes();
   }
+
   public interface RejectWalletGenerationRequestResponseOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponse)
@@ -1038,10 +1050,12 @@ public final class WalletsOuterClass {
             .BodyCase
         getBodyCase();
   }
+
   public interface RejectWalletGenerationRequestResponseBodyOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody)
       com.google.protobuf.MessageOrBuilder {}
+
   public interface RejectWalletGenerationRequestErrorResponseBodyOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody)
@@ -1834,7 +1848,8 @@ public final class WalletsOuterClass {
       super(builder);
     }
 
-        private GetWalletGenerationRequestResponse() {};
+    private GetWalletGenerationRequestResponse() {}
+    ;
 
     private GetWalletGenerationRequestResponse(
         com.google.protobuf.CodedInputStream input,
@@ -2512,7 +2527,7 @@ public final class WalletsOuterClass {
       return DEFAULT_INSTANCE;
     }
 
-public enum BodyCase
+    public enum BodyCase
         implements
             com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
@@ -3582,6 +3597,7 @@ public enum BodyCase
     private GetWalletGenerationRequestResponseBody() {
       requests_ = java.util.Collections.emptyList();
     }
+
     private GetWalletGenerationRequestResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -4880,10 +4896,12 @@ public enum BodyCase
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
+
     private GetWalletGenerationRequestErrorResponseBody() {
       errorCode_ = 0;
       errorMessage_ = "";
     }
+
     private GetWalletGenerationRequestErrorResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -5400,6 +5418,7 @@ public enum BodyCase
       public static final int UNKNOWN_VALUE = 0;
       /** <code>INVALID_PARAMETERS = 1;</code> */
       public static final int INVALID_PARAMETERS_VALUE = 1;
+
       private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
           new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
             public ErrorCode findValueByNumber(int number) {
@@ -6030,6 +6049,7 @@ public enum BodyCase
     private WalletGenerationRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
+
     private WalletGenerationRequest() {
       blockchainId_ = "";
       networkType_ = 0;
@@ -7825,6 +7845,7 @@ public enum BodyCase
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
+
     private ConfirmWalletGenerationRequestRequest() {
       requestId_ = "";
       address_ = "";
@@ -9299,7 +9320,8 @@ public enum BodyCase
       super(builder);
     }
 
-        private ConfirmWalletGenerationRequestResponse() {};
+    private ConfirmWalletGenerationRequestResponse() {}
+    ;
 
     private ConfirmWalletGenerationRequestResponse(
         com.google.protobuf.CodedInputStream input,
@@ -9977,7 +9999,7 @@ public enum BodyCase
       return DEFAULT_INSTANCE;
     }
 
-public enum BodyCase
+    public enum BodyCase
         implements
             com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
@@ -11747,10 +11769,12 @@ public enum BodyCase
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
+
     private ConfirmWalletGenerationRequestErrorResponseBody() {
       errorCode_ = 0;
       errorMessage_ = "";
     }
+
     private ConfirmWalletGenerationRequestErrorResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -12268,6 +12292,7 @@ public enum BodyCase
       public static final int UNKNOWN_VALUE = 0;
       /** <code>INVALID_PARAMETERS = 1;</code> */
       public static final int INVALID_PARAMETERS_VALUE = 1;
+
       private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
           new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
             public ErrorCode findValueByNumber(int number) {
@@ -12897,12 +12922,14 @@ public enum BodyCase
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
+
     private RejectWalletGenerationRequestRequest() {
       requestId_ = "";
       reason_ = 0;
       reasonMessage_ = "";
       hostProcessId_ = "";
     }
+
     private RejectWalletGenerationRequestRequest(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -14227,7 +14254,8 @@ public enum BodyCase
       super(builder);
     }
 
-        private RejectWalletGenerationRequestResponse() {};
+    private RejectWalletGenerationRequestResponse() {}
+    ;
 
     private RejectWalletGenerationRequestResponse(
         com.google.protobuf.CodedInputStream input,
@@ -14905,7 +14933,7 @@ public enum BodyCase
       return DEFAULT_INSTANCE;
     }
 
-public enum BodyCase
+    public enum BodyCase
         implements
             com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
@@ -16674,10 +16702,12 @@ public enum BodyCase
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
+
     private RejectWalletGenerationRequestErrorResponseBody() {
       errorCode_ = 0;
       errorMessage_ = "";
     }
+
     private RejectWalletGenerationRequestErrorResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -17195,6 +17225,7 @@ public enum BodyCase
       public static final int UNKNOWN_VALUE = 0;
       /** <code>INVALID_PARAMETERS = 1;</code> */
       public static final int INVALID_PARAMETERS_VALUE = 1;
+
       private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
           new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
             public ErrorCode findValueByNumber(int number) {

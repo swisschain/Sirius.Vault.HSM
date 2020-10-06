@@ -1,5 +1,8 @@
 package io.swisschain.crypto;
 
+import io.swisschain.crypto.altcoins.bitcoincash.CashMainNetParams;
+import io.swisschain.crypto.altcoins.bitcoincash.CashRegTestParams;
+import io.swisschain.crypto.altcoins.bitcoincash.CashTestNet3Params;
 import io.swisschain.crypto.altcoins.litecoin.MainNetParams;
 import io.swisschain.crypto.altcoins.litecoin.RegTestParams;
 import io.swisschain.crypto.altcoins.litecoin.TestNet3Params;
@@ -22,6 +25,11 @@ public class NetworkMapper {
       new HashMap<>();
   private static final Map<NetworkType, NetworkParameters> internalToLitecoinNetworkDictionary =
       new HashMap<>();
+
+  private static final Map<org.bitcoinjcash.core.NetworkParameters, NetworkType>
+      bitcoinCashToInternalNetworkDictionary = new HashMap<>();
+  private static final Map<NetworkType, org.bitcoinjcash.core.NetworkParameters>
+      internalToBitcoinCashNetworkDictionary = new HashMap<>();
 
   private static final Map<Network, NetworkType> stellarToInternalNetworkDictionary =
       new HashMap<>();
@@ -48,6 +56,15 @@ public class NetworkMapper {
     for (Map.Entry<NetworkParameters, NetworkType> entry :
         litecoinToInternalNetworkDictionary.entrySet()) {
       internalToLitecoinNetworkDictionary.put(entry.getValue(), entry.getKey());
+    }
+
+    bitcoinCashToInternalNetworkDictionary.put(CashRegTestParams.get(), NetworkType.Private);
+    bitcoinCashToInternalNetworkDictionary.put(CashTestNet3Params.get(), NetworkType.Test);
+    bitcoinCashToInternalNetworkDictionary.put(CashMainNetParams.get(), NetworkType.Public);
+
+    for (Map.Entry<org.bitcoinjcash.core.NetworkParameters, NetworkType> entry :
+        bitcoinCashToInternalNetworkDictionary.entrySet()) {
+      internalToBitcoinCashNetworkDictionary.put(entry.getValue(), entry.getKey());
     }
 
     stellarToInternalNetworkDictionary.put(Network.TESTNET, NetworkType.Test);
@@ -88,6 +105,23 @@ public class NetworkMapper {
       throw new UnknownNetworkTypeException("");
     }
     return litecoinToInternalNetworkDictionary.get(networkParameters);
+  }
+
+  public static org.bitcoinjcash.core.NetworkParameters mapToBitcoinCashNetworkType(
+      NetworkType networkType) throws UnknownNetworkTypeException {
+    if (!internalToBitcoinCashNetworkDictionary.containsKey(networkType)) {
+      throw new UnknownNetworkTypeException("");
+    }
+    return internalToBitcoinCashNetworkDictionary.get(networkType);
+  }
+
+  public static NetworkType mapFromBitcoinCashNetworkType(
+      org.bitcoinjcash.core.NetworkParameters networkParameters)
+      throws UnknownNetworkTypeException {
+    if (!bitcoinCashToInternalNetworkDictionary.containsKey(networkParameters)) {
+      throw new UnknownNetworkTypeException("");
+    }
+    return bitcoinCashToInternalNetworkDictionary.get(networkParameters);
   }
 
   public static Network mapToStellarNetworkType(NetworkType networkType)

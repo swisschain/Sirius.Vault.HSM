@@ -19,14 +19,15 @@ public abstract class HsmBitcoinBasedAddressGenerator extends HsmConnector
     super(hsmConfig);
   }
 
-  public AddressGenerationResult generate(NetworkParameters network) throws IOException {
-    var keyPair = generateECDSAKeyPair();
+  public AddressGenerationResult generateSegwitAddress(NetworkParameters network)
+      throws IOException {
+    final var keyPair = generateECDSAKeyPair();
 
-    ECKey pubKey =
+    final var pubKey =
         ECKey.fromPublicOnly(
             ECKey.compressPoint(
                 ECKey.CURVE.validatePublicPoint(BTCUtils.keyToPoint(keyPair.publicKey))));
-    SegwitAddress segwitAddress = SegwitAddress.fromHash(network, pubKey.getPubKeyHash());
+    final var segwitAddress = SegwitAddress.fromHash(network, pubKey.getPubKeyHash());
     return new AddressGenerationResult(
         segwitAddress.toBech32(),
         Hex.encodeHexString(keyPair.encryptedPrivateKey),

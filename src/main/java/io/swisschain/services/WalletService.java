@@ -28,7 +28,7 @@ public class WalletService {
       throws Exception {
 
     var addressGenerator =
-        addressGeneratorFactory.get(BlockchainProtocolCodes.valueOf(protocolCode));
+        addressGeneratorFactory.get(BlockchainProtocolCodes.fromString(protocolCode));
     var generatedAddress = addressGenerator.generate(networkType);
     var createdAt = Instant.now();
 

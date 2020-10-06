@@ -35,6 +35,7 @@ public final class GenerateKeyPairResponse extends com.google.protobuf.Generated
   private GenerateKeyPairResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
+
   private GenerateKeyPairResponse() {
     privKey_ = com.google.protobuf.ByteString.EMPTY;
     pubKey_ = com.google.protobuf.ByteString.EMPTY;

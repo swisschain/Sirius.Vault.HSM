@@ -11,9 +11,9 @@ public class Transaction {
   private final String protocolCode;
   private final NetworkType networkType;
   private final List<String> signingAddresses;
+  private final Instant createdAt;
   private byte[] signedTransaction;
   private String transactionId;
-  private final Instant createdAt;
 
   public Transaction(
       Long transferSigningRequestId,
@@ -32,6 +32,25 @@ public class Transaction {
     this.signedTransaction = signedTransaction;
     this.transactionId = transactionId;
     this.createdAt = createdAt;
+  }
+
+  public static Transaction create(
+      Long transferSigningRequestId,
+      String blockchainId,
+      String protocolCode,
+      NetworkType networkType,
+      List<String> signingAddresses,
+      byte[] signedTransaction,
+      String transactionId) {
+    return new Transaction(
+        transferSigningRequestId,
+        blockchainId,
+        protocolCode,
+        networkType,
+        signingAddresses,
+        signedTransaction,
+        transactionId,
+        Instant.now());
   }
 
   public Long getTransactionSigningRequestId() {
@@ -69,23 +88,5 @@ public class Transaction {
   public void sign(byte[] signedTransaction, String transactionId) {
     this.signedTransaction = signedTransaction;
     this.transactionId = transactionId;
-  }
-
-  public static Transaction create(Long transferSigningRequestId,
-                                   String blockchainId,
-                                   String protocolCode,
-                                   NetworkType networkType,
-                                   List<String> signingAddresses,
-                                   byte[] signedTransaction,
-                                   String transactionId) {
-    return new Transaction(
-            transferSigningRequestId,
-            blockchainId,
-            protocolCode,
-            networkType,
-            signingAddresses,
-            signedTransaction,
-            transactionId,
-            Instant.now());
   }
 }

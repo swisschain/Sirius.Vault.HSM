@@ -45,8 +45,7 @@ public class TransferSigningTask implements Runnable {
         try {
           logger.info(
               String.format(
-                  "Processing transfer signing request. Id: %d",
-                  transferSigningRequest.getId()));
+                  "Processing transfer signing request. Id: %d", transferSigningRequest.getId()));
 
           var transaction = transactionService.create(transferSigningRequest);
 
@@ -102,8 +101,7 @@ public class TransferSigningTask implements Runnable {
         } catch (Exception exception) {
           logger.error(
               String.format(
-                  "An error occurred while parsing transfer signing request. Id: %d",
-                  item.getId()),
+                  "An error occurred while parsing transfer signing request. Id: %d", item.getId()),
               exception);
         }
       }

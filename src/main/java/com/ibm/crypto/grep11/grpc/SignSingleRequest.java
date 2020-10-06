@@ -38,10 +38,12 @@ public final class SignSingleRequest extends com.google.protobuf.GeneratedMessag
   private SignSingleRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
+
   private SignSingleRequest() {
     privKey_ = com.google.protobuf.ByteString.EMPTY;
     data_ = com.google.protobuf.ByteString.EMPTY;
   }
+
   private SignSingleRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

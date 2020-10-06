@@ -35,6 +35,7 @@ public final class DigestRequest extends com.google.protobuf.GeneratedMessageV3
   private DigestRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
+
   private DigestRequest() {
     state_ = com.google.protobuf.ByteString.EMPTY;
     data_ = com.google.protobuf.ByteString.EMPTY;

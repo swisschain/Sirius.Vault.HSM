@@ -38,6 +38,7 @@ public final class DigestInitResponse extends com.google.protobuf.GeneratedMessa
   private DigestInitResponse() {
     state_ = com.google.protobuf.ByteString.EMPTY;
   }
+
   private DigestInitResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

@@ -35,6 +35,7 @@ public final class SignUpdateRequest extends com.google.protobuf.GeneratedMessag
   private SignUpdateRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
+
   private SignUpdateRequest() {
     state_ = com.google.protobuf.ByteString.EMPTY;
     data_ = com.google.protobuf.ByteString.EMPTY;

@@ -44,6 +44,10 @@ dependencies {
     //stellar
     compile 'com.github.stellar:java-stellar-sdk:0.18.0'
 
+    //bitcoincash
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'org.apache.commons:commons-lang3:3.7'
+
     compile "com.google.protobuf:protobuf-java:$protobuf_version"
     compile "io.grpc:grpc-netty-shaded:${grpcVersion}"
     compile "io.grpc:grpc-protobuf:${grpcVersion}"

@@ -5,7 +5,6 @@ out
 
 *.class
 
-*.jar
 *.war
 *.ear
 

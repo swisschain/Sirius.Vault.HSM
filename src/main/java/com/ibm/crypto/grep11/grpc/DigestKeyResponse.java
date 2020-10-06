@@ -38,6 +38,7 @@ public final class DigestKeyResponse extends com.google.protobuf.GeneratedMessag
   private DigestKeyResponse() {
     state_ = com.google.protobuf.ByteString.EMPTY;
   }
+
   private DigestKeyResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

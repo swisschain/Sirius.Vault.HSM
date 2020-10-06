@@ -38,6 +38,7 @@ public final class SignInitResponse extends com.google.protobuf.GeneratedMessage
   private SignInitResponse() {
     state_ = com.google.protobuf.ByteString.EMPTY;
   }
+
   private SignInitResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

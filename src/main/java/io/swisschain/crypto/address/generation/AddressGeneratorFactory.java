@@ -2,10 +2,7 @@ package io.swisschain.crypto.address.generation;
 
 import io.swisschain.config.Config;
 import io.swisschain.crypto.BlockchainProtocolCodes;
-import io.swisschain.crypto.address.generation.generators.HsmBitcoinAddressGenerator;
-import io.swisschain.crypto.address.generation.generators.HsmEthereumAddressGenerator;
-import io.swisschain.crypto.address.generation.generators.HsmLitecoinAddressGenerator;
-import io.swisschain.crypto.address.generation.generators.HsmStellarAddressGenerator;
+import io.swisschain.crypto.address.generation.generators.*;
 import io.swisschain.crypto.exceptions.BlockchainNotSupportedException;
 
 import java.util.HashMap;
@@ -29,6 +26,8 @@ public class AddressGeneratorFactory {
         BlockchainProtocolCodes.litecoin, new HsmLitecoinAddressGenerator(config.hsmConfig));
     generatorMap.put(
         BlockchainProtocolCodes.stellar, new HsmStellarAddressGenerator(config.hsmConfig));
+    generatorMap.put(
+        BlockchainProtocolCodes.bitcoinCash, new HsmBitcoinCashAddressGenerator(config.hsmConfig));
   }
 
   public AddressGenerator get(BlockchainProtocolCodes code) throws BlockchainNotSupportedException {

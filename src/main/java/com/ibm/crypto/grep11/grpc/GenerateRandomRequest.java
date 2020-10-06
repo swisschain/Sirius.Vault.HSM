@@ -36,6 +36,7 @@ public final class GenerateRandomRequest extends com.google.protobuf.GeneratedMe
   }
 
   private GenerateRandomRequest() {}
+
   private GenerateRandomRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

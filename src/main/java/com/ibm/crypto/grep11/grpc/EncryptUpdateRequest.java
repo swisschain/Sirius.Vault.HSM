@@ -35,6 +35,7 @@ public final class EncryptUpdateRequest extends com.google.protobuf.GeneratedMes
   private EncryptUpdateRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
+
   private EncryptUpdateRequest() {
     state_ = com.google.protobuf.ByteString.EMPTY;
     plain_ = com.google.protobuf.ByteString.EMPTY;

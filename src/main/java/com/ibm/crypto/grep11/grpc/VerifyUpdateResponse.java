@@ -38,6 +38,7 @@ public final class VerifyUpdateResponse extends com.google.protobuf.GeneratedMes
   private VerifyUpdateResponse() {
     state_ = com.google.protobuf.ByteString.EMPTY;
   }
+
   private VerifyUpdateResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

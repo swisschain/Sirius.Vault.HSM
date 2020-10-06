@@ -35,6 +35,7 @@ public final class GenerateKeyResponse extends com.google.protobuf.GeneratedMess
   private GenerateKeyResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
+
   private GenerateKeyResponse() {
     key_ = com.google.protobuf.ByteString.EMPTY;
     checkSum_ = com.google.protobuf.ByteString.EMPTY;

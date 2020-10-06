@@ -35,6 +35,7 @@ public final class DecryptUpdateResponse extends com.google.protobuf.GeneratedMe
   private DecryptUpdateResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
+
   private DecryptUpdateResponse() {
     state_ = com.google.protobuf.ByteString.EMPTY;
     plain_ = com.google.protobuf.ByteString.EMPTY;

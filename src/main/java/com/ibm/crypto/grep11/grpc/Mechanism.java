@@ -35,6 +35,7 @@ public final class Mechanism extends com.google.protobuf.GeneratedMessageV3
   private Mechanism(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
+
   private Mechanism() {
     parameter_ = com.google.protobuf.ByteString.EMPTY;
   }

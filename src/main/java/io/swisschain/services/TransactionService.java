@@ -45,7 +45,7 @@ public class TransactionService {
 
     var signer =
         transactionSignerFactory.getCoinsTransactionSigner(
-            BlockchainProtocolCodes.valueOf(transferSigningRequest.getProtocolCode()));
+            BlockchainProtocolCodes.fromString(transferSigningRequest.getProtocolCode()));
 
     var result =
         signer.sign(

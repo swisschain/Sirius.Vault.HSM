@@ -38,6 +38,7 @@ public final class DecryptSingleResponse extends com.google.protobuf.GeneratedMe
   private DecryptSingleResponse() {
     plain_ = com.google.protobuf.ByteString.EMPTY;
   }
+
   private DecryptSingleResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

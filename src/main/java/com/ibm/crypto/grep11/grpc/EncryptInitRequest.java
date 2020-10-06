@@ -35,9 +35,11 @@ public final class EncryptInitRequest extends com.google.protobuf.GeneratedMessa
   private EncryptInitRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
+
   private EncryptInitRequest() {
     key_ = com.google.protobuf.ByteString.EMPTY;
   }
+
   private EncryptInitRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)

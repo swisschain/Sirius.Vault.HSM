@@ -35,6 +35,7 @@ public final class DecryptRequest extends com.google.protobuf.GeneratedMessageV3
   private DecryptRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
+
   private DecryptRequest() {
     state_ = com.google.protobuf.ByteString.EMPTY;
     ciphered_ = com.google.protobuf.ByteString.EMPTY;

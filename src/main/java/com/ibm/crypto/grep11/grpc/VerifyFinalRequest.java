@@ -35,6 +35,7 @@ public final class VerifyFinalRequest extends com.google.protobuf.GeneratedMessa
   private VerifyFinalRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
+
   private VerifyFinalRequest() {
     state_ = com.google.protobuf.ByteString.EMPTY;
     signature_ = com.google.protobuf.ByteString.EMPTY;
