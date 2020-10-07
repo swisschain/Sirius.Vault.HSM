@@ -16,6 +16,8 @@ import org.bitcoinj.script.ScriptPattern;
 import org.bouncycastle.util.encoders.Hex;
 
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class HsmBitcoinBasedTransactionSigner extends HsmConnector
@@ -59,20 +61,39 @@ public abstract class HsmBitcoinBasedTransactionSigner extends HsmConnector
               transaction.getInputs().size(), coins.size()));
     }
 
+    final var oldInputs = new ArrayList<>(transaction.getInputs());
     transaction.clearInputs();
+
     for (Coin coin : coins) {
-      final var outPoint =
-          new TransactionOutPoint(
-              network, coin.getId().getNumber(), Sha256Hash.wrap(coin.getId().getTransactionId()));
+      final var oldInput =
+          oldInputs.stream()
+              .filter(
+                  input ->
+                      input
+                              .getOutpoint()
+                              .getHash()
+                              .toString()
+                              .equals(coin.getId().getTransactionId())
+                          && input.getOutpoint().getIndex() == coin.getId().getNumber())
+              .findFirst()
+              .orElse(null);
+      if (oldInput == null) {
+        throw new InvalidInputsException(
+            String.format(
+                "Transaction inputs doesn't contain input with id %s and index %d from coin",
+                coin.getId().getTransactionId(), coin.getId().getNumber()));
+      }
 
       final var transactionInput =
           new TransactionInput(
               network,
-              null,
-              new byte[0],
-              outPoint,
+              oldInput.getParentTransaction(),
+              oldInput.getScriptBytes(),
+              oldInput.getOutpoint(),
               org.bitcoinj.core.Coin.valueOf(
-                  coin.getValue().longValue() * org.bitcoinj.core.Coin.COIN.value));
+                  (coin.getValue()
+                      .multiply(BigDecimal.valueOf(org.bitcoinj.core.Coin.COIN.value))
+                      .longValue())));
       transaction.addInput(transactionInput);
     }
   }
