@@ -1,7 +1,7 @@
 FROM scrooge/gradle:jdk11-s390x as build
-ADD ../ /home/gradle/project
+ADD . /home/gradle/project
 WORKDIR /home/gradle/project
-RUN gradle build printProperties
+RUN gradle clean build printProperties
 
 
 FROM s390x/adoptopenjdk:11.0.8_10-jre-hotspot
