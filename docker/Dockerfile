@@ -1,5 +1,5 @@
 FROM scrooge/gradle:jdk11-s390x as build
-ADD . /home/gradle/project
+ADD ../ /home/gradle/project
 WORKDIR /home/gradle/project
 RUN gradle build printProperties
 
