@@ -46,7 +46,7 @@ public class HsmStellarTransactionSigner extends HsmConnector implements CoinsTr
     final var rawTransaction = Transaction.fromEnvelopeXdr(transactionEnvelope, network);
 
     final var txHash = rawTransaction.hash();
-    final var signature = sign(txHash, Hex.decode(privateKey), Hex.decode(publicKey));
+    final var signature = sign(txHash, Hex.decode(privateKey), new Base32().decode(publicKey));
 
     final var transactionEnvelopeV1 = transactionEnvelope.getV1();
     transactionEnvelopeV1.setSignatures(new DecoratedSignature[] {signature});
@@ -68,8 +68,7 @@ public class HsmStellarTransactionSigner extends HsmConnector implements CoinsTr
     signature.setSignature(signEd25519(hash, privateKey));
 
     DecoratedSignature decoratedSignature = new DecoratedSignature();
-    decoratedSignature.setHint(
-        KeyPair.fromPublicKey(new Base32().decode(publicKey)).getSignatureHint());
+    decoratedSignature.setHint(KeyPair.fromPublicKey(publicKey).getSignatureHint());
     decoratedSignature.setSignature(signature);
 
     return decoratedSignature;
