@@ -1,6 +1,6 @@
 name: Continuous integration for Sirius.Vault.HSM
 
-on [push]:
+on: [push]
 #  push:
 #    tags: "service-*"
 
