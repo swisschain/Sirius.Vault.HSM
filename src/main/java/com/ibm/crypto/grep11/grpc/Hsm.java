@@ -4,6 +4,14 @@
 package com.ibm.crypto.grep11.grpc;
 
 public final class Hsm {
+  private Hsm() {}
+
+  public static void registerAllExtensions(com.google.protobuf.ExtensionRegistryLite registry) {}
+
+  public static void registerAllExtensions(com.google.protobuf.ExtensionRegistry registry) {
+    registerAllExtensions((com.google.protobuf.ExtensionRegistryLite) registry);
+  }
+
   static final com.google.protobuf.Descriptors.Descriptor
       internal_static_grep11_GenerateRandomRequest_descriptor;
   static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -336,6 +344,11 @@ public final class Hsm {
       internal_static_grep11_Grep11Error_descriptor;
   static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_grep11_Grep11Error_fieldAccessorTable;
+
+  public static com.google.protobuf.Descriptors.FileDescriptor getDescriptor() {
+    return descriptor;
+  }
+
   private static com.google.protobuf.Descriptors.FileDescriptor descriptor;
 
   static {
@@ -1155,18 +1168,6 @@ public final class Hsm {
             new java.lang.String[] {
               "Code", "Detail", "Retry",
             });
-  }
-
-  private Hsm() {}
-
-  public static void registerAllExtensions(com.google.protobuf.ExtensionRegistryLite registry) {}
-
-  public static void registerAllExtensions(com.google.protobuf.ExtensionRegistry registry) {
-    registerAllExtensions((com.google.protobuf.ExtensionRegistryLite) registry);
-  }
-
-  public static com.google.protobuf.Descriptors.FileDescriptor getDescriptor() {
-    return descriptor;
   }
 
   // @@protoc_insertion_point(outer_class_scope)

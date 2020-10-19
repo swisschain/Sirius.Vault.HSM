@@ -8,29 +8,7 @@ public final class SignRequest extends com.google.protobuf.GeneratedMessageV3
     implements
     // @@protoc_insertion_point(message_implements:grep11.SignRequest)
     SignRequestOrBuilder {
-  public static final int STATE_FIELD_NUMBER = 1;
-  public static final int DATA_FIELD_NUMBER = 2;
   private static final long serialVersionUID = 0L;
-  // @@protoc_insertion_point(class_scope:grep11.SignRequest)
-  private static final com.ibm.crypto.grep11.grpc.SignRequest DEFAULT_INSTANCE;
-  private static final com.google.protobuf.Parser<SignRequest> PARSER =
-      new com.google.protobuf.AbstractParser<SignRequest>() {
-        @java.lang.Override
-        public SignRequest parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new SignRequest(input, extensionRegistry);
-        }
-      };
-
-  static {
-    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.SignRequest();
-  }
-
-  private com.google.protobuf.ByteString state_;
-  private com.google.protobuf.ByteString data_;
-  private byte memoizedIsInitialized = -1;
   // Use SignRequest.newBuilder() to construct.
   private SignRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -39,6 +17,17 @@ public final class SignRequest extends com.google.protobuf.GeneratedMessageV3
   private SignRequest() {
     state_ = com.google.protobuf.ByteString.EMPTY;
     data_ = com.google.protobuf.ByteString.EMPTY;
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new SignRequest();
+  }
+
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    return this.unknownFields;
   }
 
   private SignRequest(
@@ -90,6 +79,111 @@ public final class SignRequest extends com.google.protobuf.GeneratedMessageV3
 
   public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
     return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_SignRequest_descriptor;
+  }
+
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internalGetFieldAccessorTable() {
+    return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_SignRequest_fieldAccessorTable
+        .ensureFieldAccessorsInitialized(
+            com.ibm.crypto.grep11.grpc.SignRequest.class,
+            com.ibm.crypto.grep11.grpc.SignRequest.Builder.class);
+  }
+
+  public static final int STATE_FIELD_NUMBER = 1;
+  private com.google.protobuf.ByteString state_;
+  /**
+   * <code>bytes State = 1;</code>
+   *
+   * @return The state.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString getState() {
+    return state_;
+  }
+
+  public static final int DATA_FIELD_NUMBER = 2;
+  private com.google.protobuf.ByteString data_;
+  /**
+   * <code>bytes Data = 2;</code>
+   *
+   * @return The data.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString getData() {
+    return data_;
+  }
+
+  private byte memoizedIsInitialized = -1;
+
+  @java.lang.Override
+  public final boolean isInitialized() {
+    byte isInitialized = memoizedIsInitialized;
+    if (isInitialized == 1) return true;
+    if (isInitialized == 0) return false;
+
+    memoizedIsInitialized = 1;
+    return true;
+  }
+
+  @java.lang.Override
+  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+    if (!state_.isEmpty()) {
+      output.writeBytes(1, state_);
+    }
+    if (!data_.isEmpty()) {
+      output.writeBytes(2, data_);
+    }
+    unknownFields.writeTo(output);
+  }
+
+  @java.lang.Override
+  public int getSerializedSize() {
+    int size = memoizedSize;
+    if (size != -1) return size;
+
+    size = 0;
+    if (!state_.isEmpty()) {
+      size += com.google.protobuf.CodedOutputStream.computeBytesSize(1, state_);
+    }
+    if (!data_.isEmpty()) {
+      size += com.google.protobuf.CodedOutputStream.computeBytesSize(2, data_);
+    }
+    size += unknownFields.getSerializedSize();
+    memoizedSize = size;
+    return size;
+  }
+
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
+    if (obj == this) {
+      return true;
+    }
+    if (!(obj instanceof com.ibm.crypto.grep11.grpc.SignRequest)) {
+      return super.equals(obj);
+    }
+    com.ibm.crypto.grep11.grpc.SignRequest other = (com.ibm.crypto.grep11.grpc.SignRequest) obj;
+
+    if (!getState().equals(other.getState())) return false;
+    if (!getData().equals(other.getData())) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
+  }
+
+  @java.lang.Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + STATE_FIELD_NUMBER;
+    hash = (53 * hash) + getState().hashCode();
+    hash = (37 * hash) + DATA_FIELD_NUMBER;
+    hash = (53 * hash) + getData().hashCode();
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
   }
 
   public static com.ibm.crypto.grep11.grpc.SignRequest parseFrom(java.nio.ByteBuffer data)
@@ -164,135 +258,17 @@ public final class SignRequest extends com.google.protobuf.GeneratedMessageV3
         PARSER, input, extensionRegistry);
   }
 
+  @java.lang.Override
+  public Builder newBuilderForType() {
+    return newBuilder();
+  }
+
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
 
   public static Builder newBuilder(com.ibm.crypto.grep11.grpc.SignRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.SignRequest getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  public static com.google.protobuf.Parser<SignRequest> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new SignRequest();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-    return this.unknownFields;
-  }
-
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-    return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_SignRequest_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.ibm.crypto.grep11.grpc.SignRequest.class,
-            com.ibm.crypto.grep11.grpc.SignRequest.Builder.class);
-  }
-
-  /**
-   * <code>bytes State = 1;</code>
-   *
-   * @return The state.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString getState() {
-    return state_;
-  }
-
-  /**
-   * <code>bytes Data = 2;</code>
-   *
-   * @return The data.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString getData() {
-    return data_;
-  }
-
-  @java.lang.Override
-  public final boolean isInitialized() {
-    byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) return true;
-    if (isInitialized == 0) return false;
-
-    memoizedIsInitialized = 1;
-    return true;
-  }
-
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    if (!state_.isEmpty()) {
-      output.writeBytes(1, state_);
-    }
-    if (!data_.isEmpty()) {
-      output.writeBytes(2, data_);
-    }
-    unknownFields.writeTo(output);
-  }
-
-  @java.lang.Override
-  public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) return size;
-
-    size = 0;
-    if (!state_.isEmpty()) {
-      size += com.google.protobuf.CodedOutputStream.computeBytesSize(1, state_);
-    }
-    if (!data_.isEmpty()) {
-      size += com.google.protobuf.CodedOutputStream.computeBytesSize(2, data_);
-    }
-    size += unknownFields.getSerializedSize();
-    memoizedSize = size;
-    return size;
-  }
-
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
-    if (obj == this) {
-      return true;
-    }
-    if (!(obj instanceof com.ibm.crypto.grep11.grpc.SignRequest)) {
-      return super.equals(obj);
-    }
-    com.ibm.crypto.grep11.grpc.SignRequest other = (com.ibm.crypto.grep11.grpc.SignRequest) obj;
-
-    if (!getState().equals(other.getState())) return false;
-    if (!getData().equals(other.getData())) return false;
-    if (!unknownFields.equals(other.unknownFields)) return false;
-    return true;
-  }
-
-  @java.lang.Override
-  public int hashCode() {
-    if (memoizedHashCode != 0) {
-      return memoizedHashCode;
-    }
-    int hash = 41;
-    hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + STATE_FIELD_NUMBER;
-    hash = (53 * hash) + getState().hashCode();
-    hash = (37 * hash) + DATA_FIELD_NUMBER;
-    hash = (53 * hash) + getData().hashCode();
-    hash = (29 * hash) + unknownFields.hashCode();
-    memoizedHashCode = hash;
-    return hash;
-  }
-
-  @java.lang.Override
-  public Builder newBuilderForType() {
-    return newBuilder();
   }
 
   @java.lang.Override
@@ -305,35 +281,11 @@ public final class SignRequest extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<SignRequest> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.SignRequest getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
-  }
-
   /** Protobuf type {@code grep11.SignRequest} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
       // @@protoc_insertion_point(builder_implements:grep11.SignRequest)
       com.ibm.crypto.grep11.grpc.SignRequestOrBuilder {
-    private com.google.protobuf.ByteString state_ = com.google.protobuf.ByteString.EMPTY;
-    private com.google.protobuf.ByteString data_ = com.google.protobuf.ByteString.EMPTY;
-
-    // Construct using com.ibm.crypto.grep11.grpc.SignRequest.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
-    }
-
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
       return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_SignRequest_descriptor;
     }
@@ -345,6 +297,16 @@ public final class SignRequest extends com.google.protobuf.GeneratedMessageV3
           .ensureFieldAccessorsInitialized(
               com.ibm.crypto.grep11.grpc.SignRequest.class,
               com.ibm.crypto.grep11.grpc.SignRequest.Builder.class);
+    }
+
+    // Construct using com.ibm.crypto.grep11.grpc.SignRequest.newBuilder()
+    private Builder() {
+      maybeForceBuilderInitialization();
+    }
+
+    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      super(parent);
+      maybeForceBuilderInitialization();
     }
 
     private void maybeForceBuilderInitialization() {
@@ -470,6 +432,7 @@ public final class SignRequest extends com.google.protobuf.GeneratedMessageV3
       return this;
     }
 
+    private com.google.protobuf.ByteString state_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes State = 1;</code>
      *
@@ -479,7 +442,6 @@ public final class SignRequest extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ByteString getState() {
       return state_;
     }
-
     /**
      * <code>bytes State = 1;</code>
      *
@@ -495,7 +457,6 @@ public final class SignRequest extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
-
     /**
      * <code>bytes State = 1;</code>
      *
@@ -508,6 +469,7 @@ public final class SignRequest extends com.google.protobuf.GeneratedMessageV3
       return this;
     }
 
+    private com.google.protobuf.ByteString data_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes Data = 2;</code>
      *
@@ -556,5 +518,41 @@ public final class SignRequest extends com.google.protobuf.GeneratedMessageV3
     }
 
     // @@protoc_insertion_point(builder_scope:grep11.SignRequest)
+  }
+
+  // @@protoc_insertion_point(class_scope:grep11.SignRequest)
+  private static final com.ibm.crypto.grep11.grpc.SignRequest DEFAULT_INSTANCE;
+
+  static {
+    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.SignRequest();
+  }
+
+  public static com.ibm.crypto.grep11.grpc.SignRequest getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  private static final com.google.protobuf.Parser<SignRequest> PARSER =
+      new com.google.protobuf.AbstractParser<SignRequest>() {
+        @java.lang.Override
+        public SignRequest parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new SignRequest(input, extensionRegistry);
+        }
+      };
+
+  public static com.google.protobuf.Parser<SignRequest> parser() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.google.protobuf.Parser<SignRequest> getParserForType() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.SignRequest getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
   }
 }

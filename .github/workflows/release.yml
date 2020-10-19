@@ -41,10 +41,10 @@ jobs:
       - name: copy file via scp
         uses: appleboy/scp-action@master
         env:
-           HOST: ${{ secrets.HOST }}
-           USERNAME: ${{ secrets.USERNAME }}
-#           PORT: ${{ secrets.PORT }}
-           KEY: ${{ secrets.SSHKEY }}
+          HOST: ${{ secrets.HOST }}
+          USERNAME: ${{ secrets.USERNAME }}
+          #           PORT: ${{ secrets.PORT }}
+          KEY: ${{ secrets.SSHKEY }}
         with:
           source: "scripts/build.sh,scripts/deploy.sh"
           target: "/root/"
@@ -54,16 +54,16 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           KEY: ${{ secrets.SSHKEY }}
-#          port: ${{ secrets.PORT }}
+          #          port: ${{ secrets.PORT }}
           script: |
-              export DOCKER_USERNAME="${{ secrets.DOCKER_USERNAME }}"
-              export DOCKER_PASSWORD="${{ secrets.DOCKER_PASSWORD }}"
-              /root/scripts/build.sh 
+            export DOCKER_USERNAME="${{ secrets.DOCKER_USERNAME }}"
+            export DOCKER_PASSWORD="${{ secrets.DOCKER_PASSWORD }}"
+            /root/scripts/build.sh
       - name: deploy
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
           USERNAME: ${{ secrets.USERNAME }}
-##         PORT: ${{ secrets.PORT }}
+          ##         PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSHKEY }}
           script: /root/scripts/deploy.sh

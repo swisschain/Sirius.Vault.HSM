@@ -8,28 +8,7 @@ public final class DigestSingleResponse extends com.google.protobuf.GeneratedMes
     implements
     // @@protoc_insertion_point(message_implements:grep11.DigestSingleResponse)
     DigestSingleResponseOrBuilder {
-  public static final int DIGEST_FIELD_NUMBER = 3;
   private static final long serialVersionUID = 0L;
-  // @@protoc_insertion_point(class_scope:grep11.DigestSingleResponse)
-  private static final com.ibm.crypto.grep11.grpc.DigestSingleResponse DEFAULT_INSTANCE;
-  private static final com.google.protobuf.Parser<DigestSingleResponse> PARSER =
-      new com.google.protobuf.AbstractParser<DigestSingleResponse>() {
-        @java.lang.Override
-        public DigestSingleResponse parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new DigestSingleResponse(input, extensionRegistry);
-        }
-      };
-
-  static {
-    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.DigestSingleResponse();
-  }
-
-  private com.google.protobuf.ByteString digest_;
-  private byte memoizedIsInitialized = -1;
-
   // Use DigestSingleResponse.newBuilder() to construct.
   private DigestSingleResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -37,6 +16,17 @@ public final class DigestSingleResponse extends com.google.protobuf.GeneratedMes
 
   private DigestSingleResponse() {
     digest_ = com.google.protobuf.ByteString.EMPTY;
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new DigestSingleResponse();
+  }
+
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    return this.unknownFields;
   }
 
   private DigestSingleResponse(
@@ -83,6 +73,92 @@ public final class DigestSingleResponse extends com.google.protobuf.GeneratedMes
 
   public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
     return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_DigestSingleResponse_descriptor;
+  }
+
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internalGetFieldAccessorTable() {
+    return com.ibm.crypto.grep11.grpc.Hsm
+        .internal_static_grep11_DigestSingleResponse_fieldAccessorTable
+        .ensureFieldAccessorsInitialized(
+            com.ibm.crypto.grep11.grpc.DigestSingleResponse.class,
+            com.ibm.crypto.grep11.grpc.DigestSingleResponse.Builder.class);
+  }
+
+  public static final int DIGEST_FIELD_NUMBER = 3;
+  private com.google.protobuf.ByteString digest_;
+  /**
+   * <code>bytes Digest = 3;</code>
+   *
+   * @return The digest.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString getDigest() {
+    return digest_;
+  }
+
+  private byte memoizedIsInitialized = -1;
+
+  @java.lang.Override
+  public final boolean isInitialized() {
+    byte isInitialized = memoizedIsInitialized;
+    if (isInitialized == 1) return true;
+    if (isInitialized == 0) return false;
+
+    memoizedIsInitialized = 1;
+    return true;
+  }
+
+  @java.lang.Override
+  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+    if (!digest_.isEmpty()) {
+      output.writeBytes(3, digest_);
+    }
+    unknownFields.writeTo(output);
+  }
+
+  @java.lang.Override
+  public int getSerializedSize() {
+    int size = memoizedSize;
+    if (size != -1) return size;
+
+    size = 0;
+    if (!digest_.isEmpty()) {
+      size += com.google.protobuf.CodedOutputStream.computeBytesSize(3, digest_);
+    }
+    size += unknownFields.getSerializedSize();
+    memoizedSize = size;
+    return size;
+  }
+
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
+    if (obj == this) {
+      return true;
+    }
+    if (!(obj instanceof com.ibm.crypto.grep11.grpc.DigestSingleResponse)) {
+      return super.equals(obj);
+    }
+    com.ibm.crypto.grep11.grpc.DigestSingleResponse other =
+        (com.ibm.crypto.grep11.grpc.DigestSingleResponse) obj;
+
+    if (!getDigest().equals(other.getDigest())) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
+  }
+
+  @java.lang.Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + DIGEST_FIELD_NUMBER;
+    hash = (53 * hash) + getDigest().hashCode();
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
   }
 
   public static com.ibm.crypto.grep11.grpc.DigestSingleResponse parseFrom(java.nio.ByteBuffer data)
@@ -157,118 +233,17 @@ public final class DigestSingleResponse extends com.google.protobuf.GeneratedMes
         PARSER, input, extensionRegistry);
   }
 
+  @java.lang.Override
+  public Builder newBuilderForType() {
+    return newBuilder();
+  }
+
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
 
   public static Builder newBuilder(com.ibm.crypto.grep11.grpc.DigestSingleResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.DigestSingleResponse getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  public static com.google.protobuf.Parser<DigestSingleResponse> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new DigestSingleResponse();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-    return this.unknownFields;
-  }
-
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-    return com.ibm.crypto.grep11.grpc.Hsm
-        .internal_static_grep11_DigestSingleResponse_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.ibm.crypto.grep11.grpc.DigestSingleResponse.class,
-            com.ibm.crypto.grep11.grpc.DigestSingleResponse.Builder.class);
-  }
-
-  /**
-   * <code>bytes Digest = 3;</code>
-   *
-   * @return The digest.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString getDigest() {
-    return digest_;
-  }
-
-  @java.lang.Override
-  public final boolean isInitialized() {
-    byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) return true;
-    if (isInitialized == 0) return false;
-
-    memoizedIsInitialized = 1;
-    return true;
-  }
-
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    if (!digest_.isEmpty()) {
-      output.writeBytes(3, digest_);
-    }
-    unknownFields.writeTo(output);
-  }
-
-  @java.lang.Override
-  public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) return size;
-
-    size = 0;
-    if (!digest_.isEmpty()) {
-      size += com.google.protobuf.CodedOutputStream.computeBytesSize(3, digest_);
-    }
-    size += unknownFields.getSerializedSize();
-    memoizedSize = size;
-    return size;
-  }
-
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
-    if (obj == this) {
-      return true;
-    }
-    if (!(obj instanceof com.ibm.crypto.grep11.grpc.DigestSingleResponse)) {
-      return super.equals(obj);
-    }
-    com.ibm.crypto.grep11.grpc.DigestSingleResponse other =
-        (com.ibm.crypto.grep11.grpc.DigestSingleResponse) obj;
-
-    if (!getDigest().equals(other.getDigest())) return false;
-    if (!unknownFields.equals(other.unknownFields)) return false;
-    return true;
-  }
-
-  @java.lang.Override
-  public int hashCode() {
-    if (memoizedHashCode != 0) {
-      return memoizedHashCode;
-    }
-    int hash = 41;
-    hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + DIGEST_FIELD_NUMBER;
-    hash = (53 * hash) + getDigest().hashCode();
-    hash = (29 * hash) + unknownFields.hashCode();
-    memoizedHashCode = hash;
-    return hash;
-  }
-
-  @java.lang.Override
-  public Builder newBuilderForType() {
-    return newBuilder();
   }
 
   @java.lang.Override
@@ -281,34 +256,11 @@ public final class DigestSingleResponse extends com.google.protobuf.GeneratedMes
     Builder builder = new Builder(parent);
     return builder;
   }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<DigestSingleResponse> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.DigestSingleResponse getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
-  }
-
   /** Protobuf type {@code grep11.DigestSingleResponse} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
       // @@protoc_insertion_point(builder_implements:grep11.DigestSingleResponse)
       com.ibm.crypto.grep11.grpc.DigestSingleResponseOrBuilder {
-    private com.google.protobuf.ByteString digest_ = com.google.protobuf.ByteString.EMPTY;
-
-    // Construct using com.ibm.crypto.grep11.grpc.DigestSingleResponse.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
-    }
-
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
       return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_DigestSingleResponse_descriptor;
     }
@@ -321,6 +273,16 @@ public final class DigestSingleResponse extends com.google.protobuf.GeneratedMes
           .ensureFieldAccessorsInitialized(
               com.ibm.crypto.grep11.grpc.DigestSingleResponse.class,
               com.ibm.crypto.grep11.grpc.DigestSingleResponse.Builder.class);
+    }
+
+    // Construct using com.ibm.crypto.grep11.grpc.DigestSingleResponse.newBuilder()
+    private Builder() {
+      maybeForceBuilderInitialization();
+    }
+
+    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      super(parent);
+      maybeForceBuilderInitialization();
     }
 
     private void maybeForceBuilderInitialization() {
@@ -441,6 +403,7 @@ public final class DigestSingleResponse extends com.google.protobuf.GeneratedMes
       return this;
     }
 
+    private com.google.protobuf.ByteString digest_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes Digest = 3;</code>
      *
@@ -489,5 +452,41 @@ public final class DigestSingleResponse extends com.google.protobuf.GeneratedMes
     }
 
     // @@protoc_insertion_point(builder_scope:grep11.DigestSingleResponse)
+  }
+
+  // @@protoc_insertion_point(class_scope:grep11.DigestSingleResponse)
+  private static final com.ibm.crypto.grep11.grpc.DigestSingleResponse DEFAULT_INSTANCE;
+
+  static {
+    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.DigestSingleResponse();
+  }
+
+  public static com.ibm.crypto.grep11.grpc.DigestSingleResponse getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  private static final com.google.protobuf.Parser<DigestSingleResponse> PARSER =
+      new com.google.protobuf.AbstractParser<DigestSingleResponse>() {
+        @java.lang.Override
+        public DigestSingleResponse parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new DigestSingleResponse(input, extensionRegistry);
+        }
+      };
+
+  public static com.google.protobuf.Parser<DigestSingleResponse> parser() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.google.protobuf.Parser<DigestSingleResponse> getParserForType() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.DigestSingleResponse getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
   }
 }

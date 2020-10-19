@@ -23,12 +23,14 @@ public class TransactionService {
       throw new Exception("Currently only one signing address supported.");
     }
 
+    var signingAddress = transferSigningRequest.getSigningAddresses().get(0);
+
     Wallet wallet;
     try {
       wallet =
           this.walletRepository.getFind(
-              transferSigningRequest.getSigningAddresses().get(0),
-              transferSigningRequest.getGroup(),
+              signingAddress.getAddress(),
+              signingAddress.getGroup(),
               transferSigningRequest.getTenantId());
     } catch (SQLException exception) {
       throw new Exception("An error occurred while getting wallet.", exception);
@@ -38,8 +40,8 @@ public class TransactionService {
       throw new Exception(
           String.format(
               "Wallet not found. Address: %s; Group: %s; TenantId: %s",
-              transferSigningRequest.getSigningAddresses().get(0),
-              transferSigningRequest.getGroup(),
+              signingAddress.getAddress(),
+              signingAddress.getGroup(),
               transferSigningRequest.getTenantId()));
     }
 

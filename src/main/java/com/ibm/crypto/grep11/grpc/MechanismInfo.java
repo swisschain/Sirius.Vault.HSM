@@ -8,38 +8,24 @@ public final class MechanismInfo extends com.google.protobuf.GeneratedMessageV3
     implements
     // @@protoc_insertion_point(message_implements:grep11.MechanismInfo)
     MechanismInfoOrBuilder {
-  public static final int MINKEYSIZE_FIELD_NUMBER = 1;
-  public static final int MAXKEYSIZE_FIELD_NUMBER = 2;
-  public static final int FLAGS_FIELD_NUMBER = 3;
   private static final long serialVersionUID = 0L;
-  // @@protoc_insertion_point(class_scope:grep11.MechanismInfo)
-  private static final com.ibm.crypto.grep11.grpc.MechanismInfo DEFAULT_INSTANCE;
-  private static final com.google.protobuf.Parser<MechanismInfo> PARSER =
-      new com.google.protobuf.AbstractParser<MechanismInfo>() {
-        @java.lang.Override
-        public MechanismInfo parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MechanismInfo(input, extensionRegistry);
-        }
-      };
-
-  static {
-    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.MechanismInfo();
-  }
-
-  private long minKeySize_;
-  private long maxKeySize_;
-  private long flags_;
-  private byte memoizedIsInitialized = -1;
-
   // Use MechanismInfo.newBuilder() to construct.
   private MechanismInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
 
   private MechanismInfo() {}
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new MechanismInfo();
+  }
+
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    return this.unknownFields;
+  }
 
   private MechanismInfo(
       com.google.protobuf.CodedInputStream input,
@@ -97,105 +83,6 @@ public final class MechanismInfo extends com.google.protobuf.GeneratedMessageV3
     return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_MechanismInfo_descriptor;
   }
 
-  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(java.nio.ByteBuffer data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(
-      java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(
-      byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(
-      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-        PARSER, input, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseDelimitedFrom(
-      java.io.InputStream input) throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseDelimitedFrom(
-      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
-        PARSER, input, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(
-      com.google.protobuf.CodedInputStream input) throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-        PARSER, input, extensionRegistry);
-  }
-
-  public static Builder newBuilder() {
-    return DEFAULT_INSTANCE.toBuilder();
-  }
-
-  public static Builder newBuilder(com.ibm.crypto.grep11.grpc.MechanismInfo prototype) {
-    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.MechanismInfo getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  public static com.google.protobuf.Parser<MechanismInfo> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new MechanismInfo();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-    return this.unknownFields;
-  }
-
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
@@ -205,6 +92,8 @@ public final class MechanismInfo extends com.google.protobuf.GeneratedMessageV3
             com.ibm.crypto.grep11.grpc.MechanismInfo.Builder.class);
   }
 
+  public static final int MINKEYSIZE_FIELD_NUMBER = 1;
+  private long minKeySize_;
   /**
    * <code>uint64 MinKeySize = 1;</code>
    *
@@ -215,6 +104,8 @@ public final class MechanismInfo extends com.google.protobuf.GeneratedMessageV3
     return minKeySize_;
   }
 
+  public static final int MAXKEYSIZE_FIELD_NUMBER = 2;
+  private long maxKeySize_;
   /**
    * <code>uint64 MaxKeySize = 2;</code>
    *
@@ -225,6 +116,8 @@ public final class MechanismInfo extends com.google.protobuf.GeneratedMessageV3
     return maxKeySize_;
   }
 
+  public static final int FLAGS_FIELD_NUMBER = 3;
+  private long flags_;
   /**
    * <code>uint64 Flags = 3;</code>
    *
@@ -234,6 +127,8 @@ public final class MechanismInfo extends com.google.protobuf.GeneratedMessageV3
   public long getFlags() {
     return flags_;
   }
+
+  private byte memoizedIsInitialized = -1;
 
   @java.lang.Override
   public final boolean isInitialized() {
@@ -314,9 +209,89 @@ public final class MechanismInfo extends com.google.protobuf.GeneratedMessageV3
     return hash;
   }
 
+  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(
+      java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(byte[] data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(
+      byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(java.io.InputStream input)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(
+      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+        PARSER, input, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseDelimitedFrom(
+      java.io.InputStream input) throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseDelimitedFrom(
+      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
+        PARSER, input, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(
+      com.google.protobuf.CodedInputStream input) throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.MechanismInfo parseFrom(
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+        PARSER, input, extensionRegistry);
+  }
+
   @java.lang.Override
   public Builder newBuilderForType() {
     return newBuilder();
+  }
+
+  public static Builder newBuilder() {
+    return DEFAULT_INSTANCE.toBuilder();
+  }
+
+  public static Builder newBuilder(com.ibm.crypto.grep11.grpc.MechanismInfo prototype) {
+    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
 
   @java.lang.Override
@@ -329,36 +304,11 @@ public final class MechanismInfo extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<MechanismInfo> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.MechanismInfo getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
-  }
-
   /** Protobuf type {@code grep11.MechanismInfo} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
       // @@protoc_insertion_point(builder_implements:grep11.MechanismInfo)
       com.ibm.crypto.grep11.grpc.MechanismInfoOrBuilder {
-    private long minKeySize_;
-    private long maxKeySize_;
-    private long flags_;
-
-    // Construct using com.ibm.crypto.grep11.grpc.MechanismInfo.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
-    }
-
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
       return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_MechanismInfo_descriptor;
     }
@@ -370,6 +320,16 @@ public final class MechanismInfo extends com.google.protobuf.GeneratedMessageV3
           .ensureFieldAccessorsInitialized(
               com.ibm.crypto.grep11.grpc.MechanismInfo.class,
               com.ibm.crypto.grep11.grpc.MechanismInfo.Builder.class);
+    }
+
+    // Construct using com.ibm.crypto.grep11.grpc.MechanismInfo.newBuilder()
+    private Builder() {
+      maybeForceBuilderInitialization();
+    }
+
+    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      super(parent);
+      maybeForceBuilderInitialization();
     }
 
     private void maybeForceBuilderInitialization() {
@@ -501,6 +461,7 @@ public final class MechanismInfo extends com.google.protobuf.GeneratedMessageV3
       return this;
     }
 
+    private long minKeySize_;
     /**
      * <code>uint64 MinKeySize = 1;</code>
      *
@@ -510,7 +471,6 @@ public final class MechanismInfo extends com.google.protobuf.GeneratedMessageV3
     public long getMinKeySize() {
       return minKeySize_;
     }
-
     /**
      * <code>uint64 MinKeySize = 1;</code>
      *
@@ -523,7 +483,6 @@ public final class MechanismInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
-
     /**
      * <code>uint64 MinKeySize = 1;</code>
      *
@@ -536,6 +495,7 @@ public final class MechanismInfo extends com.google.protobuf.GeneratedMessageV3
       return this;
     }
 
+    private long maxKeySize_;
     /**
      * <code>uint64 MaxKeySize = 2;</code>
      *
@@ -545,7 +505,6 @@ public final class MechanismInfo extends com.google.protobuf.GeneratedMessageV3
     public long getMaxKeySize() {
       return maxKeySize_;
     }
-
     /**
      * <code>uint64 MaxKeySize = 2;</code>
      *
@@ -558,7 +517,6 @@ public final class MechanismInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
-
     /**
      * <code>uint64 MaxKeySize = 2;</code>
      *
@@ -571,6 +529,7 @@ public final class MechanismInfo extends com.google.protobuf.GeneratedMessageV3
       return this;
     }
 
+    private long flags_;
     /**
      * <code>uint64 Flags = 3;</code>
      *
@@ -616,5 +575,41 @@ public final class MechanismInfo extends com.google.protobuf.GeneratedMessageV3
     }
 
     // @@protoc_insertion_point(builder_scope:grep11.MechanismInfo)
+  }
+
+  // @@protoc_insertion_point(class_scope:grep11.MechanismInfo)
+  private static final com.ibm.crypto.grep11.grpc.MechanismInfo DEFAULT_INSTANCE;
+
+  static {
+    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.MechanismInfo();
+  }
+
+  public static com.ibm.crypto.grep11.grpc.MechanismInfo getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  private static final com.google.protobuf.Parser<MechanismInfo> PARSER =
+      new com.google.protobuf.AbstractParser<MechanismInfo>() {
+        @java.lang.Override
+        public MechanismInfo parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new MechanismInfo(input, extensionRegistry);
+        }
+      };
+
+  public static com.google.protobuf.Parser<MechanismInfo> parser() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.google.protobuf.Parser<MechanismInfo> getParserForType() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.MechanismInfo getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
   }
 }

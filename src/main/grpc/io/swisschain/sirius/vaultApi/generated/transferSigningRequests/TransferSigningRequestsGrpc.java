@@ -1,10 +1,18 @@
 package io.swisschain.sirius.vaultApi.generated.transferSigningRequests;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
+import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
+import static io.grpc.stub.ClientCalls.asyncClientStreamingCall;
+import static io.grpc.stub.ClientCalls.asyncServerStreamingCall;
 import static io.grpc.stub.ClientCalls.asyncUnaryCall;
+import static io.grpc.stub.ClientCalls.blockingServerStreamingCall;
 import static io.grpc.stub.ClientCalls.blockingUnaryCall;
 import static io.grpc.stub.ClientCalls.futureUnaryCall;
+import static io.grpc.stub.ServerCalls.asyncBidiStreamingCall;
+import static io.grpc.stub.ServerCalls.asyncClientStreamingCall;
+import static io.grpc.stub.ServerCalls.asyncServerStreamingCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
+import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
 /** */
@@ -13,11 +21,11 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
     comments = "Source: transfer-signing-requests.proto")
 public final class TransferSigningRequestsGrpc {
 
+  private TransferSigningRequestsGrpc() {}
+
   public static final String SERVICE_NAME =
       "swisschain.sirius.vaultApi.transferSigningRequests.TransferSigningRequests";
-  private static final int METHODID_GET = 0;
-  private static final int METHODID_CONFIRM = 1;
-  private static final int METHODID_REJECT = 2;
+
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<
           io.swisschain
@@ -35,41 +43,6 @@ public final class TransferSigningRequestsGrpc {
               .TransferSigningRequestsOuterClass
               .GetTransferSigningRequestsResponse>
       getGetMethod;
-  private static volatile io.grpc.MethodDescriptor<
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .ConfirmTransferSigningRequestRequest,
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .ConfirmTransferSigningRequestResponse>
-      getConfirmMethod;
-  private static volatile io.grpc.MethodDescriptor<
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .RejectTransferSigningRequestRequest,
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .transferSigningRequests
-              .TransferSigningRequestsOuterClass
-              .RejectTransferSigningRequestResponse>
-      getRejectMethod;
-  private static volatile io.grpc.ServiceDescriptor serviceDescriptor;
-
-  private TransferSigningRequestsGrpc() {}
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Get",
@@ -167,6 +140,23 @@ public final class TransferSigningRequestsGrpc {
     return getGetMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .ConfirmTransferSigningRequestRequest,
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .ConfirmTransferSigningRequestResponse>
+      getConfirmMethod;
+
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Confirm",
       requestType =
@@ -262,6 +252,23 @@ public final class TransferSigningRequestsGrpc {
     }
     return getConfirmMethod;
   }
+
+  private static volatile io.grpc.MethodDescriptor<
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .RejectTransferSigningRequestRequest,
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .transferSigningRequests
+              .TransferSigningRequestsOuterClass
+              .RejectTransferSigningRequestResponse>
+      getRejectMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Reject",
@@ -398,26 +405,6 @@ public final class TransferSigningRequestsGrpc {
           }
         };
     return TransferSigningRequestsFutureStub.newStub(factory, channel);
-  }
-
-  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
-    io.grpc.ServiceDescriptor result = serviceDescriptor;
-    if (result == null) {
-      synchronized (TransferSigningRequestsGrpc.class) {
-        result = serviceDescriptor;
-        if (result == null) {
-          serviceDescriptor =
-              result =
-                  io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
-                      .setSchemaDescriptor(new TransferSigningRequestsFileDescriptorSupplier())
-                      .addMethod(getGetMethod())
-                      .addMethod(getConfirmMethod())
-                      .addMethod(getRejectMethod())
-                      .build();
-        }
-      }
-    }
-    return result;
   }
 
   /** */
@@ -786,6 +773,10 @@ public final class TransferSigningRequestsGrpc {
     }
   }
 
+  private static final int METHODID_GET = 0;
+  private static final int METHODID_CONFIRM = 1;
+  private static final int METHODID_REJECT = 2;
+
   private static final class MethodHandlers<Req, Resp>
       implements io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
           io.grpc.stub.ServerCalls.ServerStreamingMethod<Req, Resp>,
@@ -914,5 +905,27 @@ public final class TransferSigningRequestsGrpc {
     public com.google.protobuf.Descriptors.MethodDescriptor getMethodDescriptor() {
       return getServiceDescriptor().findMethodByName(methodName);
     }
+  }
+
+  private static volatile io.grpc.ServiceDescriptor serviceDescriptor;
+
+  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
+    io.grpc.ServiceDescriptor result = serviceDescriptor;
+    if (result == null) {
+      synchronized (TransferSigningRequestsGrpc.class) {
+        result = serviceDescriptor;
+        if (result == null) {
+          serviceDescriptor =
+              result =
+                  io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
+                      .setSchemaDescriptor(new TransferSigningRequestsFileDescriptorSupplier())
+                      .addMethod(getGetMethod())
+                      .addMethod(getConfirmMethod())
+                      .addMethod(getRejectMethod())
+                      .build();
+        }
+      }
+    }
+    return result;
   }
 }

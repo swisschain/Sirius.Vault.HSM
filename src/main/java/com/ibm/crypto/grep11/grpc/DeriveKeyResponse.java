@@ -8,29 +8,7 @@ public final class DeriveKeyResponse extends com.google.protobuf.GeneratedMessag
     implements
     // @@protoc_insertion_point(message_implements:grep11.DeriveKeyResponse)
     DeriveKeyResponseOrBuilder {
-  public static final int NEWKEY_FIELD_NUMBER = 6;
-  public static final int CHECKSUM_FIELD_NUMBER = 7;
   private static final long serialVersionUID = 0L;
-  // @@protoc_insertion_point(class_scope:grep11.DeriveKeyResponse)
-  private static final com.ibm.crypto.grep11.grpc.DeriveKeyResponse DEFAULT_INSTANCE;
-  private static final com.google.protobuf.Parser<DeriveKeyResponse> PARSER =
-      new com.google.protobuf.AbstractParser<DeriveKeyResponse>() {
-        @java.lang.Override
-        public DeriveKeyResponse parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new DeriveKeyResponse(input, extensionRegistry);
-        }
-      };
-
-  static {
-    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.DeriveKeyResponse();
-  }
-
-  private com.google.protobuf.ByteString newKey_;
-  private com.google.protobuf.ByteString checkSum_;
-  private byte memoizedIsInitialized = -1;
   // Use DeriveKeyResponse.newBuilder() to construct.
   private DeriveKeyResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -39,6 +17,17 @@ public final class DeriveKeyResponse extends com.google.protobuf.GeneratedMessag
   private DeriveKeyResponse() {
     newKey_ = com.google.protobuf.ByteString.EMPTY;
     checkSum_ = com.google.protobuf.ByteString.EMPTY;
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new DeriveKeyResponse();
+  }
+
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    return this.unknownFields;
   }
 
   private DeriveKeyResponse(
@@ -90,6 +79,113 @@ public final class DeriveKeyResponse extends com.google.protobuf.GeneratedMessag
 
   public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
     return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_DeriveKeyResponse_descriptor;
+  }
+
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internalGetFieldAccessorTable() {
+    return com.ibm.crypto.grep11.grpc.Hsm
+        .internal_static_grep11_DeriveKeyResponse_fieldAccessorTable
+        .ensureFieldAccessorsInitialized(
+            com.ibm.crypto.grep11.grpc.DeriveKeyResponse.class,
+            com.ibm.crypto.grep11.grpc.DeriveKeyResponse.Builder.class);
+  }
+
+  public static final int NEWKEY_FIELD_NUMBER = 6;
+  private com.google.protobuf.ByteString newKey_;
+  /**
+   * <code>bytes NewKey = 6;</code>
+   *
+   * @return The newKey.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString getNewKey() {
+    return newKey_;
+  }
+
+  public static final int CHECKSUM_FIELD_NUMBER = 7;
+  private com.google.protobuf.ByteString checkSum_;
+  /**
+   * <code>bytes CheckSum = 7;</code>
+   *
+   * @return The checkSum.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString getCheckSum() {
+    return checkSum_;
+  }
+
+  private byte memoizedIsInitialized = -1;
+
+  @java.lang.Override
+  public final boolean isInitialized() {
+    byte isInitialized = memoizedIsInitialized;
+    if (isInitialized == 1) return true;
+    if (isInitialized == 0) return false;
+
+    memoizedIsInitialized = 1;
+    return true;
+  }
+
+  @java.lang.Override
+  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+    if (!newKey_.isEmpty()) {
+      output.writeBytes(6, newKey_);
+    }
+    if (!checkSum_.isEmpty()) {
+      output.writeBytes(7, checkSum_);
+    }
+    unknownFields.writeTo(output);
+  }
+
+  @java.lang.Override
+  public int getSerializedSize() {
+    int size = memoizedSize;
+    if (size != -1) return size;
+
+    size = 0;
+    if (!newKey_.isEmpty()) {
+      size += com.google.protobuf.CodedOutputStream.computeBytesSize(6, newKey_);
+    }
+    if (!checkSum_.isEmpty()) {
+      size += com.google.protobuf.CodedOutputStream.computeBytesSize(7, checkSum_);
+    }
+    size += unknownFields.getSerializedSize();
+    memoizedSize = size;
+    return size;
+  }
+
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
+    if (obj == this) {
+      return true;
+    }
+    if (!(obj instanceof com.ibm.crypto.grep11.grpc.DeriveKeyResponse)) {
+      return super.equals(obj);
+    }
+    com.ibm.crypto.grep11.grpc.DeriveKeyResponse other =
+        (com.ibm.crypto.grep11.grpc.DeriveKeyResponse) obj;
+
+    if (!getNewKey().equals(other.getNewKey())) return false;
+    if (!getCheckSum().equals(other.getCheckSum())) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
+  }
+
+  @java.lang.Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + NEWKEY_FIELD_NUMBER;
+    hash = (53 * hash) + getNewKey().hashCode();
+    hash = (37 * hash) + CHECKSUM_FIELD_NUMBER;
+    hash = (53 * hash) + getCheckSum().hashCode();
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
   }
 
   public static com.ibm.crypto.grep11.grpc.DeriveKeyResponse parseFrom(java.nio.ByteBuffer data)
@@ -164,137 +260,17 @@ public final class DeriveKeyResponse extends com.google.protobuf.GeneratedMessag
         PARSER, input, extensionRegistry);
   }
 
+  @java.lang.Override
+  public Builder newBuilderForType() {
+    return newBuilder();
+  }
+
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
 
   public static Builder newBuilder(com.ibm.crypto.grep11.grpc.DeriveKeyResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.DeriveKeyResponse getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  public static com.google.protobuf.Parser<DeriveKeyResponse> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new DeriveKeyResponse();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-    return this.unknownFields;
-  }
-
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-    return com.ibm.crypto.grep11.grpc.Hsm
-        .internal_static_grep11_DeriveKeyResponse_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.ibm.crypto.grep11.grpc.DeriveKeyResponse.class,
-            com.ibm.crypto.grep11.grpc.DeriveKeyResponse.Builder.class);
-  }
-
-  /**
-   * <code>bytes NewKey = 6;</code>
-   *
-   * @return The newKey.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString getNewKey() {
-    return newKey_;
-  }
-
-  /**
-   * <code>bytes CheckSum = 7;</code>
-   *
-   * @return The checkSum.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString getCheckSum() {
-    return checkSum_;
-  }
-
-  @java.lang.Override
-  public final boolean isInitialized() {
-    byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) return true;
-    if (isInitialized == 0) return false;
-
-    memoizedIsInitialized = 1;
-    return true;
-  }
-
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    if (!newKey_.isEmpty()) {
-      output.writeBytes(6, newKey_);
-    }
-    if (!checkSum_.isEmpty()) {
-      output.writeBytes(7, checkSum_);
-    }
-    unknownFields.writeTo(output);
-  }
-
-  @java.lang.Override
-  public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) return size;
-
-    size = 0;
-    if (!newKey_.isEmpty()) {
-      size += com.google.protobuf.CodedOutputStream.computeBytesSize(6, newKey_);
-    }
-    if (!checkSum_.isEmpty()) {
-      size += com.google.protobuf.CodedOutputStream.computeBytesSize(7, checkSum_);
-    }
-    size += unknownFields.getSerializedSize();
-    memoizedSize = size;
-    return size;
-  }
-
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
-    if (obj == this) {
-      return true;
-    }
-    if (!(obj instanceof com.ibm.crypto.grep11.grpc.DeriveKeyResponse)) {
-      return super.equals(obj);
-    }
-    com.ibm.crypto.grep11.grpc.DeriveKeyResponse other =
-        (com.ibm.crypto.grep11.grpc.DeriveKeyResponse) obj;
-
-    if (!getNewKey().equals(other.getNewKey())) return false;
-    if (!getCheckSum().equals(other.getCheckSum())) return false;
-    if (!unknownFields.equals(other.unknownFields)) return false;
-    return true;
-  }
-
-  @java.lang.Override
-  public int hashCode() {
-    if (memoizedHashCode != 0) {
-      return memoizedHashCode;
-    }
-    int hash = 41;
-    hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + NEWKEY_FIELD_NUMBER;
-    hash = (53 * hash) + getNewKey().hashCode();
-    hash = (37 * hash) + CHECKSUM_FIELD_NUMBER;
-    hash = (53 * hash) + getCheckSum().hashCode();
-    hash = (29 * hash) + unknownFields.hashCode();
-    memoizedHashCode = hash;
-    return hash;
-  }
-
-  @java.lang.Override
-  public Builder newBuilderForType() {
-    return newBuilder();
   }
 
   @java.lang.Override
@@ -307,35 +283,11 @@ public final class DeriveKeyResponse extends com.google.protobuf.GeneratedMessag
     Builder builder = new Builder(parent);
     return builder;
   }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<DeriveKeyResponse> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.DeriveKeyResponse getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
-  }
-
   /** Protobuf type {@code grep11.DeriveKeyResponse} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
       // @@protoc_insertion_point(builder_implements:grep11.DeriveKeyResponse)
       com.ibm.crypto.grep11.grpc.DeriveKeyResponseOrBuilder {
-    private com.google.protobuf.ByteString newKey_ = com.google.protobuf.ByteString.EMPTY;
-    private com.google.protobuf.ByteString checkSum_ = com.google.protobuf.ByteString.EMPTY;
-
-    // Construct using com.ibm.crypto.grep11.grpc.DeriveKeyResponse.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
-    }
-
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
       return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_DeriveKeyResponse_descriptor;
     }
@@ -348,6 +300,16 @@ public final class DeriveKeyResponse extends com.google.protobuf.GeneratedMessag
           .ensureFieldAccessorsInitialized(
               com.ibm.crypto.grep11.grpc.DeriveKeyResponse.class,
               com.ibm.crypto.grep11.grpc.DeriveKeyResponse.Builder.class);
+    }
+
+    // Construct using com.ibm.crypto.grep11.grpc.DeriveKeyResponse.newBuilder()
+    private Builder() {
+      maybeForceBuilderInitialization();
+    }
+
+    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      super(parent);
+      maybeForceBuilderInitialization();
     }
 
     private void maybeForceBuilderInitialization() {
@@ -473,6 +435,7 @@ public final class DeriveKeyResponse extends com.google.protobuf.GeneratedMessag
       return this;
     }
 
+    private com.google.protobuf.ByteString newKey_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes NewKey = 6;</code>
      *
@@ -482,7 +445,6 @@ public final class DeriveKeyResponse extends com.google.protobuf.GeneratedMessag
     public com.google.protobuf.ByteString getNewKey() {
       return newKey_;
     }
-
     /**
      * <code>bytes NewKey = 6;</code>
      *
@@ -498,7 +460,6 @@ public final class DeriveKeyResponse extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
-
     /**
      * <code>bytes NewKey = 6;</code>
      *
@@ -511,6 +472,7 @@ public final class DeriveKeyResponse extends com.google.protobuf.GeneratedMessag
       return this;
     }
 
+    private com.google.protobuf.ByteString checkSum_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes CheckSum = 7;</code>
      *
@@ -559,5 +521,41 @@ public final class DeriveKeyResponse extends com.google.protobuf.GeneratedMessag
     }
 
     // @@protoc_insertion_point(builder_scope:grep11.DeriveKeyResponse)
+  }
+
+  // @@protoc_insertion_point(class_scope:grep11.DeriveKeyResponse)
+  private static final com.ibm.crypto.grep11.grpc.DeriveKeyResponse DEFAULT_INSTANCE;
+
+  static {
+    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.DeriveKeyResponse();
+  }
+
+  public static com.ibm.crypto.grep11.grpc.DeriveKeyResponse getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  private static final com.google.protobuf.Parser<DeriveKeyResponse> PARSER =
+      new com.google.protobuf.AbstractParser<DeriveKeyResponse>() {
+        @java.lang.Override
+        public DeriveKeyResponse parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new DeriveKeyResponse(input, extensionRegistry);
+        }
+      };
+
+  public static com.google.protobuf.Parser<DeriveKeyResponse> parser() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.google.protobuf.Parser<DeriveKeyResponse> getParserForType() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.DeriveKeyResponse getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
   }
 }
