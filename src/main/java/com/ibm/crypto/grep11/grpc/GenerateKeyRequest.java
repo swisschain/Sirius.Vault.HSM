@@ -8,31 +8,7 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
     implements
     // @@protoc_insertion_point(message_implements:grep11.GenerateKeyRequest)
     GenerateKeyRequestOrBuilder {
-  public static final int MECH_FIELD_NUMBER = 1;
-  public static final int TEMPLATE_FIELD_NUMBER = 2;
-  public static final int KEYID_FIELD_NUMBER = 4;
   private static final long serialVersionUID = 0L;
-  // @@protoc_insertion_point(class_scope:grep11.GenerateKeyRequest)
-  private static final com.ibm.crypto.grep11.grpc.GenerateKeyRequest DEFAULT_INSTANCE;
-  private static final com.google.protobuf.Parser<GenerateKeyRequest> PARSER =
-      new com.google.protobuf.AbstractParser<GenerateKeyRequest>() {
-        @java.lang.Override
-        public GenerateKeyRequest parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new GenerateKeyRequest(input, extensionRegistry);
-        }
-      };
-
-  static {
-    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.GenerateKeyRequest();
-  }
-
-  private com.ibm.crypto.grep11.grpc.Mechanism mech_;
-  private com.google.protobuf.MapField<java.lang.Long, com.google.protobuf.ByteString> template_;
-  private volatile java.lang.Object keyId_;
-  private byte memoizedIsInitialized = -1;
   // Use GenerateKeyRequest.newBuilder() to construct.
   private GenerateKeyRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -40,6 +16,17 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
 
   private GenerateKeyRequest() {
     keyId_ = "";
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new GenerateKeyRequest();
+  }
+
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    return this.unknownFields;
   }
 
   private GenerateKeyRequest(
@@ -123,105 +110,6 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
     return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_GenerateKeyRequest_descriptor;
   }
 
-  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(java.nio.ByteBuffer data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(
-      java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(
-      byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(
-      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-        PARSER, input, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseDelimitedFrom(
-      java.io.InputStream input) throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseDelimitedFrom(
-      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
-        PARSER, input, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(
-      com.google.protobuf.CodedInputStream input) throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-        PARSER, input, extensionRegistry);
-  }
-
-  public static Builder newBuilder() {
-    return DEFAULT_INSTANCE.toBuilder();
-  }
-
-  public static Builder newBuilder(com.ibm.crypto.grep11.grpc.GenerateKeyRequest prototype) {
-    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  public static com.google.protobuf.Parser<GenerateKeyRequest> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new GenerateKeyRequest();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-    return this.unknownFields;
-  }
-
   @SuppressWarnings({"rawtypes"})
   @java.lang.Override
   protected com.google.protobuf.MapField internalGetMapField(int number) {
@@ -243,6 +131,8 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
             com.ibm.crypto.grep11.grpc.GenerateKeyRequest.Builder.class);
   }
 
+  public static final int MECH_FIELD_NUMBER = 1;
+  private com.ibm.crypto.grep11.grpc.Mechanism mech_;
   /**
    * <code>.grep11.Mechanism Mech = 1;</code>
    *
@@ -252,7 +142,6 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
   public boolean hasMech() {
     return mech_ != null;
   }
-
   /**
    * <code>.grep11.Mechanism Mech = 1;</code>
    *
@@ -262,12 +151,28 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
   public com.ibm.crypto.grep11.grpc.Mechanism getMech() {
     return mech_ == null ? com.ibm.crypto.grep11.grpc.Mechanism.getDefaultInstance() : mech_;
   }
-
   /** <code>.grep11.Mechanism Mech = 1;</code> */
   @java.lang.Override
   public com.ibm.crypto.grep11.grpc.MechanismOrBuilder getMechOrBuilder() {
     return getMech();
   }
+
+  public static final int TEMPLATE_FIELD_NUMBER = 2;
+
+  private static final class TemplateDefaultEntryHolder {
+    static final com.google.protobuf.MapEntry<java.lang.Long, com.google.protobuf.ByteString>
+        defaultEntry =
+            com.google.protobuf.MapEntry
+                .<java.lang.Long, com.google.protobuf.ByteString>newDefaultInstance(
+                    com.ibm.crypto.grep11.grpc.Hsm
+                        .internal_static_grep11_GenerateKeyRequest_TemplateEntry_descriptor,
+                    com.google.protobuf.WireFormat.FieldType.UINT64,
+                    0L,
+                    com.google.protobuf.WireFormat.FieldType.BYTES,
+                    com.google.protobuf.ByteString.EMPTY);
+  }
+
+  private com.google.protobuf.MapField<java.lang.Long, com.google.protobuf.ByteString> template_;
 
   private com.google.protobuf.MapField<java.lang.Long, com.google.protobuf.ByteString>
       internalGetTemplate() {
@@ -280,7 +185,6 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
   public int getTemplateCount() {
     return internalGetTemplate().getMap().size();
   }
-
   /**
    *
    *
@@ -295,14 +199,12 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
 
     return internalGetTemplate().getMap().containsKey(key);
   }
-
   /** Use {@link #getTemplateMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
   public java.util.Map<java.lang.Long, com.google.protobuf.ByteString> getTemplate() {
     return getTemplateMap();
   }
-
   /**
    *
    *
@@ -316,7 +218,6 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
   public java.util.Map<java.lang.Long, com.google.protobuf.ByteString> getTemplateMap() {
     return internalGetTemplate().getMap();
   }
-
   /**
    *
    *
@@ -334,7 +235,6 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
         internalGetTemplate().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
-
   /**
    *
    *
@@ -355,6 +255,8 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
     return map.get(key);
   }
 
+  public static final int KEYID_FIELD_NUMBER = 4;
+  private volatile java.lang.Object keyId_;
   /**
    * <code>string KeyId = 4;</code>
    *
@@ -372,7 +274,6 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
       return s;
     }
   }
-
   /**
    * <code>string KeyId = 4;</code>
    *
@@ -390,6 +291,8 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
       return (com.google.protobuf.ByteString) ref;
     }
   }
+
+  private byte memoizedIsInitialized = -1;
 
   @java.lang.Override
   public final boolean isInitialized() {
@@ -484,9 +387,89 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
     return hash;
   }
 
+  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(
+      java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(byte[] data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(
+      byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(java.io.InputStream input)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(
+      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+        PARSER, input, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseDelimitedFrom(
+      java.io.InputStream input) throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseDelimitedFrom(
+      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
+        PARSER, input, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(
+      com.google.protobuf.CodedInputStream input) throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest parseFrom(
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+        PARSER, input, extensionRegistry);
+  }
+
   @java.lang.Override
   public Builder newBuilderForType() {
     return newBuilder();
+  }
+
+  public static Builder newBuilder() {
+    return DEFAULT_INSTANCE.toBuilder();
+  }
+
+  public static Builder newBuilder(com.ibm.crypto.grep11.grpc.GenerateKeyRequest prototype) {
+    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
 
   @java.lang.Override
@@ -499,55 +482,11 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
     Builder builder = new Builder(parent);
     return builder;
   }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<GenerateKeyRequest> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.GenerateKeyRequest getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
-  }
-
-  private static final class TemplateDefaultEntryHolder {
-    static final com.google.protobuf.MapEntry<java.lang.Long, com.google.protobuf.ByteString>
-        defaultEntry =
-            com.google.protobuf.MapEntry
-                .<java.lang.Long, com.google.protobuf.ByteString>newDefaultInstance(
-                    com.ibm.crypto.grep11.grpc.Hsm
-                        .internal_static_grep11_GenerateKeyRequest_TemplateEntry_descriptor,
-                    com.google.protobuf.WireFormat.FieldType.UINT64,
-                    0L,
-                    com.google.protobuf.WireFormat.FieldType.BYTES,
-                    com.google.protobuf.ByteString.EMPTY);
-  }
-
   /** Protobuf type {@code grep11.GenerateKeyRequest} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
       // @@protoc_insertion_point(builder_implements:grep11.GenerateKeyRequest)
       com.ibm.crypto.grep11.grpc.GenerateKeyRequestOrBuilder {
-    private int bitField0_;
-    private com.ibm.crypto.grep11.grpc.Mechanism mech_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-            com.ibm.crypto.grep11.grpc.Mechanism,
-            com.ibm.crypto.grep11.grpc.Mechanism.Builder,
-            com.ibm.crypto.grep11.grpc.MechanismOrBuilder>
-        mechBuilder_;
-    private com.google.protobuf.MapField<java.lang.Long, com.google.protobuf.ByteString> template_;
-    private java.lang.Object keyId_ = "";
-
-    // Construct using com.ibm.crypto.grep11.grpc.GenerateKeyRequest.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
-    }
-
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
       return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_GenerateKeyRequest_descriptor;
     }
@@ -580,6 +519,16 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
           .ensureFieldAccessorsInitialized(
               com.ibm.crypto.grep11.grpc.GenerateKeyRequest.class,
               com.ibm.crypto.grep11.grpc.GenerateKeyRequest.Builder.class);
+    }
+
+    // Construct using com.ibm.crypto.grep11.grpc.GenerateKeyRequest.newBuilder()
+    private Builder() {
+      maybeForceBuilderInitialization();
+    }
+
+    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      super(parent);
+      maybeForceBuilderInitialization();
     }
 
     private void maybeForceBuilderInitialization() {
@@ -719,6 +668,14 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
       return this;
     }
 
+    private int bitField0_;
+
+    private com.ibm.crypto.grep11.grpc.Mechanism mech_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+            com.ibm.crypto.grep11.grpc.Mechanism,
+            com.ibm.crypto.grep11.grpc.Mechanism.Builder,
+            com.ibm.crypto.grep11.grpc.MechanismOrBuilder>
+        mechBuilder_;
     /**
      * <code>.grep11.Mechanism Mech = 1;</code>
      *
@@ -727,7 +684,6 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
     public boolean hasMech() {
       return mechBuilder_ != null || mech_ != null;
     }
-
     /**
      * <code>.grep11.Mechanism Mech = 1;</code>
      *
@@ -740,7 +696,6 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
         return mechBuilder_.getMessage();
       }
     }
-
     /** <code>.grep11.Mechanism Mech = 1;</code> */
     public Builder setMech(com.ibm.crypto.grep11.grpc.Mechanism value) {
       if (mechBuilder_ == null) {
@@ -755,7 +710,6 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
 
       return this;
     }
-
     /** <code>.grep11.Mechanism Mech = 1;</code> */
     public Builder setMech(com.ibm.crypto.grep11.grpc.Mechanism.Builder builderForValue) {
       if (mechBuilder_ == null) {
@@ -767,7 +721,6 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
 
       return this;
     }
-
     /** <code>.grep11.Mechanism Mech = 1;</code> */
     public Builder mergeMech(com.ibm.crypto.grep11.grpc.Mechanism value) {
       if (mechBuilder_ == null) {
@@ -786,7 +739,6 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
 
       return this;
     }
-
     /** <code>.grep11.Mechanism Mech = 1;</code> */
     public Builder clearMech() {
       if (mechBuilder_ == null) {
@@ -799,14 +751,12 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
 
       return this;
     }
-
     /** <code>.grep11.Mechanism Mech = 1;</code> */
     public com.ibm.crypto.grep11.grpc.Mechanism.Builder getMechBuilder() {
 
       onChanged();
       return getMechFieldBuilder().getBuilder();
     }
-
     /** <code>.grep11.Mechanism Mech = 1;</code> */
     public com.ibm.crypto.grep11.grpc.MechanismOrBuilder getMechOrBuilder() {
       if (mechBuilder_ != null) {
@@ -815,7 +765,6 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
         return mech_ == null ? com.ibm.crypto.grep11.grpc.Mechanism.getDefaultInstance() : mech_;
       }
     }
-
     /** <code>.grep11.Mechanism Mech = 1;</code> */
     private com.google.protobuf.SingleFieldBuilderV3<
             com.ibm.crypto.grep11.grpc.Mechanism,
@@ -833,6 +782,8 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
       }
       return mechBuilder_;
     }
+
+    private com.google.protobuf.MapField<java.lang.Long, com.google.protobuf.ByteString> template_;
 
     private com.google.protobuf.MapField<java.lang.Long, com.google.protobuf.ByteString>
         internalGetTemplate() {
@@ -859,7 +810,6 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
     public int getTemplateCount() {
       return internalGetTemplate().getMap().size();
     }
-
     /**
      *
      *
@@ -874,14 +824,12 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
 
       return internalGetTemplate().getMap().containsKey(key);
     }
-
     /** Use {@link #getTemplateMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.Long, com.google.protobuf.ByteString> getTemplate() {
       return getTemplateMap();
     }
-
     /**
      *
      *
@@ -895,7 +843,6 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
     public java.util.Map<java.lang.Long, com.google.protobuf.ByteString> getTemplateMap() {
       return internalGetTemplate().getMap();
     }
-
     /**
      *
      *
@@ -913,7 +860,6 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
           internalGetTemplate().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
-
     /**
      *
      *
@@ -938,7 +884,6 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
       internalGetMutableTemplate().getMutableMap().clear();
       return this;
     }
-
     /**
      *
      *
@@ -953,13 +898,11 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
       internalGetMutableTemplate().getMutableMap().remove(key);
       return this;
     }
-
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<java.lang.Long, com.google.protobuf.ByteString> getMutableTemplate() {
       return internalGetMutableTemplate().getMutableMap();
     }
-
     /**
      *
      *
@@ -977,7 +920,6 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
       internalGetMutableTemplate().getMutableMap().put(key, value);
       return this;
     }
-
     /**
      *
      *
@@ -993,6 +935,7 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
       return this;
     }
 
+    private java.lang.Object keyId_ = "";
     /**
      * <code>string KeyId = 4;</code>
      *
@@ -1009,23 +952,6 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
         return (java.lang.String) ref;
       }
     }
-
-    /**
-     * <code>string KeyId = 4;</code>
-     *
-     * @param value The keyId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setKeyId(java.lang.String value) {
-      if (value == null) {
-        throw new NullPointerException();
-      }
-
-      keyId_ = value;
-      onChanged();
-      return this;
-    }
-
     /**
      * <code>string KeyId = 4;</code>
      *
@@ -1042,7 +968,32 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
         return (com.google.protobuf.ByteString) ref;
       }
     }
+    /**
+     * <code>string KeyId = 4;</code>
+     *
+     * @param value The keyId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setKeyId(java.lang.String value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
 
+      keyId_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string KeyId = 4;</code>
+     *
+     * @return This builder for chaining.
+     */
+    public Builder clearKeyId() {
+
+      keyId_ = getDefaultInstance().getKeyId();
+      onChanged();
+      return this;
+    }
     /**
      * <code>string KeyId = 4;</code>
      *
@@ -1060,18 +1011,6 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
       return this;
     }
 
-    /**
-     * <code>string KeyId = 4;</code>
-     *
-     * @return This builder for chaining.
-     */
-    public Builder clearKeyId() {
-
-      keyId_ = getDefaultInstance().getKeyId();
-      onChanged();
-      return this;
-    }
-
     @java.lang.Override
     public final Builder setUnknownFields(final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
@@ -1084,5 +1023,41 @@ public final class GenerateKeyRequest extends com.google.protobuf.GeneratedMessa
     }
 
     // @@protoc_insertion_point(builder_scope:grep11.GenerateKeyRequest)
+  }
+
+  // @@protoc_insertion_point(class_scope:grep11.GenerateKeyRequest)
+  private static final com.ibm.crypto.grep11.grpc.GenerateKeyRequest DEFAULT_INSTANCE;
+
+  static {
+    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.GenerateKeyRequest();
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GenerateKeyRequest getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  private static final com.google.protobuf.Parser<GenerateKeyRequest> PARSER =
+      new com.google.protobuf.AbstractParser<GenerateKeyRequest>() {
+        @java.lang.Override
+        public GenerateKeyRequest parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new GenerateKeyRequest(input, extensionRegistry);
+        }
+      };
+
+  public static com.google.protobuf.Parser<GenerateKeyRequest> parser() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.google.protobuf.Parser<GenerateKeyRequest> getParserForType() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.GenerateKeyRequest getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
   }
 }

@@ -125,7 +125,7 @@ public class TransferSigningTask implements Runnable {
             .setTransferSigningRequestId(transferSigningRequestId)
             .setTransactionId(transactionId)
             .setSignedTransaction(ByteString.copyFrom(signedTransaction))
-            .setVaultSignature("empty") // TODO: sign signedTransaction+transactionId
+            .setSignature("empty") // TODO: sign signedTransaction+transactionId
             .setHostProcessId(hostProcessId)
             .build();
 
@@ -152,9 +152,9 @@ public class TransferSigningTask implements Runnable {
             .setRequestId(
                 String.format("Vault:TransferSigningRequest:%d", transferSigningRequestId))
             .setTransferSigningRequestId(transferSigningRequestId)
-            .setReason(reason)
-            .setReasonMessage(message)
-            .setVaultSignature("empty") // TODO: sing reason+message
+            .setRejectionReason(reason)
+            .setRejectionReasonMessage(message)
+            .setSignature("empty") // TODO: sing reason+message
             .setHostProcessId(hostProcessId)
             .build();
 
@@ -180,17 +180,28 @@ public class TransferSigningTask implements Runnable {
         NetworkTypeMapper.map(request.getNetworkType()),
         DoubleSpendingProtectionTypeMapper.map(request.getDoubleSpendingProtectionType()),
         request.getBuiltTransaction().toByteArray(),
-        request.getSigningAddressesList(),
-        map(request.getCoinsToSpendList()),
-        request.getPolicyResult(),
-        request.getGuardianSignature(),
-        request.getGroup(),
+        mapSigningAddress(request.getSigningAddressesList()),
+        mapCoinToSpend(request.getCoinsToSpendList()),
+        request.getDocument(),
+        request.getSignature(),
         request.getTenantId(),
         map(request.getCreatedAt()),
         map(request.getUpdatedAt()));
   }
 
-  private List<Coin> map(List<TransferSigningRequestsOuterClass.CoinToSpend> coinToSpends) {
+  private List<SigningAddress> mapSigningAddress(
+      List<TransferSigningRequestsOuterClass.SigningAddress> signingAddresses) {
+    var items = new ArrayList<SigningAddress>();
+
+    for (var signingAddress : signingAddresses) {
+      items.add(new SigningAddress(signingAddress.getAddress(), signingAddress.getGroup()));
+    }
+
+    return items;
+  }
+
+  private List<Coin> mapCoinToSpend(
+      List<TransferSigningRequestsOuterClass.CoinToSpend> coinToSpends) {
     var coins = new ArrayList<Coin>();
 
     for (var coinToSpend : coinToSpends) {

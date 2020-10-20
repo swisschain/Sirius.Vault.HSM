@@ -8,29 +8,7 @@ public final class EncryptUpdateRequest extends com.google.protobuf.GeneratedMes
     implements
     // @@protoc_insertion_point(message_implements:grep11.EncryptUpdateRequest)
     EncryptUpdateRequestOrBuilder {
-  public static final int STATE_FIELD_NUMBER = 1;
-  public static final int PLAIN_FIELD_NUMBER = 2;
   private static final long serialVersionUID = 0L;
-  // @@protoc_insertion_point(class_scope:grep11.EncryptUpdateRequest)
-  private static final com.ibm.crypto.grep11.grpc.EncryptUpdateRequest DEFAULT_INSTANCE;
-  private static final com.google.protobuf.Parser<EncryptUpdateRequest> PARSER =
-      new com.google.protobuf.AbstractParser<EncryptUpdateRequest>() {
-        @java.lang.Override
-        public EncryptUpdateRequest parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new EncryptUpdateRequest(input, extensionRegistry);
-        }
-      };
-
-  static {
-    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.EncryptUpdateRequest();
-  }
-
-  private com.google.protobuf.ByteString state_;
-  private com.google.protobuf.ByteString plain_;
-  private byte memoizedIsInitialized = -1;
   // Use EncryptUpdateRequest.newBuilder() to construct.
   private EncryptUpdateRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -39,6 +17,17 @@ public final class EncryptUpdateRequest extends com.google.protobuf.GeneratedMes
   private EncryptUpdateRequest() {
     state_ = com.google.protobuf.ByteString.EMPTY;
     plain_ = com.google.protobuf.ByteString.EMPTY;
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new EncryptUpdateRequest();
+  }
+
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    return this.unknownFields;
   }
 
   private EncryptUpdateRequest(
@@ -90,6 +79,113 @@ public final class EncryptUpdateRequest extends com.google.protobuf.GeneratedMes
 
   public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
     return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_EncryptUpdateRequest_descriptor;
+  }
+
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internalGetFieldAccessorTable() {
+    return com.ibm.crypto.grep11.grpc.Hsm
+        .internal_static_grep11_EncryptUpdateRequest_fieldAccessorTable
+        .ensureFieldAccessorsInitialized(
+            com.ibm.crypto.grep11.grpc.EncryptUpdateRequest.class,
+            com.ibm.crypto.grep11.grpc.EncryptUpdateRequest.Builder.class);
+  }
+
+  public static final int STATE_FIELD_NUMBER = 1;
+  private com.google.protobuf.ByteString state_;
+  /**
+   * <code>bytes State = 1;</code>
+   *
+   * @return The state.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString getState() {
+    return state_;
+  }
+
+  public static final int PLAIN_FIELD_NUMBER = 2;
+  private com.google.protobuf.ByteString plain_;
+  /**
+   * <code>bytes Plain = 2;</code>
+   *
+   * @return The plain.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString getPlain() {
+    return plain_;
+  }
+
+  private byte memoizedIsInitialized = -1;
+
+  @java.lang.Override
+  public final boolean isInitialized() {
+    byte isInitialized = memoizedIsInitialized;
+    if (isInitialized == 1) return true;
+    if (isInitialized == 0) return false;
+
+    memoizedIsInitialized = 1;
+    return true;
+  }
+
+  @java.lang.Override
+  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+    if (!state_.isEmpty()) {
+      output.writeBytes(1, state_);
+    }
+    if (!plain_.isEmpty()) {
+      output.writeBytes(2, plain_);
+    }
+    unknownFields.writeTo(output);
+  }
+
+  @java.lang.Override
+  public int getSerializedSize() {
+    int size = memoizedSize;
+    if (size != -1) return size;
+
+    size = 0;
+    if (!state_.isEmpty()) {
+      size += com.google.protobuf.CodedOutputStream.computeBytesSize(1, state_);
+    }
+    if (!plain_.isEmpty()) {
+      size += com.google.protobuf.CodedOutputStream.computeBytesSize(2, plain_);
+    }
+    size += unknownFields.getSerializedSize();
+    memoizedSize = size;
+    return size;
+  }
+
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
+    if (obj == this) {
+      return true;
+    }
+    if (!(obj instanceof com.ibm.crypto.grep11.grpc.EncryptUpdateRequest)) {
+      return super.equals(obj);
+    }
+    com.ibm.crypto.grep11.grpc.EncryptUpdateRequest other =
+        (com.ibm.crypto.grep11.grpc.EncryptUpdateRequest) obj;
+
+    if (!getState().equals(other.getState())) return false;
+    if (!getPlain().equals(other.getPlain())) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
+  }
+
+  @java.lang.Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + STATE_FIELD_NUMBER;
+    hash = (53 * hash) + getState().hashCode();
+    hash = (37 * hash) + PLAIN_FIELD_NUMBER;
+    hash = (53 * hash) + getPlain().hashCode();
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
   }
 
   public static com.ibm.crypto.grep11.grpc.EncryptUpdateRequest parseFrom(java.nio.ByteBuffer data)
@@ -164,137 +260,17 @@ public final class EncryptUpdateRequest extends com.google.protobuf.GeneratedMes
         PARSER, input, extensionRegistry);
   }
 
+  @java.lang.Override
+  public Builder newBuilderForType() {
+    return newBuilder();
+  }
+
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
 
   public static Builder newBuilder(com.ibm.crypto.grep11.grpc.EncryptUpdateRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.EncryptUpdateRequest getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  public static com.google.protobuf.Parser<EncryptUpdateRequest> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new EncryptUpdateRequest();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-    return this.unknownFields;
-  }
-
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-    return com.ibm.crypto.grep11.grpc.Hsm
-        .internal_static_grep11_EncryptUpdateRequest_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.ibm.crypto.grep11.grpc.EncryptUpdateRequest.class,
-            com.ibm.crypto.grep11.grpc.EncryptUpdateRequest.Builder.class);
-  }
-
-  /**
-   * <code>bytes State = 1;</code>
-   *
-   * @return The state.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString getState() {
-    return state_;
-  }
-
-  /**
-   * <code>bytes Plain = 2;</code>
-   *
-   * @return The plain.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString getPlain() {
-    return plain_;
-  }
-
-  @java.lang.Override
-  public final boolean isInitialized() {
-    byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) return true;
-    if (isInitialized == 0) return false;
-
-    memoizedIsInitialized = 1;
-    return true;
-  }
-
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    if (!state_.isEmpty()) {
-      output.writeBytes(1, state_);
-    }
-    if (!plain_.isEmpty()) {
-      output.writeBytes(2, plain_);
-    }
-    unknownFields.writeTo(output);
-  }
-
-  @java.lang.Override
-  public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) return size;
-
-    size = 0;
-    if (!state_.isEmpty()) {
-      size += com.google.protobuf.CodedOutputStream.computeBytesSize(1, state_);
-    }
-    if (!plain_.isEmpty()) {
-      size += com.google.protobuf.CodedOutputStream.computeBytesSize(2, plain_);
-    }
-    size += unknownFields.getSerializedSize();
-    memoizedSize = size;
-    return size;
-  }
-
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
-    if (obj == this) {
-      return true;
-    }
-    if (!(obj instanceof com.ibm.crypto.grep11.grpc.EncryptUpdateRequest)) {
-      return super.equals(obj);
-    }
-    com.ibm.crypto.grep11.grpc.EncryptUpdateRequest other =
-        (com.ibm.crypto.grep11.grpc.EncryptUpdateRequest) obj;
-
-    if (!getState().equals(other.getState())) return false;
-    if (!getPlain().equals(other.getPlain())) return false;
-    if (!unknownFields.equals(other.unknownFields)) return false;
-    return true;
-  }
-
-  @java.lang.Override
-  public int hashCode() {
-    if (memoizedHashCode != 0) {
-      return memoizedHashCode;
-    }
-    int hash = 41;
-    hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + STATE_FIELD_NUMBER;
-    hash = (53 * hash) + getState().hashCode();
-    hash = (37 * hash) + PLAIN_FIELD_NUMBER;
-    hash = (53 * hash) + getPlain().hashCode();
-    hash = (29 * hash) + unknownFields.hashCode();
-    memoizedHashCode = hash;
-    return hash;
-  }
-
-  @java.lang.Override
-  public Builder newBuilderForType() {
-    return newBuilder();
   }
 
   @java.lang.Override
@@ -307,35 +283,11 @@ public final class EncryptUpdateRequest extends com.google.protobuf.GeneratedMes
     Builder builder = new Builder(parent);
     return builder;
   }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<EncryptUpdateRequest> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.EncryptUpdateRequest getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
-  }
-
   /** Protobuf type {@code grep11.EncryptUpdateRequest} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
       // @@protoc_insertion_point(builder_implements:grep11.EncryptUpdateRequest)
       com.ibm.crypto.grep11.grpc.EncryptUpdateRequestOrBuilder {
-    private com.google.protobuf.ByteString state_ = com.google.protobuf.ByteString.EMPTY;
-    private com.google.protobuf.ByteString plain_ = com.google.protobuf.ByteString.EMPTY;
-
-    // Construct using com.ibm.crypto.grep11.grpc.EncryptUpdateRequest.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
-    }
-
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
       return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_EncryptUpdateRequest_descriptor;
     }
@@ -348,6 +300,16 @@ public final class EncryptUpdateRequest extends com.google.protobuf.GeneratedMes
           .ensureFieldAccessorsInitialized(
               com.ibm.crypto.grep11.grpc.EncryptUpdateRequest.class,
               com.ibm.crypto.grep11.grpc.EncryptUpdateRequest.Builder.class);
+    }
+
+    // Construct using com.ibm.crypto.grep11.grpc.EncryptUpdateRequest.newBuilder()
+    private Builder() {
+      maybeForceBuilderInitialization();
+    }
+
+    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      super(parent);
+      maybeForceBuilderInitialization();
     }
 
     private void maybeForceBuilderInitialization() {
@@ -474,6 +436,7 @@ public final class EncryptUpdateRequest extends com.google.protobuf.GeneratedMes
       return this;
     }
 
+    private com.google.protobuf.ByteString state_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes State = 1;</code>
      *
@@ -483,7 +446,6 @@ public final class EncryptUpdateRequest extends com.google.protobuf.GeneratedMes
     public com.google.protobuf.ByteString getState() {
       return state_;
     }
-
     /**
      * <code>bytes State = 1;</code>
      *
@@ -499,7 +461,6 @@ public final class EncryptUpdateRequest extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
-
     /**
      * <code>bytes State = 1;</code>
      *
@@ -512,6 +473,7 @@ public final class EncryptUpdateRequest extends com.google.protobuf.GeneratedMes
       return this;
     }
 
+    private com.google.protobuf.ByteString plain_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes Plain = 2;</code>
      *
@@ -560,5 +522,41 @@ public final class EncryptUpdateRequest extends com.google.protobuf.GeneratedMes
     }
 
     // @@protoc_insertion_point(builder_scope:grep11.EncryptUpdateRequest)
+  }
+
+  // @@protoc_insertion_point(class_scope:grep11.EncryptUpdateRequest)
+  private static final com.ibm.crypto.grep11.grpc.EncryptUpdateRequest DEFAULT_INSTANCE;
+
+  static {
+    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.EncryptUpdateRequest();
+  }
+
+  public static com.ibm.crypto.grep11.grpc.EncryptUpdateRequest getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  private static final com.google.protobuf.Parser<EncryptUpdateRequest> PARSER =
+      new com.google.protobuf.AbstractParser<EncryptUpdateRequest>() {
+        @java.lang.Override
+        public EncryptUpdateRequest parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new EncryptUpdateRequest(input, extensionRegistry);
+        }
+      };
+
+  public static com.google.protobuf.Parser<EncryptUpdateRequest> parser() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.google.protobuf.Parser<EncryptUpdateRequest> getParserForType() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.EncryptUpdateRequest getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
   }
 }

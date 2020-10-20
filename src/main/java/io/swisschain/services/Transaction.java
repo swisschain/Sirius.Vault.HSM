@@ -10,7 +10,7 @@ public class Transaction {
   private final String blockchainId;
   private final String protocolCode;
   private final NetworkType networkType;
-  private final List<String> signingAddresses;
+  private final List<SigningAddress> signingAddresses;
   private final Instant createdAt;
   private byte[] signedTransaction;
   private String transactionId;
@@ -20,7 +20,7 @@ public class Transaction {
       String blockchainId,
       String protocolCode,
       NetworkType networkType,
-      List<String> signingAddresses,
+      List<SigningAddress> signingAddresses,
       byte[] signedTransaction,
       String transactionId,
       Instant createdAt) {
@@ -39,7 +39,7 @@ public class Transaction {
       String blockchainId,
       String protocolCode,
       NetworkType networkType,
-      List<String> signingAddresses,
+      List<SigningAddress> signingAddresses,
       byte[] signedTransaction,
       String transactionId) {
     return new Transaction(
@@ -69,7 +69,7 @@ public class Transaction {
     return networkType;
   }
 
-  public List<String> getSigningAddresses() {
+  public List<SigningAddress> getSigningAddresses() {
     return signingAddresses;
   }
 

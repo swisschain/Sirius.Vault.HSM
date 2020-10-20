@@ -8,32 +8,7 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
     implements
     // @@protoc_insertion_point(message_implements:grep11.Grep11Error)
     Grep11ErrorOrBuilder {
-  public static final int CODE_FIELD_NUMBER = 1;
-  public static final int DETAIL_FIELD_NUMBER = 2;
-  public static final int RETRY_FIELD_NUMBER = 3;
   private static final long serialVersionUID = 0L;
-  // @@protoc_insertion_point(class_scope:grep11.Grep11Error)
-  private static final com.ibm.crypto.grep11.grpc.Grep11Error DEFAULT_INSTANCE;
-  private static final com.google.protobuf.Parser<Grep11Error> PARSER =
-      new com.google.protobuf.AbstractParser<Grep11Error>() {
-        @java.lang.Override
-        public Grep11Error parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new Grep11Error(input, extensionRegistry);
-        }
-      };
-
-  static {
-    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.Grep11Error();
-  }
-
-  private long code_;
-  private volatile java.lang.Object detail_;
-  private boolean retry_;
-  private byte memoizedIsInitialized = -1;
-
   // Use Grep11Error.newBuilder() to construct.
   private Grep11Error(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -41,6 +16,17 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
 
   private Grep11Error() {
     detail_ = "";
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new Grep11Error();
+  }
+
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    return this.unknownFields;
   }
 
   private Grep11Error(
@@ -101,105 +87,6 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
     return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_Grep11Error_descriptor;
   }
 
-  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(java.nio.ByteBuffer data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(
-      java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(
-      byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(
-      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-        PARSER, input, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.Grep11Error parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.Grep11Error parseDelimitedFrom(
-      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
-        PARSER, input, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(
-      com.google.protobuf.CodedInputStream input) throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-        PARSER, input, extensionRegistry);
-  }
-
-  public static Builder newBuilder() {
-    return DEFAULT_INSTANCE.toBuilder();
-  }
-
-  public static Builder newBuilder(com.ibm.crypto.grep11.grpc.Grep11Error prototype) {
-    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.Grep11Error getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  public static com.google.protobuf.Parser<Grep11Error> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new Grep11Error();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-    return this.unknownFields;
-  }
-
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
@@ -209,6 +96,8 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
             com.ibm.crypto.grep11.grpc.Grep11Error.Builder.class);
   }
 
+  public static final int CODE_FIELD_NUMBER = 1;
+  private long code_;
   /**
    *
    *
@@ -225,6 +114,8 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
     return code_;
   }
 
+  public static final int DETAIL_FIELD_NUMBER = 2;
+  private volatile java.lang.Object detail_;
   /**
    * <code>string Detail = 2;</code>
    *
@@ -242,7 +133,6 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
-
   /**
    * <code>string Detail = 2;</code>
    *
@@ -261,6 +151,8 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
     }
   }
 
+  public static final int RETRY_FIELD_NUMBER = 3;
+  private boolean retry_;
   /**
    * <code>bool Retry = 3;</code>
    *
@@ -270,6 +162,8 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
   public boolean getRetry() {
     return retry_;
   }
+
+  private byte memoizedIsInitialized = -1;
 
   @java.lang.Override
   public final boolean isInitialized() {
@@ -350,9 +244,89 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
     return hash;
   }
 
+  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(
+      java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(byte[] data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(
+      byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(java.io.InputStream input)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(
+      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+        PARSER, input, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.Grep11Error parseDelimitedFrom(java.io.InputStream input)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.Grep11Error parseDelimitedFrom(
+      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
+        PARSER, input, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(
+      com.google.protobuf.CodedInputStream input) throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.Grep11Error parseFrom(
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+        PARSER, input, extensionRegistry);
+  }
+
   @java.lang.Override
   public Builder newBuilderForType() {
     return newBuilder();
+  }
+
+  public static Builder newBuilder() {
+    return DEFAULT_INSTANCE.toBuilder();
+  }
+
+  public static Builder newBuilder(com.ibm.crypto.grep11.grpc.Grep11Error prototype) {
+    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
 
   @java.lang.Override
@@ -365,36 +339,11 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<Grep11Error> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.Grep11Error getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
-  }
-
   /** Protobuf type {@code grep11.Grep11Error} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
       // @@protoc_insertion_point(builder_implements:grep11.Grep11Error)
       com.ibm.crypto.grep11.grpc.Grep11ErrorOrBuilder {
-    private long code_;
-    private java.lang.Object detail_ = "";
-    private boolean retry_;
-
-    // Construct using com.ibm.crypto.grep11.grpc.Grep11Error.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
-    }
-
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
       return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_Grep11Error_descriptor;
     }
@@ -406,6 +355,16 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
           .ensureFieldAccessorsInitialized(
               com.ibm.crypto.grep11.grpc.Grep11Error.class,
               com.ibm.crypto.grep11.grpc.Grep11Error.Builder.class);
+    }
+
+    // Construct using com.ibm.crypto.grep11.grpc.Grep11Error.newBuilder()
+    private Builder() {
+      maybeForceBuilderInitialization();
+    }
+
+    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      super(parent);
+      maybeForceBuilderInitialization();
     }
 
     private void maybeForceBuilderInitialization() {
@@ -538,6 +497,7 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
       return this;
     }
 
+    private long code_;
     /**
      *
      *
@@ -553,7 +513,6 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
     public long getCode() {
       return code_;
     }
-
     /**
      *
      *
@@ -572,7 +531,6 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
-
     /**
      *
      *
@@ -591,6 +549,7 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
       return this;
     }
 
+    private java.lang.Object detail_ = "";
     /**
      * <code>string Detail = 2;</code>
      *
@@ -607,23 +566,6 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
-
-    /**
-     * <code>string Detail = 2;</code>
-     *
-     * @param value The detail to set.
-     * @return This builder for chaining.
-     */
-    public Builder setDetail(java.lang.String value) {
-      if (value == null) {
-        throw new NullPointerException();
-      }
-
-      detail_ = value;
-      onChanged();
-      return this;
-    }
-
     /**
      * <code>string Detail = 2;</code>
      *
@@ -640,7 +582,32 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+    /**
+     * <code>string Detail = 2;</code>
+     *
+     * @param value The detail to set.
+     * @return This builder for chaining.
+     */
+    public Builder setDetail(java.lang.String value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
 
+      detail_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string Detail = 2;</code>
+     *
+     * @return This builder for chaining.
+     */
+    public Builder clearDetail() {
+
+      detail_ = getDefaultInstance().getDetail();
+      onChanged();
+      return this;
+    }
     /**
      * <code>string Detail = 2;</code>
      *
@@ -658,18 +625,7 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
       return this;
     }
 
-    /**
-     * <code>string Detail = 2;</code>
-     *
-     * @return This builder for chaining.
-     */
-    public Builder clearDetail() {
-
-      detail_ = getDefaultInstance().getDetail();
-      onChanged();
-      return this;
-    }
-
+    private boolean retry_;
     /**
      * <code>bool Retry = 3;</code>
      *
@@ -715,5 +671,41 @@ public final class Grep11Error extends com.google.protobuf.GeneratedMessageV3
     }
 
     // @@protoc_insertion_point(builder_scope:grep11.Grep11Error)
+  }
+
+  // @@protoc_insertion_point(class_scope:grep11.Grep11Error)
+  private static final com.ibm.crypto.grep11.grpc.Grep11Error DEFAULT_INSTANCE;
+
+  static {
+    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.Grep11Error();
+  }
+
+  public static com.ibm.crypto.grep11.grpc.Grep11Error getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  private static final com.google.protobuf.Parser<Grep11Error> PARSER =
+      new com.google.protobuf.AbstractParser<Grep11Error>() {
+        @java.lang.Override
+        public Grep11Error parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new Grep11Error(input, extensionRegistry);
+        }
+      };
+
+  public static com.google.protobuf.Parser<Grep11Error> parser() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.google.protobuf.Parser<Grep11Error> getParserForType() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.Grep11Error getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
   }
 }

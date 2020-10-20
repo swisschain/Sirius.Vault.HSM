@@ -8,30 +8,7 @@ public final class GetAttributeValueRequest extends com.google.protobuf.Generate
     implements
     // @@protoc_insertion_point(message_implements:grep11.GetAttributeValueRequest)
     GetAttributeValueRequestOrBuilder {
-  public static final int OBJECT_FIELD_NUMBER = 1;
-  public static final int ATTRIBUTES_FIELD_NUMBER = 2;
   private static final long serialVersionUID = 0L;
-  // @@protoc_insertion_point(class_scope:grep11.GetAttributeValueRequest)
-  private static final com.ibm.crypto.grep11.grpc.GetAttributeValueRequest DEFAULT_INSTANCE;
-  private static final com.google.protobuf.Parser<GetAttributeValueRequest> PARSER =
-      new com.google.protobuf.AbstractParser<GetAttributeValueRequest>() {
-        @java.lang.Override
-        public GetAttributeValueRequest parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new GetAttributeValueRequest(input, extensionRegistry);
-        }
-      };
-
-  static {
-    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.GetAttributeValueRequest();
-  }
-
-  private com.google.protobuf.ByteString object_;
-  private com.google.protobuf.MapField<java.lang.Long, com.google.protobuf.ByteString> attributes_;
-  private byte memoizedIsInitialized = -1;
-
   // Use GetAttributeValueRequest.newBuilder() to construct.
   private GetAttributeValueRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -39,6 +16,17 @@ public final class GetAttributeValueRequest extends com.google.protobuf.Generate
 
   private GetAttributeValueRequest() {
     object_ = com.google.protobuf.ByteString.EMPTY;
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new GetAttributeValueRequest();
+  }
+
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    return this.unknownFields;
   }
 
   private GetAttributeValueRequest(
@@ -105,105 +93,6 @@ public final class GetAttributeValueRequest extends com.google.protobuf.Generate
         .internal_static_grep11_GetAttributeValueRequest_descriptor;
   }
 
-  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(
-      java.nio.ByteBuffer data) throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(
-      java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(
-      byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(
-      java.io.InputStream input) throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(
-      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-        PARSER, input, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseDelimitedFrom(
-      java.io.InputStream input) throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseDelimitedFrom(
-      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
-        PARSER, input, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(
-      com.google.protobuf.CodedInputStream input) throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-        PARSER, input, extensionRegistry);
-  }
-
-  public static Builder newBuilder() {
-    return DEFAULT_INSTANCE.toBuilder();
-  }
-
-  public static Builder newBuilder(com.ibm.crypto.grep11.grpc.GetAttributeValueRequest prototype) {
-    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  public static com.google.protobuf.Parser<GetAttributeValueRequest> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new GetAttributeValueRequest();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-    return this.unknownFields;
-  }
-
   @SuppressWarnings({"rawtypes"})
   @java.lang.Override
   protected com.google.protobuf.MapField internalGetMapField(int number) {
@@ -225,6 +114,8 @@ public final class GetAttributeValueRequest extends com.google.protobuf.Generate
             com.ibm.crypto.grep11.grpc.GetAttributeValueRequest.Builder.class);
   }
 
+  public static final int OBJECT_FIELD_NUMBER = 1;
+  private com.google.protobuf.ByteString object_;
   /**
    * <code>bytes Object = 1;</code>
    *
@@ -234,6 +125,23 @@ public final class GetAttributeValueRequest extends com.google.protobuf.Generate
   public com.google.protobuf.ByteString getObject() {
     return object_;
   }
+
+  public static final int ATTRIBUTES_FIELD_NUMBER = 2;
+
+  private static final class AttributesDefaultEntryHolder {
+    static final com.google.protobuf.MapEntry<java.lang.Long, com.google.protobuf.ByteString>
+        defaultEntry =
+            com.google.protobuf.MapEntry
+                .<java.lang.Long, com.google.protobuf.ByteString>newDefaultInstance(
+                    com.ibm.crypto.grep11.grpc.Hsm
+                        .internal_static_grep11_GetAttributeValueRequest_AttributesEntry_descriptor,
+                    com.google.protobuf.WireFormat.FieldType.UINT64,
+                    0L,
+                    com.google.protobuf.WireFormat.FieldType.BYTES,
+                    com.google.protobuf.ByteString.EMPTY);
+  }
+
+  private com.google.protobuf.MapField<java.lang.Long, com.google.protobuf.ByteString> attributes_;
 
   private com.google.protobuf.MapField<java.lang.Long, com.google.protobuf.ByteString>
       internalGetAttributes() {
@@ -246,7 +154,6 @@ public final class GetAttributeValueRequest extends com.google.protobuf.Generate
   public int getAttributesCount() {
     return internalGetAttributes().getMap().size();
   }
-
   /**
    *
    *
@@ -261,14 +168,12 @@ public final class GetAttributeValueRequest extends com.google.protobuf.Generate
 
     return internalGetAttributes().getMap().containsKey(key);
   }
-
   /** Use {@link #getAttributesMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
   public java.util.Map<java.lang.Long, com.google.protobuf.ByteString> getAttributes() {
     return getAttributesMap();
   }
-
   /**
    *
    *
@@ -282,7 +187,6 @@ public final class GetAttributeValueRequest extends com.google.protobuf.Generate
   public java.util.Map<java.lang.Long, com.google.protobuf.ByteString> getAttributesMap() {
     return internalGetAttributes().getMap();
   }
-
   /**
    *
    *
@@ -300,7 +204,6 @@ public final class GetAttributeValueRequest extends com.google.protobuf.Generate
         internalGetAttributes().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
-
   /**
    *
    *
@@ -320,6 +223,8 @@ public final class GetAttributeValueRequest extends com.google.protobuf.Generate
     }
     return map.get(key);
   }
+
+  private byte memoizedIsInitialized = -1;
 
   @java.lang.Override
   public final boolean isInitialized() {
@@ -400,9 +305,89 @@ public final class GetAttributeValueRequest extends com.google.protobuf.Generate
     return hash;
   }
 
+  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(
+      java.nio.ByteBuffer data) throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(
+      java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(byte[] data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(
+      byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(
+      java.io.InputStream input) throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(
+      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+        PARSER, input, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseDelimitedFrom(
+      java.io.InputStream input) throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseDelimitedFrom(
+      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
+        PARSER, input, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(
+      com.google.protobuf.CodedInputStream input) throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest parseFrom(
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+        PARSER, input, extensionRegistry);
+  }
+
   @java.lang.Override
   public Builder newBuilderForType() {
     return newBuilder();
+  }
+
+  public static Builder newBuilder() {
+    return DEFAULT_INSTANCE.toBuilder();
+  }
+
+  public static Builder newBuilder(com.ibm.crypto.grep11.grpc.GetAttributeValueRequest prototype) {
+    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
 
   @java.lang.Override
@@ -415,50 +400,11 @@ public final class GetAttributeValueRequest extends com.google.protobuf.Generate
     Builder builder = new Builder(parent);
     return builder;
   }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<GetAttributeValueRequest> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.GetAttributeValueRequest getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
-  }
-
-  private static final class AttributesDefaultEntryHolder {
-    static final com.google.protobuf.MapEntry<java.lang.Long, com.google.protobuf.ByteString>
-        defaultEntry =
-            com.google.protobuf.MapEntry
-                .<java.lang.Long, com.google.protobuf.ByteString>newDefaultInstance(
-                    com.ibm.crypto.grep11.grpc.Hsm
-                        .internal_static_grep11_GetAttributeValueRequest_AttributesEntry_descriptor,
-                    com.google.protobuf.WireFormat.FieldType.UINT64,
-                    0L,
-                    com.google.protobuf.WireFormat.FieldType.BYTES,
-                    com.google.protobuf.ByteString.EMPTY);
-  }
-
   /** Protobuf type {@code grep11.GetAttributeValueRequest} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
       // @@protoc_insertion_point(builder_implements:grep11.GetAttributeValueRequest)
       com.ibm.crypto.grep11.grpc.GetAttributeValueRequestOrBuilder {
-    private int bitField0_;
-    private com.google.protobuf.ByteString object_ = com.google.protobuf.ByteString.EMPTY;
-    private com.google.protobuf.MapField<java.lang.Long, com.google.protobuf.ByteString>
-        attributes_;
-
-    // Construct using com.ibm.crypto.grep11.grpc.GetAttributeValueRequest.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
-    }
-
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
       return com.ibm.crypto.grep11.grpc.Hsm
           .internal_static_grep11_GetAttributeValueRequest_descriptor;
@@ -492,6 +438,16 @@ public final class GetAttributeValueRequest extends com.google.protobuf.Generate
           .ensureFieldAccessorsInitialized(
               com.ibm.crypto.grep11.grpc.GetAttributeValueRequest.class,
               com.ibm.crypto.grep11.grpc.GetAttributeValueRequest.Builder.class);
+    }
+
+    // Construct using com.ibm.crypto.grep11.grpc.GetAttributeValueRequest.newBuilder()
+    private Builder() {
+      maybeForceBuilderInitialization();
+    }
+
+    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      super(parent);
+      maybeForceBuilderInitialization();
     }
 
     private void maybeForceBuilderInitialization() {
@@ -619,6 +575,9 @@ public final class GetAttributeValueRequest extends com.google.protobuf.Generate
       return this;
     }
 
+    private int bitField0_;
+
+    private com.google.protobuf.ByteString object_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes Object = 1;</code>
      *
@@ -628,7 +587,6 @@ public final class GetAttributeValueRequest extends com.google.protobuf.Generate
     public com.google.protobuf.ByteString getObject() {
       return object_;
     }
-
     /**
      * <code>bytes Object = 1;</code>
      *
@@ -644,7 +602,6 @@ public final class GetAttributeValueRequest extends com.google.protobuf.Generate
       onChanged();
       return this;
     }
-
     /**
      * <code>bytes Object = 1;</code>
      *
@@ -656,6 +613,9 @@ public final class GetAttributeValueRequest extends com.google.protobuf.Generate
       onChanged();
       return this;
     }
+
+    private com.google.protobuf.MapField<java.lang.Long, com.google.protobuf.ByteString>
+        attributes_;
 
     private com.google.protobuf.MapField<java.lang.Long, com.google.protobuf.ByteString>
         internalGetAttributes() {
@@ -820,5 +780,41 @@ public final class GetAttributeValueRequest extends com.google.protobuf.Generate
     }
 
     // @@protoc_insertion_point(builder_scope:grep11.GetAttributeValueRequest)
+  }
+
+  // @@protoc_insertion_point(class_scope:grep11.GetAttributeValueRequest)
+  private static final com.ibm.crypto.grep11.grpc.GetAttributeValueRequest DEFAULT_INSTANCE;
+
+  static {
+    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.GetAttributeValueRequest();
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GetAttributeValueRequest getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  private static final com.google.protobuf.Parser<GetAttributeValueRequest> PARSER =
+      new com.google.protobuf.AbstractParser<GetAttributeValueRequest>() {
+        @java.lang.Override
+        public GetAttributeValueRequest parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new GetAttributeValueRequest(input, extensionRegistry);
+        }
+      };
+
+  public static com.google.protobuf.Parser<GetAttributeValueRequest> parser() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.google.protobuf.Parser<GetAttributeValueRequest> getParserForType() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.GetAttributeValueRequest getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
   }
 }

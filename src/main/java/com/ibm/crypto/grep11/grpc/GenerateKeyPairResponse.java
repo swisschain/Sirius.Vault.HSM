@@ -8,29 +8,7 @@ public final class GenerateKeyPairResponse extends com.google.protobuf.Generated
     implements
     // @@protoc_insertion_point(message_implements:grep11.GenerateKeyPairResponse)
     GenerateKeyPairResponseOrBuilder {
-  public static final int PRIVKEY_FIELD_NUMBER = 5;
-  public static final int PUBKEY_FIELD_NUMBER = 6;
   private static final long serialVersionUID = 0L;
-  // @@protoc_insertion_point(class_scope:grep11.GenerateKeyPairResponse)
-  private static final com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse DEFAULT_INSTANCE;
-  private static final com.google.protobuf.Parser<GenerateKeyPairResponse> PARSER =
-      new com.google.protobuf.AbstractParser<GenerateKeyPairResponse>() {
-        @java.lang.Override
-        public GenerateKeyPairResponse parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new GenerateKeyPairResponse(input, extensionRegistry);
-        }
-      };
-
-  static {
-    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse();
-  }
-
-  private com.google.protobuf.ByteString privKey_;
-  private com.google.protobuf.ByteString pubKey_;
-  private byte memoizedIsInitialized = -1;
   // Use GenerateKeyPairResponse.newBuilder() to construct.
   private GenerateKeyPairResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -39,6 +17,17 @@ public final class GenerateKeyPairResponse extends com.google.protobuf.Generated
   private GenerateKeyPairResponse() {
     privKey_ = com.google.protobuf.ByteString.EMPTY;
     pubKey_ = com.google.protobuf.ByteString.EMPTY;
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new GenerateKeyPairResponse();
+  }
+
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    return this.unknownFields;
   }
 
   private GenerateKeyPairResponse(
@@ -90,6 +79,113 @@ public final class GenerateKeyPairResponse extends com.google.protobuf.Generated
 
   public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
     return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_GenerateKeyPairResponse_descriptor;
+  }
+
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internalGetFieldAccessorTable() {
+    return com.ibm.crypto.grep11.grpc.Hsm
+        .internal_static_grep11_GenerateKeyPairResponse_fieldAccessorTable
+        .ensureFieldAccessorsInitialized(
+            com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse.class,
+            com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse.Builder.class);
+  }
+
+  public static final int PRIVKEY_FIELD_NUMBER = 5;
+  private com.google.protobuf.ByteString privKey_;
+  /**
+   * <code>bytes PrivKey = 5;</code>
+   *
+   * @return The privKey.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString getPrivKey() {
+    return privKey_;
+  }
+
+  public static final int PUBKEY_FIELD_NUMBER = 6;
+  private com.google.protobuf.ByteString pubKey_;
+  /**
+   * <code>bytes PubKey = 6;</code>
+   *
+   * @return The pubKey.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString getPubKey() {
+    return pubKey_;
+  }
+
+  private byte memoizedIsInitialized = -1;
+
+  @java.lang.Override
+  public final boolean isInitialized() {
+    byte isInitialized = memoizedIsInitialized;
+    if (isInitialized == 1) return true;
+    if (isInitialized == 0) return false;
+
+    memoizedIsInitialized = 1;
+    return true;
+  }
+
+  @java.lang.Override
+  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+    if (!privKey_.isEmpty()) {
+      output.writeBytes(5, privKey_);
+    }
+    if (!pubKey_.isEmpty()) {
+      output.writeBytes(6, pubKey_);
+    }
+    unknownFields.writeTo(output);
+  }
+
+  @java.lang.Override
+  public int getSerializedSize() {
+    int size = memoizedSize;
+    if (size != -1) return size;
+
+    size = 0;
+    if (!privKey_.isEmpty()) {
+      size += com.google.protobuf.CodedOutputStream.computeBytesSize(5, privKey_);
+    }
+    if (!pubKey_.isEmpty()) {
+      size += com.google.protobuf.CodedOutputStream.computeBytesSize(6, pubKey_);
+    }
+    size += unknownFields.getSerializedSize();
+    memoizedSize = size;
+    return size;
+  }
+
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
+    if (obj == this) {
+      return true;
+    }
+    if (!(obj instanceof com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse)) {
+      return super.equals(obj);
+    }
+    com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse other =
+        (com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse) obj;
+
+    if (!getPrivKey().equals(other.getPrivKey())) return false;
+    if (!getPubKey().equals(other.getPubKey())) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
+  }
+
+  @java.lang.Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + PRIVKEY_FIELD_NUMBER;
+    hash = (53 * hash) + getPrivKey().hashCode();
+    hash = (37 * hash) + PUBKEY_FIELD_NUMBER;
+    hash = (53 * hash) + getPubKey().hashCode();
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
   }
 
   public static com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse parseFrom(
@@ -164,137 +260,17 @@ public final class GenerateKeyPairResponse extends com.google.protobuf.Generated
         PARSER, input, extensionRegistry);
   }
 
+  @java.lang.Override
+  public Builder newBuilderForType() {
+    return newBuilder();
+  }
+
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
 
   public static Builder newBuilder(com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  public static com.google.protobuf.Parser<GenerateKeyPairResponse> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new GenerateKeyPairResponse();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-    return this.unknownFields;
-  }
-
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-    return com.ibm.crypto.grep11.grpc.Hsm
-        .internal_static_grep11_GenerateKeyPairResponse_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse.class,
-            com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse.Builder.class);
-  }
-
-  /**
-   * <code>bytes PrivKey = 5;</code>
-   *
-   * @return The privKey.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString getPrivKey() {
-    return privKey_;
-  }
-
-  /**
-   * <code>bytes PubKey = 6;</code>
-   *
-   * @return The pubKey.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString getPubKey() {
-    return pubKey_;
-  }
-
-  @java.lang.Override
-  public final boolean isInitialized() {
-    byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) return true;
-    if (isInitialized == 0) return false;
-
-    memoizedIsInitialized = 1;
-    return true;
-  }
-
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    if (!privKey_.isEmpty()) {
-      output.writeBytes(5, privKey_);
-    }
-    if (!pubKey_.isEmpty()) {
-      output.writeBytes(6, pubKey_);
-    }
-    unknownFields.writeTo(output);
-  }
-
-  @java.lang.Override
-  public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) return size;
-
-    size = 0;
-    if (!privKey_.isEmpty()) {
-      size += com.google.protobuf.CodedOutputStream.computeBytesSize(5, privKey_);
-    }
-    if (!pubKey_.isEmpty()) {
-      size += com.google.protobuf.CodedOutputStream.computeBytesSize(6, pubKey_);
-    }
-    size += unknownFields.getSerializedSize();
-    memoizedSize = size;
-    return size;
-  }
-
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
-    if (obj == this) {
-      return true;
-    }
-    if (!(obj instanceof com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse)) {
-      return super.equals(obj);
-    }
-    com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse other =
-        (com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse) obj;
-
-    if (!getPrivKey().equals(other.getPrivKey())) return false;
-    if (!getPubKey().equals(other.getPubKey())) return false;
-    if (!unknownFields.equals(other.unknownFields)) return false;
-    return true;
-  }
-
-  @java.lang.Override
-  public int hashCode() {
-    if (memoizedHashCode != 0) {
-      return memoizedHashCode;
-    }
-    int hash = 41;
-    hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + PRIVKEY_FIELD_NUMBER;
-    hash = (53 * hash) + getPrivKey().hashCode();
-    hash = (37 * hash) + PUBKEY_FIELD_NUMBER;
-    hash = (53 * hash) + getPubKey().hashCode();
-    hash = (29 * hash) + unknownFields.hashCode();
-    memoizedHashCode = hash;
-    return hash;
-  }
-
-  @java.lang.Override
-  public Builder newBuilderForType() {
-    return newBuilder();
   }
 
   @java.lang.Override
@@ -307,35 +283,11 @@ public final class GenerateKeyPairResponse extends com.google.protobuf.Generated
     Builder builder = new Builder(parent);
     return builder;
   }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<GenerateKeyPairResponse> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
-  }
-
   /** Protobuf type {@code grep11.GenerateKeyPairResponse} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
       // @@protoc_insertion_point(builder_implements:grep11.GenerateKeyPairResponse)
       com.ibm.crypto.grep11.grpc.GenerateKeyPairResponseOrBuilder {
-    private com.google.protobuf.ByteString privKey_ = com.google.protobuf.ByteString.EMPTY;
-    private com.google.protobuf.ByteString pubKey_ = com.google.protobuf.ByteString.EMPTY;
-
-    // Construct using com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
-    }
-
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
       return com.ibm.crypto.grep11.grpc.Hsm
           .internal_static_grep11_GenerateKeyPairResponse_descriptor;
@@ -349,6 +301,16 @@ public final class GenerateKeyPairResponse extends com.google.protobuf.Generated
           .ensureFieldAccessorsInitialized(
               com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse.class,
               com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse.Builder.class);
+    }
+
+    // Construct using com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse.newBuilder()
+    private Builder() {
+      maybeForceBuilderInitialization();
+    }
+
+    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      super(parent);
+      maybeForceBuilderInitialization();
     }
 
     private void maybeForceBuilderInitialization() {
@@ -477,6 +439,7 @@ public final class GenerateKeyPairResponse extends com.google.protobuf.Generated
       return this;
     }
 
+    private com.google.protobuf.ByteString privKey_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes PrivKey = 5;</code>
      *
@@ -486,7 +449,6 @@ public final class GenerateKeyPairResponse extends com.google.protobuf.Generated
     public com.google.protobuf.ByteString getPrivKey() {
       return privKey_;
     }
-
     /**
      * <code>bytes PrivKey = 5;</code>
      *
@@ -502,7 +464,6 @@ public final class GenerateKeyPairResponse extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
-
     /**
      * <code>bytes PrivKey = 5;</code>
      *
@@ -515,6 +476,7 @@ public final class GenerateKeyPairResponse extends com.google.protobuf.Generated
       return this;
     }
 
+    private com.google.protobuf.ByteString pubKey_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes PubKey = 6;</code>
      *
@@ -563,5 +525,41 @@ public final class GenerateKeyPairResponse extends com.google.protobuf.Generated
     }
 
     // @@protoc_insertion_point(builder_scope:grep11.GenerateKeyPairResponse)
+  }
+
+  // @@protoc_insertion_point(class_scope:grep11.GenerateKeyPairResponse)
+  private static final com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse DEFAULT_INSTANCE;
+
+  static {
+    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse();
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  private static final com.google.protobuf.Parser<GenerateKeyPairResponse> PARSER =
+      new com.google.protobuf.AbstractParser<GenerateKeyPairResponse>() {
+        @java.lang.Override
+        public GenerateKeyPairResponse parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new GenerateKeyPairResponse(input, extensionRegistry);
+        }
+      };
+
+  public static com.google.protobuf.Parser<GenerateKeyPairResponse> parser() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.google.protobuf.Parser<GenerateKeyPairResponse> getParserForType() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
   }
 }

@@ -8,28 +8,7 @@ public final class SetAttributeValueResponse extends com.google.protobuf.Generat
     implements
     // @@protoc_insertion_point(message_implements:grep11.SetAttributeValueResponse)
     SetAttributeValueResponseOrBuilder {
-  public static final int OBJECT_FIELD_NUMBER = 1;
   private static final long serialVersionUID = 0L;
-  // @@protoc_insertion_point(class_scope:grep11.SetAttributeValueResponse)
-  private static final com.ibm.crypto.grep11.grpc.SetAttributeValueResponse DEFAULT_INSTANCE;
-  private static final com.google.protobuf.Parser<SetAttributeValueResponse> PARSER =
-      new com.google.protobuf.AbstractParser<SetAttributeValueResponse>() {
-        @java.lang.Override
-        public SetAttributeValueResponse parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new SetAttributeValueResponse(input, extensionRegistry);
-        }
-      };
-
-  static {
-    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.SetAttributeValueResponse();
-  }
-
-  private com.google.protobuf.ByteString object_;
-  private byte memoizedIsInitialized = -1;
-
   // Use SetAttributeValueResponse.newBuilder() to construct.
   private SetAttributeValueResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -37,6 +16,17 @@ public final class SetAttributeValueResponse extends com.google.protobuf.Generat
 
   private SetAttributeValueResponse() {
     object_ = com.google.protobuf.ByteString.EMPTY;
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new SetAttributeValueResponse();
+  }
+
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    return this.unknownFields;
   }
 
   private SetAttributeValueResponse(
@@ -84,6 +74,92 @@ public final class SetAttributeValueResponse extends com.google.protobuf.Generat
   public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
     return com.ibm.crypto.grep11.grpc.Hsm
         .internal_static_grep11_SetAttributeValueResponse_descriptor;
+  }
+
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internalGetFieldAccessorTable() {
+    return com.ibm.crypto.grep11.grpc.Hsm
+        .internal_static_grep11_SetAttributeValueResponse_fieldAccessorTable
+        .ensureFieldAccessorsInitialized(
+            com.ibm.crypto.grep11.grpc.SetAttributeValueResponse.class,
+            com.ibm.crypto.grep11.grpc.SetAttributeValueResponse.Builder.class);
+  }
+
+  public static final int OBJECT_FIELD_NUMBER = 1;
+  private com.google.protobuf.ByteString object_;
+  /**
+   * <code>bytes Object = 1;</code>
+   *
+   * @return The object.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString getObject() {
+    return object_;
+  }
+
+  private byte memoizedIsInitialized = -1;
+
+  @java.lang.Override
+  public final boolean isInitialized() {
+    byte isInitialized = memoizedIsInitialized;
+    if (isInitialized == 1) return true;
+    if (isInitialized == 0) return false;
+
+    memoizedIsInitialized = 1;
+    return true;
+  }
+
+  @java.lang.Override
+  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+    if (!object_.isEmpty()) {
+      output.writeBytes(1, object_);
+    }
+    unknownFields.writeTo(output);
+  }
+
+  @java.lang.Override
+  public int getSerializedSize() {
+    int size = memoizedSize;
+    if (size != -1) return size;
+
+    size = 0;
+    if (!object_.isEmpty()) {
+      size += com.google.protobuf.CodedOutputStream.computeBytesSize(1, object_);
+    }
+    size += unknownFields.getSerializedSize();
+    memoizedSize = size;
+    return size;
+  }
+
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
+    if (obj == this) {
+      return true;
+    }
+    if (!(obj instanceof com.ibm.crypto.grep11.grpc.SetAttributeValueResponse)) {
+      return super.equals(obj);
+    }
+    com.ibm.crypto.grep11.grpc.SetAttributeValueResponse other =
+        (com.ibm.crypto.grep11.grpc.SetAttributeValueResponse) obj;
+
+    if (!getObject().equals(other.getObject())) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
+  }
+
+  @java.lang.Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + OBJECT_FIELD_NUMBER;
+    hash = (53 * hash) + getObject().hashCode();
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
   }
 
   public static com.ibm.crypto.grep11.grpc.SetAttributeValueResponse parseFrom(
@@ -158,118 +234,17 @@ public final class SetAttributeValueResponse extends com.google.protobuf.Generat
         PARSER, input, extensionRegistry);
   }
 
+  @java.lang.Override
+  public Builder newBuilderForType() {
+    return newBuilder();
+  }
+
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
 
   public static Builder newBuilder(com.ibm.crypto.grep11.grpc.SetAttributeValueResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.SetAttributeValueResponse getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  public static com.google.protobuf.Parser<SetAttributeValueResponse> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new SetAttributeValueResponse();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-    return this.unknownFields;
-  }
-
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-    return com.ibm.crypto.grep11.grpc.Hsm
-        .internal_static_grep11_SetAttributeValueResponse_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.ibm.crypto.grep11.grpc.SetAttributeValueResponse.class,
-            com.ibm.crypto.grep11.grpc.SetAttributeValueResponse.Builder.class);
-  }
-
-  /**
-   * <code>bytes Object = 1;</code>
-   *
-   * @return The object.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString getObject() {
-    return object_;
-  }
-
-  @java.lang.Override
-  public final boolean isInitialized() {
-    byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) return true;
-    if (isInitialized == 0) return false;
-
-    memoizedIsInitialized = 1;
-    return true;
-  }
-
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    if (!object_.isEmpty()) {
-      output.writeBytes(1, object_);
-    }
-    unknownFields.writeTo(output);
-  }
-
-  @java.lang.Override
-  public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) return size;
-
-    size = 0;
-    if (!object_.isEmpty()) {
-      size += com.google.protobuf.CodedOutputStream.computeBytesSize(1, object_);
-    }
-    size += unknownFields.getSerializedSize();
-    memoizedSize = size;
-    return size;
-  }
-
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
-    if (obj == this) {
-      return true;
-    }
-    if (!(obj instanceof com.ibm.crypto.grep11.grpc.SetAttributeValueResponse)) {
-      return super.equals(obj);
-    }
-    com.ibm.crypto.grep11.grpc.SetAttributeValueResponse other =
-        (com.ibm.crypto.grep11.grpc.SetAttributeValueResponse) obj;
-
-    if (!getObject().equals(other.getObject())) return false;
-    if (!unknownFields.equals(other.unknownFields)) return false;
-    return true;
-  }
-
-  @java.lang.Override
-  public int hashCode() {
-    if (memoizedHashCode != 0) {
-      return memoizedHashCode;
-    }
-    int hash = 41;
-    hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + OBJECT_FIELD_NUMBER;
-    hash = (53 * hash) + getObject().hashCode();
-    hash = (29 * hash) + unknownFields.hashCode();
-    memoizedHashCode = hash;
-    return hash;
-  }
-
-  @java.lang.Override
-  public Builder newBuilderForType() {
-    return newBuilder();
   }
 
   @java.lang.Override
@@ -282,34 +257,11 @@ public final class SetAttributeValueResponse extends com.google.protobuf.Generat
     Builder builder = new Builder(parent);
     return builder;
   }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<SetAttributeValueResponse> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.SetAttributeValueResponse getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
-  }
-
   /** Protobuf type {@code grep11.SetAttributeValueResponse} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
       // @@protoc_insertion_point(builder_implements:grep11.SetAttributeValueResponse)
       com.ibm.crypto.grep11.grpc.SetAttributeValueResponseOrBuilder {
-    private com.google.protobuf.ByteString object_ = com.google.protobuf.ByteString.EMPTY;
-
-    // Construct using com.ibm.crypto.grep11.grpc.SetAttributeValueResponse.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
-    }
-
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
       return com.ibm.crypto.grep11.grpc.Hsm
           .internal_static_grep11_SetAttributeValueResponse_descriptor;
@@ -323,6 +275,16 @@ public final class SetAttributeValueResponse extends com.google.protobuf.Generat
           .ensureFieldAccessorsInitialized(
               com.ibm.crypto.grep11.grpc.SetAttributeValueResponse.class,
               com.ibm.crypto.grep11.grpc.SetAttributeValueResponse.Builder.class);
+    }
+
+    // Construct using com.ibm.crypto.grep11.grpc.SetAttributeValueResponse.newBuilder()
+    private Builder() {
+      maybeForceBuilderInitialization();
+    }
+
+    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      super(parent);
+      maybeForceBuilderInitialization();
     }
 
     private void maybeForceBuilderInitialization() {
@@ -445,6 +407,7 @@ public final class SetAttributeValueResponse extends com.google.protobuf.Generat
       return this;
     }
 
+    private com.google.protobuf.ByteString object_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes Object = 1;</code>
      *
@@ -493,5 +456,41 @@ public final class SetAttributeValueResponse extends com.google.protobuf.Generat
     }
 
     // @@protoc_insertion_point(builder_scope:grep11.SetAttributeValueResponse)
+  }
+
+  // @@protoc_insertion_point(class_scope:grep11.SetAttributeValueResponse)
+  private static final com.ibm.crypto.grep11.grpc.SetAttributeValueResponse DEFAULT_INSTANCE;
+
+  static {
+    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.SetAttributeValueResponse();
+  }
+
+  public static com.ibm.crypto.grep11.grpc.SetAttributeValueResponse getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  private static final com.google.protobuf.Parser<SetAttributeValueResponse> PARSER =
+      new com.google.protobuf.AbstractParser<SetAttributeValueResponse>() {
+        @java.lang.Override
+        public SetAttributeValueResponse parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new SetAttributeValueResponse(input, extensionRegistry);
+        }
+      };
+
+  public static com.google.protobuf.Parser<SetAttributeValueResponse> parser() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.google.protobuf.Parser<SetAttributeValueResponse> getParserForType() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.SetAttributeValueResponse getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
   }
 }

@@ -8,34 +8,24 @@ public final class GetAttributeValueResponse extends com.google.protobuf.Generat
     implements
     // @@protoc_insertion_point(message_implements:grep11.GetAttributeValueResponse)
     GetAttributeValueResponseOrBuilder {
-  public static final int ATTRIBUTES_FIELD_NUMBER = 2;
   private static final long serialVersionUID = 0L;
-  // @@protoc_insertion_point(class_scope:grep11.GetAttributeValueResponse)
-  private static final com.ibm.crypto.grep11.grpc.GetAttributeValueResponse DEFAULT_INSTANCE;
-  private static final com.google.protobuf.Parser<GetAttributeValueResponse> PARSER =
-      new com.google.protobuf.AbstractParser<GetAttributeValueResponse>() {
-        @java.lang.Override
-        public GetAttributeValueResponse parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new GetAttributeValueResponse(input, extensionRegistry);
-        }
-      };
-
-  static {
-    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.GetAttributeValueResponse();
-  }
-
-  private com.google.protobuf.MapField<java.lang.Long, com.google.protobuf.ByteString> attributes_;
-  private byte memoizedIsInitialized = -1;
-
   // Use GetAttributeValueResponse.newBuilder() to construct.
   private GetAttributeValueResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
 
   private GetAttributeValueResponse() {}
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new GetAttributeValueResponse();
+  }
+
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    return this.unknownFields;
+  }
 
   private GetAttributeValueResponse(
       com.google.protobuf.CodedInputStream input,
@@ -94,6 +84,197 @@ public final class GetAttributeValueResponse extends com.google.protobuf.Generat
   public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
     return com.ibm.crypto.grep11.grpc.Hsm
         .internal_static_grep11_GetAttributeValueResponse_descriptor;
+  }
+
+  @SuppressWarnings({"rawtypes"})
+  @java.lang.Override
+  protected com.google.protobuf.MapField internalGetMapField(int number) {
+    switch (number) {
+      case 2:
+        return internalGetAttributes();
+      default:
+        throw new RuntimeException("Invalid map field number: " + number);
+    }
+  }
+
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internalGetFieldAccessorTable() {
+    return com.ibm.crypto.grep11.grpc.Hsm
+        .internal_static_grep11_GetAttributeValueResponse_fieldAccessorTable
+        .ensureFieldAccessorsInitialized(
+            com.ibm.crypto.grep11.grpc.GetAttributeValueResponse.class,
+            com.ibm.crypto.grep11.grpc.GetAttributeValueResponse.Builder.class);
+  }
+
+  public static final int ATTRIBUTES_FIELD_NUMBER = 2;
+
+  private static final class AttributesDefaultEntryHolder {
+    static final com.google.protobuf.MapEntry<java.lang.Long, com.google.protobuf.ByteString>
+        defaultEntry =
+            com.google.protobuf.MapEntry
+                .<java.lang.Long, com.google.protobuf.ByteString>newDefaultInstance(
+                    com.ibm.crypto.grep11.grpc.Hsm
+                        .internal_static_grep11_GetAttributeValueResponse_AttributesEntry_descriptor,
+                    com.google.protobuf.WireFormat.FieldType.UINT64,
+                    0L,
+                    com.google.protobuf.WireFormat.FieldType.BYTES,
+                    com.google.protobuf.ByteString.EMPTY);
+  }
+
+  private com.google.protobuf.MapField<java.lang.Long, com.google.protobuf.ByteString> attributes_;
+
+  private com.google.protobuf.MapField<java.lang.Long, com.google.protobuf.ByteString>
+      internalGetAttributes() {
+    if (attributes_ == null) {
+      return com.google.protobuf.MapField.emptyMapField(AttributesDefaultEntryHolder.defaultEntry);
+    }
+    return attributes_;
+  }
+
+  public int getAttributesCount() {
+    return internalGetAttributes().getMap().size();
+  }
+  /**
+   *
+   *
+   * <pre>
+   * [(gogoproto.castkey) = "github.com/ibm-developer/ibm-cloud-hyperprotectcrypto/golang/ep11.Attribute"];
+   * </pre>
+   *
+   * <code>map&lt;uint64, bytes&gt; Attributes = 2;</code>
+   */
+  @java.lang.Override
+  public boolean containsAttributes(long key) {
+
+    return internalGetAttributes().getMap().containsKey(key);
+  }
+  /** Use {@link #getAttributesMap()} instead. */
+  @java.lang.Override
+  @java.lang.Deprecated
+  public java.util.Map<java.lang.Long, com.google.protobuf.ByteString> getAttributes() {
+    return getAttributesMap();
+  }
+  /**
+   *
+   *
+   * <pre>
+   * [(gogoproto.castkey) = "github.com/ibm-developer/ibm-cloud-hyperprotectcrypto/golang/ep11.Attribute"];
+   * </pre>
+   *
+   * <code>map&lt;uint64, bytes&gt; Attributes = 2;</code>
+   */
+  @java.lang.Override
+  public java.util.Map<java.lang.Long, com.google.protobuf.ByteString> getAttributesMap() {
+    return internalGetAttributes().getMap();
+  }
+  /**
+   *
+   *
+   * <pre>
+   * [(gogoproto.castkey) = "github.com/ibm-developer/ibm-cloud-hyperprotectcrypto/golang/ep11.Attribute"];
+   * </pre>
+   *
+   * <code>map&lt;uint64, bytes&gt; Attributes = 2;</code>
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString getAttributesOrDefault(
+      long key, com.google.protobuf.ByteString defaultValue) {
+
+    java.util.Map<java.lang.Long, com.google.protobuf.ByteString> map =
+        internalGetAttributes().getMap();
+    return map.containsKey(key) ? map.get(key) : defaultValue;
+  }
+  /**
+   *
+   *
+   * <pre>
+   * [(gogoproto.castkey) = "github.com/ibm-developer/ibm-cloud-hyperprotectcrypto/golang/ep11.Attribute"];
+   * </pre>
+   *
+   * <code>map&lt;uint64, bytes&gt; Attributes = 2;</code>
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString getAttributesOrThrow(long key) {
+
+    java.util.Map<java.lang.Long, com.google.protobuf.ByteString> map =
+        internalGetAttributes().getMap();
+    if (!map.containsKey(key)) {
+      throw new java.lang.IllegalArgumentException();
+    }
+    return map.get(key);
+  }
+
+  private byte memoizedIsInitialized = -1;
+
+  @java.lang.Override
+  public final boolean isInitialized() {
+    byte isInitialized = memoizedIsInitialized;
+    if (isInitialized == 1) return true;
+    if (isInitialized == 0) return false;
+
+    memoizedIsInitialized = 1;
+    return true;
+  }
+
+  @java.lang.Override
+  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+    com.google.protobuf.GeneratedMessageV3.serializeLongMapTo(
+        output, internalGetAttributes(), AttributesDefaultEntryHolder.defaultEntry, 2);
+    unknownFields.writeTo(output);
+  }
+
+  @java.lang.Override
+  public int getSerializedSize() {
+    int size = memoizedSize;
+    if (size != -1) return size;
+
+    size = 0;
+    for (java.util.Map.Entry<java.lang.Long, com.google.protobuf.ByteString> entry :
+        internalGetAttributes().getMap().entrySet()) {
+      com.google.protobuf.MapEntry<java.lang.Long, com.google.protobuf.ByteString> attributes__ =
+          AttributesDefaultEntryHolder.defaultEntry
+              .newBuilderForType()
+              .setKey(entry.getKey())
+              .setValue(entry.getValue())
+              .build();
+      size += com.google.protobuf.CodedOutputStream.computeMessageSize(2, attributes__);
+    }
+    size += unknownFields.getSerializedSize();
+    memoizedSize = size;
+    return size;
+  }
+
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
+    if (obj == this) {
+      return true;
+    }
+    if (!(obj instanceof com.ibm.crypto.grep11.grpc.GetAttributeValueResponse)) {
+      return super.equals(obj);
+    }
+    com.ibm.crypto.grep11.grpc.GetAttributeValueResponse other =
+        (com.ibm.crypto.grep11.grpc.GetAttributeValueResponse) obj;
+
+    if (!internalGetAttributes().equals(other.internalGetAttributes())) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
+  }
+
+  @java.lang.Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    if (!internalGetAttributes().getMap().isEmpty()) {
+      hash = (37 * hash) + ATTRIBUTES_FIELD_NUMBER;
+      hash = (53 * hash) + internalGetAttributes().hashCode();
+    }
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
   }
 
   public static com.ibm.crypto.grep11.grpc.GetAttributeValueResponse parseFrom(
@@ -168,213 +349,17 @@ public final class GetAttributeValueResponse extends com.google.protobuf.Generat
         PARSER, input, extensionRegistry);
   }
 
+  @java.lang.Override
+  public Builder newBuilderForType() {
+    return newBuilder();
+  }
+
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
 
   public static Builder newBuilder(com.ibm.crypto.grep11.grpc.GetAttributeValueResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.GetAttributeValueResponse getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  public static com.google.protobuf.Parser<GetAttributeValueResponse> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new GetAttributeValueResponse();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-    return this.unknownFields;
-  }
-
-  @SuppressWarnings({"rawtypes"})
-  @java.lang.Override
-  protected com.google.protobuf.MapField internalGetMapField(int number) {
-    switch (number) {
-      case 2:
-        return internalGetAttributes();
-      default:
-        throw new RuntimeException("Invalid map field number: " + number);
-    }
-  }
-
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-    return com.ibm.crypto.grep11.grpc.Hsm
-        .internal_static_grep11_GetAttributeValueResponse_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.ibm.crypto.grep11.grpc.GetAttributeValueResponse.class,
-            com.ibm.crypto.grep11.grpc.GetAttributeValueResponse.Builder.class);
-  }
-
-  private com.google.protobuf.MapField<java.lang.Long, com.google.protobuf.ByteString>
-      internalGetAttributes() {
-    if (attributes_ == null) {
-      return com.google.protobuf.MapField.emptyMapField(AttributesDefaultEntryHolder.defaultEntry);
-    }
-    return attributes_;
-  }
-
-  public int getAttributesCount() {
-    return internalGetAttributes().getMap().size();
-  }
-
-  /**
-   *
-   *
-   * <pre>
-   * [(gogoproto.castkey) = "github.com/ibm-developer/ibm-cloud-hyperprotectcrypto/golang/ep11.Attribute"];
-   * </pre>
-   *
-   * <code>map&lt;uint64, bytes&gt; Attributes = 2;</code>
-   */
-  @java.lang.Override
-  public boolean containsAttributes(long key) {
-
-    return internalGetAttributes().getMap().containsKey(key);
-  }
-
-  /** Use {@link #getAttributesMap()} instead. */
-  @java.lang.Override
-  @java.lang.Deprecated
-  public java.util.Map<java.lang.Long, com.google.protobuf.ByteString> getAttributes() {
-    return getAttributesMap();
-  }
-
-  /**
-   *
-   *
-   * <pre>
-   * [(gogoproto.castkey) = "github.com/ibm-developer/ibm-cloud-hyperprotectcrypto/golang/ep11.Attribute"];
-   * </pre>
-   *
-   * <code>map&lt;uint64, bytes&gt; Attributes = 2;</code>
-   */
-  @java.lang.Override
-  public java.util.Map<java.lang.Long, com.google.protobuf.ByteString> getAttributesMap() {
-    return internalGetAttributes().getMap();
-  }
-
-  /**
-   *
-   *
-   * <pre>
-   * [(gogoproto.castkey) = "github.com/ibm-developer/ibm-cloud-hyperprotectcrypto/golang/ep11.Attribute"];
-   * </pre>
-   *
-   * <code>map&lt;uint64, bytes&gt; Attributes = 2;</code>
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString getAttributesOrDefault(
-      long key, com.google.protobuf.ByteString defaultValue) {
-
-    java.util.Map<java.lang.Long, com.google.protobuf.ByteString> map =
-        internalGetAttributes().getMap();
-    return map.containsKey(key) ? map.get(key) : defaultValue;
-  }
-
-  /**
-   *
-   *
-   * <pre>
-   * [(gogoproto.castkey) = "github.com/ibm-developer/ibm-cloud-hyperprotectcrypto/golang/ep11.Attribute"];
-   * </pre>
-   *
-   * <code>map&lt;uint64, bytes&gt; Attributes = 2;</code>
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString getAttributesOrThrow(long key) {
-
-    java.util.Map<java.lang.Long, com.google.protobuf.ByteString> map =
-        internalGetAttributes().getMap();
-    if (!map.containsKey(key)) {
-      throw new java.lang.IllegalArgumentException();
-    }
-    return map.get(key);
-  }
-
-  @java.lang.Override
-  public final boolean isInitialized() {
-    byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) return true;
-    if (isInitialized == 0) return false;
-
-    memoizedIsInitialized = 1;
-    return true;
-  }
-
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    com.google.protobuf.GeneratedMessageV3.serializeLongMapTo(
-        output, internalGetAttributes(), AttributesDefaultEntryHolder.defaultEntry, 2);
-    unknownFields.writeTo(output);
-  }
-
-  @java.lang.Override
-  public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) return size;
-
-    size = 0;
-    for (java.util.Map.Entry<java.lang.Long, com.google.protobuf.ByteString> entry :
-        internalGetAttributes().getMap().entrySet()) {
-      com.google.protobuf.MapEntry<java.lang.Long, com.google.protobuf.ByteString> attributes__ =
-          AttributesDefaultEntryHolder.defaultEntry
-              .newBuilderForType()
-              .setKey(entry.getKey())
-              .setValue(entry.getValue())
-              .build();
-      size += com.google.protobuf.CodedOutputStream.computeMessageSize(2, attributes__);
-    }
-    size += unknownFields.getSerializedSize();
-    memoizedSize = size;
-    return size;
-  }
-
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
-    if (obj == this) {
-      return true;
-    }
-    if (!(obj instanceof com.ibm.crypto.grep11.grpc.GetAttributeValueResponse)) {
-      return super.equals(obj);
-    }
-    com.ibm.crypto.grep11.grpc.GetAttributeValueResponse other =
-        (com.ibm.crypto.grep11.grpc.GetAttributeValueResponse) obj;
-
-    if (!internalGetAttributes().equals(other.internalGetAttributes())) return false;
-    if (!unknownFields.equals(other.unknownFields)) return false;
-    return true;
-  }
-
-  @java.lang.Override
-  public int hashCode() {
-    if (memoizedHashCode != 0) {
-      return memoizedHashCode;
-    }
-    int hash = 41;
-    hash = (19 * hash) + getDescriptor().hashCode();
-    if (!internalGetAttributes().getMap().isEmpty()) {
-      hash = (37 * hash) + ATTRIBUTES_FIELD_NUMBER;
-      hash = (53 * hash) + internalGetAttributes().hashCode();
-    }
-    hash = (29 * hash) + unknownFields.hashCode();
-    memoizedHashCode = hash;
-    return hash;
-  }
-
-  @java.lang.Override
-  public Builder newBuilderForType() {
-    return newBuilder();
   }
 
   @java.lang.Override
@@ -387,49 +372,11 @@ public final class GetAttributeValueResponse extends com.google.protobuf.Generat
     Builder builder = new Builder(parent);
     return builder;
   }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<GetAttributeValueResponse> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.GetAttributeValueResponse getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
-  }
-
-  private static final class AttributesDefaultEntryHolder {
-    static final com.google.protobuf.MapEntry<java.lang.Long, com.google.protobuf.ByteString>
-        defaultEntry =
-            com.google.protobuf.MapEntry
-                .<java.lang.Long, com.google.protobuf.ByteString>newDefaultInstance(
-                    com.ibm.crypto.grep11.grpc.Hsm
-                        .internal_static_grep11_GetAttributeValueResponse_AttributesEntry_descriptor,
-                    com.google.protobuf.WireFormat.FieldType.UINT64,
-                    0L,
-                    com.google.protobuf.WireFormat.FieldType.BYTES,
-                    com.google.protobuf.ByteString.EMPTY);
-  }
-
   /** Protobuf type {@code grep11.GetAttributeValueResponse} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
       // @@protoc_insertion_point(builder_implements:grep11.GetAttributeValueResponse)
       com.ibm.crypto.grep11.grpc.GetAttributeValueResponseOrBuilder {
-    private int bitField0_;
-    private com.google.protobuf.MapField<java.lang.Long, com.google.protobuf.ByteString>
-        attributes_;
-
-    // Construct using com.ibm.crypto.grep11.grpc.GetAttributeValueResponse.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
-    }
-
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
       return com.ibm.crypto.grep11.grpc.Hsm
           .internal_static_grep11_GetAttributeValueResponse_descriptor;
@@ -463,6 +410,16 @@ public final class GetAttributeValueResponse extends com.google.protobuf.Generat
           .ensureFieldAccessorsInitialized(
               com.ibm.crypto.grep11.grpc.GetAttributeValueResponse.class,
               com.ibm.crypto.grep11.grpc.GetAttributeValueResponse.Builder.class);
+    }
+
+    // Construct using com.ibm.crypto.grep11.grpc.GetAttributeValueResponse.newBuilder()
+    private Builder() {
+      maybeForceBuilderInitialization();
+    }
+
+    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      super(parent);
+      maybeForceBuilderInitialization();
     }
 
     private void maybeForceBuilderInitialization() {
@@ -583,6 +540,11 @@ public final class GetAttributeValueResponse extends com.google.protobuf.Generat
       }
       return this;
     }
+
+    private int bitField0_;
+
+    private com.google.protobuf.MapField<java.lang.Long, com.google.protobuf.ByteString>
+        attributes_;
 
     private com.google.protobuf.MapField<java.lang.Long, com.google.protobuf.ByteString>
         internalGetAttributes() {
@@ -747,5 +709,41 @@ public final class GetAttributeValueResponse extends com.google.protobuf.Generat
     }
 
     // @@protoc_insertion_point(builder_scope:grep11.GetAttributeValueResponse)
+  }
+
+  // @@protoc_insertion_point(class_scope:grep11.GetAttributeValueResponse)
+  private static final com.ibm.crypto.grep11.grpc.GetAttributeValueResponse DEFAULT_INSTANCE;
+
+  static {
+    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.GetAttributeValueResponse();
+  }
+
+  public static com.ibm.crypto.grep11.grpc.GetAttributeValueResponse getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  private static final com.google.protobuf.Parser<GetAttributeValueResponse> PARSER =
+      new com.google.protobuf.AbstractParser<GetAttributeValueResponse>() {
+        @java.lang.Override
+        public GetAttributeValueResponse parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new GetAttributeValueResponse(input, extensionRegistry);
+        }
+      };
+
+  public static com.google.protobuf.Parser<GetAttributeValueResponse> parser() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.google.protobuf.Parser<GetAttributeValueResponse> getParserForType() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.GetAttributeValueResponse getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
   }
 }

@@ -8,34 +8,24 @@ public final class DigestInitRequest extends com.google.protobuf.GeneratedMessag
     implements
     // @@protoc_insertion_point(message_implements:grep11.DigestInitRequest)
     DigestInitRequestOrBuilder {
-  public static final int MECH_FIELD_NUMBER = 2;
   private static final long serialVersionUID = 0L;
-  // @@protoc_insertion_point(class_scope:grep11.DigestInitRequest)
-  private static final com.ibm.crypto.grep11.grpc.DigestInitRequest DEFAULT_INSTANCE;
-  private static final com.google.protobuf.Parser<DigestInitRequest> PARSER =
-      new com.google.protobuf.AbstractParser<DigestInitRequest>() {
-        @java.lang.Override
-        public DigestInitRequest parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new DigestInitRequest(input, extensionRegistry);
-        }
-      };
-
-  static {
-    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.DigestInitRequest();
-  }
-
-  private com.ibm.crypto.grep11.grpc.Mechanism mech_;
-  private byte memoizedIsInitialized = -1;
-
   // Use DigestInitRequest.newBuilder() to construct.
   private DigestInitRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
 
   private DigestInitRequest() {}
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new DigestInitRequest();
+  }
+
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    return this.unknownFields;
+  }
 
   private DigestInitRequest(
       com.google.protobuf.CodedInputStream input,
@@ -92,6 +82,111 @@ public final class DigestInitRequest extends com.google.protobuf.GeneratedMessag
 
   public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
     return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_DigestInitRequest_descriptor;
+  }
+
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internalGetFieldAccessorTable() {
+    return com.ibm.crypto.grep11.grpc.Hsm
+        .internal_static_grep11_DigestInitRequest_fieldAccessorTable
+        .ensureFieldAccessorsInitialized(
+            com.ibm.crypto.grep11.grpc.DigestInitRequest.class,
+            com.ibm.crypto.grep11.grpc.DigestInitRequest.Builder.class);
+  }
+
+  public static final int MECH_FIELD_NUMBER = 2;
+  private com.ibm.crypto.grep11.grpc.Mechanism mech_;
+  /**
+   * <code>.grep11.Mechanism Mech = 2;</code>
+   *
+   * @return Whether the mech field is set.
+   */
+  @java.lang.Override
+  public boolean hasMech() {
+    return mech_ != null;
+  }
+  /**
+   * <code>.grep11.Mechanism Mech = 2;</code>
+   *
+   * @return The mech.
+   */
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.Mechanism getMech() {
+    return mech_ == null ? com.ibm.crypto.grep11.grpc.Mechanism.getDefaultInstance() : mech_;
+  }
+  /** <code>.grep11.Mechanism Mech = 2;</code> */
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.MechanismOrBuilder getMechOrBuilder() {
+    return getMech();
+  }
+
+  private byte memoizedIsInitialized = -1;
+
+  @java.lang.Override
+  public final boolean isInitialized() {
+    byte isInitialized = memoizedIsInitialized;
+    if (isInitialized == 1) return true;
+    if (isInitialized == 0) return false;
+
+    memoizedIsInitialized = 1;
+    return true;
+  }
+
+  @java.lang.Override
+  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+    if (mech_ != null) {
+      output.writeMessage(2, getMech());
+    }
+    unknownFields.writeTo(output);
+  }
+
+  @java.lang.Override
+  public int getSerializedSize() {
+    int size = memoizedSize;
+    if (size != -1) return size;
+
+    size = 0;
+    if (mech_ != null) {
+      size += com.google.protobuf.CodedOutputStream.computeMessageSize(2, getMech());
+    }
+    size += unknownFields.getSerializedSize();
+    memoizedSize = size;
+    return size;
+  }
+
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
+    if (obj == this) {
+      return true;
+    }
+    if (!(obj instanceof com.ibm.crypto.grep11.grpc.DigestInitRequest)) {
+      return super.equals(obj);
+    }
+    com.ibm.crypto.grep11.grpc.DigestInitRequest other =
+        (com.ibm.crypto.grep11.grpc.DigestInitRequest) obj;
+
+    if (hasMech() != other.hasMech()) return false;
+    if (hasMech()) {
+      if (!getMech().equals(other.getMech())) return false;
+    }
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
+  }
+
+  @java.lang.Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    if (hasMech()) {
+      hash = (37 * hash) + MECH_FIELD_NUMBER;
+      hash = (53 * hash) + getMech().hashCode();
+    }
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
   }
 
   public static com.ibm.crypto.grep11.grpc.DigestInitRequest parseFrom(java.nio.ByteBuffer data)
@@ -166,139 +261,17 @@ public final class DigestInitRequest extends com.google.protobuf.GeneratedMessag
         PARSER, input, extensionRegistry);
   }
 
+  @java.lang.Override
+  public Builder newBuilderForType() {
+    return newBuilder();
+  }
+
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
 
   public static Builder newBuilder(com.ibm.crypto.grep11.grpc.DigestInitRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.DigestInitRequest getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  public static com.google.protobuf.Parser<DigestInitRequest> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new DigestInitRequest();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-    return this.unknownFields;
-  }
-
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-    return com.ibm.crypto.grep11.grpc.Hsm
-        .internal_static_grep11_DigestInitRequest_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.ibm.crypto.grep11.grpc.DigestInitRequest.class,
-            com.ibm.crypto.grep11.grpc.DigestInitRequest.Builder.class);
-  }
-
-  /**
-   * <code>.grep11.Mechanism Mech = 2;</code>
-   *
-   * @return Whether the mech field is set.
-   */
-  @java.lang.Override
-  public boolean hasMech() {
-    return mech_ != null;
-  }
-
-  /**
-   * <code>.grep11.Mechanism Mech = 2;</code>
-   *
-   * @return The mech.
-   */
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.Mechanism getMech() {
-    return mech_ == null ? com.ibm.crypto.grep11.grpc.Mechanism.getDefaultInstance() : mech_;
-  }
-
-  /** <code>.grep11.Mechanism Mech = 2;</code> */
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.MechanismOrBuilder getMechOrBuilder() {
-    return getMech();
-  }
-
-  @java.lang.Override
-  public final boolean isInitialized() {
-    byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) return true;
-    if (isInitialized == 0) return false;
-
-    memoizedIsInitialized = 1;
-    return true;
-  }
-
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    if (mech_ != null) {
-      output.writeMessage(2, getMech());
-    }
-    unknownFields.writeTo(output);
-  }
-
-  @java.lang.Override
-  public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) return size;
-
-    size = 0;
-    if (mech_ != null) {
-      size += com.google.protobuf.CodedOutputStream.computeMessageSize(2, getMech());
-    }
-    size += unknownFields.getSerializedSize();
-    memoizedSize = size;
-    return size;
-  }
-
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
-    if (obj == this) {
-      return true;
-    }
-    if (!(obj instanceof com.ibm.crypto.grep11.grpc.DigestInitRequest)) {
-      return super.equals(obj);
-    }
-    com.ibm.crypto.grep11.grpc.DigestInitRequest other =
-        (com.ibm.crypto.grep11.grpc.DigestInitRequest) obj;
-
-    if (hasMech() != other.hasMech()) return false;
-    if (hasMech()) {
-      if (!getMech().equals(other.getMech())) return false;
-    }
-    if (!unknownFields.equals(other.unknownFields)) return false;
-    return true;
-  }
-
-  @java.lang.Override
-  public int hashCode() {
-    if (memoizedHashCode != 0) {
-      return memoizedHashCode;
-    }
-    int hash = 41;
-    hash = (19 * hash) + getDescriptor().hashCode();
-    if (hasMech()) {
-      hash = (37 * hash) + MECH_FIELD_NUMBER;
-      hash = (53 * hash) + getMech().hashCode();
-    }
-    hash = (29 * hash) + unknownFields.hashCode();
-    memoizedHashCode = hash;
-    return hash;
-  }
-
-  @java.lang.Override
-  public Builder newBuilderForType() {
-    return newBuilder();
   }
 
   @java.lang.Override
@@ -311,39 +284,11 @@ public final class DigestInitRequest extends com.google.protobuf.GeneratedMessag
     Builder builder = new Builder(parent);
     return builder;
   }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<DigestInitRequest> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.DigestInitRequest getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
-  }
-
   /** Protobuf type {@code grep11.DigestInitRequest} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
       // @@protoc_insertion_point(builder_implements:grep11.DigestInitRequest)
       com.ibm.crypto.grep11.grpc.DigestInitRequestOrBuilder {
-    private com.ibm.crypto.grep11.grpc.Mechanism mech_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-            com.ibm.crypto.grep11.grpc.Mechanism,
-            com.ibm.crypto.grep11.grpc.Mechanism.Builder,
-            com.ibm.crypto.grep11.grpc.MechanismOrBuilder>
-        mechBuilder_;
-
-    // Construct using com.ibm.crypto.grep11.grpc.DigestInitRequest.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
-    }
-
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
       return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_DigestInitRequest_descriptor;
     }
@@ -356,6 +301,16 @@ public final class DigestInitRequest extends com.google.protobuf.GeneratedMessag
           .ensureFieldAccessorsInitialized(
               com.ibm.crypto.grep11.grpc.DigestInitRequest.class,
               com.ibm.crypto.grep11.grpc.DigestInitRequest.Builder.class);
+    }
+
+    // Construct using com.ibm.crypto.grep11.grpc.DigestInitRequest.newBuilder()
+    private Builder() {
+      maybeForceBuilderInitialization();
+    }
+
+    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      super(parent);
+      maybeForceBuilderInitialization();
     }
 
     private void maybeForceBuilderInitialization() {
@@ -483,6 +438,12 @@ public final class DigestInitRequest extends com.google.protobuf.GeneratedMessag
       return this;
     }
 
+    private com.ibm.crypto.grep11.grpc.Mechanism mech_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+            com.ibm.crypto.grep11.grpc.Mechanism,
+            com.ibm.crypto.grep11.grpc.Mechanism.Builder,
+            com.ibm.crypto.grep11.grpc.MechanismOrBuilder>
+        mechBuilder_;
     /**
      * <code>.grep11.Mechanism Mech = 2;</code>
      *
@@ -602,5 +563,41 @@ public final class DigestInitRequest extends com.google.protobuf.GeneratedMessag
     }
 
     // @@protoc_insertion_point(builder_scope:grep11.DigestInitRequest)
+  }
+
+  // @@protoc_insertion_point(class_scope:grep11.DigestInitRequest)
+  private static final com.ibm.crypto.grep11.grpc.DigestInitRequest DEFAULT_INSTANCE;
+
+  static {
+    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.DigestInitRequest();
+  }
+
+  public static com.ibm.crypto.grep11.grpc.DigestInitRequest getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  private static final com.google.protobuf.Parser<DigestInitRequest> PARSER =
+      new com.google.protobuf.AbstractParser<DigestInitRequest>() {
+        @java.lang.Override
+        public DigestInitRequest parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new DigestInitRequest(input, extensionRegistry);
+        }
+      };
+
+  public static com.google.protobuf.Parser<DigestInitRequest> parser() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.google.protobuf.Parser<DigestInitRequest> getParserForType() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.DigestInitRequest getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
   }
 }

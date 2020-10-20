@@ -8,28 +8,7 @@ public final class EncryptFinalResponse extends com.google.protobuf.GeneratedMes
     implements
     // @@protoc_insertion_point(message_implements:grep11.EncryptFinalResponse)
     EncryptFinalResponseOrBuilder {
-  public static final int CIPHERED_FIELD_NUMBER = 2;
   private static final long serialVersionUID = 0L;
-  // @@protoc_insertion_point(class_scope:grep11.EncryptFinalResponse)
-  private static final com.ibm.crypto.grep11.grpc.EncryptFinalResponse DEFAULT_INSTANCE;
-  private static final com.google.protobuf.Parser<EncryptFinalResponse> PARSER =
-      new com.google.protobuf.AbstractParser<EncryptFinalResponse>() {
-        @java.lang.Override
-        public EncryptFinalResponse parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new EncryptFinalResponse(input, extensionRegistry);
-        }
-      };
-
-  static {
-    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.EncryptFinalResponse();
-  }
-
-  private com.google.protobuf.ByteString ciphered_;
-  private byte memoizedIsInitialized = -1;
-
   // Use EncryptFinalResponse.newBuilder() to construct.
   private EncryptFinalResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -37,6 +16,17 @@ public final class EncryptFinalResponse extends com.google.protobuf.GeneratedMes
 
   private EncryptFinalResponse() {
     ciphered_ = com.google.protobuf.ByteString.EMPTY;
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new EncryptFinalResponse();
+  }
+
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    return this.unknownFields;
   }
 
   private EncryptFinalResponse(
@@ -83,6 +73,92 @@ public final class EncryptFinalResponse extends com.google.protobuf.GeneratedMes
 
   public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
     return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_EncryptFinalResponse_descriptor;
+  }
+
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internalGetFieldAccessorTable() {
+    return com.ibm.crypto.grep11.grpc.Hsm
+        .internal_static_grep11_EncryptFinalResponse_fieldAccessorTable
+        .ensureFieldAccessorsInitialized(
+            com.ibm.crypto.grep11.grpc.EncryptFinalResponse.class,
+            com.ibm.crypto.grep11.grpc.EncryptFinalResponse.Builder.class);
+  }
+
+  public static final int CIPHERED_FIELD_NUMBER = 2;
+  private com.google.protobuf.ByteString ciphered_;
+  /**
+   * <code>bytes Ciphered = 2;</code>
+   *
+   * @return The ciphered.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString getCiphered() {
+    return ciphered_;
+  }
+
+  private byte memoizedIsInitialized = -1;
+
+  @java.lang.Override
+  public final boolean isInitialized() {
+    byte isInitialized = memoizedIsInitialized;
+    if (isInitialized == 1) return true;
+    if (isInitialized == 0) return false;
+
+    memoizedIsInitialized = 1;
+    return true;
+  }
+
+  @java.lang.Override
+  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+    if (!ciphered_.isEmpty()) {
+      output.writeBytes(2, ciphered_);
+    }
+    unknownFields.writeTo(output);
+  }
+
+  @java.lang.Override
+  public int getSerializedSize() {
+    int size = memoizedSize;
+    if (size != -1) return size;
+
+    size = 0;
+    if (!ciphered_.isEmpty()) {
+      size += com.google.protobuf.CodedOutputStream.computeBytesSize(2, ciphered_);
+    }
+    size += unknownFields.getSerializedSize();
+    memoizedSize = size;
+    return size;
+  }
+
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
+    if (obj == this) {
+      return true;
+    }
+    if (!(obj instanceof com.ibm.crypto.grep11.grpc.EncryptFinalResponse)) {
+      return super.equals(obj);
+    }
+    com.ibm.crypto.grep11.grpc.EncryptFinalResponse other =
+        (com.ibm.crypto.grep11.grpc.EncryptFinalResponse) obj;
+
+    if (!getCiphered().equals(other.getCiphered())) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
+  }
+
+  @java.lang.Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + CIPHERED_FIELD_NUMBER;
+    hash = (53 * hash) + getCiphered().hashCode();
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
   }
 
   public static com.ibm.crypto.grep11.grpc.EncryptFinalResponse parseFrom(java.nio.ByteBuffer data)
@@ -157,118 +233,17 @@ public final class EncryptFinalResponse extends com.google.protobuf.GeneratedMes
         PARSER, input, extensionRegistry);
   }
 
+  @java.lang.Override
+  public Builder newBuilderForType() {
+    return newBuilder();
+  }
+
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
 
   public static Builder newBuilder(com.ibm.crypto.grep11.grpc.EncryptFinalResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.EncryptFinalResponse getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  public static com.google.protobuf.Parser<EncryptFinalResponse> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new EncryptFinalResponse();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-    return this.unknownFields;
-  }
-
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-    return com.ibm.crypto.grep11.grpc.Hsm
-        .internal_static_grep11_EncryptFinalResponse_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.ibm.crypto.grep11.grpc.EncryptFinalResponse.class,
-            com.ibm.crypto.grep11.grpc.EncryptFinalResponse.Builder.class);
-  }
-
-  /**
-   * <code>bytes Ciphered = 2;</code>
-   *
-   * @return The ciphered.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString getCiphered() {
-    return ciphered_;
-  }
-
-  @java.lang.Override
-  public final boolean isInitialized() {
-    byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) return true;
-    if (isInitialized == 0) return false;
-
-    memoizedIsInitialized = 1;
-    return true;
-  }
-
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    if (!ciphered_.isEmpty()) {
-      output.writeBytes(2, ciphered_);
-    }
-    unknownFields.writeTo(output);
-  }
-
-  @java.lang.Override
-  public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) return size;
-
-    size = 0;
-    if (!ciphered_.isEmpty()) {
-      size += com.google.protobuf.CodedOutputStream.computeBytesSize(2, ciphered_);
-    }
-    size += unknownFields.getSerializedSize();
-    memoizedSize = size;
-    return size;
-  }
-
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
-    if (obj == this) {
-      return true;
-    }
-    if (!(obj instanceof com.ibm.crypto.grep11.grpc.EncryptFinalResponse)) {
-      return super.equals(obj);
-    }
-    com.ibm.crypto.grep11.grpc.EncryptFinalResponse other =
-        (com.ibm.crypto.grep11.grpc.EncryptFinalResponse) obj;
-
-    if (!getCiphered().equals(other.getCiphered())) return false;
-    if (!unknownFields.equals(other.unknownFields)) return false;
-    return true;
-  }
-
-  @java.lang.Override
-  public int hashCode() {
-    if (memoizedHashCode != 0) {
-      return memoizedHashCode;
-    }
-    int hash = 41;
-    hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + CIPHERED_FIELD_NUMBER;
-    hash = (53 * hash) + getCiphered().hashCode();
-    hash = (29 * hash) + unknownFields.hashCode();
-    memoizedHashCode = hash;
-    return hash;
-  }
-
-  @java.lang.Override
-  public Builder newBuilderForType() {
-    return newBuilder();
   }
 
   @java.lang.Override
@@ -281,34 +256,11 @@ public final class EncryptFinalResponse extends com.google.protobuf.GeneratedMes
     Builder builder = new Builder(parent);
     return builder;
   }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<EncryptFinalResponse> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.EncryptFinalResponse getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
-  }
-
   /** Protobuf type {@code grep11.EncryptFinalResponse} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
       // @@protoc_insertion_point(builder_implements:grep11.EncryptFinalResponse)
       com.ibm.crypto.grep11.grpc.EncryptFinalResponseOrBuilder {
-    private com.google.protobuf.ByteString ciphered_ = com.google.protobuf.ByteString.EMPTY;
-
-    // Construct using com.ibm.crypto.grep11.grpc.EncryptFinalResponse.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
-    }
-
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
       return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_EncryptFinalResponse_descriptor;
     }
@@ -321,6 +273,16 @@ public final class EncryptFinalResponse extends com.google.protobuf.GeneratedMes
           .ensureFieldAccessorsInitialized(
               com.ibm.crypto.grep11.grpc.EncryptFinalResponse.class,
               com.ibm.crypto.grep11.grpc.EncryptFinalResponse.Builder.class);
+    }
+
+    // Construct using com.ibm.crypto.grep11.grpc.EncryptFinalResponse.newBuilder()
+    private Builder() {
+      maybeForceBuilderInitialization();
+    }
+
+    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      super(parent);
+      maybeForceBuilderInitialization();
     }
 
     private void maybeForceBuilderInitialization() {
@@ -441,6 +403,7 @@ public final class EncryptFinalResponse extends com.google.protobuf.GeneratedMes
       return this;
     }
 
+    private com.google.protobuf.ByteString ciphered_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes Ciphered = 2;</code>
      *
@@ -489,5 +452,41 @@ public final class EncryptFinalResponse extends com.google.protobuf.GeneratedMes
     }
 
     // @@protoc_insertion_point(builder_scope:grep11.EncryptFinalResponse)
+  }
+
+  // @@protoc_insertion_point(class_scope:grep11.EncryptFinalResponse)
+  private static final com.ibm.crypto.grep11.grpc.EncryptFinalResponse DEFAULT_INSTANCE;
+
+  static {
+    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.EncryptFinalResponse();
+  }
+
+  public static com.ibm.crypto.grep11.grpc.EncryptFinalResponse getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  private static final com.google.protobuf.Parser<EncryptFinalResponse> PARSER =
+      new com.google.protobuf.AbstractParser<EncryptFinalResponse>() {
+        @java.lang.Override
+        public EncryptFinalResponse parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new EncryptFinalResponse(input, extensionRegistry);
+        }
+      };
+
+  public static com.google.protobuf.Parser<EncryptFinalResponse> parser() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.google.protobuf.Parser<EncryptFinalResponse> getParserForType() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.EncryptFinalResponse getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
   }
 }

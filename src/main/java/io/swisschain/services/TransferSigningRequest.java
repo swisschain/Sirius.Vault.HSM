@@ -13,11 +13,10 @@ public class TransferSigningRequest {
   private final NetworkType networkType;
   private final DoubleSpendingProtectionType doubleSpendingProtectionType;
   private final byte[] builtTransaction;
-  private final List<String> signingAddresses;
+  private final List<SigningAddress> signingAddresses;
   private final List<Coin> coinsToSpend;
-  private final String policyResult;
-  private final String guardianSignature;
-  private final String group;
+  private final String document;
+  private final String signature;
   private final String tenantId;
   private final Instant createdAt;
   private final Instant updatedAt;
@@ -29,11 +28,10 @@ public class TransferSigningRequest {
       NetworkType networkType,
       DoubleSpendingProtectionType doubleSpendingProtectionType,
       byte[] builtTransaction,
-      List<String> signingAddresses,
+      List<SigningAddress> signingAddresses,
       List<Coin> coinsToSpend,
-      String policyResult,
-      String guardianSignature,
-      String group,
+      String document,
+      String signature,
       String tenantId,
       Instant createdAt,
       Instant updatedAt) {
@@ -45,9 +43,8 @@ public class TransferSigningRequest {
     this.builtTransaction = builtTransaction;
     this.signingAddresses = signingAddresses;
     this.coinsToSpend = coinsToSpend;
-    this.policyResult = policyResult;
-    this.guardianSignature = guardianSignature;
-    this.group = group;
+    this.document = document;
+    this.signature = signature;
     this.tenantId = tenantId;
     this.createdAt = createdAt;
     this.updatedAt = updatedAt;
@@ -77,7 +74,7 @@ public class TransferSigningRequest {
     return builtTransaction;
   }
 
-  public List<String> getSigningAddresses() {
+  public List<SigningAddress> getSigningAddresses() {
     return signingAddresses;
   }
 
@@ -85,16 +82,12 @@ public class TransferSigningRequest {
     return coinsToSpend;
   }
 
-  public String getPolicyResult() {
-    return policyResult;
+  public String getDocument() {
+    return document;
   }
 
-  public String getGuardianSignature() {
-    return guardianSignature;
-  }
-
-  public String getGroup() {
-    return group;
+  public String getSignature() {
+    return signature;
   }
 
   public String getTenantId() {
