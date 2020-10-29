@@ -68,12 +68,16 @@ public class AppStarter {
     service.scheduleWithFixedDelay(
         new WalletGenerationTask(vaultApiClient, walletService, hostProcessId),
         0,
-        1,
+        config.tasks != null && config.tasks.walletGenerationPeriodInSeconds > 0
+            ? config.tasks.walletGenerationPeriodInSeconds
+            : 1,
         TimeUnit.SECONDS);
     service.scheduleWithFixedDelay(
         new TransferSigningTask(vaultApiClient, transactionService, hostProcessId),
         0,
-        1,
+        config.tasks != null && config.tasks.transferSigningPeriodInSeconds > 0
+            ? config.tasks.transferSigningPeriodInSeconds
+            : 1,
         TimeUnit.SECONDS);
 
     initShutdownHook();
