@@ -19,8 +19,8 @@ public class TransactionSignerFactory {
   }
 
   private void initCoinTransactionSigners() {
-//    coinTransactionSignersMap.put(
-//        BlockchainProtocolCodes.bitcoin, new HsmBitcoinCoinTransactionSigner(config.hsmConfig));
+    coinTransactionSignersMap.put(
+        BlockchainProtocolCodes.bitcoin, new HsmBitcoinCoinTransactionSigner(config.hsmConfig));
     coinTransactionSignersMap.put(
         BlockchainProtocolCodes.ethereum, new HsmEthereumTransactionSigner(config.hsmConfig));
     coinTransactionSignersMap.put(
