@@ -2,6 +2,7 @@ package io.swisschain.crypto.transaction.signing;
 
 import io.swisschain.config.Config;
 import io.swisschain.crypto.BlockchainProtocolCodes;
+import io.swisschain.crypto.exceptions.BlockchainNotSupportedException;
 import io.swisschain.crypto.transaction.signing.signers.*;
 
 import java.util.HashMap;
@@ -31,7 +32,9 @@ public class TransactionSignerFactory {
         new HsmBitcoinCashCoinTransactionSigner(config.hsmConfig));
   }
 
-  public CoinsTransactionSigner getCoinsTransactionSigner(BlockchainProtocolCodes code) {
+  public CoinsTransactionSigner getCoinsTransactionSigner(BlockchainProtocolCodes code) throws BlockchainNotSupportedException {
+    if (!coinTransactionSignersMap.containsKey(code)) throw new BlockchainNotSupportedException();
+
     return coinTransactionSignersMap.get(code);
   }
 }
