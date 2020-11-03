@@ -18,8 +18,8 @@ public class AddressGeneratorFactory {
   }
 
   private void initGenerators() {
-    generatorMap.put(
-        BlockchainProtocolCodes.bitcoin, new HsmBitcoinAddressGenerator(config.hsmConfig));
+//    generatorMap.put(
+//        BlockchainProtocolCodes.bitcoin, new HsmBitcoinAddressGenerator(config.hsmConfig));
     generatorMap.put(
         BlockchainProtocolCodes.ethereum, new HsmEthereumAddressGenerator(config.hsmConfig));
     generatorMap.put(
