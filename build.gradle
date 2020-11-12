@@ -40,10 +40,10 @@ dependencies {
     compile "com.google.guava:guava:29.0-jre"
 
     //eth
-    compile "org.web3j:core:4.6.3"
+    compile "org.web3j:core:4.8.1"
 
     //stellar
-    compile 'com.github.stellar:java-stellar-sdk:0.18.0'
+    compile 'com.github.stellar:java-stellar-sdk:0.21.1'
 
     //bitcoincash
     compile fileTree(dir: 'libs', include: ['*.jar'])
