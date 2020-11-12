@@ -30,6 +30,7 @@ dependencies {
     compile "org.nanohttpd:nanohttpd:$nanohttpd_version"
     compile "org.nanohttpd:nanohttpd-nanolets:$nanohttpd_version"
     compile "com.fasterxml.jackson.core:jackson-databind:2.11.1"
+    compile "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.1"
 
     compile "org.appenders.log4j:log4j2-elasticsearch-hc:1.4.1"
     compile "org.appenders.log4j:log4j2-elasticsearch-core:1.4.1"
@@ -39,10 +40,10 @@ dependencies {
     compile "com.google.guava:guava:29.0-jre"
 
     //eth
-    compile "org.web3j:core:4.6.3"
+    compile "org.web3j:core:4.8.1"
 
     //stellar
-    compile 'com.github.stellar:java-stellar-sdk:0.18.0'
+    compile 'com.github.stellar:java-stellar-sdk:0.21.1'
 
     //bitcoincash
     compile fileTree(dir: 'libs', include: ['*.jar'])

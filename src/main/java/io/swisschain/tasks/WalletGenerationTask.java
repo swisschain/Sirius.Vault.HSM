@@ -1,5 +1,7 @@
 package io.swisschain.tasks;
 
+import io.grpc.Status;
+import io.grpc.StatusRuntimeException;
 import io.swisschain.crypto.exceptions.BlockchainNotSupportedException;
 import io.swisschain.mappers.NetworkTypeMapper;
 import io.swisschain.services.WalletService;
@@ -55,9 +57,15 @@ public class WalletGenerationTask implements Runnable {
               WalletsOuterClass.RejectionReason.UNKNOWN_BLOCKCHAIN,
               "BlockchainId is not supported.");
 
+        } catch (StatusRuntimeException exception) {
+          if (!(exception.getStatus() == Status.UNAVAILABLE
+              && exception.getMessage().contains("NO_ERROR"))) {
+            logger.error(
+                "An error occurred while processing wallet generation request. "
+                    + exception.getMessage());
+          }
         } catch (Exception exception) {
           logger.error("An error occurred while processing wallet generation request.", exception);
-
           this.reject(
               walletGenerationRequest.getId(),
               WalletsOuterClass.RejectionReason.OTHER,

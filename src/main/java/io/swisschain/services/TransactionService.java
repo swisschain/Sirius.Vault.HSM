@@ -1,6 +1,7 @@
 package io.swisschain.services;
 
 import io.swisschain.config.Config;
+import io.swisschain.contracts.Document;
 import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.crypto.transaction.signing.TransactionSignerFactory;
 import io.swisschain.repositories.wallets.WalletRepository;
@@ -11,6 +12,7 @@ public class TransactionService {
 
   private final WalletRepository walletRepository;
   private final TransactionSignerFactory transactionSignerFactory;
+  private final JsonSerializer jsonMapper = new JsonSerializer();
 
   public TransactionService(WalletRepository walletRepository, Config config) {
     this.walletRepository = walletRepository;
@@ -49,13 +51,16 @@ public class TransactionService {
         transactionSignerFactory.getCoinsTransactionSigner(
             BlockchainProtocolCodes.fromString(transferSigningRequest.getProtocolCode()));
 
+    var document = jsonMapper.deserialize(transferSigningRequest.getDocument(), Document.class);
+
     var result =
         signer.sign(
             transferSigningRequest.getBuiltTransaction(),
             transferSigningRequest.getCoinsToSpend(),
             wallet.getPrivateKey(),
             wallet.getPublicKey(),
-            transferSigningRequest.getNetworkType());
+            transferSigningRequest.getNetworkType(),
+            document.getTransferDetails());
 
     // TODO: Save transaction
     // TODO: Save transferSigningRequest

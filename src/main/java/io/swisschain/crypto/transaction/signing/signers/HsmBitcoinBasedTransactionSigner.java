@@ -1,11 +1,15 @@
 package io.swisschain.crypto.transaction.signing.signers;
 
 import io.swisschain.config.HsmConfig;
+import io.swisschain.contracts.TransferDetails;
+import io.swisschain.crypto.exceptions.BlockchainNotSupportedException;
 import io.swisschain.crypto.hsm.HsmConnector;
 import io.swisschain.crypto.transaction.signing.CoinsTransactionSigner;
 import io.swisschain.crypto.transaction.signing.TransactionSigningResult;
 import io.swisschain.crypto.transaction.signing.exceptions.InvalidInputsException;
+import io.swisschain.crypto.transaction.signing.exceptions.TransferDetailsValidationException;
 import io.swisschain.crypto.transaction.signing.exceptions.UnsupportedScriptException;
+import io.swisschain.crypto.transaction.signing.validators.BitcoinTransactionValidator;
 import io.swisschain.crypto.utils.BTCUtils;
 import io.swisschain.services.Coin;
 import org.bitcoinj.core.*;
@@ -22,6 +26,7 @@ import java.util.List;
 
 public abstract class HsmBitcoinBasedTransactionSigner extends HsmConnector
     implements CoinsTransactionSigner {
+
   public HsmBitcoinBasedTransactionSigner(HsmConfig hsmConfig) {
     super(hsmConfig);
   }
@@ -31,9 +36,17 @@ public abstract class HsmBitcoinBasedTransactionSigner extends HsmConnector
       List<Coin> coins,
       String privateKey,
       String publicKey,
-      NetworkParameters network)
-      throws InvalidInputsException, IOException, UnsupportedScriptException {
+      NetworkParameters network,
+      TransferDetails transferDetails,
+      String blockchain,
+      String networkType,
+      String asset)
+      throws InvalidInputsException, IOException, UnsupportedScriptException,
+          BlockchainNotSupportedException, TransferDetailsValidationException {
     final var transaction = new Transaction(network, unsignedTransaction);
+
+    BitcoinTransactionValidator.validate(
+        transaction, transferDetails, blockchain, networkType, asset);
 
     processCoins(transaction, coins, network);
 
