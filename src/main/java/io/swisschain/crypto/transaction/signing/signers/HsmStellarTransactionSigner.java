@@ -1,11 +1,19 @@
 package io.swisschain.crypto.transaction.signing.signers;
 
 import io.swisschain.config.HsmConfig;
+import io.swisschain.contracts.TransferDetails;
+import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.crypto.NetworkMapper;
+import io.swisschain.crypto.exceptions.BlockchainNotSupportedException;
 import io.swisschain.crypto.exceptions.UnknownNetworkTypeException;
 import io.swisschain.crypto.hsm.HsmConnector;
 import io.swisschain.crypto.transaction.signing.CoinsTransactionSigner;
 import io.swisschain.crypto.transaction.signing.TransactionSigningResult;
+import io.swisschain.crypto.transaction.signing.exceptions.InvalidInputsException;
+import io.swisschain.crypto.transaction.signing.exceptions.TransactionSignException;
+import io.swisschain.crypto.transaction.signing.exceptions.TransferDetailsValidationException;
+import io.swisschain.crypto.transaction.signing.exceptions.UnsupportedScriptException;
+import io.swisschain.crypto.transaction.signing.validators.StellarTransactionValidator;
 import io.swisschain.primitives.NetworkType;
 import io.swisschain.services.Coin;
 import org.apache.commons.codec.binary.Base32;
@@ -37,13 +45,24 @@ public class HsmStellarTransactionSigner extends HsmConnector implements CoinsTr
       List<Coin> coins,
       String privateKey,
       String publicKey,
-      NetworkType networkType)
-      throws IOException, UnknownNetworkTypeException {
+      NetworkType networkType,
+      TransferDetails transferDetails)
+      throws UnknownNetworkTypeException, InvalidInputsException, IOException,
+          UnsupportedScriptException, TransactionSignException, BlockchainNotSupportedException,
+          TransferDetailsValidationException {
     final var network = NetworkMapper.mapToStellarNetworkType(networkType);
     final var transactionEnvelope =
         TransactionEnvelope.decode(
             new XdrDataInputStream(new ByteArrayInputStream(unsignedTransaction)));
-    final var rawTransaction = Transaction.fromEnvelopeXdr(transactionEnvelope, network);
+    final var rawTransaction =
+        (Transaction) Transaction.fromEnvelopeXdr(transactionEnvelope, network);
+
+    StellarTransactionValidator.validate(
+        rawTransaction,
+        transferDetails,
+        BlockchainProtocolCodes.stellar.getName(),
+        networkType.name(),
+        "XLM");
 
     final var txHash = rawTransaction.hash();
     final var signature = sign(txHash, Hex.decode(privateKey), new Base32().decode(publicKey));

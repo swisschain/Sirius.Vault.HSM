@@ -30,6 +30,7 @@ dependencies {
     compile "org.nanohttpd:nanohttpd:$nanohttpd_version"
     compile "org.nanohttpd:nanohttpd-nanolets:$nanohttpd_version"
     compile "com.fasterxml.jackson.core:jackson-databind:2.11.1"
+    compile "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.1"
 
     compile "org.appenders.log4j:log4j2-elasticsearch-hc:1.4.1"
     compile "org.appenders.log4j:log4j2-elasticsearch-core:1.4.1"

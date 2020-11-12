@@ -1,13 +1,19 @@
 package io.swisschain.crypto.transaction.signing.signers;
 
 import io.swisschain.config.HsmConfig;
+import io.swisschain.contracts.TransferDetails;
+import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.crypto.NetworkMapper;
+import io.swisschain.crypto.exceptions.BlockchainNotSupportedException;
 import io.swisschain.crypto.exceptions.UnknownNetworkTypeException;
 import io.swisschain.crypto.hsm.HsmConnector;
 import io.swisschain.crypto.transaction.signing.CoinsTransactionSigner;
 import io.swisschain.crypto.transaction.signing.TransactionSigningResult;
 import io.swisschain.crypto.transaction.signing.exceptions.InvalidInputsException;
+import io.swisschain.crypto.transaction.signing.exceptions.TransactionSignException;
+import io.swisschain.crypto.transaction.signing.exceptions.TransferDetailsValidationException;
 import io.swisschain.crypto.transaction.signing.exceptions.UnsupportedScriptException;
+import io.swisschain.crypto.transaction.signing.validators.BitcoinCashTransactionValidator;
 import io.swisschain.crypto.utils.BTCUtils;
 import io.swisschain.primitives.NetworkType;
 import io.swisschain.services.Coin;
@@ -26,6 +32,7 @@ import java.util.List;
 
 public class HsmBitcoinCashCoinTransactionSigner extends HsmConnector
     implements CoinsTransactionSigner {
+  public static final String BCH = "BCH";
   private static final Logger logger = LogManager.getLogger();
 
   public HsmBitcoinCashCoinTransactionSigner(HsmConfig hsmConfig) {
@@ -36,18 +43,24 @@ public class HsmBitcoinCashCoinTransactionSigner extends HsmConnector
   public TransactionSigningResult sign(
       byte[] unsignedTransaction,
       List<Coin> coins,
-      String privateKeys,
+      String privateKey,
       String publicKey,
-      NetworkType networkType)
+      NetworkType networkType,
+      TransferDetails transferDetails)
       throws UnknownNetworkTypeException, InvalidInputsException, IOException,
-          UnsupportedScriptException {
+          UnsupportedScriptException, TransactionSignException, BlockchainNotSupportedException,
+          TransferDetailsValidationException {
     var result =
         sign(
             unsignedTransaction,
             coins,
-            privateKeys,
+            privateKey,
             publicKey,
-            NetworkMapper.mapToBitcoinCashNetworkType(networkType));
+            NetworkMapper.mapToBitcoinCashNetworkType(networkType),
+            transferDetails,
+            BlockchainProtocolCodes.bitcoinCash.getName(),
+            networkType.name(),
+            BCH);
     logger.debug("TxId: {}", result.getTransactionId());
     logger.debug("Signed: {}", Hex.toHexString(result.getSignedTransaction()));
     return result;
@@ -58,9 +71,17 @@ public class HsmBitcoinCashCoinTransactionSigner extends HsmConnector
       List<Coin> coins,
       String privateKey,
       String publicKey,
-      NetworkParameters network)
-      throws InvalidInputsException, IOException, UnsupportedScriptException {
+      NetworkParameters network,
+      TransferDetails transferDetails,
+      String blockchain,
+      String networkType,
+      String asset)
+      throws InvalidInputsException, IOException, UnsupportedScriptException,
+          BlockchainNotSupportedException, TransferDetailsValidationException {
     final var transaction = new Transaction(network, unsignedTransaction);
+
+    BitcoinCashTransactionValidator.validate(
+        transaction, transferDetails, blockchain, networkType, asset);
 
     processCoins(transaction, coins, network);
 

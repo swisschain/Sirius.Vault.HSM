@@ -1,10 +1,18 @@
 package io.swisschain.crypto.transaction.signing.signers;
 
 import io.swisschain.config.HsmConfig;
+import io.swisschain.contracts.TransferDetails;
+import io.swisschain.crypto.BlockchainProtocolCodes;
+import io.swisschain.crypto.exceptions.BlockchainNotSupportedException;
+import io.swisschain.crypto.exceptions.UnknownNetworkTypeException;
 import io.swisschain.crypto.hsm.HsmConnector;
 import io.swisschain.crypto.transaction.signing.CoinsTransactionSigner;
 import io.swisschain.crypto.transaction.signing.TransactionSigningResult;
+import io.swisschain.crypto.transaction.signing.exceptions.InvalidInputsException;
 import io.swisschain.crypto.transaction.signing.exceptions.TransactionSignException;
+import io.swisschain.crypto.transaction.signing.exceptions.TransferDetailsValidationException;
+import io.swisschain.crypto.transaction.signing.exceptions.UnsupportedScriptException;
+import io.swisschain.crypto.transaction.signing.validators.EthereumTransactionValidator;
 import io.swisschain.primitives.NetworkType;
 import io.swisschain.services.Coin;
 import org.apache.logging.log4j.LogManager;
@@ -35,9 +43,20 @@ public class HsmEthereumTransactionSigner extends HsmConnector implements CoinsT
       List<Coin> coins,
       String privateKey,
       String publicKey,
-      NetworkType networkType)
-      throws IOException, TransactionSignException {
+      NetworkType networkType,
+      TransferDetails transferDetails)
+      throws UnknownNetworkTypeException, InvalidInputsException, IOException,
+          UnsupportedScriptException, TransactionSignException, BlockchainNotSupportedException,
+          TransferDetailsValidationException {
     final var transaction = TransactionDecoder.decode(encodeHexString(unsignedTransaction));
+
+    EthereumTransactionValidator.validate(
+        transaction,
+        transferDetails,
+        BlockchainProtocolCodes.ethereum.getName(),
+        networkType.name(),
+        "ETH");
+
     final var signedTransaction = sign(transaction, Hex.decode(privateKey), Hex.decode(publicKey));
 
     final var result =

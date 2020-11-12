@@ -1,18 +1,10 @@
 package io.swisschain.sirius.vaultApi.generated.wallets;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
-import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncClientStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncServerStreamingCall;
 import static io.grpc.stub.ClientCalls.asyncUnaryCall;
-import static io.grpc.stub.ClientCalls.blockingServerStreamingCall;
 import static io.grpc.stub.ClientCalls.blockingUnaryCall;
 import static io.grpc.stub.ClientCalls.futureUnaryCall;
-import static io.grpc.stub.ServerCalls.asyncBidiStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncClientStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncServerStreamingCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
-import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
 /** */
@@ -21,10 +13,10 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
     comments = "Source: wallets.proto")
 public final class WalletsGrpc {
 
-  private WalletsGrpc() {}
-
   public static final String SERVICE_NAME = "swisschain.sirius.vaultApi.wallets.Wallets";
-
+  private static final int METHODID_GET = 0;
+  private static final int METHODID_CONFIRM = 1;
+  private static final int METHODID_REJECT = 2;
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<
           io.swisschain
@@ -42,6 +34,41 @@ public final class WalletsGrpc {
               .WalletsOuterClass
               .GetWalletGenerationRequestResponse>
       getGetMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .ConfirmWalletGenerationRequestRequest,
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .ConfirmWalletGenerationRequestResponse>
+      getConfirmMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .RejectWalletGenerationRequestRequest,
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .RejectWalletGenerationRequestResponse>
+      getRejectMethod;
+  private static volatile io.grpc.ServiceDescriptor serviceDescriptor;
+
+  private WalletsGrpc() {}
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Get",
@@ -136,23 +163,6 @@ public final class WalletsGrpc {
     return getGetMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .ConfirmWalletGenerationRequestRequest,
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .ConfirmWalletGenerationRequestResponse>
-      getConfirmMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Confirm",
       requestType =
@@ -245,23 +255,6 @@ public final class WalletsGrpc {
     }
     return getConfirmMethod;
   }
-
-  private static volatile io.grpc.MethodDescriptor<
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .RejectWalletGenerationRequestRequest,
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .RejectWalletGenerationRequestResponse>
-      getRejectMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Reject",
@@ -394,6 +387,26 @@ public final class WalletsGrpc {
           }
         };
     return WalletsFutureStub.newStub(factory, channel);
+  }
+
+  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
+    io.grpc.ServiceDescriptor result = serviceDescriptor;
+    if (result == null) {
+      synchronized (WalletsGrpc.class) {
+        result = serviceDescriptor;
+        if (result == null) {
+          serviceDescriptor =
+              result =
+                  io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
+                      .setSchemaDescriptor(new WalletsFileDescriptorSupplier())
+                      .addMethod(getGetMethod())
+                      .addMethod(getConfirmMethod())
+                      .addMethod(getRejectMethod())
+                      .build();
+        }
+      }
+    }
+    return result;
   }
 
   /** */
@@ -756,10 +769,6 @@ public final class WalletsGrpc {
     }
   }
 
-  private static final int METHODID_GET = 0;
-  private static final int METHODID_CONFIRM = 1;
-  private static final int METHODID_REJECT = 2;
-
   private static final class MethodHandlers<Req, Resp>
       implements io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
           io.grpc.stub.ServerCalls.ServerStreamingMethod<Req, Resp>,
@@ -885,27 +894,5 @@ public final class WalletsGrpc {
     public com.google.protobuf.Descriptors.MethodDescriptor getMethodDescriptor() {
       return getServiceDescriptor().findMethodByName(methodName);
     }
-  }
-
-  private static volatile io.grpc.ServiceDescriptor serviceDescriptor;
-
-  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
-    io.grpc.ServiceDescriptor result = serviceDescriptor;
-    if (result == null) {
-      synchronized (WalletsGrpc.class) {
-        result = serviceDescriptor;
-        if (result == null) {
-          serviceDescriptor =
-              result =
-                  io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
-                      .setSchemaDescriptor(new WalletsFileDescriptorSupplier())
-                      .addMethod(getGetMethod())
-                      .addMethod(getConfirmMethod())
-                      .addMethod(getRejectMethod())
-                      .build();
-        }
-      }
-    }
-    return result;
   }
 }

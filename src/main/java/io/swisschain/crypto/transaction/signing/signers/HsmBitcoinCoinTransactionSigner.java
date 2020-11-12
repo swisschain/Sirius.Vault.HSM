@@ -1,11 +1,15 @@
 package io.swisschain.crypto.transaction.signing.signers;
 
 import io.swisschain.config.HsmConfig;
+import io.swisschain.contracts.TransferDetails;
+import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.crypto.NetworkMapper;
+import io.swisschain.crypto.exceptions.BlockchainNotSupportedException;
 import io.swisschain.crypto.exceptions.UnknownNetworkTypeException;
 import io.swisschain.crypto.transaction.signing.CoinsTransactionSigner;
 import io.swisschain.crypto.transaction.signing.TransactionSigningResult;
 import io.swisschain.crypto.transaction.signing.exceptions.InvalidInputsException;
+import io.swisschain.crypto.transaction.signing.exceptions.TransferDetailsValidationException;
 import io.swisschain.crypto.transaction.signing.exceptions.UnsupportedScriptException;
 import io.swisschain.primitives.NetworkType;
 import io.swisschain.services.Coin;
@@ -18,6 +22,7 @@ import java.util.List;
 
 public class HsmBitcoinCoinTransactionSigner extends HsmBitcoinBasedTransactionSigner
     implements CoinsTransactionSigner {
+  public static final String BTC = "BTC";
   private static final Logger logger = LogManager.getLogger();
 
   public HsmBitcoinCoinTransactionSigner(HsmConfig hsmConfig) {
@@ -30,16 +35,22 @@ public class HsmBitcoinCoinTransactionSigner extends HsmBitcoinBasedTransactionS
       List<Coin> coins,
       String privateKeys,
       String publicKey,
-      NetworkType networkType)
+      NetworkType networkType,
+      TransferDetails transferDetails)
       throws UnknownNetworkTypeException, InvalidInputsException, IOException,
-          UnsupportedScriptException {
+          UnsupportedScriptException, BlockchainNotSupportedException,
+          TransferDetailsValidationException {
     var result =
         sign(
             unsignedTransaction,
             coins,
             privateKeys,
             publicKey,
-            NetworkMapper.mapToBitcoinNetworkType(networkType));
+            NetworkMapper.mapToBitcoinNetworkType(networkType),
+            transferDetails,
+            BlockchainProtocolCodes.bitcoin.getName(),
+            networkType.name(),
+            BTC);
     logger.debug("TxId: {}", result.getTransactionId());
     logger.debug("Signed: {}", Hex.toHexString(result.getSignedTransaction()));
     return result;
