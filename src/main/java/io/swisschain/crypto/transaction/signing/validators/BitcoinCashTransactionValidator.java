@@ -48,10 +48,18 @@ public class BitcoinCashTransactionValidator {
           destination, outputsSumMap.getOrDefault(destination, 0L) + output.getValue().value);
     }
 
+    if (!outputsSumMap.containsKey(transferDetails.getDestinationAddress().getAddress())) {
+      throw new TransferDetailsValidationException("Invalid destination address");
+    }
+
     final var transactionAmount =
         outputsSumMap.getOrDefault(transferDetails.getDestinationAddress().getAddress(), 0L);
-    if (transferDetails.getAmount().multiply(BigDecimal.valueOf(Coin.COIN.value)).longValue()
-        != transactionAmount) {
+    final var transferDetailsAmount =
+        transferDetails.getAmount().multiply(BigDecimal.valueOf(Coin.COIN.value)).longValue();
+    final var transferDetailsFeeLimit =
+        transferDetails.getFeeLimit().multiply(BigDecimal.valueOf(Coin.COIN.value)).longValue();
+
+    if (transactionAmount > transferDetailsAmount) {
       throw new TransferDetailsValidationException(
           String.format(
               "Invalid transaction amount: %s, expected %s",
@@ -62,6 +70,20 @@ public class BitcoinCashTransactionValidator {
                       RoundingMode.CEILING)
                   .toString(),
               transferDetails.getAmount().toString()));
+    }
+
+    final var payedFee = transferDetailsAmount - transactionAmount;
+    if (payedFee > transferDetailsFeeLimit) {
+      throw new TransferDetailsValidationException(
+          String.format(
+              "Transaction fee exceeded limit: %s, fee limit %s",
+              BigDecimal.valueOf(payedFee)
+                  .divide(
+                      BigDecimal.valueOf(Coin.COIN.value),
+                      Coin.COIN.smallestUnitExponent(),
+                      RoundingMode.CEILING)
+                  .toString(),
+              transferDetails.getFeeLimit().toString()));
     }
     return true;
   }
@@ -78,7 +100,7 @@ public class BitcoinCashTransactionValidator {
         throw new BlockchainNotSupportedException("Unknown type of ");
       }
     } else {
-      return script.getToAddress(output.getParams()).toString();
+      return script.getToAddress(output.getParams()).toCash().toString();
     }
   }
 }
