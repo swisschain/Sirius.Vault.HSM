@@ -47,15 +47,22 @@ public class EthereumTransactionValidator {
                 transaction.getTo(), transferDetails.getDestinationAddress().getAddress()));
       }
 
-      final var amount =
-          Convert.fromWei(transaction.getValue().toString(), Convert.Unit.ETHER)
-              .add(Convert.fromWei(transaction.getGasLimit().toString(), Convert.Unit.GWEI));
-      if (transferDetails.getAmount().compareTo(amount) != 0) {
+      final var amount = Convert.fromWei(transaction.getValue().toString(), Convert.Unit.ETHER);
+      if (transferDetails.getAmount().compareTo(amount) < 0) {
         throw new TransferDetailsValidationException(
             String.format(
                 "Invalid transaction amount: %s, expected %s",
                 amount.toString(), transferDetails.getAmount().toString()));
       }
+
+      final var fee = Convert.fromWei(transaction.getGasLimit().toString(), Convert.Unit.GWEI);
+      if (transferDetails.getFeeLimit().compareTo(fee) < 0) {
+        throw new TransferDetailsValidationException(
+            String.format(
+                "Invalid transaction fee: %s, expected %s",
+                amount.toString(), transferDetails.getAmount().toString()));
+      }
+      return true;
     } else {
       // Smart contract transaction
       if (!transferDetails.getAsset().getAddress().equalsIgnoreCase(transaction.getTo())) {
@@ -95,9 +102,8 @@ public class EthereumTransactionValidator {
       if (!lowerCaseData.contains(paddedAmount)) {
         throw new TransferDetailsValidationException("No amount detected in contract params");
       }
+      return true;
     }
-
-    return true;
   }
 
   private static byte[] padZeros(byte[] src, int padSize) {
