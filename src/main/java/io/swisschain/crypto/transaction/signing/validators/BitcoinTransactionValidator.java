@@ -3,11 +3,11 @@ package io.swisschain.crypto.transaction.signing.validators;
 import io.swisschain.contracts.TransferDetails;
 import io.swisschain.crypto.exceptions.BlockchainNotSupportedException;
 import io.swisschain.crypto.transaction.signing.exceptions.TransferDetailsValidationException;
-import org.bitcoinj.core.Coin;
 import org.bitcoinj.core.Transaction;
 import org.bitcoinj.core.TransactionOutput;
 import org.bitcoinj.core.Utils;
 import org.bitcoinj.script.ScriptPattern;
+import org.bitcoinjcash.core.Coin;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -48,23 +48,48 @@ public class BitcoinTransactionValidator {
           destination, outputsSumMap.getOrDefault(destination, 0L) + output.getValue().value);
     }
 
+    if (!outputsSumMap.containsKey(transferDetails.getDestinationAddress().getAddress())) {
+      throw new TransferDetailsValidationException("Invalid destination address");
+    }
+
     final var transactionAmount =
         outputsSumMap.getOrDefault(transferDetails.getDestinationAddress().getAddress(), 0L);
-    if (transferDetails
+    final var transferDetailsAmount =
+        transferDetails
             .getAmount()
-            .multiply(BigDecimal.valueOf(org.bitcoinj.core.Coin.COIN.value))
-            .longValue()
-        != transactionAmount) {
+            .multiply(BigDecimal.valueOf(org.bitcoinjcash.core.Coin.COIN.value))
+            .longValue();
+    final var transferDetailsFeeLimit =
+        transferDetails
+            .getFeeLimit()
+            .multiply(BigDecimal.valueOf(org.bitcoinjcash.core.Coin.COIN.value))
+            .longValue();
+
+    if (transactionAmount > transferDetailsAmount) {
       throw new TransferDetailsValidationException(
           String.format(
               "Invalid transaction amount: %s, expected %s",
               BigDecimal.valueOf(transactionAmount)
                   .divide(
-                      BigDecimal.valueOf(org.bitcoinj.core.Coin.COIN.value),
-                      Coin.COIN.smallestUnitExponent(),
+                      BigDecimal.valueOf(org.bitcoinjcash.core.Coin.COIN.value),
+                      org.bitcoinjcash.core.Coin.COIN.smallestUnitExponent(),
                       RoundingMode.CEILING)
                   .toString(),
               transferDetails.getAmount().toString()));
+    }
+
+    final var payedFee = transferDetailsAmount - transactionAmount;
+    if (payedFee > transferDetailsFeeLimit) {
+      throw new TransferDetailsValidationException(
+          String.format(
+              "Transaction fee exceeded limit: %s, fee limit %s",
+              BigDecimal.valueOf(payedFee)
+                  .divide(
+                      BigDecimal.valueOf(org.bitcoinjcash.core.Coin.COIN.value),
+                      Coin.COIN.smallestUnitExponent(),
+                      RoundingMode.CEILING)
+                  .toString(),
+              transferDetails.getFeeLimit().toString()));
     }
     return true;
   }
