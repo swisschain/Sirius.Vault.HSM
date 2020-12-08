@@ -9,7 +9,7 @@ public class RequestContext {
   private String ip;
   private Instant timestamp;
 
-  public  RequestContext() {}
+  public RequestContext() {}
 
   public RequestContext(String userId, String apiKeyId, String ip, Instant timestamp) {
     this.userId = userId;

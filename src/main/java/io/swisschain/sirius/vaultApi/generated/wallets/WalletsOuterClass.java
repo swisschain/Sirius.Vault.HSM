@@ -4,12 +4,273 @@
 package io.swisschain.sirius.vaultApi.generated.wallets;
 
 public final class WalletsOuterClass {
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestRequest_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponse_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponseBody_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponseBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestErrorResponseBody_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestErrorResponseBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_wallets_WalletGenerationRequest_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_wallets_WalletGenerationRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestRequest_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponse_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponseBody_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponseBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestErrorResponseBody_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestErrorResponseBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestRequest_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponse_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponseBody_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponseBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestErrorResponseBody_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestErrorResponseBody_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.FileDescriptor descriptor;
+
+  static {
+    java.lang.String[] descriptorData = {
+      "\n\rwallets.proto\022\"swisschain.sirius.vault"
+          + "Api.wallets\032\037google/protobuf/timestamp.p"
+          + "roto\032\014common.proto\"#\n!GetWalletGeneratio"
+          + "nRequestRequest\"\356\001\n\"GetWalletGenerationR"
+          + "equestResponse\022^\n\010response\030\001 \001(\0132J.swiss"
+          + "chain.sirius.vaultApi.wallets.GetWalletG"
+          + "enerationRequestResponseBodyH\000\022`\n\005error\030"
+          + "\002 \001(\0132O.swisschain.sirius.vaultApi.walle"
+          + "ts.GetWalletGenerationRequestErrorRespon"
+          + "seBodyH\000B\006\n\004body\"w\n&GetWalletGenerationR"
+          + "equestResponseBody\022M\n\010requests\030\001 \003(\0132;.s"
+          + "wisschain.sirius.vaultApi.wallets.Wallet"
+          + "GenerationRequest\"\345\001\n+GetWalletGeneratio"
+          + "nRequestErrorResponseBody\022m\n\nerror_code\030"
+          + "\001 \001(\0162Y.swisschain.sirius.vaultApi.walle"
+          + "ts.GetWalletGenerationRequestErrorRespon"
+          + "seBody.ErrorCode\022\025\n\rerror_message\030\002 \001(\t\""
+          + "0\n\tErrorCode\022\013\n\007UNKNOWN\020\000\022\026\n\022INVALID_PAR"
+          + "AMETERS\020\001\"\233\002\n\027WalletGenerationRequest\022\n\n"
+          + "\002id\030\001 \001(\003\022\025\n\rblockchain_id\030\002 \001(\t\022D\n\014netw"
+          + "ork_type\030\003 \001(\0162..swisschain.sirius.vault"
+          + "Api.common.NetworkType\022\025\n\rprotocol_code\030"
+          + "\004 \001(\t\022\r\n\005group\030\005 \001(\t\022\021\n\ttenant_id\030\006 \001(\t\022"
+          + ".\n\ncreated_at\030\007 \001(\0132\032.google.protobuf.Ti"
+          + "mestamp\022.\n\nupdated_at\030\010 \001(\0132\032.google.pro"
+          + "tobuf.Timestamp\"\262\001\n%ConfirmWalletGenerat"
+          + "ionRequestRequest\022\022\n\nrequest_id\030\001 \001(\t\022$\n"
+          + "\034wallet_generation_request_id\030\002 \001(\003\022\017\n\007a"
+          + "ddress\030\003 \001(\t\022\022\n\npublic_key\030\004 \001(\t\022\021\n\tsign"
+          + "ature\030\005 \001(\t\022\027\n\017host_process_id\030\006 \001(\t\"\372\001\n"
+          + "&ConfirmWalletGenerationRequestResponse\022"
+          + "b\n\010response\030\001 \001(\0132N.swisschain.sirius.va"
+          + "ultApi.wallets.ConfirmWalletGenerationRe"
+          + "questResponseBodyH\000\022d\n\005error\030\002 \001(\0132S.swi"
+          + "sschain.sirius.vaultApi.wallets.ConfirmW"
+          + "alletGenerationRequestErrorResponseBodyH"
+          + "\000B\006\n\004body\",\n*ConfirmWalletGenerationRequ"
+          + "estResponseBody\"\355\001\n/ConfirmWalletGenerat"
+          + "ionRequestErrorResponseBody\022q\n\nerror_cod"
+          + "e\030\001 \001(\0162].swisschain.sirius.vaultApi.wal"
+          + "lets.ConfirmWalletGenerationRequestError"
+          + "ResponseBody.ErrorCode\022\025\n\rerror_message\030"
+          + "\002 \001(\t\"0\n\tErrorCode\022\013\n\007UNKNOWN\020\000\022\026\n\022INVAL"
+          + "ID_PARAMETERS\020\001\"\326\001\n$RejectWalletGenerati"
+          + "onRequestRequest\022\022\n\nrequest_id\030\001 \001(\t\022$\n\034"
+          + "wallet_generation_request_id\030\002 \001(\003\022C\n\006re"
+          + "ason\030\004 \001(\01623.swisschain.sirius.vaultApi."
+          + "wallets.RejectionReason\022\026\n\016reason_messag"
+          + "e\030\005 \001(\t\022\027\n\017host_process_id\030\006 \001(\t\"\367\001\n%Rej"
+          + "ectWalletGenerationRequestResponse\022a\n\010re"
+          + "sponse\030\001 \001(\0132M.swisschain.sirius.vaultAp"
+          + "i.wallets.RejectWalletGenerationRequestR"
+          + "esponseBodyH\000\022c\n\005error\030\002 \001(\0132R.swisschai"
+          + "n.sirius.vaultApi.wallets.RejectWalletGe"
+          + "nerationRequestErrorResponseBodyH\000B\006\n\004bo"
+          + "dy\"+\n)RejectWalletGenerationRequestRespo"
+          + "nseBody\"\353\001\n.RejectWalletGenerationReques"
+          + "tErrorResponseBody\022p\n\nerror_code\030\001 \001(\0162\\"
+          + ".swisschain.sirius.vaultApi.wallets.Reje"
+          + "ctWalletGenerationRequestErrorResponseBo"
+          + "dy.ErrorCode\022\025\n\rerror_message\030\002 \001(\t\"0\n\tE"
+          + "rrorCode\022\013\n\007UNKNOWN\020\000\022\026\n\022INVALID_PARAMET"
+          + "ERS\020\001*4\n\017RejectionReason\022\t\n\005OTHER\020\000\022\026\n\022U"
+          + "NKNOWN_BLOCKCHAIN\020\0012\343\003\n\007Wallets\022\224\001\n\003Get\022"
+          + "E.swisschain.sirius.vaultApi.wallets.Get"
+          + "WalletGenerationRequestRequest\032F.swissch"
+          + "ain.sirius.vaultApi.wallets.GetWalletGen"
+          + "erationRequestResponse\022\240\001\n\007Confirm\022I.swi"
+          + "sschain.sirius.vaultApi.wallets.ConfirmW"
+          + "alletGenerationRequestRequest\032J.swisscha"
+          + "in.sirius.vaultApi.wallets.ConfirmWallet"
+          + "GenerationRequestResponse\022\235\001\n\006Reject\022H.s"
+          + "wisschain.sirius.vaultApi.wallets.Reject"
+          + "WalletGenerationRequestRequest\032I.swissch"
+          + "ain.sirius.vaultApi.wallets.RejectWallet"
+          + "GenerationRequestResponseBb\n/io.swisscha"
+          + "in.sirius.vaultApi.generated.wallets\252\002.S"
+          + "wisschain.Sirius.VaultApi.ApiContract.Wa"
+          + "lletsb\006proto3"
+    };
+    descriptor =
+        com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
+            descriptorData,
+            new com.google.protobuf.Descriptors.FileDescriptor[] {
+              com.google.protobuf.TimestampProto.getDescriptor(),
+              io.swisschain.sirius.vaultApi.generated.common.Common.getDescriptor(),
+            });
+    internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestRequest_descriptor =
+        getDescriptor().getMessageTypes().get(0);
+    internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestRequest_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestRequest_descriptor,
+            new java.lang.String[] {});
+    internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponse_descriptor =
+        getDescriptor().getMessageTypes().get(1);
+    internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponse_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponse_descriptor,
+            new java.lang.String[] {
+              "Response", "Error", "Body",
+            });
+    internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponseBody_descriptor =
+        getDescriptor().getMessageTypes().get(2);
+    internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponseBody_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponseBody_descriptor,
+            new java.lang.String[] {
+              "Requests",
+            });
+    internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestErrorResponseBody_descriptor =
+        getDescriptor().getMessageTypes().get(3);
+    internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestErrorResponseBody_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestErrorResponseBody_descriptor,
+            new java.lang.String[] {
+              "ErrorCode", "ErrorMessage",
+            });
+    internal_static_swisschain_sirius_vaultApi_wallets_WalletGenerationRequest_descriptor =
+        getDescriptor().getMessageTypes().get(4);
+    internal_static_swisschain_sirius_vaultApi_wallets_WalletGenerationRequest_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_wallets_WalletGenerationRequest_descriptor,
+            new java.lang.String[] {
+              "Id",
+              "BlockchainId",
+              "NetworkType",
+              "ProtocolCode",
+              "Group",
+              "TenantId",
+              "CreatedAt",
+              "UpdatedAt",
+            });
+    internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestRequest_descriptor =
+        getDescriptor().getMessageTypes().get(5);
+    internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestRequest_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestRequest_descriptor,
+            new java.lang.String[] {
+              "RequestId",
+              "WalletGenerationRequestId",
+              "Address",
+              "PublicKey",
+              "Signature",
+              "HostProcessId",
+            });
+    internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponse_descriptor =
+        getDescriptor().getMessageTypes().get(6);
+    internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponse_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponse_descriptor,
+            new java.lang.String[] {
+              "Response", "Error", "Body",
+            });
+    internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponseBody_descriptor =
+        getDescriptor().getMessageTypes().get(7);
+    internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponseBody_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponseBody_descriptor,
+            new java.lang.String[] {});
+    internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestErrorResponseBody_descriptor =
+        getDescriptor().getMessageTypes().get(8);
+    internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestErrorResponseBody_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestErrorResponseBody_descriptor,
+            new java.lang.String[] {
+              "ErrorCode", "ErrorMessage",
+            });
+    internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestRequest_descriptor =
+        getDescriptor().getMessageTypes().get(9);
+    internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestRequest_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestRequest_descriptor,
+            new java.lang.String[] {
+              "RequestId", "WalletGenerationRequestId", "Reason", "ReasonMessage", "HostProcessId",
+            });
+    internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponse_descriptor =
+        getDescriptor().getMessageTypes().get(10);
+    internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponse_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponse_descriptor,
+            new java.lang.String[] {
+              "Response", "Error", "Body",
+            });
+    internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponseBody_descriptor =
+        getDescriptor().getMessageTypes().get(11);
+    internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponseBody_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponseBody_descriptor,
+            new java.lang.String[] {});
+    internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestErrorResponseBody_descriptor =
+        getDescriptor().getMessageTypes().get(12);
+    internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestErrorResponseBody_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestErrorResponseBody_descriptor,
+            new java.lang.String[] {
+              "ErrorCode", "ErrorMessage",
+            });
+    com.google.protobuf.TimestampProto.getDescriptor();
+    io.swisschain.sirius.vaultApi.generated.common.Common.getDescriptor();
+  }
+
   private WalletsOuterClass() {}
 
   public static void registerAllExtensions(com.google.protobuf.ExtensionRegistryLite registry) {}
 
   public static void registerAllExtensions(com.google.protobuf.ExtensionRegistry registry) {
     registerAllExtensions((com.google.protobuf.ExtensionRegistryLite) registry);
+  }
+
+  public static com.google.protobuf.Descriptors.FileDescriptor getDescriptor() {
+    return descriptor;
   }
   /** Protobuf enum {@code swisschain.sirius.vaultApi.wallets.RejectionReason} */
   public enum RejectionReason implements com.google.protobuf.ProtocolMessageEnum {
@@ -24,13 +285,18 @@ public final class WalletsOuterClass {
     public static final int OTHER_VALUE = 0;
     /** <code>UNKNOWN_BLOCKCHAIN = 1;</code> */
     public static final int UNKNOWN_BLOCKCHAIN_VALUE = 1;
+    private static final com.google.protobuf.Internal.EnumLiteMap<RejectionReason>
+        internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<RejectionReason>() {
+              public RejectionReason findValueByNumber(int number) {
+                return RejectionReason.forNumber(number);
+              }
+            };
+    private static final RejectionReason[] VALUES = values();
+    private final int value;
 
-    public final int getNumber() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalArgumentException(
-            "Can't get the number of an unknown enum value.");
-      }
-      return value;
+    private RejectionReason(int value) {
+      this.value = value;
     }
 
     /**
@@ -62,13 +328,36 @@ public final class WalletsOuterClass {
       return internalValueMap;
     }
 
-    private static final com.google.protobuf.Internal.EnumLiteMap<RejectionReason>
-        internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<RejectionReason>() {
-              public RejectionReason findValueByNumber(int number) {
-                return RejectionReason.forNumber(number);
-              }
-            };
+    public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+      return io.swisschain
+          .sirius
+          .vaultApi
+          .generated
+          .wallets
+          .WalletsOuterClass
+          .getDescriptor()
+          .getEnumTypes()
+          .get(0);
+    }
+
+    public static RejectionReason valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+      }
+      if (desc.getIndex() == -1) {
+        return UNRECOGNIZED;
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    public final int getNumber() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalArgumentException(
+            "Can't get the number of an unknown enum value.");
+      }
+      return value;
+    }
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
       if (this == UNRECOGNIZED) {
@@ -82,44 +371,721 @@ public final class WalletsOuterClass {
       return getDescriptor();
     }
 
-    public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
-      return io.swisschain
-          .sirius
-          .vaultApi
-          .generated
-          .wallets
-          .WalletsOuterClass
-          .getDescriptor()
-          .getEnumTypes()
-          .get(0);
-    }
-
-    private static final RejectionReason[] VALUES = values();
-
-    public static RejectionReason valueOf(
-        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-      if (desc.getType() != getDescriptor()) {
-        throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
-      }
-      if (desc.getIndex() == -1) {
-        return UNRECOGNIZED;
-      }
-      return VALUES[desc.getIndex()];
-    }
-
-    private final int value;
-
-    private RejectionReason(int value) {
-      this.value = value;
-    }
-
     // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.wallets.RejectionReason)
   }
-
   public interface GetWalletGenerationRequestRequestOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestRequest)
       com.google.protobuf.MessageOrBuilder {}
+  public interface GetWalletGenerationRequestResponseOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return Whether the response field is set.
+     */
+    boolean hasResponse();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return The response.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestResponseBody
+        getResponse();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestResponseBodyOrBuilder
+        getResponseOrBuilder();
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return Whether the error field is set.
+     */
+    boolean hasError();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return The error.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestErrorResponseBody
+        getError();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody error = 2;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestErrorResponseBodyOrBuilder
+        getErrorOrBuilder();
+
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestResponse
+            .BodyCase
+        getBodyCase();
+  }
+  public interface GetWalletGenerationRequestResponseBodyOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
+     * </code>
+     */
+    java.util.List<
+            io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .wallets
+                .WalletsOuterClass
+                .WalletGenerationRequest>
+        getRequestsList();
+    /**
+     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
+     * </code>
+     */
+    io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.WalletGenerationRequest
+        getRequests(int index);
+    /**
+     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
+     * </code>
+     */
+    int getRequestsCount();
+    /**
+     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
+     * </code>
+     */
+    java.util.List<
+            ? extends
+                io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .wallets
+                    .WalletsOuterClass
+                    .WalletGenerationRequestOrBuilder>
+        getRequestsOrBuilderList();
+    /**
+     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .WalletGenerationRequestOrBuilder
+        getRequestsOrBuilder(int index);
+  }
+  public interface GetWalletGenerationRequestErrorResponseBodyOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for errorCode.
+     */
+    int getErrorCodeValue();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The errorCode.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestErrorResponseBody
+            .ErrorCode
+        getErrorCode();
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The errorMessage.
+     */
+    java.lang.String getErrorMessage();
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The bytes for errorMessage.
+     */
+    com.google.protobuf.ByteString getErrorMessageBytes();
+  }
+  public interface WalletGenerationRequestOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.WalletGenerationRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>int64 id = 1;</code>
+     *
+     * @return The id.
+     */
+    long getId();
+
+    /**
+     * <code>string blockchain_id = 2;</code>
+     *
+     * @return The blockchainId.
+     */
+    java.lang.String getBlockchainId();
+    /**
+     * <code>string blockchain_id = 2;</code>
+     *
+     * @return The bytes for blockchainId.
+     */
+    com.google.protobuf.ByteString getBlockchainIdBytes();
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
+     *
+     * @return The enum numeric value on the wire for networkType.
+     */
+    int getNetworkTypeValue();
+    /**
+     * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
+     *
+     * @return The networkType.
+     */
+    io.swisschain.sirius.vaultApi.generated.common.Common.NetworkType getNetworkType();
+
+    /**
+     * <code>string protocol_code = 4;</code>
+     *
+     * @return The protocolCode.
+     */
+    java.lang.String getProtocolCode();
+    /**
+     * <code>string protocol_code = 4;</code>
+     *
+     * @return The bytes for protocolCode.
+     */
+    com.google.protobuf.ByteString getProtocolCodeBytes();
+
+    /**
+     * <code>string group = 5;</code>
+     *
+     * @return The group.
+     */
+    java.lang.String getGroup();
+    /**
+     * <code>string group = 5;</code>
+     *
+     * @return The bytes for group.
+     */
+    com.google.protobuf.ByteString getGroupBytes();
+
+    /**
+     * <code>string tenant_id = 6;</code>
+     *
+     * @return The tenantId.
+     */
+    java.lang.String getTenantId();
+    /**
+     * <code>string tenant_id = 6;</code>
+     *
+     * @return The bytes for tenantId.
+     */
+    com.google.protobuf.ByteString getTenantIdBytes();
+
+    /**
+     * <code>.google.protobuf.Timestamp created_at = 7;</code>
+     *
+     * @return Whether the createdAt field is set.
+     */
+    boolean hasCreatedAt();
+    /**
+     * <code>.google.protobuf.Timestamp created_at = 7;</code>
+     *
+     * @return The createdAt.
+     */
+    com.google.protobuf.Timestamp getCreatedAt();
+    /** <code>.google.protobuf.Timestamp created_at = 7;</code> */
+    com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder();
+
+    /**
+     * <code>.google.protobuf.Timestamp updated_at = 8;</code>
+     *
+     * @return Whether the updatedAt field is set.
+     */
+    boolean hasUpdatedAt();
+    /**
+     * <code>.google.protobuf.Timestamp updated_at = 8;</code>
+     *
+     * @return The updatedAt.
+     */
+    com.google.protobuf.Timestamp getUpdatedAt();
+    /** <code>.google.protobuf.Timestamp updated_at = 8;</code> */
+    com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder();
+  }
+  public interface ConfirmWalletGenerationRequestRequestOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The requestId.
+     */
+    java.lang.String getRequestId();
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The bytes for requestId.
+     */
+    com.google.protobuf.ByteString getRequestIdBytes();
+
+    /**
+     * <code>int64 wallet_generation_request_id = 2;</code>
+     *
+     * @return The walletGenerationRequestId.
+     */
+    long getWalletGenerationRequestId();
+
+    /**
+     * <code>string address = 3;</code>
+     *
+     * @return The address.
+     */
+    java.lang.String getAddress();
+    /**
+     * <code>string address = 3;</code>
+     *
+     * @return The bytes for address.
+     */
+    com.google.protobuf.ByteString getAddressBytes();
+
+    /**
+     * <code>string public_key = 4;</code>
+     *
+     * @return The publicKey.
+     */
+    java.lang.String getPublicKey();
+    /**
+     * <code>string public_key = 4;</code>
+     *
+     * @return The bytes for publicKey.
+     */
+    com.google.protobuf.ByteString getPublicKeyBytes();
+
+    /**
+     * <code>string signature = 5;</code>
+     *
+     * @return The signature.
+     */
+    java.lang.String getSignature();
+    /**
+     * <code>string signature = 5;</code>
+     *
+     * @return The bytes for signature.
+     */
+    com.google.protobuf.ByteString getSignatureBytes();
+
+    /**
+     * <code>string host_process_id = 6;</code>
+     *
+     * @return The hostProcessId.
+     */
+    java.lang.String getHostProcessId();
+    /**
+     * <code>string host_process_id = 6;</code>
+     *
+     * @return The bytes for hostProcessId.
+     */
+    com.google.protobuf.ByteString getHostProcessIdBytes();
+  }
+  public interface ConfirmWalletGenerationRequestResponseOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return Whether the response field is set.
+     */
+    boolean hasResponse();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return The response.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestResponseBody
+        getResponse();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestResponseBodyOrBuilder
+        getResponseOrBuilder();
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return Whether the error field is set.
+     */
+    boolean hasError();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return The error.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestErrorResponseBody
+        getError();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody error = 2;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestErrorResponseBodyOrBuilder
+        getErrorOrBuilder();
+
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestResponse
+            .BodyCase
+        getBodyCase();
+  }
+  public interface ConfirmWalletGenerationRequestResponseBodyOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody)
+      com.google.protobuf.MessageOrBuilder {}
+  public interface ConfirmWalletGenerationRequestErrorResponseBodyOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for errorCode.
+     */
+    int getErrorCodeValue();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The errorCode.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestErrorResponseBody
+            .ErrorCode
+        getErrorCode();
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The errorMessage.
+     */
+    java.lang.String getErrorMessage();
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The bytes for errorMessage.
+     */
+    com.google.protobuf.ByteString getErrorMessageBytes();
+  }
+  public interface RejectWalletGenerationRequestRequestOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The requestId.
+     */
+    java.lang.String getRequestId();
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The bytes for requestId.
+     */
+    com.google.protobuf.ByteString getRequestIdBytes();
+
+    /**
+     * <code>int64 wallet_generation_request_id = 2;</code>
+     *
+     * @return The walletGenerationRequestId.
+     */
+    long getWalletGenerationRequestId();
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.wallets.RejectionReason reason = 4;</code>
+     *
+     * @return The enum numeric value on the wire for reason.
+     */
+    int getReasonValue();
+    /**
+     * <code>.swisschain.sirius.vaultApi.wallets.RejectionReason reason = 4;</code>
+     *
+     * @return The reason.
+     */
+    io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectionReason getReason();
+
+    /**
+     * <code>string reason_message = 5;</code>
+     *
+     * @return The reasonMessage.
+     */
+    java.lang.String getReasonMessage();
+    /**
+     * <code>string reason_message = 5;</code>
+     *
+     * @return The bytes for reasonMessage.
+     */
+    com.google.protobuf.ByteString getReasonMessageBytes();
+
+    /**
+     * <code>string host_process_id = 6;</code>
+     *
+     * @return The hostProcessId.
+     */
+    java.lang.String getHostProcessId();
+    /**
+     * <code>string host_process_id = 6;</code>
+     *
+     * @return The bytes for hostProcessId.
+     */
+    com.google.protobuf.ByteString getHostProcessIdBytes();
+  }
+  public interface RejectWalletGenerationRequestResponseOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return Whether the response field is set.
+     */
+    boolean hasResponse();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return The response.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestResponseBody
+        getResponse();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestResponseBodyOrBuilder
+        getResponseOrBuilder();
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return Whether the error field is set.
+     */
+    boolean hasError();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return The error.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestErrorResponseBody
+        getError();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody error = 2;
+     * </code>
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestErrorResponseBodyOrBuilder
+        getErrorOrBuilder();
+
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestResponse
+            .BodyCase
+        getBodyCase();
+  }
+  public interface RejectWalletGenerationRequestResponseBodyOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody)
+      com.google.protobuf.MessageOrBuilder {}
+  public interface RejectWalletGenerationRequestErrorResponseBodyOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for errorCode.
+     */
+    int getErrorCodeValue();
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The errorCode.
+     */
+    io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestErrorResponseBody
+            .ErrorCode
+        getErrorCode();
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The errorMessage.
+     */
+    java.lang.String getErrorMessage();
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The bytes for errorMessage.
+     */
+    com.google.protobuf.ByteString getErrorMessageBytes();
+  }
+
   /** Protobuf type {@code swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestRequest} */
   public static final class GetWalletGenerationRequestRequest
       extends com.google.protobuf.GeneratedMessageV3
@@ -127,6 +1093,39 @@ public final class WalletsOuterClass {
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestRequest)
       GetWalletGenerationRequestRequestOrBuilder {
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestRequest)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestRequest
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<GetWalletGenerationRequestRequest> PARSER =
+        new com.google.protobuf.AbstractParser<GetWalletGenerationRequestRequest>() {
+          @java.lang.Override
+          public GetWalletGenerationRequestRequest parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new GetWalletGenerationRequestRequest(input, extensionRegistry);
+          }
+        };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .GetWalletGenerationRequestRequest();
+    }
+
+    private byte memoizedIsInitialized = -1;
+
     // Use GetWalletGenerationRequestRequest.newBuilder() to construct.
     private GetWalletGenerationRequestRequest(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -134,17 +1133,6 @@ public final class WalletsOuterClass {
     }
 
     private GetWalletGenerationRequestRequest() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new GetWalletGenerationRequestRequest();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
 
     private GetWalletGenerationRequestRequest(
         com.google.protobuf.CodedInputStream input,
@@ -191,108 +1179,6 @@ public final class WalletsOuterClass {
           .wallets
           .WalletsOuterClass
           .internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestRequest_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestRequest_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .GetWalletGenerationRequestRequest
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .GetWalletGenerationRequestRequest
-                  .Builder
-                  .class);
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .GetWalletGenerationRequestRequest)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .GetWalletGenerationRequestRequest
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .wallets
-                      .WalletsOuterClass
-                      .GetWalletGenerationRequestRequest)
-                  obj;
-
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -445,11 +1331,6 @@ public final class WalletsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -466,6 +1347,137 @@ public final class WalletsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestRequest
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<GetWalletGenerationRequestRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new GetWalletGenerationRequestRequest();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .GetWalletGenerationRequestRequest
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .GetWalletGenerationRequestRequest
+                  .Builder
+                  .class);
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .GetWalletGenerationRequestRequest)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .GetWalletGenerationRequestRequest
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .wallets
+                      .WalletsOuterClass
+                      .GetWalletGenerationRequestRequest)
+                  obj;
+
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -477,6 +1489,24 @@ public final class WalletsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetWalletGenerationRequestRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestRequest
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestRequest}
      */
@@ -491,6 +1521,17 @@ public final class WalletsOuterClass {
             .wallets
             .WalletsOuterClass
             .GetWalletGenerationRequestRequestOrBuilder {
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.GetWalletGenerationRequestRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -524,17 +1565,6 @@ public final class WalletsOuterClass {
                     .GetWalletGenerationRequestRequest
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.GetWalletGenerationRequestRequest.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -753,16 +1783,36 @@ public final class WalletsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestRequest)
     }
+  }
 
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestRequest)
+  /** Protobuf type {@code swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponse} */
+  public static final class GetWalletGenerationRequestResponse
+      extends com.google.protobuf.GeneratedMessageV3
+      implements
+      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponse)
+      GetWalletGenerationRequestResponseOrBuilder {
+    public static final int RESPONSE_FIELD_NUMBER = 1;
+    public static final int ERROR_FIELD_NUMBER = 2;
+    private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponse)
     private static final io.swisschain
             .sirius
             .vaultApi
             .generated
             .wallets
             .WalletsOuterClass
-            .GetWalletGenerationRequestRequest
+            .GetWalletGenerationRequestResponse
         DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<GetWalletGenerationRequestResponse> PARSER =
+        new com.google.protobuf.AbstractParser<GetWalletGenerationRequestResponse>() {
+          @java.lang.Override
+          public GetWalletGenerationRequestResponse parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new GetWalletGenerationRequestResponse(input, extensionRegistry);
+          }
+        };
 
     static {
       DEFAULT_INSTANCE =
@@ -772,167 +1822,19 @@ public final class WalletsOuterClass {
               .generated
               .wallets
               .WalletsOuterClass
-              .GetWalletGenerationRequestRequest();
+              .GetWalletGenerationRequestResponse();
     }
 
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestRequest
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<GetWalletGenerationRequestRequest> PARSER =
-        new com.google.protobuf.AbstractParser<GetWalletGenerationRequestRequest>() {
-          @java.lang.Override
-          public GetWalletGenerationRequestRequest parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new GetWalletGenerationRequestRequest(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<GetWalletGenerationRequestRequest> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<GetWalletGenerationRequestRequest> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestRequest
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  public interface GetWalletGenerationRequestResponseOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponse)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return Whether the response field is set.
-     */
-    boolean hasResponse();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return The response.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestResponseBody
-        getResponse();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestResponseBodyOrBuilder
-        getResponseOrBuilder();
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return Whether the error field is set.
-     */
-    boolean hasError();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return The error.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestErrorResponseBody
-        getError();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody error = 2;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestErrorResponseBodyOrBuilder
-        getErrorOrBuilder();
-
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestResponse
-            .BodyCase
-        getBodyCase();
-  }
-  /** Protobuf type {@code swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponse} */
-  public static final class GetWalletGenerationRequestResponse
-      extends com.google.protobuf.GeneratedMessageV3
-      implements
-      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponse)
-      GetWalletGenerationRequestResponseOrBuilder {
-    private static final long serialVersionUID = 0L;
+    private int bodyCase_ = 0;
+    private java.lang.Object body_;
+    private byte memoizedIsInitialized = -1;
     // Use GetWalletGenerationRequestResponse.newBuilder() to construct.
     private GetWalletGenerationRequestResponse(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
 
-    private GetWalletGenerationRequestResponse() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new GetWalletGenerationRequestResponse();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
+        private GetWalletGenerationRequestResponse() {};
 
     private GetWalletGenerationRequestResponse(
         com.google.protobuf.CodedInputStream input,
@@ -1065,366 +1967,6 @@ public final class WalletsOuterClass {
           .wallets
           .WalletsOuterClass
           .internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponse_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponse_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .GetWalletGenerationRequestResponse
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .GetWalletGenerationRequestResponse
-                  .Builder
-                  .class);
-    }
-
-    private int bodyCase_ = 0;
-    private java.lang.Object body_;
-
-    public enum BodyCase
-        implements
-            com.google.protobuf.Internal.EnumLite,
-            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      RESPONSE(1),
-      ERROR(2),
-      BODY_NOT_SET(0);
-      private final int value;
-
-      private BodyCase(int value) {
-        this.value = value;
-      }
-      /**
-       * @param value The number of the enum to look for.
-       * @return The enum associated with the given number.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static BodyCase valueOf(int value) {
-        return forNumber(value);
-      }
-
-      public static BodyCase forNumber(int value) {
-        switch (value) {
-          case 1:
-            return RESPONSE;
-          case 2:
-            return ERROR;
-          case 0:
-            return BODY_NOT_SET;
-          default:
-            return null;
-        }
-      }
-
-      public int getNumber() {
-        return this.value;
-      }
-    };
-
-    public BodyCase getBodyCase() {
-      return BodyCase.forNumber(bodyCase_);
-    }
-
-    public static final int RESPONSE_FIELD_NUMBER = 1;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return Whether the response field is set.
-     */
-    @java.lang.Override
-    public boolean hasResponse() {
-      return bodyCase_ == 1;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return The response.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestResponseBody
-        getResponse() {
-      if (bodyCase_ == 1) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .wallets
-                .WalletsOuterClass
-                .GetWalletGenerationRequestResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .GetWalletGenerationRequestResponseBody.getDefaultInstance();
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestResponseBodyOrBuilder
-        getResponseOrBuilder() {
-      if (bodyCase_ == 1) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .wallets
-                .WalletsOuterClass
-                .GetWalletGenerationRequestResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .GetWalletGenerationRequestResponseBody.getDefaultInstance();
-    }
-
-    public static final int ERROR_FIELD_NUMBER = 2;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return Whether the error field is set.
-     */
-    @java.lang.Override
-    public boolean hasError() {
-      return bodyCase_ == 2;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return The error.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestErrorResponseBody
-        getError() {
-      if (bodyCase_ == 2) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .wallets
-                .WalletsOuterClass
-                .GetWalletGenerationRequestErrorResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .GetWalletGenerationRequestErrorResponseBody.getDefaultInstance();
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody error = 2;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestErrorResponseBodyOrBuilder
-        getErrorOrBuilder() {
-      if (bodyCase_ == 2) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .wallets
-                .WalletsOuterClass
-                .GetWalletGenerationRequestErrorResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .GetWalletGenerationRequestErrorResponseBody.getDefaultInstance();
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (bodyCase_ == 1) {
-        output.writeMessage(
-            1,
-            (io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .wallets
-                    .WalletsOuterClass
-                    .GetWalletGenerationRequestResponseBody)
-                body_);
-      }
-      if (bodyCase_ == 2) {
-        output.writeMessage(
-            2,
-            (io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .wallets
-                    .WalletsOuterClass
-                    .GetWalletGenerationRequestErrorResponseBody)
-                body_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (bodyCase_ == 1) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeMessageSize(
-                1,
-                (io.swisschain
-                        .sirius
-                        .vaultApi
-                        .generated
-                        .wallets
-                        .WalletsOuterClass
-                        .GetWalletGenerationRequestResponseBody)
-                    body_);
-      }
-      if (bodyCase_ == 2) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeMessageSize(
-                2,
-                (io.swisschain
-                        .sirius
-                        .vaultApi
-                        .generated
-                        .wallets
-                        .WalletsOuterClass
-                        .GetWalletGenerationRequestErrorResponseBody)
-                    body_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .GetWalletGenerationRequestResponse)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .GetWalletGenerationRequestResponse
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .wallets
-                      .WalletsOuterClass
-                      .GetWalletGenerationRequestResponse)
-                  obj;
-
-      if (!getBodyCase().equals(other.getBodyCase())) return false;
-      switch (bodyCase_) {
-        case 1:
-          if (!getResponse().equals(other.getResponse())) return false;
-          break;
-        case 2:
-          if (!getError().equals(other.getError())) return false;
-          break;
-        case 0:
-        default:
-      }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      switch (bodyCase_) {
-        case 1:
-          hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
-          hash = (53 * hash) + getResponse().hashCode();
-          break;
-        case 2:
-          hash = (37 * hash) + ERROR_FIELD_NUMBER;
-          hash = (53 * hash) + getError().hashCode();
-          break;
-        case 0:
-        default:
-      }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -1577,11 +2119,6 @@ public final class WalletsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -1598,6 +2135,354 @@ public final class WalletsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestResponse
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<GetWalletGenerationRequestResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new GetWalletGenerationRequestResponse();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .GetWalletGenerationRequestResponse
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .GetWalletGenerationRequestResponse
+                  .Builder
+                  .class);
+    }
+
+    public BodyCase getBodyCase() {
+      return BodyCase.forNumber(bodyCase_);
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return Whether the response field is set.
+     */
+    @java.lang.Override
+    public boolean hasResponse() {
+      return bodyCase_ == 1;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return The response.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestResponseBody
+        getResponse() {
+      if (bodyCase_ == 1) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .wallets
+                .WalletsOuterClass
+                .GetWalletGenerationRequestResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .GetWalletGenerationRequestResponseBody.getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestResponseBodyOrBuilder
+        getResponseOrBuilder() {
+      if (bodyCase_ == 1) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .wallets
+                .WalletsOuterClass
+                .GetWalletGenerationRequestResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .GetWalletGenerationRequestResponseBody.getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return Whether the error field is set.
+     */
+    @java.lang.Override
+    public boolean hasError() {
+      return bodyCase_ == 2;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return The error.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestErrorResponseBody
+        getError() {
+      if (bodyCase_ == 2) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .wallets
+                .WalletsOuterClass
+                .GetWalletGenerationRequestErrorResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .GetWalletGenerationRequestErrorResponseBody.getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody error = 2;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestErrorResponseBodyOrBuilder
+        getErrorOrBuilder() {
+      if (bodyCase_ == 2) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .wallets
+                .WalletsOuterClass
+                .GetWalletGenerationRequestErrorResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .GetWalletGenerationRequestErrorResponseBody.getDefaultInstance();
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (bodyCase_ == 1) {
+        output.writeMessage(
+            1,
+            (io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .wallets
+                    .WalletsOuterClass
+                    .GetWalletGenerationRequestResponseBody)
+                body_);
+      }
+      if (bodyCase_ == 2) {
+        output.writeMessage(
+            2,
+            (io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .wallets
+                    .WalletsOuterClass
+                    .GetWalletGenerationRequestErrorResponseBody)
+                body_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (bodyCase_ == 1) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeMessageSize(
+                1,
+                (io.swisschain
+                        .sirius
+                        .vaultApi
+                        .generated
+                        .wallets
+                        .WalletsOuterClass
+                        .GetWalletGenerationRequestResponseBody)
+                    body_);
+      }
+      if (bodyCase_ == 2) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeMessageSize(
+                2,
+                (io.swisschain
+                        .sirius
+                        .vaultApi
+                        .generated
+                        .wallets
+                        .WalletsOuterClass
+                        .GetWalletGenerationRequestErrorResponseBody)
+                    body_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .GetWalletGenerationRequestResponse)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .GetWalletGenerationRequestResponse
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .wallets
+                      .WalletsOuterClass
+                      .GetWalletGenerationRequestResponse)
+                  obj;
+
+      if (!getBodyCase().equals(other.getBodyCase())) return false;
+      switch (bodyCase_) {
+        case 1:
+          if (!getResponse().equals(other.getResponse())) return false;
+          break;
+        case 2:
+          if (!getError().equals(other.getError())) return false;
+          break;
+        case 0:
+        default:
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      switch (bodyCase_) {
+        case 1:
+          hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
+          hash = (53 * hash) + getResponse().hashCode();
+          break;
+        case 2:
+          hash = (37 * hash) + ERROR_FIELD_NUMBER;
+          hash = (53 * hash) + getError().hashCode();
+          break;
+        case 0:
+        default:
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -1609,6 +2494,64 @@ public final class WalletsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetWalletGenerationRequestResponse> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestResponse
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+public enum BodyCase
+        implements
+            com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      RESPONSE(1),
+      ERROR(2),
+      BODY_NOT_SET(0);
+      private final int value;
+
+      private BodyCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static BodyCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static BodyCase forNumber(int value) {
+        switch (value) {
+          case 1:
+            return RESPONSE;
+          case 2:
+            return ERROR;
+          case 0:
+            return BODY_NOT_SET;
+          default:
+            return null;
+        }
+      }
+
+      public int getNumber() {
+        return this.value;
+      }
+    }
+
     /**
      * Protobuf type {@code swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponse}
      */
@@ -1623,6 +2566,68 @@ public final class WalletsOuterClass {
             .wallets
             .WalletsOuterClass
             .GetWalletGenerationRequestResponseOrBuilder {
+      private int bodyCase_ = 0;
+      private java.lang.Object body_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .GetWalletGenerationRequestResponseBody,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .GetWalletGenerationRequestResponseBody
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .GetWalletGenerationRequestResponseBodyOrBuilder>
+          responseBuilder_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .GetWalletGenerationRequestErrorResponseBody,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .GetWalletGenerationRequestErrorResponseBody
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .GetWalletGenerationRequestErrorResponseBodyOrBuilder>
+          errorBuilder_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.GetWalletGenerationRequestResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -1656,17 +2661,6 @@ public final class WalletsOuterClass {
                     .GetWalletGenerationRequestResponse
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.GetWalletGenerationRequestResponse.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -1904,9 +2898,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private int bodyCase_ = 0;
-      private java.lang.Object body_;
-
       public BodyCase getBodyCase() {
         return BodyCase.forNumber(bodyCase_);
       }
@@ -1918,30 +2909,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .GetWalletGenerationRequestResponseBody,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .GetWalletGenerationRequestResponseBody
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .GetWalletGenerationRequestResponseBodyOrBuilder>
-          responseBuilder_;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
@@ -1953,6 +2920,7 @@ public final class WalletsOuterClass {
       public boolean hasResponse() {
         return bodyCase_ == 1;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
@@ -1990,6 +2958,7 @@ public final class WalletsOuterClass {
               .GetWalletGenerationRequestResponseBody.getDefaultInstance();
         }
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
@@ -2016,6 +2985,7 @@ public final class WalletsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
@@ -2040,6 +3010,7 @@ public final class WalletsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
@@ -2091,6 +3062,7 @@ public final class WalletsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
@@ -2112,6 +3084,7 @@ public final class WalletsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
@@ -2128,6 +3101,7 @@ public final class WalletsOuterClass {
           getResponseBuilder() {
         return getResponseFieldBuilder().getBuilder();
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
@@ -2159,6 +3133,7 @@ public final class WalletsOuterClass {
               .GetWalletGenerationRequestResponseBody.getDefaultInstance();
         }
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody response = 1;
@@ -2236,30 +3211,6 @@ public final class WalletsOuterClass {
         return responseBuilder_;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .GetWalletGenerationRequestErrorResponseBody,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .GetWalletGenerationRequestErrorResponseBody
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .GetWalletGenerationRequestErrorResponseBodyOrBuilder>
-          errorBuilder_;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody error = 2;
@@ -2568,16 +3519,37 @@ public final class WalletsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponse)
     }
+  }
 
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponse)
+  /**
+   * Protobuf type {@code swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody}
+   */
+  public static final class GetWalletGenerationRequestResponseBody
+      extends com.google.protobuf.GeneratedMessageV3
+      implements
+      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody)
+      GetWalletGenerationRequestResponseBodyOrBuilder {
+    public static final int REQUESTS_FIELD_NUMBER = 1;
+    private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody)
     private static final io.swisschain
             .sirius
             .vaultApi
             .generated
             .wallets
             .WalletsOuterClass
-            .GetWalletGenerationRequestResponse
+            .GetWalletGenerationRequestResponseBody
         DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<GetWalletGenerationRequestResponseBody> PARSER =
+        new com.google.protobuf.AbstractParser<GetWalletGenerationRequestResponseBody>() {
+          @java.lang.Override
+          public GetWalletGenerationRequestResponseBody parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new GetWalletGenerationRequestResponseBody(input, extensionRegistry);
+          }
+        };
 
     static {
       DEFAULT_INSTANCE =
@@ -2587,63 +3559,10 @@ public final class WalletsOuterClass {
               .generated
               .wallets
               .WalletsOuterClass
-              .GetWalletGenerationRequestResponse();
+              .GetWalletGenerationRequestResponseBody();
     }
 
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestResponse
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<GetWalletGenerationRequestResponse> PARSER =
-        new com.google.protobuf.AbstractParser<GetWalletGenerationRequestResponse>() {
-          @java.lang.Override
-          public GetWalletGenerationRequestResponse parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new GetWalletGenerationRequestResponse(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<GetWalletGenerationRequestResponse> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<GetWalletGenerationRequestResponse> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestResponse
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  public interface GetWalletGenerationRequestResponseBodyOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
-     * </code>
-     */
-    java.util.List<
+    private java.util.List<
             io.swisschain
                 .sirius
                 .vaultApi
@@ -2651,54 +3570,9 @@ public final class WalletsOuterClass {
                 .wallets
                 .WalletsOuterClass
                 .WalletGenerationRequest>
-        getRequestsList();
-    /**
-     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
-     * </code>
-     */
-    io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.WalletGenerationRequest
-        getRequests(int index);
-    /**
-     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
-     * </code>
-     */
-    int getRequestsCount();
-    /**
-     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
-     * </code>
-     */
-    java.util.List<
-            ? extends
-                io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .wallets
-                    .WalletsOuterClass
-                    .WalletGenerationRequestOrBuilder>
-        getRequestsOrBuilderList();
-    /**
-     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .WalletGenerationRequestOrBuilder
-        getRequestsOrBuilder(int index);
-  }
-  /**
-   * Protobuf type {@code swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody}
-   */
-  public static final class GetWalletGenerationRequestResponseBody
-      extends com.google.protobuf.GeneratedMessageV3
-      implements
-      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody)
-      GetWalletGenerationRequestResponseBodyOrBuilder {
-    private static final long serialVersionUID = 0L;
+        requests_;
+    private byte memoizedIsInitialized = -1;
+
     // Use GetWalletGenerationRequestResponseBody.newBuilder() to construct.
     private GetWalletGenerationRequestResponseBody(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -2708,18 +3582,6 @@ public final class WalletsOuterClass {
     private GetWalletGenerationRequestResponseBody() {
       requests_ = java.util.Collections.emptyList();
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new GetWalletGenerationRequestResponseBody();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private GetWalletGenerationRequestResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2790,195 +3652,6 @@ public final class WalletsOuterClass {
           .wallets
           .WalletsOuterClass
           .internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponseBody_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponseBody_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .GetWalletGenerationRequestResponseBody
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .GetWalletGenerationRequestResponseBody
-                  .Builder
-                  .class);
-    }
-
-    public static final int REQUESTS_FIELD_NUMBER = 1;
-    private java.util.List<
-            io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .wallets
-                .WalletsOuterClass
-                .WalletGenerationRequest>
-        requests_;
-    /**
-     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public java.util.List<
-            io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .wallets
-                .WalletsOuterClass
-                .WalletGenerationRequest>
-        getRequestsList() {
-      return requests_;
-    }
-    /**
-     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public java.util.List<
-            ? extends
-                io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .wallets
-                    .WalletsOuterClass
-                    .WalletGenerationRequestOrBuilder>
-        getRequestsOrBuilderList() {
-      return requests_;
-    }
-    /**
-     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public int getRequestsCount() {
-      return requests_.size();
-    }
-    /**
-     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.WalletGenerationRequest
-        getRequests(int index) {
-      return requests_.get(index);
-    }
-    /**
-     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .WalletGenerationRequestOrBuilder
-        getRequestsOrBuilder(int index) {
-      return requests_.get(index);
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      for (int i = 0; i < requests_.size(); i++) {
-        output.writeMessage(1, requests_.get(i));
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      for (int i = 0; i < requests_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, requests_.get(i));
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .GetWalletGenerationRequestResponseBody)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .GetWalletGenerationRequestResponseBody
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .wallets
-                      .WalletsOuterClass
-                      .GetWalletGenerationRequestResponseBody)
-                  obj;
-
-      if (!getRequestsList().equals(other.getRequestsList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      if (getRequestsCount() > 0) {
-        hash = (37 * hash) + REQUESTS_FIELD_NUMBER;
-        hash = (53 * hash) + getRequestsList().hashCode();
-      }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -3131,11 +3804,6 @@ public final class WalletsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -3152,6 +3820,218 @@ public final class WalletsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestResponseBody
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<GetWalletGenerationRequestResponseBody> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new GetWalletGenerationRequestResponseBody();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .GetWalletGenerationRequestResponseBody
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .GetWalletGenerationRequestResponseBody
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public java.util.List<
+            io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .wallets
+                .WalletsOuterClass
+                .WalletGenerationRequest>
+        getRequestsList() {
+      return requests_;
+    }
+
+    /**
+     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public java.util.List<
+            ? extends
+                io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .wallets
+                    .WalletsOuterClass
+                    .WalletGenerationRequestOrBuilder>
+        getRequestsOrBuilderList() {
+      return requests_;
+    }
+
+    /**
+     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public int getRequestsCount() {
+      return requests_.size();
+    }
+
+    /**
+     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.WalletGenerationRequest
+        getRequests(int index) {
+      return requests_.get(index);
+    }
+
+    /**
+     * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .WalletGenerationRequestOrBuilder
+        getRequestsOrBuilder(int index) {
+      return requests_.get(index);
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      for (int i = 0; i < requests_.size(); i++) {
+        output.writeMessage(1, requests_.get(i));
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      for (int i = 0; i < requests_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, requests_.get(i));
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .GetWalletGenerationRequestResponseBody)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .GetWalletGenerationRequestResponseBody
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .wallets
+                      .WalletsOuterClass
+                      .GetWalletGenerationRequestResponseBody)
+                  obj;
+
+      if (!getRequestsList().equals(other.getRequestsList())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (getRequestsCount() > 0) {
+        hash = (37 * hash) + REQUESTS_FIELD_NUMBER;
+        hash = (53 * hash) + getRequestsList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -3163,6 +4043,24 @@ public final class WalletsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetWalletGenerationRequestResponseBody> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestResponseBody
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody}
@@ -3178,6 +4076,52 @@ public final class WalletsOuterClass {
             .wallets
             .WalletsOuterClass
             .GetWalletGenerationRequestResponseBodyOrBuilder {
+      private int bitField0_;
+      private java.util.List<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .WalletGenerationRequest>
+          requests_ = java.util.Collections.emptyList();
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .WalletGenerationRequest,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .WalletGenerationRequest
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .WalletGenerationRequestOrBuilder>
+          requestsBuilder_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.GetWalletGenerationRequestResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -3211,17 +4155,6 @@ public final class WalletsOuterClass {
                     .GetWalletGenerationRequestResponseBody
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.GetWalletGenerationRequestResponseBody.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -3471,18 +4404,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private int bitField0_;
-
-      private java.util.List<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .WalletGenerationRequest>
-          requests_ = java.util.Collections.emptyList();
-
       private void ensureRequestsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
           requests_ =
@@ -3497,31 +4418,6 @@ public final class WalletsOuterClass {
           bitField0_ |= 0x00000001;
         }
       }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .WalletGenerationRequest,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .WalletGenerationRequest
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .WalletGenerationRequestOrBuilder>
-          requestsBuilder_;
 
       /**
        * <code>repeated .swisschain.sirius.vaultApi.wallets.WalletGenerationRequest requests = 1;
@@ -3929,115 +4825,8 @@ public final class WalletsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestResponseBody)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestResponseBody
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .GetWalletGenerationRequestResponseBody();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestResponseBody
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<GetWalletGenerationRequestResponseBody> PARSER =
-        new com.google.protobuf.AbstractParser<GetWalletGenerationRequestResponseBody>() {
-          @java.lang.Override
-          public GetWalletGenerationRequestResponseBody parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new GetWalletGenerationRequestResponseBody(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<GetWalletGenerationRequestResponseBody> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<GetWalletGenerationRequestResponseBody> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestResponseBody
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface GetWalletGenerationRequestErrorResponseBodyOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for errorCode.
-     */
-    int getErrorCodeValue();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The errorCode.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestErrorResponseBody
-            .ErrorCode
-        getErrorCode();
-
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The errorMessage.
-     */
-    java.lang.String getErrorMessage();
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The bytes for errorMessage.
-     */
-    com.google.protobuf.ByteString getErrorMessageBytes();
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody}
@@ -4047,29 +4836,54 @@ public final class WalletsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody)
       GetWalletGenerationRequestErrorResponseBodyOrBuilder {
+    public static final int ERROR_CODE_FIELD_NUMBER = 1;
+    public static final int ERROR_MESSAGE_FIELD_NUMBER = 2;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestErrorResponseBody
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<GetWalletGenerationRequestErrorResponseBody>
+        PARSER =
+            new com.google.protobuf.AbstractParser<GetWalletGenerationRequestErrorResponseBody>() {
+              @java.lang.Override
+              public GetWalletGenerationRequestErrorResponseBody parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+                return new GetWalletGenerationRequestErrorResponseBody(input, extensionRegistry);
+              }
+            };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .GetWalletGenerationRequestErrorResponseBody();
+    }
+
+    private int errorCode_;
+    private volatile java.lang.Object errorMessage_;
+    private byte memoizedIsInitialized = -1;
+
     // Use GetWalletGenerationRequestErrorResponseBody.newBuilder() to construct.
     private GetWalletGenerationRequestErrorResponseBody(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private GetWalletGenerationRequestErrorResponseBody() {
       errorCode_ = 0;
       errorMessage_ = "";
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new GetWalletGenerationRequestErrorResponseBody();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private GetWalletGenerationRequestErrorResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -4129,329 +4943,6 @@ public final class WalletsOuterClass {
           .wallets
           .WalletsOuterClass
           .internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestErrorResponseBody_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestErrorResponseBody_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .GetWalletGenerationRequestErrorResponseBody
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .GetWalletGenerationRequestErrorResponseBody
-                  .Builder
-                  .class);
-    }
-
-    /**
-     * Protobuf enum {@code
-     * swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody.ErrorCode}
-     */
-    public enum ErrorCode implements com.google.protobuf.ProtocolMessageEnum {
-      /** <code>UNKNOWN = 0;</code> */
-      UNKNOWN(0),
-      /** <code>INVALID_PARAMETERS = 1;</code> */
-      INVALID_PARAMETERS(1),
-      UNRECOGNIZED(-1),
-      ;
-
-      /** <code>UNKNOWN = 0;</code> */
-      public static final int UNKNOWN_VALUE = 0;
-      /** <code>INVALID_PARAMETERS = 1;</code> */
-      public static final int INVALID_PARAMETERS_VALUE = 1;
-
-      public final int getNumber() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static ErrorCode valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static ErrorCode forNumber(int value) {
-        switch (value) {
-          case 0:
-            return UNKNOWN;
-          case 1:
-            return INVALID_PARAMETERS;
-          default:
-            return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalGetValueMap() {
-        return internalValueMap;
-      }
-
-      private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
-            public ErrorCode findValueByNumber(int number) {
-              return ErrorCode.forNumber(number);
-            }
-          };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(ordinal());
-      }
-
-      public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
-        return getDescriptor();
-      }
-
-      public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
-        return io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestErrorResponseBody
-            .getDescriptor()
-            .getEnumTypes()
-            .get(0);
-      }
-
-      private static final ErrorCode[] VALUES = values();
-
-      public static ErrorCode valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int value;
-
-      private ErrorCode(int value) {
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody.ErrorCode)
-    }
-
-    public static final int ERROR_CODE_FIELD_NUMBER = 1;
-    private int errorCode_;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for errorCode.
-     */
-    @java.lang.Override
-    public int getErrorCodeValue() {
-      return errorCode_;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The errorCode.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestErrorResponseBody
-            .ErrorCode
-        getErrorCode() {
-      @SuppressWarnings("deprecation")
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .GetWalletGenerationRequestErrorResponseBody
-              .ErrorCode
-          result =
-              io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-                  .GetWalletGenerationRequestErrorResponseBody.ErrorCode.valueOf(errorCode_);
-      return result == null
-          ? io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .GetWalletGenerationRequestErrorResponseBody
-              .ErrorCode
-              .UNRECOGNIZED
-          : result;
-    }
-
-    public static final int ERROR_MESSAGE_FIELD_NUMBER = 2;
-    private volatile java.lang.Object errorMessage_;
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The errorMessage.
-     */
-    @java.lang.Override
-    public java.lang.String getErrorMessage() {
-      java.lang.Object ref = errorMessage_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        errorMessage_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The bytes for errorMessage.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getErrorMessageBytes() {
-      java.lang.Object ref = errorMessage_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        errorMessage_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (errorCode_
-          != io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-              .GetWalletGenerationRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
-        output.writeEnum(1, errorCode_);
-      }
-      if (!getErrorMessageBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, errorMessage_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (errorCode_
-          != io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-              .GetWalletGenerationRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream.computeEnumSize(1, errorCode_);
-      }
-      if (!getErrorMessageBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, errorMessage_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .GetWalletGenerationRequestErrorResponseBody)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .GetWalletGenerationRequestErrorResponseBody
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .wallets
-                      .WalletsOuterClass
-                      .GetWalletGenerationRequestErrorResponseBody)
-                  obj;
-
-      if (errorCode_ != other.errorCode_) return false;
-      if (!getErrorMessage().equals(other.getErrorMessage())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ERROR_CODE_FIELD_NUMBER;
-      hash = (53 * hash) + errorCode_;
-      hash = (37 * hash) + ERROR_MESSAGE_FIELD_NUMBER;
-      hash = (53 * hash) + getErrorMessage().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -4604,11 +5095,6 @@ public final class WalletsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -4625,6 +5111,249 @@ public final class WalletsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestErrorResponseBody
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<GetWalletGenerationRequestErrorResponseBody> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new GetWalletGenerationRequestErrorResponseBody();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestErrorResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .GetWalletGenerationRequestErrorResponseBody
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .GetWalletGenerationRequestErrorResponseBody
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for errorCode.
+     */
+    @java.lang.Override
+    public int getErrorCodeValue() {
+      return errorCode_;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The errorCode.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestErrorResponseBody
+            .ErrorCode
+        getErrorCode() {
+      @SuppressWarnings("deprecation")
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .GetWalletGenerationRequestErrorResponseBody
+              .ErrorCode
+          result =
+              io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+                  .GetWalletGenerationRequestErrorResponseBody.ErrorCode.valueOf(errorCode_);
+      return result == null
+          ? io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .GetWalletGenerationRequestErrorResponseBody
+              .ErrorCode
+              .UNRECOGNIZED
+          : result;
+    }
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The errorMessage.
+     */
+    @java.lang.Override
+    public java.lang.String getErrorMessage() {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        errorMessage_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The bytes for errorMessage.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getErrorMessageBytes() {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        errorMessage_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (errorCode_
+          != io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+              .GetWalletGenerationRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
+        output.writeEnum(1, errorCode_);
+      }
+      if (!getErrorMessageBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, errorMessage_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (errorCode_
+          != io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+              .GetWalletGenerationRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream.computeEnumSize(1, errorCode_);
+      }
+      if (!getErrorMessageBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, errorMessage_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .GetWalletGenerationRequestErrorResponseBody)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .GetWalletGenerationRequestErrorResponseBody
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .wallets
+                      .WalletsOuterClass
+                      .GetWalletGenerationRequestErrorResponseBody)
+                  obj;
+
+      if (errorCode_ != other.errorCode_) return false;
+      if (!getErrorMessage().equals(other.getErrorMessage())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ERROR_CODE_FIELD_NUMBER;
+      hash = (53 * hash) + errorCode_;
+      hash = (37 * hash) + ERROR_MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getErrorMessage().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -4636,6 +5365,129 @@ public final class WalletsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetWalletGenerationRequestErrorResponseBody>
+        getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestErrorResponseBody
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+    /**
+     * Protobuf enum {@code
+     * swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody.ErrorCode}
+     */
+    public enum ErrorCode implements com.google.protobuf.ProtocolMessageEnum {
+      /** <code>UNKNOWN = 0;</code> */
+      UNKNOWN(0),
+      /** <code>INVALID_PARAMETERS = 1;</code> */
+      INVALID_PARAMETERS(1),
+      UNRECOGNIZED(-1),
+      ;
+
+      /** <code>UNKNOWN = 0;</code> */
+      public static final int UNKNOWN_VALUE = 0;
+      /** <code>INVALID_PARAMETERS = 1;</code> */
+      public static final int INVALID_PARAMETERS_VALUE = 1;
+      private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
+            public ErrorCode findValueByNumber(int number) {
+              return ErrorCode.forNumber(number);
+            }
+          };
+      private static final ErrorCode[] VALUES = values();
+      private final int value;
+
+      private ErrorCode(int value) {
+        this.value = value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static ErrorCode valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static ErrorCode forNumber(int value) {
+        switch (value) {
+          case 0:
+            return UNKNOWN;
+          case 1:
+            return INVALID_PARAMETERS;
+          default:
+            return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalGetValueMap() {
+        return internalValueMap;
+      }
+
+      public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+        return io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .GetWalletGenerationRequestErrorResponseBody
+            .getDescriptor()
+            .getEnumTypes()
+            .get(0);
+      }
+
+      public static ErrorCode valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(ordinal());
+      }
+
+      public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
+        return getDescriptor();
+      }
+
+      // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody.ErrorCode)
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody}
@@ -4651,6 +5503,20 @@ public final class WalletsOuterClass {
             .wallets
             .WalletsOuterClass
             .GetWalletGenerationRequestErrorResponseBodyOrBuilder {
+      private int errorCode_ = 0;
+      private java.lang.Object errorMessage_ = "";
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.GetWalletGenerationRequestErrorResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -4684,17 +5550,6 @@ public final class WalletsOuterClass {
                     .GetWalletGenerationRequestErrorResponseBody
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.GetWalletGenerationRequestErrorResponseBody.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -4912,7 +5767,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private int errorCode_ = 0;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -4924,6 +5778,7 @@ public final class WalletsOuterClass {
       public int getErrorCodeValue() {
         return errorCode_;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -4938,6 +5793,7 @@ public final class WalletsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -4979,6 +5835,7 @@ public final class WalletsOuterClass {
                 .UNRECOGNIZED
             : result;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -5005,6 +5862,7 @@ public final class WalletsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -5019,7 +5877,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private java.lang.Object errorMessage_ = "";
       /**
        * <code>string error_message = 2;</code>
        *
@@ -5036,6 +5893,23 @@ public final class WalletsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string error_message = 2;</code>
+       *
+       * @param value The errorMessage to set.
+       * @return This builder for chaining.
+       */
+      public Builder setErrorMessage(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        errorMessage_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string error_message = 2;</code>
        *
@@ -5052,32 +5926,7 @@ public final class WalletsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string error_message = 2;</code>
-       *
-       * @param value The errorMessage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setErrorMessage(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        errorMessage_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string error_message = 2;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearErrorMessage() {
-
-        errorMessage_ = getDefaultInstance().getErrorMessage();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string error_message = 2;</code>
        *
@@ -5091,6 +5940,18 @@ public final class WalletsOuterClass {
         checkByteStringIsUtf8(value);
 
         errorMessage_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string error_message = 2;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearErrorMessage() {
+
+        errorMessage_ = getDefaultInstance().getErrorMessage();
         onChanged();
         return this;
       }
@@ -5109,16 +5970,41 @@ public final class WalletsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody)
     }
+  }
 
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.GetWalletGenerationRequestErrorResponseBody)
+  /** Protobuf type {@code swisschain.sirius.vaultApi.wallets.WalletGenerationRequest} */
+  public static final class WalletGenerationRequest extends com.google.protobuf.GeneratedMessageV3
+      implements
+      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.WalletGenerationRequest)
+      WalletGenerationRequestOrBuilder {
+    public static final int ID_FIELD_NUMBER = 1;
+    public static final int BLOCKCHAIN_ID_FIELD_NUMBER = 2;
+    public static final int NETWORK_TYPE_FIELD_NUMBER = 3;
+    public static final int PROTOCOL_CODE_FIELD_NUMBER = 4;
+    public static final int GROUP_FIELD_NUMBER = 5;
+    public static final int TENANT_ID_FIELD_NUMBER = 6;
+    public static final int CREATED_AT_FIELD_NUMBER = 7;
+    public static final int UPDATED_AT_FIELD_NUMBER = 8;
+    private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.WalletGenerationRequest)
     private static final io.swisschain
             .sirius
             .vaultApi
             .generated
             .wallets
             .WalletsOuterClass
-            .GetWalletGenerationRequestErrorResponseBody
+            .WalletGenerationRequest
         DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<WalletGenerationRequest> PARSER =
+        new com.google.protobuf.AbstractParser<WalletGenerationRequest>() {
+          @java.lang.Override
+          public WalletGenerationRequest parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new WalletGenerationRequest(input, extensionRegistry);
+          }
+        };
 
     static {
       DEFAULT_INSTANCE =
@@ -5128,190 +6014,28 @@ public final class WalletsOuterClass {
               .generated
               .wallets
               .WalletsOuterClass
-              .GetWalletGenerationRequestErrorResponseBody();
+              .WalletGenerationRequest();
     }
 
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestErrorResponseBody
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<GetWalletGenerationRequestErrorResponseBody>
-        PARSER =
-            new com.google.protobuf.AbstractParser<GetWalletGenerationRequestErrorResponseBody>() {
-              @java.lang.Override
-              public GetWalletGenerationRequestErrorResponseBody parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-                return new GetWalletGenerationRequestErrorResponseBody(input, extensionRegistry);
-              }
-            };
-
-    public static com.google.protobuf.Parser<GetWalletGenerationRequestErrorResponseBody> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<GetWalletGenerationRequestErrorResponseBody>
-        getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .GetWalletGenerationRequestErrorResponseBody
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  public interface WalletGenerationRequestOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.WalletGenerationRequest)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>int64 id = 1;</code>
-     *
-     * @return The id.
-     */
-    long getId();
-
-    /**
-     * <code>string blockchain_id = 2;</code>
-     *
-     * @return The blockchainId.
-     */
-    java.lang.String getBlockchainId();
-    /**
-     * <code>string blockchain_id = 2;</code>
-     *
-     * @return The bytes for blockchainId.
-     */
-    com.google.protobuf.ByteString getBlockchainIdBytes();
-
-    /**
-     * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
-     *
-     * @return The enum numeric value on the wire for networkType.
-     */
-    int getNetworkTypeValue();
-    /**
-     * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
-     *
-     * @return The networkType.
-     */
-    io.swisschain.sirius.vaultApi.generated.common.Common.NetworkType getNetworkType();
-
-    /**
-     * <code>string protocol_code = 4;</code>
-     *
-     * @return The protocolCode.
-     */
-    java.lang.String getProtocolCode();
-    /**
-     * <code>string protocol_code = 4;</code>
-     *
-     * @return The bytes for protocolCode.
-     */
-    com.google.protobuf.ByteString getProtocolCodeBytes();
-
-    /**
-     * <code>string group = 5;</code>
-     *
-     * @return The group.
-     */
-    java.lang.String getGroup();
-    /**
-     * <code>string group = 5;</code>
-     *
-     * @return The bytes for group.
-     */
-    com.google.protobuf.ByteString getGroupBytes();
-
-    /**
-     * <code>string tenant_id = 6;</code>
-     *
-     * @return The tenantId.
-     */
-    java.lang.String getTenantId();
-    /**
-     * <code>string tenant_id = 6;</code>
-     *
-     * @return The bytes for tenantId.
-     */
-    com.google.protobuf.ByteString getTenantIdBytes();
-
-    /**
-     * <code>.google.protobuf.Timestamp created_at = 7;</code>
-     *
-     * @return Whether the createdAt field is set.
-     */
-    boolean hasCreatedAt();
-    /**
-     * <code>.google.protobuf.Timestamp created_at = 7;</code>
-     *
-     * @return The createdAt.
-     */
-    com.google.protobuf.Timestamp getCreatedAt();
-    /** <code>.google.protobuf.Timestamp created_at = 7;</code> */
-    com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder();
-
-    /**
-     * <code>.google.protobuf.Timestamp updated_at = 8;</code>
-     *
-     * @return Whether the updatedAt field is set.
-     */
-    boolean hasUpdatedAt();
-    /**
-     * <code>.google.protobuf.Timestamp updated_at = 8;</code>
-     *
-     * @return The updatedAt.
-     */
-    com.google.protobuf.Timestamp getUpdatedAt();
-    /** <code>.google.protobuf.Timestamp updated_at = 8;</code> */
-    com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder();
-  }
-  /** Protobuf type {@code swisschain.sirius.vaultApi.wallets.WalletGenerationRequest} */
-  public static final class WalletGenerationRequest extends com.google.protobuf.GeneratedMessageV3
-      implements
-      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.WalletGenerationRequest)
-      WalletGenerationRequestOrBuilder {
-    private static final long serialVersionUID = 0L;
+    private long id_;
+    private volatile java.lang.Object blockchainId_;
+    private int networkType_;
+    private volatile java.lang.Object protocolCode_;
+    private volatile java.lang.Object group_;
+    private volatile java.lang.Object tenantId_;
+    private com.google.protobuf.Timestamp createdAt_;
+    private com.google.protobuf.Timestamp updatedAt_;
+    private byte memoizedIsInitialized = -1;
     // Use WalletGenerationRequest.newBuilder() to construct.
     private WalletGenerationRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private WalletGenerationRequest() {
       blockchainId_ = "";
       networkType_ = 0;
       protocolCode_ = "";
       group_ = "";
       tenantId_ = "";
-    }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new WalletGenerationRequest();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
     }
 
     private WalletGenerationRequest(
@@ -5431,6 +6155,192 @@ public final class WalletsOuterClass {
           .internal_static_swisschain_sirius_vaultApi_wallets_WalletGenerationRequest_descriptor;
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .WalletGenerationRequest
+        parseFrom(java.nio.ByteBuffer data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .WalletGenerationRequest
+        parseFrom(
+            java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .WalletGenerationRequest
+        parseFrom(com.google.protobuf.ByteString data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .WalletGenerationRequest
+        parseFrom(
+            com.google.protobuf.ByteString data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .WalletGenerationRequest
+        parseFrom(byte[] data) throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .WalletGenerationRequest
+        parseFrom(byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .WalletGenerationRequest
+        parseFrom(java.io.InputStream input) throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .WalletGenerationRequest
+        parseFrom(
+            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+          PARSER, input, extensionRegistry);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .WalletGenerationRequest
+        parseDelimitedFrom(java.io.InputStream input) throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .WalletGenerationRequest
+        parseDelimitedFrom(
+            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
+          PARSER, input, extensionRegistry);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .WalletGenerationRequest
+        parseFrom(com.google.protobuf.CodedInputStream input) throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .WalletGenerationRequest
+        parseFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+          PARSER, input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+
+    public static Builder newBuilder(
+        io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.WalletGenerationRequest
+            prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .WalletGenerationRequest
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<WalletGenerationRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new WalletGenerationRequest();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
@@ -5456,8 +6366,6 @@ public final class WalletsOuterClass {
                   .class);
     }
 
-    public static final int ID_FIELD_NUMBER = 1;
-    private long id_;
     /**
      * <code>int64 id = 1;</code>
      *
@@ -5468,8 +6376,6 @@ public final class WalletsOuterClass {
       return id_;
     }
 
-    public static final int BLOCKCHAIN_ID_FIELD_NUMBER = 2;
-    private volatile java.lang.Object blockchainId_;
     /**
      * <code>string blockchain_id = 2;</code>
      *
@@ -5487,6 +6393,7 @@ public final class WalletsOuterClass {
         return s;
       }
     }
+
     /**
      * <code>string blockchain_id = 2;</code>
      *
@@ -5505,8 +6412,6 @@ public final class WalletsOuterClass {
       }
     }
 
-    public static final int NETWORK_TYPE_FIELD_NUMBER = 3;
-    private int networkType_;
     /**
      * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
      *
@@ -5516,6 +6421,7 @@ public final class WalletsOuterClass {
     public int getNetworkTypeValue() {
       return networkType_;
     }
+
     /**
      * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
      *
@@ -5531,8 +6437,6 @@ public final class WalletsOuterClass {
           : result;
     }
 
-    public static final int PROTOCOL_CODE_FIELD_NUMBER = 4;
-    private volatile java.lang.Object protocolCode_;
     /**
      * <code>string protocol_code = 4;</code>
      *
@@ -5550,6 +6454,7 @@ public final class WalletsOuterClass {
         return s;
       }
     }
+
     /**
      * <code>string protocol_code = 4;</code>
      *
@@ -5568,8 +6473,6 @@ public final class WalletsOuterClass {
       }
     }
 
-    public static final int GROUP_FIELD_NUMBER = 5;
-    private volatile java.lang.Object group_;
     /**
      * <code>string group = 5;</code>
      *
@@ -5587,6 +6490,7 @@ public final class WalletsOuterClass {
         return s;
       }
     }
+
     /**
      * <code>string group = 5;</code>
      *
@@ -5605,8 +6509,6 @@ public final class WalletsOuterClass {
       }
     }
 
-    public static final int TENANT_ID_FIELD_NUMBER = 6;
-    private volatile java.lang.Object tenantId_;
     /**
      * <code>string tenant_id = 6;</code>
      *
@@ -5624,6 +6526,7 @@ public final class WalletsOuterClass {
         return s;
       }
     }
+
     /**
      * <code>string tenant_id = 6;</code>
      *
@@ -5642,8 +6545,6 @@ public final class WalletsOuterClass {
       }
     }
 
-    public static final int CREATED_AT_FIELD_NUMBER = 7;
-    private com.google.protobuf.Timestamp createdAt_;
     /**
      * <code>.google.protobuf.Timestamp created_at = 7;</code>
      *
@@ -5653,6 +6554,7 @@ public final class WalletsOuterClass {
     public boolean hasCreatedAt() {
       return createdAt_ != null;
     }
+
     /**
      * <code>.google.protobuf.Timestamp created_at = 7;</code>
      *
@@ -5662,14 +6564,13 @@ public final class WalletsOuterClass {
     public com.google.protobuf.Timestamp getCreatedAt() {
       return createdAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createdAt_;
     }
+
     /** <code>.google.protobuf.Timestamp created_at = 7;</code> */
     @java.lang.Override
     public com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder() {
       return getCreatedAt();
     }
 
-    public static final int UPDATED_AT_FIELD_NUMBER = 8;
-    private com.google.protobuf.Timestamp updatedAt_;
     /**
      * <code>.google.protobuf.Timestamp updated_at = 8;</code>
      *
@@ -5679,6 +6580,7 @@ public final class WalletsOuterClass {
     public boolean hasUpdatedAt() {
       return updatedAt_ != null;
     }
+
     /**
      * <code>.google.protobuf.Timestamp updated_at = 8;</code>
      *
@@ -5688,13 +6590,12 @@ public final class WalletsOuterClass {
     public com.google.protobuf.Timestamp getUpdatedAt() {
       return updatedAt_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updatedAt_;
     }
+
     /** <code>.google.protobuf.Timestamp updated_at = 8;</code> */
     @java.lang.Override
     public com.google.protobuf.TimestampOrBuilder getUpdatedAtOrBuilder() {
       return getUpdatedAt();
     }
-
-    private byte memoizedIsInitialized = -1;
 
     @java.lang.Override
     public final boolean isInitialized() {
@@ -5851,169 +6752,9 @@ public final class WalletsOuterClass {
       return hash;
     }
 
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .WalletGenerationRequest
-        parseFrom(java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .WalletGenerationRequest
-        parseFrom(
-            java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .WalletGenerationRequest
-        parseFrom(com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .WalletGenerationRequest
-        parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .WalletGenerationRequest
-        parseFrom(byte[] data) throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .WalletGenerationRequest
-        parseFrom(byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .WalletGenerationRequest
-        parseFrom(java.io.InputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .WalletGenerationRequest
-        parseFrom(
-            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .WalletGenerationRequest
-        parseDelimitedFrom(java.io.InputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .WalletGenerationRequest
-        parseDelimitedFrom(
-            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .WalletGenerationRequest
-        parseFrom(com.google.protobuf.CodedInputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .WalletGenerationRequest
-        parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
     @java.lang.Override
     public Builder newBuilderForType() {
       return newBuilder();
-    }
-
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-
-    public static Builder newBuilder(
-        io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.WalletGenerationRequest
-            prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
     @java.lang.Override
@@ -6027,6 +6768,18 @@ public final class WalletsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<WalletGenerationRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.WalletGenerationRequest
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /** Protobuf type {@code swisschain.sirius.vaultApi.wallets.WalletGenerationRequest} */
     public static final class Builder
         extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
@@ -6039,6 +6792,36 @@ public final class WalletsOuterClass {
             .wallets
             .WalletsOuterClass
             .WalletGenerationRequestOrBuilder {
+      private long id_;
+      private java.lang.Object blockchainId_ = "";
+      private int networkType_ = 0;
+      private java.lang.Object protocolCode_ = "";
+      private java.lang.Object group_ = "";
+      private java.lang.Object tenantId_ = "";
+      private com.google.protobuf.Timestamp createdAt_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              com.google.protobuf.Timestamp,
+              com.google.protobuf.Timestamp.Builder,
+              com.google.protobuf.TimestampOrBuilder>
+          createdAtBuilder_;
+      private com.google.protobuf.Timestamp updatedAt_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              com.google.protobuf.Timestamp,
+              com.google.protobuf.Timestamp.Builder,
+              com.google.protobuf.TimestampOrBuilder>
+          updatedAtBuilder_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.WalletGenerationRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -6072,17 +6855,6 @@ public final class WalletsOuterClass {
                     .WalletGenerationRequest
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.WalletGenerationRequest.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -6331,7 +7103,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private long id_;
       /**
        * <code>int64 id = 1;</code>
        *
@@ -6341,6 +7112,7 @@ public final class WalletsOuterClass {
       public long getId() {
         return id_;
       }
+
       /**
        * <code>int64 id = 1;</code>
        *
@@ -6353,6 +7125,7 @@ public final class WalletsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>int64 id = 1;</code>
        *
@@ -6365,7 +7138,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private java.lang.Object blockchainId_ = "";
       /**
        * <code>string blockchain_id = 2;</code>
        *
@@ -6382,6 +7154,23 @@ public final class WalletsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string blockchain_id = 2;</code>
+       *
+       * @param value The blockchainId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBlockchainId(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        blockchainId_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string blockchain_id = 2;</code>
        *
@@ -6398,32 +7187,7 @@ public final class WalletsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string blockchain_id = 2;</code>
-       *
-       * @param value The blockchainId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBlockchainId(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        blockchainId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string blockchain_id = 2;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearBlockchainId() {
-
-        blockchainId_ = getDefaultInstance().getBlockchainId();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string blockchain_id = 2;</code>
        *
@@ -6441,7 +7205,18 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private int networkType_ = 0;
+      /**
+       * <code>string blockchain_id = 2;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearBlockchainId() {
+
+        blockchainId_ = getDefaultInstance().getBlockchainId();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
        *
@@ -6451,6 +7226,7 @@ public final class WalletsOuterClass {
       public int getNetworkTypeValue() {
         return networkType_;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
        *
@@ -6463,6 +7239,7 @@ public final class WalletsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
        *
@@ -6477,6 +7254,7 @@ public final class WalletsOuterClass {
             ? io.swisschain.sirius.vaultApi.generated.common.Common.NetworkType.UNRECOGNIZED
             : result;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
        *
@@ -6493,6 +7271,7 @@ public final class WalletsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 3;</code>
        *
@@ -6505,7 +7284,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private java.lang.Object protocolCode_ = "";
       /**
        * <code>string protocol_code = 4;</code>
        *
@@ -6522,6 +7300,23 @@ public final class WalletsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string protocol_code = 4;</code>
+       *
+       * @param value The protocolCode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setProtocolCode(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        protocolCode_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string protocol_code = 4;</code>
        *
@@ -6538,32 +7333,7 @@ public final class WalletsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string protocol_code = 4;</code>
-       *
-       * @param value The protocolCode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setProtocolCode(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        protocolCode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string protocol_code = 4;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearProtocolCode() {
-
-        protocolCode_ = getDefaultInstance().getProtocolCode();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string protocol_code = 4;</code>
        *
@@ -6581,7 +7351,18 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private java.lang.Object group_ = "";
+      /**
+       * <code>string protocol_code = 4;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearProtocolCode() {
+
+        protocolCode_ = getDefaultInstance().getProtocolCode();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string group = 5;</code>
        *
@@ -6598,6 +7379,23 @@ public final class WalletsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string group = 5;</code>
+       *
+       * @param value The group to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGroup(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        group_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string group = 5;</code>
        *
@@ -6614,32 +7412,7 @@ public final class WalletsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string group = 5;</code>
-       *
-       * @param value The group to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGroup(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        group_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string group = 5;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearGroup() {
-
-        group_ = getDefaultInstance().getGroup();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string group = 5;</code>
        *
@@ -6657,7 +7430,18 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private java.lang.Object tenantId_ = "";
+      /**
+       * <code>string group = 5;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearGroup() {
+
+        group_ = getDefaultInstance().getGroup();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string tenant_id = 6;</code>
        *
@@ -6674,6 +7458,23 @@ public final class WalletsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string tenant_id = 6;</code>
+       *
+       * @param value The tenantId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTenantId(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        tenantId_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string tenant_id = 6;</code>
        *
@@ -6690,32 +7491,7 @@ public final class WalletsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string tenant_id = 6;</code>
-       *
-       * @param value The tenantId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTenantId(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        tenantId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string tenant_id = 6;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearTenantId() {
-
-        tenantId_ = getDefaultInstance().getTenantId();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string tenant_id = 6;</code>
        *
@@ -6733,12 +7509,18 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Timestamp createdAt_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.Timestamp,
-              com.google.protobuf.Timestamp.Builder,
-              com.google.protobuf.TimestampOrBuilder>
-          createdAtBuilder_;
+      /**
+       * <code>string tenant_id = 6;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearTenantId() {
+
+        tenantId_ = getDefaultInstance().getTenantId();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>.google.protobuf.Timestamp created_at = 7;</code>
        *
@@ -6747,6 +7529,7 @@ public final class WalletsOuterClass {
       public boolean hasCreatedAt() {
         return createdAtBuilder_ != null || createdAt_ != null;
       }
+
       /**
        * <code>.google.protobuf.Timestamp created_at = 7;</code>
        *
@@ -6761,6 +7544,7 @@ public final class WalletsOuterClass {
           return createdAtBuilder_.getMessage();
         }
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 7;</code> */
       public Builder setCreatedAt(com.google.protobuf.Timestamp value) {
         if (createdAtBuilder_ == null) {
@@ -6775,6 +7559,7 @@ public final class WalletsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 7;</code> */
       public Builder setCreatedAt(com.google.protobuf.Timestamp.Builder builderForValue) {
         if (createdAtBuilder_ == null) {
@@ -6786,6 +7571,7 @@ public final class WalletsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 7;</code> */
       public Builder mergeCreatedAt(com.google.protobuf.Timestamp value) {
         if (createdAtBuilder_ == null) {
@@ -6804,6 +7590,7 @@ public final class WalletsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 7;</code> */
       public Builder clearCreatedAt() {
         if (createdAtBuilder_ == null) {
@@ -6816,12 +7603,14 @@ public final class WalletsOuterClass {
 
         return this;
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 7;</code> */
       public com.google.protobuf.Timestamp.Builder getCreatedAtBuilder() {
 
         onChanged();
         return getCreatedAtFieldBuilder().getBuilder();
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 7;</code> */
       public com.google.protobuf.TimestampOrBuilder getCreatedAtOrBuilder() {
         if (createdAtBuilder_ != null) {
@@ -6832,6 +7621,7 @@ public final class WalletsOuterClass {
               : createdAt_;
         }
       }
+
       /** <code>.google.protobuf.Timestamp created_at = 7;</code> */
       private com.google.protobuf.SingleFieldBuilderV3<
               com.google.protobuf.Timestamp,
@@ -6850,12 +7640,6 @@ public final class WalletsOuterClass {
         return createdAtBuilder_;
       }
 
-      private com.google.protobuf.Timestamp updatedAt_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.Timestamp,
-              com.google.protobuf.Timestamp.Builder,
-              com.google.protobuf.TimestampOrBuilder>
-          updatedAtBuilder_;
       /**
        * <code>.google.protobuf.Timestamp updated_at = 8;</code>
        *
@@ -6981,16 +7765,42 @@ public final class WalletsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.wallets.WalletGenerationRequest)
     }
+  }
 
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.WalletGenerationRequest)
+  /**
+   * Protobuf type {@code swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestRequest}
+   */
+  public static final class ConfirmWalletGenerationRequestRequest
+      extends com.google.protobuf.GeneratedMessageV3
+      implements
+      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestRequest)
+      ConfirmWalletGenerationRequestRequestOrBuilder {
+    public static final int REQUEST_ID_FIELD_NUMBER = 1;
+    public static final int WALLET_GENERATION_REQUEST_ID_FIELD_NUMBER = 2;
+    public static final int ADDRESS_FIELD_NUMBER = 3;
+    public static final int PUBLIC_KEY_FIELD_NUMBER = 4;
+    public static final int SIGNATURE_FIELD_NUMBER = 5;
+    public static final int HOST_PROCESS_ID_FIELD_NUMBER = 6;
+    private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestRequest)
     private static final io.swisschain
             .sirius
             .vaultApi
             .generated
             .wallets
             .WalletsOuterClass
-            .WalletGenerationRequest
+            .ConfirmWalletGenerationRequestRequest
         DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<ConfirmWalletGenerationRequestRequest> PARSER =
+        new com.google.protobuf.AbstractParser<ConfirmWalletGenerationRequestRequest>() {
+          @java.lang.Override
+          public ConfirmWalletGenerationRequestRequest parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new ConfirmWalletGenerationRequestRequest(input, extensionRegistry);
+          }
+        };
 
     static {
       DEFAULT_INSTANCE =
@@ -7000,156 +7810,27 @@ public final class WalletsOuterClass {
               .generated
               .wallets
               .WalletsOuterClass
-              .WalletGenerationRequest();
+              .ConfirmWalletGenerationRequestRequest();
     }
 
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .WalletGenerationRequest
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<WalletGenerationRequest> PARSER =
-        new com.google.protobuf.AbstractParser<WalletGenerationRequest>() {
-          @java.lang.Override
-          public WalletGenerationRequest parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new WalletGenerationRequest(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<WalletGenerationRequest> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<WalletGenerationRequest> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.WalletGenerationRequest
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  public interface ConfirmWalletGenerationRequestRequestOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestRequest)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The requestId.
-     */
-    java.lang.String getRequestId();
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The bytes for requestId.
-     */
-    com.google.protobuf.ByteString getRequestIdBytes();
-
-    /**
-     * <code>int64 wallet_generation_request_id = 2;</code>
-     *
-     * @return The walletGenerationRequestId.
-     */
-    long getWalletGenerationRequestId();
-
-    /**
-     * <code>string address = 3;</code>
-     *
-     * @return The address.
-     */
-    java.lang.String getAddress();
-    /**
-     * <code>string address = 3;</code>
-     *
-     * @return The bytes for address.
-     */
-    com.google.protobuf.ByteString getAddressBytes();
-
-    /**
-     * <code>string public_key = 4;</code>
-     *
-     * @return The publicKey.
-     */
-    java.lang.String getPublicKey();
-    /**
-     * <code>string public_key = 4;</code>
-     *
-     * @return The bytes for publicKey.
-     */
-    com.google.protobuf.ByteString getPublicKeyBytes();
-
-    /**
-     * <code>string signature = 5;</code>
-     *
-     * @return The signature.
-     */
-    java.lang.String getSignature();
-    /**
-     * <code>string signature = 5;</code>
-     *
-     * @return The bytes for signature.
-     */
-    com.google.protobuf.ByteString getSignatureBytes();
-
-    /**
-     * <code>string host_process_id = 6;</code>
-     *
-     * @return The hostProcessId.
-     */
-    java.lang.String getHostProcessId();
-    /**
-     * <code>string host_process_id = 6;</code>
-     *
-     * @return The bytes for hostProcessId.
-     */
-    com.google.protobuf.ByteString getHostProcessIdBytes();
-  }
-  /**
-   * Protobuf type {@code swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestRequest}
-   */
-  public static final class ConfirmWalletGenerationRequestRequest
-      extends com.google.protobuf.GeneratedMessageV3
-      implements
-      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestRequest)
-      ConfirmWalletGenerationRequestRequestOrBuilder {
-    private static final long serialVersionUID = 0L;
+    private volatile java.lang.Object requestId_;
+    private long walletGenerationRequestId_;
+    private volatile java.lang.Object address_;
+    private volatile java.lang.Object publicKey_;
+    private volatile java.lang.Object signature_;
+    private volatile java.lang.Object hostProcessId_;
+    private byte memoizedIsInitialized = -1;
     // Use ConfirmWalletGenerationRequestRequest.newBuilder() to construct.
     private ConfirmWalletGenerationRequestRequest(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private ConfirmWalletGenerationRequestRequest() {
       requestId_ = "";
       address_ = "";
       publicKey_ = "";
       signature_ = "";
       hostProcessId_ = "";
-    }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new ConfirmWalletGenerationRequestRequest();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
     }
 
     private ConfirmWalletGenerationRequestRequest(
@@ -7237,360 +7918,6 @@ public final class WalletsOuterClass {
           .wallets
           .WalletsOuterClass
           .internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestRequest_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestRequest_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .ConfirmWalletGenerationRequestRequest
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .ConfirmWalletGenerationRequestRequest
-                  .Builder
-                  .class);
-    }
-
-    public static final int REQUEST_ID_FIELD_NUMBER = 1;
-    private volatile java.lang.Object requestId_;
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The requestId.
-     */
-    @java.lang.Override
-    public java.lang.String getRequestId() {
-      java.lang.Object ref = requestId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        requestId_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The bytes for requestId.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getRequestIdBytes() {
-      java.lang.Object ref = requestId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        requestId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int WALLET_GENERATION_REQUEST_ID_FIELD_NUMBER = 2;
-    private long walletGenerationRequestId_;
-    /**
-     * <code>int64 wallet_generation_request_id = 2;</code>
-     *
-     * @return The walletGenerationRequestId.
-     */
-    @java.lang.Override
-    public long getWalletGenerationRequestId() {
-      return walletGenerationRequestId_;
-    }
-
-    public static final int ADDRESS_FIELD_NUMBER = 3;
-    private volatile java.lang.Object address_;
-    /**
-     * <code>string address = 3;</code>
-     *
-     * @return The address.
-     */
-    @java.lang.Override
-    public java.lang.String getAddress() {
-      java.lang.Object ref = address_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        address_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string address = 3;</code>
-     *
-     * @return The bytes for address.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getAddressBytes() {
-      java.lang.Object ref = address_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        address_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int PUBLIC_KEY_FIELD_NUMBER = 4;
-    private volatile java.lang.Object publicKey_;
-    /**
-     * <code>string public_key = 4;</code>
-     *
-     * @return The publicKey.
-     */
-    @java.lang.Override
-    public java.lang.String getPublicKey() {
-      java.lang.Object ref = publicKey_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        publicKey_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string public_key = 4;</code>
-     *
-     * @return The bytes for publicKey.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getPublicKeyBytes() {
-      java.lang.Object ref = publicKey_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        publicKey_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int SIGNATURE_FIELD_NUMBER = 5;
-    private volatile java.lang.Object signature_;
-    /**
-     * <code>string signature = 5;</code>
-     *
-     * @return The signature.
-     */
-    @java.lang.Override
-    public java.lang.String getSignature() {
-      java.lang.Object ref = signature_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        signature_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string signature = 5;</code>
-     *
-     * @return The bytes for signature.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getSignatureBytes() {
-      java.lang.Object ref = signature_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        signature_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int HOST_PROCESS_ID_FIELD_NUMBER = 6;
-    private volatile java.lang.Object hostProcessId_;
-    /**
-     * <code>string host_process_id = 6;</code>
-     *
-     * @return The hostProcessId.
-     */
-    @java.lang.Override
-    public java.lang.String getHostProcessId() {
-      java.lang.Object ref = hostProcessId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        hostProcessId_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string host_process_id = 6;</code>
-     *
-     * @return The bytes for hostProcessId.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getHostProcessIdBytes() {
-      java.lang.Object ref = hostProcessId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        hostProcessId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (!getRequestIdBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, requestId_);
-      }
-      if (walletGenerationRequestId_ != 0L) {
-        output.writeInt64(2, walletGenerationRequestId_);
-      }
-      if (!getAddressBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, address_);
-      }
-      if (!getPublicKeyBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, publicKey_);
-      }
-      if (!getSignatureBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, signature_);
-      }
-      if (!getHostProcessIdBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, hostProcessId_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!getRequestIdBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, requestId_);
-      }
-      if (walletGenerationRequestId_ != 0L) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeInt64Size(2, walletGenerationRequestId_);
-      }
-      if (!getAddressBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, address_);
-      }
-      if (!getPublicKeyBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, publicKey_);
-      }
-      if (!getSignatureBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, signature_);
-      }
-      if (!getHostProcessIdBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, hostProcessId_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .ConfirmWalletGenerationRequestRequest)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .ConfirmWalletGenerationRequestRequest
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .wallets
-                      .WalletsOuterClass
-                      .ConfirmWalletGenerationRequestRequest)
-                  obj;
-
-      if (!getRequestId().equals(other.getRequestId())) return false;
-      if (getWalletGenerationRequestId() != other.getWalletGenerationRequestId()) return false;
-      if (!getAddress().equals(other.getAddress())) return false;
-      if (!getPublicKey().equals(other.getPublicKey())) return false;
-      if (!getSignature().equals(other.getSignature())) return false;
-      if (!getHostProcessId().equals(other.getHostProcessId())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REQUEST_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRequestId().hashCode();
-      hash = (37 * hash) + WALLET_GENERATION_REQUEST_ID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(getWalletGenerationRequestId());
-      hash = (37 * hash) + ADDRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getAddress().hashCode();
-      hash = (37 * hash) + PUBLIC_KEY_FIELD_NUMBER;
-      hash = (53 * hash) + getPublicKey().hashCode();
-      hash = (37 * hash) + SIGNATURE_FIELD_NUMBER;
-      hash = (53 * hash) + getSignature().hashCode();
-      hash = (37 * hash) + HOST_PROCESS_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getHostProcessId().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -7743,11 +8070,6 @@ public final class WalletsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -7764,6 +8086,382 @@ public final class WalletsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestRequest
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<ConfirmWalletGenerationRequestRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new ConfirmWalletGenerationRequestRequest();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .ConfirmWalletGenerationRequestRequest
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .ConfirmWalletGenerationRequestRequest
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The requestId.
+     */
+    @java.lang.Override
+    public java.lang.String getRequestId() {
+      java.lang.Object ref = requestId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        requestId_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The bytes for requestId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getRequestIdBytes() {
+      java.lang.Object ref = requestId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        requestId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>int64 wallet_generation_request_id = 2;</code>
+     *
+     * @return The walletGenerationRequestId.
+     */
+    @java.lang.Override
+    public long getWalletGenerationRequestId() {
+      return walletGenerationRequestId_;
+    }
+
+    /**
+     * <code>string address = 3;</code>
+     *
+     * @return The address.
+     */
+    @java.lang.Override
+    public java.lang.String getAddress() {
+      java.lang.Object ref = address_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        address_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string address = 3;</code>
+     *
+     * @return The bytes for address.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getAddressBytes() {
+      java.lang.Object ref = address_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        address_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>string public_key = 4;</code>
+     *
+     * @return The publicKey.
+     */
+    @java.lang.Override
+    public java.lang.String getPublicKey() {
+      java.lang.Object ref = publicKey_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        publicKey_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string public_key = 4;</code>
+     *
+     * @return The bytes for publicKey.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getPublicKeyBytes() {
+      java.lang.Object ref = publicKey_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        publicKey_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>string signature = 5;</code>
+     *
+     * @return The signature.
+     */
+    @java.lang.Override
+    public java.lang.String getSignature() {
+      java.lang.Object ref = signature_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        signature_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string signature = 5;</code>
+     *
+     * @return The bytes for signature.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getSignatureBytes() {
+      java.lang.Object ref = signature_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        signature_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>string host_process_id = 6;</code>
+     *
+     * @return The hostProcessId.
+     */
+    @java.lang.Override
+    public java.lang.String getHostProcessId() {
+      java.lang.Object ref = hostProcessId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        hostProcessId_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string host_process_id = 6;</code>
+     *
+     * @return The bytes for hostProcessId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getHostProcessIdBytes() {
+      java.lang.Object ref = hostProcessId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        hostProcessId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (!getRequestIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, requestId_);
+      }
+      if (walletGenerationRequestId_ != 0L) {
+        output.writeInt64(2, walletGenerationRequestId_);
+      }
+      if (!getAddressBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, address_);
+      }
+      if (!getPublicKeyBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, publicKey_);
+      }
+      if (!getSignatureBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, signature_);
+      }
+      if (!getHostProcessIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, hostProcessId_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getRequestIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, requestId_);
+      }
+      if (walletGenerationRequestId_ != 0L) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeInt64Size(2, walletGenerationRequestId_);
+      }
+      if (!getAddressBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, address_);
+      }
+      if (!getPublicKeyBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, publicKey_);
+      }
+      if (!getSignatureBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, signature_);
+      }
+      if (!getHostProcessIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, hostProcessId_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .ConfirmWalletGenerationRequestRequest)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .ConfirmWalletGenerationRequestRequest
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .wallets
+                      .WalletsOuterClass
+                      .ConfirmWalletGenerationRequestRequest)
+                  obj;
+
+      if (!getRequestId().equals(other.getRequestId())) return false;
+      if (getWalletGenerationRequestId() != other.getWalletGenerationRequestId()) return false;
+      if (!getAddress().equals(other.getAddress())) return false;
+      if (!getPublicKey().equals(other.getPublicKey())) return false;
+      if (!getSignature().equals(other.getSignature())) return false;
+      if (!getHostProcessId().equals(other.getHostProcessId())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + REQUEST_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRequestId().hashCode();
+      hash = (37 * hash) + WALLET_GENERATION_REQUEST_ID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(getWalletGenerationRequestId());
+      hash = (37 * hash) + ADDRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getAddress().hashCode();
+      hash = (37 * hash) + PUBLIC_KEY_FIELD_NUMBER;
+      hash = (53 * hash) + getPublicKey().hashCode();
+      hash = (37 * hash) + SIGNATURE_FIELD_NUMBER;
+      hash = (53 * hash) + getSignature().hashCode();
+      hash = (37 * hash) + HOST_PROCESS_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getHostProcessId().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -7775,6 +8473,24 @@ public final class WalletsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ConfirmWalletGenerationRequestRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestRequest
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestRequest}
@@ -7790,6 +8506,24 @@ public final class WalletsOuterClass {
             .wallets
             .WalletsOuterClass
             .ConfirmWalletGenerationRequestRequestOrBuilder {
+      private java.lang.Object requestId_ = "";
+      private long walletGenerationRequestId_;
+      private java.lang.Object address_ = "";
+      private java.lang.Object publicKey_ = "";
+      private java.lang.Object signature_ = "";
+      private java.lang.Object hostProcessId_ = "";
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.ConfirmWalletGenerationRequestRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -7823,17 +8557,6 @@ public final class WalletsOuterClass {
                     .ConfirmWalletGenerationRequestRequest
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.ConfirmWalletGenerationRequestRequest.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -8079,7 +8802,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private java.lang.Object requestId_ = "";
       /**
        * <code>string request_id = 1;</code>
        *
@@ -8096,6 +8818,23 @@ public final class WalletsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string request_id = 1;</code>
+       *
+       * @param value The requestId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRequestId(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        requestId_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string request_id = 1;</code>
        *
@@ -8112,32 +8851,7 @@ public final class WalletsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string request_id = 1;</code>
-       *
-       * @param value The requestId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRequestId(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        requestId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string request_id = 1;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearRequestId() {
-
-        requestId_ = getDefaultInstance().getRequestId();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string request_id = 1;</code>
        *
@@ -8155,7 +8869,18 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private long walletGenerationRequestId_;
+      /**
+       * <code>string request_id = 1;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearRequestId() {
+
+        requestId_ = getDefaultInstance().getRequestId();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>int64 wallet_generation_request_id = 2;</code>
        *
@@ -8165,6 +8890,7 @@ public final class WalletsOuterClass {
       public long getWalletGenerationRequestId() {
         return walletGenerationRequestId_;
       }
+
       /**
        * <code>int64 wallet_generation_request_id = 2;</code>
        *
@@ -8177,6 +8903,7 @@ public final class WalletsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>int64 wallet_generation_request_id = 2;</code>
        *
@@ -8189,7 +8916,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private java.lang.Object address_ = "";
       /**
        * <code>string address = 3;</code>
        *
@@ -8206,6 +8932,23 @@ public final class WalletsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string address = 3;</code>
+       *
+       * @param value The address to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAddress(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        address_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string address = 3;</code>
        *
@@ -8222,32 +8965,7 @@ public final class WalletsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string address = 3;</code>
-       *
-       * @param value The address to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAddress(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        address_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string address = 3;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearAddress() {
-
-        address_ = getDefaultInstance().getAddress();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string address = 3;</code>
        *
@@ -8265,7 +8983,18 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private java.lang.Object publicKey_ = "";
+      /**
+       * <code>string address = 3;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearAddress() {
+
+        address_ = getDefaultInstance().getAddress();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string public_key = 4;</code>
        *
@@ -8282,6 +9011,23 @@ public final class WalletsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string public_key = 4;</code>
+       *
+       * @param value The publicKey to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPublicKey(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        publicKey_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string public_key = 4;</code>
        *
@@ -8298,32 +9044,7 @@ public final class WalletsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string public_key = 4;</code>
-       *
-       * @param value The publicKey to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPublicKey(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        publicKey_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string public_key = 4;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearPublicKey() {
-
-        publicKey_ = getDefaultInstance().getPublicKey();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string public_key = 4;</code>
        *
@@ -8341,7 +9062,18 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private java.lang.Object signature_ = "";
+      /**
+       * <code>string public_key = 4;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearPublicKey() {
+
+        publicKey_ = getDefaultInstance().getPublicKey();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string signature = 5;</code>
        *
@@ -8358,6 +9090,23 @@ public final class WalletsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string signature = 5;</code>
+       *
+       * @param value The signature to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSignature(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        signature_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string signature = 5;</code>
        *
@@ -8374,32 +9123,7 @@ public final class WalletsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string signature = 5;</code>
-       *
-       * @param value The signature to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSignature(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        signature_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string signature = 5;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearSignature() {
-
-        signature_ = getDefaultInstance().getSignature();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string signature = 5;</code>
        *
@@ -8417,7 +9141,18 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private java.lang.Object hostProcessId_ = "";
+      /**
+       * <code>string signature = 5;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearSignature() {
+
+        signature_ = getDefaultInstance().getSignature();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string host_process_id = 6;</code>
        *
@@ -8434,6 +9169,23 @@ public final class WalletsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string host_process_id = 6;</code>
+       *
+       * @param value The hostProcessId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHostProcessId(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        hostProcessId_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string host_process_id = 6;</code>
        *
@@ -8450,32 +9202,7 @@ public final class WalletsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string host_process_id = 6;</code>
-       *
-       * @param value The hostProcessId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHostProcessId(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        hostProcessId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string host_process_id = 6;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearHostProcessId() {
-
-        hostProcessId_ = getDefaultInstance().getHostProcessId();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string host_process_id = 6;</code>
        *
@@ -8489,6 +9216,18 @@ public final class WalletsOuterClass {
         checkByteStringIsUtf8(value);
 
         hostProcessId_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string host_process_id = 6;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearHostProcessId() {
+
+        hostProcessId_ = getDefaultInstance().getHostProcessId();
         onChanged();
         return this;
       }
@@ -8507,16 +9246,38 @@ public final class WalletsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestRequest)
     }
+  }
 
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestRequest)
+  /**
+   * Protobuf type {@code swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponse}
+   */
+  public static final class ConfirmWalletGenerationRequestResponse
+      extends com.google.protobuf.GeneratedMessageV3
+      implements
+      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponse)
+      ConfirmWalletGenerationRequestResponseOrBuilder {
+    public static final int RESPONSE_FIELD_NUMBER = 1;
+    public static final int ERROR_FIELD_NUMBER = 2;
+    private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponse)
     private static final io.swisschain
             .sirius
             .vaultApi
             .generated
             .wallets
             .WalletsOuterClass
-            .ConfirmWalletGenerationRequestRequest
+            .ConfirmWalletGenerationRequestResponse
         DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<ConfirmWalletGenerationRequestResponse> PARSER =
+        new com.google.protobuf.AbstractParser<ConfirmWalletGenerationRequestResponse>() {
+          @java.lang.Override
+          public ConfirmWalletGenerationRequestResponse parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new ConfirmWalletGenerationRequestResponse(input, extensionRegistry);
+          }
+        };
 
     static {
       DEFAULT_INSTANCE =
@@ -8526,169 +9287,19 @@ public final class WalletsOuterClass {
               .generated
               .wallets
               .WalletsOuterClass
-              .ConfirmWalletGenerationRequestRequest();
+              .ConfirmWalletGenerationRequestResponse();
     }
 
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestRequest
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<ConfirmWalletGenerationRequestRequest> PARSER =
-        new com.google.protobuf.AbstractParser<ConfirmWalletGenerationRequestRequest>() {
-          @java.lang.Override
-          public ConfirmWalletGenerationRequestRequest parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new ConfirmWalletGenerationRequestRequest(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<ConfirmWalletGenerationRequestRequest> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ConfirmWalletGenerationRequestRequest> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestRequest
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  public interface ConfirmWalletGenerationRequestResponseOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponse)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return Whether the response field is set.
-     */
-    boolean hasResponse();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return The response.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestResponseBody
-        getResponse();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestResponseBodyOrBuilder
-        getResponseOrBuilder();
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return Whether the error field is set.
-     */
-    boolean hasError();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return The error.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestErrorResponseBody
-        getError();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody error = 2;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestErrorResponseBodyOrBuilder
-        getErrorOrBuilder();
-
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestResponse
-            .BodyCase
-        getBodyCase();
-  }
-  /**
-   * Protobuf type {@code swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponse}
-   */
-  public static final class ConfirmWalletGenerationRequestResponse
-      extends com.google.protobuf.GeneratedMessageV3
-      implements
-      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponse)
-      ConfirmWalletGenerationRequestResponseOrBuilder {
-    private static final long serialVersionUID = 0L;
+    private int bodyCase_ = 0;
+    private java.lang.Object body_;
+    private byte memoizedIsInitialized = -1;
     // Use ConfirmWalletGenerationRequestResponse.newBuilder() to construct.
     private ConfirmWalletGenerationRequestResponse(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
 
-    private ConfirmWalletGenerationRequestResponse() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new ConfirmWalletGenerationRequestResponse();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
+        private ConfirmWalletGenerationRequestResponse() {};
 
     private ConfirmWalletGenerationRequestResponse(
         com.google.protobuf.CodedInputStream input,
@@ -8821,366 +9432,6 @@ public final class WalletsOuterClass {
           .wallets
           .WalletsOuterClass
           .internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponse_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponse_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .ConfirmWalletGenerationRequestResponse
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .ConfirmWalletGenerationRequestResponse
-                  .Builder
-                  .class);
-    }
-
-    private int bodyCase_ = 0;
-    private java.lang.Object body_;
-
-    public enum BodyCase
-        implements
-            com.google.protobuf.Internal.EnumLite,
-            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      RESPONSE(1),
-      ERROR(2),
-      BODY_NOT_SET(0);
-      private final int value;
-
-      private BodyCase(int value) {
-        this.value = value;
-      }
-      /**
-       * @param value The number of the enum to look for.
-       * @return The enum associated with the given number.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static BodyCase valueOf(int value) {
-        return forNumber(value);
-      }
-
-      public static BodyCase forNumber(int value) {
-        switch (value) {
-          case 1:
-            return RESPONSE;
-          case 2:
-            return ERROR;
-          case 0:
-            return BODY_NOT_SET;
-          default:
-            return null;
-        }
-      }
-
-      public int getNumber() {
-        return this.value;
-      }
-    };
-
-    public BodyCase getBodyCase() {
-      return BodyCase.forNumber(bodyCase_);
-    }
-
-    public static final int RESPONSE_FIELD_NUMBER = 1;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return Whether the response field is set.
-     */
-    @java.lang.Override
-    public boolean hasResponse() {
-      return bodyCase_ == 1;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return The response.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestResponseBody
-        getResponse() {
-      if (bodyCase_ == 1) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .wallets
-                .WalletsOuterClass
-                .ConfirmWalletGenerationRequestResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .ConfirmWalletGenerationRequestResponseBody.getDefaultInstance();
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestResponseBodyOrBuilder
-        getResponseOrBuilder() {
-      if (bodyCase_ == 1) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .wallets
-                .WalletsOuterClass
-                .ConfirmWalletGenerationRequestResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .ConfirmWalletGenerationRequestResponseBody.getDefaultInstance();
-    }
-
-    public static final int ERROR_FIELD_NUMBER = 2;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return Whether the error field is set.
-     */
-    @java.lang.Override
-    public boolean hasError() {
-      return bodyCase_ == 2;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return The error.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestErrorResponseBody
-        getError() {
-      if (bodyCase_ == 2) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .wallets
-                .WalletsOuterClass
-                .ConfirmWalletGenerationRequestErrorResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .ConfirmWalletGenerationRequestErrorResponseBody.getDefaultInstance();
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody error = 2;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestErrorResponseBodyOrBuilder
-        getErrorOrBuilder() {
-      if (bodyCase_ == 2) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .wallets
-                .WalletsOuterClass
-                .ConfirmWalletGenerationRequestErrorResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .ConfirmWalletGenerationRequestErrorResponseBody.getDefaultInstance();
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (bodyCase_ == 1) {
-        output.writeMessage(
-            1,
-            (io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .wallets
-                    .WalletsOuterClass
-                    .ConfirmWalletGenerationRequestResponseBody)
-                body_);
-      }
-      if (bodyCase_ == 2) {
-        output.writeMessage(
-            2,
-            (io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .wallets
-                    .WalletsOuterClass
-                    .ConfirmWalletGenerationRequestErrorResponseBody)
-                body_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (bodyCase_ == 1) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeMessageSize(
-                1,
-                (io.swisschain
-                        .sirius
-                        .vaultApi
-                        .generated
-                        .wallets
-                        .WalletsOuterClass
-                        .ConfirmWalletGenerationRequestResponseBody)
-                    body_);
-      }
-      if (bodyCase_ == 2) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeMessageSize(
-                2,
-                (io.swisschain
-                        .sirius
-                        .vaultApi
-                        .generated
-                        .wallets
-                        .WalletsOuterClass
-                        .ConfirmWalletGenerationRequestErrorResponseBody)
-                    body_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .ConfirmWalletGenerationRequestResponse)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .ConfirmWalletGenerationRequestResponse
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .wallets
-                      .WalletsOuterClass
-                      .ConfirmWalletGenerationRequestResponse)
-                  obj;
-
-      if (!getBodyCase().equals(other.getBodyCase())) return false;
-      switch (bodyCase_) {
-        case 1:
-          if (!getResponse().equals(other.getResponse())) return false;
-          break;
-        case 2:
-          if (!getError().equals(other.getError())) return false;
-          break;
-        case 0:
-        default:
-      }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      switch (bodyCase_) {
-        case 1:
-          hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
-          hash = (53 * hash) + getResponse().hashCode();
-          break;
-        case 2:
-          hash = (37 * hash) + ERROR_FIELD_NUMBER;
-          hash = (53 * hash) + getError().hashCode();
-          break;
-        case 0:
-        default:
-      }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -9333,11 +9584,6 @@ public final class WalletsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -9354,6 +9600,354 @@ public final class WalletsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestResponse
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<ConfirmWalletGenerationRequestResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new ConfirmWalletGenerationRequestResponse();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .ConfirmWalletGenerationRequestResponse
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .ConfirmWalletGenerationRequestResponse
+                  .Builder
+                  .class);
+    }
+
+    public BodyCase getBodyCase() {
+      return BodyCase.forNumber(bodyCase_);
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return Whether the response field is set.
+     */
+    @java.lang.Override
+    public boolean hasResponse() {
+      return bodyCase_ == 1;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return The response.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestResponseBody
+        getResponse() {
+      if (bodyCase_ == 1) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .wallets
+                .WalletsOuterClass
+                .ConfirmWalletGenerationRequestResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .ConfirmWalletGenerationRequestResponseBody.getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestResponseBodyOrBuilder
+        getResponseOrBuilder() {
+      if (bodyCase_ == 1) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .wallets
+                .WalletsOuterClass
+                .ConfirmWalletGenerationRequestResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .ConfirmWalletGenerationRequestResponseBody.getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return Whether the error field is set.
+     */
+    @java.lang.Override
+    public boolean hasError() {
+      return bodyCase_ == 2;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return The error.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestErrorResponseBody
+        getError() {
+      if (bodyCase_ == 2) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .wallets
+                .WalletsOuterClass
+                .ConfirmWalletGenerationRequestErrorResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .ConfirmWalletGenerationRequestErrorResponseBody.getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody error = 2;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestErrorResponseBodyOrBuilder
+        getErrorOrBuilder() {
+      if (bodyCase_ == 2) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .wallets
+                .WalletsOuterClass
+                .ConfirmWalletGenerationRequestErrorResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .ConfirmWalletGenerationRequestErrorResponseBody.getDefaultInstance();
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (bodyCase_ == 1) {
+        output.writeMessage(
+            1,
+            (io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .wallets
+                    .WalletsOuterClass
+                    .ConfirmWalletGenerationRequestResponseBody)
+                body_);
+      }
+      if (bodyCase_ == 2) {
+        output.writeMessage(
+            2,
+            (io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .wallets
+                    .WalletsOuterClass
+                    .ConfirmWalletGenerationRequestErrorResponseBody)
+                body_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (bodyCase_ == 1) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeMessageSize(
+                1,
+                (io.swisschain
+                        .sirius
+                        .vaultApi
+                        .generated
+                        .wallets
+                        .WalletsOuterClass
+                        .ConfirmWalletGenerationRequestResponseBody)
+                    body_);
+      }
+      if (bodyCase_ == 2) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeMessageSize(
+                2,
+                (io.swisschain
+                        .sirius
+                        .vaultApi
+                        .generated
+                        .wallets
+                        .WalletsOuterClass
+                        .ConfirmWalletGenerationRequestErrorResponseBody)
+                    body_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .ConfirmWalletGenerationRequestResponse)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .ConfirmWalletGenerationRequestResponse
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .wallets
+                      .WalletsOuterClass
+                      .ConfirmWalletGenerationRequestResponse)
+                  obj;
+
+      if (!getBodyCase().equals(other.getBodyCase())) return false;
+      switch (bodyCase_) {
+        case 1:
+          if (!getResponse().equals(other.getResponse())) return false;
+          break;
+        case 2:
+          if (!getError().equals(other.getError())) return false;
+          break;
+        case 0:
+        default:
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      switch (bodyCase_) {
+        case 1:
+          hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
+          hash = (53 * hash) + getResponse().hashCode();
+          break;
+        case 2:
+          hash = (37 * hash) + ERROR_FIELD_NUMBER;
+          hash = (53 * hash) + getError().hashCode();
+          break;
+        case 0:
+        default:
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -9365,6 +9959,64 @@ public final class WalletsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ConfirmWalletGenerationRequestResponse> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestResponse
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+public enum BodyCase
+        implements
+            com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      RESPONSE(1),
+      ERROR(2),
+      BODY_NOT_SET(0);
+      private final int value;
+
+      private BodyCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static BodyCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static BodyCase forNumber(int value) {
+        switch (value) {
+          case 1:
+            return RESPONSE;
+          case 2:
+            return ERROR;
+          case 0:
+            return BODY_NOT_SET;
+          default:
+            return null;
+        }
+      }
+
+      public int getNumber() {
+        return this.value;
+      }
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponse}
@@ -9380,6 +10032,68 @@ public final class WalletsOuterClass {
             .wallets
             .WalletsOuterClass
             .ConfirmWalletGenerationRequestResponseOrBuilder {
+      private int bodyCase_ = 0;
+      private java.lang.Object body_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .ConfirmWalletGenerationRequestResponseBody,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .ConfirmWalletGenerationRequestResponseBody
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .ConfirmWalletGenerationRequestResponseBodyOrBuilder>
+          responseBuilder_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .ConfirmWalletGenerationRequestErrorResponseBody,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .ConfirmWalletGenerationRequestErrorResponseBody
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .ConfirmWalletGenerationRequestErrorResponseBodyOrBuilder>
+          errorBuilder_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.ConfirmWalletGenerationRequestResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -9413,17 +10127,6 @@ public final class WalletsOuterClass {
                     .ConfirmWalletGenerationRequestResponse
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.ConfirmWalletGenerationRequestResponse.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -9661,9 +10364,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private int bodyCase_ = 0;
-      private java.lang.Object body_;
-
       public BodyCase getBodyCase() {
         return BodyCase.forNumber(bodyCase_);
       }
@@ -9675,30 +10375,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .ConfirmWalletGenerationRequestResponseBody,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .ConfirmWalletGenerationRequestResponseBody
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .ConfirmWalletGenerationRequestResponseBodyOrBuilder>
-          responseBuilder_;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
@@ -9710,6 +10386,7 @@ public final class WalletsOuterClass {
       public boolean hasResponse() {
         return bodyCase_ == 1;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
@@ -9747,6 +10424,7 @@ public final class WalletsOuterClass {
               .ConfirmWalletGenerationRequestResponseBody.getDefaultInstance();
         }
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
@@ -9773,6 +10451,7 @@ public final class WalletsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
@@ -9797,6 +10476,7 @@ public final class WalletsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
@@ -9848,6 +10528,7 @@ public final class WalletsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
@@ -9869,6 +10550,7 @@ public final class WalletsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
@@ -9885,6 +10567,7 @@ public final class WalletsOuterClass {
           getResponseBuilder() {
         return getResponseFieldBuilder().getBuilder();
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
@@ -9916,6 +10599,7 @@ public final class WalletsOuterClass {
               .ConfirmWalletGenerationRequestResponseBody.getDefaultInstance();
         }
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody response = 1;
@@ -9993,30 +10677,6 @@ public final class WalletsOuterClass {
         return responseBuilder_;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .ConfirmWalletGenerationRequestErrorResponseBody,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .ConfirmWalletGenerationRequestErrorResponseBody
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .ConfirmWalletGenerationRequestErrorResponseBodyOrBuilder>
-          errorBuilder_;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody error = 2;
@@ -10325,76 +10985,8 @@ public final class WalletsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponse)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponse)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestResponse
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .ConfirmWalletGenerationRequestResponse();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestResponse
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<ConfirmWalletGenerationRequestResponse> PARSER =
-        new com.google.protobuf.AbstractParser<ConfirmWalletGenerationRequestResponse>() {
-          @java.lang.Override
-          public ConfirmWalletGenerationRequestResponse parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new ConfirmWalletGenerationRequestResponse(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<ConfirmWalletGenerationRequestResponse> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ConfirmWalletGenerationRequestResponse> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestResponse
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface ConfirmWalletGenerationRequestResponseBodyOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody)
-      com.google.protobuf.MessageOrBuilder {}
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody}
@@ -10405,6 +10997,40 @@ public final class WalletsOuterClass {
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody)
       ConfirmWalletGenerationRequestResponseBodyOrBuilder {
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestResponseBody
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<ConfirmWalletGenerationRequestResponseBody>
+        PARSER =
+            new com.google.protobuf.AbstractParser<ConfirmWalletGenerationRequestResponseBody>() {
+              @java.lang.Override
+              public ConfirmWalletGenerationRequestResponseBody parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+                return new ConfirmWalletGenerationRequestResponseBody(input, extensionRegistry);
+              }
+            };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .ConfirmWalletGenerationRequestResponseBody();
+    }
+
+    private byte memoizedIsInitialized = -1;
+
     // Use ConfirmWalletGenerationRequestResponseBody.newBuilder() to construct.
     private ConfirmWalletGenerationRequestResponseBody(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -10412,17 +11038,6 @@ public final class WalletsOuterClass {
     }
 
     private ConfirmWalletGenerationRequestResponseBody() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new ConfirmWalletGenerationRequestResponseBody();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
 
     private ConfirmWalletGenerationRequestResponseBody(
         com.google.protobuf.CodedInputStream input,
@@ -10469,108 +11084,6 @@ public final class WalletsOuterClass {
           .wallets
           .WalletsOuterClass
           .internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponseBody_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponseBody_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .ConfirmWalletGenerationRequestResponseBody
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .ConfirmWalletGenerationRequestResponseBody
-                  .Builder
-                  .class);
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .ConfirmWalletGenerationRequestResponseBody)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .ConfirmWalletGenerationRequestResponseBody
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .wallets
-                      .WalletsOuterClass
-                      .ConfirmWalletGenerationRequestResponseBody)
-                  obj;
-
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -10723,11 +11236,6 @@ public final class WalletsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -10744,6 +11252,137 @@ public final class WalletsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestResponseBody
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<ConfirmWalletGenerationRequestResponseBody> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new ConfirmWalletGenerationRequestResponseBody();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .ConfirmWalletGenerationRequestResponseBody
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .ConfirmWalletGenerationRequestResponseBody
+                  .Builder
+                  .class);
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .ConfirmWalletGenerationRequestResponseBody)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .ConfirmWalletGenerationRequestResponseBody
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .wallets
+                      .WalletsOuterClass
+                      .ConfirmWalletGenerationRequestResponseBody)
+                  obj;
+
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -10755,6 +11394,25 @@ public final class WalletsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ConfirmWalletGenerationRequestResponseBody>
+        getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestResponseBody
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody}
@@ -10770,6 +11428,17 @@ public final class WalletsOuterClass {
             .wallets
             .WalletsOuterClass
             .ConfirmWalletGenerationRequestResponseBodyOrBuilder {
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.ConfirmWalletGenerationRequestResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -10803,17 +11472,6 @@ public final class WalletsOuterClass {
                     .ConfirmWalletGenerationRequestResponseBody
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.ConfirmWalletGenerationRequestResponseBody.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -11032,117 +11690,8 @@ public final class WalletsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestResponseBody)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestResponseBody
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .ConfirmWalletGenerationRequestResponseBody();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestResponseBody
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<ConfirmWalletGenerationRequestResponseBody>
-        PARSER =
-            new com.google.protobuf.AbstractParser<ConfirmWalletGenerationRequestResponseBody>() {
-              @java.lang.Override
-              public ConfirmWalletGenerationRequestResponseBody parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-                return new ConfirmWalletGenerationRequestResponseBody(input, extensionRegistry);
-              }
-            };
-
-    public static com.google.protobuf.Parser<ConfirmWalletGenerationRequestResponseBody> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ConfirmWalletGenerationRequestResponseBody>
-        getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestResponseBody
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface ConfirmWalletGenerationRequestErrorResponseBodyOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for errorCode.
-     */
-    int getErrorCodeValue();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The errorCode.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestErrorResponseBody
-            .ErrorCode
-        getErrorCode();
-
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The errorMessage.
-     */
-    java.lang.String getErrorMessage();
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The bytes for errorMessage.
-     */
-    com.google.protobuf.ByteString getErrorMessageBytes();
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody}
@@ -11152,29 +11701,56 @@ public final class WalletsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody)
       ConfirmWalletGenerationRequestErrorResponseBodyOrBuilder {
+    public static final int ERROR_CODE_FIELD_NUMBER = 1;
+    public static final int ERROR_MESSAGE_FIELD_NUMBER = 2;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestErrorResponseBody
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<ConfirmWalletGenerationRequestErrorResponseBody>
+        PARSER =
+            new com.google.protobuf.AbstractParser<
+                ConfirmWalletGenerationRequestErrorResponseBody>() {
+              @java.lang.Override
+              public ConfirmWalletGenerationRequestErrorResponseBody parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+                return new ConfirmWalletGenerationRequestErrorResponseBody(
+                    input, extensionRegistry);
+              }
+            };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .ConfirmWalletGenerationRequestErrorResponseBody();
+    }
+
+    private int errorCode_;
+    private volatile java.lang.Object errorMessage_;
+    private byte memoizedIsInitialized = -1;
+
     // Use ConfirmWalletGenerationRequestErrorResponseBody.newBuilder() to construct.
     private ConfirmWalletGenerationRequestErrorResponseBody(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private ConfirmWalletGenerationRequestErrorResponseBody() {
       errorCode_ = 0;
       errorMessage_ = "";
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new ConfirmWalletGenerationRequestErrorResponseBody();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private ConfirmWalletGenerationRequestErrorResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -11234,329 +11810,6 @@ public final class WalletsOuterClass {
           .wallets
           .WalletsOuterClass
           .internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestErrorResponseBody_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestErrorResponseBody_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .ConfirmWalletGenerationRequestErrorResponseBody
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .ConfirmWalletGenerationRequestErrorResponseBody
-                  .Builder
-                  .class);
-    }
-
-    /**
-     * Protobuf enum {@code
-     * swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode}
-     */
-    public enum ErrorCode implements com.google.protobuf.ProtocolMessageEnum {
-      /** <code>UNKNOWN = 0;</code> */
-      UNKNOWN(0),
-      /** <code>INVALID_PARAMETERS = 1;</code> */
-      INVALID_PARAMETERS(1),
-      UNRECOGNIZED(-1),
-      ;
-
-      /** <code>UNKNOWN = 0;</code> */
-      public static final int UNKNOWN_VALUE = 0;
-      /** <code>INVALID_PARAMETERS = 1;</code> */
-      public static final int INVALID_PARAMETERS_VALUE = 1;
-
-      public final int getNumber() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static ErrorCode valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static ErrorCode forNumber(int value) {
-        switch (value) {
-          case 0:
-            return UNKNOWN;
-          case 1:
-            return INVALID_PARAMETERS;
-          default:
-            return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalGetValueMap() {
-        return internalValueMap;
-      }
-
-      private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
-            public ErrorCode findValueByNumber(int number) {
-              return ErrorCode.forNumber(number);
-            }
-          };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(ordinal());
-      }
-
-      public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
-        return getDescriptor();
-      }
-
-      public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
-        return io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestErrorResponseBody
-            .getDescriptor()
-            .getEnumTypes()
-            .get(0);
-      }
-
-      private static final ErrorCode[] VALUES = values();
-
-      public static ErrorCode valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int value;
-
-      private ErrorCode(int value) {
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode)
-    }
-
-    public static final int ERROR_CODE_FIELD_NUMBER = 1;
-    private int errorCode_;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for errorCode.
-     */
-    @java.lang.Override
-    public int getErrorCodeValue() {
-      return errorCode_;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The errorCode.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestErrorResponseBody
-            .ErrorCode
-        getErrorCode() {
-      @SuppressWarnings("deprecation")
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .ConfirmWalletGenerationRequestErrorResponseBody
-              .ErrorCode
-          result =
-              io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-                  .ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode.valueOf(errorCode_);
-      return result == null
-          ? io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .ConfirmWalletGenerationRequestErrorResponseBody
-              .ErrorCode
-              .UNRECOGNIZED
-          : result;
-    }
-
-    public static final int ERROR_MESSAGE_FIELD_NUMBER = 2;
-    private volatile java.lang.Object errorMessage_;
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The errorMessage.
-     */
-    @java.lang.Override
-    public java.lang.String getErrorMessage() {
-      java.lang.Object ref = errorMessage_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        errorMessage_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The bytes for errorMessage.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getErrorMessageBytes() {
-      java.lang.Object ref = errorMessage_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        errorMessage_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (errorCode_
-          != io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-              .ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
-        output.writeEnum(1, errorCode_);
-      }
-      if (!getErrorMessageBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, errorMessage_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (errorCode_
-          != io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-              .ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream.computeEnumSize(1, errorCode_);
-      }
-      if (!getErrorMessageBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, errorMessage_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .ConfirmWalletGenerationRequestErrorResponseBody)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .ConfirmWalletGenerationRequestErrorResponseBody
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .wallets
-                      .WalletsOuterClass
-                      .ConfirmWalletGenerationRequestErrorResponseBody)
-                  obj;
-
-      if (errorCode_ != other.errorCode_) return false;
-      if (!getErrorMessage().equals(other.getErrorMessage())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ERROR_CODE_FIELD_NUMBER;
-      hash = (53 * hash) + errorCode_;
-      hash = (37 * hash) + ERROR_MESSAGE_FIELD_NUMBER;
-      hash = (53 * hash) + getErrorMessage().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -11709,11 +11962,6 @@ public final class WalletsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -11730,6 +11978,250 @@ public final class WalletsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestErrorResponseBody
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<ConfirmWalletGenerationRequestErrorResponseBody>
+        parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new ConfirmWalletGenerationRequestErrorResponseBody();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestErrorResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .ConfirmWalletGenerationRequestErrorResponseBody
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .ConfirmWalletGenerationRequestErrorResponseBody
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for errorCode.
+     */
+    @java.lang.Override
+    public int getErrorCodeValue() {
+      return errorCode_;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The errorCode.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestErrorResponseBody
+            .ErrorCode
+        getErrorCode() {
+      @SuppressWarnings("deprecation")
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .ConfirmWalletGenerationRequestErrorResponseBody
+              .ErrorCode
+          result =
+              io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+                  .ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode.valueOf(errorCode_);
+      return result == null
+          ? io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .ConfirmWalletGenerationRequestErrorResponseBody
+              .ErrorCode
+              .UNRECOGNIZED
+          : result;
+    }
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The errorMessage.
+     */
+    @java.lang.Override
+    public java.lang.String getErrorMessage() {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        errorMessage_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The bytes for errorMessage.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getErrorMessageBytes() {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        errorMessage_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (errorCode_
+          != io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+              .ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
+        output.writeEnum(1, errorCode_);
+      }
+      if (!getErrorMessageBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, errorMessage_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (errorCode_
+          != io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+              .ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream.computeEnumSize(1, errorCode_);
+      }
+      if (!getErrorMessageBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, errorMessage_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .ConfirmWalletGenerationRequestErrorResponseBody)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .ConfirmWalletGenerationRequestErrorResponseBody
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .wallets
+                      .WalletsOuterClass
+                      .ConfirmWalletGenerationRequestErrorResponseBody)
+                  obj;
+
+      if (errorCode_ != other.errorCode_) return false;
+      if (!getErrorMessage().equals(other.getErrorMessage())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ERROR_CODE_FIELD_NUMBER;
+      hash = (53 * hash) + errorCode_;
+      hash = (37 * hash) + ERROR_MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getErrorMessage().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -11741,6 +12233,129 @@ public final class WalletsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ConfirmWalletGenerationRequestErrorResponseBody>
+        getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestErrorResponseBody
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+    /**
+     * Protobuf enum {@code
+     * swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode}
+     */
+    public enum ErrorCode implements com.google.protobuf.ProtocolMessageEnum {
+      /** <code>UNKNOWN = 0;</code> */
+      UNKNOWN(0),
+      /** <code>INVALID_PARAMETERS = 1;</code> */
+      INVALID_PARAMETERS(1),
+      UNRECOGNIZED(-1),
+      ;
+
+      /** <code>UNKNOWN = 0;</code> */
+      public static final int UNKNOWN_VALUE = 0;
+      /** <code>INVALID_PARAMETERS = 1;</code> */
+      public static final int INVALID_PARAMETERS_VALUE = 1;
+      private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
+            public ErrorCode findValueByNumber(int number) {
+              return ErrorCode.forNumber(number);
+            }
+          };
+      private static final ErrorCode[] VALUES = values();
+      private final int value;
+
+      private ErrorCode(int value) {
+        this.value = value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static ErrorCode valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static ErrorCode forNumber(int value) {
+        switch (value) {
+          case 0:
+            return UNKNOWN;
+          case 1:
+            return INVALID_PARAMETERS;
+          default:
+            return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalGetValueMap() {
+        return internalValueMap;
+      }
+
+      public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+        return io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .ConfirmWalletGenerationRequestErrorResponseBody
+            .getDescriptor()
+            .getEnumTypes()
+            .get(0);
+      }
+
+      public static ErrorCode valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(ordinal());
+      }
+
+      public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
+        return getDescriptor();
+      }
+
+      // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode)
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody}
@@ -11756,6 +12371,20 @@ public final class WalletsOuterClass {
             .wallets
             .WalletsOuterClass
             .ConfirmWalletGenerationRequestErrorResponseBodyOrBuilder {
+      private int errorCode_ = 0;
+      private java.lang.Object errorMessage_ = "";
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.ConfirmWalletGenerationRequestErrorResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -11789,17 +12418,6 @@ public final class WalletsOuterClass {
                     .ConfirmWalletGenerationRequestErrorResponseBody
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.ConfirmWalletGenerationRequestErrorResponseBody.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -12017,7 +12635,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private int errorCode_ = 0;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -12029,6 +12646,7 @@ public final class WalletsOuterClass {
       public int getErrorCodeValue() {
         return errorCode_;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -12043,6 +12661,7 @@ public final class WalletsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -12084,6 +12703,7 @@ public final class WalletsOuterClass {
                 .UNRECOGNIZED
             : result;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -12110,6 +12730,7 @@ public final class WalletsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -12124,7 +12745,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private java.lang.Object errorMessage_ = "";
       /**
        * <code>string error_message = 2;</code>
        *
@@ -12141,6 +12761,23 @@ public final class WalletsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string error_message = 2;</code>
+       *
+       * @param value The errorMessage to set.
+       * @return This builder for chaining.
+       */
+      public Builder setErrorMessage(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        errorMessage_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string error_message = 2;</code>
        *
@@ -12157,32 +12794,7 @@ public final class WalletsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string error_message = 2;</code>
-       *
-       * @param value The errorMessage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setErrorMessage(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        errorMessage_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string error_message = 2;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearErrorMessage() {
-
-        errorMessage_ = getDefaultInstance().getErrorMessage();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string error_message = 2;</code>
        *
@@ -12196,6 +12808,18 @@ public final class WalletsOuterClass {
         checkByteStringIsUtf8(value);
 
         errorMessage_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string error_message = 2;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearErrorMessage() {
+
+        errorMessage_ = getDefaultInstance().getErrorMessage();
         onChanged();
         return this;
       }
@@ -12214,16 +12838,41 @@ public final class WalletsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody)
     }
+  }
 
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.ConfirmWalletGenerationRequestErrorResponseBody)
+  /**
+   * Protobuf type {@code swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestRequest}
+   */
+  public static final class RejectWalletGenerationRequestRequest
+      extends com.google.protobuf.GeneratedMessageV3
+      implements
+      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestRequest)
+      RejectWalletGenerationRequestRequestOrBuilder {
+    public static final int REQUEST_ID_FIELD_NUMBER = 1;
+    public static final int WALLET_GENERATION_REQUEST_ID_FIELD_NUMBER = 2;
+    public static final int REASON_FIELD_NUMBER = 4;
+    public static final int REASON_MESSAGE_FIELD_NUMBER = 5;
+    public static final int HOST_PROCESS_ID_FIELD_NUMBER = 6;
+    private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestRequest)
     private static final io.swisschain
             .sirius
             .vaultApi
             .generated
             .wallets
             .WalletsOuterClass
-            .ConfirmWalletGenerationRequestErrorResponseBody
+            .RejectWalletGenerationRequestRequest
         DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<RejectWalletGenerationRequestRequest> PARSER =
+        new com.google.protobuf.AbstractParser<RejectWalletGenerationRequestRequest>() {
+          @java.lang.Override
+          public RejectWalletGenerationRequestRequest parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new RejectWalletGenerationRequestRequest(input, extensionRegistry);
+          }
+        };
 
     static {
       DEFAULT_INSTANCE =
@@ -12233,155 +12882,27 @@ public final class WalletsOuterClass {
               .generated
               .wallets
               .WalletsOuterClass
-              .ConfirmWalletGenerationRequestErrorResponseBody();
+              .RejectWalletGenerationRequestRequest();
     }
 
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestErrorResponseBody
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
+    private volatile java.lang.Object requestId_;
+    private long walletGenerationRequestId_;
+    private int reason_;
+    private volatile java.lang.Object reasonMessage_;
+    private volatile java.lang.Object hostProcessId_;
+    private byte memoizedIsInitialized = -1;
 
-    private static final com.google.protobuf.Parser<ConfirmWalletGenerationRequestErrorResponseBody>
-        PARSER =
-            new com.google.protobuf.AbstractParser<
-                ConfirmWalletGenerationRequestErrorResponseBody>() {
-              @java.lang.Override
-              public ConfirmWalletGenerationRequestErrorResponseBody parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-                return new ConfirmWalletGenerationRequestErrorResponseBody(
-                    input, extensionRegistry);
-              }
-            };
-
-    public static com.google.protobuf.Parser<ConfirmWalletGenerationRequestErrorResponseBody>
-        parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ConfirmWalletGenerationRequestErrorResponseBody>
-        getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .ConfirmWalletGenerationRequestErrorResponseBody
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  public interface RejectWalletGenerationRequestRequestOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestRequest)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The requestId.
-     */
-    java.lang.String getRequestId();
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The bytes for requestId.
-     */
-    com.google.protobuf.ByteString getRequestIdBytes();
-
-    /**
-     * <code>int64 wallet_generation_request_id = 2;</code>
-     *
-     * @return The walletGenerationRequestId.
-     */
-    long getWalletGenerationRequestId();
-
-    /**
-     * <code>.swisschain.sirius.vaultApi.wallets.RejectionReason reason = 4;</code>
-     *
-     * @return The enum numeric value on the wire for reason.
-     */
-    int getReasonValue();
-    /**
-     * <code>.swisschain.sirius.vaultApi.wallets.RejectionReason reason = 4;</code>
-     *
-     * @return The reason.
-     */
-    io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectionReason getReason();
-
-    /**
-     * <code>string reason_message = 5;</code>
-     *
-     * @return The reasonMessage.
-     */
-    java.lang.String getReasonMessage();
-    /**
-     * <code>string reason_message = 5;</code>
-     *
-     * @return The bytes for reasonMessage.
-     */
-    com.google.protobuf.ByteString getReasonMessageBytes();
-
-    /**
-     * <code>string host_process_id = 6;</code>
-     *
-     * @return The hostProcessId.
-     */
-    java.lang.String getHostProcessId();
-    /**
-     * <code>string host_process_id = 6;</code>
-     *
-     * @return The bytes for hostProcessId.
-     */
-    com.google.protobuf.ByteString getHostProcessIdBytes();
-  }
-  /**
-   * Protobuf type {@code swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestRequest}
-   */
-  public static final class RejectWalletGenerationRequestRequest
-      extends com.google.protobuf.GeneratedMessageV3
-      implements
-      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestRequest)
-      RejectWalletGenerationRequestRequestOrBuilder {
-    private static final long serialVersionUID = 0L;
     // Use RejectWalletGenerationRequestRequest.newBuilder() to construct.
     private RejectWalletGenerationRequestRequest(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private RejectWalletGenerationRequestRequest() {
       requestId_ = "";
       reason_ = 0;
       reasonMessage_ = "";
       hostProcessId_ = "";
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new RejectWalletGenerationRequestRequest();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private RejectWalletGenerationRequestRequest(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -12460,316 +12981,6 @@ public final class WalletsOuterClass {
           .wallets
           .WalletsOuterClass
           .internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestRequest_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestRequest_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .RejectWalletGenerationRequestRequest
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .RejectWalletGenerationRequestRequest
-                  .Builder
-                  .class);
-    }
-
-    public static final int REQUEST_ID_FIELD_NUMBER = 1;
-    private volatile java.lang.Object requestId_;
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The requestId.
-     */
-    @java.lang.Override
-    public java.lang.String getRequestId() {
-      java.lang.Object ref = requestId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        requestId_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string request_id = 1;</code>
-     *
-     * @return The bytes for requestId.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getRequestIdBytes() {
-      java.lang.Object ref = requestId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        requestId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int WALLET_GENERATION_REQUEST_ID_FIELD_NUMBER = 2;
-    private long walletGenerationRequestId_;
-    /**
-     * <code>int64 wallet_generation_request_id = 2;</code>
-     *
-     * @return The walletGenerationRequestId.
-     */
-    @java.lang.Override
-    public long getWalletGenerationRequestId() {
-      return walletGenerationRequestId_;
-    }
-
-    public static final int REASON_FIELD_NUMBER = 4;
-    private int reason_;
-    /**
-     * <code>.swisschain.sirius.vaultApi.wallets.RejectionReason reason = 4;</code>
-     *
-     * @return The enum numeric value on the wire for reason.
-     */
-    @java.lang.Override
-    public int getReasonValue() {
-      return reason_;
-    }
-    /**
-     * <code>.swisschain.sirius.vaultApi.wallets.RejectionReason reason = 4;</code>
-     *
-     * @return The reason.
-     */
-    @java.lang.Override
-    public io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectionReason
-        getReason() {
-      @SuppressWarnings("deprecation")
-      io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectionReason result =
-          io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectionReason.valueOf(
-              reason_);
-      return result == null
-          ? io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .RejectionReason
-              .UNRECOGNIZED
-          : result;
-    }
-
-    public static final int REASON_MESSAGE_FIELD_NUMBER = 5;
-    private volatile java.lang.Object reasonMessage_;
-    /**
-     * <code>string reason_message = 5;</code>
-     *
-     * @return The reasonMessage.
-     */
-    @java.lang.Override
-    public java.lang.String getReasonMessage() {
-      java.lang.Object ref = reasonMessage_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        reasonMessage_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string reason_message = 5;</code>
-     *
-     * @return The bytes for reasonMessage.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getReasonMessageBytes() {
-      java.lang.Object ref = reasonMessage_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        reasonMessage_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int HOST_PROCESS_ID_FIELD_NUMBER = 6;
-    private volatile java.lang.Object hostProcessId_;
-    /**
-     * <code>string host_process_id = 6;</code>
-     *
-     * @return The hostProcessId.
-     */
-    @java.lang.Override
-    public java.lang.String getHostProcessId() {
-      java.lang.Object ref = hostProcessId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        hostProcessId_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string host_process_id = 6;</code>
-     *
-     * @return The bytes for hostProcessId.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getHostProcessIdBytes() {
-      java.lang.Object ref = hostProcessId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        hostProcessId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (!getRequestIdBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, requestId_);
-      }
-      if (walletGenerationRequestId_ != 0L) {
-        output.writeInt64(2, walletGenerationRequestId_);
-      }
-      if (reason_
-          != io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectionReason.OTHER
-              .getNumber()) {
-        output.writeEnum(4, reason_);
-      }
-      if (!getReasonMessageBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, reasonMessage_);
-      }
-      if (!getHostProcessIdBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, hostProcessId_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!getRequestIdBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, requestId_);
-      }
-      if (walletGenerationRequestId_ != 0L) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeInt64Size(2, walletGenerationRequestId_);
-      }
-      if (reason_
-          != io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectionReason.OTHER
-              .getNumber()) {
-        size += com.google.protobuf.CodedOutputStream.computeEnumSize(4, reason_);
-      }
-      if (!getReasonMessageBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, reasonMessage_);
-      }
-      if (!getHostProcessIdBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, hostProcessId_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .RejectWalletGenerationRequestRequest)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .RejectWalletGenerationRequestRequest
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .wallets
-                      .WalletsOuterClass
-                      .RejectWalletGenerationRequestRequest)
-                  obj;
-
-      if (!getRequestId().equals(other.getRequestId())) return false;
-      if (getWalletGenerationRequestId() != other.getWalletGenerationRequestId()) return false;
-      if (reason_ != other.reason_) return false;
-      if (!getReasonMessage().equals(other.getReasonMessage())) return false;
-      if (!getHostProcessId().equals(other.getHostProcessId())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REQUEST_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRequestId().hashCode();
-      hash = (37 * hash) + WALLET_GENERATION_REQUEST_ID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(getWalletGenerationRequestId());
-      hash = (37 * hash) + REASON_FIELD_NUMBER;
-      hash = (53 * hash) + reason_;
-      hash = (37 * hash) + REASON_MESSAGE_FIELD_NUMBER;
-      hash = (53 * hash) + getReasonMessage().hashCode();
-      hash = (37 * hash) + HOST_PROCESS_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getHostProcessId().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -12922,11 +13133,6 @@ public final class WalletsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -12943,6 +13149,339 @@ public final class WalletsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestRequest
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<RejectWalletGenerationRequestRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new RejectWalletGenerationRequestRequest();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .RejectWalletGenerationRequestRequest
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .RejectWalletGenerationRequestRequest
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The requestId.
+     */
+    @java.lang.Override
+    public java.lang.String getRequestId() {
+      java.lang.Object ref = requestId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        requestId_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string request_id = 1;</code>
+     *
+     * @return The bytes for requestId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getRequestIdBytes() {
+      java.lang.Object ref = requestId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        requestId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>int64 wallet_generation_request_id = 2;</code>
+     *
+     * @return The walletGenerationRequestId.
+     */
+    @java.lang.Override
+    public long getWalletGenerationRequestId() {
+      return walletGenerationRequestId_;
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.wallets.RejectionReason reason = 4;</code>
+     *
+     * @return The enum numeric value on the wire for reason.
+     */
+    @java.lang.Override
+    public int getReasonValue() {
+      return reason_;
+    }
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.wallets.RejectionReason reason = 4;</code>
+     *
+     * @return The reason.
+     */
+    @java.lang.Override
+    public io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectionReason
+        getReason() {
+      @SuppressWarnings("deprecation")
+      io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectionReason result =
+          io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectionReason.valueOf(
+              reason_);
+      return result == null
+          ? io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .RejectionReason
+              .UNRECOGNIZED
+          : result;
+    }
+
+    /**
+     * <code>string reason_message = 5;</code>
+     *
+     * @return The reasonMessage.
+     */
+    @java.lang.Override
+    public java.lang.String getReasonMessage() {
+      java.lang.Object ref = reasonMessage_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        reasonMessage_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string reason_message = 5;</code>
+     *
+     * @return The bytes for reasonMessage.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getReasonMessageBytes() {
+      java.lang.Object ref = reasonMessage_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        reasonMessage_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    /**
+     * <code>string host_process_id = 6;</code>
+     *
+     * @return The hostProcessId.
+     */
+    @java.lang.Override
+    public java.lang.String getHostProcessId() {
+      java.lang.Object ref = hostProcessId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        hostProcessId_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string host_process_id = 6;</code>
+     *
+     * @return The bytes for hostProcessId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getHostProcessIdBytes() {
+      java.lang.Object ref = hostProcessId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        hostProcessId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (!getRequestIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, requestId_);
+      }
+      if (walletGenerationRequestId_ != 0L) {
+        output.writeInt64(2, walletGenerationRequestId_);
+      }
+      if (reason_
+          != io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectionReason.OTHER
+              .getNumber()) {
+        output.writeEnum(4, reason_);
+      }
+      if (!getReasonMessageBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, reasonMessage_);
+      }
+      if (!getHostProcessIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, hostProcessId_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getRequestIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, requestId_);
+      }
+      if (walletGenerationRequestId_ != 0L) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeInt64Size(2, walletGenerationRequestId_);
+      }
+      if (reason_
+          != io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectionReason.OTHER
+              .getNumber()) {
+        size += com.google.protobuf.CodedOutputStream.computeEnumSize(4, reason_);
+      }
+      if (!getReasonMessageBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, reasonMessage_);
+      }
+      if (!getHostProcessIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, hostProcessId_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .RejectWalletGenerationRequestRequest)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .RejectWalletGenerationRequestRequest
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .wallets
+                      .WalletsOuterClass
+                      .RejectWalletGenerationRequestRequest)
+                  obj;
+
+      if (!getRequestId().equals(other.getRequestId())) return false;
+      if (getWalletGenerationRequestId() != other.getWalletGenerationRequestId()) return false;
+      if (reason_ != other.reason_) return false;
+      if (!getReasonMessage().equals(other.getReasonMessage())) return false;
+      if (!getHostProcessId().equals(other.getHostProcessId())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + REQUEST_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRequestId().hashCode();
+      hash = (37 * hash) + WALLET_GENERATION_REQUEST_ID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(getWalletGenerationRequestId());
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + reason_;
+      hash = (37 * hash) + REASON_MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getReasonMessage().hashCode();
+      hash = (37 * hash) + HOST_PROCESS_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getHostProcessId().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -12954,6 +13493,24 @@ public final class WalletsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RejectWalletGenerationRequestRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestRequest
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestRequest}
      */
@@ -12968,6 +13525,23 @@ public final class WalletsOuterClass {
             .wallets
             .WalletsOuterClass
             .RejectWalletGenerationRequestRequestOrBuilder {
+      private java.lang.Object requestId_ = "";
+      private long walletGenerationRequestId_;
+      private int reason_ = 0;
+      private java.lang.Object reasonMessage_ = "";
+      private java.lang.Object hostProcessId_ = "";
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectWalletGenerationRequestRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -13001,17 +13575,6 @@ public final class WalletsOuterClass {
                     .RejectWalletGenerationRequestRequest
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectWalletGenerationRequestRequest.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -13249,7 +13812,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private java.lang.Object requestId_ = "";
       /**
        * <code>string request_id = 1;</code>
        *
@@ -13266,6 +13828,23 @@ public final class WalletsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string request_id = 1;</code>
+       *
+       * @param value The requestId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRequestId(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        requestId_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string request_id = 1;</code>
        *
@@ -13282,32 +13861,7 @@ public final class WalletsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string request_id = 1;</code>
-       *
-       * @param value The requestId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRequestId(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        requestId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string request_id = 1;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearRequestId() {
-
-        requestId_ = getDefaultInstance().getRequestId();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string request_id = 1;</code>
        *
@@ -13325,7 +13879,18 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private long walletGenerationRequestId_;
+      /**
+       * <code>string request_id = 1;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearRequestId() {
+
+        requestId_ = getDefaultInstance().getRequestId();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>int64 wallet_generation_request_id = 2;</code>
        *
@@ -13335,6 +13900,7 @@ public final class WalletsOuterClass {
       public long getWalletGenerationRequestId() {
         return walletGenerationRequestId_;
       }
+
       /**
        * <code>int64 wallet_generation_request_id = 2;</code>
        *
@@ -13347,6 +13913,7 @@ public final class WalletsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>int64 wallet_generation_request_id = 2;</code>
        *
@@ -13359,7 +13926,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private int reason_ = 0;
       /**
        * <code>.swisschain.sirius.vaultApi.wallets.RejectionReason reason = 4;</code>
        *
@@ -13369,6 +13935,7 @@ public final class WalletsOuterClass {
       public int getReasonValue() {
         return reason_;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.wallets.RejectionReason reason = 4;</code>
        *
@@ -13381,6 +13948,7 @@ public final class WalletsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.wallets.RejectionReason reason = 4;</code>
        *
@@ -13404,6 +13972,7 @@ public final class WalletsOuterClass {
                 .UNRECOGNIZED
             : result;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.wallets.RejectionReason reason = 4;</code>
        *
@@ -13420,6 +13989,7 @@ public final class WalletsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>.swisschain.sirius.vaultApi.wallets.RejectionReason reason = 4;</code>
        *
@@ -13432,7 +14002,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private java.lang.Object reasonMessage_ = "";
       /**
        * <code>string reason_message = 5;</code>
        *
@@ -13449,6 +14018,23 @@ public final class WalletsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string reason_message = 5;</code>
+       *
+       * @param value The reasonMessage to set.
+       * @return This builder for chaining.
+       */
+      public Builder setReasonMessage(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        reasonMessage_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string reason_message = 5;</code>
        *
@@ -13465,32 +14051,7 @@ public final class WalletsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string reason_message = 5;</code>
-       *
-       * @param value The reasonMessage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReasonMessage(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        reasonMessage_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string reason_message = 5;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearReasonMessage() {
-
-        reasonMessage_ = getDefaultInstance().getReasonMessage();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string reason_message = 5;</code>
        *
@@ -13508,7 +14069,18 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private java.lang.Object hostProcessId_ = "";
+      /**
+       * <code>string reason_message = 5;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearReasonMessage() {
+
+        reasonMessage_ = getDefaultInstance().getReasonMessage();
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string host_process_id = 6;</code>
        *
@@ -13525,6 +14097,23 @@ public final class WalletsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string host_process_id = 6;</code>
+       *
+       * @param value The hostProcessId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHostProcessId(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        hostProcessId_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string host_process_id = 6;</code>
        *
@@ -13541,32 +14130,7 @@ public final class WalletsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string host_process_id = 6;</code>
-       *
-       * @param value The hostProcessId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHostProcessId(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        hostProcessId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string host_process_id = 6;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearHostProcessId() {
-
-        hostProcessId_ = getDefaultInstance().getHostProcessId();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string host_process_id = 6;</code>
        *
@@ -13580,6 +14144,18 @@ public final class WalletsOuterClass {
         checkByteStringIsUtf8(value);
 
         hostProcessId_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string host_process_id = 6;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearHostProcessId() {
+
+        hostProcessId_ = getDefaultInstance().getHostProcessId();
         onChanged();
         return this;
       }
@@ -13598,16 +14174,38 @@ public final class WalletsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestRequest)
     }
+  }
 
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestRequest)
+  /**
+   * Protobuf type {@code swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponse}
+   */
+  public static final class RejectWalletGenerationRequestResponse
+      extends com.google.protobuf.GeneratedMessageV3
+      implements
+      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponse)
+      RejectWalletGenerationRequestResponseOrBuilder {
+    public static final int RESPONSE_FIELD_NUMBER = 1;
+    public static final int ERROR_FIELD_NUMBER = 2;
+    private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponse)
     private static final io.swisschain
             .sirius
             .vaultApi
             .generated
             .wallets
             .WalletsOuterClass
-            .RejectWalletGenerationRequestRequest
+            .RejectWalletGenerationRequestResponse
         DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<RejectWalletGenerationRequestResponse> PARSER =
+        new com.google.protobuf.AbstractParser<RejectWalletGenerationRequestResponse>() {
+          @java.lang.Override
+          public RejectWalletGenerationRequestResponse parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new RejectWalletGenerationRequestResponse(input, extensionRegistry);
+          }
+        };
 
     static {
       DEFAULT_INSTANCE =
@@ -13617,169 +14215,19 @@ public final class WalletsOuterClass {
               .generated
               .wallets
               .WalletsOuterClass
-              .RejectWalletGenerationRequestRequest();
+              .RejectWalletGenerationRequestResponse();
     }
 
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestRequest
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<RejectWalletGenerationRequestRequest> PARSER =
-        new com.google.protobuf.AbstractParser<RejectWalletGenerationRequestRequest>() {
-          @java.lang.Override
-          public RejectWalletGenerationRequestRequest parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new RejectWalletGenerationRequestRequest(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<RejectWalletGenerationRequestRequest> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<RejectWalletGenerationRequestRequest> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestRequest
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  public interface RejectWalletGenerationRequestResponseOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponse)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return Whether the response field is set.
-     */
-    boolean hasResponse();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return The response.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestResponseBody
-        getResponse();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestResponseBodyOrBuilder
-        getResponseOrBuilder();
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return Whether the error field is set.
-     */
-    boolean hasError();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return The error.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestErrorResponseBody
-        getError();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody error = 2;
-     * </code>
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestErrorResponseBodyOrBuilder
-        getErrorOrBuilder();
-
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestResponse
-            .BodyCase
-        getBodyCase();
-  }
-  /**
-   * Protobuf type {@code swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponse}
-   */
-  public static final class RejectWalletGenerationRequestResponse
-      extends com.google.protobuf.GeneratedMessageV3
-      implements
-      // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponse)
-      RejectWalletGenerationRequestResponseOrBuilder {
-    private static final long serialVersionUID = 0L;
+    private int bodyCase_ = 0;
+    private java.lang.Object body_;
+    private byte memoizedIsInitialized = -1;
     // Use RejectWalletGenerationRequestResponse.newBuilder() to construct.
     private RejectWalletGenerationRequestResponse(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
 
-    private RejectWalletGenerationRequestResponse() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new RejectWalletGenerationRequestResponse();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
+        private RejectWalletGenerationRequestResponse() {};
 
     private RejectWalletGenerationRequestResponse(
         com.google.protobuf.CodedInputStream input,
@@ -13912,366 +14360,6 @@ public final class WalletsOuterClass {
           .wallets
           .WalletsOuterClass
           .internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponse_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponse_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .RejectWalletGenerationRequestResponse
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .RejectWalletGenerationRequestResponse
-                  .Builder
-                  .class);
-    }
-
-    private int bodyCase_ = 0;
-    private java.lang.Object body_;
-
-    public enum BodyCase
-        implements
-            com.google.protobuf.Internal.EnumLite,
-            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      RESPONSE(1),
-      ERROR(2),
-      BODY_NOT_SET(0);
-      private final int value;
-
-      private BodyCase(int value) {
-        this.value = value;
-      }
-      /**
-       * @param value The number of the enum to look for.
-       * @return The enum associated with the given number.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static BodyCase valueOf(int value) {
-        return forNumber(value);
-      }
-
-      public static BodyCase forNumber(int value) {
-        switch (value) {
-          case 1:
-            return RESPONSE;
-          case 2:
-            return ERROR;
-          case 0:
-            return BODY_NOT_SET;
-          default:
-            return null;
-        }
-      }
-
-      public int getNumber() {
-        return this.value;
-      }
-    };
-
-    public BodyCase getBodyCase() {
-      return BodyCase.forNumber(bodyCase_);
-    }
-
-    public static final int RESPONSE_FIELD_NUMBER = 1;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return Whether the response field is set.
-     */
-    @java.lang.Override
-    public boolean hasResponse() {
-      return bodyCase_ == 1;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
-     * </code>
-     *
-     * @return The response.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestResponseBody
-        getResponse() {
-      if (bodyCase_ == 1) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .wallets
-                .WalletsOuterClass
-                .RejectWalletGenerationRequestResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .RejectWalletGenerationRequestResponseBody.getDefaultInstance();
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestResponseBodyOrBuilder
-        getResponseOrBuilder() {
-      if (bodyCase_ == 1) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .wallets
-                .WalletsOuterClass
-                .RejectWalletGenerationRequestResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .RejectWalletGenerationRequestResponseBody.getDefaultInstance();
-    }
-
-    public static final int ERROR_FIELD_NUMBER = 2;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return Whether the error field is set.
-     */
-    @java.lang.Override
-    public boolean hasError() {
-      return bodyCase_ == 2;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody error = 2;
-     * </code>
-     *
-     * @return The error.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestErrorResponseBody
-        getError() {
-      if (bodyCase_ == 2) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .wallets
-                .WalletsOuterClass
-                .RejectWalletGenerationRequestErrorResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .RejectWalletGenerationRequestErrorResponseBody.getDefaultInstance();
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody error = 2;
-     * </code>
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestErrorResponseBodyOrBuilder
-        getErrorOrBuilder() {
-      if (bodyCase_ == 2) {
-        return (io.swisschain
-                .sirius
-                .vaultApi
-                .generated
-                .wallets
-                .WalletsOuterClass
-                .RejectWalletGenerationRequestErrorResponseBody)
-            body_;
-      }
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .RejectWalletGenerationRequestErrorResponseBody.getDefaultInstance();
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (bodyCase_ == 1) {
-        output.writeMessage(
-            1,
-            (io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .wallets
-                    .WalletsOuterClass
-                    .RejectWalletGenerationRequestResponseBody)
-                body_);
-      }
-      if (bodyCase_ == 2) {
-        output.writeMessage(
-            2,
-            (io.swisschain
-                    .sirius
-                    .vaultApi
-                    .generated
-                    .wallets
-                    .WalletsOuterClass
-                    .RejectWalletGenerationRequestErrorResponseBody)
-                body_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (bodyCase_ == 1) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeMessageSize(
-                1,
-                (io.swisschain
-                        .sirius
-                        .vaultApi
-                        .generated
-                        .wallets
-                        .WalletsOuterClass
-                        .RejectWalletGenerationRequestResponseBody)
-                    body_);
-      }
-      if (bodyCase_ == 2) {
-        size +=
-            com.google.protobuf.CodedOutputStream.computeMessageSize(
-                2,
-                (io.swisschain
-                        .sirius
-                        .vaultApi
-                        .generated
-                        .wallets
-                        .WalletsOuterClass
-                        .RejectWalletGenerationRequestErrorResponseBody)
-                    body_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .RejectWalletGenerationRequestResponse)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .RejectWalletGenerationRequestResponse
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .wallets
-                      .WalletsOuterClass
-                      .RejectWalletGenerationRequestResponse)
-                  obj;
-
-      if (!getBodyCase().equals(other.getBodyCase())) return false;
-      switch (bodyCase_) {
-        case 1:
-          if (!getResponse().equals(other.getResponse())) return false;
-          break;
-        case 2:
-          if (!getError().equals(other.getError())) return false;
-          break;
-        case 0:
-        default:
-      }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      switch (bodyCase_) {
-        case 1:
-          hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
-          hash = (53 * hash) + getResponse().hashCode();
-          break;
-        case 2:
-          hash = (37 * hash) + ERROR_FIELD_NUMBER;
-          hash = (53 * hash) + getError().hashCode();
-          break;
-        case 0:
-        default:
-      }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -14424,11 +14512,6 @@ public final class WalletsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -14445,6 +14528,354 @@ public final class WalletsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestResponse
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<RejectWalletGenerationRequestResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new RejectWalletGenerationRequestResponse();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .RejectWalletGenerationRequestResponse
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .RejectWalletGenerationRequestResponse
+                  .Builder
+                  .class);
+    }
+
+    public BodyCase getBodyCase() {
+      return BodyCase.forNumber(bodyCase_);
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return Whether the response field is set.
+     */
+    @java.lang.Override
+    public boolean hasResponse() {
+      return bodyCase_ == 1;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
+     * </code>
+     *
+     * @return The response.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestResponseBody
+        getResponse() {
+      if (bodyCase_ == 1) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .wallets
+                .WalletsOuterClass
+                .RejectWalletGenerationRequestResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .RejectWalletGenerationRequestResponseBody.getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestResponseBodyOrBuilder
+        getResponseOrBuilder() {
+      if (bodyCase_ == 1) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .wallets
+                .WalletsOuterClass
+                .RejectWalletGenerationRequestResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .RejectWalletGenerationRequestResponseBody.getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return Whether the error field is set.
+     */
+    @java.lang.Override
+    public boolean hasError() {
+      return bodyCase_ == 2;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody error = 2;
+     * </code>
+     *
+     * @return The error.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestErrorResponseBody
+        getError() {
+      if (bodyCase_ == 2) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .wallets
+                .WalletsOuterClass
+                .RejectWalletGenerationRequestErrorResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .RejectWalletGenerationRequestErrorResponseBody.getDefaultInstance();
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody error = 2;
+     * </code>
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestErrorResponseBodyOrBuilder
+        getErrorOrBuilder() {
+      if (bodyCase_ == 2) {
+        return (io.swisschain
+                .sirius
+                .vaultApi
+                .generated
+                .wallets
+                .WalletsOuterClass
+                .RejectWalletGenerationRequestErrorResponseBody)
+            body_;
+      }
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .RejectWalletGenerationRequestErrorResponseBody.getDefaultInstance();
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (bodyCase_ == 1) {
+        output.writeMessage(
+            1,
+            (io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .wallets
+                    .WalletsOuterClass
+                    .RejectWalletGenerationRequestResponseBody)
+                body_);
+      }
+      if (bodyCase_ == 2) {
+        output.writeMessage(
+            2,
+            (io.swisschain
+                    .sirius
+                    .vaultApi
+                    .generated
+                    .wallets
+                    .WalletsOuterClass
+                    .RejectWalletGenerationRequestErrorResponseBody)
+                body_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (bodyCase_ == 1) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeMessageSize(
+                1,
+                (io.swisschain
+                        .sirius
+                        .vaultApi
+                        .generated
+                        .wallets
+                        .WalletsOuterClass
+                        .RejectWalletGenerationRequestResponseBody)
+                    body_);
+      }
+      if (bodyCase_ == 2) {
+        size +=
+            com.google.protobuf.CodedOutputStream.computeMessageSize(
+                2,
+                (io.swisschain
+                        .sirius
+                        .vaultApi
+                        .generated
+                        .wallets
+                        .WalletsOuterClass
+                        .RejectWalletGenerationRequestErrorResponseBody)
+                    body_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .RejectWalletGenerationRequestResponse)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .RejectWalletGenerationRequestResponse
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .wallets
+                      .WalletsOuterClass
+                      .RejectWalletGenerationRequestResponse)
+                  obj;
+
+      if (!getBodyCase().equals(other.getBodyCase())) return false;
+      switch (bodyCase_) {
+        case 1:
+          if (!getResponse().equals(other.getResponse())) return false;
+          break;
+        case 2:
+          if (!getError().equals(other.getError())) return false;
+          break;
+        case 0:
+        default:
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      switch (bodyCase_) {
+        case 1:
+          hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
+          hash = (53 * hash) + getResponse().hashCode();
+          break;
+        case 2:
+          hash = (37 * hash) + ERROR_FIELD_NUMBER;
+          hash = (53 * hash) + getError().hashCode();
+          break;
+        case 0:
+        default:
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -14456,6 +14887,64 @@ public final class WalletsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RejectWalletGenerationRequestResponse> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestResponse
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+public enum BodyCase
+        implements
+            com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      RESPONSE(1),
+      ERROR(2),
+      BODY_NOT_SET(0);
+      private final int value;
+
+      private BodyCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static BodyCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static BodyCase forNumber(int value) {
+        switch (value) {
+          case 1:
+            return RESPONSE;
+          case 2:
+            return ERROR;
+          case 0:
+            return BODY_NOT_SET;
+          default:
+            return null;
+        }
+      }
+
+      public int getNumber() {
+        return this.value;
+      }
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponse}
@@ -14471,6 +14960,68 @@ public final class WalletsOuterClass {
             .wallets
             .WalletsOuterClass
             .RejectWalletGenerationRequestResponseOrBuilder {
+      private int bodyCase_ = 0;
+      private java.lang.Object body_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .RejectWalletGenerationRequestResponseBody,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .RejectWalletGenerationRequestResponseBody
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .RejectWalletGenerationRequestResponseBodyOrBuilder>
+          responseBuilder_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .RejectWalletGenerationRequestErrorResponseBody,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .RejectWalletGenerationRequestErrorResponseBody
+                  .Builder,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .RejectWalletGenerationRequestErrorResponseBodyOrBuilder>
+          errorBuilder_;
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectWalletGenerationRequestResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -14504,17 +15055,6 @@ public final class WalletsOuterClass {
                     .RejectWalletGenerationRequestResponse
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectWalletGenerationRequestResponse.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -14752,9 +15292,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private int bodyCase_ = 0;
-      private java.lang.Object body_;
-
       public BodyCase getBodyCase() {
         return BodyCase.forNumber(bodyCase_);
       }
@@ -14766,30 +15303,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .RejectWalletGenerationRequestResponseBody,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .RejectWalletGenerationRequestResponseBody
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .RejectWalletGenerationRequestResponseBodyOrBuilder>
-          responseBuilder_;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
@@ -14801,6 +15314,7 @@ public final class WalletsOuterClass {
       public boolean hasResponse() {
         return bodyCase_ == 1;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
@@ -14838,6 +15352,7 @@ public final class WalletsOuterClass {
               .RejectWalletGenerationRequestResponseBody.getDefaultInstance();
         }
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
@@ -14864,6 +15379,7 @@ public final class WalletsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
@@ -14888,6 +15404,7 @@ public final class WalletsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
@@ -14939,6 +15456,7 @@ public final class WalletsOuterClass {
         bodyCase_ = 1;
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
@@ -14960,6 +15478,7 @@ public final class WalletsOuterClass {
         }
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
@@ -14976,6 +15495,7 @@ public final class WalletsOuterClass {
           getResponseBuilder() {
         return getResponseFieldBuilder().getBuilder();
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
@@ -15007,6 +15527,7 @@ public final class WalletsOuterClass {
               .RejectWalletGenerationRequestResponseBody.getDefaultInstance();
         }
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody response = 1;
@@ -15084,30 +15605,6 @@ public final class WalletsOuterClass {
         return responseBuilder_;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .RejectWalletGenerationRequestErrorResponseBody,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .RejectWalletGenerationRequestErrorResponseBody
-                  .Builder,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .RejectWalletGenerationRequestErrorResponseBodyOrBuilder>
-          errorBuilder_;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody error = 2;
@@ -15416,76 +15913,8 @@ public final class WalletsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponse)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponse)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestResponse
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .RejectWalletGenerationRequestResponse();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestResponse
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<RejectWalletGenerationRequestResponse> PARSER =
-        new com.google.protobuf.AbstractParser<RejectWalletGenerationRequestResponse>() {
-          @java.lang.Override
-          public RejectWalletGenerationRequestResponse parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new RejectWalletGenerationRequestResponse(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<RejectWalletGenerationRequestResponse> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<RejectWalletGenerationRequestResponse> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestResponse
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface RejectWalletGenerationRequestResponseBodyOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody)
-      com.google.protobuf.MessageOrBuilder {}
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody}
@@ -15496,6 +15925,40 @@ public final class WalletsOuterClass {
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody)
       RejectWalletGenerationRequestResponseBodyOrBuilder {
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestResponseBody
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<RejectWalletGenerationRequestResponseBody>
+        PARSER =
+            new com.google.protobuf.AbstractParser<RejectWalletGenerationRequestResponseBody>() {
+              @java.lang.Override
+              public RejectWalletGenerationRequestResponseBody parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+                return new RejectWalletGenerationRequestResponseBody(input, extensionRegistry);
+              }
+            };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .RejectWalletGenerationRequestResponseBody();
+    }
+
+    private byte memoizedIsInitialized = -1;
+
     // Use RejectWalletGenerationRequestResponseBody.newBuilder() to construct.
     private RejectWalletGenerationRequestResponseBody(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -15503,17 +15966,6 @@ public final class WalletsOuterClass {
     }
 
     private RejectWalletGenerationRequestResponseBody() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new RejectWalletGenerationRequestResponseBody();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
 
     private RejectWalletGenerationRequestResponseBody(
         com.google.protobuf.CodedInputStream input,
@@ -15560,108 +16012,6 @@ public final class WalletsOuterClass {
           .wallets
           .WalletsOuterClass
           .internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponseBody_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponseBody_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .RejectWalletGenerationRequestResponseBody
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .RejectWalletGenerationRequestResponseBody
-                  .Builder
-                  .class);
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .RejectWalletGenerationRequestResponseBody)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .RejectWalletGenerationRequestResponseBody
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .wallets
-                      .WalletsOuterClass
-                      .RejectWalletGenerationRequestResponseBody)
-                  obj;
-
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -15814,11 +16164,6 @@ public final class WalletsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -15835,6 +16180,137 @@ public final class WalletsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestResponseBody
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<RejectWalletGenerationRequestResponseBody> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new RejectWalletGenerationRequestResponseBody();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .RejectWalletGenerationRequestResponseBody
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .RejectWalletGenerationRequestResponseBody
+                  .Builder
+                  .class);
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .RejectWalletGenerationRequestResponseBody)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .RejectWalletGenerationRequestResponseBody
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .wallets
+                      .WalletsOuterClass
+                      .RejectWalletGenerationRequestResponseBody)
+                  obj;
+
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -15846,6 +16322,25 @@ public final class WalletsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RejectWalletGenerationRequestResponseBody>
+        getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestResponseBody
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody}
@@ -15861,6 +16356,17 @@ public final class WalletsOuterClass {
             .wallets
             .WalletsOuterClass
             .RejectWalletGenerationRequestResponseBodyOrBuilder {
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectWalletGenerationRequestResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -15894,17 +16400,6 @@ public final class WalletsOuterClass {
                     .RejectWalletGenerationRequestResponseBody
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectWalletGenerationRequestResponseBody.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -16123,117 +16618,8 @@ public final class WalletsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestResponseBody)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestResponseBody
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .RejectWalletGenerationRequestResponseBody();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestResponseBody
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<RejectWalletGenerationRequestResponseBody>
-        PARSER =
-            new com.google.protobuf.AbstractParser<RejectWalletGenerationRequestResponseBody>() {
-              @java.lang.Override
-              public RejectWalletGenerationRequestResponseBody parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-                return new RejectWalletGenerationRequestResponseBody(input, extensionRegistry);
-              }
-            };
-
-    public static com.google.protobuf.Parser<RejectWalletGenerationRequestResponseBody> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<RejectWalletGenerationRequestResponseBody>
-        getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestResponseBody
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
   }
 
-  public interface RejectWalletGenerationRequestErrorResponseBodyOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for errorCode.
-     */
-    int getErrorCodeValue();
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The errorCode.
-     */
-    io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestErrorResponseBody
-            .ErrorCode
-        getErrorCode();
-
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The errorMessage.
-     */
-    java.lang.String getErrorMessage();
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The bytes for errorMessage.
-     */
-    com.google.protobuf.ByteString getErrorMessageBytes();
-  }
   /**
    * Protobuf type {@code
    * swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody}
@@ -16243,29 +16629,55 @@ public final class WalletsOuterClass {
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody)
       RejectWalletGenerationRequestErrorResponseBodyOrBuilder {
+    public static final int ERROR_CODE_FIELD_NUMBER = 1;
+    public static final int ERROR_MESSAGE_FIELD_NUMBER = 2;
     private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody)
+    private static final io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestErrorResponseBody
+        DEFAULT_INSTANCE;
+    private static final com.google.protobuf.Parser<RejectWalletGenerationRequestErrorResponseBody>
+        PARSER =
+            new com.google.protobuf.AbstractParser<
+                RejectWalletGenerationRequestErrorResponseBody>() {
+              @java.lang.Override
+              public RejectWalletGenerationRequestErrorResponseBody parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+                return new RejectWalletGenerationRequestErrorResponseBody(input, extensionRegistry);
+              }
+            };
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .RejectWalletGenerationRequestErrorResponseBody();
+    }
+
+    private int errorCode_;
+    private volatile java.lang.Object errorMessage_;
+    private byte memoizedIsInitialized = -1;
+
     // Use RejectWalletGenerationRequestErrorResponseBody.newBuilder() to construct.
     private RejectWalletGenerationRequestErrorResponseBody(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private RejectWalletGenerationRequestErrorResponseBody() {
       errorCode_ = 0;
       errorMessage_ = "";
     }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new RejectWalletGenerationRequestErrorResponseBody();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     private RejectWalletGenerationRequestErrorResponseBody(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -16325,329 +16737,6 @@ public final class WalletsOuterClass {
           .wallets
           .WalletsOuterClass
           .internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestErrorResponseBody_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-          .internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestErrorResponseBody_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .RejectWalletGenerationRequestErrorResponseBody
-                  .class,
-              io.swisschain
-                  .sirius
-                  .vaultApi
-                  .generated
-                  .wallets
-                  .WalletsOuterClass
-                  .RejectWalletGenerationRequestErrorResponseBody
-                  .Builder
-                  .class);
-    }
-
-    /**
-     * Protobuf enum {@code
-     * swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody.ErrorCode}
-     */
-    public enum ErrorCode implements com.google.protobuf.ProtocolMessageEnum {
-      /** <code>UNKNOWN = 0;</code> */
-      UNKNOWN(0),
-      /** <code>INVALID_PARAMETERS = 1;</code> */
-      INVALID_PARAMETERS(1),
-      UNRECOGNIZED(-1),
-      ;
-
-      /** <code>UNKNOWN = 0;</code> */
-      public static final int UNKNOWN_VALUE = 0;
-      /** <code>INVALID_PARAMETERS = 1;</code> */
-      public static final int INVALID_PARAMETERS_VALUE = 1;
-
-      public final int getNumber() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static ErrorCode valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static ErrorCode forNumber(int value) {
-        switch (value) {
-          case 0:
-            return UNKNOWN;
-          case 1:
-            return INVALID_PARAMETERS;
-          default:
-            return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalGetValueMap() {
-        return internalValueMap;
-      }
-
-      private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
-            public ErrorCode findValueByNumber(int number) {
-              return ErrorCode.forNumber(number);
-            }
-          };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(ordinal());
-      }
-
-      public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
-        return getDescriptor();
-      }
-
-      public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
-        return io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestErrorResponseBody
-            .getDescriptor()
-            .getEnumTypes()
-            .get(0);
-      }
-
-      private static final ErrorCode[] VALUES = values();
-
-      public static ErrorCode valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int value;
-
-      private ErrorCode(int value) {
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody.ErrorCode)
-    }
-
-    public static final int ERROR_CODE_FIELD_NUMBER = 1;
-    private int errorCode_;
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The enum numeric value on the wire for errorCode.
-     */
-    @java.lang.Override
-    public int getErrorCodeValue() {
-      return errorCode_;
-    }
-    /**
-     * <code>
-     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
-     * </code>
-     *
-     * @return The errorCode.
-     */
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestErrorResponseBody
-            .ErrorCode
-        getErrorCode() {
-      @SuppressWarnings("deprecation")
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .RejectWalletGenerationRequestErrorResponseBody
-              .ErrorCode
-          result =
-              io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-                  .RejectWalletGenerationRequestErrorResponseBody.ErrorCode.valueOf(errorCode_);
-      return result == null
-          ? io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .RejectWalletGenerationRequestErrorResponseBody
-              .ErrorCode
-              .UNRECOGNIZED
-          : result;
-    }
-
-    public static final int ERROR_MESSAGE_FIELD_NUMBER = 2;
-    private volatile java.lang.Object errorMessage_;
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The errorMessage.
-     */
-    @java.lang.Override
-    public java.lang.String getErrorMessage() {
-      java.lang.Object ref = errorMessage_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        errorMessage_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string error_message = 2;</code>
-     *
-     * @return The bytes for errorMessage.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getErrorMessageBytes() {
-      java.lang.Object ref = errorMessage_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        errorMessage_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (errorCode_
-          != io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-              .RejectWalletGenerationRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
-        output.writeEnum(1, errorCode_);
-      }
-      if (!getErrorMessageBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, errorMessage_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (errorCode_
-          != io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
-              .RejectWalletGenerationRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream.computeEnumSize(1, errorCode_);
-      }
-      if (!getErrorMessageBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, errorMessage_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj
-          instanceof
-          io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .RejectWalletGenerationRequestErrorResponseBody)) {
-        return super.equals(obj);
-      }
-      io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .RejectWalletGenerationRequestErrorResponseBody
-          other =
-              (io.swisschain
-                      .sirius
-                      .vaultApi
-                      .generated
-                      .wallets
-                      .WalletsOuterClass
-                      .RejectWalletGenerationRequestErrorResponseBody)
-                  obj;
-
-      if (errorCode_ != other.errorCode_) return false;
-      if (!getErrorMessage().equals(other.getErrorMessage())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ERROR_CODE_FIELD_NUMBER;
-      hash = (53 * hash) + errorCode_;
-      hash = (37 * hash) + ERROR_MESSAGE_FIELD_NUMBER;
-      hash = (53 * hash) + getErrorMessage().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
     }
 
     public static io.swisschain
@@ -16800,11 +16889,6 @@ public final class WalletsOuterClass {
           PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -16821,6 +16905,250 @@ public final class WalletsOuterClass {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
+    public static io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestErrorResponseBody
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<RejectWalletGenerationRequestErrorResponseBody>
+        parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new RejectWalletGenerationRequestErrorResponseBody();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+          .internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestErrorResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .RejectWalletGenerationRequestErrorResponseBody
+                  .class,
+              io.swisschain
+                  .sirius
+                  .vaultApi
+                  .generated
+                  .wallets
+                  .WalletsOuterClass
+                  .RejectWalletGenerationRequestErrorResponseBody
+                  .Builder
+                  .class);
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for errorCode.
+     */
+    @java.lang.Override
+    public int getErrorCodeValue() {
+      return errorCode_;
+    }
+
+    /**
+     * <code>
+     * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
+     * </code>
+     *
+     * @return The errorCode.
+     */
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestErrorResponseBody
+            .ErrorCode
+        getErrorCode() {
+      @SuppressWarnings("deprecation")
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .RejectWalletGenerationRequestErrorResponseBody
+              .ErrorCode
+          result =
+              io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+                  .RejectWalletGenerationRequestErrorResponseBody.ErrorCode.valueOf(errorCode_);
+      return result == null
+          ? io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .RejectWalletGenerationRequestErrorResponseBody
+              .ErrorCode
+              .UNRECOGNIZED
+          : result;
+    }
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The errorMessage.
+     */
+    @java.lang.Override
+    public java.lang.String getErrorMessage() {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        errorMessage_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>string error_message = 2;</code>
+     *
+     * @return The bytes for errorMessage.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getErrorMessageBytes() {
+      java.lang.Object ref = errorMessage_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        errorMessage_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (errorCode_
+          != io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+              .RejectWalletGenerationRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
+        output.writeEnum(1, errorCode_);
+      }
+      if (!getErrorMessageBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, errorMessage_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (errorCode_
+          != io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass
+              .RejectWalletGenerationRequestErrorResponseBody.ErrorCode.UNKNOWN.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream.computeEnumSize(1, errorCode_);
+      }
+      if (!getErrorMessageBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, errorMessage_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj
+          instanceof
+          io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .RejectWalletGenerationRequestErrorResponseBody)) {
+        return super.equals(obj);
+      }
+      io.swisschain
+              .sirius
+              .vaultApi
+              .generated
+              .wallets
+              .WalletsOuterClass
+              .RejectWalletGenerationRequestErrorResponseBody
+          other =
+              (io.swisschain
+                      .sirius
+                      .vaultApi
+                      .generated
+                      .wallets
+                      .WalletsOuterClass
+                      .RejectWalletGenerationRequestErrorResponseBody)
+                  obj;
+
+      if (errorCode_ != other.errorCode_) return false;
+      if (!getErrorMessage().equals(other.getErrorMessage())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ERROR_CODE_FIELD_NUMBER;
+      hash = (53 * hash) + errorCode_;
+      hash = (37 * hash) + ERROR_MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getErrorMessage().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
@@ -16832,6 +17160,129 @@ public final class WalletsOuterClass {
       Builder builder = new Builder(parent);
       return builder;
     }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RejectWalletGenerationRequestErrorResponseBody>
+        getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestErrorResponseBody
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+    /**
+     * Protobuf enum {@code
+     * swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody.ErrorCode}
+     */
+    public enum ErrorCode implements com.google.protobuf.ProtocolMessageEnum {
+      /** <code>UNKNOWN = 0;</code> */
+      UNKNOWN(0),
+      /** <code>INVALID_PARAMETERS = 1;</code> */
+      INVALID_PARAMETERS(1),
+      UNRECOGNIZED(-1),
+      ;
+
+      /** <code>UNKNOWN = 0;</code> */
+      public static final int UNKNOWN_VALUE = 0;
+      /** <code>INVALID_PARAMETERS = 1;</code> */
+      public static final int INVALID_PARAMETERS_VALUE = 1;
+      private static final com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<ErrorCode>() {
+            public ErrorCode findValueByNumber(int number) {
+              return ErrorCode.forNumber(number);
+            }
+          };
+      private static final ErrorCode[] VALUES = values();
+      private final int value;
+
+      private ErrorCode(int value) {
+        this.value = value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static ErrorCode valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static ErrorCode forNumber(int value) {
+        switch (value) {
+          case 0:
+            return UNKNOWN;
+          case 1:
+            return INVALID_PARAMETERS;
+          default:
+            return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<ErrorCode> internalGetValueMap() {
+        return internalValueMap;
+      }
+
+      public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+        return io.swisschain
+            .sirius
+            .vaultApi
+            .generated
+            .wallets
+            .WalletsOuterClass
+            .RejectWalletGenerationRequestErrorResponseBody
+            .getDescriptor()
+            .getEnumTypes()
+            .get(0);
+      }
+
+      public static ErrorCode valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(ordinal());
+      }
+
+      public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
+        return getDescriptor();
+      }
+
+      // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody.ErrorCode)
+    }
+
     /**
      * Protobuf type {@code
      * swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody}
@@ -16847,6 +17298,20 @@ public final class WalletsOuterClass {
             .wallets
             .WalletsOuterClass
             .RejectWalletGenerationRequestErrorResponseBodyOrBuilder {
+      private int errorCode_ = 0;
+      private java.lang.Object errorMessage_ = "";
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectWalletGenerationRequestErrorResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -16880,17 +17345,6 @@ public final class WalletsOuterClass {
                     .RejectWalletGenerationRequestErrorResponseBody
                     .Builder
                     .class);
-      }
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass.RejectWalletGenerationRequestErrorResponseBody.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -17108,7 +17562,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private int errorCode_ = 0;
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -17120,6 +17573,7 @@ public final class WalletsOuterClass {
       public int getErrorCodeValue() {
         return errorCode_;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -17134,6 +17588,7 @@ public final class WalletsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -17175,6 +17630,7 @@ public final class WalletsOuterClass {
                 .UNRECOGNIZED
             : result;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -17201,6 +17657,7 @@ public final class WalletsOuterClass {
         onChanged();
         return this;
       }
+
       /**
        * <code>
        * .swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody.ErrorCode error_code = 1;
@@ -17215,7 +17672,6 @@ public final class WalletsOuterClass {
         return this;
       }
 
-      private java.lang.Object errorMessage_ = "";
       /**
        * <code>string error_message = 2;</code>
        *
@@ -17232,6 +17688,23 @@ public final class WalletsOuterClass {
           return (java.lang.String) ref;
         }
       }
+
+      /**
+       * <code>string error_message = 2;</code>
+       *
+       * @param value The errorMessage to set.
+       * @return This builder for chaining.
+       */
+      public Builder setErrorMessage(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+
+        errorMessage_ = value;
+        onChanged();
+        return this;
+      }
+
       /**
        * <code>string error_message = 2;</code>
        *
@@ -17248,32 +17721,7 @@ public final class WalletsOuterClass {
           return (com.google.protobuf.ByteString) ref;
         }
       }
-      /**
-       * <code>string error_message = 2;</code>
-       *
-       * @param value The errorMessage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setErrorMessage(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
 
-        errorMessage_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string error_message = 2;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearErrorMessage() {
-
-        errorMessage_ = getDefaultInstance().getErrorMessage();
-        onChanged();
-        return this;
-      }
       /**
        * <code>string error_message = 2;</code>
        *
@@ -17287,6 +17735,18 @@ public final class WalletsOuterClass {
         checkByteStringIsUtf8(value);
 
         errorMessage_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>string error_message = 2;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearErrorMessage() {
+
+        errorMessage_ = getDefaultInstance().getErrorMessage();
         onChanged();
         return this;
       }
@@ -17305,336 +17765,6 @@ public final class WalletsOuterClass {
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody)
     }
-
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.wallets.RejectWalletGenerationRequestErrorResponseBody)
-    private static final io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestErrorResponseBody
-        DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain
-              .sirius
-              .vaultApi
-              .generated
-              .wallets
-              .WalletsOuterClass
-              .RejectWalletGenerationRequestErrorResponseBody();
-    }
-
-    public static io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestErrorResponseBody
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<RejectWalletGenerationRequestErrorResponseBody>
-        PARSER =
-            new com.google.protobuf.AbstractParser<
-                RejectWalletGenerationRequestErrorResponseBody>() {
-              @java.lang.Override
-              public RejectWalletGenerationRequestErrorResponseBody parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-                return new RejectWalletGenerationRequestErrorResponseBody(input, extensionRegistry);
-              }
-            };
-
-    public static com.google.protobuf.Parser<RejectWalletGenerationRequestErrorResponseBody>
-        parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<RejectWalletGenerationRequestErrorResponseBody>
-        getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain
-            .sirius
-            .vaultApi
-            .generated
-            .wallets
-            .WalletsOuterClass
-            .RejectWalletGenerationRequestErrorResponseBody
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestRequest_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestRequest_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponse_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponse_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponseBody_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponseBody_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestErrorResponseBody_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestErrorResponseBody_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_wallets_WalletGenerationRequest_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_wallets_WalletGenerationRequest_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestRequest_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestRequest_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponse_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponse_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponseBody_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponseBody_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestErrorResponseBody_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestErrorResponseBody_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestRequest_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestRequest_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponse_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponse_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponseBody_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponseBody_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestErrorResponseBody_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestErrorResponseBody_fieldAccessorTable;
-
-  public static com.google.protobuf.Descriptors.FileDescriptor getDescriptor() {
-    return descriptor;
-  }
-
-  private static com.google.protobuf.Descriptors.FileDescriptor descriptor;
-
-  static {
-    java.lang.String[] descriptorData = {
-      "\n\rwallets.proto\022\"swisschain.sirius.vault"
-          + "Api.wallets\032\037google/protobuf/timestamp.p"
-          + "roto\032\014common.proto\"#\n!GetWalletGeneratio"
-          + "nRequestRequest\"\356\001\n\"GetWalletGenerationR"
-          + "equestResponse\022^\n\010response\030\001 \001(\0132J.swiss"
-          + "chain.sirius.vaultApi.wallets.GetWalletG"
-          + "enerationRequestResponseBodyH\000\022`\n\005error\030"
-          + "\002 \001(\0132O.swisschain.sirius.vaultApi.walle"
-          + "ts.GetWalletGenerationRequestErrorRespon"
-          + "seBodyH\000B\006\n\004body\"w\n&GetWalletGenerationR"
-          + "equestResponseBody\022M\n\010requests\030\001 \003(\0132;.s"
-          + "wisschain.sirius.vaultApi.wallets.Wallet"
-          + "GenerationRequest\"\345\001\n+GetWalletGeneratio"
-          + "nRequestErrorResponseBody\022m\n\nerror_code\030"
-          + "\001 \001(\0162Y.swisschain.sirius.vaultApi.walle"
-          + "ts.GetWalletGenerationRequestErrorRespon"
-          + "seBody.ErrorCode\022\025\n\rerror_message\030\002 \001(\t\""
-          + "0\n\tErrorCode\022\013\n\007UNKNOWN\020\000\022\026\n\022INVALID_PAR"
-          + "AMETERS\020\001\"\233\002\n\027WalletGenerationRequest\022\n\n"
-          + "\002id\030\001 \001(\003\022\025\n\rblockchain_id\030\002 \001(\t\022D\n\014netw"
-          + "ork_type\030\003 \001(\0162..swisschain.sirius.vault"
-          + "Api.common.NetworkType\022\025\n\rprotocol_code\030"
-          + "\004 \001(\t\022\r\n\005group\030\005 \001(\t\022\021\n\ttenant_id\030\006 \001(\t\022"
-          + ".\n\ncreated_at\030\007 \001(\0132\032.google.protobuf.Ti"
-          + "mestamp\022.\n\nupdated_at\030\010 \001(\0132\032.google.pro"
-          + "tobuf.Timestamp\"\262\001\n%ConfirmWalletGenerat"
-          + "ionRequestRequest\022\022\n\nrequest_id\030\001 \001(\t\022$\n"
-          + "\034wallet_generation_request_id\030\002 \001(\003\022\017\n\007a"
-          + "ddress\030\003 \001(\t\022\022\n\npublic_key\030\004 \001(\t\022\021\n\tsign"
-          + "ature\030\005 \001(\t\022\027\n\017host_process_id\030\006 \001(\t\"\372\001\n"
-          + "&ConfirmWalletGenerationRequestResponse\022"
-          + "b\n\010response\030\001 \001(\0132N.swisschain.sirius.va"
-          + "ultApi.wallets.ConfirmWalletGenerationRe"
-          + "questResponseBodyH\000\022d\n\005error\030\002 \001(\0132S.swi"
-          + "sschain.sirius.vaultApi.wallets.ConfirmW"
-          + "alletGenerationRequestErrorResponseBodyH"
-          + "\000B\006\n\004body\",\n*ConfirmWalletGenerationRequ"
-          + "estResponseBody\"\355\001\n/ConfirmWalletGenerat"
-          + "ionRequestErrorResponseBody\022q\n\nerror_cod"
-          + "e\030\001 \001(\0162].swisschain.sirius.vaultApi.wal"
-          + "lets.ConfirmWalletGenerationRequestError"
-          + "ResponseBody.ErrorCode\022\025\n\rerror_message\030"
-          + "\002 \001(\t\"0\n\tErrorCode\022\013\n\007UNKNOWN\020\000\022\026\n\022INVAL"
-          + "ID_PARAMETERS\020\001\"\326\001\n$RejectWalletGenerati"
-          + "onRequestRequest\022\022\n\nrequest_id\030\001 \001(\t\022$\n\034"
-          + "wallet_generation_request_id\030\002 \001(\003\022C\n\006re"
-          + "ason\030\004 \001(\01623.swisschain.sirius.vaultApi."
-          + "wallets.RejectionReason\022\026\n\016reason_messag"
-          + "e\030\005 \001(\t\022\027\n\017host_process_id\030\006 \001(\t\"\367\001\n%Rej"
-          + "ectWalletGenerationRequestResponse\022a\n\010re"
-          + "sponse\030\001 \001(\0132M.swisschain.sirius.vaultAp"
-          + "i.wallets.RejectWalletGenerationRequestR"
-          + "esponseBodyH\000\022c\n\005error\030\002 \001(\0132R.swisschai"
-          + "n.sirius.vaultApi.wallets.RejectWalletGe"
-          + "nerationRequestErrorResponseBodyH\000B\006\n\004bo"
-          + "dy\"+\n)RejectWalletGenerationRequestRespo"
-          + "nseBody\"\353\001\n.RejectWalletGenerationReques"
-          + "tErrorResponseBody\022p\n\nerror_code\030\001 \001(\0162\\"
-          + ".swisschain.sirius.vaultApi.wallets.Reje"
-          + "ctWalletGenerationRequestErrorResponseBo"
-          + "dy.ErrorCode\022\025\n\rerror_message\030\002 \001(\t\"0\n\tE"
-          + "rrorCode\022\013\n\007UNKNOWN\020\000\022\026\n\022INVALID_PARAMET"
-          + "ERS\020\001*4\n\017RejectionReason\022\t\n\005OTHER\020\000\022\026\n\022U"
-          + "NKNOWN_BLOCKCHAIN\020\0012\343\003\n\007Wallets\022\224\001\n\003Get\022"
-          + "E.swisschain.sirius.vaultApi.wallets.Get"
-          + "WalletGenerationRequestRequest\032F.swissch"
-          + "ain.sirius.vaultApi.wallets.GetWalletGen"
-          + "erationRequestResponse\022\240\001\n\007Confirm\022I.swi"
-          + "sschain.sirius.vaultApi.wallets.ConfirmW"
-          + "alletGenerationRequestRequest\032J.swisscha"
-          + "in.sirius.vaultApi.wallets.ConfirmWallet"
-          + "GenerationRequestResponse\022\235\001\n\006Reject\022H.s"
-          + "wisschain.sirius.vaultApi.wallets.Reject"
-          + "WalletGenerationRequestRequest\032I.swissch"
-          + "ain.sirius.vaultApi.wallets.RejectWallet"
-          + "GenerationRequestResponseBb\n/io.swisscha"
-          + "in.sirius.vaultApi.generated.wallets\252\002.S"
-          + "wisschain.Sirius.VaultApi.ApiContract.Wa"
-          + "lletsb\006proto3"
-    };
-    descriptor =
-        com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
-            descriptorData,
-            new com.google.protobuf.Descriptors.FileDescriptor[] {
-              com.google.protobuf.TimestampProto.getDescriptor(),
-              io.swisschain.sirius.vaultApi.generated.common.Common.getDescriptor(),
-            });
-    internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestRequest_descriptor =
-        getDescriptor().getMessageTypes().get(0);
-    internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestRequest_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestRequest_descriptor,
-            new java.lang.String[] {});
-    internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponse_descriptor =
-        getDescriptor().getMessageTypes().get(1);
-    internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponse_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponse_descriptor,
-            new java.lang.String[] {
-              "Response", "Error", "Body",
-            });
-    internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponseBody_descriptor =
-        getDescriptor().getMessageTypes().get(2);
-    internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponseBody_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestResponseBody_descriptor,
-            new java.lang.String[] {
-              "Requests",
-            });
-    internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestErrorResponseBody_descriptor =
-        getDescriptor().getMessageTypes().get(3);
-    internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestErrorResponseBody_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_wallets_GetWalletGenerationRequestErrorResponseBody_descriptor,
-            new java.lang.String[] {
-              "ErrorCode", "ErrorMessage",
-            });
-    internal_static_swisschain_sirius_vaultApi_wallets_WalletGenerationRequest_descriptor =
-        getDescriptor().getMessageTypes().get(4);
-    internal_static_swisschain_sirius_vaultApi_wallets_WalletGenerationRequest_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_wallets_WalletGenerationRequest_descriptor,
-            new java.lang.String[] {
-              "Id",
-              "BlockchainId",
-              "NetworkType",
-              "ProtocolCode",
-              "Group",
-              "TenantId",
-              "CreatedAt",
-              "UpdatedAt",
-            });
-    internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestRequest_descriptor =
-        getDescriptor().getMessageTypes().get(5);
-    internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestRequest_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestRequest_descriptor,
-            new java.lang.String[] {
-              "RequestId",
-              "WalletGenerationRequestId",
-              "Address",
-              "PublicKey",
-              "Signature",
-              "HostProcessId",
-            });
-    internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponse_descriptor =
-        getDescriptor().getMessageTypes().get(6);
-    internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponse_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponse_descriptor,
-            new java.lang.String[] {
-              "Response", "Error", "Body",
-            });
-    internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponseBody_descriptor =
-        getDescriptor().getMessageTypes().get(7);
-    internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponseBody_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestResponseBody_descriptor,
-            new java.lang.String[] {});
-    internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestErrorResponseBody_descriptor =
-        getDescriptor().getMessageTypes().get(8);
-    internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestErrorResponseBody_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_wallets_ConfirmWalletGenerationRequestErrorResponseBody_descriptor,
-            new java.lang.String[] {
-              "ErrorCode", "ErrorMessage",
-            });
-    internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestRequest_descriptor =
-        getDescriptor().getMessageTypes().get(9);
-    internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestRequest_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestRequest_descriptor,
-            new java.lang.String[] {
-              "RequestId", "WalletGenerationRequestId", "Reason", "ReasonMessage", "HostProcessId",
-            });
-    internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponse_descriptor =
-        getDescriptor().getMessageTypes().get(10);
-    internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponse_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponse_descriptor,
-            new java.lang.String[] {
-              "Response", "Error", "Body",
-            });
-    internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponseBody_descriptor =
-        getDescriptor().getMessageTypes().get(11);
-    internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponseBody_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestResponseBody_descriptor,
-            new java.lang.String[] {});
-    internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestErrorResponseBody_descriptor =
-        getDescriptor().getMessageTypes().get(12);
-    internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestErrorResponseBody_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_wallets_RejectWalletGenerationRequestErrorResponseBody_descriptor,
-            new java.lang.String[] {
-              "ErrorCode", "ErrorMessage",
-            });
-    com.google.protobuf.TimestampProto.getDescriptor();
-    io.swisschain.sirius.vaultApi.generated.common.Common.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

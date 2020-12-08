@@ -8,28 +8,40 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
     implements
     // @@protoc_insertion_point(message_implements:grep11.EncryptSingleRequest)
     EncryptSingleRequestOrBuilder {
+  public static final int KEY_FIELD_NUMBER = 1;
+  public static final int MECH_FIELD_NUMBER = 2;
+  public static final int PLAIN_FIELD_NUMBER = 3;
   private static final long serialVersionUID = 0L;
+  // @@protoc_insertion_point(class_scope:grep11.EncryptSingleRequest)
+  private static final com.ibm.crypto.grep11.grpc.EncryptSingleRequest DEFAULT_INSTANCE;
+  private static final com.google.protobuf.Parser<EncryptSingleRequest> PARSER =
+      new com.google.protobuf.AbstractParser<EncryptSingleRequest>() {
+        @java.lang.Override
+        public EncryptSingleRequest parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new EncryptSingleRequest(input, extensionRegistry);
+        }
+      };
+
+  static {
+    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.EncryptSingleRequest();
+  }
+
+  private com.google.protobuf.ByteString key_;
+  private com.ibm.crypto.grep11.grpc.Mechanism mech_;
+  private com.google.protobuf.ByteString plain_;
+  private byte memoizedIsInitialized = -1;
+
   // Use EncryptSingleRequest.newBuilder() to construct.
   private EncryptSingleRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-
   private EncryptSingleRequest() {
     key_ = com.google.protobuf.ByteString.EMPTY;
     plain_ = com.google.protobuf.ByteString.EMPTY;
   }
-
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new EncryptSingleRequest();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-    return this.unknownFields;
-  }
-
   private EncryptSingleRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -97,6 +109,105 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
     return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_EncryptSingleRequest_descriptor;
   }
 
+  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(
+      java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(byte[] data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(
+      byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(java.io.InputStream input)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(
+      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+        PARSER, input, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseDelimitedFrom(
+      java.io.InputStream input) throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseDelimitedFrom(
+      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
+        PARSER, input, extensionRegistry);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(
+      com.google.protobuf.CodedInputStream input) throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
+    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+        PARSER, input, extensionRegistry);
+  }
+
+  public static Builder newBuilder() {
+    return DEFAULT_INSTANCE.toBuilder();
+  }
+
+  public static Builder newBuilder(com.ibm.crypto.grep11.grpc.EncryptSingleRequest prototype) {
+    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  public static com.google.protobuf.Parser<EncryptSingleRequest> parser() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new EncryptSingleRequest();
+  }
+
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    return this.unknownFields;
+  }
+
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
@@ -107,8 +218,6 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
             com.ibm.crypto.grep11.grpc.EncryptSingleRequest.Builder.class);
   }
 
-  public static final int KEY_FIELD_NUMBER = 1;
-  private com.google.protobuf.ByteString key_;
   /**
    * <code>bytes Key = 1;</code>
    *
@@ -119,8 +228,6 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
     return key_;
   }
 
-  public static final int MECH_FIELD_NUMBER = 2;
-  private com.ibm.crypto.grep11.grpc.Mechanism mech_;
   /**
    * <code>.grep11.Mechanism Mech = 2;</code>
    *
@@ -130,6 +237,7 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
   public boolean hasMech() {
     return mech_ != null;
   }
+
   /**
    * <code>.grep11.Mechanism Mech = 2;</code>
    *
@@ -139,14 +247,13 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
   public com.ibm.crypto.grep11.grpc.Mechanism getMech() {
     return mech_ == null ? com.ibm.crypto.grep11.grpc.Mechanism.getDefaultInstance() : mech_;
   }
+
   /** <code>.grep11.Mechanism Mech = 2;</code> */
   @java.lang.Override
   public com.ibm.crypto.grep11.grpc.MechanismOrBuilder getMechOrBuilder() {
     return getMech();
   }
 
-  public static final int PLAIN_FIELD_NUMBER = 3;
-  private com.google.protobuf.ByteString plain_;
   /**
    * <code>bytes Plain = 3;</code>
    *
@@ -156,8 +263,6 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
   public com.google.protobuf.ByteString getPlain() {
     return plain_;
   }
-
-  private byte memoizedIsInitialized = -1;
 
   @java.lang.Override
   public final boolean isInitialized() {
@@ -244,89 +349,9 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
     return hash;
   }
 
-  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(java.nio.ByteBuffer data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(
-      java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(
-      byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(
-      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-        PARSER, input, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseDelimitedFrom(
-      java.io.InputStream input) throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseDelimitedFrom(
-      java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
-        PARSER, input, extensionRegistry);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(
-      com.google.protobuf.CodedInputStream input) throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-  }
-
-  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-        PARSER, input, extensionRegistry);
-  }
-
   @java.lang.Override
   public Builder newBuilderForType() {
     return newBuilder();
-  }
-
-  public static Builder newBuilder() {
-    return DEFAULT_INSTANCE.toBuilder();
-  }
-
-  public static Builder newBuilder(com.ibm.crypto.grep11.grpc.EncryptSingleRequest prototype) {
-    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
 
   @java.lang.Override
@@ -339,11 +364,41 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
     Builder builder = new Builder(parent);
     return builder;
   }
+
+  @java.lang.Override
+  public com.google.protobuf.Parser<EncryptSingleRequest> getParserForType() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.EncryptSingleRequest getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
+  }
+
   /** Protobuf type {@code grep11.EncryptSingleRequest} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
       // @@protoc_insertion_point(builder_implements:grep11.EncryptSingleRequest)
       com.ibm.crypto.grep11.grpc.EncryptSingleRequestOrBuilder {
+    private com.google.protobuf.ByteString key_ = com.google.protobuf.ByteString.EMPTY;
+    private com.ibm.crypto.grep11.grpc.Mechanism mech_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+            com.ibm.crypto.grep11.grpc.Mechanism,
+            com.ibm.crypto.grep11.grpc.Mechanism.Builder,
+            com.ibm.crypto.grep11.grpc.MechanismOrBuilder>
+        mechBuilder_;
+    private com.google.protobuf.ByteString plain_ = com.google.protobuf.ByteString.EMPTY;
+
+    // Construct using com.ibm.crypto.grep11.grpc.EncryptSingleRequest.newBuilder()
+    private Builder() {
+      maybeForceBuilderInitialization();
+    }
+
+    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      super(parent);
+      maybeForceBuilderInitialization();
+    }
+
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
       return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_EncryptSingleRequest_descriptor;
     }
@@ -356,16 +411,6 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
           .ensureFieldAccessorsInitialized(
               com.ibm.crypto.grep11.grpc.EncryptSingleRequest.class,
               com.ibm.crypto.grep11.grpc.EncryptSingleRequest.Builder.class);
-    }
-
-    // Construct using com.ibm.crypto.grep11.grpc.EncryptSingleRequest.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
     }
 
     private void maybeForceBuilderInitialization() {
@@ -506,7 +551,6 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
       return this;
     }
 
-    private com.google.protobuf.ByteString key_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes Key = 1;</code>
      *
@@ -516,6 +560,7 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
     public com.google.protobuf.ByteString getKey() {
       return key_;
     }
+
     /**
      * <code>bytes Key = 1;</code>
      *
@@ -531,6 +576,7 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      * <code>bytes Key = 1;</code>
      *
@@ -543,12 +589,6 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
       return this;
     }
 
-    private com.ibm.crypto.grep11.grpc.Mechanism mech_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-            com.ibm.crypto.grep11.grpc.Mechanism,
-            com.ibm.crypto.grep11.grpc.Mechanism.Builder,
-            com.ibm.crypto.grep11.grpc.MechanismOrBuilder>
-        mechBuilder_;
     /**
      * <code>.grep11.Mechanism Mech = 2;</code>
      *
@@ -557,6 +597,7 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
     public boolean hasMech() {
       return mechBuilder_ != null || mech_ != null;
     }
+
     /**
      * <code>.grep11.Mechanism Mech = 2;</code>
      *
@@ -569,6 +610,7 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
         return mechBuilder_.getMessage();
       }
     }
+
     /** <code>.grep11.Mechanism Mech = 2;</code> */
     public Builder setMech(com.ibm.crypto.grep11.grpc.Mechanism value) {
       if (mechBuilder_ == null) {
@@ -583,6 +625,7 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
 
       return this;
     }
+
     /** <code>.grep11.Mechanism Mech = 2;</code> */
     public Builder setMech(com.ibm.crypto.grep11.grpc.Mechanism.Builder builderForValue) {
       if (mechBuilder_ == null) {
@@ -594,6 +637,7 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
 
       return this;
     }
+
     /** <code>.grep11.Mechanism Mech = 2;</code> */
     public Builder mergeMech(com.ibm.crypto.grep11.grpc.Mechanism value) {
       if (mechBuilder_ == null) {
@@ -612,6 +656,7 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
 
       return this;
     }
+
     /** <code>.grep11.Mechanism Mech = 2;</code> */
     public Builder clearMech() {
       if (mechBuilder_ == null) {
@@ -624,12 +669,14 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
 
       return this;
     }
+
     /** <code>.grep11.Mechanism Mech = 2;</code> */
     public com.ibm.crypto.grep11.grpc.Mechanism.Builder getMechBuilder() {
 
       onChanged();
       return getMechFieldBuilder().getBuilder();
     }
+
     /** <code>.grep11.Mechanism Mech = 2;</code> */
     public com.ibm.crypto.grep11.grpc.MechanismOrBuilder getMechOrBuilder() {
       if (mechBuilder_ != null) {
@@ -638,6 +685,7 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
         return mech_ == null ? com.ibm.crypto.grep11.grpc.Mechanism.getDefaultInstance() : mech_;
       }
     }
+
     /** <code>.grep11.Mechanism Mech = 2;</code> */
     private com.google.protobuf.SingleFieldBuilderV3<
             com.ibm.crypto.grep11.grpc.Mechanism,
@@ -656,7 +704,6 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
       return mechBuilder_;
     }
 
-    private com.google.protobuf.ByteString plain_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes Plain = 3;</code>
      *
@@ -705,41 +752,5 @@ public final class EncryptSingleRequest extends com.google.protobuf.GeneratedMes
     }
 
     // @@protoc_insertion_point(builder_scope:grep11.EncryptSingleRequest)
-  }
-
-  // @@protoc_insertion_point(class_scope:grep11.EncryptSingleRequest)
-  private static final com.ibm.crypto.grep11.grpc.EncryptSingleRequest DEFAULT_INSTANCE;
-
-  static {
-    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.EncryptSingleRequest();
-  }
-
-  public static com.ibm.crypto.grep11.grpc.EncryptSingleRequest getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  private static final com.google.protobuf.Parser<EncryptSingleRequest> PARSER =
-      new com.google.protobuf.AbstractParser<EncryptSingleRequest>() {
-        @java.lang.Override
-        public EncryptSingleRequest parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new EncryptSingleRequest(input, extensionRegistry);
-        }
-      };
-
-  public static com.google.protobuf.Parser<EncryptSingleRequest> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<EncryptSingleRequest> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.EncryptSingleRequest getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
   }
 }

@@ -11,7 +11,8 @@ public class Document {
   private List<ValidatorResolution> validatorResolutions;
   private List<String> requestedValidators;
   private DocumentStatus status;
-  private String rejectReasonMessage; // Technical problem: exception.getMessage() || Rejected by validators
+  private String
+      rejectReasonMessage; // Technical problem: exception.getMessage() || Rejected by validators
   private Instant timestamp;
 
   public Document() {}
