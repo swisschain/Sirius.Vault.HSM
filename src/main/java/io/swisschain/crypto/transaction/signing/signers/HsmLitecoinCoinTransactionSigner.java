@@ -26,8 +26,11 @@ public class HsmLitecoinCoinTransactionSigner extends HsmBitcoinBasedTransaction
   public static final String LTC = "LTC";
   private static final Logger logger = LogManager.getLogger();
 
-  public HsmLitecoinCoinTransactionSigner(HsmConfig hsmConfig) {
-    super(hsmConfig);
+  private final BlockchainProtocolCodes blockchain;
+
+  public HsmLitecoinCoinTransactionSigner(HsmConfig hsmConfig, BlockchainProtocolCodes blockchain) {
+    super(hsmConfig, blockchain);
+    this.blockchain = blockchain;
   }
 
   @Override
@@ -51,7 +54,7 @@ public class HsmLitecoinCoinTransactionSigner extends HsmBitcoinBasedTransaction
             transferDetails,
             BlockchainProtocolCodes.litecoin.getName(),
             networkType.name(),
-            LTC);
+            blockchain.getCoin());
     logger.debug("TxId: {}", result.getTransactionId());
     logger.debug("Signed: {}", Hex.toHexString(result.getSignedTransaction()));
     return result;

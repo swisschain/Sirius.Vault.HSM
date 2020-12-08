@@ -35,8 +35,11 @@ import java.util.List;
 public class HsmStellarTransactionSigner extends HsmConnector implements CoinsTransactionSigner {
   private static final Logger logger = LogManager.getLogger();
 
-  public HsmStellarTransactionSigner(HsmConfig hsmConfig) {
+  private final BlockchainProtocolCodes blockchain;
+
+  public HsmStellarTransactionSigner(HsmConfig hsmConfig, BlockchainProtocolCodes blockchain) {
     super(hsmConfig);
+    this.blockchain = blockchain;
   }
 
   @Override
@@ -62,7 +65,7 @@ public class HsmStellarTransactionSigner extends HsmConnector implements CoinsTr
         transferDetails,
         BlockchainProtocolCodes.stellar.getName(),
         networkType.name(),
-        "XLM");
+        blockchain.getCoin());
 
     final var txHash = rawTransaction.hash();
     final var signature = sign(txHash, Hex.decode(privateKey), new Base32().decode(publicKey));

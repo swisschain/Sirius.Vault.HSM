@@ -33,8 +33,11 @@ import static org.apache.commons.codec.binary.Hex.encodeHexString;
 public class HsmEthereumTransactionSigner extends HsmConnector implements CoinsTransactionSigner {
   private static final Logger logger = LogManager.getLogger();
 
-  public HsmEthereumTransactionSigner(HsmConfig hsmConfig) {
+  private final BlockchainProtocolCodes blockchain;
+
+  public HsmEthereumTransactionSigner(HsmConfig hsmConfig, BlockchainProtocolCodes blockchain) {
     super(hsmConfig);
+    this.blockchain = blockchain;
   }
 
   @Override
@@ -55,7 +58,7 @@ public class HsmEthereumTransactionSigner extends HsmConnector implements CoinsT
         transferDetails,
         BlockchainProtocolCodes.ethereum.getName(),
         networkType.name(),
-        "ETH");
+        blockchain.getCoin());
 
     final var signedTransaction = sign(transaction, Hex.decode(privateKey), Hex.decode(publicKey));
 

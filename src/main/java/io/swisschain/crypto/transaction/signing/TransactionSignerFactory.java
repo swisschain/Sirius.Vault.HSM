@@ -20,19 +20,29 @@ public class TransactionSignerFactory {
 
   private void initCoinTransactionSigners() {
     coinTransactionSignersMap.put(
-        BlockchainProtocolCodes.bitcoin, new HsmBitcoinCoinTransactionSigner(config.hsmConfig));
+        BlockchainProtocolCodes.bitcoin,
+        new HsmBitcoinCoinTransactionSigner(config.hsmConfig, BlockchainProtocolCodes.bitcoin));
     coinTransactionSignersMap.put(
-        BlockchainProtocolCodes.ethereum, new HsmEthereumTransactionSigner(config.hsmConfig));
+        BlockchainProtocolCodes.ethereum,
+        new HsmEthereumTransactionSigner(config.hsmConfig, BlockchainProtocolCodes.ethereum));
     coinTransactionSignersMap.put(
-        BlockchainProtocolCodes.litecoin, new HsmLitecoinCoinTransactionSigner(config.hsmConfig));
+        BlockchainProtocolCodes.ethereumClassic,
+        new HsmEthereumTransactionSigner(
+            config.hsmConfig, BlockchainProtocolCodes.ethereumClassic));
     coinTransactionSignersMap.put(
-        BlockchainProtocolCodes.stellar, new HsmStellarTransactionSigner(config.hsmConfig));
+        BlockchainProtocolCodes.litecoin,
+        new HsmLitecoinCoinTransactionSigner(config.hsmConfig, BlockchainProtocolCodes.litecoin));
+    coinTransactionSignersMap.put(
+        BlockchainProtocolCodes.stellar,
+        new HsmStellarTransactionSigner(config.hsmConfig, BlockchainProtocolCodes.stellar));
     coinTransactionSignersMap.put(
         BlockchainProtocolCodes.bitcoinCash,
-        new HsmBitcoinCashCoinTransactionSigner(config.hsmConfig));
+        new HsmBitcoinCashCoinTransactionSigner(
+            config.hsmConfig, BlockchainProtocolCodes.bitcoinCash));
   }
 
-  public CoinsTransactionSigner getCoinsTransactionSigner(BlockchainProtocolCodes code) throws BlockchainNotSupportedException {
+  public CoinsTransactionSigner getCoinsTransactionSigner(BlockchainProtocolCodes code)
+      throws BlockchainNotSupportedException {
     if (!coinTransactionSignersMap.containsKey(code)) throw new BlockchainNotSupportedException();
 
     return coinTransactionSignersMap.get(code);

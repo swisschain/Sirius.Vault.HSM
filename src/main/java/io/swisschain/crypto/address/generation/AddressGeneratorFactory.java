@@ -21,7 +21,11 @@ public class AddressGeneratorFactory {
     generatorMap.put(
         BlockchainProtocolCodes.bitcoin, new HsmBitcoinAddressGenerator(config.hsmConfig));
     generatorMap.put(
-        BlockchainProtocolCodes.ethereum, new HsmEthereumAddressGenerator(config.hsmConfig));
+        BlockchainProtocolCodes.ethereum,
+        new HsmEthereumAddressGenerator(config.hsmConfig, BlockchainProtocolCodes.ethereum));
+    generatorMap.put(
+        BlockchainProtocolCodes.ethereumClassic,
+        new HsmEthereumAddressGenerator(config.hsmConfig, BlockchainProtocolCodes.ethereumClassic));
     generatorMap.put(
         BlockchainProtocolCodes.litecoin, new HsmLitecoinAddressGenerator(config.hsmConfig));
     generatorMap.put(
