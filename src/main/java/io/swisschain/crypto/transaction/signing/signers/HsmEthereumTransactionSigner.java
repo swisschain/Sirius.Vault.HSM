@@ -56,7 +56,7 @@ public class HsmEthereumTransactionSigner extends HsmConnector implements CoinsT
     EthereumTransactionValidator.validate(
         transaction,
         transferDetails,
-        BlockchainProtocolCodes.ethereum.getName(),
+        blockchain.getName(),
         networkType.name(),
         blockchain.getCoin());
 
