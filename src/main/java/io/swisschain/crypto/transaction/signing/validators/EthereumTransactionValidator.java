@@ -19,14 +19,14 @@ public class EthereumTransactionValidator {
       throw new TransferDetailsValidationException(
           String.format(
               "Invalid blockchain: %s, expected %s",
-              blockchain, transferDetails.getBlockchain().getProtocolId()));
+              transferDetails.getBlockchain().getProtocolId(), blockchain));
     }
 
     if (!transferDetails.getBlockchain().getNetworkType().name().equalsIgnoreCase(networkType)) {
       throw new TransferDetailsValidationException(
           String.format(
               "Invalid networkType: %s, expected %s",
-              networkType, transferDetails.getBlockchain().getNetworkType()));
+              transferDetails.getBlockchain().getNetworkType(), networkType));
     }
 
     if (transferDetails.getAsset().getAddress() == null) {
