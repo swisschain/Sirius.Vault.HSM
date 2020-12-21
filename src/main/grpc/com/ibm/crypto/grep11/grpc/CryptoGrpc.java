@@ -1,18 +1,10 @@
 package com.ibm.crypto.grep11.grpc;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
-import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncClientStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncServerStreamingCall;
 import static io.grpc.stub.ClientCalls.asyncUnaryCall;
-import static io.grpc.stub.ClientCalls.blockingServerStreamingCall;
 import static io.grpc.stub.ClientCalls.blockingUnaryCall;
 import static io.grpc.stub.ClientCalls.futureUnaryCall;
-import static io.grpc.stub.ServerCalls.asyncBidiStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncClientStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncServerStreamingCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
-import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
 /**
@@ -28,15 +20,180 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
     comments = "Source: hsm.proto")
 public final class CryptoGrpc {
 
-  private CryptoGrpc() {}
-
   public static final String SERVICE_NAME = "grep11.Crypto";
-
+  private static final int METHODID_GENERATE_RANDOM = 0;
+  private static final int METHODID_DIGEST_INIT = 1;
+  private static final int METHODID_DIGEST = 2;
+  private static final int METHODID_DIGEST_UPDATE = 3;
+  private static final int METHODID_DIGEST_KEY = 4;
+  private static final int METHODID_DIGEST_FINAL = 5;
+  private static final int METHODID_DIGEST_SINGLE = 6;
+  private static final int METHODID_ENCRYPT_INIT = 7;
+  private static final int METHODID_DECRYPT_INIT = 8;
+  private static final int METHODID_ENCRYPT_UPDATE = 9;
+  private static final int METHODID_DECRYPT_UPDATE = 10;
+  private static final int METHODID_ENCRYPT = 11;
+  private static final int METHODID_DECRYPT = 12;
+  private static final int METHODID_ENCRYPT_FINAL = 13;
+  private static final int METHODID_DECRYPT_FINAL = 14;
+  private static final int METHODID_ENCRYPT_SINGLE = 15;
+  private static final int METHODID_DECRYPT_SINGLE = 16;
+  private static final int METHODID_SIGN_INIT = 17;
+  private static final int METHODID_VERIFY_INIT = 18;
+  private static final int METHODID_SIGN_UPDATE = 19;
+  private static final int METHODID_VERIFY_UPDATE = 20;
+  private static final int METHODID_SIGN_FINAL = 21;
+  private static final int METHODID_VERIFY_FINAL = 22;
+  private static final int METHODID_SIGN = 23;
+  private static final int METHODID_VERIFY = 24;
+  private static final int METHODID_SIGN_SINGLE = 25;
+  private static final int METHODID_VERIFY_SINGLE = 26;
+  private static final int METHODID_GENERATE_KEY = 27;
+  private static final int METHODID_GENERATE_KEY_PAIR = 28;
+  private static final int METHODID_WRAP_KEY = 29;
+  private static final int METHODID_UNWRAP_KEY = 30;
+  private static final int METHODID_DERIVE_KEY = 31;
+  private static final int METHODID_GET_MECHANISM_LIST = 32;
+  private static final int METHODID_GET_MECHANISM_INFO = 33;
+  private static final int METHODID_GET_ATTRIBUTE_VALUE = 34;
+  private static final int METHODID_SET_ATTRIBUTE_VALUE = 35;
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<
           com.ibm.crypto.grep11.grpc.GenerateRandomRequest,
           com.ibm.crypto.grep11.grpc.GenerateRandomResponse>
       getGenerateRandomMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.DigestInitRequest,
+          com.ibm.crypto.grep11.grpc.DigestInitResponse>
+      getDigestInitMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.DigestRequest, com.ibm.crypto.grep11.grpc.DigestResponse>
+      getDigestMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.DigestUpdateRequest,
+          com.ibm.crypto.grep11.grpc.DigestUpdateResponse>
+      getDigestUpdateMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.DigestKeyRequest, com.ibm.crypto.grep11.grpc.DigestKeyResponse>
+      getDigestKeyMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.DigestFinalRequest,
+          com.ibm.crypto.grep11.grpc.DigestFinalResponse>
+      getDigestFinalMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.DigestSingleRequest,
+          com.ibm.crypto.grep11.grpc.DigestSingleResponse>
+      getDigestSingleMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.EncryptInitRequest,
+          com.ibm.crypto.grep11.grpc.EncryptInitResponse>
+      getEncryptInitMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.DecryptInitRequest,
+          com.ibm.crypto.grep11.grpc.DecryptInitResponse>
+      getDecryptInitMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.EncryptUpdateRequest,
+          com.ibm.crypto.grep11.grpc.EncryptUpdateResponse>
+      getEncryptUpdateMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.DecryptUpdateRequest,
+          com.ibm.crypto.grep11.grpc.DecryptUpdateResponse>
+      getDecryptUpdateMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.EncryptRequest, com.ibm.crypto.grep11.grpc.EncryptResponse>
+      getEncryptMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.DecryptRequest, com.ibm.crypto.grep11.grpc.DecryptResponse>
+      getDecryptMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.EncryptFinalRequest,
+          com.ibm.crypto.grep11.grpc.EncryptFinalResponse>
+      getEncryptFinalMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.DecryptFinalRequest,
+          com.ibm.crypto.grep11.grpc.DecryptFinalResponse>
+      getDecryptFinalMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.EncryptSingleRequest,
+          com.ibm.crypto.grep11.grpc.EncryptSingleResponse>
+      getEncryptSingleMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.DecryptSingleRequest,
+          com.ibm.crypto.grep11.grpc.DecryptSingleResponse>
+      getDecryptSingleMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.SignInitRequest, com.ibm.crypto.grep11.grpc.SignInitResponse>
+      getSignInitMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.VerifyInitRequest,
+          com.ibm.crypto.grep11.grpc.VerifyInitResponse>
+      getVerifyInitMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.SignUpdateRequest,
+          com.ibm.crypto.grep11.grpc.SignUpdateResponse>
+      getSignUpdateMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.VerifyUpdateRequest,
+          com.ibm.crypto.grep11.grpc.VerifyUpdateResponse>
+      getVerifyUpdateMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.SignFinalRequest, com.ibm.crypto.grep11.grpc.SignFinalResponse>
+      getSignFinalMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.VerifyFinalRequest,
+          com.ibm.crypto.grep11.grpc.VerifyFinalResponse>
+      getVerifyFinalMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.SignRequest, com.ibm.crypto.grep11.grpc.SignResponse>
+      getSignMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.VerifyRequest, com.ibm.crypto.grep11.grpc.VerifyResponse>
+      getVerifyMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.SignSingleRequest,
+          com.ibm.crypto.grep11.grpc.SignSingleResponse>
+      getSignSingleMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.VerifySingleRequest,
+          com.ibm.crypto.grep11.grpc.VerifySingleResponse>
+      getVerifySingleMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.GenerateKeyRequest,
+          com.ibm.crypto.grep11.grpc.GenerateKeyResponse>
+      getGenerateKeyMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.GenerateKeyPairRequest,
+          com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse>
+      getGenerateKeyPairMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.WrapKeyRequest, com.ibm.crypto.grep11.grpc.WrapKeyResponse>
+      getWrapKeyMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.UnwrapKeyRequest, com.ibm.crypto.grep11.grpc.UnwrapKeyResponse>
+      getUnwrapKeyMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.DeriveKeyRequest, com.ibm.crypto.grep11.grpc.DeriveKeyResponse>
+      getDeriveKeyMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.GetMechanismListRequest,
+          com.ibm.crypto.grep11.grpc.GetMechanismListResponse>
+      getGetMechanismListMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest,
+          com.ibm.crypto.grep11.grpc.GetMechanismInfoResponse>
+      getGetMechanismInfoMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.GetAttributeValueRequest,
+          com.ibm.crypto.grep11.grpc.GetAttributeValueResponse>
+      getGetAttributeValueMethod;
+  private static volatile io.grpc.MethodDescriptor<
+          com.ibm.crypto.grep11.grpc.SetAttributeValueRequest,
+          com.ibm.crypto.grep11.grpc.SetAttributeValueResponse>
+      getSetAttributeValueMethod;
+  private static volatile io.grpc.ServiceDescriptor serviceDescriptor;
+
+  private CryptoGrpc() {}
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GenerateRandom",
@@ -79,11 +236,6 @@ public final class CryptoGrpc {
     return getGenerateRandomMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.DigestInitRequest,
-          com.ibm.crypto.grep11.grpc.DigestInitResponse>
-      getDigestInitMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "DigestInit",
       requestType = com.ibm.crypto.grep11.grpc.DigestInitRequest.class,
@@ -123,10 +275,6 @@ public final class CryptoGrpc {
     return getDigestInitMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.DigestRequest, com.ibm.crypto.grep11.grpc.DigestResponse>
-      getDigestMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Digest",
       requestType = com.ibm.crypto.grep11.grpc.DigestRequest.class,
@@ -163,11 +311,6 @@ public final class CryptoGrpc {
     }
     return getDigestMethod;
   }
-
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.DigestUpdateRequest,
-          com.ibm.crypto.grep11.grpc.DigestUpdateResponse>
-      getDigestUpdateMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "DigestUpdate",
@@ -208,10 +351,6 @@ public final class CryptoGrpc {
     return getDigestUpdateMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.DigestKeyRequest, com.ibm.crypto.grep11.grpc.DigestKeyResponse>
-      getDigestKeyMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "DigestKey",
       requestType = com.ibm.crypto.grep11.grpc.DigestKeyRequest.class,
@@ -249,11 +388,6 @@ public final class CryptoGrpc {
     }
     return getDigestKeyMethod;
   }
-
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.DigestFinalRequest,
-          com.ibm.crypto.grep11.grpc.DigestFinalResponse>
-      getDigestFinalMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "DigestFinal",
@@ -294,11 +428,6 @@ public final class CryptoGrpc {
     return getDigestFinalMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.DigestSingleRequest,
-          com.ibm.crypto.grep11.grpc.DigestSingleResponse>
-      getDigestSingleMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "DigestSingle",
       requestType = com.ibm.crypto.grep11.grpc.DigestSingleRequest.class,
@@ -337,11 +466,6 @@ public final class CryptoGrpc {
     }
     return getDigestSingleMethod;
   }
-
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.EncryptInitRequest,
-          com.ibm.crypto.grep11.grpc.EncryptInitResponse>
-      getEncryptInitMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "EncryptInit",
@@ -382,11 +506,6 @@ public final class CryptoGrpc {
     return getEncryptInitMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.DecryptInitRequest,
-          com.ibm.crypto.grep11.grpc.DecryptInitResponse>
-      getDecryptInitMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "DecryptInit",
       requestType = com.ibm.crypto.grep11.grpc.DecryptInitRequest.class,
@@ -425,11 +544,6 @@ public final class CryptoGrpc {
     }
     return getDecryptInitMethod;
   }
-
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.EncryptUpdateRequest,
-          com.ibm.crypto.grep11.grpc.EncryptUpdateResponse>
-      getEncryptUpdateMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "EncryptUpdate",
@@ -471,11 +585,6 @@ public final class CryptoGrpc {
     return getEncryptUpdateMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.DecryptUpdateRequest,
-          com.ibm.crypto.grep11.grpc.DecryptUpdateResponse>
-      getDecryptUpdateMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "DecryptUpdate",
       requestType = com.ibm.crypto.grep11.grpc.DecryptUpdateRequest.class,
@@ -516,10 +625,6 @@ public final class CryptoGrpc {
     return getDecryptUpdateMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.EncryptRequest, com.ibm.crypto.grep11.grpc.EncryptResponse>
-      getEncryptMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Encrypt",
       requestType = com.ibm.crypto.grep11.grpc.EncryptRequest.class,
@@ -557,10 +662,6 @@ public final class CryptoGrpc {
     return getEncryptMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.DecryptRequest, com.ibm.crypto.grep11.grpc.DecryptResponse>
-      getDecryptMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Decrypt",
       requestType = com.ibm.crypto.grep11.grpc.DecryptRequest.class,
@@ -597,11 +698,6 @@ public final class CryptoGrpc {
     }
     return getDecryptMethod;
   }
-
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.EncryptFinalRequest,
-          com.ibm.crypto.grep11.grpc.EncryptFinalResponse>
-      getEncryptFinalMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "EncryptFinal",
@@ -642,11 +738,6 @@ public final class CryptoGrpc {
     return getEncryptFinalMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.DecryptFinalRequest,
-          com.ibm.crypto.grep11.grpc.DecryptFinalResponse>
-      getDecryptFinalMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "DecryptFinal",
       requestType = com.ibm.crypto.grep11.grpc.DecryptFinalRequest.class,
@@ -685,11 +776,6 @@ public final class CryptoGrpc {
     }
     return getDecryptFinalMethod;
   }
-
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.EncryptSingleRequest,
-          com.ibm.crypto.grep11.grpc.EncryptSingleResponse>
-      getEncryptSingleMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "EncryptSingle",
@@ -731,11 +817,6 @@ public final class CryptoGrpc {
     return getEncryptSingleMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.DecryptSingleRequest,
-          com.ibm.crypto.grep11.grpc.DecryptSingleResponse>
-      getDecryptSingleMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "DecryptSingle",
       requestType = com.ibm.crypto.grep11.grpc.DecryptSingleRequest.class,
@@ -776,10 +857,6 @@ public final class CryptoGrpc {
     return getDecryptSingleMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.SignInitRequest, com.ibm.crypto.grep11.grpc.SignInitResponse>
-      getSignInitMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "SignInit",
       requestType = com.ibm.crypto.grep11.grpc.SignInitRequest.class,
@@ -816,11 +893,6 @@ public final class CryptoGrpc {
     }
     return getSignInitMethod;
   }
-
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.VerifyInitRequest,
-          com.ibm.crypto.grep11.grpc.VerifyInitResponse>
-      getVerifyInitMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "VerifyInit",
@@ -861,11 +933,6 @@ public final class CryptoGrpc {
     return getVerifyInitMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.SignUpdateRequest,
-          com.ibm.crypto.grep11.grpc.SignUpdateResponse>
-      getSignUpdateMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "SignUpdate",
       requestType = com.ibm.crypto.grep11.grpc.SignUpdateRequest.class,
@@ -904,11 +971,6 @@ public final class CryptoGrpc {
     }
     return getSignUpdateMethod;
   }
-
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.VerifyUpdateRequest,
-          com.ibm.crypto.grep11.grpc.VerifyUpdateResponse>
-      getVerifyUpdateMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "VerifyUpdate",
@@ -949,10 +1011,6 @@ public final class CryptoGrpc {
     return getVerifyUpdateMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.SignFinalRequest, com.ibm.crypto.grep11.grpc.SignFinalResponse>
-      getSignFinalMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "SignFinal",
       requestType = com.ibm.crypto.grep11.grpc.SignFinalRequest.class,
@@ -990,11 +1048,6 @@ public final class CryptoGrpc {
     }
     return getSignFinalMethod;
   }
-
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.VerifyFinalRequest,
-          com.ibm.crypto.grep11.grpc.VerifyFinalResponse>
-      getVerifyFinalMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "VerifyFinal",
@@ -1035,10 +1088,6 @@ public final class CryptoGrpc {
     return getVerifyFinalMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.SignRequest, com.ibm.crypto.grep11.grpc.SignResponse>
-      getSignMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Sign",
       requestType = com.ibm.crypto.grep11.grpc.SignRequest.class,
@@ -1076,10 +1125,6 @@ public final class CryptoGrpc {
     return getSignMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.VerifyRequest, com.ibm.crypto.grep11.grpc.VerifyResponse>
-      getVerifyMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Verify",
       requestType = com.ibm.crypto.grep11.grpc.VerifyRequest.class,
@@ -1116,11 +1161,6 @@ public final class CryptoGrpc {
     }
     return getVerifyMethod;
   }
-
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.SignSingleRequest,
-          com.ibm.crypto.grep11.grpc.SignSingleResponse>
-      getSignSingleMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "SignSingle",
@@ -1161,11 +1201,6 @@ public final class CryptoGrpc {
     return getSignSingleMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.VerifySingleRequest,
-          com.ibm.crypto.grep11.grpc.VerifySingleResponse>
-      getVerifySingleMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "VerifySingle",
       requestType = com.ibm.crypto.grep11.grpc.VerifySingleRequest.class,
@@ -1205,11 +1240,6 @@ public final class CryptoGrpc {
     return getVerifySingleMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.GenerateKeyRequest,
-          com.ibm.crypto.grep11.grpc.GenerateKeyResponse>
-      getGenerateKeyMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GenerateKey",
       requestType = com.ibm.crypto.grep11.grpc.GenerateKeyRequest.class,
@@ -1248,11 +1278,6 @@ public final class CryptoGrpc {
     }
     return getGenerateKeyMethod;
   }
-
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.GenerateKeyPairRequest,
-          com.ibm.crypto.grep11.grpc.GenerateKeyPairResponse>
-      getGenerateKeyPairMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GenerateKeyPair",
@@ -1295,10 +1320,6 @@ public final class CryptoGrpc {
     return getGenerateKeyPairMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.WrapKeyRequest, com.ibm.crypto.grep11.grpc.WrapKeyResponse>
-      getWrapKeyMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "WrapKey",
       requestType = com.ibm.crypto.grep11.grpc.WrapKeyRequest.class,
@@ -1335,10 +1356,6 @@ public final class CryptoGrpc {
     }
     return getWrapKeyMethod;
   }
-
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.UnwrapKeyRequest, com.ibm.crypto.grep11.grpc.UnwrapKeyResponse>
-      getUnwrapKeyMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "UnwrapKey",
@@ -1378,10 +1395,6 @@ public final class CryptoGrpc {
     return getUnwrapKeyMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.DeriveKeyRequest, com.ibm.crypto.grep11.grpc.DeriveKeyResponse>
-      getDeriveKeyMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "DeriveKey",
       requestType = com.ibm.crypto.grep11.grpc.DeriveKeyRequest.class,
@@ -1419,11 +1432,6 @@ public final class CryptoGrpc {
     }
     return getDeriveKeyMethod;
   }
-
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.GetMechanismListRequest,
-          com.ibm.crypto.grep11.grpc.GetMechanismListResponse>
-      getGetMechanismListMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetMechanismList",
@@ -1466,11 +1474,6 @@ public final class CryptoGrpc {
     return getGetMechanismListMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest,
-          com.ibm.crypto.grep11.grpc.GetMechanismInfoResponse>
-      getGetMechanismInfoMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetMechanismInfo",
       requestType = com.ibm.crypto.grep11.grpc.GetMechanismInfoRequest.class,
@@ -1512,11 +1515,6 @@ public final class CryptoGrpc {
     return getGetMechanismInfoMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.GetAttributeValueRequest,
-          com.ibm.crypto.grep11.grpc.GetAttributeValueResponse>
-      getGetAttributeValueMethod;
-
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetAttributeValue",
       requestType = com.ibm.crypto.grep11.grpc.GetAttributeValueRequest.class,
@@ -1557,11 +1555,6 @@ public final class CryptoGrpc {
     }
     return getGetAttributeValueMethod;
   }
-
-  private static volatile io.grpc.MethodDescriptor<
-          com.ibm.crypto.grep11.grpc.SetAttributeValueRequest,
-          com.ibm.crypto.grep11.grpc.SetAttributeValueResponse>
-      getSetAttributeValueMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "SetAttributeValue",
@@ -1642,6 +1635,59 @@ public final class CryptoGrpc {
           }
         };
     return CryptoFutureStub.newStub(factory, channel);
+  }
+
+  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
+    io.grpc.ServiceDescriptor result = serviceDescriptor;
+    if (result == null) {
+      synchronized (CryptoGrpc.class) {
+        result = serviceDescriptor;
+        if (result == null) {
+          serviceDescriptor =
+              result =
+                  io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
+                      .setSchemaDescriptor(new CryptoFileDescriptorSupplier())
+                      .addMethod(getGenerateRandomMethod())
+                      .addMethod(getDigestInitMethod())
+                      .addMethod(getDigestMethod())
+                      .addMethod(getDigestUpdateMethod())
+                      .addMethod(getDigestKeyMethod())
+                      .addMethod(getDigestFinalMethod())
+                      .addMethod(getDigestSingleMethod())
+                      .addMethod(getEncryptInitMethod())
+                      .addMethod(getDecryptInitMethod())
+                      .addMethod(getEncryptUpdateMethod())
+                      .addMethod(getDecryptUpdateMethod())
+                      .addMethod(getEncryptMethod())
+                      .addMethod(getDecryptMethod())
+                      .addMethod(getEncryptFinalMethod())
+                      .addMethod(getDecryptFinalMethod())
+                      .addMethod(getEncryptSingleMethod())
+                      .addMethod(getDecryptSingleMethod())
+                      .addMethod(getSignInitMethod())
+                      .addMethod(getVerifyInitMethod())
+                      .addMethod(getSignUpdateMethod())
+                      .addMethod(getVerifyUpdateMethod())
+                      .addMethod(getSignFinalMethod())
+                      .addMethod(getVerifyFinalMethod())
+                      .addMethod(getSignMethod())
+                      .addMethod(getVerifyMethod())
+                      .addMethod(getSignSingleMethod())
+                      .addMethod(getVerifySingleMethod())
+                      .addMethod(getGenerateKeyMethod())
+                      .addMethod(getGenerateKeyPairMethod())
+                      .addMethod(getWrapKeyMethod())
+                      .addMethod(getUnwrapKeyMethod())
+                      .addMethod(getDeriveKeyMethod())
+                      .addMethod(getGetMechanismListMethod())
+                      .addMethod(getGetMechanismInfoMethod())
+                      .addMethod(getGetAttributeValueMethod())
+                      .addMethod(getSetAttributeValueMethod())
+                      .build();
+        }
+      }
+    }
+    return result;
   }
 
   /**
@@ -4549,43 +4595,6 @@ public final class CryptoGrpc {
     }
   }
 
-  private static final int METHODID_GENERATE_RANDOM = 0;
-  private static final int METHODID_DIGEST_INIT = 1;
-  private static final int METHODID_DIGEST = 2;
-  private static final int METHODID_DIGEST_UPDATE = 3;
-  private static final int METHODID_DIGEST_KEY = 4;
-  private static final int METHODID_DIGEST_FINAL = 5;
-  private static final int METHODID_DIGEST_SINGLE = 6;
-  private static final int METHODID_ENCRYPT_INIT = 7;
-  private static final int METHODID_DECRYPT_INIT = 8;
-  private static final int METHODID_ENCRYPT_UPDATE = 9;
-  private static final int METHODID_DECRYPT_UPDATE = 10;
-  private static final int METHODID_ENCRYPT = 11;
-  private static final int METHODID_DECRYPT = 12;
-  private static final int METHODID_ENCRYPT_FINAL = 13;
-  private static final int METHODID_DECRYPT_FINAL = 14;
-  private static final int METHODID_ENCRYPT_SINGLE = 15;
-  private static final int METHODID_DECRYPT_SINGLE = 16;
-  private static final int METHODID_SIGN_INIT = 17;
-  private static final int METHODID_VERIFY_INIT = 18;
-  private static final int METHODID_SIGN_UPDATE = 19;
-  private static final int METHODID_VERIFY_UPDATE = 20;
-  private static final int METHODID_SIGN_FINAL = 21;
-  private static final int METHODID_VERIFY_FINAL = 22;
-  private static final int METHODID_SIGN = 23;
-  private static final int METHODID_VERIFY = 24;
-  private static final int METHODID_SIGN_SINGLE = 25;
-  private static final int METHODID_VERIFY_SINGLE = 26;
-  private static final int METHODID_GENERATE_KEY = 27;
-  private static final int METHODID_GENERATE_KEY_PAIR = 28;
-  private static final int METHODID_WRAP_KEY = 29;
-  private static final int METHODID_UNWRAP_KEY = 30;
-  private static final int METHODID_DERIVE_KEY = 31;
-  private static final int METHODID_GET_MECHANISM_LIST = 32;
-  private static final int METHODID_GET_MECHANISM_INFO = 33;
-  private static final int METHODID_GET_ATTRIBUTE_VALUE = 34;
-  private static final int METHODID_SET_ATTRIBUTE_VALUE = 35;
-
   private static final class MethodHandlers<Req, Resp>
       implements io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
           io.grpc.stub.ServerCalls.ServerStreamingMethod<Req, Resp>,
@@ -4867,60 +4876,5 @@ public final class CryptoGrpc {
     public com.google.protobuf.Descriptors.MethodDescriptor getMethodDescriptor() {
       return getServiceDescriptor().findMethodByName(methodName);
     }
-  }
-
-  private static volatile io.grpc.ServiceDescriptor serviceDescriptor;
-
-  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
-    io.grpc.ServiceDescriptor result = serviceDescriptor;
-    if (result == null) {
-      synchronized (CryptoGrpc.class) {
-        result = serviceDescriptor;
-        if (result == null) {
-          serviceDescriptor =
-              result =
-                  io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
-                      .setSchemaDescriptor(new CryptoFileDescriptorSupplier())
-                      .addMethod(getGenerateRandomMethod())
-                      .addMethod(getDigestInitMethod())
-                      .addMethod(getDigestMethod())
-                      .addMethod(getDigestUpdateMethod())
-                      .addMethod(getDigestKeyMethod())
-                      .addMethod(getDigestFinalMethod())
-                      .addMethod(getDigestSingleMethod())
-                      .addMethod(getEncryptInitMethod())
-                      .addMethod(getDecryptInitMethod())
-                      .addMethod(getEncryptUpdateMethod())
-                      .addMethod(getDecryptUpdateMethod())
-                      .addMethod(getEncryptMethod())
-                      .addMethod(getDecryptMethod())
-                      .addMethod(getEncryptFinalMethod())
-                      .addMethod(getDecryptFinalMethod())
-                      .addMethod(getEncryptSingleMethod())
-                      .addMethod(getDecryptSingleMethod())
-                      .addMethod(getSignInitMethod())
-                      .addMethod(getVerifyInitMethod())
-                      .addMethod(getSignUpdateMethod())
-                      .addMethod(getVerifyUpdateMethod())
-                      .addMethod(getSignFinalMethod())
-                      .addMethod(getVerifyFinalMethod())
-                      .addMethod(getSignMethod())
-                      .addMethod(getVerifyMethod())
-                      .addMethod(getSignSingleMethod())
-                      .addMethod(getVerifySingleMethod())
-                      .addMethod(getGenerateKeyMethod())
-                      .addMethod(getGenerateKeyPairMethod())
-                      .addMethod(getWrapKeyMethod())
-                      .addMethod(getUnwrapKeyMethod())
-                      .addMethod(getDeriveKeyMethod())
-                      .addMethod(getGetMechanismListMethod())
-                      .addMethod(getGetMechanismInfoMethod())
-                      .addMethod(getGetAttributeValueMethod())
-                      .addMethod(getSetAttributeValueMethod())
-                      .build();
-        }
-      }
-    }
-    return result;
   }
 }

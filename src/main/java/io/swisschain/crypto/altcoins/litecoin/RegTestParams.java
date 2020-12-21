@@ -1,6 +1,8 @@
 package io.swisschain.crypto.altcoins.litecoin;
 
 public class RegTestParams extends org.bitcoinj.params.RegTestParams {
+  private static RegTestParams instance;
+
   public RegTestParams() {
     super();
     packetMagic = 0xdab5bffa;
@@ -22,7 +24,6 @@ public class RegTestParams extends org.bitcoinj.params.RegTestParams {
     majorityWindow = MainNetParams.MAINNET_MAJORITY_WINDOW;
   }
 
-  private static RegTestParams instance;
   public static synchronized RegTestParams get() {
     if (instance == null) {
       instance = new RegTestParams();

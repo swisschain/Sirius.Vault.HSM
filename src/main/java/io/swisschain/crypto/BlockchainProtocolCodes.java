@@ -1,16 +1,19 @@
 package io.swisschain.crypto;
 
 public enum BlockchainProtocolCodes {
-  bitcoin("bitcoin"),
-  litecoin("litecoin"),
-  ethereum("ethereum"),
-  stellar("stellar"),
-  bitcoinCash("bitcoin-cash");
+  bitcoin("bitcoin", "BTC"),
+  litecoin("litecoin", "LTC"),
+  ethereum("ethereum", "ETH"),
+  ethereumClassic("ethereum-classic", "ETC"),
+  stellar("stellar", "XLM"),
+  bitcoinCash("bitcoin-cash", "BCH");
 
   private final String name;
+  private final String coin;
 
-  BlockchainProtocolCodes(String name) {
+  BlockchainProtocolCodes(String name, String coin) {
     this.name = name;
+    this.coin = coin;
   }
 
   public static BlockchainProtocolCodes fromString(String name) {
@@ -24,5 +27,9 @@ public enum BlockchainProtocolCodes {
 
   public String getName() {
     return name;
+  }
+
+  public String getCoin() {
+    return coin;
   }
 }

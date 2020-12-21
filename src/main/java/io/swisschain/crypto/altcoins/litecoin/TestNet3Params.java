@@ -1,6 +1,8 @@
 package io.swisschain.crypto.altcoins.litecoin;
 
 public class TestNet3Params extends org.bitcoinj.params.TestNet3Params {
+  private static TestNet3Params instance;
+
   public TestNet3Params() {
     super();
     packetMagic = 0xf1c8d2fd;
@@ -24,7 +26,6 @@ public class TestNet3Params extends org.bitcoinj.params.TestNet3Params {
     majorityWindow = MainNetParams.MAINNET_MAJORITY_WINDOW;
   }
 
-  private static TestNet3Params instance;
   public static synchronized TestNet3Params get() {
     if (instance == null) {
       instance = new TestNet3Params();

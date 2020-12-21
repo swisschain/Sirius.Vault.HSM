@@ -2,6 +2,7 @@ package io.swisschain.crypto.transaction.signing.signers;
 
 import io.swisschain.config.HsmConfig;
 import io.swisschain.contracts.TransferDetails;
+import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.crypto.exceptions.BlockchainNotSupportedException;
 import io.swisschain.crypto.hsm.HsmConnector;
 import io.swisschain.crypto.transaction.signing.CoinsTransactionSigner;
@@ -27,8 +28,11 @@ import java.util.List;
 public abstract class HsmBitcoinBasedTransactionSigner extends HsmConnector
     implements CoinsTransactionSigner {
 
-  public HsmBitcoinBasedTransactionSigner(HsmConfig hsmConfig) {
+  private final BlockchainProtocolCodes blockchain;
+
+  public HsmBitcoinBasedTransactionSigner(HsmConfig hsmConfig, BlockchainProtocolCodes blockchain) {
     super(hsmConfig);
+    this.blockchain = blockchain;
   }
 
   public TransactionSigningResult sign(

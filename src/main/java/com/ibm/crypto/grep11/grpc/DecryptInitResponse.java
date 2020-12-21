@@ -8,7 +8,28 @@ public final class DecryptInitResponse extends com.google.protobuf.GeneratedMess
     implements
     // @@protoc_insertion_point(message_implements:grep11.DecryptInitResponse)
     DecryptInitResponseOrBuilder {
+  public static final int STATE_FIELD_NUMBER = 1;
   private static final long serialVersionUID = 0L;
+  // @@protoc_insertion_point(class_scope:grep11.DecryptInitResponse)
+  private static final com.ibm.crypto.grep11.grpc.DecryptInitResponse DEFAULT_INSTANCE;
+  private static final com.google.protobuf.Parser<DecryptInitResponse> PARSER =
+      new com.google.protobuf.AbstractParser<DecryptInitResponse>() {
+        @java.lang.Override
+        public DecryptInitResponse parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new DecryptInitResponse(input, extensionRegistry);
+        }
+      };
+
+  static {
+    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.DecryptInitResponse();
+  }
+
+  private com.google.protobuf.ByteString state_;
+  private byte memoizedIsInitialized = -1;
+
   // Use DecryptInitResponse.newBuilder() to construct.
   private DecryptInitResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -17,18 +38,6 @@ public final class DecryptInitResponse extends com.google.protobuf.GeneratedMess
   private DecryptInitResponse() {
     state_ = com.google.protobuf.ByteString.EMPTY;
   }
-
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-    return new DecryptInitResponse();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-    return this.unknownFields;
-  }
-
   private DecryptInitResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -73,92 +82,6 @@ public final class DecryptInitResponse extends com.google.protobuf.GeneratedMess
 
   public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
     return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_DecryptInitResponse_descriptor;
-  }
-
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-    return com.ibm.crypto.grep11.grpc.Hsm
-        .internal_static_grep11_DecryptInitResponse_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.ibm.crypto.grep11.grpc.DecryptInitResponse.class,
-            com.ibm.crypto.grep11.grpc.DecryptInitResponse.Builder.class);
-  }
-
-  public static final int STATE_FIELD_NUMBER = 1;
-  private com.google.protobuf.ByteString state_;
-  /**
-   * <code>bytes State = 1;</code>
-   *
-   * @return The state.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString getState() {
-    return state_;
-  }
-
-  private byte memoizedIsInitialized = -1;
-
-  @java.lang.Override
-  public final boolean isInitialized() {
-    byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) return true;
-    if (isInitialized == 0) return false;
-
-    memoizedIsInitialized = 1;
-    return true;
-  }
-
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    if (!state_.isEmpty()) {
-      output.writeBytes(1, state_);
-    }
-    unknownFields.writeTo(output);
-  }
-
-  @java.lang.Override
-  public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) return size;
-
-    size = 0;
-    if (!state_.isEmpty()) {
-      size += com.google.protobuf.CodedOutputStream.computeBytesSize(1, state_);
-    }
-    size += unknownFields.getSerializedSize();
-    memoizedSize = size;
-    return size;
-  }
-
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
-    if (obj == this) {
-      return true;
-    }
-    if (!(obj instanceof com.ibm.crypto.grep11.grpc.DecryptInitResponse)) {
-      return super.equals(obj);
-    }
-    com.ibm.crypto.grep11.grpc.DecryptInitResponse other =
-        (com.ibm.crypto.grep11.grpc.DecryptInitResponse) obj;
-
-    if (!getState().equals(other.getState())) return false;
-    if (!unknownFields.equals(other.unknownFields)) return false;
-    return true;
-  }
-
-  @java.lang.Override
-  public int hashCode() {
-    if (memoizedHashCode != 0) {
-      return memoizedHashCode;
-    }
-    int hash = 41;
-    hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + STATE_FIELD_NUMBER;
-    hash = (53 * hash) + getState().hashCode();
-    hash = (29 * hash) + unknownFields.hashCode();
-    memoizedHashCode = hash;
-    return hash;
   }
 
   public static com.ibm.crypto.grep11.grpc.DecryptInitResponse parseFrom(java.nio.ByteBuffer data)
@@ -233,17 +156,118 @@ public final class DecryptInitResponse extends com.google.protobuf.GeneratedMess
         PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
-  public Builder newBuilderForType() {
-    return newBuilder();
-  }
-
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
 
   public static Builder newBuilder(com.ibm.crypto.grep11.grpc.DecryptInitResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+  }
+
+  public static com.ibm.crypto.grep11.grpc.DecryptInitResponse getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  public static com.google.protobuf.Parser<DecryptInitResponse> parser() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new DecryptInitResponse();
+  }
+
+  @java.lang.Override
+  public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    return this.unknownFields;
+  }
+
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internalGetFieldAccessorTable() {
+    return com.ibm.crypto.grep11.grpc.Hsm
+        .internal_static_grep11_DecryptInitResponse_fieldAccessorTable
+        .ensureFieldAccessorsInitialized(
+            com.ibm.crypto.grep11.grpc.DecryptInitResponse.class,
+            com.ibm.crypto.grep11.grpc.DecryptInitResponse.Builder.class);
+  }
+
+  /**
+   * <code>bytes State = 1;</code>
+   *
+   * @return The state.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString getState() {
+    return state_;
+  }
+
+  @java.lang.Override
+  public final boolean isInitialized() {
+    byte isInitialized = memoizedIsInitialized;
+    if (isInitialized == 1) return true;
+    if (isInitialized == 0) return false;
+
+    memoizedIsInitialized = 1;
+    return true;
+  }
+
+  @java.lang.Override
+  public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+    if (!state_.isEmpty()) {
+      output.writeBytes(1, state_);
+    }
+    unknownFields.writeTo(output);
+  }
+
+  @java.lang.Override
+  public int getSerializedSize() {
+    int size = memoizedSize;
+    if (size != -1) return size;
+
+    size = 0;
+    if (!state_.isEmpty()) {
+      size += com.google.protobuf.CodedOutputStream.computeBytesSize(1, state_);
+    }
+    size += unknownFields.getSerializedSize();
+    memoizedSize = size;
+    return size;
+  }
+
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
+    if (obj == this) {
+      return true;
+    }
+    if (!(obj instanceof com.ibm.crypto.grep11.grpc.DecryptInitResponse)) {
+      return super.equals(obj);
+    }
+    com.ibm.crypto.grep11.grpc.DecryptInitResponse other =
+        (com.ibm.crypto.grep11.grpc.DecryptInitResponse) obj;
+
+    if (!getState().equals(other.getState())) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
+  }
+
+  @java.lang.Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + STATE_FIELD_NUMBER;
+    hash = (53 * hash) + getState().hashCode();
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
+  }
+
+  @java.lang.Override
+  public Builder newBuilderForType() {
+    return newBuilder();
   }
 
   @java.lang.Override
@@ -256,11 +280,34 @@ public final class DecryptInitResponse extends com.google.protobuf.GeneratedMess
     Builder builder = new Builder(parent);
     return builder;
   }
+
+  @java.lang.Override
+  public com.google.protobuf.Parser<DecryptInitResponse> getParserForType() {
+    return PARSER;
+  }
+
+  @java.lang.Override
+  public com.ibm.crypto.grep11.grpc.DecryptInitResponse getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
+  }
+
   /** Protobuf type {@code grep11.DecryptInitResponse} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
       // @@protoc_insertion_point(builder_implements:grep11.DecryptInitResponse)
       com.ibm.crypto.grep11.grpc.DecryptInitResponseOrBuilder {
+    private com.google.protobuf.ByteString state_ = com.google.protobuf.ByteString.EMPTY;
+
+    // Construct using com.ibm.crypto.grep11.grpc.DecryptInitResponse.newBuilder()
+    private Builder() {
+      maybeForceBuilderInitialization();
+    }
+
+    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      super(parent);
+      maybeForceBuilderInitialization();
+    }
+
     public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
       return com.ibm.crypto.grep11.grpc.Hsm.internal_static_grep11_DecryptInitResponse_descriptor;
     }
@@ -273,16 +320,6 @@ public final class DecryptInitResponse extends com.google.protobuf.GeneratedMess
           .ensureFieldAccessorsInitialized(
               com.ibm.crypto.grep11.grpc.DecryptInitResponse.class,
               com.ibm.crypto.grep11.grpc.DecryptInitResponse.Builder.class);
-    }
-
-    // Construct using com.ibm.crypto.grep11.grpc.DecryptInitResponse.newBuilder()
-    private Builder() {
-      maybeForceBuilderInitialization();
-    }
-
-    private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-      maybeForceBuilderInitialization();
     }
 
     private void maybeForceBuilderInitialization() {
@@ -402,7 +439,6 @@ public final class DecryptInitResponse extends com.google.protobuf.GeneratedMess
       return this;
     }
 
-    private com.google.protobuf.ByteString state_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <code>bytes State = 1;</code>
      *
@@ -451,41 +487,5 @@ public final class DecryptInitResponse extends com.google.protobuf.GeneratedMess
     }
 
     // @@protoc_insertion_point(builder_scope:grep11.DecryptInitResponse)
-  }
-
-  // @@protoc_insertion_point(class_scope:grep11.DecryptInitResponse)
-  private static final com.ibm.crypto.grep11.grpc.DecryptInitResponse DEFAULT_INSTANCE;
-
-  static {
-    DEFAULT_INSTANCE = new com.ibm.crypto.grep11.grpc.DecryptInitResponse();
-  }
-
-  public static com.ibm.crypto.grep11.grpc.DecryptInitResponse getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  private static final com.google.protobuf.Parser<DecryptInitResponse> PARSER =
-      new com.google.protobuf.AbstractParser<DecryptInitResponse>() {
-        @java.lang.Override
-        public DecryptInitResponse parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new DecryptInitResponse(input, extensionRegistry);
-        }
-      };
-
-  public static com.google.protobuf.Parser<DecryptInitResponse> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<DecryptInitResponse> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.ibm.crypto.grep11.grpc.DecryptInitResponse getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
   }
 }

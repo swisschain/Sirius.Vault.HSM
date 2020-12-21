@@ -32,11 +32,14 @@ import java.util.List;
 
 public class HsmBitcoinCashCoinTransactionSigner extends HsmConnector
     implements CoinsTransactionSigner {
-  public static final String BCH = "BCH";
   private static final Logger logger = LogManager.getLogger();
 
-  public HsmBitcoinCashCoinTransactionSigner(HsmConfig hsmConfig) {
+  private final BlockchainProtocolCodes blockchain;
+
+  public HsmBitcoinCashCoinTransactionSigner(
+      HsmConfig hsmConfig, BlockchainProtocolCodes blockchain) {
     super(hsmConfig);
+    this.blockchain = blockchain;
   }
 
   @Override
@@ -60,7 +63,7 @@ public class HsmBitcoinCashCoinTransactionSigner extends HsmConnector
             transferDetails,
             BlockchainProtocolCodes.bitcoinCash.getName(),
             networkType.name(),
-            BCH);
+            blockchain.getCoin());
     logger.debug("TxId: {}", result.getTransactionId());
     logger.debug("Signed: {}", Hex.toHexString(result.getSignedTransaction()));
     return result;
