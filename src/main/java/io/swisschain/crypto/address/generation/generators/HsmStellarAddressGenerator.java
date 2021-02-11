@@ -1,6 +1,6 @@
 package io.swisschain.crypto.address.generation.generators;
 
-import io.swisschain.config.HsmConfig;
+import io.swisschain.config.clients.HsmApiConfig;
 import io.swisschain.crypto.address.generation.AddressGenerationResult;
 import io.swisschain.crypto.address.generation.AddressGenerator;
 import io.swisschain.crypto.hsm.HsmConnector;
@@ -16,7 +16,7 @@ import java.io.IOException;
 public class HsmStellarAddressGenerator extends HsmConnector implements AddressGenerator {
   private static final Logger logger = LogManager.getLogger();
 
-  public HsmStellarAddressGenerator(HsmConfig hsmConfig) {
+  public HsmStellarAddressGenerator(HsmApiConfig hsmConfig) {
     super(hsmConfig);
   }
 

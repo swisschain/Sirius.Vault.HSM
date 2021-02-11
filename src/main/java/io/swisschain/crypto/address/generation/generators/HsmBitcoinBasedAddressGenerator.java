@@ -1,6 +1,6 @@
 package io.swisschain.crypto.address.generation.generators;
 
-import io.swisschain.config.HsmConfig;
+import io.swisschain.config.clients.HsmApiConfig;
 import io.swisschain.crypto.address.generation.AddressGenerationResult;
 import io.swisschain.crypto.address.generation.AddressGenerator;
 import io.swisschain.crypto.hsm.HsmConnector;
@@ -15,7 +15,7 @@ import java.io.IOException;
 public abstract class HsmBitcoinBasedAddressGenerator extends HsmConnector
     implements AddressGenerator {
 
-  public HsmBitcoinBasedAddressGenerator(HsmConfig hsmConfig) {
+  public HsmBitcoinBasedAddressGenerator(HsmApiConfig hsmConfig) {
     super(hsmConfig);
   }
 

@@ -1,6 +1,6 @@
-package io.swisschain.config;
+package io.swisschain.config.clients;
 
-public class HsmConfig {
+public class HsmApiConfig {
   public String iamEndpoint;
   public String iamToken;
   public String bluemixInstance;

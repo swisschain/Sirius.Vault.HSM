@@ -1,6 +1,6 @@
 package io.swisschain.crypto.transaction.signing.signers;
 
-import io.swisschain.config.HsmConfig;
+import io.swisschain.config.clients.HsmApiConfig;
 import io.swisschain.contracts.TransferDetails;
 import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.crypto.NetworkMapper;
@@ -26,7 +26,7 @@ public class HsmBitcoinCoinTransactionSigner extends HsmBitcoinBasedTransactionS
 
   private final BlockchainProtocolCodes blockchain;
 
-  public HsmBitcoinCoinTransactionSigner(HsmConfig hsmConfig, BlockchainProtocolCodes blockchain) {
+  public HsmBitcoinCoinTransactionSigner(HsmApiConfig hsmConfig, BlockchainProtocolCodes blockchain) {
     super(hsmConfig, blockchain);
     this.blockchain = blockchain;
   }

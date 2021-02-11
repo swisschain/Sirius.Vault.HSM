@@ -1,6 +1,6 @@
 package io.swisschain.crypto.address.generation;
 
-import io.swisschain.config.Config;
+import io.swisschain.config.AppConfig;
 import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.crypto.address.generation.generators.*;
 import io.swisschain.crypto.exceptions.BlockchainNotSupportedException;
@@ -9,29 +9,29 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class AddressGeneratorFactory {
-  private final Config config;
+  private final AppConfig config;
   private final Map<BlockchainProtocolCodes, AddressGenerator> generatorMap = new HashMap<>();
 
-  public AddressGeneratorFactory(Config config) {
+  public AddressGeneratorFactory(AppConfig config) {
     this.config = config;
     initGenerators();
   }
 
   private void initGenerators() {
     generatorMap.put(
-        BlockchainProtocolCodes.bitcoin, new HsmBitcoinAddressGenerator(config.hsmConfig));
+        BlockchainProtocolCodes.bitcoin, new HsmBitcoinAddressGenerator(config.clients.hsmApi));
     generatorMap.put(
         BlockchainProtocolCodes.ethereum,
-        new HsmEthereumAddressGenerator(config.hsmConfig, BlockchainProtocolCodes.ethereum));
+        new HsmEthereumAddressGenerator(config.clients.hsmApi, BlockchainProtocolCodes.ethereum));
     generatorMap.put(
         BlockchainProtocolCodes.ethereumClassic,
-        new HsmEthereumAddressGenerator(config.hsmConfig, BlockchainProtocolCodes.ethereumClassic));
+        new HsmEthereumAddressGenerator(config.clients.hsmApi, BlockchainProtocolCodes.ethereumClassic));
     generatorMap.put(
-        BlockchainProtocolCodes.litecoin, new HsmLitecoinAddressGenerator(config.hsmConfig));
+        BlockchainProtocolCodes.litecoin, new HsmLitecoinAddressGenerator(config.clients.hsmApi));
     generatorMap.put(
-        BlockchainProtocolCodes.stellar, new HsmStellarAddressGenerator(config.hsmConfig));
+        BlockchainProtocolCodes.stellar, new HsmStellarAddressGenerator(config.clients.hsmApi));
     generatorMap.put(
-        BlockchainProtocolCodes.bitcoinCash, new HsmBitcoinCashAddressGenerator(config.hsmConfig));
+        BlockchainProtocolCodes.bitcoinCash, new HsmBitcoinCashAddressGenerator(config.clients.hsmApi));
   }
 
   public AddressGenerator get(BlockchainProtocolCodes code) throws BlockchainNotSupportedException {

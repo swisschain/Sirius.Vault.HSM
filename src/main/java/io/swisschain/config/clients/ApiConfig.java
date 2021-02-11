@@ -1,6 +1,6 @@
-package io.swisschain.config;
+package io.swisschain.config.clients;
 
-public class VaultApiConfig {
+public class ApiConfig {
   public String host;
   public int port;
   public boolean ssl;

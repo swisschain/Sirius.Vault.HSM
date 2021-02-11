@@ -1,6 +1,6 @@
 package io.swisschain.services;
 
-import io.swisschain.config.Config;
+import io.swisschain.config.AppConfig;
 import io.swisschain.contracts.Document;
 import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.crypto.transaction.signing.TransactionSignerFactory;
@@ -14,7 +14,7 @@ public class TransactionService {
   private final TransactionSignerFactory transactionSignerFactory;
   private final JsonSerializer jsonMapper = new JsonSerializer();
 
-  public TransactionService(WalletRepository walletRepository, Config config) {
+  public TransactionService(WalletRepository walletRepository, AppConfig config) {
     this.walletRepository = walletRepository;
     this.transactionSignerFactory = new TransactionSignerFactory(config);
   }

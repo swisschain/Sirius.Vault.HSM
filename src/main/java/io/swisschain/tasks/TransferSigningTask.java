@@ -23,12 +23,17 @@ public class TransferSigningTask implements Runnable {
 
   private final VaultApiClient vaultApiClient;
   private final TransactionService transactionService;
+  private final DocumentValidator documentValidator;
   private final String hostProcessId;
 
   public TransferSigningTask(
-      VaultApiClient vaultApiClient, TransactionService transactionService, String hostProcessId) {
+      VaultApiClient vaultApiClient,
+      TransactionService transactionService,
+      DocumentValidator documentValidator,
+      String hostProcessId) {
     this.vaultApiClient = vaultApiClient;
     this.transactionService = transactionService;
+    this.documentValidator = documentValidator;
     this.hostProcessId = hostProcessId;
 
     logger.info("TransferSigningTask created");
@@ -39,7 +44,9 @@ public class TransferSigningTask implements Runnable {
     try {
       var requests = getRequests();
 
-      if (requests == null || requests.size() == 0) return;
+      if (requests == null || requests.size() == 0) {
+        return;
+      }
 
       for (var transferSigningRequest : requests) {
         try {
@@ -47,12 +54,24 @@ public class TransferSigningTask implements Runnable {
               String.format(
                   "Processing transfer signing request. Id: %d", transferSigningRequest.getId()));
 
-          var transaction = transactionService.create(transferSigningRequest);
+          var signatureValidationResult =
+              documentValidator.Validate(
+                  transferSigningRequest.getDocument(), transferSigningRequest.getSignature());
 
-          confirm(
-              transferSigningRequest.getId(),
-              transaction.getTransactionId(),
-              transaction.getSignedTransaction());
+          if (signatureValidationResult.isValid()) {
+            var transaction = transactionService.create(transferSigningRequest);
+
+            confirm(
+                transferSigningRequest.getId(),
+                transaction.getTransactionId(),
+                transaction.getSignedTransaction());
+          } else {
+            reject(
+                    transferSigningRequest.getId(),
+                    TransferSigningRequestsOuterClass.TransferSigningRequestRejectionReason
+                            .OTHER,
+                    signatureValidationResult.getReason());
+          }
         } catch (BlockchainNotSupportedException exception) {
           logger.error("BlockchainId is not supported.", exception);
 
@@ -125,7 +144,7 @@ public class TransferSigningTask implements Runnable {
             .setTransferSigningRequestId(transferSigningRequestId)
             .setTransactionId(transactionId)
             .setSignedTransaction(ByteString.copyFrom(signedTransaction))
-            .setSignature("empty") // TODO: sign signedTransaction+transactionId
+            .setSignature("empty") // TODO: sign signedTransaction+transactionId - remove
             .setHostProcessId(hostProcessId)
             .build();
 
@@ -154,7 +173,7 @@ public class TransferSigningTask implements Runnable {
             .setTransferSigningRequestId(transferSigningRequestId)
             .setRejectionReason(reason)
             .setRejectionReasonMessage(message)
-            .setSignature("empty") // TODO: sing reason+message
+            .setSignature("empty") // TODO: sing reason+message - remove
             .setHostProcessId(hostProcessId)
             .build();
 

@@ -1,6 +1,6 @@
 package io.swisschain.crypto.address.generation.generators;
 
-import io.swisschain.config.HsmConfig;
+import io.swisschain.config.clients.HsmApiConfig;
 import io.swisschain.crypto.NetworkMapper;
 import io.swisschain.crypto.address.generation.AddressGenerationResult;
 import io.swisschain.crypto.address.generation.AddressGenerator;
@@ -15,7 +15,7 @@ public class HsmLitecoinAddressGenerator extends HsmBitcoinBasedAddressGenerator
     implements AddressGenerator {
   private static final Logger logger = LogManager.getLogger();
 
-  public HsmLitecoinAddressGenerator(HsmConfig hsmConfig) {
+  public HsmLitecoinAddressGenerator(HsmApiConfig hsmConfig) {
     super(hsmConfig);
   }
 

@@ -1,6 +1,6 @@
 package io.swisschain.crypto.transaction.signing.signers;
 
-import io.swisschain.config.HsmConfig;
+import io.swisschain.config.clients.HsmApiConfig;
 import io.swisschain.contracts.TransferDetails;
 import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.crypto.exceptions.BlockchainNotSupportedException;
@@ -35,7 +35,7 @@ public class HsmEthereumTransactionSigner extends HsmConnector implements CoinsT
 
   private final BlockchainProtocolCodes blockchain;
 
-  public HsmEthereumTransactionSigner(HsmConfig hsmConfig, BlockchainProtocolCodes blockchain) {
+  public HsmEthereumTransactionSigner(HsmApiConfig hsmConfig, BlockchainProtocolCodes blockchain) {
     super(hsmConfig);
     this.blockchain = blockchain;
   }

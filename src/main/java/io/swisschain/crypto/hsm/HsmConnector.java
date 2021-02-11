@@ -11,7 +11,7 @@ import io.grpc.netty.shaded.io.grpc.netty.GrpcSslContexts;
 import io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder;
 import io.grpc.netty.shaded.io.netty.handler.ssl.util.InsecureTrustManagerFactory;
 import io.grpc.stub.MetadataUtils;
-import io.swisschain.config.HsmConfig;
+import io.swisschain.config.clients.HsmApiConfig;
 import io.swisschain.crypto.hsm.ep11.Attribute;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
@@ -36,9 +36,9 @@ import java.util.UUID;
 public class HsmConnector {
   private static final Logger logger = LogManager.getLogger();
 
-  private final HsmConfig hsmConfig;
+  private final HsmApiConfig hsmConfig;
 
-  public HsmConnector(HsmConfig hsmConfig) {
+  public HsmConnector(HsmApiConfig hsmConfig) {
     this.hsmConfig = hsmConfig;
   }
 

@@ -1,6 +1,6 @@
 package io.swisschain.services;
 
-import io.swisschain.config.Config;
+import io.swisschain.config.AppConfig;
 import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.crypto.address.generation.AddressGeneratorFactory;
 import io.swisschain.primitives.NetworkType;
@@ -13,7 +13,7 @@ public class WalletService {
   private final WalletRepository walletRepository;
   private final AddressGeneratorFactory addressGeneratorFactory;
 
-  public WalletService(WalletRepository walletRepository, Config config) {
+  public WalletService(WalletRepository walletRepository, AppConfig config) {
     this.walletRepository = walletRepository;
     this.addressGeneratorFactory = new AddressGeneratorFactory(config);
   }
