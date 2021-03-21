@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+option csharp_namespace = "Swisschain.Sirius.VaultApi.ApiContract.VaultMonitoring";
+option java_package = "io.swisschain.sirius.vaultApi.generated.vaultMonitoring";
+
+package swisschain.sirius.vaultApi.vaultMonitoring;
+
+service VaultMonitoring {
+  rpc Update (UpdateVaultStatusRequest) returns (UpdateVaultStatusResponse);
+}
+
+// Update
+
+message UpdateVaultStatusRequest {
+
+  enum VaultStatus {
+    INITIALIZING = 0;
+    ACTIVATING = 1;
+    RUNNING = 2;
+  }
+
+  string request_id = 1;
+  VaultStatus status = 2;
+  string version = 3;
+}
+
+message UpdateVaultStatusResponse {
+  oneof body {
+    UpdateVaultStatusResponseBody response = 1;
+    UpdateVaultStatusErrorResponseBody error = 2;
+  }
+}
+
+message UpdateVaultStatusResponseBody {
+}
+
+message UpdateVaultStatusErrorResponseBody {
+
+  enum ErrorCode {
+    UNKNOWN = 0;
+    INVALID_PARAMETERS = 1;
+  }
+
+  ErrorCode error_code = 1;
+  string error_message = 2;
+}
+

@@ -1,4 +1,4 @@
-package io.swisschain.services;
+package io.swisschain.domain.wallet;
 
 import io.swisschain.primitives.NetworkType;
 
@@ -109,5 +109,30 @@ public class Wallet {
 
   public Instant getCreatedAt() {
     return this.createdAt;
+  }
+
+  public static Wallet create(
+      Long walletGenerationRequestId,
+      String blockchainId,
+      String protocolCode,
+      NetworkType networkType,
+      String address,
+      String publicKey,
+      String privateKey,
+      String tenantId,
+      String group) {
+    var createdAt = Instant.now();
+
+    return new Wallet(
+        walletGenerationRequestId,
+        blockchainId,
+        protocolCode,
+        networkType,
+        address,
+        publicKey,
+        privateKey,
+        tenantId,
+        group,
+        createdAt);
   }
 }

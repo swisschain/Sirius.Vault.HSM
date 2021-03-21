@@ -12,7 +12,7 @@ import io.swisschain.crypto.transaction.signing.exceptions.TransferDetailsValida
 import io.swisschain.crypto.transaction.signing.exceptions.UnsupportedScriptException;
 import io.swisschain.crypto.transaction.signing.validators.BitcoinTransactionValidator;
 import io.swisschain.crypto.utils.BTCUtils;
-import io.swisschain.services.Coin;
+import io.swisschain.domain.transfers.Coin;
 import org.bitcoinj.core.*;
 import org.bitcoinj.crypto.LazyECPoint;
 import org.bitcoinj.crypto.TransactionSignature;
@@ -30,7 +30,8 @@ public abstract class HsmBitcoinBasedTransactionSigner extends HsmConnector
 
   private final BlockchainProtocolCodes blockchain;
 
-  public HsmBitcoinBasedTransactionSigner(HsmApiConfig hsmConfig, BlockchainProtocolCodes blockchain) {
+  public HsmBitcoinBasedTransactionSigner(
+      HsmApiConfig hsmConfig, BlockchainProtocolCodes blockchain) {
     super(hsmConfig);
     this.blockchain = blockchain;
   }

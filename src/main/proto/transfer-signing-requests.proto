@@ -117,6 +117,7 @@ message ConfirmTransferSigningRequestErrorResponseBody {
   enum ErrorCode {
     UNKNOWN = 0;
     INVALID_PARAMETERS = 1;
+    INVALID_STATE = 2;
   }
 
   ErrorCode error_code = 1;
@@ -155,6 +156,7 @@ message RejectTransferSigningRequestErrorResponseBody {
   enum ErrorCode {
     UNKNOWN = 0;
     INVALID_PARAMETERS = 1;
+    INVALID_STATE = 2;
   }
 
   ErrorCode error_code = 1;

@@ -2,7 +2,7 @@ package io.swisschain.repositories.wallets;
 
 import io.swisschain.primitives.NetworkType;
 import io.swisschain.repositories.Entity;
-import io.swisschain.services.Wallet;
+import io.swisschain.domain.wallet.Wallet;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

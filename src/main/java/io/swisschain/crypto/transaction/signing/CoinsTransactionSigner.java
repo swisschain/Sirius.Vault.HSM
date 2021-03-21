@@ -8,7 +8,7 @@ import io.swisschain.crypto.transaction.signing.exceptions.TransactionSignExcept
 import io.swisschain.crypto.transaction.signing.exceptions.TransferDetailsValidationException;
 import io.swisschain.crypto.transaction.signing.exceptions.UnsupportedScriptException;
 import io.swisschain.primitives.NetworkType;
-import io.swisschain.services.Coin;
+import io.swisschain.domain.transfers.Coin;
 
 import java.io.IOException;
 import java.util.List;

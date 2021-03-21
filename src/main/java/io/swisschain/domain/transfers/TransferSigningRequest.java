@@ -1,4 +1,4 @@
-package io.swisschain.services;
+package io.swisschain.domain.transfers;
 
 import io.swisschain.primitives.DoubleSpendingProtectionType;
 import io.swisschain.primitives.NetworkType;
@@ -18,6 +18,10 @@ public class TransferSigningRequest {
   private final String document;
   private final String signature;
   private final String tenantId;
+  private RejectionReason rejectionReason;
+  private String rejectionReasonMessage;
+  private String transactionId;
+  private byte[] signedTransaction;
   private final Instant createdAt;
   private final Instant updatedAt;
 
@@ -94,11 +98,41 @@ public class TransferSigningRequest {
     return tenantId;
   }
 
+  public Boolean isRejected() {
+    return rejectionReason != RejectionReason.None;
+  }
+
+  public RejectionReason getRejectionReason() {
+    return rejectionReason;
+  }
+
+  public String getRejectionReasonMessage() {
+    return rejectionReasonMessage;
+  }
+
+  public String getTransactionId() {
+    return transactionId;
+  }
+
+  public byte[] getSignedTransaction() {
+    return signedTransaction;
+  }
+
   public Instant getCreatedAt() {
     return createdAt;
   }
 
   public Instant getUpdatedAt() {
     return updatedAt;
+  }
+
+  public void reject(RejectionReason rejectionReason, String rejectionReasonMessage) {
+    this.rejectionReason = rejectionReason;
+    this.rejectionReasonMessage = rejectionReasonMessage;
+  }
+
+  public void confirm(String transactionId, byte[] signedTransaction) {
+    this.transactionId = transactionId;
+    this.signedTransaction = signedTransaction;
   }
 }

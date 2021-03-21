@@ -1,4 +1,4 @@
-package io.swisschain.services;
+package io.swisschain.domain.transfers;
 
 public class BlockchainAsset {
   private final BlockchainAssetId id;
