@@ -62,7 +62,7 @@ public class WalletGenerationRequest {
   }
 
   public Boolean isRejected() {
-    return rejectionReason != RejectionReason.None;
+    return rejectionReason != null;
   }
 
   public RejectionReason getRejectionReason() {
