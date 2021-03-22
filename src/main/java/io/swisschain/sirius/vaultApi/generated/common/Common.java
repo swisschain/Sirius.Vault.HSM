@@ -4,98 +4,12 @@
 package io.swisschain.sirius.vaultApi.generated.common;
 
 public final class Common {
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_common_NullableNetworkType_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_common_NullableNetworkType_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_common_NullableTagType_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_common_NullableTagType_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_common_BigDecimal_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_common_BigDecimal_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_swisschain_sirius_vaultApi_common_NullableTimestamp_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_swisschain_sirius_vaultApi_common_NullableTimestamp_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.FileDescriptor descriptor;
-
-  static {
-    java.lang.String[] descriptorData = {
-      "\n\014common.proto\022!swisschain.sirius.vaultA"
-          + "pi.common\032\034google/protobuf/struct.proto\032"
-          + "\037google/protobuf/timestamp.proto\"\221\001\n\023Nul"
-          + "lableNetworkType\022*\n\004null\030\001 \001(\0162\032.google."
-          + "protobuf.NullValueH\000\022F\n\014network_type\030\002 \001"
-          + "(\0162..swisschain.sirius.vaultApi.common.N"
-          + "etworkTypeH\000B\006\n\004kind\"\205\001\n\017NullableTagType"
-          + "\022*\n\004null\030\001 \001(\0162\032.google.protobuf.NullVal"
-          + "ueH\000\022>\n\010tag_type\030\002 \001(\0162*.swisschain.siri"
-          + "us.vaultApi.common.TagTypeH\000B\006\n\004kind\"\033\n\n"
-          + "BigDecimal\022\r\n\005value\030\001 \001(\t\"x\n\021NullableTim"
-          + "estamp\022*\n\004null\030\001 \001(\0162\032.google.protobuf.N"
-          + "ullValueH\000\022/\n\ttimestamp\030\002 \001(\0132\032.google.p"
-          + "rotobuf.TimestampH\000B\006\n\004kind*0\n\013NetworkTy"
-          + "pe\022\013\n\007PRIVATE\020\000\022\010\n\004TEST\020\001\022\n\n\006PUBLIC\020\002*\037\n"
-          + "\007TagType\022\010\n\004TEXT\020\000\022\n\n\006NUMBER\020\001B`\n.io.swi"
-          + "sschain.sirius.vaultApi.generated.common"
-          + "\252\002-Swisschain.Sirius.VaultApi.ApiContrac"
-          + "t.Commonb\006proto3"
-    };
-    descriptor =
-        com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
-            descriptorData,
-            new com.google.protobuf.Descriptors.FileDescriptor[] {
-              com.google.protobuf.StructProto.getDescriptor(),
-              com.google.protobuf.TimestampProto.getDescriptor(),
-            });
-    internal_static_swisschain_sirius_vaultApi_common_NullableNetworkType_descriptor =
-        getDescriptor().getMessageTypes().get(0);
-    internal_static_swisschain_sirius_vaultApi_common_NullableNetworkType_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_common_NullableNetworkType_descriptor,
-            new java.lang.String[] {
-              "Null", "NetworkType", "Kind",
-            });
-    internal_static_swisschain_sirius_vaultApi_common_NullableTagType_descriptor =
-        getDescriptor().getMessageTypes().get(1);
-    internal_static_swisschain_sirius_vaultApi_common_NullableTagType_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_common_NullableTagType_descriptor,
-            new java.lang.String[] {
-              "Null", "TagType", "Kind",
-            });
-    internal_static_swisschain_sirius_vaultApi_common_BigDecimal_descriptor =
-        getDescriptor().getMessageTypes().get(2);
-    internal_static_swisschain_sirius_vaultApi_common_BigDecimal_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_common_BigDecimal_descriptor,
-            new java.lang.String[] {
-              "Value",
-            });
-    internal_static_swisschain_sirius_vaultApi_common_NullableTimestamp_descriptor =
-        getDescriptor().getMessageTypes().get(3);
-    internal_static_swisschain_sirius_vaultApi_common_NullableTimestamp_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_swisschain_sirius_vaultApi_common_NullableTimestamp_descriptor,
-            new java.lang.String[] {
-              "Null", "Timestamp", "Kind",
-            });
-    com.google.protobuf.StructProto.getDescriptor();
-    com.google.protobuf.TimestampProto.getDescriptor();
-  }
   private Common() {}
 
   public static void registerAllExtensions(com.google.protobuf.ExtensionRegistryLite registry) {}
 
   public static void registerAllExtensions(com.google.protobuf.ExtensionRegistry registry) {
     registerAllExtensions((com.google.protobuf.ExtensionRegistryLite) registry);
-  }
-
-  public static com.google.protobuf.Descriptors.FileDescriptor getDescriptor() {
-    return descriptor;
   }
   /** Protobuf enum {@code swisschain.sirius.vaultApi.common.NetworkType} */
   public enum NetworkType implements com.google.protobuf.ProtocolMessageEnum {
@@ -114,17 +28,13 @@ public final class Common {
     public static final int TEST_VALUE = 1;
     /** <code>PUBLIC = 2;</code> */
     public static final int PUBLIC_VALUE = 2;
-    private static final com.google.protobuf.Internal.EnumLiteMap<NetworkType> internalValueMap =
-        new com.google.protobuf.Internal.EnumLiteMap<NetworkType>() {
-          public NetworkType findValueByNumber(int number) {
-            return NetworkType.forNumber(number);
-          }
-        };
-    private static final NetworkType[] VALUES = values();
-    private final int value;
 
-    private NetworkType(int value) {
-      this.value = value;
+    public final int getNumber() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalArgumentException(
+            "Can't get the number of an unknown enum value.");
+      }
+      return value;
     }
 
     /**
@@ -158,35 +68,12 @@ public final class Common {
       return internalValueMap;
     }
 
-    public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
-      return io.swisschain
-          .sirius
-          .vaultApi
-          .generated
-          .common
-          .Common
-          .getDescriptor()
-          .getEnumTypes()
-          .get(0);
-    }
-
-    public static NetworkType valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-      if (desc.getType() != getDescriptor()) {
-        throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
-      }
-      if (desc.getIndex() == -1) {
-        return UNRECOGNIZED;
-      }
-      return VALUES[desc.getIndex()];
-    }
-
-    public final int getNumber() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalArgumentException(
-            "Can't get the number of an unknown enum value.");
-      }
-      return value;
-    }
+    private static final com.google.protobuf.Internal.EnumLiteMap<NetworkType> internalValueMap =
+        new com.google.protobuf.Internal.EnumLiteMap<NetworkType>() {
+          public NetworkType findValueByNumber(int number) {
+            return NetworkType.forNumber(number);
+          }
+        };
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
       if (this == UNRECOGNIZED) {
@@ -200,8 +87,39 @@ public final class Common {
       return getDescriptor();
     }
 
+    public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+      return io.swisschain
+          .sirius
+          .vaultApi
+          .generated
+          .common
+          .Common
+          .getDescriptor()
+          .getEnumTypes()
+          .get(0);
+    }
+
+    private static final NetworkType[] VALUES = values();
+
+    public static NetworkType valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+      }
+      if (desc.getIndex() == -1) {
+        return UNRECOGNIZED;
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    private final int value;
+
+    private NetworkType(int value) {
+      this.value = value;
+    }
+
     // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.common.NetworkType)
   }
+
   /** Protobuf enum {@code swisschain.sirius.vaultApi.common.TagType} */
   public enum TagType implements com.google.protobuf.ProtocolMessageEnum {
     /** <code>TEXT = 0;</code> */
@@ -215,17 +133,13 @@ public final class Common {
     public static final int TEXT_VALUE = 0;
     /** <code>NUMBER = 1;</code> */
     public static final int NUMBER_VALUE = 1;
-    private static final com.google.protobuf.Internal.EnumLiteMap<TagType> internalValueMap =
-        new com.google.protobuf.Internal.EnumLiteMap<TagType>() {
-          public TagType findValueByNumber(int number) {
-            return TagType.forNumber(number);
-          }
-        };
-    private static final TagType[] VALUES = values();
-    private final int value;
 
-    private TagType(int value) {
-      this.value = value;
+    public final int getNumber() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalArgumentException(
+            "Can't get the number of an unknown enum value.");
+      }
+      return value;
     }
 
     /**
@@ -257,35 +171,12 @@ public final class Common {
       return internalValueMap;
     }
 
-    public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
-      return io.swisschain
-          .sirius
-          .vaultApi
-          .generated
-          .common
-          .Common
-          .getDescriptor()
-          .getEnumTypes()
-          .get(1);
-    }
-
-    public static TagType valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-      if (desc.getType() != getDescriptor()) {
-        throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
-      }
-      if (desc.getIndex() == -1) {
-        return UNRECOGNIZED;
-      }
-      return VALUES[desc.getIndex()];
-    }
-
-    public final int getNumber() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalArgumentException(
-            "Can't get the number of an unknown enum value.");
-      }
-      return value;
-    }
+    private static final com.google.protobuf.Internal.EnumLiteMap<TagType> internalValueMap =
+        new com.google.protobuf.Internal.EnumLiteMap<TagType>() {
+          public TagType findValueByNumber(int number) {
+            return TagType.forNumber(number);
+          }
+        };
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
       if (this == UNRECOGNIZED) {
@@ -299,8 +190,39 @@ public final class Common {
       return getDescriptor();
     }
 
+    public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+      return io.swisschain
+          .sirius
+          .vaultApi
+          .generated
+          .common
+          .Common
+          .getDescriptor()
+          .getEnumTypes()
+          .get(1);
+    }
+
+    private static final TagType[] VALUES = values();
+
+    public static TagType valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+      }
+      if (desc.getIndex() == -1) {
+        return UNRECOGNIZED;
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    private final int value;
+
+    private TagType(int value) {
+      this.value = value;
+    }
+
     // @@protoc_insertion_point(enum_scope:swisschain.sirius.vaultApi.common.TagType)
   }
+
   public interface NullableNetworkTypeOrBuilder
       extends
       // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.common.NullableNetworkType)
@@ -335,131 +257,29 @@ public final class Common {
     public io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType.KindCase
         getKindCase();
   }
-  public interface NullableTagTypeOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.common.NullableTagType)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>.google.protobuf.NullValue null = 1;</code>
-     *
-     * @return The enum numeric value on the wire for null.
-     */
-    int getNullValue();
-    /**
-     * <code>.google.protobuf.NullValue null = 1;</code>
-     *
-     * @return The null.
-     */
-    com.google.protobuf.NullValue getNull();
-
-    /**
-     * <code>.swisschain.sirius.vaultApi.common.TagType tag_type = 2;</code>
-     *
-     * @return The enum numeric value on the wire for tagType.
-     */
-    int getTagTypeValue();
-    /**
-     * <code>.swisschain.sirius.vaultApi.common.TagType tag_type = 2;</code>
-     *
-     * @return The tagType.
-     */
-    io.swisschain.sirius.vaultApi.generated.common.Common.TagType getTagType();
-
-    public io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType.KindCase
-        getKindCase();
-  }
-  public interface BigDecimalOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.common.BigDecimal)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>string value = 1;</code>
-     *
-     * @return The value.
-     */
-    java.lang.String getValue();
-    /**
-     * <code>string value = 1;</code>
-     *
-     * @return The bytes for value.
-     */
-    com.google.protobuf.ByteString getValueBytes();
-  }
-  public interface NullableTimestampOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.common.NullableTimestamp)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>.google.protobuf.NullValue null = 1;</code>
-     *
-     * @return The enum numeric value on the wire for null.
-     */
-    int getNullValue();
-    /**
-     * <code>.google.protobuf.NullValue null = 1;</code>
-     *
-     * @return The null.
-     */
-    com.google.protobuf.NullValue getNull();
-
-    /**
-     * <code>.google.protobuf.Timestamp timestamp = 2;</code>
-     *
-     * @return Whether the timestamp field is set.
-     */
-    boolean hasTimestamp();
-    /**
-     * <code>.google.protobuf.Timestamp timestamp = 2;</code>
-     *
-     * @return The timestamp.
-     */
-    com.google.protobuf.Timestamp getTimestamp();
-    /** <code>.google.protobuf.Timestamp timestamp = 2;</code> */
-    com.google.protobuf.TimestampOrBuilder getTimestampOrBuilder();
-
-    public io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp.KindCase
-        getKindCase();
-  }
-
   /** Protobuf type {@code swisschain.sirius.vaultApi.common.NullableNetworkType} */
   public static final class NullableNetworkType extends com.google.protobuf.GeneratedMessageV3
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.common.NullableNetworkType)
       NullableNetworkTypeOrBuilder {
-    public static final int NULL_FIELD_NUMBER = 1;
-    public static final int NETWORK_TYPE_FIELD_NUMBER = 2;
     private static final long serialVersionUID = 0L;
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.common.NullableNetworkType)
-    private static final io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
-        DEFAULT_INSTANCE;
-    private static final com.google.protobuf.Parser<NullableNetworkType> PARSER =
-        new com.google.protobuf.AbstractParser<NullableNetworkType>() {
-          @java.lang.Override
-          public NullableNetworkType parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new NullableNetworkType(input, extensionRegistry);
-          }
-        };
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType();
-    }
-
-    private int kindCase_ = 0;
-    private java.lang.Object kind_;
-    private byte memoizedIsInitialized = -1;
     // Use NullableNetworkType.newBuilder() to construct.
     private NullableNetworkType(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
 
-        private NullableNetworkType() {};
+    private NullableNetworkType() {}
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new NullableNetworkType();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
 
     private NullableNetworkType(
         com.google.protobuf.CodedInputStream input,
@@ -522,113 +342,6 @@ public final class Common {
           .internal_static_swisschain_sirius_vaultApi_common_NullableNetworkType_descriptor;
     }
 
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
-        parseFrom(java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
-        parseFrom(
-            java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
-        parseFrom(com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
-        parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
-        parseFrom(byte[] data) throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
-        parseFrom(byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
-        parseFrom(java.io.InputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
-        parseFrom(
-            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
-        parseDelimitedFrom(java.io.InputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
-        parseDelimitedFrom(
-            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
-        parseFrom(com.google.protobuf.CodedInputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
-        parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-
-    public static Builder newBuilder(
-        io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    public static com.google.protobuf.Parser<NullableNetworkType> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new NullableNetworkType();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
@@ -647,10 +360,54 @@ public final class Common {
                   .class);
     }
 
+    private int kindCase_ = 0;
+    private java.lang.Object kind_;
+
+    public enum KindCase
+        implements
+            com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      NULL(1),
+      NETWORK_TYPE(2),
+      KIND_NOT_SET(0);
+      private final int value;
+
+      private KindCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static KindCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static KindCase forNumber(int value) {
+        switch (value) {
+          case 1:
+            return NULL;
+          case 2:
+            return NETWORK_TYPE;
+          case 0:
+            return KIND_NOT_SET;
+          default:
+            return null;
+        }
+      }
+
+      public int getNumber() {
+        return this.value;
+      }
+    };
+
     public KindCase getKindCase() {
       return KindCase.forNumber(kindCase_);
     }
 
+    public static final int NULL_FIELD_NUMBER = 1;
     /**
      * <code>.google.protobuf.NullValue null = 1;</code>
      *
@@ -662,7 +419,6 @@ public final class Common {
       }
       return 0;
     }
-
     /**
      * <code>.google.protobuf.NullValue null = 1;</code>
      *
@@ -678,6 +434,7 @@ public final class Common {
       return com.google.protobuf.NullValue.NULL_VALUE;
     }
 
+    public static final int NETWORK_TYPE_FIELD_NUMBER = 2;
     /**
      * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 2;</code>
      *
@@ -689,7 +446,6 @@ public final class Common {
       }
       return 0;
     }
-
     /**
      * <code>.swisschain.sirius.vaultApi.common.NetworkType network_type = 2;</code>
      *
@@ -707,6 +463,8 @@ public final class Common {
       }
       return io.swisschain.sirius.vaultApi.generated.common.Common.NetworkType.PRIVATE;
     }
+
+    private byte memoizedIsInitialized = -1;
 
     @java.lang.Override
     public final boolean isInitialized() {
@@ -799,9 +557,96 @@ public final class Common {
       return hash;
     }
 
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
+        parseFrom(java.nio.ByteBuffer data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
+        parseFrom(
+            java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
+        parseFrom(com.google.protobuf.ByteString data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
+        parseFrom(
+            com.google.protobuf.ByteString data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
+        parseFrom(byte[] data) throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
+        parseFrom(byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
+        parseFrom(java.io.InputStream input) throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
+        parseFrom(
+            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+          PARSER, input, extensionRegistry);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
+        parseDelimitedFrom(java.io.InputStream input) throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
+        parseDelimitedFrom(
+            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
+          PARSER, input, extensionRegistry);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
+        parseFrom(com.google.protobuf.CodedInputStream input) throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
+        parseFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+          PARSER, input, extensionRegistry);
+    }
+
     @java.lang.Override
     public Builder newBuilderForType() {
       return newBuilder();
+    }
+
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+
+    public static Builder newBuilder(
+        io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
     @java.lang.Override
@@ -815,78 +660,12 @@ public final class Common {
       Builder builder = new Builder(parent);
       return builder;
     }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<NullableNetworkType> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-public enum KindCase
-        implements
-            com.google.protobuf.Internal.EnumLite,
-            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      NULL(1),
-      NETWORK_TYPE(2),
-      KIND_NOT_SET(0);
-      private final int value;
-
-      private KindCase(int value) {
-        this.value = value;
-      }
-      /**
-       * @param value The number of the enum to look for.
-       * @return The enum associated with the given number.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static KindCase valueOf(int value) {
-        return forNumber(value);
-      }
-
-      public static KindCase forNumber(int value) {
-        switch (value) {
-          case 1:
-            return NULL;
-          case 2:
-            return NETWORK_TYPE;
-          case 0:
-            return KIND_NOT_SET;
-          default:
-            return null;
-        }
-      }
-
-      public int getNumber() {
-        return this.value;
-      }
-    }
-
     /** Protobuf type {@code swisschain.sirius.vaultApi.common.NullableNetworkType} */
     public static final class Builder
         extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
         implements
         // @@protoc_insertion_point(builder_implements:swisschain.sirius.vaultApi.common.NullableNetworkType)
         io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkTypeOrBuilder {
-      private int kindCase_ = 0;
-      private java.lang.Object kind_;
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -913,6 +692,17 @@ public enum KindCase
                     .NullableNetworkType
                     .Builder
                     .class);
+      }
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -1070,6 +860,9 @@ public enum KindCase
         }
         return this;
       }
+
+      private int kindCase_ = 0;
+      private java.lang.Object kind_;
 
       public KindCase getKindCase() {
         return KindCase.forNumber(kindCase_);
@@ -1236,44 +1029,105 @@ public enum KindCase
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.common.NullableNetworkType)
     }
+
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.common.NullableNetworkType)
+    private static final io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
+        DEFAULT_INSTANCE;
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType();
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<NullableNetworkType> PARSER =
+        new com.google.protobuf.AbstractParser<NullableNetworkType>() {
+          @java.lang.Override
+          public NullableNetworkType parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new NullableNetworkType(input, extensionRegistry);
+          }
+        };
+
+    public static com.google.protobuf.Parser<NullableNetworkType> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<NullableNetworkType> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain.sirius.vaultApi.generated.common.Common.NullableNetworkType
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
   }
 
+  public interface NullableTagTypeOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.common.NullableTagType)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.google.protobuf.NullValue null = 1;</code>
+     *
+     * @return The enum numeric value on the wire for null.
+     */
+    int getNullValue();
+    /**
+     * <code>.google.protobuf.NullValue null = 1;</code>
+     *
+     * @return The null.
+     */
+    com.google.protobuf.NullValue getNull();
+
+    /**
+     * <code>.swisschain.sirius.vaultApi.common.TagType tag_type = 2;</code>
+     *
+     * @return The enum numeric value on the wire for tagType.
+     */
+    int getTagTypeValue();
+    /**
+     * <code>.swisschain.sirius.vaultApi.common.TagType tag_type = 2;</code>
+     *
+     * @return The tagType.
+     */
+    io.swisschain.sirius.vaultApi.generated.common.Common.TagType getTagType();
+
+    public io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType.KindCase
+        getKindCase();
+  }
   /** Protobuf type {@code swisschain.sirius.vaultApi.common.NullableTagType} */
   public static final class NullableTagType extends com.google.protobuf.GeneratedMessageV3
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.common.NullableTagType)
       NullableTagTypeOrBuilder {
-    public static final int NULL_FIELD_NUMBER = 1;
-    public static final int TAG_TYPE_FIELD_NUMBER = 2;
     private static final long serialVersionUID = 0L;
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.common.NullableTagType)
-    private static final io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType
-        DEFAULT_INSTANCE;
-    private static final com.google.protobuf.Parser<NullableTagType> PARSER =
-        new com.google.protobuf.AbstractParser<NullableTagType>() {
-          @java.lang.Override
-          public NullableTagType parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new NullableTagType(input, extensionRegistry);
-          }
-        };
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType();
-    }
-
-    private int kindCase_ = 0;
-    private java.lang.Object kind_;
-    private byte memoizedIsInitialized = -1;
     // Use NullableTagType.newBuilder() to construct.
     private NullableTagType(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
 
-        private NullableTagType() {};
+    private NullableTagType() {}
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new NullableTagType();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
 
     private NullableTagType(
         com.google.protobuf.CodedInputStream input,
@@ -1336,108 +1190,6 @@ public enum KindCase
           .internal_static_swisschain_sirius_vaultApi_common_NullableTagType_descriptor;
     }
 
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
-        java.nio.ByteBuffer data) throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
-        java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
-        byte[] data) throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
-        byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
-        java.io.InputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
-        java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType
-        parseDelimitedFrom(java.io.InputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType
-        parseDelimitedFrom(
-            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
-        com.google.protobuf.CodedInputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-
-    public static Builder newBuilder(
-        io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    public static com.google.protobuf.Parser<NullableTagType> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new NullableTagType();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
@@ -1448,10 +1200,54 @@ public enum KindCase
               io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType.Builder.class);
     }
 
+    private int kindCase_ = 0;
+    private java.lang.Object kind_;
+
+    public enum KindCase
+        implements
+            com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      NULL(1),
+      TAG_TYPE(2),
+      KIND_NOT_SET(0);
+      private final int value;
+
+      private KindCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static KindCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static KindCase forNumber(int value) {
+        switch (value) {
+          case 1:
+            return NULL;
+          case 2:
+            return TAG_TYPE;
+          case 0:
+            return KIND_NOT_SET;
+          default:
+            return null;
+        }
+      }
+
+      public int getNumber() {
+        return this.value;
+      }
+    };
+
     public KindCase getKindCase() {
       return KindCase.forNumber(kindCase_);
     }
 
+    public static final int NULL_FIELD_NUMBER = 1;
     /**
      * <code>.google.protobuf.NullValue null = 1;</code>
      *
@@ -1463,7 +1259,6 @@ public enum KindCase
       }
       return 0;
     }
-
     /**
      * <code>.google.protobuf.NullValue null = 1;</code>
      *
@@ -1479,6 +1274,7 @@ public enum KindCase
       return com.google.protobuf.NullValue.NULL_VALUE;
     }
 
+    public static final int TAG_TYPE_FIELD_NUMBER = 2;
     /**
      * <code>.swisschain.sirius.vaultApi.common.TagType tag_type = 2;</code>
      *
@@ -1490,7 +1286,6 @@ public enum KindCase
       }
       return 0;
     }
-
     /**
      * <code>.swisschain.sirius.vaultApi.common.TagType tag_type = 2;</code>
      *
@@ -1508,6 +1303,8 @@ public enum KindCase
       }
       return io.swisschain.sirius.vaultApi.generated.common.Common.TagType.TEXT;
     }
+
+    private byte memoizedIsInitialized = -1;
 
     @java.lang.Override
     public final boolean isInitialized() {
@@ -1599,9 +1396,91 @@ public enum KindCase
       return hash;
     }
 
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
+        java.nio.ByteBuffer data) throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
+        java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
+        byte[] data) throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
+        byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
+        java.io.InputStream input) throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
+        java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+          PARSER, input, extensionRegistry);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType
+        parseDelimitedFrom(java.io.InputStream input) throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType
+        parseDelimitedFrom(
+            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
+          PARSER, input, extensionRegistry);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
+        com.google.protobuf.CodedInputStream input) throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+          PARSER, input, extensionRegistry);
+    }
+
     @java.lang.Override
     public Builder newBuilderForType() {
       return newBuilder();
+    }
+
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+
+    public static Builder newBuilder(
+        io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
     @java.lang.Override
@@ -1615,78 +1494,12 @@ public enum KindCase
       Builder builder = new Builder(parent);
       return builder;
     }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<NullableTagType> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-public enum KindCase
-        implements
-            com.google.protobuf.Internal.EnumLite,
-            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      NULL(1),
-      TAG_TYPE(2),
-      KIND_NOT_SET(0);
-      private final int value;
-
-      private KindCase(int value) {
-        this.value = value;
-      }
-      /**
-       * @param value The number of the enum to look for.
-       * @return The enum associated with the given number.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static KindCase valueOf(int value) {
-        return forNumber(value);
-      }
-
-      public static KindCase forNumber(int value) {
-        switch (value) {
-          case 1:
-            return NULL;
-          case 2:
-            return TAG_TYPE;
-          case 0:
-            return KIND_NOT_SET;
-          default:
-            return null;
-        }
-      }
-
-      public int getNumber() {
-        return this.value;
-      }
-    }
-
     /** Protobuf type {@code swisschain.sirius.vaultApi.common.NullableTagType} */
     public static final class Builder
         extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
         implements
         // @@protoc_insertion_point(builder_implements:swisschain.sirius.vaultApi.common.NullableTagType)
         io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagTypeOrBuilder {
-      private int kindCase_ = 0;
-      private java.lang.Object kind_;
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -1713,6 +1526,17 @@ public enum KindCase
                     .NullableTagType
                     .Builder
                     .class);
+      }
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -1868,6 +1692,9 @@ public enum KindCase
         }
         return this;
       }
+
+      private int kindCase_ = 0;
+      private java.lang.Object kind_;
 
       public KindCase getKindCase() {
         return KindCase.forNumber(kindCase_);
@@ -2034,36 +1861,72 @@ public enum KindCase
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.common.NullableTagType)
     }
+
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.common.NullableTagType)
+    private static final io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType
+        DEFAULT_INSTANCE;
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType();
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<NullableTagType> PARSER =
+        new com.google.protobuf.AbstractParser<NullableTagType>() {
+          @java.lang.Override
+          public NullableTagType parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new NullableTagType(input, extensionRegistry);
+          }
+        };
+
+    public static com.google.protobuf.Parser<NullableTagType> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<NullableTagType> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain.sirius.vaultApi.generated.common.Common.NullableTagType
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
   }
 
+  public interface BigDecimalOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.common.BigDecimal)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string value = 1;</code>
+     *
+     * @return The value.
+     */
+    java.lang.String getValue();
+    /**
+     * <code>string value = 1;</code>
+     *
+     * @return The bytes for value.
+     */
+    com.google.protobuf.ByteString getValueBytes();
+  }
   /** Protobuf type {@code swisschain.sirius.vaultApi.common.BigDecimal} */
   public static final class BigDecimal extends com.google.protobuf.GeneratedMessageV3
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.common.BigDecimal)
       BigDecimalOrBuilder {
-    public static final int VALUE_FIELD_NUMBER = 1;
     private static final long serialVersionUID = 0L;
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.common.BigDecimal)
-    private static final io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal
-        DEFAULT_INSTANCE;
-    private static final com.google.protobuf.Parser<BigDecimal> PARSER =
-        new com.google.protobuf.AbstractParser<BigDecimal>() {
-          @java.lang.Override
-          public BigDecimal parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new BigDecimal(input, extensionRegistry);
-          }
-        };
-
-    static {
-      DEFAULT_INSTANCE = new io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal();
-    }
-
-    private volatile java.lang.Object value_;
-    private byte memoizedIsInitialized = -1;
-
     // Use BigDecimal.newBuilder() to construct.
     private BigDecimal(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -2072,6 +1935,18 @@ public enum KindCase
     private BigDecimal() {
       value_ = "";
     }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new BigDecimal();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
+
     private BigDecimal(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2124,6 +1999,117 @@ public enum KindCase
           .common
           .Common
           .internal_static_swisschain_sirius_vaultApi_common_BigDecimal_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return io.swisschain.sirius.vaultApi.generated.common.Common
+          .internal_static_swisschain_sirius_vaultApi_common_BigDecimal_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.class,
+              io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.Builder.class);
+    }
+
+    public static final int VALUE_FIELD_NUMBER = 1;
+    private volatile java.lang.Object value_;
+    /**
+     * <code>string value = 1;</code>
+     *
+     * @return The value.
+     */
+    @java.lang.Override
+    public java.lang.String getValue() {
+      java.lang.Object ref = value_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        value_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string value = 1;</code>
+     *
+     * @return The bytes for value.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getValueBytes() {
+      java.lang.Object ref = value_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        value_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+      if (!getValueBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, value_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getValueBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, value_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+        return true;
+      }
+      if (!(obj instanceof io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal)) {
+        return super.equals(obj);
+      }
+      io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal other =
+          (io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal) obj;
+
+      if (!getValue().equals(other.getValue())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + VALUE_FIELD_NUMBER;
+      hash = (53 * hash) + getValue().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
     }
 
     public static io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal parseFrom(
@@ -2199,6 +2185,11 @@ public enum KindCase
           PARSER, input, extensionRegistry);
     }
 
+    @java.lang.Override
+    public Builder newBuilderForType() {
+      return newBuilder();
+    }
+
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
@@ -2206,139 +2197,6 @@ public enum KindCase
     public static Builder newBuilder(
         io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    public static com.google.protobuf.Parser<BigDecimal> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new BigDecimal();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return io.swisschain.sirius.vaultApi.generated.common.Common
-          .internal_static_swisschain_sirius_vaultApi_common_BigDecimal_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.class,
-              io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.Builder.class);
-    }
-
-    /**
-     * <code>string value = 1;</code>
-     *
-     * @return The value.
-     */
-    @java.lang.Override
-    public java.lang.String getValue() {
-      java.lang.Object ref = value_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        value_ = s;
-        return s;
-      }
-    }
-
-    /**
-     * <code>string value = 1;</code>
-     *
-     * @return The bytes for value.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getValueBytes() {
-      java.lang.Object ref = value_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
-        value_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (!getValueBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, value_);
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!getValueBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, value_);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj instanceof io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal)) {
-        return super.equals(obj);
-      }
-      io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal other =
-          (io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal) obj;
-
-      if (!getValue().equals(other.getValue())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + VALUE_FIELD_NUMBER;
-      hash = (53 * hash) + getValue().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
     }
 
     @java.lang.Override
@@ -2352,37 +2210,12 @@ public enum KindCase
       Builder builder = new Builder(parent);
       return builder;
     }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<BigDecimal> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
     /** Protobuf type {@code swisschain.sirius.vaultApi.common.BigDecimal} */
     public static final class Builder
         extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
         implements
         // @@protoc_insertion_point(builder_implements:swisschain.sirius.vaultApi.common.BigDecimal)
         io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimalOrBuilder {
-      private java.lang.Object value_ = "";
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -2401,6 +2234,17 @@ public enum KindCase
             .ensureFieldAccessorsInitialized(
                 io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.class,
                 io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.Builder.class);
+      }
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -2537,6 +2381,7 @@ public enum KindCase
         return this;
       }
 
+      private java.lang.Object value_ = "";
       /**
        * <code>string value = 1;</code>
        *
@@ -2553,23 +2398,6 @@ public enum KindCase
           return (java.lang.String) ref;
         }
       }
-
-      /**
-       * <code>string value = 1;</code>
-       *
-       * @param value The value to set.
-       * @return This builder for chaining.
-       */
-      public Builder setValue(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-
-        value_ = value;
-        onChanged();
-        return this;
-      }
-
       /**
        * <code>string value = 1;</code>
        *
@@ -2586,7 +2414,32 @@ public enum KindCase
           return (com.google.protobuf.ByteString) ref;
         }
       }
+      /**
+       * <code>string value = 1;</code>
+       *
+       * @param value The value to set.
+       * @return This builder for chaining.
+       */
+      public Builder setValue(java.lang.String value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
 
+        value_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string value = 1;</code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearValue() {
+
+        value_ = getDefaultInstance().getValue();
+        onChanged();
+        return this;
+      }
       /**
        * <code>string value = 1;</code>
        *
@@ -2600,18 +2453,6 @@ public enum KindCase
         checkByteStringIsUtf8(value);
 
         value_ = value;
-        onChanged();
-        return this;
-      }
-
-      /**
-       * <code>string value = 1;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearValue() {
-
-        value_ = getDefaultInstance().getValue();
         onChanged();
         return this;
       }
@@ -2630,44 +2471,106 @@ public enum KindCase
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.common.BigDecimal)
     }
+
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.common.BigDecimal)
+    private static final io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal
+        DEFAULT_INSTANCE;
+
+    static {
+      DEFAULT_INSTANCE = new io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal();
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<BigDecimal> PARSER =
+        new com.google.protobuf.AbstractParser<BigDecimal>() {
+          @java.lang.Override
+          public BigDecimal parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new BigDecimal(input, extensionRegistry);
+          }
+        };
+
+    public static com.google.protobuf.Parser<BigDecimal> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<BigDecimal> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain.sirius.vaultApi.generated.common.Common.BigDecimal
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
   }
 
+  public interface NullableTimestampOrBuilder
+      extends
+      // @@protoc_insertion_point(interface_extends:swisschain.sirius.vaultApi.common.NullableTimestamp)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.google.protobuf.NullValue null = 1;</code>
+     *
+     * @return The enum numeric value on the wire for null.
+     */
+    int getNullValue();
+    /**
+     * <code>.google.protobuf.NullValue null = 1;</code>
+     *
+     * @return The null.
+     */
+    com.google.protobuf.NullValue getNull();
+
+    /**
+     * <code>.google.protobuf.Timestamp timestamp = 2;</code>
+     *
+     * @return Whether the timestamp field is set.
+     */
+    boolean hasTimestamp();
+    /**
+     * <code>.google.protobuf.Timestamp timestamp = 2;</code>
+     *
+     * @return The timestamp.
+     */
+    com.google.protobuf.Timestamp getTimestamp();
+    /** <code>.google.protobuf.Timestamp timestamp = 2;</code> */
+    com.google.protobuf.TimestampOrBuilder getTimestampOrBuilder();
+
+    public io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp.KindCase
+        getKindCase();
+  }
   /** Protobuf type {@code swisschain.sirius.vaultApi.common.NullableTimestamp} */
   public static final class NullableTimestamp extends com.google.protobuf.GeneratedMessageV3
       implements
       // @@protoc_insertion_point(message_implements:swisschain.sirius.vaultApi.common.NullableTimestamp)
       NullableTimestampOrBuilder {
-    public static final int NULL_FIELD_NUMBER = 1;
-    public static final int TIMESTAMP_FIELD_NUMBER = 2;
     private static final long serialVersionUID = 0L;
-    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.common.NullableTimestamp)
-    private static final io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp
-        DEFAULT_INSTANCE;
-    private static final com.google.protobuf.Parser<NullableTimestamp> PARSER =
-        new com.google.protobuf.AbstractParser<NullableTimestamp>() {
-          @java.lang.Override
-          public NullableTimestamp parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new NullableTimestamp(input, extensionRegistry);
-          }
-        };
-
-    static {
-      DEFAULT_INSTANCE =
-          new io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp();
-    }
-
-    private int kindCase_ = 0;
-    private java.lang.Object kind_;
-    private byte memoizedIsInitialized = -1;
     // Use NullableTimestamp.newBuilder() to construct.
     private NullableTimestamp(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
 
-        private NullableTimestamp() {};
+    private NullableTimestamp() {}
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new NullableTimestamp();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+      return this.unknownFields;
+    }
 
     private NullableTimestamp(
         com.google.protobuf.CodedInputStream input,
@@ -2738,108 +2641,6 @@ public enum KindCase
           .internal_static_swisschain_sirius_vaultApi_common_NullableTimestamp_descriptor;
     }
 
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
-        java.nio.ByteBuffer data) throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
-        java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
-        byte[] data) throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
-        byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
-        java.io.InputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
-        java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp
-        parseDelimitedFrom(java.io.InputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp
-        parseDelimitedFrom(
-            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
-        com.google.protobuf.CodedInputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-
-    public static Builder newBuilder(
-        io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-
-    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp
-        getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    public static com.google.protobuf.Parser<NullableTimestamp> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new NullableTimestamp();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
@@ -2858,10 +2659,54 @@ public enum KindCase
                   .class);
     }
 
+    private int kindCase_ = 0;
+    private java.lang.Object kind_;
+
+    public enum KindCase
+        implements
+            com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      NULL(1),
+      TIMESTAMP(2),
+      KIND_NOT_SET(0);
+      private final int value;
+
+      private KindCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static KindCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static KindCase forNumber(int value) {
+        switch (value) {
+          case 1:
+            return NULL;
+          case 2:
+            return TIMESTAMP;
+          case 0:
+            return KIND_NOT_SET;
+          default:
+            return null;
+        }
+      }
+
+      public int getNumber() {
+        return this.value;
+      }
+    };
+
     public KindCase getKindCase() {
       return KindCase.forNumber(kindCase_);
     }
 
+    public static final int NULL_FIELD_NUMBER = 1;
     /**
      * <code>.google.protobuf.NullValue null = 1;</code>
      *
@@ -2873,7 +2718,6 @@ public enum KindCase
       }
       return 0;
     }
-
     /**
      * <code>.google.protobuf.NullValue null = 1;</code>
      *
@@ -2889,6 +2733,7 @@ public enum KindCase
       return com.google.protobuf.NullValue.NULL_VALUE;
     }
 
+    public static final int TIMESTAMP_FIELD_NUMBER = 2;
     /**
      * <code>.google.protobuf.Timestamp timestamp = 2;</code>
      *
@@ -2898,7 +2743,6 @@ public enum KindCase
     public boolean hasTimestamp() {
       return kindCase_ == 2;
     }
-
     /**
      * <code>.google.protobuf.Timestamp timestamp = 2;</code>
      *
@@ -2911,7 +2755,6 @@ public enum KindCase
       }
       return com.google.protobuf.Timestamp.getDefaultInstance();
     }
-
     /** <code>.google.protobuf.Timestamp timestamp = 2;</code> */
     @java.lang.Override
     public com.google.protobuf.TimestampOrBuilder getTimestampOrBuilder() {
@@ -2920,6 +2763,8 @@ public enum KindCase
       }
       return com.google.protobuf.Timestamp.getDefaultInstance();
     }
+
+    private byte memoizedIsInitialized = -1;
 
     @java.lang.Override
     public final boolean isInitialized() {
@@ -3013,9 +2858,91 @@ public enum KindCase
       return hash;
     }
 
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
+        java.nio.ByteBuffer data) throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
+        java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
+        byte[] data) throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
+        byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
+        java.io.InputStream input) throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
+        java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+          PARSER, input, extensionRegistry);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp
+        parseDelimitedFrom(java.io.InputStream input) throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp
+        parseDelimitedFrom(
+            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
+          PARSER, input, extensionRegistry);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
+        com.google.protobuf.CodedInputStream input) throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
+          PARSER, input, extensionRegistry);
+    }
+
     @java.lang.Override
     public Builder newBuilderForType() {
       return newBuilder();
+    }
+
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+
+    public static Builder newBuilder(
+        io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
     @java.lang.Override
@@ -3029,83 +2956,12 @@ public enum KindCase
       Builder builder = new Builder(parent);
       return builder;
     }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<NullableTimestamp> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp
-        getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-public enum KindCase
-        implements
-            com.google.protobuf.Internal.EnumLite,
-            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      NULL(1),
-      TIMESTAMP(2),
-      KIND_NOT_SET(0);
-      private final int value;
-
-      private KindCase(int value) {
-        this.value = value;
-      }
-      /**
-       * @param value The number of the enum to look for.
-       * @return The enum associated with the given number.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static KindCase valueOf(int value) {
-        return forNumber(value);
-      }
-
-      public static KindCase forNumber(int value) {
-        switch (value) {
-          case 1:
-            return NULL;
-          case 2:
-            return TIMESTAMP;
-          case 0:
-            return KIND_NOT_SET;
-          default:
-            return null;
-        }
-      }
-
-      public int getNumber() {
-        return this.value;
-      }
-    }
-
     /** Protobuf type {@code swisschain.sirius.vaultApi.common.NullableTimestamp} */
     public static final class Builder
         extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
         implements
         // @@protoc_insertion_point(builder_implements:swisschain.sirius.vaultApi.common.NullableTimestamp)
         io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestampOrBuilder {
-      private int kindCase_ = 0;
-      private java.lang.Object kind_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.Timestamp,
-              com.google.protobuf.Timestamp.Builder,
-              com.google.protobuf.TimestampOrBuilder>
-          timestampBuilder_;
-
-      // Construct using
-      // io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-
       public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
         return io.swisschain
             .sirius
@@ -3132,6 +2988,17 @@ public enum KindCase
                     .NullableTimestamp
                     .Builder
                     .class);
+      }
+
+      // Construct using
+      // io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
       }
 
       private void maybeForceBuilderInitialization() {
@@ -3294,6 +3161,9 @@ public enum KindCase
         return this;
       }
 
+      private int kindCase_ = 0;
+      private java.lang.Object kind_;
+
       public KindCase getKindCase() {
         return KindCase.forNumber(kindCase_);
       }
@@ -3317,7 +3187,6 @@ public enum KindCase
         }
         return 0;
       }
-
       /**
        * <code>.google.protobuf.NullValue null = 1;</code>
        *
@@ -3330,7 +3199,6 @@ public enum KindCase
         onChanged();
         return this;
       }
-
       /**
        * <code>.google.protobuf.NullValue null = 1;</code>
        *
@@ -3346,7 +3214,6 @@ public enum KindCase
         }
         return com.google.protobuf.NullValue.NULL_VALUE;
       }
-
       /**
        * <code>.google.protobuf.NullValue null = 1;</code>
        *
@@ -3362,7 +3229,6 @@ public enum KindCase
         onChanged();
         return this;
       }
-
       /**
        * <code>.google.protobuf.NullValue null = 1;</code>
        *
@@ -3377,6 +3243,11 @@ public enum KindCase
         return this;
       }
 
+      private com.google.protobuf.SingleFieldBuilderV3<
+              com.google.protobuf.Timestamp,
+              com.google.protobuf.Timestamp.Builder,
+              com.google.protobuf.TimestampOrBuilder>
+          timestampBuilder_;
       /**
        * <code>.google.protobuf.Timestamp timestamp = 2;</code>
        *
@@ -3522,6 +3393,134 @@ public enum KindCase
 
       // @@protoc_insertion_point(builder_scope:swisschain.sirius.vaultApi.common.NullableTimestamp)
     }
+
+    // @@protoc_insertion_point(class_scope:swisschain.sirius.vaultApi.common.NullableTimestamp)
+    private static final io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp
+        DEFAULT_INSTANCE;
+
+    static {
+      DEFAULT_INSTANCE =
+          new io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp();
+    }
+
+    public static io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp
+        getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<NullableTimestamp> PARSER =
+        new com.google.protobuf.AbstractParser<NullableTimestamp>() {
+          @java.lang.Override
+          public NullableTimestamp parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new NullableTimestamp(input, extensionRegistry);
+          }
+        };
+
+    public static com.google.protobuf.Parser<NullableTimestamp> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<NullableTimestamp> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public io.swisschain.sirius.vaultApi.generated.common.Common.NullableTimestamp
+        getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+  }
+
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_common_NullableNetworkType_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_common_NullableNetworkType_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_common_NullableTagType_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_common_NullableTagType_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_common_BigDecimal_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_common_BigDecimal_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_swisschain_sirius_vaultApi_common_NullableTimestamp_descriptor;
+  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_swisschain_sirius_vaultApi_common_NullableTimestamp_fieldAccessorTable;
+
+  public static com.google.protobuf.Descriptors.FileDescriptor getDescriptor() {
+    return descriptor;
+  }
+
+  private static com.google.protobuf.Descriptors.FileDescriptor descriptor;
+
+  static {
+    java.lang.String[] descriptorData = {
+      "\n\014common.proto\022!swisschain.sirius.vaultA"
+          + "pi.common\032\034google/protobuf/struct.proto\032"
+          + "\037google/protobuf/timestamp.proto\"\221\001\n\023Nul"
+          + "lableNetworkType\022*\n\004null\030\001 \001(\0162\032.google."
+          + "protobuf.NullValueH\000\022F\n\014network_type\030\002 \001"
+          + "(\0162..swisschain.sirius.vaultApi.common.N"
+          + "etworkTypeH\000B\006\n\004kind\"\205\001\n\017NullableTagType"
+          + "\022*\n\004null\030\001 \001(\0162\032.google.protobuf.NullVal"
+          + "ueH\000\022>\n\010tag_type\030\002 \001(\0162*.swisschain.siri"
+          + "us.vaultApi.common.TagTypeH\000B\006\n\004kind\"\033\n\n"
+          + "BigDecimal\022\r\n\005value\030\001 \001(\t\"x\n\021NullableTim"
+          + "estamp\022*\n\004null\030\001 \001(\0162\032.google.protobuf.N"
+          + "ullValueH\000\022/\n\ttimestamp\030\002 \001(\0132\032.google.p"
+          + "rotobuf.TimestampH\000B\006\n\004kind*0\n\013NetworkTy"
+          + "pe\022\013\n\007PRIVATE\020\000\022\010\n\004TEST\020\001\022\n\n\006PUBLIC\020\002*\037\n"
+          + "\007TagType\022\010\n\004TEXT\020\000\022\n\n\006NUMBER\020\001B`\n.io.swi"
+          + "sschain.sirius.vaultApi.generated.common"
+          + "\252\002-Swisschain.Sirius.VaultApi.ApiContrac"
+          + "t.Commonb\006proto3"
+    };
+    descriptor =
+        com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
+            descriptorData,
+            new com.google.protobuf.Descriptors.FileDescriptor[] {
+              com.google.protobuf.StructProto.getDescriptor(),
+              com.google.protobuf.TimestampProto.getDescriptor(),
+            });
+    internal_static_swisschain_sirius_vaultApi_common_NullableNetworkType_descriptor =
+        getDescriptor().getMessageTypes().get(0);
+    internal_static_swisschain_sirius_vaultApi_common_NullableNetworkType_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_common_NullableNetworkType_descriptor,
+            new java.lang.String[] {
+              "Null", "NetworkType", "Kind",
+            });
+    internal_static_swisschain_sirius_vaultApi_common_NullableTagType_descriptor =
+        getDescriptor().getMessageTypes().get(1);
+    internal_static_swisschain_sirius_vaultApi_common_NullableTagType_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_common_NullableTagType_descriptor,
+            new java.lang.String[] {
+              "Null", "TagType", "Kind",
+            });
+    internal_static_swisschain_sirius_vaultApi_common_BigDecimal_descriptor =
+        getDescriptor().getMessageTypes().get(2);
+    internal_static_swisschain_sirius_vaultApi_common_BigDecimal_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_common_BigDecimal_descriptor,
+            new java.lang.String[] {
+              "Value",
+            });
+    internal_static_swisschain_sirius_vaultApi_common_NullableTimestamp_descriptor =
+        getDescriptor().getMessageTypes().get(3);
+    internal_static_swisschain_sirius_vaultApi_common_NullableTimestamp_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_swisschain_sirius_vaultApi_common_NullableTimestamp_descriptor,
+            new java.lang.String[] {
+              "Null", "Timestamp", "Kind",
+            });
+    com.google.protobuf.StructProto.getDescriptor();
+    com.google.protobuf.TimestampProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

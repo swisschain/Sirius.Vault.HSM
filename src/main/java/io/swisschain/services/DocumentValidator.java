@@ -11,35 +11,34 @@ import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
 public class DocumentValidator {
-    private static final Logger logger = LogManager.getLogger();
+  private static final Logger logger = LogManager.getLogger();
 
-    private final AsymmetricEncryptionService asymmetricEncryptionService;
-    private final GuardianKey guardianKey;
+  private final AsymmetricEncryptionService asymmetricEncryptionService;
+  private final GuardianKey guardianKey;
 
-    public DocumentValidator(
-            AsymmetricEncryptionService asymmetricEncryptionService,
-            GuardianKey guardianKey) {
-        this.asymmetricEncryptionService = asymmetricEncryptionService;
-        this.guardianKey = guardianKey;
+  public DocumentValidator(
+      AsymmetricEncryptionService asymmetricEncryptionService, GuardianKey guardianKey) {
+    this.asymmetricEncryptionService = asymmetricEncryptionService;
+    this.guardianKey = guardianKey;
+  }
+
+  public SignatureValidationResult Validate(String document, String signature) {
+    try {
+      var isValid =
+          asymmetricEncryptionService.verifySignature(
+              document.getBytes(StandardCharsets.UTF_8),
+              Base64.getDecoder().decode(signature),
+              guardianKey.getPublicKey());
+
+      if (isValid) {
+        return SignatureValidationResult.CreateValid();
+      }
+
+      return SignatureValidationResult.CreateInvalid("Wrong document signature");
+
+    } catch (IOException exception) {
+      logger.error("An error occurred while verifying document signature.", exception);
+      return SignatureValidationResult.CreateInvalid("Unknown error");
     }
-
-    public SignatureValidationResult Validate(String document, String signature) {
-        try {
-            var isValid =
-                    asymmetricEncryptionService.verifySignature(
-                            document.getBytes(StandardCharsets.UTF_8),
-                            Base64.getDecoder().decode(signature),
-                            guardianKey.getPublicKey());
-
-            if (isValid) {
-                return SignatureValidationResult.CreateValid();
-            }
-
-            return SignatureValidationResult.CreateInvalid("Wrong document signature");
-
-        } catch (IOException exception) {
-            logger.error("An error occurred while verifying document signature.", exception);
-            return SignatureValidationResult.CreateInvalid("Unknown error");
-        }
-    }
+  }
 }

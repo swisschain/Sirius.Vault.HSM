@@ -5,6 +5,7 @@ option java_package = "io.swisschain.sirius.vaultApi.generated.wallets";
 
 package swisschain.sirius.vaultApi.wallets;
 
+import "google/protobuf/wrappers.proto";
 import "google/protobuf/timestamp.proto";
 import "common.proto";
 
@@ -50,6 +51,18 @@ message WalletGenerationRequest {
   string tenant_id = 6;
   google.protobuf.Timestamp created_at = 7;
   google.protobuf.Timestamp updated_at = 8;
+  WalletGenerationContext wallet_generation_context = 9;
+}
+
+enum WalletGenerationContextObjectType {
+  BROKER_ACCOUNT = 0;
+  ACCOUNT = 1;
+}
+
+message WalletGenerationContext {
+  int64 object_id = 1;
+  WalletGenerationContextObjectType object_type = 2;
+  google.protobuf.StringValue reference_id = 3;
 }
 
 // Confirm
@@ -78,6 +91,7 @@ message ConfirmWalletGenerationRequestErrorResponseBody {
   enum ErrorCode {
     UNKNOWN = 0;
     INVALID_PARAMETERS = 1;
+    INVALID_STATE = 2;
   }
 
   ErrorCode error_code = 1;
@@ -114,6 +128,7 @@ message RejectWalletGenerationRequestErrorResponseBody {
   enum ErrorCode {
     UNKNOWN = 0;
     INVALID_PARAMETERS = 1;
+    INVALID_STATE = 2;
   }
 
   ErrorCode error_code = 1;

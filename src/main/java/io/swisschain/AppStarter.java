@@ -1,27 +1,27 @@
 package io.swisschain;
 
 import io.swisschain.config.loaders.ConfigLoader;
+import io.swisschain.crypto.address.generation.AddressGeneratorFactory;
 import io.swisschain.crypto.asymmetric.AsymmetricEncryptionService;
+import io.swisschain.crypto.transaction.signing.TransactionSignerFactory;
 import io.swisschain.domain.document.GuardianKey;
 import io.swisschain.isAlive.IsAliveService;
 import io.swisschain.repositories.DbConnectionFactory;
 import io.swisschain.repositories.DbMigration;
-import io.swisschain.repositories.wallets.WalletRepository;
-import io.swisschain.services.DocumentValidator;
-import io.swisschain.services.TransactionService;
-import io.swisschain.services.WalletService;
+import io.swisschain.repositories.wallets.WalletRepositoryImp;
+import io.swisschain.repositories.wallets.WalletRepositoryRetryDecorator;
+import io.swisschain.services.*;
 import io.swisschain.sirius.vaultApi.ChannelFactory;
 import io.swisschain.sirius.vaultApi.VaultApiClient;
+import io.swisschain.tasks.MonitoringTask;
 import io.swisschain.tasks.TransferSigningTask;
 import io.swisschain.tasks.WalletGenerationTask;
-import io.swisschain.utils.AppVersion;
+import io.swisschain.common.AppVersion;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.net.InetAddress;
-import java.util.ArrayList;
 import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 public class AppStarter {
@@ -55,14 +55,24 @@ public class AppStarter {
     var connectionFactory =
         new DbConnectionFactory(
             config.db.url, config.db.user, config.db.password, config.db.schema);
-    var walletRepository = new WalletRepository(connectionFactory);
+    var walletRepository =
+        new WalletRepositoryRetryDecorator(new WalletRepositoryImp(connectionFactory));
 
     // Services
 
+    var hostProcessId = getHostProcessId();
+
     var asymmetricEncryptionService = new AsymmetricEncryptionService();
 
-    var walletService = new WalletService(walletRepository, config);
-    var transactionService = new TransactionService(walletRepository, config);
+    var addressGeneratorFactory = new AddressGeneratorFactory(config);
+    var transactionSignerFactory = new TransactionSignerFactory(config);
+
+    var walletApiService =
+        new WalletApiServiceRetryDecorator(new WalletApiServiceImp(vaultApiClient, hostProcessId));
+
+    var transferApiService =
+        new TransferApiServiceRetryDecorator(
+            new TransferApiServiceImp(vaultApiClient, hostProcessId));
 
     var guardianKey = new GuardianKey(config.keys.guardian.publicKey);
 
@@ -70,28 +80,36 @@ public class AppStarter {
 
     // Tasks
 
-    var hostProcessId = getHostProcessId();
-
     var service = Executors.newScheduledThreadPool(2);
 
     service.scheduleWithFixedDelay(
-        new WalletGenerationTask(vaultApiClient, walletService, hostProcessId),
+        new WalletGenerationTask(walletRepository, walletApiService, addressGeneratorFactory),
         0,
         config.tasks != null && config.tasks.walletGenerationPeriodInSeconds > 0
             ? config.tasks.walletGenerationPeriodInSeconds
             : 1,
         TimeUnit.SECONDS);
+
     service.scheduleWithFixedDelay(
-        new TransferSigningTask(vaultApiClient, transactionService, documentValidator, hostProcessId),
+        new TransferSigningTask(
+            transferApiService, documentValidator, transactionSignerFactory, walletRepository),
         0,
         config.tasks != null && config.tasks.transferSigningPeriodInSeconds > 0
             ? config.tasks.transferSigningPeriodInSeconds
             : 1,
         TimeUnit.SECONDS);
 
+    service.scheduleWithFixedDelay(
+        new MonitoringTask(vaultApiClient),
+        0,
+        config.tasks != null && config.tasks.monitoringPeriodInSeconds > 0
+            ? config.tasks.monitoringPeriodInSeconds
+            : 1,
+        TimeUnit.SECONDS);
+
     initShutdownHook();
 
-    new IsAliveService(5001).start();
+    new IsAliveService(5000).start();
 
     while (true) {
       Thread.sleep(10000);

@@ -1,259 +1,130 @@
 package io.swisschain.tasks;
 
-import com.google.protobuf.ByteString;
-import com.google.protobuf.Timestamp;
-import io.grpc.StatusRuntimeException;
+import io.swisschain.contracts.Document;
+import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.crypto.exceptions.BlockchainNotSupportedException;
-import io.swisschain.mappers.DoubleSpendingProtectionTypeMapper;
-import io.swisschain.mappers.NetworkTypeMapper;
-import io.swisschain.services.*;
-import io.swisschain.sirius.vaultApi.VaultApiClient;
-import io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass;
+import io.swisschain.crypto.exceptions.UnknownNetworkTypeException;
+import io.swisschain.crypto.transaction.signing.TransactionSignerFactory;
+import io.swisschain.domain.transfers.RejectionReason;
+import io.swisschain.domain.exceptions.OperationExhaustedException;
+import io.swisschain.domain.exceptions.OperationFailedException;
+import io.swisschain.repositories.wallets.WalletRepository;
+import io.swisschain.services.DocumentValidator;
+import io.swisschain.services.JsonSerializer;
+import io.swisschain.services.TransferApiService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.jetbrains.annotations.Nullable;
-
-import java.math.BigDecimal;
-import java.time.Instant;
-import java.util.ArrayList;
-import java.util.List;
 
 public class TransferSigningTask implements Runnable {
   private static final Logger logger = LogManager.getLogger();
 
-  private final VaultApiClient vaultApiClient;
-  private final TransactionService transactionService;
+  private final TransferApiService transferApiService;
   private final DocumentValidator documentValidator;
-  private final String hostProcessId;
+  private final TransactionSignerFactory transactionSignerFactory;
+  private final WalletRepository walletRepository;
+
+  private final JsonSerializer jsonMapper = new JsonSerializer();
 
   public TransferSigningTask(
-      VaultApiClient vaultApiClient,
-      TransactionService transactionService,
+      TransferApiService transferApiService,
       DocumentValidator documentValidator,
-      String hostProcessId) {
-    this.vaultApiClient = vaultApiClient;
-    this.transactionService = transactionService;
+      TransactionSignerFactory transactionSignerFactory,
+      WalletRepository walletRepository) {
+    this.transferApiService = transferApiService;
     this.documentValidator = documentValidator;
-    this.hostProcessId = hostProcessId;
-
-    logger.info("TransferSigningTask created");
+    this.transactionSignerFactory = transactionSignerFactory;
+    this.walletRepository = walletRepository;
   }
 
   @Override
   public void run() {
     try {
-      var requests = getRequests();
-
-      if (requests == null || requests.size() == 0) {
-        return;
-      }
-
-      for (var transferSigningRequest : requests) {
-        try {
-          logger.info(
-              String.format(
-                  "Processing transfer signing request. Id: %d", transferSigningRequest.getId()));
-
-          var signatureValidationResult =
-              documentValidator.Validate(
-                  transferSigningRequest.getDocument(), transferSigningRequest.getSignature());
-
-          if (signatureValidationResult.isValid()) {
-            var transaction = transactionService.create(transferSigningRequest);
-
-            confirm(
-                transferSigningRequest.getId(),
-                transaction.getTransactionId(),
-                transaction.getSignedTransaction());
-          } else {
-            reject(
-                    transferSigningRequest.getId(),
-                    TransferSigningRequestsOuterClass.TransferSigningRequestRejectionReason
-                            .OTHER,
-                    signatureValidationResult.getReason());
-          }
-        } catch (BlockchainNotSupportedException exception) {
-          logger.error("BlockchainId is not supported.", exception);
-
-          reject(
-              transferSigningRequest.getId(),
-              TransferSigningRequestsOuterClass.TransferSigningRequestRejectionReason
-                  .UNKNOWN_BLOCKCHAIN,
-              "BlockchainId is not supported.");
-
-        } catch (Exception exception) {
-          logger.error("An error occurred while processing transfer signing request.", exception);
-
-          reject(
-              transferSigningRequest.getId(),
-              TransferSigningRequestsOuterClass.TransferSigningRequestRejectionReason.OTHER,
-              exception.getMessage());
+      for (var transferSigningRequest : transferApiService.get()) {
+        if (transferSigningRequest.getSigningAddresses().size() != 1) {
+          transferSigningRequest.reject(
+              RejectionReason.Other, "Currently only one signing address supported");
+          transferApiService.reject(transferSigningRequest);
+          continue;
         }
-      }
-    } catch (Exception exception) {
-      logger.error("An error occurred while processing transfer signing requests.", exception);
-    }
-  }
 
-  @Nullable
-  private List<TransferSigningRequest> getRequests() {
-    try {
-      var request =
-          TransferSigningRequestsOuterClass.GetTransferSigningRequestsRequest.newBuilder().build();
-      var response = vaultApiClient.getTransactions().get(request);
+        var signatureValidationResult =
+            documentValidator.Validate(
+                transferSigningRequest.getDocument(), transferSigningRequest.getSignature());
 
-      if (response.getBodyCase()
-          == TransferSigningRequestsOuterClass.GetTransferSigningRequestsResponse.BodyCase.ERROR) {
-        logger.error(
-            String.format(
-                "An error occurred while getting transfer signing requests. %s",
-                response.getError().getErrorMessage()));
-        return null;
-      }
+        if (!signatureValidationResult.isValid()) {
+          transferSigningRequest.reject(
+              RejectionReason.InvalidSignature, signatureValidationResult.getReason());
+          transferApiService.reject(transferSigningRequest);
+          continue;
+        }
 
-      var transferSigningRequests = new ArrayList<TransferSigningRequest>();
+        var signingAddress = transferSigningRequest.getSigningAddresses().get(0);
 
-      for (var item : response.getResponse().getRequestsList()) {
+        var wallet =
+            walletRepository.find(
+                signingAddress.getAddress(),
+                signingAddress.getGroup(),
+                transferSigningRequest.getTenantId());
+
+        if (wallet == null) {
+          transferSigningRequest.reject(RejectionReason.Other, "Wallet not found");
+          transferApiService.reject(transferSigningRequest);
+          continue;
+        }
+
         try {
-          var transferSigningRequest = map(item);
-          transferSigningRequests.add(transferSigningRequest);
-        } catch (Exception exception) {
+          var signer =
+              transactionSignerFactory.getCoinsTransactionSigner(
+                  BlockchainProtocolCodes.fromString(transferSigningRequest.getProtocolCode()));
+
+          var document =
+              jsonMapper.deserialize(transferSigningRequest.getDocument(), Document.class);
+
+          var result =
+              signer.sign(
+                  transferSigningRequest.getBuiltTransaction(),
+                  transferSigningRequest.getCoinsToSpend(),
+                  wallet.getPrivateKey(),
+                  wallet.getPublicKey(),
+                  transferSigningRequest.getNetworkType(),
+                  document.getTransferDetails());
+
+          transferSigningRequest.confirm(result.getTransactionId(), result.getSignedTransaction());
+        } catch (BlockchainNotSupportedException exception) {
+          transferSigningRequest.reject(
+              RejectionReason.UnknownBlockchain, "Blockchain is not supported");
           logger.error(
               String.format(
-                  "An error occurred while parsing transfer signing request. Id: %d", item.getId()),
+                  "It's not possible to sign transaction request %d. Blockchain %s not supported.",
+                  transferSigningRequest.getId(), transferSigningRequest.getBlockchainId()));
+        } catch (UnknownNetworkTypeException exception) {
+          transferSigningRequest.reject(RejectionReason.Other, "Network type is not supported");
+          logger.error(
+              String.format(
+                  "It's not possible to sign transaction request %d. Network type %s not supported.",
+                  transferSigningRequest.getId(), transferSigningRequest.getBlockchainId()));
+        } catch (Exception exception) {
+          transferSigningRequest.reject(RejectionReason.Other, "Unexpected error");
+          logger.error(
+              String.format(
+                  "It's not possible to sign transaction request %d. An unexpected error occurred.",
+                  transferSigningRequest.getId()),
               exception);
         }
+
+        if (transferSigningRequest.isRejected()) {
+          transferApiService.reject(transferSigningRequest);
+        } else {
+          transferApiService.confirm(transferSigningRequest);
+        }
       }
-
-      return transferSigningRequests;
-    } catch (StatusRuntimeException statusRuntimeException) {
-      logger.warn(
-          String.format(
-              "Unable to get list of transfer signing requests due to %s network status",
-              statusRuntimeException.getStatus().getCode().name()));
-      return null;
-    }
-  }
-
-  private void confirm(
-      Long transferSigningRequestId, String transactionId, byte[] signedTransaction) {
-    var conformationRequest =
-        TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestRequest.newBuilder()
-            .setRequestId(
-                String.format("Vault:TransferSigningRequest:%d", transferSigningRequestId))
-            .setTransferSigningRequestId(transferSigningRequestId)
-            .setTransactionId(transactionId)
-            .setSignedTransaction(ByteString.copyFrom(signedTransaction))
-            .setSignature("empty") // TODO: sign signedTransaction+transactionId - remove
-            .setHostProcessId(hostProcessId)
-            .build();
-
-    var response = vaultApiClient.getTransactions().confirm(conformationRequest);
-
-    if (response.getBodyCase()
-        == TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestResponse.BodyCase.ERROR) {
+    } catch (OperationExhaustedException exception) {
+      logger.error("Operation exhausted while processing transfer signing requests.", exception);
+    } catch (OperationFailedException exception) {
+      logger.error("Operation failed while processing transfer signing requests.", exception);
+    } catch (Exception exception) {
       logger.error(
-          String.format(
-              "An error occurred while confirming transfer signing request. %s",
-              response.getError().getErrorMessage()));
-    } else {
-      logger.info(
-          String.format("Transfer signing request confirmed. %d", transferSigningRequestId));
+          "An unexpected error occurred while processing transfer signing requests.", exception);
     }
-  }
-
-  private void reject(
-      Long transferSigningRequestId,
-      TransferSigningRequestsOuterClass.TransferSigningRequestRejectionReason reason,
-      String message) {
-    var rejectRequest =
-        TransferSigningRequestsOuterClass.RejectTransferSigningRequestRequest.newBuilder()
-            .setRequestId(
-                String.format("Vault:TransferSigningRequest:%d", transferSigningRequestId))
-            .setTransferSigningRequestId(transferSigningRequestId)
-            .setRejectionReason(reason)
-            .setRejectionReasonMessage(message)
-            .setSignature("empty") // TODO: sing reason+message - remove
-            .setHostProcessId(hostProcessId)
-            .build();
-
-    var response = vaultApiClient.getTransactions().reject(rejectRequest);
-
-    if (response.getBodyCase()
-        == TransferSigningRequestsOuterClass.RejectTransferSigningRequestResponse.BodyCase.ERROR) {
-      logger.error(
-          String.format(
-              "An error occurred while rejecting transfer signing request. %s",
-              response.getError().getErrorMessage()));
-    } else {
-      logger.info(String.format("Transfer signing request rejected. %d", transferSigningRequestId));
-    }
-  }
-
-  private TransferSigningRequest map(
-      TransferSigningRequestsOuterClass.TransferSigningRequest request) {
-    return new TransferSigningRequest(
-        request.getId(),
-        request.getBlockchainId(),
-        request.getProtocolCode(),
-        NetworkTypeMapper.map(request.getNetworkType()),
-        DoubleSpendingProtectionTypeMapper.map(request.getDoubleSpendingProtectionType()),
-        request.getBuiltTransaction().toByteArray(),
-        mapSigningAddress(request.getSigningAddressesList()),
-        mapCoinToSpend(request.getCoinsToSpendList()),
-        request.getDocument(),
-        request.getSignature(),
-        request.getTenantId(),
-        map(request.getCreatedAt()),
-        map(request.getUpdatedAt()));
-  }
-
-  private List<SigningAddress> mapSigningAddress(
-      List<TransferSigningRequestsOuterClass.SigningAddress> signingAddresses) {
-    var items = new ArrayList<SigningAddress>();
-
-    for (var signingAddress : signingAddresses) {
-      items.add(new SigningAddress(signingAddress.getAddress(), signingAddress.getGroup()));
-    }
-
-    return items;
-  }
-
-  private List<Coin> mapCoinToSpend(
-      List<TransferSigningRequestsOuterClass.CoinToSpend> coinToSpends) {
-    var coins = new ArrayList<Coin>();
-
-    for (var coinToSpend : coinToSpends) {
-      var coinId =
-          new CoinId(coinToSpend.getId().getTransactionId(), coinToSpend.getId().getNumber());
-
-      var address =
-          coinToSpend.getAsset().getId().getAddress() != null
-              ? coinToSpend.getAsset().getId().getAddress().getValue()
-              : null;
-
-      var blockchainAssetId =
-          new BlockchainAssetId(coinToSpend.getAsset().getId().getSymbol(), address);
-
-      var asset = new BlockchainAsset(blockchainAssetId, coinToSpend.getAsset().getAccuracy());
-
-      var redeem = coinToSpend.getRedeem() != null ? coinToSpend.getRedeem().getValue() : null;
-
-      var coin =
-          new Coin(
-              coinId,
-              asset,
-              new BigDecimal(coinToSpend.getValue().getValue()),
-              coinToSpend.getAddress(),
-              redeem);
-
-      coins.add(coin);
-    }
-
-    return coins;
-  }
-
-  private Instant map(Timestamp timestamp) {
-    return Instant.ofEpochSecond(timestamp.getSeconds(), timestamp.getNanos());
   }
 }

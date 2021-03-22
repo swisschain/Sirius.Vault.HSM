@@ -16,7 +16,7 @@ import io.swisschain.crypto.transaction.signing.exceptions.UnsupportedScriptExce
 import io.swisschain.crypto.transaction.signing.validators.BitcoinCashTransactionValidator;
 import io.swisschain.crypto.utils.BTCUtils;
 import io.swisschain.primitives.NetworkType;
-import io.swisschain.services.Coin;
+import io.swisschain.domain.transfers.Coin;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.bitcoinjcash.core.*;
@@ -37,7 +37,7 @@ public class HsmBitcoinCashCoinTransactionSigner extends HsmConnector
   private final BlockchainProtocolCodes blockchain;
 
   public HsmBitcoinCashCoinTransactionSigner(
-          HsmApiConfig hsmConfig, BlockchainProtocolCodes blockchain) {
+      HsmApiConfig hsmConfig, BlockchainProtocolCodes blockchain) {
     super(hsmConfig);
     this.blockchain = blockchain;
   }

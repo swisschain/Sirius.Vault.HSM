@@ -15,7 +15,7 @@ import io.swisschain.crypto.transaction.signing.exceptions.TransferDetailsValida
 import io.swisschain.crypto.transaction.signing.exceptions.UnsupportedScriptException;
 import io.swisschain.crypto.transaction.signing.validators.StellarTransactionValidator;
 import io.swisschain.primitives.NetworkType;
-import io.swisschain.services.Coin;
+import io.swisschain.domain.transfers.Coin;
 import org.apache.commons.codec.binary.Base32;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

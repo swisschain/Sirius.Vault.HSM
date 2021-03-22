@@ -25,13 +25,15 @@ public class AddressGeneratorFactory {
         new HsmEthereumAddressGenerator(config.clients.hsmApi, BlockchainProtocolCodes.ethereum));
     generatorMap.put(
         BlockchainProtocolCodes.ethereumClassic,
-        new HsmEthereumAddressGenerator(config.clients.hsmApi, BlockchainProtocolCodes.ethereumClassic));
+        new HsmEthereumAddressGenerator(
+            config.clients.hsmApi, BlockchainProtocolCodes.ethereumClassic));
     generatorMap.put(
         BlockchainProtocolCodes.litecoin, new HsmLitecoinAddressGenerator(config.clients.hsmApi));
     generatorMap.put(
         BlockchainProtocolCodes.stellar, new HsmStellarAddressGenerator(config.clients.hsmApi));
     generatorMap.put(
-        BlockchainProtocolCodes.bitcoinCash, new HsmBitcoinCashAddressGenerator(config.clients.hsmApi));
+        BlockchainProtocolCodes.bitcoinCash,
+        new HsmBitcoinCashAddressGenerator(config.clients.hsmApi));
   }
 
   public AddressGenerator get(BlockchainProtocolCodes code) throws BlockchainNotSupportedException {

@@ -1,4 +1,4 @@
-package io.swisschain.services;
+package io.swisschain.domain.transfers;
 
 public class CoinId {
   private final String transactionId;

@@ -21,7 +21,8 @@ public class TransactionSignerFactory {
   private void initCoinTransactionSigners() {
     coinTransactionSignersMap.put(
         BlockchainProtocolCodes.bitcoin,
-        new HsmBitcoinCoinTransactionSigner(config.clients.hsmApi, BlockchainProtocolCodes.bitcoin));
+        new HsmBitcoinCoinTransactionSigner(
+            config.clients.hsmApi, BlockchainProtocolCodes.bitcoin));
     coinTransactionSignersMap.put(
         BlockchainProtocolCodes.ethereum,
         new HsmEthereumTransactionSigner(config.clients.hsmApi, BlockchainProtocolCodes.ethereum));
@@ -31,7 +32,8 @@ public class TransactionSignerFactory {
             config.clients.hsmApi, BlockchainProtocolCodes.ethereumClassic));
     coinTransactionSignersMap.put(
         BlockchainProtocolCodes.litecoin,
-        new HsmLitecoinCoinTransactionSigner(config.clients.hsmApi, BlockchainProtocolCodes.litecoin));
+        new HsmLitecoinCoinTransactionSigner(
+            config.clients.hsmApi, BlockchainProtocolCodes.litecoin));
     coinTransactionSignersMap.put(
         BlockchainProtocolCodes.stellar,
         new HsmStellarTransactionSigner(config.clients.hsmApi, BlockchainProtocolCodes.stellar));

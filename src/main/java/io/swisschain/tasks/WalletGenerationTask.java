@@ -1,147 +1,100 @@
 package io.swisschain.tasks;
 
-import io.grpc.Status;
-import io.grpc.StatusRuntimeException;
+import io.swisschain.crypto.BlockchainProtocolCodes;
+import io.swisschain.crypto.address.generation.AddressGeneratorFactory;
 import io.swisschain.crypto.exceptions.BlockchainNotSupportedException;
-import io.swisschain.mappers.NetworkTypeMapper;
-import io.swisschain.services.WalletService;
-import io.swisschain.sirius.vaultApi.VaultApiClient;
-import io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass;
+import io.swisschain.crypto.exceptions.InvalidPublicKeyException;
+import io.swisschain.domain.wallet.RejectionReason;
+import io.swisschain.domain.wallet.Wallet;
+import io.swisschain.domain.exceptions.OperationExhaustedException;
+import io.swisschain.domain.exceptions.OperationFailedException;
+import io.swisschain.domain.exceptions.WalletAlreadyExistsException;
+import io.swisschain.repositories.wallets.WalletRepository;
+import io.swisschain.services.WalletApiService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.jetbrains.annotations.Nullable;
-
-import java.util.List;
 
 public class WalletGenerationTask implements Runnable {
-  private final String hostProcessId;
-  private final VaultApiClient vaultApiClient;
-  private final WalletService walletService;
+
+  private final WalletRepository walletRepository;
+  private final WalletApiService walletApiService;
+  private final AddressGeneratorFactory addressGeneratorFactory;
   private final Logger logger = LogManager.getLogger();
 
   public WalletGenerationTask(
-      VaultApiClient vaultApiClient, WalletService walletService, String hostProcessId) {
-    this.vaultApiClient = vaultApiClient;
-    this.walletService = walletService;
-    this.hostProcessId = hostProcessId;
-
-    logger.info("WalletGenerationTask created");
+      WalletRepository walletRepository,
+      WalletApiService walletApiService,
+      AddressGeneratorFactory addressGeneratorFactory) {
+    this.walletRepository = walletRepository;
+    this.walletApiService = walletApiService;
+    this.addressGeneratorFactory = addressGeneratorFactory;
   }
 
   @Override
   public void run() {
     try {
-      var requests = this.getRequests();
-
-      if (requests == null) return;
-
-      for (var walletGenerationRequest : requests) {
+      for (var walletGenerationRequest : walletApiService.get()) {
+        Wallet wallet = null;
         try {
-          var networkType = NetworkTypeMapper.map(walletGenerationRequest.getNetworkType());
-
-          var wallet =
-              this.walletService.create(
+          var addressGenerator =
+              addressGeneratorFactory.get(
+                  BlockchainProtocolCodes.fromString(walletGenerationRequest.getProtocolCode()));
+          var generatedAddress =
+              addressGenerator.generate(walletGenerationRequest.getNetworkType());
+          wallet =
+              Wallet.create(
                   walletGenerationRequest.getId(),
                   walletGenerationRequest.getBlockchainId(),
                   walletGenerationRequest.getProtocolCode(),
-                  networkType,
+                  walletGenerationRequest.getNetworkType(),
+                  generatedAddress.getAddress(),
+                  generatedAddress.getPublicKey(),
+                  generatedAddress.getPrivateKey(),
                   walletGenerationRequest.getTenantId(),
                   walletGenerationRequest.getGroup());
-
-          this.confirm(walletGenerationRequest.getId(), wallet.getPublicKey(), wallet.getAddress());
         } catch (BlockchainNotSupportedException exception) {
-          logger.error("BlockchainId is not supported.", exception);
-
-          this.reject(
-              walletGenerationRequest.getId(),
-              WalletsOuterClass.RejectionReason.UNKNOWN_BLOCKCHAIN,
-              "BlockchainId is not supported.");
-
-        } catch (StatusRuntimeException exception) {
-          if (!(exception.getStatus() == Status.UNAVAILABLE
-              && exception.getMessage().contains("NO_ERROR"))) {
-            logger.error(
-                "An error occurred while processing wallet generation request. "
-                    + exception.getMessage());
-          }
+          walletGenerationRequest.reject(
+              RejectionReason.UnknownBlockchain, "Blockchain is not supported");
+          logger.error(
+              String.format(
+                  "It's not possible to create wallet for request %d. Blockchain %s not supported.",
+                  walletGenerationRequest.getId(), walletGenerationRequest.getBlockchainId()));
+        } catch (InvalidPublicKeyException exception) {
+          walletGenerationRequest.reject(RejectionReason.Other, "Invalid public key");
+          logger.error(
+              String.format(
+                  "It's not possible to create wallet for request %d. Invalid public key.",
+                  walletGenerationRequest.getId()),
+              exception);
         } catch (Exception exception) {
-          logger.error("An error occurred while processing wallet generation request.", exception);
-          this.reject(
-              walletGenerationRequest.getId(),
-              WalletsOuterClass.RejectionReason.OTHER,
-              exception.getMessage());
+          walletGenerationRequest.reject(RejectionReason.Other, "Unexpected error");
+          logger.error(
+              String.format(
+                  "It's not possible to create wallet for request %d. An unexpected error occurred.",
+                  walletGenerationRequest.getId()),
+              exception);
+        }
+
+        if (walletGenerationRequest.isRejected()) {
+          walletApiService.reject(walletGenerationRequest);
+        } else {
+          try {
+            walletRepository.insert(wallet);
+          } catch (WalletAlreadyExistsException exception) {
+            wallet = walletRepository.getByRequestId(walletGenerationRequest.getId());
+          }
+
+          walletGenerationRequest.confirm(wallet.getAddress(), wallet.getPublicKey());
+          walletApiService.confirm(walletGenerationRequest);
         }
       }
-
+    } catch (OperationExhaustedException exception) {
+      logger.error("Operation exhausted while processing wallet generation requests.", exception);
+    } catch (OperationFailedException exception) {
+      logger.error("Operation failed while processing wallet generation requests.", exception);
     } catch (Exception exception) {
-      logger.error("An error occurred while processing wallet generation requests.", exception);
-    }
-  }
-
-  @Nullable
-  private List<WalletsOuterClass.WalletGenerationRequest> getRequests() {
-    var request = WalletsOuterClass.GetWalletGenerationRequestRequest.newBuilder().build();
-    var response = this.vaultApiClient.getWallets().get(request);
-
-    if (response.getBodyCase()
-        == WalletsOuterClass.GetWalletGenerationRequestResponse.BodyCase.ERROR) {
       logger.error(
-          String.format(
-              "An error occurred while getting wallet generation requests. %s",
-              response.getError().getErrorMessage()));
-      return null;
-    }
-
-    return response.getResponse().getRequestsList();
-  }
-
-  private void confirm(Long walletGenerationRequestId, String publicKey, String address) {
-    var conformationRequest =
-        WalletsOuterClass.ConfirmWalletGenerationRequestRequest.newBuilder()
-            .setRequestId(String.format("Vault:Wallet:%d", walletGenerationRequestId))
-            .setWalletGenerationRequestId(walletGenerationRequestId)
-            .setPublicKey(publicKey)
-            .setAddress(address)
-            .setSignature("empty") // TODO: Will be implemented next time
-            .setHostProcessId(hostProcessId)
-            .build();
-
-    var response = this.vaultApiClient.getWallets().confirm(conformationRequest);
-
-    if (response.getBodyCase()
-        == WalletsOuterClass.ConfirmWalletGenerationRequestResponse.BodyCase.ERROR) {
-      logger.error(
-          String.format(
-              "An error occurred while confirming wallet generation request. %s",
-              response.getError().getErrorMessage()));
-    } else {
-      logger.info(
-          String.format("Wallet generation request confirmed. %d", walletGenerationRequestId));
-    }
-  }
-
-  private void reject(
-      Long walletGenerationRequestId, WalletsOuterClass.RejectionReason reason, String message) {
-    var rejectRequest =
-        WalletsOuterClass.RejectWalletGenerationRequestRequest.newBuilder()
-            .setRequestId(String.format("Vault:Wallet:%d", walletGenerationRequestId))
-            .setWalletGenerationRequestId(walletGenerationRequestId)
-            .setReasonMessage(message)
-            .setReason(reason)
-            .setHostProcessId(hostProcessId)
-            .build();
-
-    var response = this.vaultApiClient.getWallets().reject(rejectRequest);
-
-    if (response.getBodyCase()
-        == WalletsOuterClass.RejectWalletGenerationRequestResponse.BodyCase.ERROR) {
-      logger.error(
-          String.format(
-              "An error occurred while rejecting wallet generation request. %s",
-              response.getError().getErrorMessage()));
-    } else {
-      logger.info(
-          String.format("Wallet generation request rejected. %d", walletGenerationRequestId));
+          "An unexpected error occurred while processing wallet generation requests.", exception);
     }
   }
 }
