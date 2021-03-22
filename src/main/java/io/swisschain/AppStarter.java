@@ -102,7 +102,7 @@ public class AppStarter {
     service.scheduleWithFixedDelay(
         new MonitoringTask(vaultApiClient),
         0,
-        config.tasks != null && config.tasks.transferSigningPeriodInSeconds > 0
+        config.tasks != null && config.tasks.monitoringPeriodInSeconds > 0
             ? config.tasks.monitoringPeriodInSeconds
             : 1,
         TimeUnit.SECONDS);
