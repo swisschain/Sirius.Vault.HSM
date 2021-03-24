@@ -28,15 +28,7 @@ public class MonitoringTask implements Runnable {
               .setVersion(AppVersion.VERSION)
               .build();
 
-      var response = vaultApiClient.getVaultMonitoring().update(request);
-
-      if (response.getBodyCase()
-          == VaultMonitoringOuterClass.UpdateVaultStatusResponse.BodyCase.ERROR) {
-        logger.warn(
-            String.format("Can not update status. %s", response.getError().getErrorMessage()));
-      } else {
-        logger.info("Vault status updated.");
-      }
+      vaultApiClient.getVaultMonitoring().update(request);
     } catch (Exception exception) {
       logger.error("An error occurred while sending monitoring information.", exception);
     }
