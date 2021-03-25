@@ -7,6 +7,8 @@ import io.swisschain.crypto.transaction.signing.exceptions.InvalidInputsExceptio
 import io.swisschain.crypto.transaction.signing.exceptions.TransactionSignException;
 import io.swisschain.crypto.transaction.signing.exceptions.TransferDetailsValidationException;
 import io.swisschain.crypto.transaction.signing.exceptions.UnsupportedScriptException;
+import io.swisschain.domain.exceptions.OperationExhaustedException;
+import io.swisschain.domain.exceptions.OperationFailedException;
 import io.swisschain.primitives.NetworkType;
 import io.swisschain.domain.transfers.Coin;
 
@@ -23,5 +25,5 @@ public interface CoinsTransactionSigner {
       TransferDetails transferDetails)
       throws UnknownNetworkTypeException, InvalidInputsException, IOException,
           UnsupportedScriptException, TransactionSignException, BlockchainNotSupportedException,
-          TransferDetailsValidationException;
+          TransferDetailsValidationException, OperationFailedException, OperationExhaustedException;
 }
