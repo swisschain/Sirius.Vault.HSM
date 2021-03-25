@@ -21,6 +21,7 @@ public final class RetryPolicies {
 
   private static final RetryConfig defaultRepositoryRetryConfig;
   private static final RetryConfig defaultGrpcRetryConfig;
+  private static final RetryConfig defaultHsmRetryConfig;
 
   static {
     var delays =
@@ -59,6 +60,14 @@ public final class RetryPolicies {
             .withDelayBetweenTries(Duration.ofMillis(500))
             .withExponentialBackoff()
             .build();
+
+    defaultHsmRetryConfig =
+        new RetryConfigBuilder()
+            .retryOnSpecificExceptions(IOException.class)
+            .withMaxNumberOfTries(7)
+            .withDelayBetweenTries(Duration.ofMillis(500))
+            .withExponentialBackoff()
+            .build();
   }
 
   @SuppressWarnings("unchecked")
@@ -76,6 +85,16 @@ public final class RetryPolicies {
       RetryListener<T> afterFailedTryListener, Callable<T> func) {
     return new CallExecutorBuilder<T>()
         .config(defaultGrpcRetryConfig)
+        .afterFailedTryListener(afterFailedTryListener)
+        .build()
+        .execute(func);
+  }
+
+  @SuppressWarnings("unchecked")
+  public static <T> Status<T> ExecuteWithDefaultHsmConfig(
+      RetryListener<T> afterFailedTryListener, Callable<T> func) {
+    return new CallExecutorBuilder<T>()
+        .config(defaultHsmRetryConfig)
         .afterFailedTryListener(afterFailedTryListener)
         .build()
         .execute(func);
