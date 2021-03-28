@@ -1,7 +1,9 @@
 package io.swisschain.config.tasks;
 
 public class TasksConfig {
-  public int transferSigningPeriodInSeconds;
-  public int walletGenerationPeriodInSeconds;
+  public PublisherConfig transferSigningPublisher;
+  public ConsumerConfig transferSigningConsumer;
+  public PublisherConfig walletGenerationPublisher;
+  public ConsumerConfig walletGenerationConsumer;
   public int monitoringPeriodInSeconds;
 }

@@ -5,6 +5,8 @@ import io.swisschain.crypto.address.generation.AddressGeneratorFactory;
 import io.swisschain.crypto.asymmetric.AsymmetricEncryptionService;
 import io.swisschain.crypto.transaction.signing.TransactionSignerFactory;
 import io.swisschain.domain.document.GuardianKey;
+import io.swisschain.domain.transfers.TransferSigningRequest;
+import io.swisschain.domain.wallet.WalletGenerationRequest;
 import io.swisschain.isAlive.IsAliveService;
 import io.swisschain.repositories.DbConnectionFactory;
 import io.swisschain.repositories.DbMigration;
@@ -13,14 +15,13 @@ import io.swisschain.repositories.wallets.WalletRepositoryRetryDecorator;
 import io.swisschain.services.*;
 import io.swisschain.sirius.vaultApi.ChannelFactory;
 import io.swisschain.sirius.vaultApi.VaultApiClient;
-import io.swisschain.tasks.MonitoringTask;
-import io.swisschain.tasks.TransferSigningTask;
-import io.swisschain.tasks.WalletGenerationTask;
+import io.swisschain.tasks.*;
 import io.swisschain.common.AppVersion;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.net.InetAddress;
+import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
@@ -78,28 +79,56 @@ public class AppStarter {
 
     var documentValidator = new DocumentValidator(asymmetricEncryptionService, guardianKey);
 
+    var walletService =
+        new WalletService(walletRepository, walletApiService, addressGeneratorFactory);
+    var transferService =
+        new TransferService(
+            transferApiService, documentValidator, transactionSignerFactory, walletRepository);
+
+    // Thread pools
+
+    var apiThreadPool = Executors.newScheduledThreadPool(3);
+    var walletConsumersThreadPool =
+        Executors.newFixedThreadPool(config.tasks.walletGenerationConsumer.threadsCount);
+    var transferSigningThreadPool =
+        Executors.newFixedThreadPool(config.tasks.transferSigningConsumer.threadsCount);
+
     // Tasks
 
-    var service = Executors.newScheduledThreadPool(2);
+    var walletRequestQueue =
+        new ArrayBlockingQueue<WalletGenerationRequest>(
+            config.tasks.walletGenerationPublisher.queueSize);
+    var transferRequestQueue =
+        new ArrayBlockingQueue<TransferSigningRequest>(
+            config.tasks.transferSigningPublisher.queueSize);
 
-    service.scheduleWithFixedDelay(
-        new WalletGenerationTask(walletRepository, walletApiService, addressGeneratorFactory),
+    for (var i = 0; i < config.tasks.walletGenerationConsumer.threadsCount; i++) {
+      walletConsumersThreadPool.execute(
+          new WalletRequestConsumerTask(walletRequestQueue, walletService));
+    }
+
+    for (var i = 0; i < config.tasks.transferSigningConsumer.threadsCount; i++) {
+      transferSigningThreadPool.execute(
+          new TransferRequestConsumerTask(transferRequestQueue, transferService));
+    }
+
+    apiThreadPool.scheduleWithFixedDelay(
+        new WalletRequestPublisherTask(walletApiService, walletRequestQueue),
         0,
-        config.tasks != null && config.tasks.walletGenerationPeriodInSeconds > 0
-            ? config.tasks.walletGenerationPeriodInSeconds
+        config.tasks != null && config.tasks.walletGenerationPublisher.periodInSeconds > 0
+            ? config.tasks.walletGenerationPublisher.periodInSeconds
             : 1,
         TimeUnit.SECONDS);
 
-    service.scheduleWithFixedDelay(
-        new TransferSigningTask(
-            transferApiService, documentValidator, transactionSignerFactory, walletRepository),
+    apiThreadPool.scheduleWithFixedDelay(
+        new TransferRequestPublisherTask(transferApiService, transferRequestQueue),
         0,
-        config.tasks != null && config.tasks.transferSigningPeriodInSeconds > 0
-            ? config.tasks.transferSigningPeriodInSeconds
+        config.tasks != null && config.tasks.transferSigningPublisher.periodInSeconds > 0
+            ? config.tasks.transferSigningPublisher.periodInSeconds
             : 1,
         TimeUnit.SECONDS);
 
-    service.scheduleWithFixedDelay(
+    apiThreadPool.scheduleWithFixedDelay(
         new MonitoringTask(vaultApiClient),
         0,
         config.tasks != null && config.tasks.monitoringPeriodInSeconds > 0
