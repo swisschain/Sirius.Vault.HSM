@@ -15,6 +15,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.sql.SQLException;
+import java.time.Duration;
+import java.time.Instant;
 
 public class WalletService {
   private final WalletRepository walletRepository;
@@ -38,7 +40,18 @@ public class WalletService {
       var addressGenerator =
           addressGeneratorFactory.get(
               BlockchainProtocolCodes.fromString(walletGenerationRequest.getProtocolCode()));
+
+      var generateAddressStart = Instant.now();
       var generatedAddress = addressGenerator.generate(walletGenerationRequest.getNetworkType());
+      var generateAddressEnd = Instant.now();
+
+      logger.info(
+          String.format(
+              "Address generation HSM. Request: %d. Blockchain: %s. Elapsed: %d ms.",
+              walletGenerationRequest.getId(),
+              walletGenerationRequest.getBlockchainId(),
+              Duration.between(generateAddressStart, generateAddressEnd).toMillis()));
+
       wallet =
           Wallet.create(
               walletGenerationRequest.getId(),
@@ -77,13 +90,31 @@ public class WalletService {
       walletApiService.reject(walletGenerationRequest);
     } else {
       try {
+        var walletInsertStart = Instant.now();
         walletRepository.insert(wallet);
+        var walletInsertEnd = Instant.now();
+
+        logger.info(
+            String.format(
+                "Address generation insert DB. Request: %d. Blockchain: %s. Elapsed: %d ms.",
+                walletGenerationRequest.getId(),
+                walletGenerationRequest.getBlockchainId(),
+                Duration.between(walletInsertStart, walletInsertEnd).toMillis()));
       } catch (WalletAlreadyExistsException exception) {
         wallet = walletRepository.getByRequestId(walletGenerationRequest.getId());
       }
       if (wallet != null) {
+        var walletConfirmStart = Instant.now();
         walletGenerationRequest.confirm(wallet.getAddress(), wallet.getPublicKey());
         walletApiService.confirm(walletGenerationRequest);
+        var walletConfirmEnd = Instant.now();
+
+        logger.info(
+            String.format(
+                "Address generation confirm gRPC. Request: %d. Blockchain: %s. Elapsed: %d ms.",
+                walletGenerationRequest.getId(),
+                walletGenerationRequest.getBlockchainId(),
+                Duration.between(walletConfirmStart, walletConfirmEnd).toMillis()));
       }
     }
   }
