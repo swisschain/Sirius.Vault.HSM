@@ -1,4 +1,4 @@
-package io.swisschain.crypto.utils.tezos.sdk;
+package io.swisschain.crypto.utils.tezos;
 
 import org.bouncycastle.crypto.digests.Blake2bDigest;
 

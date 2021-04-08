@@ -1,4 +1,4 @@
-package io.swisschain.crypto.utils.tezos.sdk;
+package io.swisschain.crypto.utils.tezos;
 public class BytesHelper {
 
     public static byte[] concat(byte[] a, byte[] b){

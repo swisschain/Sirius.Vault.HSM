@@ -1,53 +1,7 @@
-package io.swisschain.crypto.utils.tezos.sdk;
-
-/*
- * Copyright 2011 Google Inc.
- * Copyright 2018 Andreas Schildbach
- *
- * From https://github.com/bitcoinj/bitcoinj/blob/master/core/src/main/java/org/bitcoinj/core/Base58.java
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *    http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-import io.swisschain.crypto.transaction.signing.exceptions.InvalidInputsException;
-import org.stellar.sdk.FormatException;
-
-import java.math.BigInteger;
+package io.swisschain.crypto.utils.tezos;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
-
-/**
- * Base58 is a way to encode Bitcoin addresses (or arbitrary data) as alphanumeric strings.
- * <p>
- * Note that this is not the same base58 as used by Flickr, which you may find referenced around the Internet.
- * <p>
- * Satoshi explains: why base-58 instead of standard base-64 encoding?
- * <ul>
- * <li>Don't want 0OIl characters that look the same in some fonts and
- *     could be used to create visually identical looking account numbers.</li>
- * <li>A string with non-alphanumeric characters is not as easily accepted as an account number.</li>
- * <li>E-mail usually won't line-break if there's no punctuation to break at.</li>
- * <li>Doubleclicking selects the whole number as one word if it's all alphanumeric.</li>
- * </ul>
- * <p>
- * However, note that the encoding/decoding runs in O(n&sup2;) time, so it is not useful for large data.
- * <p>
- * The basic idea of the encoding is to treat the data bytes as a large number represented using
- * base-256 digits, convert the number to be represented using base-58 digits, preserve the exact
- * number of leading zeros (which are otherwise lost during the mathematical operations on the
- * numbers), and finally represent the resulting base-58 digits as alphanumeric ASCII characters.
- */
 
 //https://github.com/multiformats/java-multibase/blob/master/src/main/java/io/ipfs/multibase/Base58.java
 public class Base58Helper {
@@ -139,10 +93,6 @@ public class Base58Helper {
         return Arrays.copyOfRange(decoded, outputStart - zeros, decoded.length);
     }
 
-    public static BigInteger decodeToBigInteger(String input) {
-        return new BigInteger(1, decode(input));
-    }
-
     /**
      * Divides a number, represented as an array of bytes each containing a single digit
      * in the specified base, by the given divisor. The given number is modified in-place
@@ -167,30 +117,10 @@ public class Base58Helper {
         return (byte) remainder;
     }
 
-
-
     public static String convert(byte[] bytes, byte[] prefix) throws NoSuchAlgorithmException {
         var data = BytesHelper.concat(prefix, bytes);
 
         return encode(BytesHelper.concat(data, checkSum(data)));
-    }
-
-    public static byte[] parse(String base58, byte[] prefix) throws NoSuchAlgorithmException, InvalidInputsException {
-        var bytes = verifyAndRemoveCheckSum(decode(base58));
-        return BytesHelper.take(bytes, prefix.length, bytes.length - prefix.length);
-    }
-
-    static byte[] verifyAndRemoveCheckSum(byte[] bytes) throws NoSuchAlgorithmException, InvalidInputsException {
-        var data = BytesHelper.take(bytes, 0, bytes.length- 4);
-
-        var checkSum = checkSum(data);
-        if (bytes[bytes.length - 4] != checkSum[0] ||
-                bytes[bytes.length - 3] != checkSum[1] ||
-                bytes[bytes.length - 2] != checkSum[2] ||
-                bytes[bytes.length - 1] != checkSum[3])
-            throw new FormatException("Checksum is invalid");
-
-        return data;
     }
 
     static byte[] checkSum(byte[] data) throws NoSuchAlgorithmException {
