@@ -7,9 +7,10 @@ import io.swisschain.domain.exceptions.OperationFailedException;
 import io.swisschain.primitives.NetworkType;
 
 import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
 
 public interface AddressGenerator {
   AddressGenerationResult generate(NetworkType networkType)
       throws InvalidPublicKeyException, UnknownNetworkTypeException, IOException,
-          OperationFailedException, OperationExhaustedException;
+          OperationFailedException, OperationExhaustedException, NoSuchAlgorithmException;
 }

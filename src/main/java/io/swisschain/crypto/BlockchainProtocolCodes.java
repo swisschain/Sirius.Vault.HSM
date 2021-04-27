@@ -2,6 +2,7 @@ package io.swisschain.crypto;
 
 public enum BlockchainProtocolCodes {
   bitcoin("bitcoin", "BTC"),
+  tezos("tezos", "XTZ"),
   litecoin("litecoin", "LTC"),
   ethereum("ethereum", "ETH"),
   ethereumClassic("ethereum-classic", "ETC"),

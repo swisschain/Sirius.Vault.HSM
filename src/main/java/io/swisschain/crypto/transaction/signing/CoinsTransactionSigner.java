@@ -13,6 +13,7 @@ import io.swisschain.primitives.NetworkType;
 import io.swisschain.domain.transfers.Coin;
 
 import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
 public interface CoinsTransactionSigner {
@@ -25,5 +26,5 @@ public interface CoinsTransactionSigner {
       TransferDetails transferDetails)
       throws UnknownNetworkTypeException, InvalidInputsException, IOException,
           UnsupportedScriptException, TransactionSignException, BlockchainNotSupportedException,
-          TransferDetailsValidationException, OperationFailedException, OperationExhaustedException;
+          TransferDetailsValidationException, OperationFailedException, OperationExhaustedException, NoSuchAlgorithmException;
 }

@@ -49,6 +49,10 @@ public class TransactionSignerFactory {
         new CoinsTransactionSignerRetryDecorator(
             new HsmBitcoinCashCoinTransactionSigner(
                 config.clients.hsmApi, BlockchainProtocolCodes.bitcoinCash)));
+    coinTransactionSignersMap.put(
+            BlockchainProtocolCodes.tezos,
+            new CoinsTransactionSignerRetryDecorator(
+                    new HsmTezosTransactionSigner(config.clients.hsmApi)));
   }
 
   public CoinsTransactionSigner getCoinsTransactionSigner(BlockchainProtocolCodes code)
