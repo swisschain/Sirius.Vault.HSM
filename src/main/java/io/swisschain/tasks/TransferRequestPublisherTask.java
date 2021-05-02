@@ -1,6 +1,6 @@
 package io.swisschain.tasks;
 
-import io.swisschain.domain.transfers.TransferSigningRequest;
+import io.swisschain.domain.transactions.TransactionSigningRequest;
 import io.swisschain.services.TransferApiService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -11,10 +11,10 @@ public class TransferRequestPublisherTask implements Runnable {
   private static final Logger logger = LogManager.getLogger();
 
   private final TransferApiService transferApiService;
-  private final BlockingQueue<TransferSigningRequest> queue;
+  private final BlockingQueue<TransactionSigningRequest> queue;
 
   public TransferRequestPublisherTask(
-      TransferApiService transferApiService, BlockingQueue<TransferSigningRequest> queue) {
+      TransferApiService transferApiService, BlockingQueue<TransactionSigningRequest> queue) {
     this.transferApiService = transferApiService;
     this.queue = queue;
   }
@@ -22,8 +22,8 @@ public class TransferRequestPublisherTask implements Runnable {
   @Override
   public void run() {
     try {
-      for (var transferSigningRequest : transferApiService.get()) {
-        queue.put(transferSigningRequest);
+      for (var signingRequest : transferApiService.get()) {
+        queue.put(signingRequest);
       }
     } catch (InterruptedException exception) {
       logger.warn("Operation interrupted.", exception);

@@ -3,9 +3,9 @@ package io.swisschain.services;
 import com.evanlennick.retry4j.exception.RetriesExhaustedException;
 import com.evanlennick.retry4j.exception.UnexpectedException;
 import io.swisschain.common.durability.RetryPolicies;
-import io.swisschain.domain.transfers.TransferSigningRequest;
 import io.swisschain.domain.exceptions.OperationExhaustedException;
 import io.swisschain.domain.exceptions.OperationFailedException;
+import io.swisschain.domain.transactions.TransactionSigningRequest;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -20,7 +20,7 @@ public class TransferApiServiceRetryDecorator implements TransferApiService {
   }
 
   @Override
-  public List<TransferSigningRequest> get()
+  public List<TransactionSigningRequest> get()
       throws OperationFailedException, OperationExhaustedException {
     try {
       var status =
@@ -46,25 +46,24 @@ public class TransferApiServiceRetryDecorator implements TransferApiService {
   }
 
   @Override
-  public void confirm(TransferSigningRequest transferSigningRequest)
+  public void confirm(TransactionSigningRequest signingRequest)
       throws OperationFailedException, OperationExhaustedException {
     try {
       RetryPolicies.ExecuteWithDefaultGrpcConfig(
           o ->
               logger.warn(
                   String.format(
-                      "Failed to confirm transfer signing request %d.",
-                      transferSigningRequest.getId()),
+                      "Failed to confirm transfer signing request %d.", signingRequest.getId()),
                   o.getLastExceptionThatCausedRetry()),
           () -> {
-            transferApiService.confirm(transferSigningRequest);
+            transferApiService.confirm(signingRequest);
             return null;
           });
     } catch (RetriesExhaustedException exception) {
       logger.error(
           String.format(
               "Failed to confirm transfer signing request %d. Retries exhausted with total tries %d duration %d ms.",
-              transferSigningRequest.getId(),
+              signingRequest.getId(),
               exception.getStatus().getTotalTries(),
               exception.getStatus().getTotalElapsedDuration().toMillis()));
       throw new OperationExhaustedException(exception);
@@ -72,32 +71,31 @@ public class TransferApiServiceRetryDecorator implements TransferApiService {
       logger.error(
           String.format(
               "An unexpected error occurred while confirming transfer signing request %d.",
-              transferSigningRequest.getId()),
+              signingRequest.getId()),
           exception);
       throw new OperationFailedException(exception);
     }
   }
 
   @Override
-  public void reject(TransferSigningRequest transferSigningRequest)
+  public void reject(TransactionSigningRequest signingRequest)
       throws OperationFailedException, OperationExhaustedException {
     try {
       RetryPolicies.ExecuteWithDefaultGrpcConfig(
           o ->
               logger.warn(
                   String.format(
-                      "Failed to reject transfer signing request %d.",
-                      transferSigningRequest.getId()),
+                      "Failed to reject transfer signing request %d.", signingRequest.getId()),
                   o.getLastExceptionThatCausedRetry()),
           () -> {
-            transferApiService.reject(transferSigningRequest);
+            transferApiService.reject(signingRequest);
             return null;
           });
     } catch (RetriesExhaustedException exception) {
       logger.error(
           String.format(
               "Failed to reject transfer signing request %d. Retries exhausted with total tries %d duration %d ms.",
-              transferSigningRequest.getId(),
+              signingRequest.getId(),
               exception.getStatus().getTotalTries(),
               exception.getStatus().getTotalElapsedDuration().toMillis()));
       throw new OperationExhaustedException(exception);
@@ -105,7 +103,7 @@ public class TransferApiServiceRetryDecorator implements TransferApiService {
       logger.error(
           String.format(
               "An unexpected error occurred while rejecting transfer signing request %d.",
-              transferSigningRequest.getId()),
+              signingRequest.getId()),
           exception);
       throw new OperationFailedException(exception);
     }

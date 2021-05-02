@@ -5,7 +5,7 @@ import io.swisschain.crypto.NetworkMapper;
 import io.swisschain.crypto.address.generation.AddressGenerationResult;
 import io.swisschain.crypto.address.generation.AddressGenerator;
 import io.swisschain.crypto.exceptions.UnknownNetworkTypeException;
-import io.swisschain.primitives.NetworkType;
+import io.swisschain.domain.primitives.NetworkType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.bitcoinjcash.core.CashAddress;

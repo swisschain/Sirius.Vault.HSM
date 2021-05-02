@@ -1,6 +1,6 @@
 package io.swisschain.domain.wallet;
 
-import io.swisschain.primitives.NetworkType;
+import io.swisschain.domain.primitives.NetworkType;
 
 public class WalletGenerationRequest {
   private final Long id;

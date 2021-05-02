@@ -7,7 +7,7 @@ import io.swisschain.crypto.altcoins.litecoin.MainNetParams;
 import io.swisschain.crypto.altcoins.litecoin.RegTestParams;
 import io.swisschain.crypto.altcoins.litecoin.TestNet3Params;
 import io.swisschain.crypto.exceptions.UnknownNetworkTypeException;
-import io.swisschain.primitives.NetworkType;
+import io.swisschain.domain.primitives.NetworkType;
 import org.bitcoinj.core.NetworkParameters;
 import org.stellar.sdk.Network;
 

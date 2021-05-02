@@ -4,7 +4,7 @@ import io.swisschain.config.clients.HsmApiConfig;
 import io.swisschain.crypto.address.generation.AddressGenerationResult;
 import io.swisschain.crypto.address.generation.AddressGenerator;
 import io.swisschain.crypto.hsm.HsmConnector;
-import io.swisschain.primitives.NetworkType;
+import io.swisschain.domain.primitives.NetworkType;
 import org.apache.commons.codec.binary.Base32;
 import org.apache.commons.codec.binary.Hex;
 import org.apache.logging.log4j.LogManager;
