@@ -6,7 +6,6 @@ import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.crypto.transactions.TransactionValidationResult;
 import io.swisschain.crypto.transactions.exceptions.InvalidDocumentException;
 import io.swisschain.domain.primitives.NetworkType;
-import io.swisschain.domain.transactions.TransactionRejectionReason;
 import io.swisschain.services.JsonSerializer;
 
 public abstract class TransferTransactionValidator {
@@ -35,7 +34,6 @@ public abstract class TransferTransactionValidator {
 
     if (!transfer.getBlockchain().getProtocolId().equals(blockchainProtocol.getName())) {
       return TransactionValidationResult.CreateInvalid(
-          TransactionRejectionReason.Other,
           String.format(
               "Invalid blockchain: %s, expected %s",
               blockchainProtocol.getName(), transfer.getBlockchain().getProtocolId()));
@@ -43,7 +41,6 @@ public abstract class TransferTransactionValidator {
 
     if (!transfer.getBlockchain().getNetworkType().name().equals(networkType.name())) {
       return TransactionValidationResult.CreateInvalid(
-          TransactionRejectionReason.Other,
           String.format(
               "Invalid networkType: %s, expected %s",
               networkType, transfer.getBlockchain().getNetworkType()));
@@ -51,7 +48,6 @@ public abstract class TransferTransactionValidator {
 
     if (!transfer.getValue().getAsset().getSymbol().equals(blockchainProtocol.getCoin())) {
       return TransactionValidationResult.CreateInvalid(
-          TransactionRejectionReason.Other,
           String.format(
               "Invalid asset: %s, expected %s",
               blockchainProtocol.getCoin(), transfer.getValue().getAsset().getSymbol()));

@@ -1,6 +1,6 @@
 package io.swisschain.crypto.address.generation.generators;
 
-import io.swisschain.config.clients.HsmApiConfig;
+import io.swisschain.config.clients.IbmApiConfig;
 import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.crypto.address.generation.AddressGenerationResult;
 import io.swisschain.crypto.address.generation.AddressGenerator;
@@ -20,8 +20,9 @@ public class HsmEthereumAddressGenerator extends HsmConnector implements Address
 
   private final BlockchainProtocolCodes blockchain;
 
-  public HsmEthereumAddressGenerator(HsmApiConfig hsmConfig, BlockchainProtocolCodes blockchain) {
-    super(hsmConfig);
+  public HsmEthereumAddressGenerator(
+      IbmApiConfig ibmApiConfig, BlockchainProtocolCodes blockchain) {
+    super(ibmApiConfig);
     this.blockchain = blockchain;
   }
 

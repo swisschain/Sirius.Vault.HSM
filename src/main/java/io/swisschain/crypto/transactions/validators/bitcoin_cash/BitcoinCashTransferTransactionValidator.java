@@ -9,7 +9,6 @@ import io.swisschain.crypto.transactions.TransactionValidationResult;
 import io.swisschain.crypto.transactions.exceptions.InvalidDocumentException;
 import io.swisschain.crypto.transactions.validators.TransferTransactionValidator;
 import io.swisschain.domain.primitives.NetworkType;
-import io.swisschain.domain.transactions.TransactionRejectionReason;
 import io.swisschain.services.JsonSerializer;
 import org.bitcoinjcash.core.Coin;
 import org.bitcoinjcash.core.Transaction;
@@ -52,8 +51,7 @@ public class BitcoinCashTransferTransactionValidator extends TransferTransaction
     }
 
     if (!outputsSumMap.containsKey(transfer.getDestination().getAddress())) {
-      return TransactionValidationResult.CreateInvalid(
-          TransactionRejectionReason.Other, "Invalid destination address");
+      return TransactionValidationResult.CreateInvalid("Invalid destination address");
     }
 
     final var transactionAmount =
@@ -67,7 +65,6 @@ public class BitcoinCashTransferTransactionValidator extends TransferTransaction
 
     if (transactionAmount > transferDetailsAmount) {
       return TransactionValidationResult.CreateInvalid(
-          TransactionRejectionReason.Other,
           String.format(
               "Invalid transaction amount: %s, expected %s",
               BigDecimal.valueOf(transactionAmount)
@@ -83,7 +80,6 @@ public class BitcoinCashTransferTransactionValidator extends TransferTransaction
 
     if (payedFee > transferDetailsFeeLimit) {
       return TransactionValidationResult.CreateInvalid(
-          TransactionRejectionReason.Other,
           String.format(
               "Transaction fee exceeded limit: %s, fee limit %s",
               BigDecimal.valueOf(payedFee)

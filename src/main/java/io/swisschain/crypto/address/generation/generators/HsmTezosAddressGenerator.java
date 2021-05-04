@@ -1,6 +1,6 @@
 package io.swisschain.crypto.address.generation.generators;
 
-import io.swisschain.config.clients.HsmApiConfig;
+import io.swisschain.config.clients.IbmApiConfig;
 import io.swisschain.crypto.address.generation.AddressGenerationResult;
 import io.swisschain.crypto.address.generation.AddressGenerator;
 import io.swisschain.crypto.exceptions.InvalidPublicKeyException;
@@ -22,11 +22,11 @@ import java.security.NoSuchAlgorithmException;
 public class HsmTezosAddressGenerator extends HsmConnector implements AddressGenerator {
   private static final Logger logger = LogManager.getLogger();
 
-  private byte[] publicKeyPrefix = Prefix.edpk;
-  private byte[] addressPrefix = Prefix.tz1;
+  private final byte[] publicKeyPrefix = Prefix.edpk;
+  private final byte[] addressPrefix = Prefix.tz1;
 
-  public HsmTezosAddressGenerator(HsmApiConfig hsmConfig) {
-    super(hsmConfig);
+  public HsmTezosAddressGenerator(IbmApiConfig ibmApiConfig) {
+    super(ibmApiConfig);
   }
 
   @Override

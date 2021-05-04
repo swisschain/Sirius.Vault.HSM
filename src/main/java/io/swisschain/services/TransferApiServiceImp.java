@@ -136,9 +136,9 @@ public class TransferApiServiceImp implements TransferApiService {
       case UnknownBlockchain:
         return TransferSigningRequestsOuterClass.RejectTransferSigningRequestRequest.RejectionReason
             .UNKNOWN_BLOCKCHAIN;
-      case InvalidSignature:
+      case UnwantedTransaction:
         return TransferSigningRequestsOuterClass.RejectTransferSigningRequestRequest.RejectionReason
-            .INVALID_SIGNATURE;
+            .UNWANTED_TRANSACTION;
       default:
         throw new IllegalArgumentException(
             String.format("Unknown rejection reason. %s", transactionRejectionReason.name()));

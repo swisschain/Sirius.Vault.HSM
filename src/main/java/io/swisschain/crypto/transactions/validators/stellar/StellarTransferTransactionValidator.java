@@ -8,7 +8,6 @@ import io.swisschain.crypto.transactions.TransactionValidationResult;
 import io.swisschain.crypto.transactions.exceptions.InvalidDocumentException;
 import io.swisschain.crypto.transactions.validators.TransferTransactionValidator;
 import io.swisschain.domain.primitives.NetworkType;
-import io.swisschain.domain.transactions.TransactionRejectionReason;
 import io.swisschain.services.JsonSerializer;
 import org.stellar.sdk.Operation;
 import org.stellar.sdk.PaymentOperation;
@@ -45,7 +44,6 @@ public class StellarTransferTransactionValidator extends TransferTransactionVali
 
     if (!transfer.getSource().getAddress().equals(transaction.getSourceAccount())) {
       return TransactionValidationResult.CreateInvalid(
-          TransactionRejectionReason.Other,
           String.format(
               "Invalid source address: %s, expected %s",
               transaction.getSourceAccount(), transfer.getSource().getAddress()));
@@ -56,7 +54,6 @@ public class StellarTransferTransactionValidator extends TransferTransactionVali
         final var paymentOperation = (PaymentOperation) operation;
         if (!transfer.getSource().getAddress().equals(paymentOperation.getSourceAccount())) {
           return TransactionValidationResult.CreateInvalid(
-              TransactionRejectionReason.Other,
               String.format(
                   "Invalid source address: %s, expected %s",
                   operation.getSourceAccount(), transfer.getSource().getAddress()));
@@ -64,7 +61,6 @@ public class StellarTransferTransactionValidator extends TransferTransactionVali
 
         if (!transfer.getDestination().getAddress().equals(paymentOperation.getDestination())) {
           return TransactionValidationResult.CreateInvalid(
-              TransactionRejectionReason.Other,
               String.format(
                   "Invalid destination address: %s, expected %s",
                   ((PaymentOperation) operation).getDestination(),
@@ -74,7 +70,6 @@ public class StellarTransferTransactionValidator extends TransferTransactionVali
         final var amount = new BigDecimal(paymentOperation.getAmount());
         if (transfer.getValue().getAmount().compareTo(amount) != 0) {
           return TransactionValidationResult.CreateInvalid(
-              TransactionRejectionReason.Other,
               String.format(
                   "Invalid transaction amount: %s, expected %s",
                   amount.toString(), transfer.getValue().getAmount().toString()));

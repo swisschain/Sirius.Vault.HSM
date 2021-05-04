@@ -13192,8 +13192,8 @@ public final class TransferSigningRequestsOuterClass {
       OTHER(0),
       /** <code>UNKNOWN_BLOCKCHAIN = 1;</code> */
       UNKNOWN_BLOCKCHAIN(1),
-      /** <code>INVALID_SIGNATURE = 2;</code> */
-      INVALID_SIGNATURE(2),
+      /** <code>UNWANTED_TRANSACTION = 2;</code> */
+      UNWANTED_TRANSACTION(2),
       UNRECOGNIZED(-1),
       ;
 
@@ -13201,8 +13201,8 @@ public final class TransferSigningRequestsOuterClass {
       public static final int OTHER_VALUE = 0;
       /** <code>UNKNOWN_BLOCKCHAIN = 1;</code> */
       public static final int UNKNOWN_BLOCKCHAIN_VALUE = 1;
-      /** <code>INVALID_SIGNATURE = 2;</code> */
-      public static final int INVALID_SIGNATURE_VALUE = 2;
+      /** <code>UNWANTED_TRANSACTION = 2;</code> */
+      public static final int UNWANTED_TRANSACTION_VALUE = 2;
 
       public final int getNumber() {
         if (this == UNRECOGNIZED) {
@@ -13233,7 +13233,7 @@ public final class TransferSigningRequestsOuterClass {
           case 1:
             return UNKNOWN_BLOCKCHAIN;
           case 2:
-            return INVALID_SIGNATURE;
+            return UNWANTED_TRANSACTION;
           default:
             return null;
         }
@@ -18401,49 +18401,49 @@ public final class TransferSigningRequestsOuterClass {
           + "SigningRequestErrorResponseBody.ErrorCod"
           + "e\022\025\n\rerror_message\030\002 \001(\t\"C\n\tErrorCode\022\013\n"
           + "\007UNKNOWN\020\000\022\026\n\022INVALID_PARAMETERS\020\001\022\021\n\rIN"
-          + "VALID_STATE\020\002\"\341\002\n#RejectTransferSigningR"
+          + "VALID_STATE\020\002\"\344\002\n#RejectTransferSigningR"
           + "equestRequest\022\022\n\nrequest_id\030\001 \001(\t\022\032\n\022sig"
           + "ning_request_id\030\002 \001(\003\022\201\001\n\020rejection_reas"
           + "on\030\004 \001(\0162g.swisschain.sirius.vaultApi.tr"
           + "ansferSigningRequests.RejectTransferSign"
           + "ingRequestRequest.RejectionReason\022 \n\030rej"
           + "ection_reason_message\030\005 \001(\t\022\027\n\017host_proc"
-          + "ess_id\030\006 \001(\t\"K\n\017RejectionReason\022\t\n\005OTHER"
-          + "\020\000\022\026\n\022UNKNOWN_BLOCKCHAIN\020\001\022\025\n\021INVALID_SI"
-          + "GNATURE\020\002\"\224\002\n$RejectTransferSigningReque"
-          + "stResponse\022p\n\010response\030\001 \001(\0132\\.swisschai"
-          + "n.sirius.vaultApi.transferSigningRequest"
-          + "s.RejectTransferSigningRequestResponseBo"
-          + "dyH\000\022r\n\005error\030\002 \001(\0132a.swisschain.sirius."
-          + "vaultApi.transferSigningRequests.RejectT"
-          + "ransferSigningRequestErrorResponseBodyH\000"
-          + "B\006\n\004body\"*\n(RejectTransferSigningRequest"
-          + "ResponseBody\"\214\002\n-RejectTransferSigningRe"
-          + "questErrorResponseBody\022\177\n\nerror_code\030\001 \001"
-          + "(\0162k.swisschain.sirius.vaultApi.transfer"
-          + "SigningRequests.RejectTransferSigningReq"
-          + "uestErrorResponseBody.ErrorCode\022\025\n\rerror"
-          + "_message\030\002 \001(\t\"C\n\tErrorCode\022\013\n\007UNKNOWN\020\000"
-          + "\022\026\n\022INVALID_PARAMETERS\020\001\022\021\n\rINVALID_STAT"
-          + "E\020\0022\317\004\n\027TransferSigningRequests\022\264\001\n\003Get\022"
-          + "U.swisschain.sirius.vaultApi.transferSig"
-          + "ningRequests.GetTransferSigningRequestsR"
-          + "equest\032V.swisschain.sirius.vaultApi.tran"
-          + "sferSigningRequests.GetTransferSigningRe"
-          + "questsResponse\022\276\001\n\007Confirm\022X.swisschain."
-          + "sirius.vaultApi.transferSigningRequests."
-          + "ConfirmTransferSigningRequestRequest\032Y.s"
-          + "wisschain.sirius.vaultApi.transferSignin"
-          + "gRequests.ConfirmTransferSigningRequestR"
-          + "esponse\022\273\001\n\006Reject\022W.swisschain.sirius.v"
-          + "aultApi.transferSigningRequests.RejectTr"
-          + "ansferSigningRequestRequest\032X.swisschain"
-          + ".sirius.vaultApi.transferSigningRequests"
-          + ".RejectTransferSigningRequestResponseB\204\001"
-          + "\nAio.swisschain.sirius.vaultApi.generate"
-          + "d.transfer_signing_requests\252\002>Swisschain"
-          + ".Sirius.VaultApi.ApiContract.TransferSig"
-          + "ningRequestsb\006proto3"
+          + "ess_id\030\006 \001(\t\"N\n\017RejectionReason\022\t\n\005OTHER"
+          + "\020\000\022\026\n\022UNKNOWN_BLOCKCHAIN\020\001\022\030\n\024UNWANTED_T"
+          + "RANSACTION\020\002\"\224\002\n$RejectTransferSigningRe"
+          + "questResponse\022p\n\010response\030\001 \001(\0132\\.swissc"
+          + "hain.sirius.vaultApi.transferSigningRequ"
+          + "ests.RejectTransferSigningRequestRespons"
+          + "eBodyH\000\022r\n\005error\030\002 \001(\0132a.swisschain.siri"
+          + "us.vaultApi.transferSigningRequests.Reje"
+          + "ctTransferSigningRequestErrorResponseBod"
+          + "yH\000B\006\n\004body\"*\n(RejectTransferSigningRequ"
+          + "estResponseBody\"\214\002\n-RejectTransferSignin"
+          + "gRequestErrorResponseBody\022\177\n\nerror_code\030"
+          + "\001 \001(\0162k.swisschain.sirius.vaultApi.trans"
+          + "ferSigningRequests.RejectTransferSigning"
+          + "RequestErrorResponseBody.ErrorCode\022\025\n\rer"
+          + "ror_message\030\002 \001(\t\"C\n\tErrorCode\022\013\n\007UNKNOW"
+          + "N\020\000\022\026\n\022INVALID_PARAMETERS\020\001\022\021\n\rINVALID_S"
+          + "TATE\020\0022\317\004\n\027TransferSigningRequests\022\264\001\n\003G"
+          + "et\022U.swisschain.sirius.vaultApi.transfer"
+          + "SigningRequests.GetTransferSigningReques"
+          + "tsRequest\032V.swisschain.sirius.vaultApi.t"
+          + "ransferSigningRequests.GetTransferSignin"
+          + "gRequestsResponse\022\276\001\n\007Confirm\022X.swisscha"
+          + "in.sirius.vaultApi.transferSigningReques"
+          + "ts.ConfirmTransferSigningRequestRequest\032"
+          + "Y.swisschain.sirius.vaultApi.transferSig"
+          + "ningRequests.ConfirmTransferSigningReque"
+          + "stResponse\022\273\001\n\006Reject\022W.swisschain.siriu"
+          + "s.vaultApi.transferSigningRequests.Rejec"
+          + "tTransferSigningRequestRequest\032X.swissch"
+          + "ain.sirius.vaultApi.transferSigningReque"
+          + "sts.RejectTransferSigningRequestResponse"
+          + "B\204\001\nAio.swisschain.sirius.vaultApi.gener"
+          + "ated.transfer_signing_requests\252\002>Swissch"
+          + "ain.Sirius.VaultApi.ApiContract.Transfer"
+          + "SigningRequestsb\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

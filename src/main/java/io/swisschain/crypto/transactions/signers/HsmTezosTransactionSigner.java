@@ -1,6 +1,6 @@
 package io.swisschain.crypto.transactions.signers;
 
-import io.swisschain.config.clients.HsmApiConfig;
+import io.swisschain.config.clients.IbmApiConfig;
 import io.swisschain.crypto.hsm.HsmConnector;
 import io.swisschain.crypto.transactions.CoinsTransactionSigner;
 import io.swisschain.crypto.transactions.TransactionSigningResult;
@@ -17,8 +17,8 @@ import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
 public class HsmTezosTransactionSigner extends HsmConnector implements CoinsTransactionSigner {
-  public HsmTezosTransactionSigner(HsmApiConfig hsmConfig) {
-    super(hsmConfig);
+  public HsmTezosTransactionSigner(IbmApiConfig ibmApiConfig) {
+    super(ibmApiConfig);
   }
 
   @Override

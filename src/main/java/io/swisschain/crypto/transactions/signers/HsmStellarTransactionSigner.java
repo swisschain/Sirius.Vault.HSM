@@ -1,6 +1,6 @@
 package io.swisschain.crypto.transactions.signers;
 
-import io.swisschain.config.clients.HsmApiConfig;
+import io.swisschain.config.clients.IbmApiConfig;
 import io.swisschain.crypto.NetworkMapper;
 import io.swisschain.crypto.exceptions.UnknownNetworkTypeException;
 import io.swisschain.crypto.hsm.HsmConnector;
@@ -27,8 +27,8 @@ import java.util.List;
 public class HsmStellarTransactionSigner extends HsmConnector implements CoinsTransactionSigner {
   private static final Logger logger = LogManager.getLogger();
 
-  public HsmStellarTransactionSigner(HsmApiConfig hsmConfig) {
-    super(hsmConfig);
+  public HsmStellarTransactionSigner(IbmApiConfig ibmApiConfig) {
+    super(ibmApiConfig);
   }
 
   @Override

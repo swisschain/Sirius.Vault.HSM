@@ -6,7 +6,6 @@ import io.swisschain.crypto.transactions.TransactionValidationResult;
 import io.swisschain.crypto.transactions.exceptions.InvalidDocumentException;
 import io.swisschain.crypto.transactions.validators.TransferTransactionValidator;
 import io.swisschain.domain.primitives.NetworkType;
-import io.swisschain.domain.transactions.TransactionRejectionReason;
 import io.swisschain.services.JsonSerializer;
 import org.web3j.crypto.TransactionDecoder;
 import org.web3j.utils.Convert;
@@ -34,7 +33,6 @@ public abstract class BaseEthereumTransferTransactionValidator extends TransferT
 
     if (!transfer.getDestination().getAddress().equalsIgnoreCase(transaction.getTo())) {
       return TransactionValidationResult.CreateInvalid(
-          TransactionRejectionReason.Other,
           String.format(
               "Invalid destination address: %s, expected %s",
               transaction.getTo(), transfer.getDestination().getAddress()));
@@ -43,7 +41,6 @@ public abstract class BaseEthereumTransferTransactionValidator extends TransferT
     final var amount = Convert.fromWei(transaction.getValue().toString(), Convert.Unit.ETHER);
     if (transfer.getValue().getAmount().compareTo(amount) < 0) {
       return TransactionValidationResult.CreateInvalid(
-          TransactionRejectionReason.Other,
           String.format(
               "Invalid transaction amount: %s, expected %s",
               amount.toString(), transfer.getValue().getAmount().toString()));
@@ -52,7 +49,6 @@ public abstract class BaseEthereumTransferTransactionValidator extends TransferT
     final var fee = Convert.fromWei(transaction.getGasLimit().toString(), Convert.Unit.GWEI);
     if (transfer.getFee().getAmount().compareTo(fee) < 0) {
       return TransactionValidationResult.CreateInvalid(
-          TransactionRejectionReason.Other,
           String.format(
               "Invalid transaction fee: %s, expected %s",
               fee.toString(), transfer.getFee().getAmount().toString()));

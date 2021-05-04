@@ -9,7 +9,6 @@ import io.swisschain.crypto.transactions.validators.SmartContractDeploymentTrans
 import io.swisschain.crypto.utils.tezos.forging.LocalForge;
 import io.swisschain.crypto.utils.tezos.forging.operations.RevealContent;
 import io.swisschain.domain.primitives.NetworkType;
-import io.swisschain.domain.transactions.TransactionRejectionReason;
 import io.swisschain.services.JsonSerializer;
 
 import java.io.IOException;
@@ -36,7 +35,6 @@ public class TezosSmartContractDeploymentTransactionValidator
 
     if (unforged.size() > 2) {
       return TransactionValidationResult.CreateInvalid(
-          TransactionRejectionReason.Other,
           "Unexpected operation count. "
               + "Expected 2 (reveal + transaction) at max, "
               + "but got "
@@ -53,7 +51,6 @@ public class TezosSmartContractDeploymentTransactionValidator
 
       if (!reveal.PublicKey.equals(publicKey)) {
         return TransactionValidationResult.CreateInvalid(
-            TransactionRejectionReason.Other,
             "Unexpected public key revelation."
                 + " Expected "
                 + publicKey

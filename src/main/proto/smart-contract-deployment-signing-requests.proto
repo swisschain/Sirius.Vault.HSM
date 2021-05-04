@@ -93,7 +93,7 @@ message RejectSmartContractDeploymentSigningRequestRequest {
   enum RejectionReason {
     OTHER = 0;
     UNKNOWN_BLOCKCHAIN = 1;
-    INVALID_SIGNATURE = 2;
+    UNWANTED_TRANSACTION = 2;
   }
 
   string request_id = 1;

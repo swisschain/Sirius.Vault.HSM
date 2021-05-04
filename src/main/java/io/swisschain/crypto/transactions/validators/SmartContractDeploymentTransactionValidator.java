@@ -6,7 +6,6 @@ import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.crypto.transactions.TransactionValidationResult;
 import io.swisschain.crypto.transactions.exceptions.InvalidDocumentException;
 import io.swisschain.domain.primitives.NetworkType;
-import io.swisschain.domain.transactions.TransactionRejectionReason;
 import io.swisschain.services.JsonSerializer;
 
 public class SmartContractDeploymentTransactionValidator {
@@ -41,7 +40,6 @@ public class SmartContractDeploymentTransactionValidator {
         .getProtocolId()
         .equals(blockchainProtocol.getName())) {
       return TransactionValidationResult.CreateInvalid(
-          TransactionRejectionReason.Other,
           String.format(
               "Invalid blockchain: %s, expected %s",
               blockchainProtocol.getName(),
@@ -54,7 +52,6 @@ public class SmartContractDeploymentTransactionValidator {
         .name()
         .equals(networkType.name())) {
       return TransactionValidationResult.CreateInvalid(
-          TransactionRejectionReason.Other,
           String.format(
               "Invalid networkType: %s, expected %s",
               networkType, smartContractDeployment.getBlockchain().getNetworkType()));

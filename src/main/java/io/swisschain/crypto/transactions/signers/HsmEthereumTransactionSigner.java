@@ -1,6 +1,6 @@
 package io.swisschain.crypto.transactions.signers;
 
-import io.swisschain.config.clients.HsmApiConfig;
+import io.swisschain.config.clients.IbmApiConfig;
 import io.swisschain.crypto.hsm.HsmConnector;
 import io.swisschain.crypto.transactions.CoinsTransactionSigner;
 import io.swisschain.crypto.transactions.TransactionSigningResult;
@@ -25,8 +25,8 @@ import static org.apache.commons.codec.binary.Hex.encodeHexString;
 public class HsmEthereumTransactionSigner extends HsmConnector implements CoinsTransactionSigner {
   private static final Logger logger = LogManager.getLogger();
 
-  public HsmEthereumTransactionSigner(HsmApiConfig hsmConfig) {
-    super(hsmConfig);
+  public HsmEthereumTransactionSigner(IbmApiConfig ibmApiConfig) {
+    super(ibmApiConfig);
   }
 
   @Override

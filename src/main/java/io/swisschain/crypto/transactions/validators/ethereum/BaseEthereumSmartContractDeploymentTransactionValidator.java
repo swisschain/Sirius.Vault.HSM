@@ -6,7 +6,6 @@ import io.swisschain.crypto.transactions.TransactionValidationResult;
 import io.swisschain.crypto.transactions.exceptions.InvalidDocumentException;
 import io.swisschain.crypto.transactions.validators.SmartContractDeploymentTransactionValidator;
 import io.swisschain.domain.primitives.NetworkType;
-import io.swisschain.domain.transactions.TransactionRejectionReason;
 import io.swisschain.services.JsonSerializer;
 import org.bouncycastle.util.encoders.Hex;
 import org.web3j.crypto.TransactionDecoder;
@@ -48,7 +47,7 @@ public abstract class BaseEthereumSmartContractDeploymentTransactionValidator
 
     if (!lowerCaseData.contains(paddedAddress)) {
       return TransactionValidationResult.CreateInvalid(
-          TransactionRejectionReason.Other, "No destination address detected in contract params");
+          "No destination address detected in contract params");
     }
 
     return TransactionValidationResult.CreateValid();

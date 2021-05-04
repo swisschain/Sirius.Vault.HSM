@@ -1,30 +1,34 @@
-import io.swisschain.config.clients.HsmApiConfig;
-import io.swisschain.contracts.transfers.Transfer;
+import io.swisschain.config.clients.HsmConfig;
+import io.swisschain.config.clients.IamConfig;
+import io.swisschain.config.clients.IbmApiConfig;
 import io.swisschain.crypto.address.generation.generators.HsmTezosAddressGenerator;
 import io.swisschain.crypto.exceptions.InvalidPublicKeyException;
-import io.swisschain.crypto.transactions.exceptions.InvalidInputsException;
-import io.swisschain.crypto.transactions.exceptions.TransferDetailsValidationException;
-import io.swisschain.crypto.transactions.signers.HsmTezosTransactionSigner;
-import io.swisschain.crypto.utils.tezos.Base58Helper;
 import io.swisschain.domain.primitives.NetworkType;
-import org.apache.commons.codec.binary.Hex;
 import org.apache.logging.log4j.LogManager;
-import org.junit.Assert;
 
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.security.NoSuchAlgorithmException;
 
 public class TezosSignatureTests {
 
-  private HsmApiConfig buildConfig() {
-    return new HsmApiConfig() {
+  private IbmApiConfig buildConfig() {
+    return new IbmApiConfig() {
       {
-        iamEndpoint = System.getenv("iamEndpoint");
-        iamToken = System.getenv("iamToken");
-        bluemixInstance = System.getenv("bluemixInstance");
-        hsmHost = System.getenv("hsmHost");
-        hsmPort = Integer.parseInt(System.getenv("hsmPort"));
+        hsm =
+            new HsmConfig() {
+              {
+                bluemixInstance = System.getenv("bluemixInstance");
+                host = System.getenv("hsmHost");
+                port = Integer.parseInt(System.getenv("hsmPort"));
+              }
+            };
+        iam =
+            new IamConfig() {
+              {
+                host = System.getenv("iamEndpoint");
+                apiKey = System.getenv("iamToken");
+              }
+            };
       }
     };
   }

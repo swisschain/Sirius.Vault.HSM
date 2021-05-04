@@ -4,7 +4,7 @@ import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.services.JsonSerializer;
 
 public class EthereumClassicSmartContractDeploymentTransactionValidator
-    extends BaseEthereumTransferTransactionValidator {
+    extends BaseEthereumSmartContractDeploymentTransactionValidator {
   public EthereumClassicSmartContractDeploymentTransactionValidator(JsonSerializer jsonSerializer) {
     super(BlockchainProtocolCodes.ethereumClassic, jsonSerializer);
   }

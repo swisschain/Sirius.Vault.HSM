@@ -10,7 +10,6 @@ import io.swisschain.crypto.utils.tezos.forging.LocalForge;
 import io.swisschain.crypto.utils.tezos.forging.operations.RevealContent;
 import io.swisschain.crypto.utils.tezos.forging.operations.TransactionContent;
 import io.swisschain.domain.primitives.NetworkType;
-import io.swisschain.domain.transactions.TransactionRejectionReason;
 import io.swisschain.services.JsonSerializer;
 
 import java.io.IOException;
@@ -38,7 +37,6 @@ public class TezosTransferTransactionValidator extends TransferTransactionValida
 
     if (unforged.size() > 2) {
       return TransactionValidationResult.CreateInvalid(
-          TransactionRejectionReason.Other,
           "Unexpected operation count. "
               + "Expected 2 (reveal + transaction) at max, "
               + "but got "
@@ -58,7 +56,6 @@ public class TezosTransferTransactionValidator extends TransferTransactionValida
 
       if (!reveal.PublicKey.equals(publicKey)) {
         return TransactionValidationResult.CreateInvalid(
-            TransactionRejectionReason.Other,
             "Unexpected public key revelation."
                 + " Expected "
                 + publicKey
@@ -78,7 +75,6 @@ public class TezosTransferTransactionValidator extends TransferTransactionValida
 
     if (totalFee > ToMicrotez(transfer.getFee().getAmount())) {
       return TransactionValidationResult.CreateInvalid(
-          TransactionRejectionReason.Other,
           "Unexpected fee value."
               + " Expected "
               + ToMicrotez(transfer.getFee().getAmount())
@@ -90,7 +86,6 @@ public class TezosTransferTransactionValidator extends TransferTransactionValida
 
     if (!transaction.Source.equals(transfer.getSource().getAddress())) {
       return TransactionValidationResult.CreateInvalid(
-          TransactionRejectionReason.Other,
           "Unexpected source address. "
               + "Expected "
               + transfer.getSource().getAddress()
@@ -101,7 +96,6 @@ public class TezosTransferTransactionValidator extends TransferTransactionValida
 
     if (!transaction.Destination.equals(transfer.getDestination().getAddress())) {
       return TransactionValidationResult.CreateInvalid(
-          TransactionRejectionReason.Other,
           "Unexpected destination address. "
               + "Expected "
               + transfer.getDestination().getAddress()
@@ -112,7 +106,6 @@ public class TezosTransferTransactionValidator extends TransferTransactionValida
 
     if (transaction.Amount != ToMicrotez(transfer.getValue().getAmount())) {
       return TransactionValidationResult.CreateInvalid(
-          TransactionRejectionReason.Other,
           "Unexpected amount. "
               + "Expected "
               + ToMicrotez(transfer.getValue().getAmount())

@@ -11,7 +11,7 @@ import io.grpc.netty.shaded.io.grpc.netty.GrpcSslContexts;
 import io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder;
 import io.grpc.netty.shaded.io.netty.handler.ssl.util.InsecureTrustManagerFactory;
 import io.grpc.stub.MetadataUtils;
-import io.swisschain.config.clients.HsmApiConfig;
+import io.swisschain.config.clients.IbmApiConfig;
 import io.swisschain.crypto.hsm.ep11.Attribute;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
@@ -36,10 +36,10 @@ import java.util.UUID;
 public class HsmConnector {
   private static final Logger logger = LogManager.getLogger();
 
-  private final HsmApiConfig hsmConfig;
+  private final IbmApiConfig ibmApiConfig;
 
-  public HsmConnector(HsmApiConfig hsmConfig) {
-    this.hsmConfig = hsmConfig;
+  public HsmConnector(IbmApiConfig ibmApiConfig) {
+    this.ibmApiConfig = ibmApiConfig;
   }
 
   protected HsmKeyPair generateECDSAKeyPair() throws IOException {
@@ -143,13 +143,13 @@ public class HsmConnector {
     final var client = new OkHttpClient();
     final var request =
         new Request.Builder()
-            .url(hsmConfig.iamEndpoint)
+            .url(ibmApiConfig.iam.host)
             .addHeader("Content-Type", "application/x-www-form-urlencoded")
             .method(
                 "POST",
                 RequestBody.create(
                     "grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey="
-                        + hsmConfig.iamToken,
+                        + ibmApiConfig.iam.apiKey,
                     MediaType.parse("application/x-www-form-urlencoded")))
             .build();
 
@@ -171,10 +171,10 @@ public class HsmConnector {
         "Bearer " + token.access_token);
     metadata.put(
         Metadata.Key.of("Bluemix-Instance", Metadata.ASCII_STRING_MARSHALLER),
-        hsmConfig.bluemixInstance);
+        ibmApiConfig.hsm.bluemixInstance);
 
     final var channel =
-        NettyChannelBuilder.forAddress(hsmConfig.hsmHost, hsmConfig.hsmPort)
+        NettyChannelBuilder.forAddress(ibmApiConfig.hsm.host, ibmApiConfig.hsm.port)
             .sslContext(
                 GrpcSslContexts.forClient()
                     .trustManager(InsecureTrustManagerFactory.INSTANCE)

@@ -1,6 +1,6 @@
 package io.swisschain.crypto.transactions.signers;
 
-import io.swisschain.config.clients.HsmApiConfig;
+import io.swisschain.config.clients.IbmApiConfig;
 import io.swisschain.crypto.NetworkMapper;
 import io.swisschain.crypto.exceptions.UnknownNetworkTypeException;
 import io.swisschain.crypto.hsm.HsmConnector;
@@ -28,8 +28,8 @@ public class HsmBitcoinCashCoinTransactionSigner extends HsmConnector
     implements CoinsTransactionSigner {
   private static final Logger logger = LogManager.getLogger();
 
-  public HsmBitcoinCashCoinTransactionSigner(HsmApiConfig hsmConfig) {
-    super(hsmConfig);
+  public HsmBitcoinCashCoinTransactionSigner(IbmApiConfig ibmApiConfig) {
+    super(ibmApiConfig);
   }
 
   @Override

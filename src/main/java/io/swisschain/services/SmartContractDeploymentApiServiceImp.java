@@ -154,9 +154,10 @@ public class SmartContractDeploymentApiServiceImp implements SmartContractDeploy
       case UnknownBlockchain:
         return SmartContractDeploymentSigningRequestsOuterClass
             .RejectSmartContractDeploymentSigningRequestRequest.RejectionReason.UNKNOWN_BLOCKCHAIN;
-      case InvalidSignature:
+      case UnwantedTransaction:
         return SmartContractDeploymentSigningRequestsOuterClass
-            .RejectSmartContractDeploymentSigningRequestRequest.RejectionReason.INVALID_SIGNATURE;
+            .RejectSmartContractDeploymentSigningRequestRequest.RejectionReason
+            .UNWANTED_TRANSACTION;
       default:
         throw new IllegalArgumentException(
             String.format("Unknown rejection reason. %s", transactionRejectionReason.name()));

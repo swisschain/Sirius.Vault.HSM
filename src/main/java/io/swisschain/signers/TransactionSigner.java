@@ -44,7 +44,7 @@ public abstract class TransactionSigner {
 
     if (!signatureValidationResult.isValid()) {
       transactionSigningRequest.reject(
-          TransactionRejectionReason.InvalidSignature, signatureValidationResult.getReason());
+          TransactionRejectionReason.UnwantedTransaction, signatureValidationResult.getReason());
       return;
     }
 
@@ -77,7 +77,7 @@ public abstract class TransactionSigner {
 
         if (!validationResult.isValid()) {
           transactionSigningRequest.reject(
-              validationResult.getRejectionReason(), validationResult.getError());
+              TransactionRejectionReason.UnwantedTransaction, validationResult.getError());
           logger.error(
               String.format(
                   "It's not possible to sign transaction request %d. %s.",

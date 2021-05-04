@@ -22,31 +22,31 @@ public class TransactionSignerFactory {
     coinTransactionSignersMap.put(
         BlockchainProtocolCodes.bitcoin,
         new CoinsTransactionSignerRetryDecorator(
-            new HsmBitcoinCoinTransactionSigner(config.clients.hsmApi)));
+            new HsmBitcoinCoinTransactionSigner(config.clients.ibmApi)));
     coinTransactionSignersMap.put(
         BlockchainProtocolCodes.ethereum,
         new CoinsTransactionSignerRetryDecorator(
-            new HsmEthereumTransactionSigner(config.clients.hsmApi)));
+            new HsmEthereumTransactionSigner(config.clients.ibmApi)));
     coinTransactionSignersMap.put(
         BlockchainProtocolCodes.ethereumClassic,
         new CoinsTransactionSignerRetryDecorator(
-            new HsmEthereumTransactionSigner(config.clients.hsmApi)));
+            new HsmEthereumTransactionSigner(config.clients.ibmApi)));
     coinTransactionSignersMap.put(
         BlockchainProtocolCodes.litecoin,
         new CoinsTransactionSignerRetryDecorator(
-            new HsmLitecoinCoinTransactionSigner(config.clients.hsmApi)));
+            new HsmLitecoinCoinTransactionSigner(config.clients.ibmApi)));
     coinTransactionSignersMap.put(
         BlockchainProtocolCodes.stellar,
         new CoinsTransactionSignerRetryDecorator(
-            new HsmStellarTransactionSigner(config.clients.hsmApi)));
+            new HsmStellarTransactionSigner(config.clients.ibmApi)));
     coinTransactionSignersMap.put(
         BlockchainProtocolCodes.bitcoinCash,
         new CoinsTransactionSignerRetryDecorator(
-            new HsmBitcoinCashCoinTransactionSigner(config.clients.hsmApi)));
+            new HsmBitcoinCashCoinTransactionSigner(config.clients.ibmApi)));
     coinTransactionSignersMap.put(
         BlockchainProtocolCodes.tezos,
         new CoinsTransactionSignerRetryDecorator(
-            new HsmTezosTransactionSigner(config.clients.hsmApi)));
+            new HsmTezosTransactionSigner(config.clients.ibmApi)));
   }
 
   public CoinsTransactionSigner get(BlockchainProtocolCodes code)

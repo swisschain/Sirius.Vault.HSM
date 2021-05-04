@@ -12875,8 +12875,8 @@ public final class SmartContractDeploymentSigningRequestsOuterClass {
       OTHER(0),
       /** <code>UNKNOWN_BLOCKCHAIN = 1;</code> */
       UNKNOWN_BLOCKCHAIN(1),
-      /** <code>INVALID_SIGNATURE = 2;</code> */
-      INVALID_SIGNATURE(2),
+      /** <code>UNWANTED_TRANSACTION = 2;</code> */
+      UNWANTED_TRANSACTION(2),
       UNRECOGNIZED(-1),
       ;
 
@@ -12884,8 +12884,8 @@ public final class SmartContractDeploymentSigningRequestsOuterClass {
       public static final int OTHER_VALUE = 0;
       /** <code>UNKNOWN_BLOCKCHAIN = 1;</code> */
       public static final int UNKNOWN_BLOCKCHAIN_VALUE = 1;
-      /** <code>INVALID_SIGNATURE = 2;</code> */
-      public static final int INVALID_SIGNATURE_VALUE = 2;
+      /** <code>UNWANTED_TRANSACTION = 2;</code> */
+      public static final int UNWANTED_TRANSACTION_VALUE = 2;
 
       public final int getNumber() {
         if (this == UNRECOGNIZED) {
@@ -12916,7 +12916,7 @@ public final class SmartContractDeploymentSigningRequestsOuterClass {
           case 1:
             return UNKNOWN_BLOCKCHAIN;
           case 2:
-            return INVALID_SIGNATURE;
+            return UNWANTED_TRANSACTION;
           default:
             return null;
         }
@@ -18132,7 +18132,7 @@ public final class SmartContractDeploymentSigningRequestsOuterClass {
           + "RequestErrorResponseBody.ErrorCode\022\025\n\rer"
           + "ror_message\030\002 \001(\t\"C\n\tErrorCode\022\013\n\007UNKNOW"
           + "N\020\000\022\026\n\022INVALID_PARAMETERS\020\001\022\021\n\rINVALID_S"
-          + "TATE\020\002\"\217\003\n2RejectSmartContractDeployment"
+          + "TATE\020\002\"\222\003\n2RejectSmartContractDeployment"
           + "SigningRequestRequest\022\022\n\nrequest_id\030\001 \001("
           + "\t\022\032\n\022signing_request_id\030\002 \001(\003\022\240\001\n\020reject"
           + "ion_reason\030\004 \001(\0162\205\001.swisschain.sirius.va"
@@ -18140,51 +18140,51 @@ public final class SmartContractDeploymentSigningRequestsOuterClass {
           + "uests.RejectSmartContractDeploymentSigni"
           + "ngRequestRequest.RejectionReason\022 \n\030reje"
           + "ction_reason_message\030\005 \001(\t\022\027\n\017host_proce"
-          + "ss_id\030\006 \001(\t\"K\n\017RejectionReason\022\t\n\005OTHER\020"
-          + "\000\022\026\n\022UNKNOWN_BLOCKCHAIN\020\001\022\025\n\021INVALID_SIG"
-          + "NATURE\020\002\"\341\002\n3RejectSmartContractDeployme"
-          + "ntSigningRequestResponse\022\216\001\n\010response\030\001 "
-          + "\001(\0132z.swisschain.sirius.vaultApi.smartCo"
-          + "ntractDeploymentSigningRequests.RejectSm"
-          + "artContractDeploymentSigningRequestRespo"
-          + "nseBodyH\000\022\220\001\n\005error\030\002 \001(\0132\177.swisschain.s"
-          + "irius.vaultApi.smartContractDeploymentSi"
-          + "gningRequests.RejectSmartContractDeploym"
-          + "entSigningRequestErrorResponseBodyH\000B\006\n\004"
-          + "body\"9\n7RejectSmartContractDeploymentSig"
-          + "ningRequestResponseBody\"\273\002\n<RejectSmartC"
-          + "ontractDeploymentSigningRequestErrorResp"
-          + "onseBody\022\236\001\n\nerror_code\030\001 \001(\0162\211\001.swissch"
-          + "ain.sirius.vaultApi.smartContractDeploym"
-          + "entSigningRequests.RejectSmartContractDe"
-          + "ploymentSigningRequestErrorResponseBody."
-          + "ErrorCode\022\025\n\rerror_message\030\002 \001(\t\"C\n\tErro"
-          + "rCode\022\013\n\007UNKNOWN\020\000\022\026\n\022INVALID_PARAMETERS"
-          + "\020\001\022\021\n\rINVALID_STATE\020\0022\222\006\n&SmartContractD"
-          + "eploymentSigningRequests\022\360\001\n\003Get\022s.swiss"
+          + "ss_id\030\006 \001(\t\"N\n\017RejectionReason\022\t\n\005OTHER\020"
+          + "\000\022\026\n\022UNKNOWN_BLOCKCHAIN\020\001\022\030\n\024UNWANTED_TR"
+          + "ANSACTION\020\002\"\341\002\n3RejectSmartContractDeplo"
+          + "ymentSigningRequestResponse\022\216\001\n\010response"
+          + "\030\001 \001(\0132z.swisschain.sirius.vaultApi.smar"
+          + "tContractDeploymentSigningRequests.Rejec"
+          + "tSmartContractDeploymentSigningRequestRe"
+          + "sponseBodyH\000\022\220\001\n\005error\030\002 \001(\0132\177.swisschai"
+          + "n.sirius.vaultApi.smartContractDeploymen"
+          + "tSigningRequests.RejectSmartContractDepl"
+          + "oymentSigningRequestErrorResponseBodyH\000B"
+          + "\006\n\004body\"9\n7RejectSmartContractDeployment"
+          + "SigningRequestResponseBody\"\273\002\n<RejectSma"
+          + "rtContractDeploymentSigningRequestErrorR"
+          + "esponseBody\022\236\001\n\nerror_code\030\001 \001(\0162\211\001.swis"
+          + "schain.sirius.vaultApi.smartContractDepl"
+          + "oymentSigningRequests.RejectSmartContrac"
+          + "tDeploymentSigningRequestErrorResponseBo"
+          + "dy.ErrorCode\022\025\n\rerror_message\030\002 \001(\t\"C\n\tE"
+          + "rrorCode\022\013\n\007UNKNOWN\020\000\022\026\n\022INVALID_PARAMET"
+          + "ERS\020\001\022\021\n\rINVALID_STATE\020\0022\222\006\n&SmartContra"
+          + "ctDeploymentSigningRequests\022\360\001\n\003Get\022s.sw"
+          + "isschain.sirius.vaultApi.smartContractDe"
+          + "ploymentSigningRequests.GetSmartContract"
+          + "DeploymentSigningRequestsRequest\032t.swiss"
           + "chain.sirius.vaultApi.smartContractDeplo"
           + "ymentSigningRequests.GetSmartContractDep"
-          + "loymentSigningRequestsRequest\032t.swisscha"
-          + "in.sirius.vaultApi.smartContractDeployme"
-          + "ntSigningRequests.GetSmartContractDeploy"
-          + "mentSigningRequestsResponse\022\372\001\n\007Confirm\022"
-          + "v.swisschain.sirius.vaultApi.smartContra"
-          + "ctDeploymentSigningRequests.ConfirmSmart"
-          + "ContractDeploymentSigningRequestRequest\032"
-          + "w.swisschain.sirius.vaultApi.smartContra"
-          + "ctDeploymentSigningRequests.ConfirmSmart"
-          + "ContractDeploymentSigningRequestResponse"
-          + "\022\367\001\n\006Reject\022u.swisschain.sirius.vaultApi"
-          + ".smartContractDeploymentSigningRequests."
-          + "RejectSmartContractDeploymentSigningRequ"
-          + "estRequest\032v.swisschain.sirius.vaultApi."
-          + "smartContractDeploymentSigningRequests.R"
-          + "ejectSmartContractDeploymentSigningReque"
-          + "stResponseB\244\001\nRio.swisschain.sirius.vaul"
-          + "tApi.generated.smart_contract_deployment"
-          + "_signing_requests\252\002MSwisschain.Sirius.Va"
-          + "ultApi.ApiContract.SmartContractDeployme"
-          + "ntSigningRequestsb\006proto3"
+          + "loymentSigningRequestsResponse\022\372\001\n\007Confi"
+          + "rm\022v.swisschain.sirius.vaultApi.smartCon"
+          + "tractDeploymentSigningRequests.ConfirmSm"
+          + "artContractDeploymentSigningRequestReque"
+          + "st\032w.swisschain.sirius.vaultApi.smartCon"
+          + "tractDeploymentSigningRequests.ConfirmSm"
+          + "artContractDeploymentSigningRequestRespo"
+          + "nse\022\367\001\n\006Reject\022u.swisschain.sirius.vault"
+          + "Api.smartContractDeploymentSigningReques"
+          + "ts.RejectSmartContractDeploymentSigningR"
+          + "equestRequest\032v.swisschain.sirius.vaultA"
+          + "pi.smartContractDeploymentSigningRequest"
+          + "s.RejectSmartContractDeploymentSigningRe"
+          + "questResponseB\244\001\nRio.swisschain.sirius.v"
+          + "aultApi.generated.smart_contract_deploym"
+          + "ent_signing_requests\252\002MSwisschain.Sirius"
+          + ".VaultApi.ApiContract.SmartContractDeplo"
+          + "ymentSigningRequestsb\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
