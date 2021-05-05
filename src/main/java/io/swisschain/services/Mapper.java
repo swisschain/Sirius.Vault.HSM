@@ -19,7 +19,8 @@ public final class Mapper {
   }
 
   public static SigningAddress map(Common.SigningAddress signingAddress) {
-    return new SigningAddress(signingAddress.getAddress(), signingAddress.getGroup());
+    return new SigningAddress(
+        signingAddress.getAddress(), Long.toString(signingAddress.getBrokerAccountId()));
   }
 
   public static List<Coin> map(List<Common.CoinToSpend> coinToSpends) {
