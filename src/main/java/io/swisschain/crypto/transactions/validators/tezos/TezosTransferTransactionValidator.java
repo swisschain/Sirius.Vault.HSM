@@ -104,7 +104,7 @@ public class TezosTransferTransactionValidator extends TransferTransactionValida
               + transaction.Destination);
     }
 
-    if (transaction.Amount != ToMicrotez(transfer.getValue().getAmount())) {
+    if (transaction.Amount > ToMicrotez(transfer.getValue().getAmount())) {
       return TransactionValidationResult.CreateInvalid(
           "Unexpected amount. "
               + "Expected "
