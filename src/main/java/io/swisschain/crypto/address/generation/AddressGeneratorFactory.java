@@ -41,6 +41,10 @@ public class AddressGeneratorFactory {
         BlockchainProtocolCodes.bitcoinCash,
         new AddressGeneratorRetryDecorator(
             new HsmBitcoinCashAddressGenerator(config.clients.ibmApi)));
+    generatorMap.put(
+            BlockchainProtocolCodes.tezos,
+            new AddressGeneratorRetryDecorator(
+                    new HsmTezosAddressGenerator(config.clients.ibmApi)));
   }
 
   public AddressGenerator get(BlockchainProtocolCodes code) throws BlockchainNotSupportedException {
