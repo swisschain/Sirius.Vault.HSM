@@ -3,8 +3,14 @@ import io.swisschain.config.clients.IamConfig;
 import io.swisschain.config.clients.IbmApiConfig;
 import io.swisschain.crypto.address.generation.generators.HsmTezosAddressGenerator;
 import io.swisschain.crypto.exceptions.InvalidPublicKeyException;
+import io.swisschain.crypto.transactions.exceptions.InvalidInputsException;
+import io.swisschain.crypto.utils.tezos.forging.LocalForge;
+import io.swisschain.crypto.utils.tezos.forging.operations.OriginationContent;
+import io.swisschain.crypto.utils.tezos.forging.operations.RevealContent;
 import io.swisschain.domain.primitives.NetworkType;
 import org.apache.logging.log4j.LogManager;
+import org.bouncycastle.util.encoders.Hex;
+import org.junit.Test;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
@@ -42,6 +48,17 @@ public class TezosSignatureTests {
     LogManager.getLogger().atInfo().log("Private key " + result.getPrivateKey());
     LogManager.getLogger().atInfo().log("Public key " + result.getPublicKey());
     LogManager.getLogger().atInfo().log("Address " + result.getAddress());
+  }
+
+  @Test
+    public void  can_unforge_origination() throws InvalidInputsException, NoSuchAlgorithmException, IOException {
+      var s = "9e8c87eea324b7fdafa3ed1e4c9548764c5b169603eba58a6a2f8f13aa2178ee6d00d935b0604ca839f277caa2bdc5890cfe325c2a37a08d06a4ac29a08d06904e00000000004f020000004a0500055f07650865046e00000006256f776e657204620000000925746f6b656e5f69640000000825726571756573740462000000082562616c616e63650501036c05020200000002032700000002030b";
+      var ops = new LocalForge().UnforgeOperations(Hex.decode(s));
+
+      ops.stream()
+              .filter((op) -> op instanceof OriginationContent)
+              .findFirst()
+              .orElseThrow();
   }
 
   //    @Test()

@@ -3,10 +3,7 @@ package io.swisschain.crypto.utils.tezos.forging;
 import io.swisschain.crypto.transactions.exceptions.InvalidInputsException;
 import io.swisschain.crypto.utils.tezos.Lengths;
 import io.swisschain.crypto.utils.tezos.Prefix;
-import io.swisschain.crypto.utils.tezos.forging.operations.OperationTag;
-import io.swisschain.crypto.utils.tezos.forging.operations.RevealContent;
-import io.swisschain.crypto.utils.tezos.forging.operations.TransactionContent;
-import io.swisschain.crypto.utils.tezos.forging.operations.OperationContent;
+import io.swisschain.crypto.utils.tezos.forging.operations.*;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
@@ -39,6 +36,10 @@ public class LocalForge {
         {
           return UnforgeReveal(reader);
         }
+      case OperationTag.Origination:
+      {
+        return UnforgeOrigination(reader);
+      }
       default:
         {
           throw new InvalidInputsException("Unsupported operation tag to unforge " + operationTag);
@@ -108,6 +109,23 @@ public class LocalForge {
         GasLimit = reader.ReadUBigInt().intValue();
         StorageLimit = reader.ReadUBigInt().intValue();
         PublicKey = reader.ReadPublicKey();
+      }
+    };
+  }
+  static OriginationContent UnforgeOrigination(ForgedReader reader)
+          throws InvalidInputsException, IOException, NoSuchAlgorithmException {
+
+    return new OriginationContent() {
+      {
+        Source = reader.ReadTzAddress();
+        Fee = reader.ReadUBigInt().longValue();
+        Counter = reader.ReadUBigInt().intValue();
+        GasLimit = reader.ReadUBigInt().intValue();
+        StorageLimit = reader.ReadUBigInt().intValue();
+        Balance = reader.ReadUBigInt().longValue();
+        Delegate = reader.ReadBool()? reader.ReadTzAddress() : null;
+        reader.ReadEnumerableSingle((r) -> 42); //TODO Read Code
+        reader.ReadEnumerableSingle((r) -> 42); //TODO Read Storage
       }
     };
   }
