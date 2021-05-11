@@ -31,34 +31,34 @@ public class TezosSmartContractDeploymentTransactionValidator
 
     if (!validationResult.isValid()) return validationResult;
 
-    var unforged = new LocalForge().UnforgeOperations(unsignedTransaction);
-
-    if (unforged.size() > 2) {
-      return TransactionValidationResult.CreateInvalid(
-          "Unexpected operation count. "
-              + "Expected 2 (reveal + transaction) at max, "
-              + "but got "
-              + unforged.size());
-    }
-
-    if (unforged.size() == 2) {
-      var reveal =
-          (RevealContent)
-              unforged.stream()
-                  .filter((op) -> op instanceof RevealContent)
-                  .findFirst()
-                  .orElseThrow();
-
-      if (!reveal.PublicKey.equals(publicKey)) {
-        return TransactionValidationResult.CreateInvalid(
-            "Unexpected public key revelation."
-                + " Expected "
-                + publicKey
-                + ", "
-                + "but got "
-                + reveal.PublicKey);
-      }
-    }
+//    var unforged = new LocalForge().UnforgeOperations(unsignedTransaction);
+//
+//    if (unforged.size() > 2) {
+//      return TransactionValidationResult.CreateInvalid(
+//          "Unexpected operation count. "
+//              + "Expected 2 (reveal + transaction) at max, "
+//              + "but got "
+//              + unforged.size());
+//    }
+//
+//    if (unforged.size() == 2) {
+//      var reveal =
+//          (RevealContent)
+//              unforged.stream()
+//                  .filter((op) -> op instanceof RevealContent)
+//                  .findFirst()
+//                  .orElseThrow();
+//
+//      if (!reveal.PublicKey.equals(publicKey)) {
+//        return TransactionValidationResult.CreateInvalid(
+//            "Unexpected public key revelation."
+//                + " Expected "
+//                + publicKey
+//                + ", "
+//                + "but got "
+//                + reveal.PublicKey);
+//      }
+//    }
 
     //    var transaction =
     //        (TransactionContent)
