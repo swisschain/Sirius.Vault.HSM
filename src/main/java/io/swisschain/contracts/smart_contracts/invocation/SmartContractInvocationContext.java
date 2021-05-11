@@ -1,11 +1,11 @@
-package io.swisschain.contracts.smart_contracts.deployment;
+package io.swisschain.contracts.smart_contracts.invocation;
 
 import io.swisschain.contracts.common.RequestContext;
 
 import java.util.Objects;
 
-/** Represents a smart contract deployment context. */
-public class SmartContractDeploymentContext {
+/** Represents a smart contract invocation context. */
+public class SmartContractInvocationContext {
   private String document;
   private String documentVersion;
   private String signature;
@@ -15,9 +15,9 @@ public class SmartContractDeploymentContext {
   private String referenceId;
   private RequestContext requestContext;
 
-  public SmartContractDeploymentContext() {}
+  public SmartContractInvocationContext() {}
 
-  public SmartContractDeploymentContext(
+  public SmartContractInvocationContext(
       String document,
       String documentVersion,
       String signature,
@@ -120,7 +120,7 @@ public class SmartContractDeploymentContext {
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
-    var that = (SmartContractDeploymentContext) o;
+    var that = (SmartContractInvocationContext) o;
     return document.equals(that.document)
         && documentVersion.equals(that.documentVersion)
         && signature.equals(that.signature)

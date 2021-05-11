@@ -1,41 +1,41 @@
 package io.swisschain.crypto.transactions.validators;
 
-import io.swisschain.contracts.documents.smart_contracts.deployment.SmartContractDeploymentDocument;
-import io.swisschain.contracts.smart_contracts.deployment.SmartContractDeployment;
+import io.swisschain.contracts.documents.smart_contracts.invocation.SmartContractInvocationDocument;
+import io.swisschain.contracts.smart_contracts.invocation.SmartContractInvocation;
 import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.crypto.transactions.TransactionValidationResult;
 import io.swisschain.crypto.transactions.exceptions.InvalidDocumentException;
 import io.swisschain.domain.primitives.NetworkType;
 import io.swisschain.services.JsonSerializer;
 
-public class SmartContractDeploymentTransactionValidator {
+public class SmartContractInvocationTransactionValidator {
   protected final BlockchainProtocolCodes blockchainProtocol;
   private final JsonSerializer jsonSerializer;
 
-  protected SmartContractDeploymentTransactionValidator(
+  protected SmartContractInvocationTransactionValidator(
       BlockchainProtocolCodes blockchainProtocol, JsonSerializer jsonSerializer) {
     this.blockchainProtocol = blockchainProtocol;
     this.jsonSerializer = jsonSerializer;
   }
 
-  protected SmartContractDeployment getSmartContractDeployment(String document)
+  protected SmartContractInvocation getSmartContractInvocation(String document)
       throws InvalidDocumentException {
-    SmartContractDeploymentDocument smartContractDeploymentDocument;
+    SmartContractInvocationDocument smartContractInvocationDocument;
 
     try {
-      smartContractDeploymentDocument =
-          jsonSerializer.deserialize(document, SmartContractDeploymentDocument.class);
+      smartContractInvocationDocument =
+          jsonSerializer.deserialize(document, SmartContractInvocationDocument.class);
     } catch (Exception exception) {
       throw new InvalidDocumentException(exception);
     }
 
-    return smartContractDeploymentDocument.getDeployment();
+    return smartContractInvocationDocument.getInvocation();
   }
 
   public TransactionValidationResult validate(
-      SmartContractDeployment smartContractDeployment, NetworkType networkType) {
+      SmartContractInvocation smartContractInvocation, NetworkType networkType) {
 
-    if (!smartContractDeployment
+    if (!smartContractInvocation
         .getBlockchain()
         .getProtocolId()
         .equals(blockchainProtocol.getName())) {
@@ -43,10 +43,10 @@ public class SmartContractDeploymentTransactionValidator {
           String.format(
               "Invalid blockchain: %s, expected %s",
               blockchainProtocol.getName(),
-              smartContractDeployment.getBlockchain().getProtocolId()));
+              smartContractInvocation.getBlockchain().getProtocolId()));
     }
 
-    if (!smartContractDeployment
+    if (!smartContractInvocation
         .getBlockchain()
         .getNetworkType()
         .name()
@@ -54,7 +54,7 @@ public class SmartContractDeploymentTransactionValidator {
       return TransactionValidationResult.CreateInvalid(
           String.format(
               "Invalid networkType: %s, expected %s",
-              networkType, smartContractDeployment.getBlockchain().getNetworkType()));
+              networkType, smartContractInvocation.getBlockchain().getNetworkType()));
     }
 
     return TransactionValidationResult.CreateValid();

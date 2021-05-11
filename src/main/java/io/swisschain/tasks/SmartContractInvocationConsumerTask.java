@@ -9,12 +9,12 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.concurrent.BlockingQueue;
 
-public class SmartContractDeploymentConsumerTask implements Runnable {
+public class SmartContractInvocationConsumerTask implements Runnable {
   private final Logger logger = LogManager.getLogger();
   private final BlockingQueue<TransactionSigningRequest> queue;
   private final TransactionSigner transactionSigner;
 
-  public SmartContractDeploymentConsumerTask(
+  public SmartContractInvocationConsumerTask(
       BlockingQueue<TransactionSigningRequest> queue, TransactionSigner transactionSigner) {
     this.queue = queue;
     this.transactionSigner = transactionSigner;
@@ -28,18 +28,18 @@ public class SmartContractDeploymentConsumerTask implements Runnable {
         transactionSigner.sign(transactionSigningRequest);
       } catch (OperationExhaustedException exception) {
         logger.error(
-            "Operation exhausted while processing smart contract deployment signing requests.",
+            "Operation exhausted while processing smart contract invocation signing requests.",
             exception);
       } catch (OperationFailedException exception) {
         logger.error(
-            "Operation failed while processing smart contract deployment signing requests.",
+            "Operation failed while processing smart contract invocation signing requests.",
             exception);
       } catch (InterruptedException exception) {
         logger.warn("Operation interrupted.", exception);
         return;
       } catch (Exception exception) {
         logger.error(
-            "An unexpected error occurred while processing smart contract deployment signing requests.",
+            "An unexpected error occurred while processing smart contract invocation signing requests.",
             exception);
       }
     }

@@ -10,29 +10,32 @@ import io.swisschain.domain.exceptions.OperationFailedException;
 import io.swisschain.domain.transactions.TransactionRejectionReason;
 import io.swisschain.domain.transactions.TransactionSigningRequest;
 import io.swisschain.repositories.wallets.WalletRepository;
+import io.swisschain.services.TransactionSigningApiService;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.sql.SQLException;
 
-public abstract class TransactionSigner {
-  private final Logger logger;
+public class TransactionSigner {
+  private final Logger logger = LogManager.getLogger();
 
+  private final TransactionSigningApiService transactionSigningApiService;
   private final DocumentValidator documentValidator;
   private final TransactionSignerFactory transactionSignerFactory;
   private final TransactionValidatorFactory transactionValidatorFactory;
   private final WalletRepository walletRepository;
 
   public TransactionSigner(
+      TransactionSigningApiService transactionSigningApiService,
       DocumentValidator documentValidator,
       TransactionSignerFactory transactionSignerFactory,
       TransactionValidatorFactory transactionValidatorFactory,
-      WalletRepository walletRepository,
-      Logger logger) {
+      WalletRepository walletRepository) {
+    this.transactionSigningApiService = transactionSigningApiService;
     this.documentValidator = documentValidator;
     this.transactionSignerFactory = transactionSignerFactory;
     this.transactionValidatorFactory = transactionValidatorFactory;
     this.walletRepository = walletRepository;
-    this.logger = logger;
   }
 
   public void sign(TransactionSigningRequest transactionSigningRequest)
@@ -120,6 +123,12 @@ public abstract class TransactionSigner {
               "It's not possible to sign transaction request %d. An unexpected error occurred.",
               transactionSigningRequest.getId()),
           exception);
+    }
+
+    if (transactionSigningRequest.isRejected()) {
+      transactionSigningApiService.reject(transactionSigningRequest);
+    } else {
+      transactionSigningApiService.confirm(transactionSigningRequest);
     }
   }
 }

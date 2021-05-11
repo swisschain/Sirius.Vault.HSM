@@ -1,17 +1,17 @@
-package io.swisschain.contracts.smart_contracts.deployment;
+package io.swisschain.contracts.smart_contracts.invocation;
 
 import io.swisschain.contracts.common.BrokerAccount;
 
 import java.util.Objects;
 
-/** Represents a deployer information. */
-public class SmartContractDeployer {
+/** Represents a invoker information. */
+public class SmartContractInvoker {
   private String address;
   private BrokerAccount brokerAccount;
 
-  public SmartContractDeployer() {}
+  public SmartContractInvoker() {}
 
-  public SmartContractDeployer(String address, BrokerAccount brokerAccount) {
+  public SmartContractInvoker(String address, BrokerAccount brokerAccount) {
     this.address = address;
     this.brokerAccount = brokerAccount;
   }
@@ -40,7 +40,7 @@ public class SmartContractDeployer {
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
-    var that = (SmartContractDeployer) o;
+    var that = (SmartContractInvoker) o;
     return address.equals(that.address) && brokerAccount.equals(that.brokerAccount);
   }
 

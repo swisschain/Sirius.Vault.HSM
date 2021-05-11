@@ -1,7 +1,7 @@
 package io.swisschain.crypto.transactions.validators;
 
+import io.swisschain.contracts.documents.transfers.TransferDocument;
 import io.swisschain.contracts.transfers.Transfer;
-import io.swisschain.contracts.transfers.TransferDocument;
 import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.crypto.transactions.TransactionValidationResult;
 import io.swisschain.crypto.transactions.exceptions.InvalidDocumentException;

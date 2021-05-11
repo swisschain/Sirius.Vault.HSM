@@ -31,12 +31,18 @@ public class BitcoinCashTransferTransactionValidator extends TransferTransaction
       byte[] unsignedTransaction, NetworkType networkType, String publicKey, String document)
       throws BlockchainNotSupportedException, UnknownNetworkTypeException,
           InvalidDocumentException {
-
     var transfer = getTransfer(document);
 
     var validationResult = validate(transfer, networkType);
 
     if (!validationResult.isValid()) return validationResult;
+
+    if (!transfer.getValue().getAsset().getSymbol().equals(blockchainProtocol.getCoin())) {
+      return TransactionValidationResult.CreateInvalid(
+          String.format(
+              "Invalid asset: %s, expected %s",
+              blockchainProtocol.getCoin(), transfer.getValue().getAsset().getSymbol()));
+    }
 
     final var transaction =
         new Transaction(

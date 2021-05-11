@@ -1,7 +1,8 @@
-package io.swisschain.contracts.transfers;
+package io.swisschain.contracts.documents.transfers;
 
-import io.swisschain.contracts.common.Resolution;
-import io.swisschain.contracts.common.ValidatorDocument;
+import io.swisschain.contracts.documents.Resolution;
+import io.swisschain.contracts.documents.ValidatorDocument;
+import io.swisschain.contracts.transfers.Transfer;
 
 /** Represents validator transfer validation document. */
 public class TransferValidatorDocument extends ValidatorDocument {

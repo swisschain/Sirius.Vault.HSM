@@ -7,13 +7,13 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.concurrent.BlockingQueue;
 
-public class SmartContractDeploymentPublisherTask implements Runnable {
+public class SmartContractInvocationPublisherTask implements Runnable {
   private static final Logger logger = LogManager.getLogger();
 
   private final TransactionSigningApiService transactionSigningApiService;
   private final BlockingQueue<TransactionSigningRequest> queue;
 
-  public SmartContractDeploymentPublisherTask(
+  public SmartContractInvocationPublisherTask(
       TransactionSigningApiService transactionSigningApiService,
       BlockingQueue<TransactionSigningRequest> queue) {
     this.transactionSigningApiService = transactionSigningApiService;
@@ -30,7 +30,7 @@ public class SmartContractDeploymentPublisherTask implements Runnable {
       logger.warn("Operation interrupted.", exception);
     } catch (Exception exception) {
       logger.error(
-          "An unexpected error occurred while publishing smart contract deployment signing requests.",
+          "An unexpected error occurred while publishing smart contract invocation signing requests.",
           exception);
     }
   }

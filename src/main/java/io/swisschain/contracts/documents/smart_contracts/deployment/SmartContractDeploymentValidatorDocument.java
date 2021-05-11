@@ -1,7 +1,8 @@
-package io.swisschain.contracts.smart_contracts.deployment;
+package io.swisschain.contracts.documents.smart_contracts.deployment;
 
-import io.swisschain.contracts.common.Resolution;
-import io.swisschain.contracts.common.ValidatorDocument;
+import io.swisschain.contracts.documents.Resolution;
+import io.swisschain.contracts.documents.ValidatorDocument;
+import io.swisschain.contracts.smart_contracts.deployment.SmartContractDeployment;
 
 /** Represents validator smart contract deployment validation document. */
 public class SmartContractDeploymentValidatorDocument extends ValidatorDocument {

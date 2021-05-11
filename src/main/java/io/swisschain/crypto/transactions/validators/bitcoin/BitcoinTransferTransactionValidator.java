@@ -37,6 +37,13 @@ public class BitcoinTransferTransactionValidator extends TransferTransactionVali
 
     if (!validationResult.isValid()) return validationResult;
 
+    if (!transfer.getValue().getAsset().getSymbol().equals(blockchainProtocol.getCoin())) {
+      return TransactionValidationResult.CreateInvalid(
+          String.format(
+              "Invalid asset: %s, expected %s",
+              blockchainProtocol.getCoin(), transfer.getValue().getAsset().getSymbol()));
+    }
+
     final var transaction =
         new Transaction(NetworkMapper.mapToBitcoinNetworkType(networkType), unsignedTransaction);
 

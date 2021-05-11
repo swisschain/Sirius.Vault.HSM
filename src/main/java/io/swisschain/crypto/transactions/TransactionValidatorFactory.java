@@ -3,13 +3,11 @@ package io.swisschain.crypto.transactions;
 import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.crypto.transactions.validators.bitcoin.BitcoinTransferTransactionValidator;
 import io.swisschain.crypto.transactions.validators.bitcoin_cash.BitcoinCashTransferTransactionValidator;
-import io.swisschain.crypto.transactions.validators.ethereum.EthereumClassicSmartContractDeploymentTransactionValidator;
-import io.swisschain.crypto.transactions.validators.ethereum.EthereumClassicTransferTransactionValidator;
-import io.swisschain.crypto.transactions.validators.ethereum.EthereumSmartContractDeploymentTransactionValidator;
-import io.swisschain.crypto.transactions.validators.ethereum.EthereumTransferTransactionValidator;
+import io.swisschain.crypto.transactions.validators.ethereum.*;
 import io.swisschain.crypto.transactions.validators.litecoin.LitecoinTransferTransactionValidator;
 import io.swisschain.crypto.transactions.validators.stellar.StellarTransferTransactionValidator;
 import io.swisschain.crypto.transactions.validators.tezos.TezosSmartContractDeploymentTransactionValidator;
+import io.swisschain.crypto.transactions.validators.tezos.TezosSmartContractInvocationTransactionValidator;
 import io.swisschain.crypto.transactions.validators.tezos.TezosTransferTransactionValidator;
 import io.swisschain.domain.transactions.TransactionType;
 import io.swisschain.services.JsonSerializer;
@@ -26,10 +24,14 @@ public class TransactionValidatorFactory {
   private final Map<BlockchainProtocolCodes, CoinsTransactionValidator>
       smartContractDeploymentTransactionValidatorsMap = new HashMap<>();
 
+  private final Map<BlockchainProtocolCodes, CoinsTransactionValidator>
+      smartContractInvocationTransactionValidatorsMap = new HashMap<>();
+
   public TransactionValidatorFactory(JsonSerializer jsonSerializer) {
     this.jsonSerializer = jsonSerializer;
     initTransferTransactionValidators();
     initSmartContractDeploymentTransactionValidators();
+    initSmartContractInvocationTransactionValidators();
   }
 
   private void initTransferTransactionValidators() {
@@ -63,6 +65,18 @@ public class TransactionValidatorFactory {
         new TezosSmartContractDeploymentTransactionValidator(jsonSerializer));
   }
 
+  private void initSmartContractInvocationTransactionValidators() {
+    smartContractInvocationTransactionValidatorsMap.put(
+        BlockchainProtocolCodes.ethereum,
+        new EthereumSmartContractInvocationTransactionValidator(jsonSerializer));
+    smartContractInvocationTransactionValidatorsMap.put(
+        BlockchainProtocolCodes.ethereumClassic,
+        new EthereumClassicSmartContractInvocationTransactionValidator(jsonSerializer));
+    smartContractInvocationTransactionValidatorsMap.put(
+        BlockchainProtocolCodes.tezos,
+        new TezosSmartContractInvocationTransactionValidator(jsonSerializer));
+  }
+
   public CoinsTransactionValidator get(BlockchainProtocolCodes code, TransactionType type) {
     Map<BlockchainProtocolCodes, CoinsTransactionValidator> map = null;
 
@@ -72,6 +86,9 @@ public class TransactionValidatorFactory {
         break;
       case SmartContractDeployment:
         map = smartContractDeploymentTransactionValidatorsMap;
+        break;
+      case SmartContractInvocation:
+        map = smartContractInvocationTransactionValidatorsMap;
         break;
     }
 

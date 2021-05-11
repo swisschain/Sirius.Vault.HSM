@@ -11,13 +11,11 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.List;
 
-public class SmartContractDeploymentApiServiceRetryDecorator
-    implements SmartContractDeploymentApiService {
+public class TransactionSigningApiServiceRetryDecorator implements TransactionSigningApiService {
   private final Logger logger = LogManager.getLogger();
-  private final SmartContractDeploymentApiService service;
+  private final TransactionSigningApiService service;
 
-  public SmartContractDeploymentApiServiceRetryDecorator(
-      SmartContractDeploymentApiService service) {
+  public TransactionSigningApiServiceRetryDecorator(TransactionSigningApiService service) {
     this.service = service;
   }
 
@@ -29,21 +27,20 @@ public class SmartContractDeploymentApiServiceRetryDecorator
           RetryPolicies.ExecuteWithDefaultGrpcConfig(
               o ->
                   logger.warn(
-                      "Failed to get smart contract deployment signing requests.",
+                      "Failed to get signing requests.",
                       o.getLastExceptionThatCausedRetry()),
               service::get);
       return status.getResult();
     } catch (RetriesExhaustedException exception) {
       logger.error(
           String.format(
-              "Failed to get smart contract deployment signing requests. Retries exhausted with total tries %d duration %d ms.",
+              "Failed to get signing requests. Retries exhausted with total tries %d duration %d ms.",
               exception.getStatus().getTotalTries(),
               exception.getStatus().getTotalElapsedDuration().toMillis()));
       throw new OperationExhaustedException(exception);
     } catch (UnexpectedException exception) {
       logger.error(
-          "An unexpected error occurred while getting smart contract deployment signing requests.",
-          exception);
+          "An unexpected error occurred while getting signing requests.", exception);
       throw new OperationFailedException(exception);
     }
   }
@@ -56,8 +53,7 @@ public class SmartContractDeploymentApiServiceRetryDecorator
           o ->
               logger.warn(
                   String.format(
-                      "Failed to confirm smart contract deployment signing request %d.",
-                      signingRequest.getId()),
+                      "Failed to confirm signing request %d.", signingRequest.getId()),
                   o.getLastExceptionThatCausedRetry()),
           () -> {
             service.confirm(signingRequest);
@@ -66,7 +62,7 @@ public class SmartContractDeploymentApiServiceRetryDecorator
     } catch (RetriesExhaustedException exception) {
       logger.error(
           String.format(
-              "Failed to confirm smart contract deployment signing request %d. Retries exhausted with total tries %d duration %d ms.",
+              "Failed to confirm signing request %d. Retries exhausted with total tries %d duration %d ms.",
               signingRequest.getId(),
               exception.getStatus().getTotalTries(),
               exception.getStatus().getTotalElapsedDuration().toMillis()));
@@ -74,7 +70,7 @@ public class SmartContractDeploymentApiServiceRetryDecorator
     } catch (UnexpectedException exception) {
       logger.error(
           String.format(
-              "An unexpected error occurred while confirming smart contract deployment signing request %d.",
+              "An unexpected error occurred while confirming signing request %d.",
               signingRequest.getId()),
           exception);
       throw new OperationFailedException(exception);
@@ -89,8 +85,7 @@ public class SmartContractDeploymentApiServiceRetryDecorator
           o ->
               logger.warn(
                   String.format(
-                      "Failed to reject smart contract deployment signing request %d.",
-                      signingRequest.getId()),
+                      "Failed to reject signing request %d.", signingRequest.getId()),
                   o.getLastExceptionThatCausedRetry()),
           () -> {
             service.reject(signingRequest);
@@ -99,7 +94,7 @@ public class SmartContractDeploymentApiServiceRetryDecorator
     } catch (RetriesExhaustedException exception) {
       logger.error(
           String.format(
-              "Failed to reject smart contract deployment signing request %d. Retries exhausted with total tries %d duration %d ms.",
+              "Failed to reject signing request %d. Retries exhausted with total tries %d duration %d ms.",
               signingRequest.getId(),
               exception.getStatus().getTotalTries(),
               exception.getStatus().getTotalElapsedDuration().toMillis()));
@@ -107,7 +102,7 @@ public class SmartContractDeploymentApiServiceRetryDecorator
     } catch (UnexpectedException exception) {
       logger.error(
           String.format(
-              "An unexpected error occurred while rejecting smart contract deployment signing request %d.",
+              "An unexpected error occurred while rejecting signing request %d.",
               signingRequest.getId()),
           exception);
       throw new OperationFailedException(exception);

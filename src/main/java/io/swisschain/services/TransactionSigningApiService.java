@@ -6,7 +6,7 @@ import io.swisschain.domain.transactions.TransactionSigningRequest;
 
 import java.util.List;
 
-public interface SmartContractDeploymentApiService {
+public interface TransactionSigningApiService {
   List<TransactionSigningRequest> get()
       throws OperationFailedException, OperationExhaustedException;
 

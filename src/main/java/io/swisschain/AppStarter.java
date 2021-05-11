@@ -15,8 +15,7 @@ import io.swisschain.repositories.wallets.WalletRepositoryImp;
 import io.swisschain.repositories.wallets.WalletRepositoryRetryDecorator;
 import io.swisschain.services.*;
 import io.swisschain.signers.DocumentValidator;
-import io.swisschain.signers.SmartContractDeploymentSigner;
-import io.swisschain.signers.TransferSigner;
+import io.swisschain.signers.TransactionSigner;
 import io.swisschain.sirius.vaultApi.ChannelFactory;
 import io.swisschain.sirius.vaultApi.VaultApiClient;
 import io.swisschain.tasks.*;
@@ -76,11 +75,15 @@ public class AppStarter {
     var transactionValidatorFactory = new TransactionValidatorFactory(jsonSerializer);
 
     var smartContractDeploymentApiService =
-        new SmartContractDeploymentApiServiceRetryDecorator(
+        new TransactionSigningApiServiceRetryDecorator(
             new SmartContractDeploymentApiServiceImp(vaultApiClient, hostProcessId));
 
+    var smartContractInvocationApiService =
+        new TransactionSigningApiServiceRetryDecorator(
+            new SmartContractInvocationApiServiceImp(vaultApiClient, hostProcessId));
+
     var transferApiService =
-        new TransferApiServiceRetryDecorator(
+        new TransactionSigningApiServiceRetryDecorator(
             new TransferApiServiceImp(vaultApiClient, hostProcessId));
 
     var walletApiService =
@@ -96,15 +99,23 @@ public class AppStarter {
     // Signers
 
     var smartContractDeploymentSigner =
-        new SmartContractDeploymentSigner(
+        new TransactionSigner(
             smartContractDeploymentApiService,
             documentValidator,
             transactionSignerFactory,
             transactionValidatorFactory,
             walletRepository);
 
+    var smartContractInvocationSigner =
+        new TransactionSigner(
+            smartContractInvocationApiService,
+            documentValidator,
+            transactionSignerFactory,
+            transactionValidatorFactory,
+            walletRepository);
+
     var transferSigner =
-        new TransferSigner(
+        new TransactionSigner(
             transferApiService,
             documentValidator,
             transactionSignerFactory,
@@ -113,10 +124,13 @@ public class AppStarter {
 
     // Thread pools
 
-    var apiThreadPool = Executors.newScheduledThreadPool(4);
+    var apiThreadPool = Executors.newScheduledThreadPool(5);
     var smartContractDeploymentSigningThreadPool =
         Executors.newFixedThreadPool(
             config.tasks.smartContractDeploymentSigningConsumer.threadsCount);
+    var smartContractInvocationSigningThreadPool =
+        Executors.newFixedThreadPool(
+            config.tasks.smartContractInvocationSigningConsumer.threadsCount);
     var transferSigningThreadPool =
         Executors.newFixedThreadPool(config.tasks.transferSigningConsumer.threadsCount);
     var walletConsumersThreadPool =
@@ -132,6 +146,10 @@ public class AppStarter {
         new ArrayBlockingQueue<TransactionSigningRequest>(
             config.tasks.smartContractDeploymentSigningPublisher.queueSize);
 
+    var smartContractInvocationRequestQueue =
+        new ArrayBlockingQueue<TransactionSigningRequest>(
+            config.tasks.smartContractInvocationSigningPublisher.queueSize);
+
     var walletRequestQueue =
         new ArrayBlockingQueue<WalletGenerationRequest>(
             config.tasks.walletGenerationPublisher.queueSize);
@@ -140,6 +158,12 @@ public class AppStarter {
       smartContractDeploymentSigningThreadPool.execute(
           new SmartContractDeploymentConsumerTask(
               smartContractDeploymentRequestQueue, smartContractDeploymentSigner));
+    }
+
+    for (var i = 0; i < config.tasks.smartContractInvocationSigningConsumer.threadsCount; i++) {
+      smartContractInvocationSigningThreadPool.execute(
+          new SmartContractInvocationConsumerTask(
+              smartContractInvocationRequestQueue, smartContractInvocationSigner));
     }
 
     for (var i = 0; i < config.tasks.transferSigningConsumer.threadsCount; i++) {
@@ -159,6 +183,16 @@ public class AppStarter {
         config.tasks != null
                 && config.tasks.smartContractDeploymentSigningPublisher.periodInSeconds > 0
             ? config.tasks.smartContractDeploymentSigningPublisher.periodInSeconds
+            : 1,
+        TimeUnit.SECONDS);
+
+    apiThreadPool.scheduleWithFixedDelay(
+        new SmartContractInvocationPublisherTask(
+            smartContractInvocationApiService, smartContractInvocationRequestQueue),
+        0,
+        config.tasks != null
+                && config.tasks.smartContractInvocationSigningPublisher.periodInSeconds > 0
+            ? config.tasks.smartContractInvocationSigningPublisher.periodInSeconds
             : 1,
         TimeUnit.SECONDS);
 

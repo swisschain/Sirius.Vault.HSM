@@ -5,7 +5,7 @@ import io.swisschain.domain.transactions.TransactionRejectionReason;
 import io.swisschain.domain.transactions.TransactionSigningRequest;
 import io.swisschain.domain.transactions.TransactionType;
 import io.swisschain.sirius.vaultApi.VaultApiClient;
-import io.swisschain.sirius.vaultApi.generated.transfer_signing_requests.TransferSigningRequestsOuterClass;
+import io.swisschain.sirius.vaultApi.generated.smart_contract_invocation_signing_requests.SmartContractInvocationSigningRequestsOuterClass;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
@@ -14,26 +14,29 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class TransferApiServiceImp implements TransactionSigningApiService {
+public class SmartContractInvocationApiServiceImp implements TransactionSigningApiService {
   private final VaultApiClient vaultApiClient;
   private final String hostProcessId;
   private final Logger logger = LogManager.getLogger();
 
-  public TransferApiServiceImp(VaultApiClient vaultApiClient, String hostProcessId) {
+  public SmartContractInvocationApiServiceImp(VaultApiClient vaultApiClient, String hostProcessId) {
     this.vaultApiClient = vaultApiClient;
     this.hostProcessId = hostProcessId;
   }
 
   public List<TransactionSigningRequest> get() {
     var request =
-        TransferSigningRequestsOuterClass.GetTransferSigningRequestsRequest.newBuilder().build();
-    var response = vaultApiClient.getTransferSigningRequests().get(request);
+        SmartContractInvocationSigningRequestsOuterClass
+            .GetSmartContractInvocationSigningRequestsRequest.newBuilder()
+            .build();
+    var response = vaultApiClient.getSmartContractInvocationSigningRequests().get(request);
 
     if (response.getBodyCase()
-        == TransferSigningRequestsOuterClass.GetTransferSigningRequestsResponse.BodyCase.ERROR) {
+        == SmartContractInvocationSigningRequestsOuterClass
+            .GetSmartContractInvocationSigningRequestsResponse.BodyCase.ERROR) {
       logger.error(
           String.format(
-              "An error occurred while getting transfer signing requests. %s %s",
+              "An error occurred while getting smart contract invocation signing requests. %s %s",
               response.getError().getErrorCode().name(), response.getError().getErrorMessage()));
       return new ArrayList<>();
     }
@@ -45,59 +48,33 @@ public class TransferApiServiceImp implements TransactionSigningApiService {
 
   public void confirm(TransactionSigningRequest signingRequest) {
     var conformationRequest =
-        TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestRequest.newBuilder()
-            .setRequestId(String.format("Vault:TransferSigningRequest:%d", signingRequest.getId()))
+        SmartContractInvocationSigningRequestsOuterClass
+            .ConfirmSmartContractInvocationSigningRequestRequest.newBuilder()
+            .setRequestId(
+                String.format(
+                    "Vault:SmartContractInvocationSigningRequest:%d", signingRequest.getId()))
             .setSigningRequestId(signingRequest.getId())
             .setTransactionId(signingRequest.getTransactionId())
             .setSignedTransaction(ByteString.copyFrom(signingRequest.getSignedTransaction()))
             .setHostProcessId(hostProcessId)
             .build();
 
-    var response = vaultApiClient.getTransferSigningRequests().confirm(conformationRequest);
+    var response =
+        vaultApiClient.getSmartContractInvocationSigningRequests().confirm(conformationRequest);
 
     if (response.getBodyCase()
-        == TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestResponse.BodyCase.ERROR) {
+        == SmartContractInvocationSigningRequestsOuterClass
+            .ConfirmSmartContractInvocationSigningRequestResponse.BodyCase.ERROR) {
       var message =
           String.format(
-              "It is not possible to confirm transfer signing request %d. %s %s",
+              "It is not possible to confirm smart contract invocation signing request %d. %s %s",
               signingRequest.getId(),
               response.getError().getErrorCode().name(),
               response.getError().getErrorMessage());
       if (response.getError().getErrorCode()
-          == TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestErrorResponseBody
-              .ErrorCode.INVALID_STATE) {
-        logger.warn(message);
-      } else {
-        logger.error(message);
-      }
-    } else {
-      logger.info(String.format("Transfer signing request %d confirmed.", signingRequest.getId()));
-    }
-  }
-
-  public void reject(TransactionSigningRequest signingRequest) {
-    var rejectRequest =
-        TransferSigningRequestsOuterClass.RejectTransferSigningRequestRequest.newBuilder()
-            .setRequestId(String.format("Vault:TransferSigningRequest:%d", signingRequest.getId()))
-            .setSigningRequestId(signingRequest.getId())
-            .setRejectionReason(map(signingRequest.getRejectionReason()))
-            .setRejectionReasonMessage(signingRequest.getRejectionReasonMessage())
-            .setHostProcessId(hostProcessId)
-            .build();
-
-    var response = vaultApiClient.getTransferSigningRequests().reject(rejectRequest);
-
-    if (response.getBodyCase()
-        == TransferSigningRequestsOuterClass.RejectTransferSigningRequestResponse.BodyCase.ERROR) {
-      var message =
-          String.format(
-              "It is not possible to reject transfer signing request %d. %s %s",
-              signingRequest.getId(),
-              response.getError().getErrorCode().name(),
-              response.getError().getErrorMessage());
-      if (response.getError().getErrorCode()
-          == TransferSigningRequestsOuterClass.RejectTransferSigningRequestErrorResponseBody
-              .ErrorCode.INVALID_STATE) {
+          == SmartContractInvocationSigningRequestsOuterClass
+              .ConfirmSmartContractInvocationSigningRequestErrorResponseBody.ErrorCode
+              .INVALID_STATE) {
         logger.warn(message);
       } else {
         logger.error(message);
@@ -105,21 +82,61 @@ public class TransferApiServiceImp implements TransactionSigningApiService {
     } else {
       logger.info(
           String.format(
-              "Transfer signing request %d rejected with reason %s.",
+              "Smart contract invocation signing request %d confirmed.", signingRequest.getId()));
+    }
+  }
+
+  public void reject(TransactionSigningRequest signingRequest) {
+    var rejectRequest =
+        SmartContractInvocationSigningRequestsOuterClass
+            .RejectSmartContractInvocationSigningRequestRequest.newBuilder()
+            .setRequestId(
+                String.format(
+                    "Vault:SmartContractInvocationSigningRequest:%d", signingRequest.getId()))
+            .setSigningRequestId(signingRequest.getId())
+            .setRejectionReason(map(signingRequest.getRejectionReason()))
+            .setRejectionReasonMessage(signingRequest.getRejectionReasonMessage())
+            .setHostProcessId(hostProcessId)
+            .build();
+
+    var response = vaultApiClient.getSmartContractInvocationSigningRequests().reject(rejectRequest);
+
+    if (response.getBodyCase()
+        == SmartContractInvocationSigningRequestsOuterClass
+            .RejectSmartContractInvocationSigningRequestResponse.BodyCase.ERROR) {
+      var message =
+          String.format(
+              "It is not possible to reject smart contract invocation signing request %d. %s %s",
+              signingRequest.getId(),
+              response.getError().getErrorCode().name(),
+              response.getError().getErrorMessage());
+      if (response.getError().getErrorCode()
+          == SmartContractInvocationSigningRequestsOuterClass
+              .RejectSmartContractInvocationSigningRequestErrorResponseBody.ErrorCode
+              .INVALID_STATE) {
+        logger.warn(message);
+      } else {
+        logger.error(message);
+      }
+    } else {
+      logger.info(
+          String.format(
+              "Smart contract invocation signing request %d rejected with reason %s.",
               signingRequest.getId(), signingRequest.getRejectionReasonMessage()));
     }
   }
 
   private TransactionSigningRequest map(
-      TransferSigningRequestsOuterClass.TransferSigningRequest request) {
+      SmartContractInvocationSigningRequestsOuterClass.SmartContractInvocationSigningRequest
+          request) {
     return new TransactionSigningRequest(
         request.getId(),
-        TransactionType.Transfer,
+        TransactionType.SmartContractInvocation,
         Mapper.map(request.getBlockchain()),
         Mapper.map(request.getDoubleSpendingProtectionType()),
         request.getBuiltTransaction().toByteArray(),
         Mapper.map(request.getSigningAddress()),
-        Mapper.map(request.getCoinsToSpendList()),
+        new ArrayList<>(),
         request.getDocument(),
         request.getSignature(),
         request.getTenantId(),
@@ -127,17 +144,19 @@ public class TransferApiServiceImp implements TransactionSigningApiService {
         Mapper.map(request.getUpdatedAt()));
   }
 
-  private TransferSigningRequestsOuterClass.RejectTransferSigningRequestRequest.RejectionReason map(
-      @NotNull TransactionRejectionReason transactionRejectionReason) {
+  private SmartContractInvocationSigningRequestsOuterClass
+          .RejectSmartContractInvocationSigningRequestRequest.RejectionReason
+      map(@NotNull TransactionRejectionReason transactionRejectionReason) {
     switch (transactionRejectionReason) {
       case Other:
-        return TransferSigningRequestsOuterClass.RejectTransferSigningRequestRequest.RejectionReason
-            .OTHER;
+        return SmartContractInvocationSigningRequestsOuterClass
+            .RejectSmartContractInvocationSigningRequestRequest.RejectionReason.OTHER;
       case UnknownBlockchain:
-        return TransferSigningRequestsOuterClass.RejectTransferSigningRequestRequest.RejectionReason
-            .UNKNOWN_BLOCKCHAIN;
+        return SmartContractInvocationSigningRequestsOuterClass
+            .RejectSmartContractInvocationSigningRequestRequest.RejectionReason.UNKNOWN_BLOCKCHAIN;
       case UnwantedTransaction:
-        return TransferSigningRequestsOuterClass.RejectTransferSigningRequestRequest.RejectionReason
+        return SmartContractInvocationSigningRequestsOuterClass
+            .RejectSmartContractInvocationSigningRequestRequest.RejectionReason
             .UNWANTED_TRANSACTION;
       default:
         throw new IllegalArgumentException(

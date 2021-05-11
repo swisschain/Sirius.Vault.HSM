@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class SmartContractDeploymentApiServiceImp implements SmartContractDeploymentApiService {
+public class SmartContractDeploymentApiServiceImp implements TransactionSigningApiService {
   private final VaultApiClient vaultApiClient;
   private final String hostProcessId;
   private final Logger logger = LogManager.getLogger();

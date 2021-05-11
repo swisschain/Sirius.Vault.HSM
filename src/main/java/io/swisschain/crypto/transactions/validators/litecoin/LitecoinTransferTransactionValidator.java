@@ -21,6 +21,13 @@ public class LitecoinTransferTransactionValidator extends TransferTransactionVal
 
     var transfer = getTransfer(document);
 
+    if (!transfer.getValue().getAsset().getSymbol().equals(blockchainProtocol.getCoin())) {
+      return TransactionValidationResult.CreateInvalid(
+          String.format(
+              "Invalid asset: %s, expected %s",
+              blockchainProtocol.getCoin(), transfer.getValue().getAsset().getSymbol()));
+    }
+
     return validate(transfer, networkType);
   }
 }
