@@ -1,11 +1,10 @@
 syntax = "proto3";
 
 option csharp_namespace = "Swisschain.Sirius.VaultApi.ApiContract.TransferSigningRequests";
-option java_package = "io.swisschain.sirius.vaultApi.generated.transferSigningRequests";
+option java_package = "io.swisschain.sirius.vaultApi.generated.transfer_signing_requests";
 
 package swisschain.sirius.vaultApi.transferSigningRequests;
 
-import "google/protobuf/wrappers.proto";
 import "google/protobuf/timestamp.proto";
 import "common.proto";
 
@@ -44,62 +43,26 @@ message GetTransferSigningRequestsErrorResponseBody {
 
 message TransferSigningRequest {
   int64 id = 1;
-  string blockchain_id = 2;
-  .swisschain.sirius.vaultApi.common.NetworkType network_type = 3;
-  string protocol_code = 4;
-  DoubleSpendingProtectionType double_spending_protection_type = 5;
-  bytes built_transaction = 6;
-  repeated SigningAddress signing_addresses = 7;
-  repeated CoinToSpend coins_to_spend = 8;
-  string document = 9;
-  string signature = 10;
-  google.protobuf.Timestamp created_at = 11;
-  google.protobuf.Timestamp updated_at = 12;
-  string tenant_id = 13;
-}
-
-enum DoubleSpendingProtectionType {
-  COINS = 0;
-  NONCE = 1;
-}
-
-message SigningAddress {
-  string address = 1;
-  string group = 2;
-}
-
-message CoinToSpend {
-  CoinId id = 1;
-  BlockchainAsset asset = 2;
-  .swisschain.sirius.vaultApi.common.BigDecimal value = 3;
-  google.protobuf.StringValue redeem = 4;
-  string address = 5;
-}
-
-message CoinId {
-  string transaction_id = 1;
-  int32 number = 2;
-}
-
-message BlockchainAsset {
-  BlockchainAssetId id = 1;
-  int32 accuracy = 2;
-}
-
-message BlockchainAssetId {
-  string symbol = 1;
-  google.protobuf.StringValue address = 2;
+  string tenant_id = 2;
+  .swisschain.sirius.vaultApi.common.Blockchain blockchain = 3;
+  .swisschain.sirius.vaultApi.common.DoubleSpendingProtectionType double_spending_protection_type = 4;
+  bytes built_transaction = 5;
+  .swisschain.sirius.vaultApi.common.SigningAddress signing_address = 6;
+  repeated .swisschain.sirius.vaultApi.common.CoinToSpend coins_to_spend = 7;
+  string document = 8;
+  string signature = 9;
+  google.protobuf.Timestamp created_at = 10;
+  google.protobuf.Timestamp updated_at = 11;
 }
 
 // Confirm
 
 message ConfirmTransferSigningRequestRequest {
   string request_id = 1;
-  int64 transfer_signing_request_id = 2;
+  int64 signing_request_id = 2;
   string transaction_id = 4;
   bytes signed_transaction = 5;
-  string signature = 6;
-  string host_process_id = 7;
+  string host_process_id = 6;
 }
 
 message ConfirmTransferSigningRequestResponse {
@@ -127,18 +90,18 @@ message ConfirmTransferSigningRequestErrorResponseBody {
 // Reject
 
 message RejectTransferSigningRequestRequest {
-  string request_id = 1;
-  int64 transfer_signing_request_id = 2;
-  TransferSigningRequestRejectionReason rejection_reason = 4;
-  string rejection_reason_message = 5;
-  string signature = 6;
-  string host_process_id = 7;
-}
 
-enum TransferSigningRequestRejectionReason {
-  OTHER = 0;
-  UNKNOWN_BLOCKCHAIN = 1;
-  INVALID_SIGNATURE = 2;
+  enum RejectionReason {
+    OTHER = 0;
+    UNKNOWN_BLOCKCHAIN = 1;
+    UNWANTED_TRANSACTION = 2;
+  }
+
+  string request_id = 1;
+  int64 signing_request_id = 2;
+  RejectionReason rejection_reason = 4;
+  string rejection_reason_message = 5;
+  string host_process_id = 6;
 }
 
 message RejectTransferSigningRequestResponse {

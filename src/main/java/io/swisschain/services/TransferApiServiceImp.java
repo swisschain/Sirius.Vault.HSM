@@ -1,23 +1,20 @@
 package io.swisschain.services;
 
 import com.google.protobuf.ByteString;
-import com.google.protobuf.Timestamp;
-import io.swisschain.domain.transfers.*;
-import io.swisschain.mappers.DoubleSpendingProtectionTypeMapper;
-import io.swisschain.mappers.NetworkTypeMapper;
+import io.swisschain.domain.transactions.TransactionRejectionReason;
+import io.swisschain.domain.transactions.TransactionSigningRequest;
+import io.swisschain.domain.transactions.TransactionType;
 import io.swisschain.sirius.vaultApi.VaultApiClient;
-import io.swisschain.sirius.vaultApi.generated.transferSigningRequests.TransferSigningRequestsOuterClass;
+import io.swisschain.sirius.vaultApi.generated.transfer_signing_requests.TransferSigningRequestsOuterClass;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 
-import java.math.BigDecimal;
-import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class TransferApiServiceImp implements TransferApiService {
+public class TransferApiServiceImp implements TransactionSigningApiService {
   private final VaultApiClient vaultApiClient;
   private final String hostProcessId;
   private final Logger logger = LogManager.getLogger();
@@ -27,10 +24,10 @@ public class TransferApiServiceImp implements TransferApiService {
     this.hostProcessId = hostProcessId;
   }
 
-  public List<TransferSigningRequest> get() {
+  public List<TransactionSigningRequest> get() {
     var request =
         TransferSigningRequestsOuterClass.GetTransferSigningRequestsRequest.newBuilder().build();
-    var response = vaultApiClient.getTransactions().get(request);
+    var response = vaultApiClient.getTransferSigningRequests().get(request);
 
     if (response.getBodyCase()
         == TransferSigningRequestsOuterClass.GetTransferSigningRequestsResponse.BodyCase.ERROR) {
@@ -46,27 +43,24 @@ public class TransferApiServiceImp implements TransferApiService {
         .collect(Collectors.toList());
   }
 
-  public void confirm(TransferSigningRequest transferSigningRequest) {
+  public void confirm(TransactionSigningRequest signingRequest) {
     var conformationRequest =
         TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestRequest.newBuilder()
-            .setRequestId(
-                String.format("Vault:TransferSigningRequest:%d", transferSigningRequest.getId()))
-            .setTransferSigningRequestId(transferSigningRequest.getId())
-            .setTransactionId(transferSigningRequest.getTransactionId())
-            .setSignedTransaction(
-                ByteString.copyFrom(transferSigningRequest.getSignedTransaction()))
-            .setSignature("empty") // TODO: remove
+            .setRequestId(String.format("Vault:TransferSigningRequest:%d", signingRequest.getId()))
+            .setSigningRequestId(signingRequest.getId())
+            .setTransactionId(signingRequest.getTransactionId())
+            .setSignedTransaction(ByteString.copyFrom(signingRequest.getSignedTransaction()))
             .setHostProcessId(hostProcessId)
             .build();
 
-    var response = vaultApiClient.getTransactions().confirm(conformationRequest);
+    var response = vaultApiClient.getTransferSigningRequests().confirm(conformationRequest);
 
     if (response.getBodyCase()
         == TransferSigningRequestsOuterClass.ConfirmTransferSigningRequestResponse.BodyCase.ERROR) {
       var message =
           String.format(
               "It is not possible to confirm transfer signing request %d. %s %s",
-              transferSigningRequest.getId(),
+              signingRequest.getId(),
               response.getError().getErrorCode().name(),
               response.getError().getErrorMessage());
       if (response.getError().getErrorCode()
@@ -77,31 +71,28 @@ public class TransferApiServiceImp implements TransferApiService {
         logger.error(message);
       }
     } else {
-      logger.info(
-          String.format("Transfer signing request %d confirmed.", transferSigningRequest.getId()));
+      logger.info(String.format("Transfer signing request %d confirmed.", signingRequest.getId()));
     }
   }
 
-  public void reject(TransferSigningRequest transferSigningRequest) {
+  public void reject(TransactionSigningRequest signingRequest) {
     var rejectRequest =
         TransferSigningRequestsOuterClass.RejectTransferSigningRequestRequest.newBuilder()
-            .setRequestId(
-                String.format("Vault:TransferSigningRequest:%d", transferSigningRequest.getId()))
-            .setTransferSigningRequestId(transferSigningRequest.getId())
-            .setRejectionReason(map(transferSigningRequest.getRejectionReason()))
-            .setRejectionReasonMessage(transferSigningRequest.getRejectionReasonMessage())
-            .setSignature("empty") // TODO: remove
+            .setRequestId(String.format("Vault:TransferSigningRequest:%d", signingRequest.getId()))
+            .setSigningRequestId(signingRequest.getId())
+            .setRejectionReason(map(signingRequest.getRejectionReason()))
+            .setRejectionReasonMessage(signingRequest.getRejectionReasonMessage())
             .setHostProcessId(hostProcessId)
             .build();
 
-    var response = vaultApiClient.getTransactions().reject(rejectRequest);
+    var response = vaultApiClient.getTransferSigningRequests().reject(rejectRequest);
 
     if (response.getBodyCase()
         == TransferSigningRequestsOuterClass.RejectTransferSigningRequestResponse.BodyCase.ERROR) {
       var message =
           String.format(
               "It is not possible to reject transfer signing request %d. %s %s",
-              transferSigningRequest.getId(),
+              signingRequest.getId(),
               response.getError().getErrorCode().name(),
               response.getError().getErrorMessage());
       if (response.getError().getErrorCode()
@@ -115,91 +106,42 @@ public class TransferApiServiceImp implements TransferApiService {
       logger.info(
           String.format(
               "Transfer signing request %d rejected with reason %s.",
-              transferSigningRequest.getId(), transferSigningRequest.getRejectionReasonMessage()));
+              signingRequest.getId(), signingRequest.getRejectionReasonMessage()));
     }
   }
 
-  private TransferSigningRequest map(
+  private TransactionSigningRequest map(
       TransferSigningRequestsOuterClass.TransferSigningRequest request) {
-    return new TransferSigningRequest(
+    return new TransactionSigningRequest(
         request.getId(),
-        request.getBlockchainId(),
-        request.getProtocolCode(),
-        NetworkTypeMapper.map(request.getNetworkType()),
-        DoubleSpendingProtectionTypeMapper.map(request.getDoubleSpendingProtectionType()),
+        TransactionType.Transfer,
+        Mapper.map(request.getBlockchain()),
+        Mapper.map(request.getDoubleSpendingProtectionType()),
         request.getBuiltTransaction().toByteArray(),
-        mapSigningAddress(request.getSigningAddressesList()),
-        mapCoinToSpend(request.getCoinsToSpendList()),
+        Mapper.map(request.getSigningAddress()),
+        Mapper.map(request.getCoinsToSpendList()),
         request.getDocument(),
         request.getSignature(),
         request.getTenantId(),
-        map(request.getCreatedAt()),
-        map(request.getUpdatedAt()));
+        Mapper.map(request.getCreatedAt()),
+        Mapper.map(request.getUpdatedAt()));
   }
 
-  private List<SigningAddress> mapSigningAddress(
-      List<TransferSigningRequestsOuterClass.SigningAddress> signingAddresses) {
-    var items = new ArrayList<SigningAddress>();
-
-    for (var signingAddress : signingAddresses) {
-      items.add(new SigningAddress(signingAddress.getAddress(), signingAddress.getGroup()));
-    }
-
-    return items;
-  }
-
-  private List<Coin> mapCoinToSpend(
-      List<TransferSigningRequestsOuterClass.CoinToSpend> coinToSpends) {
-    var coins = new ArrayList<Coin>();
-
-    for (var coinToSpend : coinToSpends) {
-      var coinId =
-          new CoinId(coinToSpend.getId().getTransactionId(), coinToSpend.getId().getNumber());
-
-      var address =
-          coinToSpend.getAsset().getId().getAddress() != null
-              ? coinToSpend.getAsset().getId().getAddress().getValue()
-              : null;
-
-      var blockchainAssetId =
-          new BlockchainAssetId(coinToSpend.getAsset().getId().getSymbol(), address);
-
-      var asset = new BlockchainAsset(blockchainAssetId, coinToSpend.getAsset().getAccuracy());
-
-      var redeem = coinToSpend.getRedeem() != null ? coinToSpend.getRedeem().getValue() : null;
-
-      var coin =
-          new Coin(
-              coinId,
-              asset,
-              new BigDecimal(coinToSpend.getValue().getValue()),
-              coinToSpend.getAddress(),
-              redeem);
-
-      coins.add(coin);
-    }
-
-    return coins;
-  }
-
-  private TransferSigningRequestsOuterClass.TransferSigningRequestRejectionReason map(
-      @NotNull RejectionReason rejectionReason) {
-    switch (rejectionReason) {
+  private TransferSigningRequestsOuterClass.RejectTransferSigningRequestRequest.RejectionReason map(
+      @NotNull TransactionRejectionReason transactionRejectionReason) {
+    switch (transactionRejectionReason) {
       case Other:
-        return TransferSigningRequestsOuterClass.TransferSigningRequestRejectionReason.OTHER;
+        return TransferSigningRequestsOuterClass.RejectTransferSigningRequestRequest.RejectionReason
+            .OTHER;
       case UnknownBlockchain:
-        return TransferSigningRequestsOuterClass.TransferSigningRequestRejectionReason
+        return TransferSigningRequestsOuterClass.RejectTransferSigningRequestRequest.RejectionReason
             .UNKNOWN_BLOCKCHAIN;
-      case InvalidSignature:
-        return TransferSigningRequestsOuterClass.TransferSigningRequestRejectionReason
-            .INVALID_SIGNATURE;
+      case UnwantedTransaction:
+        return TransferSigningRequestsOuterClass.RejectTransferSigningRequestRequest.RejectionReason
+            .UNWANTED_TRANSACTION;
       default:
         throw new IllegalArgumentException(
-            String.format("Unknown rejection reason. %s", rejectionReason.name()));
+            String.format("Unknown rejection reason. %s", transactionRejectionReason.name()));
     }
-  }
-
-  private Instant map(Timestamp timestamp) {
-    return Instant.ofEpochSecond(timestamp.getSeconds(), timestamp.getNanos());
   }
 }

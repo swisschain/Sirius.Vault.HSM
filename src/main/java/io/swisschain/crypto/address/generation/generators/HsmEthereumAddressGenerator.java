@@ -1,12 +1,12 @@
 package io.swisschain.crypto.address.generation.generators;
 
-import io.swisschain.config.clients.HsmApiConfig;
+import io.swisschain.config.clients.IbmApiConfig;
 import io.swisschain.crypto.BlockchainProtocolCodes;
 import io.swisschain.crypto.address.generation.AddressGenerationResult;
 import io.swisschain.crypto.address.generation.AddressGenerator;
 import io.swisschain.crypto.exceptions.InvalidPublicKeyException;
 import io.swisschain.crypto.hsm.HsmConnector;
-import io.swisschain.primitives.NetworkType;
+import io.swisschain.domain.primitives.NetworkType;
 import org.apache.commons.codec.binary.Hex;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -20,8 +20,9 @@ public class HsmEthereumAddressGenerator extends HsmConnector implements Address
 
   private final BlockchainProtocolCodes blockchain;
 
-  public HsmEthereumAddressGenerator(HsmApiConfig hsmConfig, BlockchainProtocolCodes blockchain) {
-    super(hsmConfig);
+  public HsmEthereumAddressGenerator(
+      IbmApiConfig ibmApiConfig, BlockchainProtocolCodes blockchain) {
+    super(ibmApiConfig);
     this.blockchain = blockchain;
   }
 

@@ -1,0 +1,125 @@
+syntax = "proto3";
+
+option csharp_namespace = "Swisschain.Sirius.VaultApi.ApiContract.SmartContractInvocationSigningRequests";
+option java_package = "io.swisschain.sirius.vaultApi.generated.smart_contract_invocation_signing_requests";
+
+package swisschain.sirius.vaultApi.smartContractInvocationSigningRequests;
+
+import "google/protobuf/timestamp.proto";
+import "common.proto";
+
+service SmartContractInvocationSigningRequests {
+  rpc Get (GetSmartContractInvocationSigningRequestsRequest) returns (GetSmartContractInvocationSigningRequestsResponse);
+  rpc Confirm (ConfirmSmartContractInvocationSigningRequestRequest) returns (ConfirmSmartContractInvocationSigningRequestResponse);
+  rpc Reject (RejectSmartContractInvocationSigningRequestRequest) returns (RejectSmartContractInvocationSigningRequestResponse);
+}
+
+// Get
+
+message GetSmartContractInvocationSigningRequestsRequest {
+}
+
+message GetSmartContractInvocationSigningRequestsResponse {
+  oneof body {
+    GetSmartContractInvocationSigningRequestsResponseBody response = 1;
+    GetSmartContractInvocationSigningRequestsErrorResponseBody error = 2;
+  }
+}
+
+message GetSmartContractInvocationSigningRequestsResponseBody {
+  repeated SmartContractInvocationSigningRequest requests = 1;
+}
+
+message GetSmartContractInvocationSigningRequestsErrorResponseBody {
+
+  enum ErrorCode {
+    UNKNOWN = 0;
+    INVALID_PARAMETERS = 1;
+  }
+
+  ErrorCode error_code = 1;
+  string error_message = 2;
+}
+
+message SmartContractInvocationSigningRequest {
+  int64 id = 1;
+  string tenant_id = 2;
+  .swisschain.sirius.vaultApi.common.Blockchain blockchain = 3;
+  .swisschain.sirius.vaultApi.common.DoubleSpendingProtectionType double_spending_protection_type = 4;
+  bytes built_transaction = 5;
+  .swisschain.sirius.vaultApi.common.SigningAddress signing_address = 6;
+  string document = 8;
+  string signature = 9;
+  google.protobuf.Timestamp created_at = 10;
+  google.protobuf.Timestamp updated_at = 11;
+}
+
+// Confirm
+
+message ConfirmSmartContractInvocationSigningRequestRequest {
+  string request_id = 1;
+  int64 signing_request_id = 2;
+  string transaction_id = 4;
+  bytes signed_transaction = 5;
+  string host_process_id = 6;
+}
+
+message ConfirmSmartContractInvocationSigningRequestResponse {
+  oneof body {
+    ConfirmSmartContractInvocationSigningRequestResponseBody response = 1;
+    ConfirmSmartContractInvocationSigningRequestErrorResponseBody error = 2;
+  }
+}
+
+message ConfirmSmartContractInvocationSigningRequestResponseBody {
+}
+
+message ConfirmSmartContractInvocationSigningRequestErrorResponseBody {
+
+  enum ErrorCode {
+    UNKNOWN = 0;
+    INVALID_PARAMETERS = 1;
+    INVALID_STATE = 2;
+  }
+
+  ErrorCode error_code = 1;
+  string error_message = 2;
+}
+
+// Reject
+
+message RejectSmartContractInvocationSigningRequestRequest {
+
+  enum RejectionReason {
+    OTHER = 0;
+    UNKNOWN_BLOCKCHAIN = 1;
+    UNWANTED_TRANSACTION = 2;
+  }
+
+  string request_id = 1;
+  int64 signing_request_id = 2;
+  RejectionReason rejection_reason = 4;
+  string rejection_reason_message = 5;
+  string host_process_id = 6;
+}
+
+message RejectSmartContractInvocationSigningRequestResponse {
+  oneof body {
+    RejectSmartContractInvocationSigningRequestResponseBody response = 1;
+    RejectSmartContractInvocationSigningRequestErrorResponseBody error = 2;
+  }
+}
+
+message RejectSmartContractInvocationSigningRequestResponseBody {
+}
+
+message RejectSmartContractInvocationSigningRequestErrorResponseBody {
+  enum ErrorCode {
+    UNKNOWN = 0;
+    INVALID_PARAMETERS = 1;
+    INVALID_STATE = 2;
+  }
+
+  ErrorCode error_code = 1;
+  string error_message = 2;
+}

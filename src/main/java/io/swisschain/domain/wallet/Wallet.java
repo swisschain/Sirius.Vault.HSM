@@ -1,6 +1,6 @@
 package io.swisschain.domain.wallet;
 
-import io.swisschain.primitives.NetworkType;
+import io.swisschain.domain.primitives.NetworkType;
 
 import java.time.Instant;
 

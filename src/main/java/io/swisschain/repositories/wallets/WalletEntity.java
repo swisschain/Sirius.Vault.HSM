@@ -1,6 +1,6 @@
 package io.swisschain.repositories.wallets;
 
-import io.swisschain.primitives.NetworkType;
+import io.swisschain.domain.primitives.NetworkType;
 import io.swisschain.repositories.Entity;
 import io.swisschain.domain.wallet.Wallet;
 

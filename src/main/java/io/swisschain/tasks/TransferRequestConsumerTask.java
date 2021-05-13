@@ -2,8 +2,8 @@ package io.swisschain.tasks;
 
 import io.swisschain.domain.exceptions.OperationExhaustedException;
 import io.swisschain.domain.exceptions.OperationFailedException;
-import io.swisschain.domain.transfers.TransferSigningRequest;
-import io.swisschain.services.TransferService;
+import io.swisschain.domain.transactions.TransactionSigningRequest;
+import io.swisschain.signers.TransactionSigner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,21 +11,21 @@ import java.util.concurrent.BlockingQueue;
 
 public class TransferRequestConsumerTask implements Runnable {
   private final Logger logger = LogManager.getLogger();
-  private final BlockingQueue<TransferSigningRequest> queue;
-  private final TransferService transferService;
+  private final BlockingQueue<TransactionSigningRequest> queue;
+  private final TransactionSigner transactionSigner;
 
   public TransferRequestConsumerTask(
-      BlockingQueue<TransferSigningRequest> queue, TransferService transferService) {
+      BlockingQueue<TransactionSigningRequest> queue, TransactionSigner transactionSigner) {
     this.queue = queue;
-    this.transferService = transferService;
+    this.transactionSigner = transactionSigner;
   }
 
   @Override
   public void run() {
     while (true) {
       try {
-        var transferSigningRequest = queue.take();
-        transferService.sign(transferSigningRequest);
+        var transactionSigningRequest = queue.take();
+        transactionSigner.sign(transactionSigningRequest);
       } catch (OperationExhaustedException exception) {
         logger.error("Operation exhausted while processing transfer signing requests.", exception);
       } catch (OperationFailedException exception) {

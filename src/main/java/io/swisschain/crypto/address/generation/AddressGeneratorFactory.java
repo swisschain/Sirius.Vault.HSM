@@ -20,27 +20,31 @@ public class AddressGeneratorFactory {
   private void initGenerators() {
     generatorMap.put(
         BlockchainProtocolCodes.bitcoin,
-        new AddressGeneratorRetryDecorator(new HsmBitcoinAddressGenerator(config.clients.hsmApi)));
+        new AddressGeneratorRetryDecorator(new HsmBitcoinAddressGenerator(config.clients.ibmApi)));
     generatorMap.put(
         BlockchainProtocolCodes.ethereum,
         new AddressGeneratorRetryDecorator(
             new HsmEthereumAddressGenerator(
-                config.clients.hsmApi, BlockchainProtocolCodes.ethereum)));
+                config.clients.ibmApi, BlockchainProtocolCodes.ethereum)));
     generatorMap.put(
         BlockchainProtocolCodes.ethereumClassic,
         new AddressGeneratorRetryDecorator(
             new HsmEthereumAddressGenerator(
-                config.clients.hsmApi, BlockchainProtocolCodes.ethereumClassic)));
+                config.clients.ibmApi, BlockchainProtocolCodes.ethereumClassic)));
     generatorMap.put(
         BlockchainProtocolCodes.litecoin,
-        new AddressGeneratorRetryDecorator(new HsmLitecoinAddressGenerator(config.clients.hsmApi)));
+        new AddressGeneratorRetryDecorator(new HsmLitecoinAddressGenerator(config.clients.ibmApi)));
     generatorMap.put(
         BlockchainProtocolCodes.stellar,
-        new AddressGeneratorRetryDecorator(new HsmStellarAddressGenerator(config.clients.hsmApi)));
+        new AddressGeneratorRetryDecorator(new HsmStellarAddressGenerator(config.clients.ibmApi)));
     generatorMap.put(
         BlockchainProtocolCodes.bitcoinCash,
         new AddressGeneratorRetryDecorator(
-            new HsmBitcoinCashAddressGenerator(config.clients.hsmApi)));
+            new HsmBitcoinCashAddressGenerator(config.clients.ibmApi)));
+    generatorMap.put(
+            BlockchainProtocolCodes.tezos,
+            new AddressGeneratorRetryDecorator(
+                    new HsmTezosAddressGenerator(config.clients.ibmApi)));
   }
 
   public AddressGenerator get(BlockchainProtocolCodes code) throws BlockchainNotSupportedException {

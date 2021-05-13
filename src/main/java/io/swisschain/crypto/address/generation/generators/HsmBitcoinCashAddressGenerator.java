@@ -1,11 +1,11 @@
 package io.swisschain.crypto.address.generation.generators;
 
-import io.swisschain.config.clients.HsmApiConfig;
+import io.swisschain.config.clients.IbmApiConfig;
 import io.swisschain.crypto.NetworkMapper;
 import io.swisschain.crypto.address.generation.AddressGenerationResult;
 import io.swisschain.crypto.address.generation.AddressGenerator;
 import io.swisschain.crypto.exceptions.UnknownNetworkTypeException;
-import io.swisschain.primitives.NetworkType;
+import io.swisschain.domain.primitives.NetworkType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.bitcoinjcash.core.CashAddress;
@@ -18,8 +18,8 @@ public class HsmBitcoinCashAddressGenerator extends HsmBitcoinBasedAddressGenera
     implements AddressGenerator {
   private static final Logger logger = LogManager.getLogger();
 
-  public HsmBitcoinCashAddressGenerator(HsmApiConfig hsmConfig) {
-    super(hsmConfig);
+  public HsmBitcoinCashAddressGenerator(IbmApiConfig ibmApiConfig) {
+    super(ibmApiConfig);
   }
 
   @Override

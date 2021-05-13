@@ -44,3 +44,9 @@ jobs:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
           NAMESPACE: sirius
           POD: vault-hsm
+      - name: Restart Sirius.Vault.HSM.shared
+        uses: swisschain/kube-restart-pods@master
+        env:
+          KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
+          NAMESPACE: sirius
+          POD: vault-hsm-shared

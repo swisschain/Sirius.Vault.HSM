@@ -2,7 +2,6 @@ package io.swisschain.services;
 
 import io.swisschain.domain.wallet.RejectionReason;
 import io.swisschain.domain.wallet.WalletGenerationRequest;
-import io.swisschain.mappers.NetworkTypeMapper;
 import io.swisschain.sirius.vaultApi.VaultApiClient;
 import io.swisschain.sirius.vaultApi.generated.wallets.WalletsOuterClass;
 import org.apache.logging.log4j.LogManager;
@@ -43,7 +42,7 @@ public class WalletApiServiceImp implements WalletApiService {
                     item.getId(),
                     item.getBlockchainId(),
                     item.getProtocolCode(),
-                    NetworkTypeMapper.map(item.getNetworkType()),
+                    Mapper.map(item.getNetworkType()),
                     item.getTenantId(),
                     item.getGroup()))
         .collect(Collectors.toList());
