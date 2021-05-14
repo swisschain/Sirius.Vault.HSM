@@ -27,28 +27,8 @@ public abstract class BaseEthereumSmartContractInvocationTransactionValidator
 
     var validationResult = validate(smartContractInvocation, networkType);
 
-    if (!validationResult.isValid()) return validationResult;
-
-    final var transaction = TransactionDecoder.decode(encodeHexString(unsignedTransaction));
-
-    final var lowerCaseData = transaction.getData().toLowerCase();
-
-    final var paddedAddress =
-        Hex.toHexString(
-                padZeros(
-                    Hex.decode(
-                        smartContractInvocation
-                            .getInvoker()
-                            .getAddress()
-                            .toLowerCase()
-                            .substring(2)),
-                    32))
-            .toLowerCase();
-
-    if (!lowerCaseData.contains(paddedAddress)) {
-      return TransactionValidationResult.CreateInvalid(
-          "No destination address detected in contract params");
-    }
+    if (!validationResult.isValid()) 
+        return validationResult;
 
     return TransactionValidationResult.CreateValid();
   }
