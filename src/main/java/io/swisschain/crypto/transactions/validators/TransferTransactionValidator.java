@@ -36,21 +36,21 @@ public abstract class TransferTransactionValidator {
       return TransactionValidationResult.CreateInvalid(
           String.format(
               "Invalid blockchain: %s, expected %s",
-              blockchainProtocol.getName(), transfer.getBlockchain().getProtocolId()));
+              transfer.getBlockchain().getProtocolId(), blockchainProtocol.getName()));
     }
 
     if (!transfer.getBlockchain().getNetworkType().name().equals(networkType.name())) {
       return TransactionValidationResult.CreateInvalid(
           String.format(
               "Invalid networkType: %s, expected %s",
-              networkType, transfer.getBlockchain().getNetworkType()));
+              transfer.getBlockchain().getNetworkType(), networkType));
     }
 
-    if (!transfer.getValue().getAsset().getSymbol().equals(blockchainProtocol.getCoin())) {
+    if (!transfer.getFee().getAsset().getSymbol().equals(blockchainProtocol.getCoin())) {
       return TransactionValidationResult.CreateInvalid(
           String.format(
-              "Invalid asset: %s, expected %s",
-              blockchainProtocol.getCoin(), transfer.getValue().getAsset().getSymbol()));
+              "Invalid fee asset: %s, expected %s",
+              transfer.getValue().getAsset().getSymbol(), blockchainProtocol.getCoin()));
     }
 
     return TransactionValidationResult.CreateValid();
