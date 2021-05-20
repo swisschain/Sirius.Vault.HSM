@@ -32,7 +32,7 @@ public abstract class BaseEthereumTransferTransactionValidator extends TransferT
     final var transaction = TransactionDecoder.decode(encodeHexString(unsignedTransaction));
 
     if (transfer.getValue().getAsset().getAddress() != null
-        && transfer.getValue().getAsset().getAddress().isEmpty()) {
+        && !transfer.getValue().getAsset().getAddress().isEmpty()) {
       // ERC20
       if (!transfer.getValue().getAsset().getAddress().equalsIgnoreCase(transaction.getTo())) {
         return TransactionValidationResult.CreateInvalid(
