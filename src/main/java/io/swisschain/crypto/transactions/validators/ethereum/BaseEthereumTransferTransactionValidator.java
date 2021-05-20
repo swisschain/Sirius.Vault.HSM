@@ -31,11 +31,22 @@ public abstract class BaseEthereumTransferTransactionValidator extends TransferT
 
     final var transaction = TransactionDecoder.decode(encodeHexString(unsignedTransaction));
 
-    if (!transfer.getDestination().getAddress().equalsIgnoreCase(transaction.getTo())) {
-      return TransactionValidationResult.CreateInvalid(
-          String.format(
-              "Invalid destination address: %s, expected %s",
-              transaction.getTo(), transfer.getDestination().getAddress()));
+    if (transfer.getValue().getAsset().getAddress() != null
+        && transfer.getValue().getAsset().getAddress().isEmpty()) {
+      // ERC20
+      if (!transfer.getValue().getAsset().getAddress().equalsIgnoreCase(transaction.getTo())) {
+        return TransactionValidationResult.CreateInvalid(
+            String.format(
+                "Invalid destination address: %s, expected %s",
+                transaction.getTo(), transfer.getValue().getAsset().getAddress()));
+      }
+    } else {
+      if (!transfer.getDestination().getAddress().equalsIgnoreCase(transaction.getTo())) {
+        return TransactionValidationResult.CreateInvalid(
+            String.format(
+                "Invalid destination address: %s, expected %s",
+                transaction.getTo(), transfer.getDestination().getAddress()));
+      }
     }
 
     final var amount = Convert.fromWei(transaction.getValue().toString(), Convert.Unit.ETHER);
