@@ -12,7 +12,7 @@ public class LitecoinTransferTransactionValidator extends TransferTransactionVal
     implements CoinsTransactionValidator {
 
   public LitecoinTransferTransactionValidator(JsonSerializer jsonSerializer) {
-    super(BlockchainProtocolCodes.stellar, jsonSerializer);
+    super(BlockchainProtocolCodes.litecoin, jsonSerializer);
   }
 
   public TransactionValidationResult validate(
