@@ -14,7 +14,7 @@ public interface WalletRepository {
   Wallet getByRequestId(Long walletGenerationRequestId)
       throws SQLException, OperationFailedException, OperationExhaustedException;
 
-  void insert(Wallet wallet)
+  boolean insert(Wallet wallet)
       throws SQLException, WalletAlreadyExistsException, OperationFailedException,
           OperationExhaustedException;
 }

@@ -91,7 +91,13 @@ public class WalletService {
     } else {
       try {
         var walletInsertStart = Instant.now();
-        walletRepository.insert(wallet);
+
+        var result = walletRepository.insert(wallet);
+
+        if (!result) {
+          wallet = walletRepository.getByRequestId(walletGenerationRequest.getId());
+        }
+
         var walletInsertEnd = Instant.now();
 
         logger.info(
