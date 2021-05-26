@@ -87,20 +87,19 @@ public class WalletRepositoryRetryDecorator implements WalletRepository {
   }
 
   @Override
-  public void insert(Wallet wallet)
+  public boolean insert(Wallet wallet)
       throws WalletAlreadyExistsException, OperationFailedException, OperationExhaustedException {
     try {
-      RetryPolicies.ExecuteWithDefaultRepositoryConfig(
-          o ->
-              logger.warn(
-                  String.format(
-                      "Failed to save wallet with wallet generation request %d.",
-                      wallet.getWalletGenerationRequestId()),
-                  o.getLastExceptionThatCausedRetry()),
-          () -> {
-            walletRepository.insert(wallet);
-            return null;
-          });
+      var status =
+          RetryPolicies.ExecuteWithDefaultRepositoryConfig(
+              o ->
+                  logger.warn(
+                      String.format(
+                          "Failed to save wallet with wallet generation request %d.",
+                          wallet.getWalletGenerationRequestId()),
+                      o.getLastExceptionThatCausedRetry()),
+              () -> walletRepository.insert(wallet));
+      return status.getResult();
     } catch (RetriesExhaustedException exception) {
       logger.error(
           String.format(

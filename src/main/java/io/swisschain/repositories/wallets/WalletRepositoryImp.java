@@ -59,11 +59,13 @@ public class WalletRepositoryImp implements WalletRepository {
     }
   }
 
-  public void insert(Wallet wallet) throws SQLException {
+  public boolean insert(Wallet wallet) throws SQLException {
     var sql =
         String.format("INSERT INTO %s.wallets(\n", this.connectionFactory.getSchema())
             + "wallet_generation_request_id, blockchain_id, protocol_code, network_type, address, public_key, private_key, tenant_id, \"group\", created_at)\n"
-            + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?); ";
+            + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) "
+            + "ON CONFLICT (wallet_generation_request_id) "
+            + "DO NOTHING;";
 
     try (var connection = this.connectionFactory.create();
         var statement = connection.prepareStatement(sql)) {
@@ -78,7 +80,7 @@ public class WalletRepositoryImp implements WalletRepository {
       statement.setString(9, wallet.getGroup());
       statement.setTimestamp(10, Timestamp.from(wallet.getCreatedAt()));
 
-      statement.execute();
+      return statement.executeUpdate() == 1;
     }
   }
 }
