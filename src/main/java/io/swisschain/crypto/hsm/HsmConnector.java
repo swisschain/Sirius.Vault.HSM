@@ -28,10 +28,12 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.time.Instant;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 import java.util.UUID;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class HsmConnector {
   private static final Logger logger = LogManager.getLogger();
@@ -140,35 +142,19 @@ public class HsmConnector {
   }
 
   protected StubHolder initStub() throws IOException {
-    final var client = new OkHttpClient();
-    final var request =
-        new Request.Builder()
-            .url(ibmApiConfig.iam.host)
-            .addHeader("Content-Type", "application/x-www-form-urlencoded")
-            .method(
-                "POST",
-                RequestBody.create(
-                    "grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey="
-                        + ibmApiConfig.iam.apiKey,
-                    MediaType.parse("application/x-www-form-urlencoded")))
-            .build();
+    var token = getToken();
 
-    final var result = client.newCall(request).execute();
+    if (token == null) {
+      token = updateToken(ibmApiConfig.iam.host, ibmApiConfig.iam.apiKey);
+    }
 
-    final var mapper = new ObjectMapper();
-
-    if (result.body() == null) {
-      logger.error(String.format("Unable to get aut token: null body. %s", result.toString()));
+    if (token == null) {
       return null;
     }
 
-    final var token =
-        mapper.readValue(Objects.requireNonNull(result.body()).string(), TokenResponse.class);
-
     final var metadata = new Metadata();
     metadata.put(
-        Metadata.Key.of("Authorization", Metadata.ASCII_STRING_MARSHALLER),
-        "Bearer " + token.access_token);
+        Metadata.Key.of("Authorization", Metadata.ASCII_STRING_MARSHALLER), "Bearer " + token);
     metadata.put(
         Metadata.Key.of("Bluemix-Instance", Metadata.ASCII_STRING_MARSHALLER),
         ibmApiConfig.hsm.bluemixInstance);
@@ -218,5 +204,61 @@ public class HsmConnector {
 
   protected void closeStub(StubHolder stubHolder) {
     stubHolder.closeChannel();
+  }
+
+  private static final ReentrantReadWriteLock rwl = new ReentrantReadWriteLock();
+  private static String token;
+  private static Instant expiredAt = Instant.now();
+
+  private static String getToken() {
+    rwl.readLock().lock();
+    try {
+      if (isTokenExpired()) {
+        return null;
+      }
+      return token;
+    } finally {
+      rwl.readLock().unlock();
+    }
+  }
+
+  private static String updateToken(String host, String apiKey) throws IOException {
+    rwl.writeLock().lock();
+    try {
+      if (isTokenExpired()) {
+        final var client = new OkHttpClient();
+        final var request =
+            new Request.Builder()
+                .url(host)
+                .addHeader("Content-Type", "application/x-www-form-urlencoded")
+                .method(
+                    "POST",
+                    RequestBody.create(
+                        "grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=" + apiKey,
+                        MediaType.parse("application/x-www-form-urlencoded")))
+                .build();
+
+        final var result = client.newCall(request).execute();
+
+        final var mapper = new ObjectMapper();
+
+        if (result.body() == null) {
+          logger.error(String.format("Unable to get aut token: null body. %s", result.toString()));
+        } else {
+          final var response =
+              mapper.readValue(Objects.requireNonNull(result.body()).string(), TokenResponse.class);
+          token = response.access_token;
+          expiredAt = Instant.ofEpochSecond(response.expiration);
+          logger.error(String.format("IAM Token updated. Expired at %s", expiredAt.toString()));
+        }
+      }
+      return token;
+    } finally {
+      rwl.writeLock().unlock();
+    }
+  }
+
+  private static Boolean isTokenExpired() {
+    return token == null || Instant.now().minusSeconds(1).compareTo(expiredAt) > 0;
   }
 }
