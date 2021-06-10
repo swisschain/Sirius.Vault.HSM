@@ -28,7 +28,7 @@ public class WalletRequestConsumerTask implements Runnable {
         var walletGenerationRequest = queue.take();
         walletService.generate(walletGenerationRequest);
       } catch (OperationExhaustedException exception) {
-        logger.error("Operation exhausted while processing wallet generation requests.", exception);
+        // ignore
       } catch (OperationFailedException exception) {
         logger.error("Operation failed while processing wallet generation requests.", exception);
       } catch (InterruptedException exception) {

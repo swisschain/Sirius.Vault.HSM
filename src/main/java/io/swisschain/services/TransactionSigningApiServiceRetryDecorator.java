@@ -27,8 +27,9 @@ public class TransactionSigningApiServiceRetryDecorator implements TransactionSi
           RetryPolicies.ExecuteWithDefaultGrpcConfig(
               o ->
                   logger.warn(
-                      "Failed to get signing requests.",
-                      o.getLastExceptionThatCausedRetry()),
+                      String.format(
+                          "Failed to get signing requests: %s",
+                          o.getLastExceptionThatCausedRetry().getMessage())),
               service::get);
       return status.getResult();
     } catch (RetriesExhaustedException exception) {
@@ -39,8 +40,7 @@ public class TransactionSigningApiServiceRetryDecorator implements TransactionSi
               exception.getStatus().getTotalElapsedDuration().toMillis()));
       throw new OperationExhaustedException(exception);
     } catch (UnexpectedException exception) {
-      logger.error(
-          "An unexpected error occurred while getting signing requests.", exception);
+      logger.error("An unexpected error occurred while getting signing requests.", exception);
       throw new OperationFailedException(exception);
     }
   }
@@ -53,8 +53,8 @@ public class TransactionSigningApiServiceRetryDecorator implements TransactionSi
           o ->
               logger.warn(
                   String.format(
-                      "Failed to confirm signing request %d.", signingRequest.getId()),
-                  o.getLastExceptionThatCausedRetry()),
+                      "Failed to confirm signing request %d: %s",
+                      signingRequest.getId(), o.getLastExceptionThatCausedRetry().getMessage())),
           () -> {
             service.confirm(signingRequest);
             return null;
@@ -85,8 +85,8 @@ public class TransactionSigningApiServiceRetryDecorator implements TransactionSi
           o ->
               logger.warn(
                   String.format(
-                      "Failed to reject signing request %d.", signingRequest.getId()),
-                  o.getLastExceptionThatCausedRetry()),
+                      "Failed to reject signing request %d: %s",
+                      signingRequest.getId(), o.getLastExceptionThatCausedRetry().getMessage())),
           () -> {
             service.reject(signingRequest);
             return null;
