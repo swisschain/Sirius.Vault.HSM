@@ -1,8 +1,9 @@
 package io.swisschain.tasks;
 
+import io.grpc.StatusRuntimeException;
+import io.swisschain.common.AppVersion;
 import io.swisschain.sirius.vaultApi.VaultApiClient;
 import io.swisschain.sirius.vaultApi.generated.vaultMonitoring.VaultMonitoringOuterClass;
-import io.swisschain.common.AppVersion;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -29,6 +30,9 @@ public class MonitoringTask implements Runnable {
               .build();
 
       vaultApiClient.getVaultMonitoring().update(request);
+    } catch (StatusRuntimeException exception) {
+      logger.warn(
+          String.format("Failed to send monitoring information: %s", exception.getMessage()));
     } catch (Exception exception) {
       logger.error("An error occurred while sending monitoring information.", exception);
     }
