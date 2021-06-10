@@ -27,9 +27,7 @@ public class SmartContractInvocationConsumerTask implements Runnable {
         var transactionSigningRequest = queue.take();
         transactionSigner.sign(transactionSigningRequest);
       } catch (OperationExhaustedException exception) {
-        logger.error(
-            "Operation exhausted while processing smart contract invocation signing requests.",
-            exception);
+        // ignore
       } catch (OperationFailedException exception) {
         logger.error(
             "Operation failed while processing smart contract invocation signing requests.",

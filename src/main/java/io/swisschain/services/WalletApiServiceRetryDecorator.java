@@ -27,8 +27,9 @@ public class WalletApiServiceRetryDecorator implements WalletApiService {
           RetryPolicies.ExecuteWithDefaultGrpcConfig(
               o ->
                   logger.warn(
-                      "Failed to get wallet generation requests.",
-                      o.getLastExceptionThatCausedRetry()),
+                      String.format(
+                          "Failed to get wallet generation requests: %s",
+                          o.getLastExceptionThatCausedRetry().getMessage())),
               walletApiService::get);
       return status.getResult();
     } catch (RetriesExhaustedException exception) {
@@ -53,9 +54,9 @@ public class WalletApiServiceRetryDecorator implements WalletApiService {
           o ->
               logger.warn(
                   String.format(
-                      "Failed to confirm wallet generation request %d.",
-                      walletGenerationRequest.getId()),
-                  o.getLastExceptionThatCausedRetry()),
+                      "Failed to confirm wallet generation request %d: %s",
+                      walletGenerationRequest.getId(),
+                      o.getLastExceptionThatCausedRetry().getMessage())),
           () -> {
             walletApiService.confirm(walletGenerationRequest);
             return null;
@@ -86,9 +87,9 @@ public class WalletApiServiceRetryDecorator implements WalletApiService {
           o ->
               logger.warn(
                   String.format(
-                      "Failed to reject wallet generation request %d.",
-                      walletGenerationRequest.getId()),
-                  o.getLastExceptionThatCausedRetry()),
+                      "Failed to reject wallet generation request %d: %s",
+                      walletGenerationRequest.getId(),
+                      o.getLastExceptionThatCausedRetry().getMessage())),
           () -> {
             walletApiService.reject(walletGenerationRequest);
             return null;

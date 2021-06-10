@@ -31,9 +31,11 @@ public class WalletRepositoryRetryDecorator implements WalletRepository {
               o ->
                   logger.warn(
                       String.format(
-                          "Failed to find wallet by address %s by group %s by tenant %s.",
-                          address, group, tenantId),
-                      o.getLastExceptionThatCausedRetry()),
+                          "Failed to find wallet by address %s by group %s by tenant %s: %s",
+                          address,
+                          group,
+                          tenantId,
+                          o.getLastExceptionThatCausedRetry().getMessage())),
               () -> walletRepository.find(address, group, tenantId));
       return status.getResult();
     } catch (RetriesExhaustedException exception) {
@@ -64,8 +66,10 @@ public class WalletRepositoryRetryDecorator implements WalletRepository {
           RetryPolicies.ExecuteWithDefaultRepositoryConfig(
               o ->
                   logger.warn(
-                      "Failed to get wallet by wallet generation request %d.",
-                      o.getLastExceptionThatCausedRetry()),
+                      String.format(
+                          "Failed to get wallet by wallet generation request %d: %s",
+                          walletGenerationRequestId,
+                          o.getLastExceptionThatCausedRetry().getMessage())),
               () -> walletRepository.getByRequestId(walletGenerationRequestId));
       return status.getResult();
     } catch (RetriesExhaustedException exception) {
@@ -95,9 +99,9 @@ public class WalletRepositoryRetryDecorator implements WalletRepository {
               o ->
                   logger.warn(
                       String.format(
-                          "Failed to save wallet with wallet generation request %d.",
-                          wallet.getWalletGenerationRequestId()),
-                      o.getLastExceptionThatCausedRetry()),
+                          "Failed to save wallet with wallet generation request %d: %s",
+                          wallet.getWalletGenerationRequestId(),
+                          o.getLastExceptionThatCausedRetry().getMessage())),
               () -> walletRepository.insert(wallet));
       return status.getResult();
     } catch (RetriesExhaustedException exception) {
