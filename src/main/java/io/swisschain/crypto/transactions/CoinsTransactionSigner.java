@@ -20,7 +20,5 @@ public interface CoinsTransactionSigner {
       String privateKey,
       String publicKey,
       NetworkType networkType)
-      throws UnknownNetworkTypeException, InvalidInputsException, IOException,
-          UnsupportedScriptException, TransactionSignException, NoSuchAlgorithmException,
-          OperationFailedException, OperationExhaustedException;
+          throws Exception;
 }
