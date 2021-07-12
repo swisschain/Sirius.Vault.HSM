@@ -7,7 +7,8 @@ public enum BlockchainProtocolCodes {
   ethereum("ethereum", "ETH"),
   ethereumClassic("ethereum-classic", "ETC"),
   stellar("stellar", "XLM"),
-  bitcoinCash("bitcoin-cash", "BCH");
+  bitcoinCash("bitcoin-cash", "BCH"),
+  polkadot("polkadot", "DOT");
 
   private final String name;
   private final String coin;

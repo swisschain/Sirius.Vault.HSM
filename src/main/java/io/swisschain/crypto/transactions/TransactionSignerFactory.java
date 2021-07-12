@@ -47,6 +47,10 @@ public class TransactionSignerFactory {
         BlockchainProtocolCodes.tezos,
         new CoinsTransactionSignerRetryDecorator(
             new HsmTezosTransactionSigner(config.clients.ibmApi)));
+    coinTransactionSignersMap.put(
+            BlockchainProtocolCodes.polkadot,
+            new CoinsTransactionSignerRetryDecorator(
+                    new HsmPolkadotTransactionSigner(config.clients.ibmApi)));
   }
 
   public CoinsTransactionSigner get(BlockchainProtocolCodes code)
